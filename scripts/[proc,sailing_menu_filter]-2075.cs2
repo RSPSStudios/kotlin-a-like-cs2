@@ -1,0 +1,56 @@
+// 2075 proc
+fun sailing_menu_filter(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component) {
+
+	val index12: Int = ~script2076(coord)
+	val flags13: Int = setbit(0, index12)
+	when (index12): Int {
+		6 -> {
+		
+			flags13 = setbit(flags13, 3)
+		}
+		3 -> {
+		
+			flags13 = setbit(flags13, 6)
+		}
+		7 -> {
+		
+			flags13 = setbit(flags13, 4)
+		}
+		4 -> {
+		
+			flags13 = setbit(flags13, 7)
+		}
+	}
+	if (VARP[302] < 61) {
+		flags13 = setbit(flags13, 3)
+		flags13 = setbit(flags13, 6)
+	}
+	if (VARP[655] < 140) {
+		flags13 = setbit(flags13, 3)
+	}
+	if (VARP[365] < 2 | VARP[150] < 160) {
+		flags13 = setbit(flags13, 8)
+	}
+	if (VARP[328] < 15) {
+		flags13 = setbit(flags13, 9)
+	}
+	if (VARP[176] < 2 | VARP[176] > 9) {
+		flags13 = setbit(flags13, 0)
+	}
+	if (VARBIT[9016] < 200) {
+		flags13 = setbit(flags13, 11)
+	}
+	if_sethide(~int_to_bool(testbit(flags13, 1)), component5)
+	if_sethide(~int_to_bool(testbit(flags13, 2)), component2)
+	if_sethide(~int_to_bool(testbit(flags13, 3)), component8)
+	if_sethide(~int_to_bool(testbit(flags13, 4)), component4)
+	if_sethide(~int_to_bool(testbit(flags13, 5)), component6)
+	if_sethide(~int_to_bool(testbit(flags13, 6)), component1)
+	if_sethide(~int_to_bool(testbit(flags13, 7)), component7)
+	if_sethide(~int_to_bool(testbit(flags13, 8)), component3)
+	if_sethide(~int_to_bool(testbit(flags13, 9)), component0)
+	if_sethide(~int_to_bool(testbit(flags13, 0)), component9)
+	if_sethide(~int_to_bool(testbit(flags13, 10)), component10)
+	if_sethide(~int_to_bool(testbit(flags13, 11)), component11)
+	return 
+}

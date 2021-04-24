@@ -1,0 +1,6 @@
+// 570 clientscript
+fun clanwars_ffa_hint(component0: Component) {
+
+	~clanwars_ffa_hint(component0)
+	return 
+}

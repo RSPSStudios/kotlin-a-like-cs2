@@ -1,0 +1,6 @@
+// 1943 clientscript
+fun wildwars_hudupdate() {
+
+	~wildwars_hudupdate
+	return 
+}

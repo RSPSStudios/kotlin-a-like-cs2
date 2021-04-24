@@ -1,0 +1,11 @@
+// 3120 clientscript
+fun poh_board_location_filter_clicked(component0: Component, component1: Component, component2: Component) {
+
+	if (VARBIT[9448] = 1) {
+		VARBIT[9448] = 0
+	} else {
+		VARBIT[9448] = 1
+	}
+	~poh_board_location_filter_activate(component0, component1, component2)
+	return 
+}

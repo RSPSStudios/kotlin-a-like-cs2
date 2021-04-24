@@ -1,0 +1,21 @@
+// 1741 proc
+fun worldmap_size_handler(component0: Component, component1: Component, component2: Component, component3: Component, width4: Int, height5: Int, component6: Component, component7: Component, int8: Int, int9: Int, component10: Component, int11: Int) {
+
+	val width12: Int = if_getwidth(component1)
+	val height13: Int = if_getheight(component1)
+	if (width12 = width4 & height13 = height5) {
+		return 
+	}
+	~worldmap_window_set(component0, component1, component2, component3, int9)
+	width12, height13 = if_getwidth(component1), if_getheight(component1)
+	~scrollbar_vertical_rebuild(component7, component6)
+	val int14: Int = ~min(200, calc((width12 - int8) / 2 - 54))
+	if_setsize(int14, 20, ^setsize_abs, ^setsize_abs, component10)
+	if (.cc_find(component10, int11) = ^true) {
+		~script1739(int14)
+	}
+	if_setontimer({
+		worldmap_size_handler(component0, component1, component2, component3, width12, height13, component6, component7, int8, int9, component10, int11)
+	}, component0)
+	return 
+}

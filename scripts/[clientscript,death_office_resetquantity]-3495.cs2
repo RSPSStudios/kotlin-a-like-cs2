@@ -1,0 +1,8 @@
+// 3495 clientscript
+fun death_office_resetquantity(clock0: Int, string0: String, component1: Component) {
+
+	if (clientclock >= clock0) {
+		~death_office_resetquantity(string0, component1)
+	}
+	return 
+}

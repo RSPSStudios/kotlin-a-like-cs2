@@ -1,0 +1,36 @@
+// 2972 proc
+fun script2972(int0: Int): Int {
+
+	val int1: Int = enum(int, int, enum_2837, int0)
+	val int2: Int = -1
+	when (int0): Int {
+		0 -> {
+		
+			int2 = VARBIT[9326]
+		}
+		1 -> {
+		
+			int2 = VARBIT[10159]
+		}
+		2 -> {
+		
+			int2 = VARBIT[10510]
+		}
+		3 -> {
+		
+			int2 = VARBIT[10512]
+		}
+		4 -> {
+		
+			int2 = VARBIT[10514]
+		}
+	else -> {
+	
+		return 0
+	}
+	}
+	if (int2 ! 0) {
+		int2 = calc(int2 + int1)
+	}
+	return int2
+}

@@ -1,0 +1,13 @@
+// 2225 clientscript
+fun bankmain_quantity_op(opindex0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, int6: Int) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	if (VARBIT[6590] ! int6) {
+		sound_synth(synth_2266, 1, 0)
+	}
+	VARBIT[6590] = int6
+	~bankmain_quantity_buttons(component1, component2, component3, component4, component5)
+	return 
+}

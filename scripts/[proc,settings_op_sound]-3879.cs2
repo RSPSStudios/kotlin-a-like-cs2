@@ -1,0 +1,10 @@
+// 3879 proc
+fun settings_op_sound(int0: Int) {
+
+	if (int0 = 1) {
+		sound_synth(synth_2266, 1, 0)
+	} else {
+		sound_synth(pillory_wrong, 1, 0)
+	}
+	return 
+}

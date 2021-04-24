@@ -1,0 +1,34 @@
+// 189 proc
+fun combat_interface_sp_updatebar(component0: Component, int1: Int, int2: Int) {
+
+	val int3: Int = if_getwidth(interface_593:38)
+	val height4: Int = if_getheight(interface_593:38)
+	val int5: Int = calc(interpolate(0, int1, 0, 1000, if_getwidth(interface_593:37)) - int3)
+	if (int5 > 0) {
+		if (int2 = 0) {
+			int5 = calc(int5 / 2)
+			if (int5 = 0) {
+				int5 = 1
+			}
+		}
+		int3 = calc(int3 + int5)
+		if_setontimer({
+			combat_interface_sp_updatebar(component0, int1)
+		}, component0)
+	} else if (int5 < 0) {
+		if (int2 = 0) {
+			int5 = calc(int5 / 2)
+			if (int5 = 0) {
+				int5 = -1
+			}
+		}
+		int3 = calc(int3 + int5)
+		if_setontimer({
+			combat_interface_sp_updatebar(component0, int1)
+		}, component0)
+	} else {
+		if_setontimer(null, component0)
+	}
+	if_setsize(int3, height4, ^setsize_abs, ^setsize_abs, interface_593:38)
+	return 
+}

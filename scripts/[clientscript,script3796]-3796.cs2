@@ -1,0 +1,6 @@
+// 3796 clientscript
+fun script3796(component0: Component) {
+
+	if_setmodel(enum(int, model, enum_1552, VARBIT[9629]), component0)
+	return 
+}

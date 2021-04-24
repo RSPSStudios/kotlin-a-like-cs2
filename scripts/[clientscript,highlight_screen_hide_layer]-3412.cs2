@@ -1,0 +1,6 @@
+// 3412 clientscript
+fun highlight_screen_hide_layer(component0: Component) {
+
+	if_sethide(true, component0)
+	return 
+}

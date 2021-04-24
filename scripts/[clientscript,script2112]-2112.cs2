@@ -1,0 +1,6 @@
+// 2112 clientscript
+fun script2112(enum0: Enum, component1: Component, obj2: Obj, text0: String, int3: Int, int4: Int) {
+
+	~script2146(enum0, component1, obj2, text0, int3, int4)
+	return 
+}

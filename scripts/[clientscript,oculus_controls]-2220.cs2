@@ -1,0 +1,34 @@
+// 2220 clientscript
+fun oculus_controls(key0: Int, component1: Component, comsubid2: Int) {
+
+	if (~keypress_permit(16, -1) = 0) {
+		return 
+	}
+	when (key0): Int {
+		^key_escape -> {
+		
+			if_close
+		}
+		^key_space -> {
+		
+			if (cc_find(component1, comsubid2) = ^true) {
+				cc_resume_pausebutton
+			}
+		}
+		^key_page_up -> {
+		
+			if (VARCINT[204] < 15) {
+				VARCINT[204] = ~max(3, calc(VARCINT[204] + 1))
+				_3129(VARCINT[204], 2)
+			}
+		}
+		^key_page_down -> {
+		
+			if (VARCINT[204] > 3) {
+				VARCINT[204] = ~min(15, calc(VARCINT[204] - 1))
+				_3129(VARCINT[204], 2)
+			}
+		}
+	}
+	return 
+}

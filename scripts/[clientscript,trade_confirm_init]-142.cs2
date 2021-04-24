@@ -1,0 +1,21 @@
+// 142 clientscript
+fun trade_confirm_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	val width5: Int = if_getwidth(component3)
+	val width6: Int = calc(width5 * 2)
+	val int7: Int = calc(width5 / 2)
+	if_setsize(width6, if_getheight(component1), ^setsize_abs, ^setsize_abs, component1)
+	if_setsize(width6, if_getheight(component2), ^setsize_abs, ^setsize_abs, component2)
+	val x8: Int = if_getx(component3)
+	if_setposition(calc(x8 - int7), if_gety(component2), ^setpos_abs_left, ^setpos_abs_top, component2)
+	if_setposition(calc(x8 - (width5 + 6) - int7), if_gety(component1), ^setpos_abs_left, ^setpos_abs_top, component1)
+	val size9: Int = inv_size(inv_90)
+	~trade_confirm_redraw(size9, width5, int7, component1, component2, component3, component4)
+	if_setoninvtransmit({
+		trade_confirm_redraw(size9, width5, int7, component1, component2, component3, component4){inv_90}
+	}, component0)
+	if_setonvartransmit({
+		trade_confirm_redraw(size9, width5, int7, component1, component2, component3, component4){VARP[1042]}
+	}, component0)
+	return 
+}

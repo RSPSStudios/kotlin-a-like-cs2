@@ -1,0 +1,8 @@
+// 233 clientscript
+fun script233(component0: Component, model1: Model, int2: Int, int3: Int, int4: Int, int5: Int, int6: Int, int7: Int, seq8: Seq) {
+
+	if_setmodel(model1, component0)
+	if_setmodelangle(int2, int3, int4, int5, int6, int7, component0)
+	if_setmodelanim(seq8, component0)
+	return 
+}

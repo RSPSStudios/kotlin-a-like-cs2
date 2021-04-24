@@ -1,0 +1,8 @@
+// 3511 proc
+fun script3511(): Int {
+
+	if (VARP[261] = 2) {
+		return 1
+	}
+	return 0
+}

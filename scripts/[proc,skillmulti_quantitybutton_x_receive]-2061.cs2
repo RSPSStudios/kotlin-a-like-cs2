@@ -1,0 +1,22 @@
+// 2061 proc
+fun skillmulti_quantitybutton_x_receive(string0: String) {
+
+	sound_synth(synth_2266, 1, 0)
+	string0 = ~script212(string0)
+	val int0: Int = string_length(string0)
+	val length1: Int = string_length(tostring(28))
+	if (int0 > length1) {
+		VARCINT[200] = 28
+		return 
+	}
+	val int2: Int = 0
+	val int3: Int = 0
+	while (int0 > 0) {
+		int2 = string_indexof_string("0123456789", substring(string0, 0, 1), 0)
+		int3 = calc(int3 + int2 * pow(10, int0 - 1))
+		string0 = substring(string0, 1, int0)
+		int0 = calc(int0 - 1)
+	}
+	VARCINT[200] = int3
+	return 
+}

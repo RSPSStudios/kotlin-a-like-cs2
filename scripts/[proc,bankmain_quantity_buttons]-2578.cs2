@@ -1,0 +1,118 @@
+// 2578 proc
+fun bankmain_quantity_buttons(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	when (VARBIT[6590]): Int {
+		0 -> {
+		
+			~options_button_on(component0, 0)
+			~options_button_off(component1, 0)
+			~options_button_off(component2, 0)
+			~options_button_off(component3, 0)
+			~options_button_off(component4, 0)
+			if_setonop(null, component0)
+			if_setonop({
+				bankmain_quantity_op(event_opindex, component0, component1, component2, component3, component4, 1)
+			}, component1)
+			if_setonop({
+				bankmain_quantity_op(event_opindex, component0, component1, component2, component3, component4, 2)
+			}, component2)
+			if_setonop({
+				bankmain_quantity_op(event_opindex, component0, component1, component2, component3, component4, 3)
+			}, component3)
+			if_setonop({
+				bankmain_quantity_op(event_opindex, component0, component1, component2, component3, component4, 4)
+			}, component4)
+		}
+		1 -> {
+		
+			~options_button_off(component0, 0)
+			~options_button_on(component1, 0)
+			~options_button_off(component2, 0)
+			~options_button_off(component3, 0)
+			~options_button_off(component4, 0)
+			if_setonop({
+				bankmain_quantity_op(event_opindex, component0, component1, component2, component3, component4, 0)
+			}, component0)
+			if_setonop(null, component1)
+			if_setonop({
+				bankmain_quantity_op(event_opindex, component0, component1, component2, component3, component4, 2)
+			}, component2)
+			if_setonop({
+				bankmain_quantity_op(event_opindex, component0, component1, component2, component3, component4, 3)
+			}, component3)
+			if_setonop({
+				bankmain_quantity_op(event_opindex, component0, component1, component2, component3, component4, 4)
+			}, component4)
+		}
+		2 -> {
+		
+			~options_button_off(component0, 0)
+			~options_button_off(component1, 0)
+			~options_button_on(component2, 0)
+			~options_button_off(component3, 0)
+			~options_button_off(component4, 0)
+			if_setonop({
+				bankmain_quantity_op(event_opindex, component0, component1, component2, component3, component4, 0)
+			}, component0)
+			if_setonop({
+				bankmain_quantity_op(event_opindex, component0, component1, component2, component3, component4, 1)
+			}, component1)
+			if_setonop(null, component2)
+			if_setonop({
+				bankmain_quantity_op(event_opindex, component0, component1, component2, component3, component4, 3)
+			}, component3)
+			if_setonop({
+				bankmain_quantity_op(event_opindex, component0, component1, component2, component3, component4, 4)
+			}, component4)
+		}
+		3 -> {
+		
+			~options_button_off(component0, 0)
+			~options_button_off(component1, 0)
+			~options_button_off(component2, 0)
+			~options_button_on(component3, 0)
+			~options_button_off(component4, 0)
+			if_setonop({
+				bankmain_quantity_op(event_opindex, component0, component1, component2, component3, component4, 0)
+			}, component0)
+			if_setonop({
+				bankmain_quantity_op(event_opindex, component0, component1, component2, component3, component4, 1)
+			}, component1)
+			if_setonop({
+				bankmain_quantity_op(event_opindex, component0, component1, component2, component3, component4, 2)
+			}, component2)
+			if_setonop(null, component3)
+			if_setonop({
+				bankmain_quantity_op(event_opindex, component0, component1, component2, component3, component4, 4)
+			}, component4)
+		}
+		4 -> {
+		
+			~options_button_off(component0, 0)
+			~options_button_off(component1, 0)
+			~options_button_off(component2, 0)
+			~options_button_off(component3, 0)
+			~options_button_on(component4, 0)
+			if_setonop({
+				bankmain_quantity_op(event_opindex, component0, component1, component2, component3, component4, 0)
+			}, component0)
+			if_setonop({
+				bankmain_quantity_op(event_opindex, component0, component1, component2, component3, component4, 1)
+			}, component1)
+			if_setonop({
+				bankmain_quantity_op(event_opindex, component0, component1, component2, component3, component4, 2)
+			}, component2)
+			if_setonop({
+				bankmain_quantity_op(event_opindex, component0, component1, component2, component3, component4, 3)
+			}, component3)
+			if_setonop(null, component4)
+		}
+	}
+	val string0: String = ","
+	if (VARBIT[3960] > 0) {
+		if_setop(1, "Default quantity: ${~tostring_spacer(VARBIT[3960], string0)}", component3)
+	} else {
+		if_setop(1, "", component3)
+	}
+	return 
+}

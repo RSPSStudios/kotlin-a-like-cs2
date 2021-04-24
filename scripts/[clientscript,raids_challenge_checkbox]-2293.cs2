@@ -1,0 +1,6 @@
+// 2293 clientscript
+fun raids_challenge_checkbox(component0: Component, component1: Component, int2: Int) {
+
+	~raids_challenge_checkbox(component1, int2)
+	return 
+}

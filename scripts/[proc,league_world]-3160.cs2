@@ -1,0 +1,9 @@
+// 3160 proc
+fun league_world(): Int {
+
+	val flags0: Int = worldflags
+	if (testbit(flags0, 29) = ^false & testbit(worldflags, 30) = ^true) {
+		return 1
+	}
+	return 0
+}

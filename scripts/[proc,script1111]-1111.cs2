@@ -1,0 +1,183 @@
+// 1111 proc
+fun script1111(component0: Component, component1: Component, component2: Component, string0: String, int3: Int, int4: Int) {
+
+	cc_deleteall(component1)
+	cc_deleteall(component0)
+	val int5: Int = 0
+	val struct6: Struct = null
+	val enum7: Enum = enum_2670
+	val count8: Int = enum_getoutputcount(enum7)
+	val count9: Int = calc(0 + 1)
+	val int10: Int = 0
+	val height11: Int = 0
+	val string1: String = ","
+	val int12: Int = 0
+	val colour13: Int = ^white
+	val width14: Int = if_getwidth(component1)
+	val int15: Int = calc(int3 + int4)
+	val int16: Int = 15
+	cc_create(component0, ^iftype_text, int5)
+	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 1, ^setpos_4, ^setpos_abs_top)
+	cc_settext("League Statistics - ${string0}")
+	cc_settextfont(b12_full)
+	cc_setcolour(colour13)
+	cc_settextshadow(true)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	int5 = 0
+	height11, int5 = ~script857(5, component1, height11, int5)
+	cc_create(component1, ^iftype_text, int5)
+	cc_settext("General League Statistics")
+	cc_settextfont(b12_full)
+	cc_settextshadow(true)
+	cc_setcolour(colour13)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_setsize(width14, int16, ^setsize_abs, ^setsize_abs)
+	cc_setposition(int10, height11, ^setpos_abs_left, ^setpos_abs_top)
+	height11 = calc(height11 + int16)
+	int5 = calc(int5 + 1)
+	height11, int5 = ~script857(5, component1, height11, int5)
+	cc_create(component1, ^iftype_text, int5)
+	cc_settext("Leagues participations")
+	cc_settextfont(p12_full)
+	cc_settextshadow(true)
+	cc_setcolour(colour13)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_setsize(calc(width14 / 2), int16, ^setsize_abs, ^setsize_abs)
+	cc_setposition(int10, height11, ^setpos_abs_left, ^setpos_abs_top)
+	int5 = calc(int5 + 1)
+	height11 = calc(height11 + int16)
+	cc_create(component1, ^iftype_text, int5)
+	cc_settext(tostring(~script1124(int3, int4)))
+	cc_settextfont(p12_full)
+	cc_settextshadow(true)
+	cc_setcolour(colour13)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_setsize(calc(width14 / 2), int16, ^setsize_abs, ^setsize_abs)
+	cc_setposition(int10, height11, ^setpos_abs_left, ^setpos_abs_top)
+	int5 = calc(int5 + 1)
+	height11 = calc(height11 - int16)
+	int10 = calc(int10 + width14 / 2)
+	cc_create(component1, ^iftype_text, int5)
+	cc_settext("Total League points")
+	cc_settextfont(p12_full)
+	cc_settextshadow(true)
+	cc_setcolour(colour13)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_setsize(calc(width14 / 2), int16, ^setsize_abs, ^setsize_abs)
+	cc_setposition(int10, height11, ^setpos_abs_left, ^setpos_abs_top)
+	int5 = calc(int5 + 1)
+	height11 = calc(height11 + int16)
+	cc_create(component1, ^iftype_text, int5)
+	cc_settext(~tostring_spacer(int15, string1))
+	cc_settextfont(p12_full)
+	cc_settextshadow(true)
+	cc_setcolour(colour13)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_setsize(calc(width14 / 2), int16, ^setsize_abs, ^setsize_abs)
+	cc_setposition(int10, height11, ^setpos_abs_left, ^setpos_abs_top)
+	int5 = calc(int5 + 1)
+	height11 = calc(height11 + int16)
+	int10 = 0
+	cc_create(component1, ^iftype_text, int5)
+	cc_settext("Best trophy")
+	cc_settextfont(p12_full)
+	cc_settextshadow(true)
+	cc_setcolour(colour13)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_setsize(calc(width14 / 2), int16, ^setsize_abs, ^setsize_abs)
+	cc_setposition(int10, height11, ^setpos_abs_left, ^setpos_abs_top)
+	int5 = calc(int5 + 1)
+	height11 = calc(height11 + int16)
+	cc_create(component1, ^iftype_text, int5)
+	cc_settext(~script1127(int3, int4))
+	cc_settextfont(p12_full)
+	cc_settextshadow(true)
+	cc_setcolour(colour13)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_setsize(calc(width14 / 2), int16, ^setsize_abs, ^setsize_abs)
+	cc_setposition(int10, height11, ^setpos_abs_left, ^setpos_abs_top)
+	int5 = calc(int5 + 1)
+	height11 = calc(height11 + int16)
+	int10 = 0
+	while (count9 <= count8) {
+		struct6 = enum(int, struct, enum7, count9)
+		when (struct6): Struct {
+			leagues_i_twisted_723 -> {
+			
+				int12 = int3
+			}
+			leagues_ii_trailblazer_1721 -> {
+			
+				int12 = int4
+			}
+		}
+		if (int12 > 0) {
+			height11, int5 = ~script857(5, component1, height11, int5)
+			cc_create(component1, ^iftype_text, int5)
+			cc_settext(struct_param(struct6, param_858))
+			cc_settextfont(b12_full)
+			cc_settextshadow(true)
+			cc_setcolour(colour13)
+			cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+			cc_setsize(if_getwidth(component1), int16, ^setsize_abs, ^setsize_abs)
+			cc_setposition(int10, height11, ^setpos_abs_left, ^setpos_abs_top)
+			height11 = calc(height11 + int16)
+			int5 = calc(int5 + 1)
+			height11, int5 = ~script857(5, component1, height11, int5)
+			cc_create(component1, ^iftype_text, int5)
+			cc_settext("League points")
+			cc_settextfont(p12_full)
+			cc_settextshadow(true)
+			cc_setcolour(colour13)
+			cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+			cc_setsize(calc(width14 / 2), int16, ^setsize_abs, ^setsize_abs)
+			cc_setposition(int10, height11, ^setpos_abs_left, ^setpos_abs_top)
+			int5 = calc(int5 + 1)
+			height11 = calc(height11 + int16)
+			cc_create(component1, ^iftype_text, int5)
+			cc_settext(~tostring_spacer(~script1125(struct6, int3, int4), string1))
+			cc_settextfont(p12_full)
+			cc_settextshadow(true)
+			cc_setcolour(colour13)
+			cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+			cc_setsize(calc(width14 / 2), int16, ^setsize_abs, ^setsize_abs)
+			cc_setposition(int10, height11, ^setpos_abs_left, ^setpos_abs_top)
+			int5 = calc(int5 + 1)
+			height11 = calc(height11 - int16)
+			int10 = calc(int10 + width14 / 2)
+			cc_create(component1, ^iftype_text, int5)
+			cc_settext("Trophy")
+			cc_settextfont(p12_full)
+			cc_settextshadow(true)
+			cc_setcolour(colour13)
+			cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+			cc_setsize(calc(width14 / 2), int16, ^setsize_abs, ^setsize_abs)
+			cc_setposition(int10, height11, ^setpos_abs_left, ^setpos_abs_top)
+			int5 = calc(int5 + 1)
+			height11 = calc(height11 + int16)
+			cc_create(component1, ^iftype_text, int5)
+			cc_settext(~script1126(struct6, int3, int4))
+			cc_settextfont(p12_full)
+			cc_settextshadow(true)
+			cc_setcolour(colour13)
+			cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+			cc_setsize(calc(width14 / 2), int16, ^setsize_abs, ^setsize_abs)
+			cc_setposition(int10, height11, ^setpos_abs_left, ^setpos_abs_top)
+			int5 = calc(int5 + 1)
+			height11 = calc(height11 + int16)
+			int10 = 0
+		}
+		count9 = calc(count9 + 1)
+	}
+	height11 = calc(height11 + 5)
+	cc_deleteall(component2)
+	if (height11 > if_getheight(component1)) {
+		if_setscrollsize(0, height11, component1)
+	} else {
+		if_setscrollsize(0, 0, component1)
+	}
+	if_setscrollpos(0, 0, component1)
+	~scrollbar_vertical(component2, component1, "scrollbar_parchment_dragger_v2,3", "scrollbar_parchment_dragger_v2,0", "scrollbar_parchment_dragger_v2,1", "scrollbar_parchment_dragger_v2,2", "scrollbar_parchment_v2,0", "scrollbar_parchment_v2,1")
+	return 
+}

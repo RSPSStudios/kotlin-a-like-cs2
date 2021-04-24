@@ -1,0 +1,11 @@
+// 801 clientscript
+fun ge_pricelist_switchmode(opindex0: Int, inv1: Inv, size2: Int, comsubid3: Int) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	VARBIT[4440] = calc(1 - VARBIT[4440])
+	~ge_pricelist_draw(inv1, size2, comsubid3)
+	return 
+}

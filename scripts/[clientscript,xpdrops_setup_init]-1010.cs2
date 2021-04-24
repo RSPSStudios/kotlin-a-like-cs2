@@ -1,0 +1,159 @@
+// 1010 clientscript
+fun xpdrops_setup_init(component0: Component, layer1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component, component16: Component, component17: Component, component18: Component, component19: Component, component20: Component, component21: Component, component22: Component, component23: Component, component24: Component, component25: Component, component26: Component, component27: Component, component28: Component, component29: Component, component30: Component, component31: Component, component32: Component, component33: Component, component34: Component, component35: Component, component36: Component, component37: Component, component38: Component, component39: Component, component40: Component, component41: Component, component42: Component, component43: Component, component44: Component, component45: Component, component46: Component, component47: Component) {
+
+	~xpdrops_setup_appearance(component8, component10, component22, component12, component14, component16, component18, component20, component24)
+	if_sethide(true, component4)
+	~xpdrops_setup_init_display(component8, component9, enum(int, string, enum_1164, -1), "Controls the position of the XP display and droplets.", 170, layer1, component4, component6, component7, component47, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25)
+	~xpdrops_setup_init_display(component10, component11, enum(int, string, enum_1165, -1), "Controls the text size used by the XP display and droplets.", 180, layer1, component4, component6, component7, component47, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25)
+	~xpdrops_setup_init_display(component12, component13, enum(int, string, enum_1166, -1), "Controls how long the XP display remains visible after each event.", 200, layer1, component4, component6, component7, component47, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25)
+	~xpdrops_setup_init_display(component14, component15, "Counter", "Choose which skill will have its details displayed in the number panel.<br><br>'<col=7f0000>Most recent</col>' will show whichever skill gained XP most recently.<br><br>If a <col=7f0000>tracker</col> has been set for the skill, the panel will show XP gained since the tracker's start point.", 300, layer1, component4, component6, component7, component47, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25)
+	~xpdrops_setup_init_display(component16, component17, "Progress bar", "Choose which skill will have its details displayed in the progress bar.<br><br>'<col=7f0000>Most recent</col>' will show whichever skill gained XP most recently.<br><br>If a <col=7f0000>goal</col> has been set for the skill, the bar will show progress towards that goal.<br><br>Otherwise it will show progress towards the next level.", 300, layer1, component4, component6, component7, component47, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25)
+	~xpdrops_setup_init_display(component18, component19, enum(int, string, enum_1168, -1), "Controls the text colour of the droplets.", 150, layer1, component4, component6, component7, component47, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25)
+	~xpdrops_setup_init_display(component20, component21, enum(int, string, enum_1170, -1), "When multiple skills increase together, their droplets may be grouped, within limits.", 300, layer1, component4, component6, component7, component47, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25)
+	~xpdrops_setup_init_display(component22, component23, enum(int, string, enum_1140, -1), "Droplet speed.", 200, layer1, component4, component6, component7, component47, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25)
+	~xpdrops_setup_init_display(component24, component25, enum(int, string, enum_1625, -1), "Enables fake XP drops in certain situations where XP is blocked.", 250, layer1, component4, component6, component7, component47, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25)
+	if_setnoclickthrough(true, component5)
+	if_setonclick({
+		xpdrops_setup_display_dropdown_close(component4, component47, component8, component10, component12, component14, component16, component18, component20, component22, component24)
+	}, component5)
+	~xpdrops_setup_display_update(component8, component10, component12, component14, component16, component18, component20, component22, component24)
+	if_setonvartransmit({
+		xpdrops_setup_display_update(component8, component10, component12, component14, component16, component18, component20, component22, component24){VARP[1227], VARP[1141]}
+	}, component0)
+	cc_deleteall(component27)
+	stat0[23]: Stat
+	val int48: Int = 0
+	while (int48 <= 23) {
+		cc_create(component27, ^iftype_rectangle, int48)
+		cc_setsize(0, 25, ^setsize_minus, ^setsize_abs)
+		cc_setposition(0, calc(int48 * 25), ^setpos_abs_centre, ^setpos_abs_top)
+		cc_setfill(true)
+		if (~on_mobile = false) {
+			cc_setonmouseover({
+				script1015(event_com, event_comsubid, ^white, 225)
+			})
+		}
+		if (calc(int48 % 2) = 0) {
+			cc_setcolour(^white)
+			cc_settrans(255)
+			if (~on_mobile = false) {
+				cc_setonmouseleave({
+					script1015(event_com, event_comsubid, ^white, 255)
+				})
+			}
+		} else {
+			cc_setcolour(^black)
+			cc_settrans(225)
+			if (~on_mobile = false) {
+				cc_setonmouseleave({
+					script1015(event_com, event_comsubid, ^black, 225)
+				})
+			}
+		}
+		cc_setop(1, "Configure")
+		if (int48 < 23) {
+			stat0[int48] = enum(int, stat, enum_681, calc(int48 + 1))
+			cc_setopbase("<col=ff9040>${enum(stat, string, enum_680, stat0[int48])}</col>")
+			cc_setonop({
+				script1023(event_opindex, event_comsubid, stat0[int48], component3, component26, component27, component28, component29, component30, component31, component32, component33, component34, component35, component36, component37, component38, component39, component40, component41, component42, component43, component44, component45, component46)
+			})
+		} else {
+			cc_setopbase("<col=ff9040>Total XP</col>")
+			cc_setonop({
+				script1023(event_opindex, event_comsubid, null, component3, component26, component27, component28, component29, component30, component31, component32, component33, component34, component35, component36, component37, component38, component39, component40, component41, component42, component43, component44, component45, component46)
+			})
+		}
+		int48 = calc(int48 + 1)
+	}
+	VARCINT[49] = 0
+	val int49: Int = 0
+	while (int49 <= 23) {
+		VARCINT[49] = calc(int49 * 25)
+		cc_create(component27, ^iftype_graphic, int48)
+		int48 = calc(int48 + 1)
+		cc_setsize(25, 25, ^setsize_abs, ^setsize_abs)
+		cc_setposition(0, VARCINT[49], ^setpos_abs_left, ^setpos_abs_top)
+		if (int49 < 23) {
+			cc_setgraphic(enum(stat, graphic, enum_255, stat0[int49]))
+		} else {
+			cc_setgraphic("staticons2,7")
+		}
+		cc_create(component27, ^iftype_text, int48)
+		int48 = calc(int48 + 1)
+		cc_setsize(80, 25, ^setsize_abs, ^setsize_abs)
+		cc_setposition(28, VARCINT[49], ^setpos_abs_left, ^setpos_abs_top)
+		cc_setcolour(0xffb83f)
+		cc_settextfont(p12_full)
+		cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
+		cc_settextshadow(true)
+		if (int49 < 23) {
+			cc_settext(enum(stat, string, enum_680, stat0[int49]))
+		} else {
+			cc_settext("Total XP")
+		}
+		cc_create(component27, ^iftype_text, int48)
+		int48 = calc(int48 + 1)
+		cc_setsize(110, 26, ^setsize_minus, ^setsize_abs)
+		cc_setposition(0, VARCINT[49], ^setpos_abs_right, ^setpos_abs_top)
+		cc_setcolour(0xff981f)
+		cc_settextfont(p11_full)
+		cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
+		cc_settextshadow(true)
+		int49 = calc(int49 + 1)
+	}
+	cc_deleteall(component28)
+	if_setscrollpos(0, 0, component27)
+	VARCINT[49] = calc(25 * (23 + 1))
+	if (VARCINT[49] > if_getheight(component27)) {
+		if_setscrollsize(0, VARCINT[49], component27)
+	} else {
+		if_setscrollsize(0, 0, component27)
+	}
+	~scrollbar_vertical(component28, component27, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+	if_sethide(false, component3)
+	if_sethide(false, component26)
+	if_sethide(true, component29)
+	cc_deleteall(component29)
+	cc_create(component29, ^iftype_text, 0)
+	cc_setsize(10, 20, ^setsize_minus, ^setsize_abs)
+	cc_setposition(0, 5, ^setpos_abs_centre, ^setpos_abs_top)
+	cc_setcolour(0xff981f)
+	cc_settextfont(b12_full)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_settextshadow(true)
+	~stonepanel(-1, component29, 1)
+	~script1016(component30)
+	~script1016(component31)
+	~script1016(component32)
+	val op0: String = "Discard"
+	~script1018(false, 0xff2020, op0, component45)
+	if (~on_mobile = false) {
+		if_setonmouseover({
+			script1017(true, 0xff2020, op0, event_com)
+		}, component45)
+		if_setonmouseleave({
+			script1017(false, 0xff2020, op0, event_com)
+		}, component45)
+	}
+	if_setonop({
+		script1023(event_opindex, -1, null, component3, component26, component27, component28, component29, component30, component31, component32, component33, component34, component35, component36, component37, component38, component39, component40, component41, component42, component43, component44, component45, component46)
+	}, component45)
+	op0 = "Save"
+	int48 = ~script1018(false, ^green, op0, component46)
+	if (~on_mobile = false) {
+		if_setonmouseover({
+			script1017(true, ^green, op0, event_com)
+		}, component46)
+		if_setonmouseleave({
+			script1017(false, ^green, op0, event_com)
+		}, component46)
+	}
+	if_setonop({
+		script1019(event_opindex, event_com, int48, ^green)
+	}, component46)
+	~script1026(component3, component26, component27, component28, component29, component30, component31, component32, component33, component34, component35, component36, component37, component38, component39, component40, component41, component42, component43, component44, component45, component46)
+	if_setonvartransmit({
+		script1025(component3, component26, component27, component28, component29, component30, component31, component32, component33, component34, component35, component36, component37, component38, component39, component40, component41, component42, component43, component44, component45, component46){VARP[638], VARP[261], VARP[262], VARP[1228], VARP[1229], VARP[1230], VARP[1231], VARP[1232], VARP[1233], VARP[1234], VARP[1235], VARP[1236], VARP[1237], VARP[1238], VARP[1239], VARP[1240], VARP[1241], VARP[1242], VARP[1243], VARP[1244], VARP[1245], VARP[1246], VARP[1247], VARP[1248], VARP[1249], VARP[1250], VARP[1251], VARP[1252], VARP[1253], VARP[1254], VARP[1255], VARP[1256], VARP[1257], VARP[1258], VARP[1259], VARP[1260], VARP[1261], VARP[1262], VARP[1263], VARP[1264], VARP[1265], VARP[1266], VARP[1267], VARP[1268], VARP[1269], VARP[1270], VARP[1271], VARP[1272], VARP[1273], VARP[1274], VARP[1275]}
+	}, component2)
+	return 
+}

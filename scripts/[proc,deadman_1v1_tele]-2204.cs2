@@ -1,0 +1,6 @@
+// 2204 proc
+fun deadman_1v1_tele() {
+
+	docheat("~dmm_1v1_tele")
+	return 
+}

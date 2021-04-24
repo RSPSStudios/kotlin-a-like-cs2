@@ -1,0 +1,6 @@
+// 3409 clientscript
+fun highlight_screen(component0: Component, int1: Int, int2: Int, int3: Int, int4: Int, setposh5: Int, setposv6: Int, int7: Int, boolean8: Boolean) {
+
+	~highlight_screen(component0, int1, int2, int3, int4, setposh5, setposv6, int7, 0, boolean8)
+	return 
+}

@@ -1,0 +1,7 @@
+// 2559 proc
+fun membership_benefits_hide_bonds(component0: Component, component1: Component) {
+
+	if_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre, component0)
+	if_sethide(true, component1)
+	return 
+}

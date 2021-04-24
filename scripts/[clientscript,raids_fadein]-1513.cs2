@@ -1,0 +1,6 @@
+// 1513 clientscript
+fun raids_fadein() {
+
+	~raids_fader_update(0, 255, 0, interface_513:2)
+	return 
+}

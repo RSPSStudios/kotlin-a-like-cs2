@@ -1,0 +1,32 @@
+// 2259 proc
+fun script2259(obj0: Obj): Int, Namedobj {
+
+	when (obj0): Obj {
+		butterfly_net_10010 -> {
+		
+			when (VARBIT[11767]): Int {
+				0 -> {
+				
+					return 0, butterfly_net_10010
+				}
+				1 -> {
+				
+					return 1, butterfly_net_10010
+				}
+				2 -> {
+				
+					return 1, magic_butterfly_net_11259
+				}
+			}
+		}
+		imp_repellent_11262 -> {
+		
+			return VARBIT[11768], imp_repellent_11262
+		}
+		impling_jar_11260 -> {
+		
+			return VARBIT[11770], impling_jar_11260
+		}
+	}
+	return 0, null
+}

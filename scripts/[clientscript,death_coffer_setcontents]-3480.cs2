@@ -1,0 +1,8 @@
+// 3480 clientscript
+fun death_coffer_setcontents(component0: Component, comsubid1: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		~death_coffer_setcontents
+	}
+	return 
+}

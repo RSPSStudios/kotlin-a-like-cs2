@@ -1,0 +1,12 @@
+// 211 clientscript
+fun poh_options_buildmode(component0: Component, component1: Component) {
+
+	if (VARBIT[2176] = 1) {
+		if_setgraphic("options_radio_buttons,2", component0)
+		if_setgraphic("options_radio_buttons,0", component1)
+	} else {
+		if_setgraphic("options_radio_buttons,0", component0)
+		if_setgraphic("options_radio_buttons,2", component1)
+	}
+	return 
+}

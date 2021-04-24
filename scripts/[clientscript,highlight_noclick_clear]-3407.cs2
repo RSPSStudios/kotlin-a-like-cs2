@@ -1,0 +1,7 @@
+// 3407 clientscript
+fun highlight_noclick_clear(component0: Component) {
+
+	cc_deleteall(component0)
+	if_sethide(true, component0)
+	return 
+}

@@ -1,0 +1,6 @@
+// 1034 clientscript
+fun welcome_screen_lastlogin(component0: Component) {
+
+	~welcome_screen_lastlogin(component0)
+	return 
+}

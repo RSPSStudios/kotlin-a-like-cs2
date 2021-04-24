@@ -1,0 +1,11 @@
+// 682 clientscript
+fun meslayer_lastname_click(int0: Int, string0: String) {
+
+	if (VARCINT[5] ! int0) {
+		return 
+	}
+	VARCSTRING[359] = string0
+	~script222("")
+	~meslayer_enter
+	return 
+}

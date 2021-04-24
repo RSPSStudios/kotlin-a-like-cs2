@@ -1,0 +1,34 @@
+// 114 clientscript
+fun oculus_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component) {
+
+	VARCINT[204] = ~max(3, ~min(15, VARCINT[204]))
+	_3129(VARCINT[204], 2)
+	if_setonscrollwheel({
+		camera_zoom(event_mousey)
+	}, component0)
+	if_setnoclickthrough(true, component0)
+	renderself(false)
+	~steelborder(component1, "Camera Controls", 1)
+	cc_deleteall(component0)
+	.cc_create(component0, ^iftype_rectangle, 0)
+	.cc_setsize(1, 1, ^setsize_abs, ^setsize_abs)
+	.cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	.cc_setcolour(^white)
+	.cc_setfill(true)
+	.cc_sethide(true)
+	cc_create(component0, ^iftype_text, 1)
+	cc_setsize(1, 1, ^setsize_abs, ^setsize_abs)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	cc_settextfont(p11_full)
+	cc_settext("")
+	~script1655(VARCINT[214], component0, component2, component3, component4, component5)
+	cc_create(component0, ^iftype_text, 2)
+	cc_setsize(1, 1, ^setsize_abs, ^setsize_abs)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	cc_settextfont(p11_full)
+	cc_settext("")
+	cc_setonkey({
+		oculus_controls(event_key, event_com, .cc_getid)
+	})
+	return 
+}

@@ -1,0 +1,33 @@
+// 2968 proc
+fun adventurepath_return_path_tasks_done(int0: Int): Int {
+
+	if (int0 = -1) {
+		return 0
+	}
+	when (int0): Int {
+		0 -> {
+		
+			return VARBIT[9341]
+		}
+		1 -> {
+		
+			return VARBIT[10163]
+		}
+		2 -> {
+		
+			return VARBIT[10517]
+		}
+		3 -> {
+		
+			return VARBIT[10518]
+		}
+		4 -> {
+		
+			return VARBIT[10519]
+		}
+	else -> {
+	
+		return 0
+	}
+	}
+}

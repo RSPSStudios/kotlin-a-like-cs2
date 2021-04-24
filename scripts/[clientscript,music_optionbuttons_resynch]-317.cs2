@@ -1,0 +1,6 @@
+// 317 clientscript
+fun music_optionbuttons_resynch(component0: Component, component1: Component, component2: Component) {
+
+	~music_optionbuttons(component0, component1, component2)
+	return 
+}

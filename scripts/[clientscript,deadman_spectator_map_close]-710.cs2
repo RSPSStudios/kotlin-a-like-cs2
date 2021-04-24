@@ -1,0 +1,7 @@
+// 710 clientscript
+fun deadman_spectator_map_close() {
+
+	setshowloadingmessages(true)
+	worldmap_disableelements(true)
+	return 
+}

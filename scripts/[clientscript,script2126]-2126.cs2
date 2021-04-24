@@ -1,0 +1,6 @@
+// 2126 clientscript
+fun script2126(boolean0: Boolean, component1: Component, text0: String, component2: Component, component3: Component, component4: Component) {
+
+	~script2127(boolean0, component1, text0, component2, component3, component4)
+	return 
+}

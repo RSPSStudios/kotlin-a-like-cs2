@@ -1,0 +1,5 @@
+// 374 proc
+fun script374(): Int {
+
+	return 800
+}

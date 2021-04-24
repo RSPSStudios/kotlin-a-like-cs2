@@ -1,0 +1,112 @@
+// 1448 proc
+fun script1448(obj0: Obj, obj1: Obj, obj2: Obj, obj3: Obj, obj4: Obj, obj5: Obj, obj6: Obj, obj7: Obj, obj8: Obj, obj9: Obj, obj10: Obj, obj11: Obj, obj12: Obj, obj13: Obj) {
+
+	cc_deleteall(interface_481:34)
+	val int14: Int = 0
+	val component15: Component = null
+	val int16: Int = -1
+	obj0[14]: Obj
+	obj0[0] = obj0
+	obj0[1] = obj1
+	obj0[2] = obj2
+	obj0[3] = obj3
+	obj0[4] = obj4
+	obj0[5] = obj5
+	obj0[6] = obj6
+	obj0[7] = obj7
+	obj0[8] = obj8
+	obj0[9] = obj9
+	obj0[10] = obj10
+	obj0[11] = obj11
+	obj0[12] = obj12
+	obj0[13] = obj13
+	while (int14 < 14) {
+		component15 = enum(int, component, enum_1505, int14)
+		cc_create(interface_481:34, ^iftype_graphic, int14)
+		cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+		if (component15 ! null) {
+			cc_setposition(if_getx(component15), if_gety(component15), ^setpos_abs_left, ^setpos_abs_top)
+		} else {
+			cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_top)
+			cc_setsize(0, 0, ^setsize_abs, ^setsize_abs)
+		}
+		if (obj0[int14] ! null) {
+			cc_setobject_nonum(obj0[int14], 0)
+			cc_setopbase("<col=ff981f>${oc_name(obj0[int14])}")
+			cc_setop(10, "Examine<col=ff9040>")
+			cc_setgraphicshadow(0x333333)
+			cc_setoutline(1)
+			if_setgraphic(null, component15)
+		} else if (component15 ! null) {
+			if_setgraphic(enum(int, graphic, enum_1506, int14), component15)
+		}
+		int14 = calc(int14 + 1)
+	}
+	if (testbit(VARP[286], 14) = ^true) {
+		if_sethide(false, interface_481:63)
+	} else {
+		if_sethide(true, interface_481:63)
+		~deltooltip_action(interface_481:83)
+	}
+	if (testbit(VARP[286], 15) = ^true) {
+		if_sethide(false, interface_481:64)
+	} else {
+		if_sethide(true, interface_481:64)
+		~deltooltip_action(interface_481:83)
+	}
+	if (testbit(VARP[286], 16) = ^true) {
+		if_sethide(false, interface_481:65)
+	} else {
+		if_sethide(true, interface_481:65)
+		~deltooltip_action(interface_481:83)
+	}
+	if (testbit(VARP[286], 17) = ^true) {
+		if_sethide(false, interface_481:66)
+	} else {
+		if_sethide(true, interface_481:66)
+		~deltooltip_action(interface_481:83)
+	}
+	if (testbit(VARP[286], 18) = ^true) {
+		if_sethide(false, interface_481:67)
+	} else {
+		if_sethide(true, interface_481:67)
+		~deltooltip_action(interface_481:83)
+	}
+	if (testbit(VARP[286], 19) = ^true) {
+		if_sethide(false, interface_481:68)
+	} else {
+		if_sethide(true, interface_481:68)
+		~deltooltip_action(interface_481:83)
+	}
+	if (testbit(VARP[286], 21) = ^true) {
+		if_sethide(false, interface_481:69)
+	} else {
+		if_sethide(true, interface_481:69)
+		~deltooltip_action(interface_481:83)
+	}
+	if (testbit(VARP[286], 23) = ^true) {
+		if_sethide(false, interface_481:70)
+	} else {
+		if_sethide(true, interface_481:70)
+		~deltooltip_action(interface_481:83)
+	}
+	if (testbit(VARP[286], 24) = ^true) {
+		if_sethide(false, interface_481:71)
+	} else {
+		if_sethide(true, interface_481:71)
+		~deltooltip_action(interface_481:83)
+	}
+	if (testbit(VARP[286], 26) = ^true) {
+		if_sethide(false, interface_481:72)
+	} else {
+		if_sethide(true, interface_481:72)
+		~deltooltip_action(interface_481:83)
+	}
+	if (testbit(VARP[286], 27) = ^true) {
+		if_sethide(false, interface_481:73)
+	} else {
+		if_sethide(true, interface_481:73)
+		~deltooltip_action(interface_481:83)
+	}
+	return 
+}

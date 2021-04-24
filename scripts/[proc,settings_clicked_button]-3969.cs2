@@ -1,0 +1,11 @@
+// 3969 proc
+fun settings_clicked_button(int0: Int) {
+
+	VARBIT[9657] = int0
+	when (int0): Int {
+	else -> {
+	
+		return 
+	}
+	}
+}

@@ -1,0 +1,52 @@
+// 1745 proc
+fun worldmap_window_set(component0: Component, component1: Component, component2: Component, component3: Component, int4: Int) {
+
+	if_sethide(true, component2)
+	if_sethide(false, component3)
+	if (~toplevel_getcomponents = enum_1132) {
+		if_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre, component1)
+		if_setsize(0, 0, ^setsize_minus, ^setsize_minus, component1)
+		return 
+	}
+	VARCINT[191] = ~max(~min(VARCINT[191], calc(if_getwidth(component0) - int4)), 0)
+	VARCINT[192] = ~max(~min(VARCINT[192], calc(if_getheight(component0) - 280)), 0)
+	VARCINT[193], VARCINT[194] = ~max(~min(VARCINT[193], VARCINT[191]), 0), ~max(~min(VARCINT[194], VARCINT[192]), 0)
+	if_setposition(VARCINT[193], VARCINT[194], ^setpos_abs_left, ^setpos_abs_top, component1)
+	if_setsize(VARCINT[191], VARCINT[192], ^setsize_minus, ^setsize_minus, component1)
+	val width5: Int = calc(VARCINT[191] + 6 * 2)
+	val height6: Int = calc(VARCINT[192] + 6 * 2)
+	val x7: Int = calc(VARCINT[191] - VARCINT[193])
+	val y8: Int = calc(VARCINT[192] - VARCINT[194])
+	val int9: Int = 0
+	if (cc_find(component0, 0) = ^true & .cc_find(component0, 1) = ^true) {
+		cc_setsize(width5, 6, ^setsize_minus, ^setsize_abs)
+		.cc_setsize(width5, 6, ^setsize_minus, ^setsize_abs)
+		int9 = calc(VARCINT[193] + 6)
+		cc_setposition(int9, VARCINT[194], ^setpos_abs_left, ^setpos_abs_top)
+		.cc_setposition(int9, y8, ^setpos_abs_left, ^setpos_abs_bottom)
+		~script1746(component0, component1, component2, component3, int4)
+	}
+	if (cc_find(component0, 2) = ^true & .cc_find(component0, 3) = ^true) {
+		cc_setsize(6, height6, ^setsize_abs, ^setsize_minus)
+		.cc_setsize(6, height6, ^setsize_abs, ^setsize_minus)
+		int9 = calc(VARCINT[194] + 6)
+		cc_setposition(VARCINT[193], int9, ^setpos_abs_left, ^setpos_abs_top)
+		.cc_setposition(x7, int9, ^setpos_abs_right, ^setpos_abs_top)
+		~script1746(component0, component1, component2, component3, int4)
+	}
+	if (cc_find(component0, 4) = ^true & .cc_find(component0, 5) = ^true) {
+		cc_setsize(6, 6, ^setsize_abs, ^setsize_abs)
+		.cc_setsize(6, 6, ^setsize_abs, ^setsize_abs)
+		cc_setposition(VARCINT[193], VARCINT[194], ^setpos_abs_left, ^setpos_abs_top)
+		.cc_setposition(x7, VARCINT[194], ^setpos_abs_right, ^setpos_abs_top)
+		~script1746(component0, component1, component2, component3, int4)
+	}
+	if (cc_find(component0, 6) = ^true & .cc_find(component0, 7) = ^true) {
+		cc_setsize(6, 6, ^setsize_abs, ^setsize_abs)
+		.cc_setsize(6, 6, ^setsize_abs, ^setsize_abs)
+		cc_setposition(VARCINT[193], y8, ^setpos_abs_left, ^setpos_abs_bottom)
+		.cc_setposition(x7, y8, ^setpos_abs_right, ^setpos_abs_bottom)
+		~script1746(component0, component1, component2, component3, int4)
+	}
+	return 
+}

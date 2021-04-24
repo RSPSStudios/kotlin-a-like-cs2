@@ -1,0 +1,44 @@
+// 793 proc
+fun ge_offers_index_inittop(component0: Component) {
+
+	val width1: Int = if_getwidth(component0)
+	val height2: Int = if_getheight(component0)
+	cc_deleteall(component0)
+	val int3: Int = 0
+	val x4: Int = calc(width1 - 85)
+	cc_create(component0, ^iftype_graphic, int3)
+	val comsubid5: Int = int3
+	int3 = calc(int3 + 1)
+	cc_setsize(85, 22, ^setsize_abs, ^setsize_abs)
+	cc_setposition(x4, calc((height2 - 22) / 2), ^setpos_abs_left, ^setpos_abs_top)
+	cc_settiling(false)
+	cc_setop(1, "Collect to inventory")
+	cc_setop(2, "Collect to bank")
+	cc_setonop({
+		opsound(event_opindex, 6)
+	})
+	cc_create(component0, ^iftype_text, int3)
+	val comsubid6: Int = int3
+	int3 = calc(int3 + 1)
+	cc_setsize(85, height2, ^setsize_abs, ^setsize_abs)
+	cc_setposition(x4, 0, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setcolour(^white)
+	cc_settextfont(p11_full)
+	cc_settextshadow(true)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_settext("Collect")
+	cc_create(component0, ^iftype_text, int3)
+	val comsubid7: Int = int3
+	int3 = calc(int3 + 1)
+	cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setcolour(0xff981f)
+	cc_settextfont(p11_full)
+	cc_settextshadow(true)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_settext("Select an offer slot to set up or view an offer.")
+	~ge_offers_index_drawtop(width1, height2, component0, comsubid5, comsubid6, comsubid7)
+	if_setoninvtransmit({
+		ge_offers_index_drawtop(width1, height2, component0, comsubid5, comsubid6, comsubid7){inv_518, inv_519, inv_520, inv_521, inv_522, inv_523, inv_539, inv_540}
+	}, component0)
+	return 
+}

@@ -1,0 +1,34 @@
+// 217 clientscript
+fun menu(int0: Int, text0: String, string1: String) {
+
+	val component1: Component = interface_187:0
+	val component2: Component = interface_187:3
+	val component3: Component = interface_187:2
+	val component4: Component = interface_187:1
+	if (~on_mobile = true) {
+		int0 = 0
+	}
+	if (int0 = 1) {
+		~chatdefault_stopinput
+	}
+	~script219(component1, component2, component3, text0, 33)
+	cc_deleteall(component4)
+	val width5: Int = if_getwidth(component2)
+	val int6: Int = 0
+	val height7: Int = 0
+	val index8: Int = string_indexof_string(string1, "|", 0)
+	val string2: String = ""
+	while (index8 ! -1) {
+		string2 = substring(string1, 0, index8)
+		int6, height7 = ~menu_createentry(string2, component2, component4, width5, int6, height7, int0)
+		string1 = substring(string1, calc(index8 + 1), string_length(string1))
+		index8 = string_indexof_string(string1, "|", 0)
+	}
+	int6, height7 = ~menu_createentry(string1, component2, component4, width5, int6, height7, int0)
+	if_setscrollsize(0, height7, component2)
+	if_setscrollpos(0, 0, component2)
+	if (height7 > if_getheight(component2)) {
+		~scrollbar_vertical(component3, component2, "scrollbar_parchment_dragger_v2,3", "scrollbar_parchment_dragger_v2,0", "scrollbar_parchment_dragger_v2,1", "scrollbar_parchment_dragger_v2,2", "scrollbar_parchment_v2,0", "scrollbar_parchment_v2,1")
+	}
+	return 
+}

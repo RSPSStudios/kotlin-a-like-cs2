@@ -1,0 +1,6 @@
+// 2816 clientscript
+fun seed_vault_catvar(component0: Component, component1: Component, component2: Component) {
+
+	~seed_vault_catselect(component0, component1, component2)
+	return 
+}

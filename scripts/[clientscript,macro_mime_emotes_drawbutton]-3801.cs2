@@ -1,0 +1,6 @@
+// 3801 clientscript
+fun macro_mime_emotes_drawbutton(component0: Component, string0: String, boolean1: Boolean) {
+
+	~macro_mime_emotes_drawbutton(component0, string0, boolean1)
+	return 
+}

@@ -1,0 +1,76 @@
+// 1750 clientscript
+fun worldmap_overlay(component0: Component, component1: Component, int2: Int, int3: Int, int4: Int, int5: Int, coord6: Coord) {
+
+	val maparea7: Maparea = worldmap_getcurrentmap
+	if (worldmap_isloaded = false | maparea7 = null | if_getwidth(component0) <= 0) {
+		~worldmap_overlay_clear(component0, component1)
+		return 
+	}
+	val int8: Int = 0
+	val int9: Int = 0
+	int8, int9 = worldmap_getsize
+	if (int8 <= 0) {
+		return 
+	}
+	val int10: Int = 0
+	val int11: Int = 0
+	int10, int11 = worldmap_getdisplayposition
+	val int12: Int = 0
+	val int13: Int = 0
+	val coord14: Coord = null
+	if (VARCINT[188] ! coord6 & VARCINT[188] ! null) {
+		coord14 = ~worldmap_findcoordinmap(maparea7, VARCINT[188])
+		if (coord14 ! null) {
+			int12, int13 = worldmap_getdisplaycoord(coord6)
+			if (int12 >= calc(int10 - 25) & int12 <= calc(int10 + 25) & int13 >= calc(int11 - 25) & int13 <= calc(int11 + 25)) {
+				worldmap_jumptosourcecoord(coord14)
+			}
+		}
+	}
+	if (int10 = int2 & int11 = int3 & int8 = int4 & int9 = int5 & VARCINT[188] = coord6) {
+		return 
+	}
+	if_setontimer({
+		worldmap_overlay(component0, component1, int10, int11, int8, int9, VARCINT[188])
+	}, component0)
+	val int15: Int = calc(int11 + int9 / 2)
+	val int16: Int = calc(int11 - int9 / 2)
+	val int17: Int = calc(int10 + int8 / 2)
+	val int18: Int = calc(int10 - int8 / 2)
+	~worldmap_elements_update(component0, int15, int16, int17, int18)
+	val width19: Int = if_getwidth(component1)
+	val height20: Int = if_getheight(component1)
+	val int21: Int = 0
+	val int22: Int = 0
+	val int23: Int = 0
+	val int24: Int = 0
+	int24, int22, int23, int21 = worldmap_getconfigbounds(maparea7)
+	val int25: Int = 0
+	val int26: Int = 0
+	int25, int26 = worldmap_getconfigsize(maparea7)
+	int25, int26 = ~max(int25, 1), ~max(int26, 1)
+	val x27: Int = scale(calc(int18 - int24), int25, width19)
+	val y28: Int = scale(calc(int21 - int15), int26, height20)
+	val width29: Int = scale(calc(int17 - int18), int25, width19)
+	val height30: Int = scale(calc(int15 - int16), int26, height20)
+	if (cc_find(component1, 0) = ^true & .cc_find(component1, 1) = ^true) {
+		cc_setposition(x27, y28, ^setpos_abs_left, ^setpos_abs_top)
+		.cc_setposition(x27, y28, ^setpos_abs_left, ^setpos_abs_top)
+		cc_setsize(width29, height30, ^setsize_abs, ^setsize_abs)
+		.cc_setsize(width29, height30, ^setsize_abs, ^setsize_abs)
+	} else {
+		cc_create(component1, ^iftype_rectangle, 0)
+		.cc_create(component1, ^iftype_rectangle, 1)
+		cc_setcolour(0xff3f3f)
+		.cc_setcolour(0xff3f3f)
+		cc_setfill(false)
+		.cc_setfill(true)
+		cc_settrans(100)
+		.cc_settrans(200)
+		cc_setposition(x27, y28, ^setpos_abs_left, ^setpos_abs_top)
+		.cc_setposition(x27, y28, ^setpos_abs_left, ^setpos_abs_top)
+		cc_setsize(width29, height30, ^setsize_abs, ^setsize_abs)
+		.cc_setsize(width29, height30, ^setsize_abs, ^setsize_abs)
+	}
+	return 
+}

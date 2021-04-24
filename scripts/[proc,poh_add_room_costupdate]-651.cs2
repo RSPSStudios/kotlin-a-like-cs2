@@ -1,0 +1,10 @@
+// 651 proc
+fun poh_add_room_costupdate(total0: Int) {
+
+	if (inv_total(inv, coins_995) < total0) {
+		cc_setcolour(^red)
+	} else {
+		cc_setcolour(^yellow)
+	}
+	return 
+}

@@ -1,0 +1,6 @@
+// 2509 clientscript
+fun script2509(component0: Component, setposh1: Int, int2: Int, int3: Int) {
+
+	~script2510(component0, setposh1, int2, int3)
+	return 
+}

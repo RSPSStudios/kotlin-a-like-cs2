@@ -1,0 +1,6 @@
+// 800 clientscript
+fun ge_pricelist_draw(inv0: Inv, size1: Int, comsubid2: Int) {
+
+	~ge_pricelist_draw(inv0, size1, comsubid2)
+	return 
+}

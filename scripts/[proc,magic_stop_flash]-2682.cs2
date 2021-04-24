@@ -1,0 +1,13 @@
+// 2682 proc
+fun magic_stop_flash(obj0: Obj) {
+
+	if_setontimer(null, magic_spellbook:3)
+	val component1: Component = oc_param(obj0, spell_button)
+	if (component1 = null) {
+		return 
+	}
+	if_settrans(0, component1)
+	if_setonmouseover(null, component1)
+	VARCINT[393] = null
+	return 
+}

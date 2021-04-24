@@ -1,0 +1,12 @@
+// 3481 proc
+fun death_coffer_setcontents() {
+
+	if (VARP[261] > 1) {
+		cc_settext("Coffer: <col=ffffff>${~tostring_spacer(VARP[261], ",")}</col> coins")
+	} else if (VARP[261] = 1) {
+		cc_settext("Coffer: <col=ffffff>1</col> coin")
+	} else {
+		cc_settext("Coffer: <col=ffffff>Empty</col>")
+	}
+	return 
+}

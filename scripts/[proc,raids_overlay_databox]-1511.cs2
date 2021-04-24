@@ -1,0 +1,21 @@
+// 1511 proc
+fun raids_overlay_databox(component0: Component) {
+
+	val string0: String = "Total:"
+	val string1: String = ~tostring_spacer(VARBIT[5431], ",")
+	val string2: String = "${chat_playername}:"
+	val string3: String = ""
+	val string4: String = "Time:"
+	val string5: String = ~script2275(VARBIT[6386])
+	if (VARBIT[5422] < 131071) {
+		string3 = ~tostring_spacer(VARBIT[5422], ",")
+	} else {
+		string3 = "<col=ffa82f>Lots!</col>"
+	}
+	val int1: Int = ~max(calc(parawidth(string0, 512, p12_full) + 3 + parawidth(string1, 512, p12_full)), calc(parawidth(string2, 512, p12_full) + 3 + parawidth(string3, 512, p12_full)))
+	int1 = ~max(int1, calc(parawidth(string4, 512, p12_full) + 3 + parawidth(string5, 512, p12_full)))
+	if_setsize(calc(int1 + 8), 49, ^setsize_abs, ^setsize_abs, component0)
+	cc_settext("${string0}<br>${string2}<br>${string4}")
+	.cc_settext("${string1}<br>${string3}<br>${string5}")
+	return 
+}

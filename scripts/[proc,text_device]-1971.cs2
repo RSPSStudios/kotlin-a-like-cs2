@@ -1,0 +1,8 @@
+// 1971 proc
+fun text_device(string0: String, string1: String): String {
+
+	if (~on_mobile = true) {
+		return string1
+	}
+	return string0
+}

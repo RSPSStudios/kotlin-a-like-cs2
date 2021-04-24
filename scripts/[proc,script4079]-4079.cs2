@@ -1,0 +1,10 @@
+// 4079 proc
+fun script4079() {
+
+	~chatdefault_setonkey(1)
+	VARCINT[11], VARCSTRING[370], VARCINT[140] = 0, "", 0
+	if (~on_mobile = true) {
+		~keyboard_hide
+	}
+	return 
+}

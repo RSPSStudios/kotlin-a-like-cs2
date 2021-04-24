@@ -1,0 +1,8 @@
+// 16 clientscript
+fun wom_tab_highlight_onclick(count0: Int, component1: Component, component2: Component) {
+
+	VARBIT[6610] = count0
+	~wom_tab_highlight
+	~wom_build_item_list(component1, component2)
+	return 
+}

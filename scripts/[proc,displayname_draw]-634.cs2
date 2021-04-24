@@ -1,0 +1,39 @@
+// 634 proc
+fun displayname_draw(component0: Component, component1: Component, component2: Component) {
+
+	if (VARBIT[5605] = 1) {
+		~displayname_statusstatic(component0)
+		~displayname_button_init(component1, "Look up name")
+		~displayname_disablebutton(component2, "---")
+	} else if (VARBIT[5605] = 2) {
+		if_setontimer({
+			displayname_statusflash(component0)
+		}, component0)
+		~displayname_disablebutton(component1, "Look up name")
+		~displayname_disablebutton(component2, "---")
+	} else if (VARBIT[5605] = 4) {
+		~displayname_statusstatic(component0)
+		~displayname_button_init(component1, "Another name")
+		if (VARBIT[5606] = 1 & VARBIT[5607] = 0) {
+			if (string_length(VARCSTRING[229]) <= 0) {
+				VARCSTRING[229] = "-"
+			}
+			~displayname_button_init(component2, "<col=00ff00>${VARCSTRING[229]}</col>")
+		} else {
+			~displayname_disablebutton(component2, "---")
+		}
+	} else if (VARBIT[5605] = 5) {
+		if_setontimer({
+			displayname_statusflash(component0)
+		}, component0)
+		~displayname_disablebutton(component1, "Another name")
+		~displayname_disablebutton(component2, "---")
+	} else {
+		if_setontimer({
+			displayname_statusflash(component0)
+		}, component0)
+		~displayname_disablebutton(component1, "Look up name")
+		~displayname_disablebutton(component2, "---")
+	}
+	return 
+}

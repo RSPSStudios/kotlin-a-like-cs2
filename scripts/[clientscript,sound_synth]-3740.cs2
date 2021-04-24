@@ -1,0 +1,6 @@
+// 3740 clientscript
+fun sound_synth(synth0: Synth, int1: Int, int2: Int) {
+
+	sound_synth(synth0, int1, int2)
+	return 
+}

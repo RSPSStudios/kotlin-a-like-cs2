@@ -1,0 +1,6 @@
+// 1262 clientscript
+fun deadman_tournament_refresh_init(component0: Component) {
+
+	~deadman_tournament_refresh_reset(component0)
+	return 
+}

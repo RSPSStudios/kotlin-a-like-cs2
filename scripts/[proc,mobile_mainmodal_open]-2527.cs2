@@ -1,0 +1,29 @@
+// 2527 proc
+fun mobile_mainmodal_open() {
+
+	val enum0: Enum = ~toplevel_getcomponents
+	if (enum0 ! enum_1745) {
+		return 
+	}
+	val component1: Component = enum(component, component, enum0, interface_161:15)
+	val height2: Int = if_getheight(component1)
+	val width3: Int = if_getwidth(component1)
+	val height4: Int = if_getheight(if_getlayer(component1))
+	val int5: Int = if_getwidth(if_getlayer(component1))
+	val int6: Int = 0
+	val height7: Int = calc(height4 - 184 + 26)
+	val int8: Int = calc(int5 - 182 + 40)
+	if (height2 >= height7) {
+		int6 = 1
+	}
+	if (int6 = 1 & ~script2518 = 1) {
+		int5 = int8
+	}
+	if (calc(width3 + 204 - 3) >= int5) {
+		~toplevel_sidebutton_switch(-1, enum0)
+	} else if (VARCINT[41] = 1337 & if_hassub(interface_162:561) = false & VARBIT[6538] = 1 & ~script2518 = 1) {
+		~toplevel_sidebutton_switch(-1, enum0)
+	}
+	~script2526
+	return 
+}

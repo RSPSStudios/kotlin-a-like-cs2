@@ -1,0 +1,24 @@
+// 550 proc
+fun meslayer_mode13() {
+
+	if (VARCINT[11] = 1) {
+		if_close
+	}
+	if (VARBIT[8119] = 0) {
+		mes("You must set a name before you can chat.")
+		return 
+	}
+	~meslayer_open(13)
+	VARCSTRING[358], VARCINT[62] = "", 0
+	~chat_autotyper_updateop
+	~script222("")
+	~meslayer_mode13_setprompt
+	val string0: String = ""
+	if_setonkey({
+		meslayer_onkey(event_key, event_keychar, string0)
+	}, interface_162:45)
+	if (~on_mobile = true) {
+		~keyboard_show(0, 80)
+	}
+	return 
+}

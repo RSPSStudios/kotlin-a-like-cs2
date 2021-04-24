@@ -1,0 +1,6 @@
+// 3156 proc
+fun offer_banner(component0: Component, graphic1: Graphic) {
+
+	if_setgraphic(graphic1, component0)
+	return 
+}

@@ -1,0 +1,20 @@
+// 2747 proc
+fun script2747(int0: Int) {
+
+	val graphic1: Graphic = "options_radio_buttons,0"
+	val graphic2: Graphic = "options_radio_buttons,1"
+	if (int0 = 1) {
+		if_setgraphic(graphic2, interface_37:44)
+	} else {
+		if_setgraphic(graphic1, interface_37:44)
+	}
+	if (~on_mobile = false) {
+		if_setonmouserepeat({
+			settrans(interface_37:44, 127)
+		}, interface_37:5)
+		if_setonmouseleave({
+			settrans(interface_37:44, 0)
+		}, interface_37:5)
+	}
+	return 
+}

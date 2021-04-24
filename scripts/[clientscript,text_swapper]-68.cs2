@@ -1,0 +1,6 @@
+// 68 clientscript
+fun text_swapper(component0: Component, text0: String) {
+
+	if_settext(text0, component0)
+	return 
+}

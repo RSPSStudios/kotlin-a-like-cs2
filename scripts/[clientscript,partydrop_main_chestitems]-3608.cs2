@@ -1,0 +1,6 @@
+// 3608 clientscript
+fun partydrop_main_chestitems(int0: Int, component1: Component) {
+
+	~partydrop_main_chestitems(int0, component1)
+	return 
+}

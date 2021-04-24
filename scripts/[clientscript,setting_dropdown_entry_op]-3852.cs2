@@ -1,0 +1,29 @@
+// 3852 clientscript
+fun setting_dropdown_entry_op(int0: Int, text0: String, comsubid1: Int, count2: Int, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, enum9: Enum, int10: Int, comsubid11: Int, boolean12: Boolean) {
+
+	~settings_op_sound(1)
+	if (cc_find(component3, comsubid1) = ^true) {
+		cc_settext(text0)
+		if (boolean12 = false) {
+			if (int0 = 2) {
+				~settings_set_dropdown(int10, count2)
+			} else {
+				~settings_set_keybind(int10, count2)
+			}
+			cc_setontimer({
+				setting_dropdown_synch(0, comsubid1, component3, enum9, int10, int0)
+			})
+		}
+	}
+	if (cc_find(component3, comsubid11) = ^true) {
+		cc_setgraphic("scrollbar_v2,1")
+	}
+	cc_deleteall(component4)
+	cc_deleteall(component5)
+	cc_deleteall(component6)
+	cc_deleteall(component7)
+	cc_deleteall(component8)
+	if_setonop(null, component5)
+	if_sethide(true, component8)
+	return 
+}

@@ -1,0 +1,28 @@
+// 1331 proc
+fun ii_tracker_tab_select(int0: Int, int1: Int, component2: Component, component3: Component, component4: Component, int5: Int, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component) {
+
+	if (int0 = int1) {
+		if_setgraphic("tabs_split,3", component6)
+		if_setgraphic("tabs_split,4", component7)
+		if_setgraphic("tabs_split,5", component8)
+		if_sethide(true, component11)
+		if_sethide(true, component12)
+		if_setgraphic("tabs_split,0", component2)
+		if_setgraphic("tabs_split,1", component3)
+		if_setgraphic("tabs_split,2", component4)
+		if_sethide(false, component9)
+		if_sethide(false, component10)
+	} else if (int0 = int5) {
+		if_setgraphic("tabs_split,3", component2)
+		if_setgraphic("tabs_split,4", component3)
+		if_setgraphic("tabs_split,5", component4)
+		if_sethide(true, component9)
+		if_sethide(true, component10)
+		if_setgraphic("tabs_split,0", component6)
+		if_setgraphic("tabs_split,1", component7)
+		if_setgraphic("tabs_split,2", component8)
+		if_sethide(false, component11)
+		if_sethide(false, component12)
+	}
+	return 
+}

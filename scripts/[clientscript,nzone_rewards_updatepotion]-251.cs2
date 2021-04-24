@@ -1,0 +1,8 @@
+// 251 clientscript
+fun nzone_rewards_updatepotion(component0: Component, comsubid1: Int, obj2: Obj) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		~nzone_rewards_updatepotion(obj2)
+	}
+	return 
+}

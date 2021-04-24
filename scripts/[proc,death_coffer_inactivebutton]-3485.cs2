@@ -1,0 +1,13 @@
+// 3485 proc
+fun death_coffer_inactivebutton(component0: Component, text0: String, int1: Int, component2: Component) {
+
+	if (int1 = 1) {
+		~death_coffer_drawbutton(true, true, component0, text0, component2)
+	} else {
+		~death_coffer_drawbutton(false, false, component0, text0, component2)
+	}
+	if_setonmouserepeat(null, component0)
+	if_setonmouseleave(null, component0)
+	if_setonop(null, component0)
+	return 
+}

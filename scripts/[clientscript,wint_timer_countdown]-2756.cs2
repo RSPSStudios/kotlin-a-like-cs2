@@ -1,0 +1,6 @@
+// 2756 clientscript
+fun wint_timer_countdown(component0: Component, int1: Int) {
+
+	~wint_timer_countdown(component0, int1)
+	return 
+}

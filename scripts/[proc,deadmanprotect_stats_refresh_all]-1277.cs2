@@ -1,0 +1,10 @@
+// 1277 proc
+fun deadmanprotect_stats_refresh_all() {
+
+	val int0: Int = 1
+	while (int0 <= 23) {
+		~deadmanprotect_stats_refresh(int0)
+		int0 = calc(int0 + 1)
+	}
+	return 
+}

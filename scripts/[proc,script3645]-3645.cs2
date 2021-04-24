@@ -1,0 +1,17 @@
+// 3645 proc
+fun script3645(component0: Component, size1: Int) {
+
+	val int2: Int = calc((42 - 36) * 3 - 2)
+	val int3: Int = calc((36 - 32) * 2)
+	val obj4: Obj = null
+	val int5: Int = size1
+	while (int5 > 0) {
+		int5 = calc(int5 - 1)
+		if (cc_find(component0, int5) = ^true) {
+			obj4 = inv_getobj(inv, int5)
+			~script3646(obj4, inv_getnum(inv, int5), component0, size1)
+			cc_setposition(calc(int2 + int5 % 4 * 42), calc(int3 + int5 / 4 * 36), ^setpos_abs_left, ^setpos_abs_top)
+		}
+	}
+	return 
+}

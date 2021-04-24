@@ -1,0 +1,6 @@
+// 245 clientscript
+fun deadman_tournament_fogcolour() {
+
+	~deadman_tournament_fogcolour
+	return 
+}

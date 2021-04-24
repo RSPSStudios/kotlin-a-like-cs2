@@ -1,0 +1,10 @@
+// 1565 proc
+fun raids_partylist_setpartybutton() {
+
+	val string0: String = "Make party"
+	if (VARP[1427] ! -1) {
+		string0 = "<col=ffff00>My party</col>"
+	}
+	~script1558(interface_499:58, string0, interface_499:3, enum_1538, -1)
+	return 
+}

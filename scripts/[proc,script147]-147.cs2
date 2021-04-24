@@ -1,0 +1,62 @@
+// 147 proc
+fun script147(int0: Int) {
+
+	if (int0 = 0) {
+		VARCINT[12] = clientclock
+	} else if (int0 = 1) {
+		VARCINT[13] = clientclock
+	} else if (int0 = 2) {
+		VARCINT[14] = clientclock
+	} else if (int0 = 3) {
+		VARCINT[15] = clientclock
+	} else if (int0 = 4) {
+		VARCINT[16] = clientclock
+	} else if (int0 = 5) {
+		VARCINT[17] = clientclock
+	} else if (int0 = 6) {
+		VARCINT[18] = clientclock
+	} else if (int0 = 7) {
+		VARCINT[19] = clientclock
+	} else if (int0 = 8) {
+		VARCINT[20] = clientclock
+	} else if (int0 = 9) {
+		VARCINT[21] = clientclock
+	} else if (int0 = 10) {
+		VARCINT[22] = clientclock
+	} else if (int0 = 11) {
+		VARCINT[23] = clientclock
+	} else if (int0 = 12) {
+		VARCINT[24] = clientclock
+	} else if (int0 = 13) {
+		VARCINT[25] = clientclock
+	} else if (int0 = 14) {
+		VARCINT[26] = clientclock
+	} else if (int0 = 15) {
+		VARCINT[27] = clientclock
+	} else if (int0 = 16) {
+		VARCINT[28] = clientclock
+	} else if (int0 = 17) {
+		VARCINT[29] = clientclock
+	} else if (int0 = 18) {
+		VARCINT[30] = clientclock
+	} else if (int0 = 19) {
+		VARCINT[31] = clientclock
+	} else if (int0 = 20) {
+		VARCINT[32] = clientclock
+	} else if (int0 = 21) {
+		VARCINT[33] = clientclock
+	} else if (int0 = 22) {
+		VARCINT[34] = clientclock
+	} else if (int0 = 23) {
+		VARCINT[35] = clientclock
+	} else if (int0 = 24) {
+		VARCINT[36] = clientclock
+	} else if (int0 = 25) {
+		VARCINT[37] = clientclock
+	} else if (int0 = 26) {
+		VARCINT[38] = clientclock
+	} else if (int0 = 27) {
+		VARCINT[39] = clientclock
+	}
+	return 
+}

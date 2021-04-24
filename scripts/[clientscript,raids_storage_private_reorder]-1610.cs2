@@ -1,0 +1,23 @@
+// 1610 clientscript
+fun raids_storage_private_reorder(component0: Component, comsubid1: Int, dropsubid2: Int, component3: Component) {
+
+	val size4: Int = inv_size(inv_583)
+	if (comsubid1 < 0 | comsubid1 >= size4) {
+		return 
+	}
+	if (dropsubid2 < 0 | dropsubid2 >= size4) {
+		return 
+	}
+	val obj5: Obj = inv_getobj(inv_583, comsubid1)
+	if (obj5 = null) {
+		return 
+	}
+	val obj6: Obj = inv_getobj(inv_583, dropsubid2)
+	if (cc_find(component0, dropsubid2) = ^true) {
+		~raids_storage_private_drawitem(obj5, inv_getnum(inv_583, comsubid1), 0, component3)
+	}
+	if (cc_find(component0, comsubid1) = ^true) {
+		~raids_storage_private_drawitem(obj6, inv_getnum(inv_583, dropsubid2), 0, component3)
+	}
+	return 
+}

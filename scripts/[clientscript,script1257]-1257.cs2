@@ -1,0 +1,10 @@
+// 1257 clientscript
+fun script1257(clock0: Int, component1: Component, int2: Int, string0: String, obj3: Obj, obj4: Obj) {
+
+	if (clientclock < clock0) {
+		return 
+	}
+	if_setontimer(null, component1)
+	~script1253(component1, int2, string0, obj3, obj4)
+	return 
+}

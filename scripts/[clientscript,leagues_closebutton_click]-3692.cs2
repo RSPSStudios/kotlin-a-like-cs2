@@ -1,0 +1,12 @@
+// 3692 clientscript
+fun leagues_closebutton_click(boolean0: Boolean) {
+
+	if (~in_league_tutorial = 1) {
+		if (boolean0 = true & VARBIT[10037] < 9 & ~script3681(2) = 0) {
+			sound_synth(pillory_wrong, 1, 0)
+		}
+		return 
+	}
+	if_close
+	return 
+}

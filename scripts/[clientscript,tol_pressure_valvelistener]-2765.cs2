@@ -1,0 +1,6 @@
+// 2765 clientscript
+fun tol_pressure_valvelistener(component0: Component, int1: Int, bool2: Int) {
+
+	~tol_pressure_valvelistener(component0, int1, bool2)
+	return 
+}

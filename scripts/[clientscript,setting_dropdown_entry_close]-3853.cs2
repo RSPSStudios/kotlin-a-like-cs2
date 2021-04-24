@@ -1,0 +1,15 @@
+// 3853 clientscript
+fun setting_dropdown_entry_close(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, comsubid6: Int) {
+
+	if (cc_find(component5, comsubid6) = ^true) {
+		cc_setgraphic("scrollbar_v2,1")
+	}
+	cc_deleteall(component0)
+	cc_deleteall(component1)
+	cc_deleteall(component2)
+	cc_deleteall(component3)
+	cc_deleteall(component4)
+	if_setonop(null, component1)
+	if_sethide(true, component4)
+	return 
+}

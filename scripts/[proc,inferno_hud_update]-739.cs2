@@ -1,0 +1,16 @@
+// 739 proc
+fun inferno_hud_update(component0: Component, component1: Component) {
+
+	val text0: String = "${tostring(VARBIT[5653])} / ${tostring(VARBIT[5654])}"
+	if_settext(text0, component0)
+	val int2: Int = if_getwidth(interface_596:8)
+	int2 = scale(VARBIT[5653], VARBIT[5654], int2)
+	if (int2 = 0 & VARBIT[5653] > 0) {
+		int2 = 1
+	}
+	if (int2 = if_getwidth(interface_596:8) & VARBIT[5653] < VARBIT[5654]) {
+		int2 = calc(int2 - 1)
+	}
+	if_setsize(int2, if_getheight(component1), ^setsize_abs, ^setsize_abs, component1)
+	return 
+}

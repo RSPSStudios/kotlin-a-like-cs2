@@ -1,0 +1,27 @@
+// 2910 proc
+fun gauntlet_map_start_update() {
+
+	val graphic0: Graphic = "gauntlet_map_icons,5"
+	if (VARBIT[9292] = 1) {
+		graphic0 = "gauntlet_map_icons,8"
+	}
+	when (VARBIT[9291]): Int {
+		23 -> {
+		
+			if_setgraphic(graphic0, interface_638:28)
+		}
+		25 -> {
+		
+			if_setgraphic(graphic0, interface_638:30)
+		}
+		31 -> {
+		
+			if_setgraphic(graphic0, interface_638:36)
+		}
+		17 -> {
+		
+			if_setgraphic(graphic0, interface_638:22)
+		}
+	}
+	return 
+}

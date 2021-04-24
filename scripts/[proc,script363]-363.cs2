@@ -1,0 +1,54 @@
+// 363 proc
+fun script363(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component) {
+
+	~script373(component9, VARBIT[9794])
+	~script365(component3, VARBIT[3812])
+	~script366(component5, VARBIT[9849])
+	when (VARBIT[3809]): Int {
+		1 -> {
+		
+			if_setcolour(0x3366ff, component4)
+		}
+		2 -> {
+		
+			if_setcolour(0xff3232, component4)
+		}
+	else -> {
+	
+		if_setcolour(0xa5a5a5, component4)
+	}
+	}
+	~script365(component0, VARBIT[3814])
+	~script366(component2, VARBIT[9852])
+	when (VARBIT[3811]): Int {
+		1 -> {
+		
+			if_setcolour(0x3366ff, component1)
+		}
+		2 -> {
+		
+			if_setcolour(0xff3232, component1)
+		}
+	else -> {
+	
+		if_setcolour(0xa5a5a5, component1)
+	}
+	}
+	~script365(component6, VARBIT[3813])
+	~script366(component8, VARBIT[9850])
+	when (VARBIT[3810]): Int {
+		1 -> {
+		
+			if_setcolour(0x3366ff, component7)
+		}
+		2 -> {
+		
+			if_setcolour(0xff3232, component7)
+		}
+	else -> {
+	
+		if_setcolour(0xa5a5a5, component7)
+	}
+	}
+	return 
+}

@@ -1,0 +1,78 @@
+// 1525 proc
+fun raids_partydetails_setsort(int0: Int) {
+
+	~raids_partydetails_sortbutton_draw(interface_507:7, 0, 1, "Sort by name", int0)
+	~raids_partydetails_sortbutton_draw(interface_507:8, 2, 3, "Sort by combat level", int0)
+	~raids_partydetails_sortbutton_draw(interface_507:9, 4, 5, "Sort by skill total", int0)
+	~raids_partydetails_sortbutton_draw(interface_507:10, 6, 7, "Sort by kill count", int0)
+	int0[100]: Int
+	val int1: Int = 0
+	val int2: Int = 0
+	while (int2 = 0 & int1 < 100) {
+		if (cc_find(interface_507:11, calc(int1 * 8)) = ^true) {
+			int0[int1] = int1
+			int1 = calc(int1 + 1)
+		} else {
+			int2 = 1
+		}
+	}
+	val string0: String = ""
+	if (int1 >= 2) {
+		if (VARCINT[181] = 2 | VARCINT[181] = 3) {
+			~raids_partydetails_sort(int0, 0, calc(int1 - 1), 5)
+		} else if (VARCINT[181] = 4 | VARCINT[181] = 5) {
+			~raids_partydetails_sort(int0, 0, calc(int1 - 1), 6)
+		} else if (VARCINT[181] = 6 | VARCINT[181] = 7) {
+			~raids_partydetails_sort(int0, 0, calc(int1 - 1), 7)
+		} else {
+			~raids_partydetails_sort(int0, 0, calc(int1 - 1), 1)
+		}
+	}
+	val int3: Int = 0
+	val int4: Int = 0
+	if (VARCINT[181] = 3 | VARCINT[181] = 5 | VARCINT[181] = 7 | VARCINT[181] = 1) {
+		int3 = int1
+		while (int3 > 0) {
+			int3 = calc(int3 - 1)
+			if (cc_find(interface_507:11, calc(int0[int3] * 8)) = ^true) {
+				cc_setposition(cc_getx, int4, ^setpos_abs_left, ^setpos_abs_top)
+				~raids_partydetails_entry_init(int3, int0[int3], int0, true)
+			}
+			if (cc_find(interface_507:11, calc(int0[int3] * 8 + 1)) = ^true) {
+				cc_setposition(cc_getx, int4, ^setpos_abs_left, ^setpos_abs_top)
+			}
+			if (cc_find(interface_507:11, calc(int0[int3] * 8 + 2)) = ^true) {
+				cc_setposition(cc_getx, int4, ^setpos_abs_left, ^setpos_abs_top)
+			}
+			if (cc_find(interface_507:11, calc(int0[int3] * 8 + 3)) = ^true) {
+				cc_setposition(cc_getx, int4, ^setpos_abs_left, ^setpos_abs_top)
+			}
+			if (cc_find(interface_507:11, calc(int0[int3] * 8 + 4)) = ^true) {
+				cc_setposition(cc_getx, int4, ^setpos_abs_left, ^setpos_abs_top)
+			}
+			int4 = calc(int4 + 14)
+		}
+	} else {
+		while (int3 < int1) {
+			if (cc_find(interface_507:11, calc(int0[int3] * 8)) = ^true) {
+				cc_setposition(cc_getx, int4, ^setpos_abs_left, ^setpos_abs_top)
+				~raids_partydetails_entry_init(int3, int0[int3], int0, true)
+			}
+			if (cc_find(interface_507:11, calc(int0[int3] * 8 + 1)) = ^true) {
+				cc_setposition(cc_getx, int4, ^setpos_abs_left, ^setpos_abs_top)
+			}
+			if (cc_find(interface_507:11, calc(int0[int3] * 8 + 2)) = ^true) {
+				cc_setposition(cc_getx, int4, ^setpos_abs_left, ^setpos_abs_top)
+			}
+			if (cc_find(interface_507:11, calc(int0[int3] * 8 + 3)) = ^true) {
+				cc_setposition(cc_getx, int4, ^setpos_abs_left, ^setpos_abs_top)
+			}
+			if (cc_find(interface_507:11, calc(int0[int3] * 8 + 4)) = ^true) {
+				cc_setposition(cc_getx, int4, ^setpos_abs_left, ^setpos_abs_top)
+			}
+			int4 = calc(int4 + 14)
+			int3 = calc(int3 + 1)
+		}
+	}
+	return 
+}

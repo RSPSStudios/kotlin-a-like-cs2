@@ -1,0 +1,6 @@
+// 3786 clientscript
+fun script3786(component0: Component, struct1: Struct, component2: Component) {
+
+	~script3787(component0, struct1, component2)
+	return 
+}

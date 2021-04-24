@@ -1,0 +1,6 @@
+// 3546 clientscript
+fun poh_costumes_heightstretch(component0: Component, component1: Component, component2: Component, component3: Component, height4: Int, int5: Int, height6: Int) {
+
+	~poh_costumes_heightstretch(component0, component1, component2, component3, height4, int5, height6)
+	return 
+}

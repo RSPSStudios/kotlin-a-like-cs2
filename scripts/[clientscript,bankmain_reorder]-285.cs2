@@ -1,0 +1,69 @@
+// 285 clientscript
+fun bankmain_reorder(drop0: Component, comsubid1: Int, drop2: Component, dropsubid3: Int, trans4: Int, component5: Component, drop6: Component, component7: Component, component8: Component) {
+
+	if (comsubid1 < 0 | comsubid1 >= 816) {
+		return 
+	}
+	if (drop2 = drop6) {
+		~script1317(comsubid1, drop0, drop6, component7, component8)
+		return 
+	}
+	val int9: Int = ~bank_tabforslot(dropsubid3)
+	if (drop2 ! drop0 | dropsubid3 < 0 | dropsubid3 >= 816 | ~bank_tabforslot(comsubid1) ! int9) {
+		if (cc_find(drop0, comsubid1) = ^true) {
+			cc_settrans(200)
+			cc_setontimer({
+				cc_settrans_temporarily_end(event_com, event_comsubid, trans4, calc(clientclock + 10))
+			})
+		}
+		return 
+	}
+	val obj10: Obj = inv_getobj(bank, comsubid1)
+	if (obj10 = null) {
+		return 
+	}
+	val obj11: Obj = inv_getobj(bank, dropsubid3)
+	if (VARBIT[3959] = 0 | dropsubid3 = calc(comsubid1 + 1) | dropsubid3 = calc(comsubid1 - 1) | obj11 = null & int9 = 0) {
+		if (cc_find(drop0, dropsubid3) = ^true) {
+			~bankmain_drawitem(obj10, inv_getnum(bank, comsubid1), drop0, component5, drop6, component7, component8)
+		}
+		if (cc_find(drop0, comsubid1) = ^true) {
+			~bankmain_drawitem(obj11, inv_getnum(bank, dropsubid3), drop0, component5, drop6, component7, component8)
+		}
+		return 
+	}
+	if (obj11 = null | ~bankmain_searching = 1) {
+		if (cc_find(drop0, comsubid1) = ^true) {
+			cc_settrans(200)
+			cc_setontimer({
+				cc_settrans_temporarily_end(event_com, event_comsubid, trans4, calc(clientclock + 10))
+			})
+		}
+		return 
+	}
+	val dropsubid12: Int = -1
+	val slot13: Int = -1
+	if (dropsubid3 < comsubid1) {
+		dropsubid12 = comsubid1
+		while (dropsubid12 > dropsubid3) {
+			if (cc_find(drop0, dropsubid12) = ^true) {
+				slot13 = calc(dropsubid12 - 1)
+				~bankmain_drawitem(inv_getobj(bank, slot13), inv_getnum(bank, slot13), drop0, component5, drop6, component7, component8)
+			}
+			dropsubid12 = calc(dropsubid12 - 1)
+		}
+	} else {
+		dropsubid12 = comsubid1
+		while (dropsubid12 < dropsubid3) {
+			if (cc_find(drop0, dropsubid12) = ^true) {
+				slot13 = calc(dropsubid12 + 1)
+				~bankmain_drawitem(inv_getobj(bank, slot13), inv_getnum(bank, slot13), drop0, component5, drop6, component7, component8)
+			}
+			dropsubid12 = calc(dropsubid12 + 1)
+		}
+	}
+	if (cc_find(drop0, dropsubid3) = ^true) {
+		~bankmain_drawitem(obj10, inv_getnum(bank, comsubid1), drop0, component5, drop6, component7, component8)
+	}
+	return 
+}

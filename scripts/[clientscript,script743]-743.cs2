@@ -1,0 +1,14 @@
+// 743 clientscript
+fun script743(component0: Component, comsubid1: Int, int2: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		if (int2 > 0) {
+			int2 = calc(int2 - 1)
+		}
+		cc_settext(~script744(int2))
+		cc_setontimer({
+			script743(event_com, event_comsubid, int2)
+		})
+	}
+	return 
+}

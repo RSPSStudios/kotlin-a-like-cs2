@@ -1,0 +1,5 @@
+// 4027 proc
+fun script4027(count0: Int): Int {
+
+	return ~script4028(count0, enum_2100)
+}

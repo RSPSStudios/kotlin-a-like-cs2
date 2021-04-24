@@ -1,0 +1,6 @@
+// 137 clientscript
+fun abyssalsire_overseer_update(component0: Component, clock1: Int) {
+
+	~abyssalsire_overseer_update(component0, calc(clientclock - clock1))
+	return 
+}

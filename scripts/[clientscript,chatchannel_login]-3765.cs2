@@ -1,0 +1,13 @@
+// 3765 clientscript
+fun chatchannel_login(string0: String) {
+
+	if (string_length(string0) > 0) {
+		if (string_length(clan_getchatownername) > 0) {
+			clan_leavechat
+		}
+		~meslayer_initlastnames
+		VARCSTRING[362] = removetags(string0)
+		clan_joinchat(string0)
+	}
+	return 
+}

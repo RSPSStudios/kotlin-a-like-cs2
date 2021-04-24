@@ -1,0 +1,11 @@
+// 987 clientscript
+fun keybind_close_dropdown(component0: Component, component1: Component) {
+
+	if_sethide(true, component0)
+	if (~on_mobile = true) {
+		if_setgraphic("mobile_stones,0", component1)
+	} else {
+		if_setgraphic("graphic_1180", component1)
+	}
+	return 
+}

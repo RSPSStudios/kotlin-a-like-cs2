@@ -1,0 +1,9 @@
+// 36 clientscript
+fun scrollbar_vertical_wheel(component0: Component, component1: Component, mousey2: Int) {
+
+	val int3: Int = calc(if_getscrolly(component1) + mousey2 * 45)
+	if (cc_find(component0, 1) = ^true) {
+		~scrollbar_vertical_doscroll(component0, component1, int3, true)
+	}
+	return 
+}

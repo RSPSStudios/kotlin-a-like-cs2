@@ -1,0 +1,49 @@
+// 3591 proc
+fun teletab_button_redraw(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component) {
+
+	val enum16: Enum = enum(int, enum, enum_908, VARBIT[10599])
+	if (enum16 = null) {
+		return 
+	}
+	val enum17: Enum = enum(int, enum, enum_909, VARBIT[10599])
+	if (enum17 = null) {
+		return 
+	}
+	if (enum16 = null) {
+		return 
+	}
+	val namedobj18: Namedobj = enum(int, namedobj, enum16, int0)
+	if (namedobj18 = null) {
+		if_sethide(true, component1)
+		return 
+	}
+	if_sethide(false, component1)
+	val obj19: Obj = oc_param(namedobj18, param_608)
+	if (obj19 = null) {
+		return 
+	}
+	val boolean20: Boolean = false
+	if (stat(magic) >= oc_param(obj19, spell_levelreq) & ~magic_spellbook_hasrunes(obj19) = 1) {
+		boolean20 = true
+	}
+	if (VARBIT[10600] = int0) {
+		~teletab_button_draw(true, enum16, enum17, int0, component1, boolean20)
+		if_setonmouserepeat(null, component1)
+		if_setonmouseleave(null, component1)
+		if_setonop({
+			opsound(event_opindex, 2)
+		}, component1)
+	} else {
+		~teletab_button_draw(false, enum16, enum17, int0, component1, boolean20)
+		if_setonmouserepeat({
+			teletab_button_draw(true, enum16, enum17, int0, component1, boolean20)
+		}, component1)
+		if_setonmouseleave({
+			teletab_button_draw(false, enum16, enum17, int0, component1, boolean20)
+		}, component1)
+		if_setonop({
+			teletab_button_op(event_opindex, int0, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15)
+		}, component1)
+	}
+	return 
+}

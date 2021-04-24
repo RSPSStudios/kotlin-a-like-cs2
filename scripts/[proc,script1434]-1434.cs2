@@ -1,0 +1,34 @@
+// 1434 proc
+fun script1434(boolean0: Boolean, enum1: Enum, boolean2: Boolean) {
+
+	if_sethide(boolean0, interface_90:31)
+	if_setposition(0, 2, ^setpos_abs_right, ^setpos_abs_top, interface_90:31)
+	if_sethide(boolean2, interface_90:36)
+	if (boolean2 = false) {
+		if_setonvartransmit({
+			deadman_tournament_timer_resynch(event_com){VARP[1434], VARP[1542], VARP[1676], VARP[1601], VARP[1602]}
+		}, interface_90:36)
+		if_setonvartransmit({
+			script1636(event_com){VARP[1293], VARP[1542], VARP[1601], VARP[1602]}
+		}, interface_90:40)
+	} else {
+		if_setontimer(null, interface_90:36)
+		if_setonvartransmit(null, interface_90:36)
+		if_setonvartransmit(null, interface_90:40)
+	}
+	if (boolean0 = true) {
+		return 
+	}
+	if (~wildwars_world = 1) {
+		if_setonvartransmit({
+			wildwars_hudupdate{VARP[1601], VARP[1602]}
+		}, interface_90:32)
+		~wildwars_hudupdate
+	} else {
+		if_setonvartransmit({
+			deadman_tournament_hudupdate{VARP[1542], VARP[1293]}
+		}, interface_90:32)
+		~deadman_tournament_hudupdate
+	}
+	return 
+}

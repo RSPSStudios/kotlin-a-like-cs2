@@ -1,0 +1,6 @@
+// 2308 clientscript
+fun script2308(string0: String) {
+
+	~tob_hud_fade(^white, 0, 0, string0, 0)
+	return 
+}

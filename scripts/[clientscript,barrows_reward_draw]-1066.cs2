@@ -1,0 +1,6 @@
+// 1066 clientscript
+fun barrows_reward_draw(component0: Component, size1: Int) {
+
+	~barrows_reward_draw(component0, size1)
+	return 
+}

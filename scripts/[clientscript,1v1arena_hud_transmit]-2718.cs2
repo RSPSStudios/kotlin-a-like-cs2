@@ -1,0 +1,36 @@
+// 2718 clientscript
+fun 1v1arena_hud_transmit(int0: Int, int1: Int, int2: Int, int3: Int, int4: Int, int5: Int, int6: Int, int7: Int, int8: Int, int9: Int, int10: Int, int11: Int, int12: Int, int13: Int, int14: Int, int15: Int, int16: Int, int17: Int, int18: Int, int19: Int, int20: Int, int21: Int, int22: Int, int23: Int, int24: Int, string0: String) {
+
+	val int25: Int = 0
+	val int26: Int = 0
+	val int27: Int = 0
+	val int28: Int = 0
+	val int29: Int = 0
+	val int30: Int = 0
+	string0, int25, int26, int27, int28, int29, int30 = ~1v1arena_hud_buildplayer(0, int0, string0, int25, int26, int27, int28, int29, int30)
+	string0, int25, int26, int27, int28, int29, int30 = ~1v1arena_hud_buildplayer(1, int1, string0, int25, int26, int27, int28, int29, int30)
+	string0, int25, int26, int27, int28, int29, int30 = ~1v1arena_hud_buildplayer(2, int2, string0, int25, int26, int27, int28, int29, int30)
+	string0, int25, int26, int27, int28, int29, int30 = ~1v1arena_hud_buildplayer(3, int3, string0, int25, int26, int27, int28, int29, int30)
+	string0, int25, int26, int27, int28, int29, int30 = ~1v1arena_hud_buildplayer(4, int4, string0, int25, int26, int27, int28, int29, int30)
+	string0, int25, int26, int27, int28, int29, int30 = ~1v1arena_hud_buildplayer(5, int5, string0, int25, int26, int27, int28, int29, int30)
+	string0, int25, int26, int27, int28, int29, int30 = ~1v1arena_hud_buildplayer(6, int6, string0, int25, int26, int27, int28, int29, int30)
+	string0, int25, int26, int27, int28, int29, int30 = ~1v1arena_hud_buildplayer(7, int7, string0, int25, int26, int27, int28, int29, int30)
+	string0, int25, int26, int27, int28, int29, int30 = ~1v1arena_hud_buildplayer(8, int8, string0, int25, int26, int27, int28, int29, int30)
+	string0, int25, int26, int27, int28, int29, int30 = ~1v1arena_hud_buildplayer(9, int9, string0, int25, int26, int27, int28, int29, int30)
+	string0, int25, int26, int27, int28, int29, int30 = ~1v1arena_hud_buildplayer(10, int10, string0, int25, int26, int27, int28, int29, int30)
+	string0, int25, int26, int27, int28, int29, int30 = ~1v1arena_hud_buildplayer(11, int11, string0, int25, int26, int27, int28, int29, int30)
+	string0, int25, int26, int27, int28, int29, int30 = ~1v1arena_hud_buildplayer(12, int12, string0, int25, int26, int27, int28, int29, int30)
+	string0, int25, int26, int27, int28, int29, int30 = ~1v1arena_hud_buildplayer(13, int13, string0, int25, int26, int27, int28, int29, int30)
+	string0, int25, int26, int27, int28, int29, int30 = ~1v1arena_hud_buildplayer(14, int14, string0, int25, int26, int27, int28, int29, int30)
+	string0, int25, int26, int27, int28, int29, int30 = ~1v1arena_hud_buildplayer(15, int15, string0, int25, int26, int27, int28, int29, int30)
+	string0, int25, int26, int27, int28, int29, int30 = ~1v1arena_hud_buildplayer(16, int16, string0, int25, int26, int27, int28, int29, int30)
+	string0, int25, int26, int27, int28, int29, int30 = ~1v1arena_hud_buildplayer(17, int17, string0, int25, int26, int27, int28, int29, int30)
+	string0, int25, int26, int27, int28, int29, int30 = ~1v1arena_hud_buildplayer(18, int18, string0, int25, int26, int27, int28, int29, int30)
+	string0, int25, int26, int27, int28, int29, int30 = ~1v1arena_hud_buildplayer(19, int19, string0, int25, int26, int27, int28, int29, int30)
+	~1v1arena_hud_buildarena(interface_618:8, int20)
+	~1v1arena_hud_buildarena(interface_618:9, int21)
+	~1v1arena_hud_buildarena(interface_618:10, int22)
+	~1v1arena_hud_buildarena(interface_618:11, int23)
+	~1v1arena_hud_buildarena(interface_618:12, int24)
+	return 
+}

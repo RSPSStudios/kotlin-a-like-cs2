@@ -1,0 +1,6 @@
+// 1970 proc
+fun deadman_lobby_tele() {
+
+	docheat("~dmm_lobby_tele")
+	return 
+}

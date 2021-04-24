@@ -1,0 +1,8 @@
+// 3721 proc
+fun script3721(flags0: Int): Int {
+
+	if (testbit(flags0, 13) = ^true) {
+		return 1
+	}
+	return 0
+}

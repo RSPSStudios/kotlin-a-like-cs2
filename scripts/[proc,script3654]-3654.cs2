@@ -1,0 +1,7 @@
+// 3654 proc
+fun script3654(component0: Component, graphic1: Graphic) {
+
+	cc_deleteall(component0)
+	if_setgraphic(graphic1, component0)
+	return 
+}

@@ -1,0 +1,6 @@
+// 2554 clientscript
+fun fossil_pool_overlay_init(component0: Component) {
+
+	~script2249(component0, setbit(0, 0))
+	return 
+}

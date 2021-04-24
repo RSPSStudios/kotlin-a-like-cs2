@@ -1,0 +1,6 @@
+// 3389 proc
+fun tut2_progressbar_set(component0: Component) {
+
+	if_setsize(scale(VARP[2687], 20, 16384), 0, ^setsize_2, ^setsize_minus, component0)
+	return 
+}

@@ -1,0 +1,246 @@
+// 3218 proc
+fun league_info_draw_interface(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, int9: Int, int10: Int, comsubid11: Int) {
+
+	cc_deleteall(component0)
+	cc_deleteall(component1)
+	cc_deleteall(component2)
+	cc_deleteall(component3)
+	cc_deleteall(component6)
+	cc_deleteall(component7)
+	val struct12: Struct = enum(int, struct, enum_2670, VARBIT[10032])
+	if (struct12 = null) {
+		return 
+	}
+	val struct13: Struct = struct_1239
+	val colour14: Int = 0xff981f
+	colour14 = struct_param(struct12, param_1027)
+	if (cc_find(interface_654:2, comsubid11) = ^true) {
+		cc_setcolour(colour14)
+	} else {
+		mes("Couldn't find the frame.")
+	}
+	cc_create(component0, ^iftype_text, 0)
+	cc_setposition(0, 1, ^setpos_abs_centre, ^setpos_abs_top)
+	cc_setsize(0, 1, ^setsize_minus, ^setsize_minus)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_setcolour(colour14)
+	cc_settextshadow(true)
+	cc_settextfont(b12_full)
+	cc_settext("General League Information")
+	cc_create(component1, ^iftype_text, 0)
+	cc_setposition(0, 1, ^setpos_abs_centre, ^setpos_abs_top)
+	cc_setsize(0, 1, ^setsize_minus, ^setsize_minus)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_setcolour(colour14)
+	cc_settextshadow(true)
+	cc_settextfont(b12_full)
+	cc_settext("League Specific Information")
+	val enum15: Enum = struct_param(struct13, param_886)
+	val enum16: Enum = struct_param(struct13, param_887)
+	val enum17: Enum = struct_param(struct12, param_888)
+	val enum18: Enum = struct_param(struct12, param_889)
+	val int19: Int = struct_param(struct12, param_872)
+	val int20: Int = calc(1 + (int19 - VARBIT[9535]))
+	val fontmetrics21: Fontmetrics = p12_full
+	val fontmetrics22: Fontmetrics = p12_full
+	if (~on_mobile = true) {
+		fontmetrics21, fontmetrics22 = p12_full, p12_full
+	}
+	if (int20 < 1) {
+		int20 = 1
+	}
+	val int23: Int = 0
+	val int24: Int = 0
+	val x25: Int = 0
+	val height26: Int = 0
+	val height27: Int = 0
+	val int28: Int = 0
+	val string0: String = ""
+	val width29: Int = if_getwidth(component2)
+	val width30: Int = if_getwidth(component3)
+	val string1: String = "<img=13> ${~text_device("Click", "Tap")} to open the Leagues blog!<br>"
+	val int31: Int = calc(12 * paraheight(string1, width29 - 10, p12_full) + 10)
+	val string2: String = "<img=13> ${~text_device("Click", "Tap")} to open the ${~league_get_league_name} blog!<br>"
+	val url3: String = "https://osrs.game/Leagues"
+	val url4: String = "https://osrs.game/Trailblazer-League"
+	val int32: Int = calc(12 * paraheight(string2, width30 - 10, p12_full) + 10)
+	val int33: Int = int32
+	if (int31 > int32) {
+		int33 = int31
+	}
+	int33 = calc(int33 + 10)
+	~leagues_menu_button(component6, int24, component7, component8)
+	int24 = 0
+	~league_create_dropdown(component6, component7, component8, int24, 0)
+	int24 = 0
+	while (int23 < enum_getoutputcount(enum15)) {
+		if (int23 = 0 & clienttype ! ^clienttype_ios) {
+			cc_create(component2, ^iftype_rectangle, int24)
+			cc_setsize(width29, int33, ^setsize_abs, ^setsize_abs)
+			cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_top)
+			cc_setcolour(^white)
+			cc_setfill(true)
+			cc_settrans(235)
+			int24 = calc(int24 + 1)
+			cc_create(component2, ^iftype_text, int24)
+			cc_setposition(5, height26, ^setpos_abs_left, ^setpos_abs_top)
+			cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+			cc_settext(string1)
+			cc_settextfont(p12_full)
+			cc_settextshadow(true)
+			cc_setcolour(colour14)
+			cc_setsize(calc(width29 - 10), int33, ^setsize_abs, ^setsize_abs)
+			if (~on_mobile = false) {
+				cc_setonmouseover({
+					league_info_mouseover(component2, int24)
+				})
+				cc_setonmouseleave({
+					league_info_mouseleave(component2, int24, colour14)
+				})
+			}
+			cc_setop(1, "Open Link")
+			cc_setonop({
+				league_blog_click(url3)
+			})
+			height26 = calc(height26 + int33)
+			int24 = calc(int24 + 1)
+		}
+		cc_create(component2, ^iftype_rectangle, int24)
+		cc_setsize(width29, 20, ^setsize_abs, ^setsize_abs)
+		cc_setposition(0, height26, ^setpos_abs_left, ^setpos_abs_top)
+		cc_setcolour(^white)
+		cc_setfill(true)
+		cc_settrans(255)
+		int24 = calc(int24 + 1)
+		cc_create(component2, ^iftype_text, int24)
+		cc_settext(enum(int, string, enum15, int23))
+		cc_setposition(0, height26, ^setpos_abs_left, ^setpos_abs_top)
+		cc_settextfont(b12_full)
+		cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+		cc_setcolour(colour14)
+		cc_settextshadow(true)
+		cc_setsize(width29, 20, ^setsize_abs, ^setsize_abs)
+		int24 = calc(int24 + 1)
+		height26 = calc(height26 + 20)
+		string0 = enum(int, string, enum16, int23)
+		string0 = ~script1299(string0, "|", "<br><br>")
+		int28 = paraheight(string0, calc(width29 - 10), fontmetrics22)
+		cc_create(component2, ^iftype_rectangle, int24)
+		cc_setsize(width29, calc(15 * int28 + 15), ^setsize_abs, ^setsize_abs)
+		cc_setposition(0, height26, ^setpos_abs_left, ^setpos_abs_top)
+		cc_setcolour(^white)
+		cc_setfill(true)
+		cc_settrans(235)
+		int24 = calc(int24 + 1)
+		cc_create(component2, ^iftype_text, int24)
+		cc_setposition(5, height26, ^setpos_abs_left, ^setpos_abs_top)
+		cc_settext(string0)
+		cc_settextfont(fontmetrics21)
+		cc_settextshadow(true)
+		cc_setcolour(colour14)
+		cc_settextalign(^settextalign_left, ^settextalign_centre, 15)
+		cc_setsize(calc(width29 - 10), calc(15 * int28 + 15), ^setsize_abs, ^setsize_abs)
+		int24 = calc(int24 + 1)
+		height26 = calc(height26 + (15 * int28 + 15))
+		int23 = calc(int23 + 1)
+	}
+	int23 = 0
+	int24 = 0
+	x25 = 5
+	while (int23 < enum_getoutputcount(enum17)) {
+		if (int23 = 0 & clienttype ! ^clienttype_ios) {
+			cc_create(component3, ^iftype_rectangle, int24)
+			cc_setsize(width30, int33, ^setsize_abs, ^setsize_abs)
+			cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_top)
+			cc_setcolour(^white)
+			cc_setfill(true)
+			cc_settrans(235)
+			int24 = calc(int24 + 1)
+			cc_create(component3, ^iftype_text, int24)
+			cc_setposition(5, height27, ^setpos_abs_left, ^setpos_abs_top)
+			cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+			cc_settext(string2)
+			cc_settextfont(p12_full)
+			cc_settextshadow(true)
+			cc_setcolour(colour14)
+			cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+			cc_setsize(calc(width30 - 10), int33, ^setsize_abs, ^setsize_abs)
+			if (~on_mobile = false) {
+				cc_setonmouseover({
+					league_info_mouseover(component3, int24)
+				})
+				cc_setonmouseleave({
+					league_info_mouseleave(component3, int24, colour14)
+				})
+			}
+			cc_setop(1, "Open Link")
+			cc_setonop({
+				league_blog_click(url4)
+			})
+			height27 = calc(height27 + int33)
+			int24 = calc(int24 + 1)
+		}
+		cc_create(component3, ^iftype_rectangle, int24)
+		cc_setsize(width30, 20, ^setsize_abs, ^setsize_abs)
+		cc_setposition(0, height27, ^setpos_abs_left, ^setpos_abs_top)
+		cc_setcolour(^white)
+		cc_setfill(true)
+		cc_settrans(255)
+		int24 = calc(int24 + 1)
+		cc_create(component3, ^iftype_text, int24)
+		cc_settext(enum(int, string, enum17, int23))
+		cc_setposition(0, height27, ^setpos_abs_left, ^setpos_abs_top)
+		cc_settextfont(b12_full)
+		cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+		cc_setcolour(colour14)
+		cc_settextshadow(true)
+		cc_setsize(width30, 20, ^setsize_abs, ^setsize_abs)
+		int24 = calc(int24 + 1)
+		height27 = calc(height27 + 20)
+		string0 = enum(int, string, enum18, int23)
+		if (int23 = 0) {
+			if (int20 = 1) {
+				string0 = append(string0, "|There is ${tostring(int20)} day left in<br>${~league_get_league_name}!")
+			} else {
+				string0 = append(string0, "|There are ${tostring(int20)} days left in<br>${~league_get_league_name}!")
+			}
+		}
+		string0 = ~script1299(string0, "|", "<br><br>")
+		int28 = paraheight(string0, calc(width30 - 10), fontmetrics22)
+		cc_create(component3, ^iftype_rectangle, int24)
+		cc_setsize(width30, calc(15 * int28 + 15), ^setsize_abs, ^setsize_abs)
+		cc_setposition(0, height27, ^setpos_abs_left, ^setpos_abs_top)
+		cc_setcolour(^white)
+		cc_setfill(true)
+		cc_settrans(235)
+		int24 = calc(int24 + 1)
+		cc_create(component3, ^iftype_text, int24)
+		cc_setposition(x25, height27, ^setpos_abs_left, ^setpos_abs_top)
+		cc_settext(string0)
+		cc_settextfont(fontmetrics21)
+		cc_settextshadow(true)
+		cc_setcolour(colour14)
+		cc_settextalign(^settextalign_left, ^settextalign_centre, 15)
+		cc_setsize(calc(width30 - 10), calc(15 * int28 + 15), ^setsize_abs, ^setsize_abs)
+		int24 = calc(int24 + 1)
+		height27 = calc(height27 + (15 * int28 + 15))
+		int23 = calc(int23 + 1)
+	}
+	cc_deleteall(component4)
+	cc_deleteall(component5)
+	val height34: Int = if_getheight(component2)
+	if (height26 > height34) {
+		if_setscrollsize(0, height26, component2)
+	} else {
+		if_setscrollsize(0, 0, component2)
+	}
+	~scrollbar_vertical(component4, component2, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+	val height35: Int = if_getheight(component3)
+	if (height27 > height35) {
+		if_setscrollsize(0, height27, component3)
+	} else {
+		if_setscrollsize(0, 0, component3)
+	}
+	~scrollbar_vertical(component5, component3, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+	return 
+}

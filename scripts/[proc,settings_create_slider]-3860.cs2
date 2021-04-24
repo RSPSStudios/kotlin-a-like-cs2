@@ -1,0 +1,217 @@
+// 3860 proc
+fun settings_create_slider(int0: Int, int1: Int, int2: Int, int3: Int, int4: Int, trans5: Int, struct6: Struct, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component): Int, Int, Int, Int, Int {
+
+	val string0: String = struct_param(struct6, param_1086)
+	val boolean12: Boolean = ~on_mobile
+	if (boolean12 = true & string_length(struct_param(struct6, param_1087)) > 0) {
+		string0 = struct_param(struct6, param_1087)
+	}
+	val string1: String = struct_param(struct6, param_1096)
+	val int13: Int = 0
+	val int14: Int = VARBIT[9665]
+	val boolean15: Boolean = struct_param(struct6, param_1119)
+	if (boolean12 = true & string_length(struct_param(struct6, param_1097)) > 0) {
+		string1 = struct_param(struct6, param_1097)
+	}
+	if (string_length(string1) > 0) {
+		int13 = calc(paraheight(string1, if_getwidth(component8) - 20, p12_full) * 14)
+	}
+	int1 = calc(int1 + int13)
+	if (int14 = 1 | boolean15 = true) {
+		int13 = 0
+	}
+	val int16: Int = calc(paraheight(string0, if_getwidth(component8) - 20, b12_full) * 14)
+	val int17: Int = calc(int16 + int13 + 34)
+	val int18: Int = struct_param(struct6, param_1101)
+	val int19: Int = struct_param(struct6, param_1102)
+	val enum20: Enum = struct_param(struct6, param_1103)
+	int0[int19]: Int
+	if (enum20 ! null) {
+		int17 = calc(int17 + 22)
+	}
+	val int21: Int = struct_param(struct6, param_1077)
+	val boolean22: Boolean = struct_param(struct6, param_1085)
+	val int23: Int = ~script3957(struct6)
+	val int24: Int = 0
+	.cc_create(component8, ^iftype_rectangle, int2)
+	.cc_setsize(10, int17, ^setsize_minus, ^setsize_abs)
+	.cc_setposition(0, int0, ^setpos_abs_centre, ^setpos_abs_top)
+	.cc_setfill(true)
+	.cc_setcolour(^black)
+	.cc_settrans(trans5)
+	val comsubid25: Int = int2
+	int2 = calc(int2 + 1)
+	val string2: String = ""
+	if (struct_param(struct6, param_1158) = true) {
+		string2 = ~script2364(int21)
+	}
+	cc_create(component8, ^iftype_text, int2)
+	val int26: Int = int2
+	cc_setsize(10, int16, ^setsize_minus, ^setsize_abs)
+	cc_setposition(0, calc(int0 + 6), ^setpos_abs_centre, ^setpos_abs_top)
+	cc_settext(append(string0, string2))
+	cc_settextfont(b12_full)
+	cc_settextshadow(true)
+	if (int23 = 1) {
+		cc_setcolour(0xff981f)
+	} else {
+		cc_setcolour(0x9f9f9f)
+	}
+	if (boolean12 = false & int14 = 1 & string_length(string1) > 0) {
+		cc_setonmouserepeat({
+			tooltip_mouserepeat(component8, int2, component11, string1, 25, 190)
+		})
+		cc_setonmouseleave({
+			deltooltip(component11)
+		})
+	}
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 14)
+	int2 = calc(int2 + 1)
+	val int27: Int = 0
+	val int28: Int = 0
+	val int29: Int = 0
+	int24 = calc(19 * 16)
+	val int30: Int = calc(if_getwidth(component8) / 2 - int24 / 2)
+	val int31: Int = int30
+	val int32: Int = calc(int0 + int13 + int16 + 12)
+	while (int29 < 19) {
+		cc_create(component8, ^iftype_graphic, int2)
+		int2 = calc(1 + int2)
+		if (int29 = 0) {
+			cc_setgraphic("settings_slider,0")
+		} else if (int29 = 1) {
+			cc_setgraphic("settings_slider,1")
+			int0[0] = int30
+		} else if (int29 = 17) {
+			cc_setgraphic("settings_slider,4")
+			int0[calc(int19 - 1)] = int30
+		} else if (int29 = 18) {
+			cc_setgraphic("settings_slider,5")
+		} else {
+			cc_setgraphic("settings_slider,3")
+		}
+		cc_setsize(16, 16, ^setsize_abs, ^setsize_abs)
+		cc_setposition(int30, int32, ^setpos_abs_left, ^setpos_abs_top)
+		int30 = calc(int30 + 16)
+		int29 = calc(int29 + 1)
+	}
+	val int33: Int = calc(int31 + 16)
+	val int34: Int = calc(int24 + int31 - 16)
+	val int35: Int = calc(int34 - int33)
+	int29 = 0
+	int30 = 0
+	while (int29 < int19) {
+		if (int29 > 0 & int29 < calc(int19 - 1)) {
+			cc_create(component8, ^iftype_graphic, int2)
+			int2 = calc(int2 + 1)
+			cc_setgraphic("settings_slider,11")
+			cc_setsize(16, 16, ^setsize_abs, ^setsize_abs)
+			int30 = calc(int33 + scale(int29, int19 - 1, int35 - 16))
+			cc_setposition(int30, int32, ^setpos_abs_left, ^setpos_abs_top)
+			int0[int29] = int30
+		}
+		int29 = calc(int29 + 1)
+	}
+	val int36: Int = ~settings_get_slider(int21)
+	val boolean37: Boolean = struct_param(struct6, param_1108)
+	cc_create(component7, ^iftype_graphic, int3)
+	int3 = calc(int3 + 1)
+	if (int23 = 1) {
+		if (boolean37 = true) {
+			cc_setgraphic("settings_slider,8")
+		} else {
+			cc_setgraphic("settings_slider,6")
+		}
+	} else {
+		cc_setgraphic("settings_slider,7")
+	}
+	cc_setsize(16, 16, ^setsize_abs, ^setsize_abs)
+	if (struct_param(struct6, param_1107) = false) {
+		if (int36 = 0) {
+			cc_setposition(int33, int32, ^setpos_abs_left, ^setpos_abs_top)
+		} else if (int36 = calc(int18 - 1)) {
+			cc_setposition(calc(int34 - 16), int32, ^setpos_abs_left, ^setpos_abs_top)
+		} else {
+			cc_setposition(calc(int33 + scale(int36 * 2, (int18 - 1) * 2, int35 - 16)), int32, ^setpos_abs_left, ^setpos_abs_top)
+		}
+	} else {
+		~script3888(int21, component7, calc(int3 - 1), int35, int32, int33)
+	}
+	if (boolean37 = true) {
+		cc_setdraggable(component10, -1)
+		cc_setdragdeadzone(struct_param(struct6, param_1109))
+		cc_setdragdeadtime(struct_param(struct6, param_1110))
+		~settings_slider_choose_ondrag(int21, component7, calc(int3 - 1), int35, int32, int33)
+		~settings_slider_choose_ondragcomplete(int21, component7, calc(int3 - 1), int35, int32, int33)
+	}
+	int29 = 0
+	int30 = int33
+	val int38: Int = 0
+	val op3: String = struct_param(struct6, param_1104)
+	val boolean39: Boolean = struct_param(struct6, param_1105)
+	val boolean40: Boolean = struct_param(struct6, param_1106)
+	val int41: Int = 0
+	while (int29 < int18) {
+		if (boolean39 = true) {
+			cc_create(component9, ^iftype_rectangle, int4)
+			int4 = calc(int4 + 1)
+		} else {
+			cc_create(component8, ^iftype_rectangle, int2)
+			int2 = calc(int2 + 1)
+		}
+		if (boolean40 = false) {
+			cc_setonop({
+				settings_slider_op(struct6, int21, int29, int18, int35, component7, calc(int3 - 1), int32, int33, int34, component8, comsubid25, int26, string0, boolean22)
+			})
+		} else {
+			~settings_slider_choose_onop(int21, component7, calc(int3 - 1), int35, int32, int33, component10, int26, string0)
+		}
+		cc_setposition(int30, int32, ^setpos_abs_left, ^setpos_abs_top)
+		if (int18 > 1) {
+			int38 = calc(scale(1 + int41, int18, int35) - scale(int41, int18, int35))
+			int41 = calc(int41 + 1)
+		} else {
+			int38 = int35
+		}
+		cc_setsize(int38, 16, ^setsize_abs, ^setsize_abs)
+		cc_setfill(true)
+		cc_setcolour(^black)
+		cc_settrans(255)
+		cc_setop(1, op3)
+		int30 = calc(int30 + int38)
+		int29 = calc(int29 + 1)
+	}
+	val y42: Int = calc(int32 + 16 + 6)
+	val int43: Int = int2
+	if (enum20 ! null) {
+		int29 = 0
+		while (int29 < int19) {
+			cc_create(component8, ^iftype_text, int2)
+			int2 = calc(int2 + 1)
+			cc_setsize(30, 16, ^setsize_abs, ^setsize_abs)
+			cc_setposition(calc(int0[int29] + 16 / 2 - 15), y42, ^setpos_abs_left, ^setpos_abs_top)
+			cc_settext(enum(int, string, enum20, int29))
+			cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+			cc_settextfont(p12_full)
+			cc_settextshadow(true)
+			cc_setcolour(0xff981f)
+			int29 = calc(int29 + 1)
+		}
+	}
+	if (boolean22 = true) {
+		~settings_slider_choose_transmit(struct6, int21, int18, int19, int35, component7, calc(int3 - 1), int32, int33, int34, component8, int26, string0, int43, enum20, boolean37)
+	}
+	if (boolean15 = false & int14 = 0 & int13 > 0) {
+		cc_create(component8, ^iftype_text, int2)
+		cc_setsize(10, int13, ^setsize_minus, ^setsize_abs)
+		cc_setposition(0, calc(int0 + int16 + 6), ^setpos_abs_centre, ^setpos_abs_top)
+		cc_settext(string1)
+		cc_settextfont(p12_full)
+		cc_settextshadow(true)
+		cc_setcolour(0x9f9f9f)
+		cc_settextalign(^settextalign_centre, ^settextalign_centre, 14)
+		int2 = calc(int2 + 1)
+	}
+	int0 = calc(int17 + int0)
+	return int0, int1, int2, int3, int4
+}

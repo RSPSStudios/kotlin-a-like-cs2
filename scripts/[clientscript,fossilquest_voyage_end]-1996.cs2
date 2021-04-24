@@ -1,0 +1,7 @@
+// 1996 clientscript
+fun fossilquest_voyage_end(component0: Component) {
+
+	VARCINT[197] = -1
+	if_setontimer(null, component0)
+	return 
+}

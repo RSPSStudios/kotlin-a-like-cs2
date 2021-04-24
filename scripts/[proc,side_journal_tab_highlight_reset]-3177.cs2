@@ -1,0 +1,14 @@
+// 3177 proc
+fun side_journal_tab_highlight_reset(component0: Component, component1: Component, component2: Component, int3: Int) {
+
+	if (VARBIT[8168] = int3) {
+		if_setgraphic("tabs_short,0", component0)
+		if_setgraphic("tabs_short,1", component1)
+		if_setgraphic("tabs_short,0", component2)
+	} else {
+		if_setgraphic("tabs_short,2", component0)
+		if_setgraphic("tabs_short,3", component1)
+		if_setgraphic("tabs_short,2", component2)
+	}
+	return 
+}

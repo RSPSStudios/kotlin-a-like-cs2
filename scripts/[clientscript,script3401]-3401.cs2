@@ -1,0 +1,25 @@
+// 3401 clientscript
+fun script3401(int0: Int) {
+
+	if (int0 = VARBIT[10295]) {
+		return 
+	}
+	val graphic1: Graphic = "checkbox,1"
+	val int2: Int = 10
+	if (VARBIT[10295] = 0) {
+		graphic1 = "checkbox,2"
+	}
+	if (cc_find(interface_162:55, 1) = ^true) {
+		cc_setgraphic(graphic1)
+	}
+	if_setonmouserepeat({
+		script3398
+	}, interface_162:55)
+	if_setonmouseleave({
+		script3399
+	}, interface_162:55)
+	if_setonvartransmit({
+		script3401(VARBIT[10295]){VARP[143]}
+	}, interface_162:55)
+	return 
+}

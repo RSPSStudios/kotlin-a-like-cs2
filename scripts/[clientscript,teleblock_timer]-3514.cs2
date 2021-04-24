@@ -1,0 +1,22 @@
+// 3514 clientscript
+fun teleblock_timer(component0: Component, component1: Component, int2: Int) {
+
+	val int3: Int = calc(clientclock + (VARBIT[4163] - 100) * 30)
+	int3 = calc((int3 - clientclock) / 50)
+	val int4: Int = calc(int3 % 60)
+	if (int4 = int2) {
+		return 
+	}
+	val int5: Int = calc(int3 / 60)
+	val text0: String = "Time Remaining : ${tostring(int5)}:${tostring(int4)}"
+	if (int4 < 10) {
+		text0 = "Time Remaining : ${tostring(int5)}:0${tostring(int4)}"
+	}
+	if (cc_find(component1, 2) = ^true) {
+		cc_settext(text0)
+	}
+	if_setontimer({
+		teleblock_timer(component0, component1, int4)
+	}, interface_90:49)
+	return 
+}

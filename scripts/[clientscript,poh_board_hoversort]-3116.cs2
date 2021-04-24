@@ -1,0 +1,12 @@
+// 3116 clientscript
+fun poh_board_hoversort(component0: Component, int1: Int, trans2: Int, component3: Component, string0: String) {
+
+	if (cc_find(component0, int1) = ^true) {
+		cc_settrans(trans2)
+	}
+	if (.cc_find(component0, calc(int1 + 1)) = ^true) {
+		.cc_settrans(trans2)
+	}
+	~tooltip_mouserepeat(component0, int1, component3, string0, 25, 250)
+	return 
+}

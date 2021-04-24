@@ -1,0 +1,32 @@
+// 298 clientscript
+fun bankside_reorder(drop0: Component, drop1: Component, comsubid2: Int, dropsubid3: Int, component4: Component, component5: Component, component6: Component, component7: Component) {
+
+	val size8: Int = inv_size(inv)
+	if (comsubid2 < 0 | comsubid2 >= size8) {
+		return 
+	}
+	if (dropsubid3 < 0 | dropsubid3 >= size8) {
+		return 
+	}
+	if (drop0 ! drop1) {
+		return 
+	}
+	val obj9: Obj = inv_getobj(inv, comsubid2)
+	if (obj9 = null) {
+		return 
+	}
+	val obj10: Obj = inv_getobj(inv, dropsubid3)
+	if (cc_find(drop0, dropsubid3) = ^true) {
+		~bankside_drawitem(obj9, inv_getnum(inv, comsubid2), comsubid2, drop0, component4, 0, component5, component6, component7)
+	}
+	if (cc_find(drop0, comsubid2) = ^true) {
+		~bankside_drawitem(obj10, inv_getnum(inv, dropsubid3), dropsubid3, drop0, component4, 0, component5, component6, component7)
+	}
+	if (obj9 = looting_bag_11941 | obj9 = looting_bag_22586 | obj10 = looting_bag_11941 | obj10 = looting_bag_22586) {
+		cc_deleteall(component4)
+	}
+	if (obj9 = extradimensional_bag_25106 | obj9 = extradimensional_bag_25108 | obj10 = extradimensional_bag_25106 | obj10 = extradimensional_bag_25108) {
+		cc_deleteall(component4)
+	}
+	return 
+}

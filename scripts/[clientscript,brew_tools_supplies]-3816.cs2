@@ -1,0 +1,6 @@
+// 3816 clientscript
+fun brew_tools_supplies(component0: Component, component1: Component, component2: Component) {
+
+	~brew_tools_supplies(component0, component1, component2)
+	return 
+}

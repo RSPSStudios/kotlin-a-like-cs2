@@ -1,0 +1,9 @@
+// 3908 clientscript
+fun settings_side_bottom_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	~settings_side_house_create(component0, component4)
+	~settings_side_accept_aid(component1, component4)
+	~settings_side_runmode(component2, component4)
+	~script375(component3, component4)
+	return 
+}

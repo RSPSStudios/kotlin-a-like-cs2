@@ -1,0 +1,8 @@
+// 2892 proc
+fun orbs_worldmap_op1(component0: Component) {
+
+	if (VARBIT[9178] = 1) {
+		if_setop(1, "View <col=ff9040>Gauntlet Map</col>", component0)
+	}
+	return 
+}

@@ -1,0 +1,6 @@
+// 391 clientscript
+fun poh_options_doors(component0: Component, component1: Component, component2: Component) {
+
+	~poh_options_doors_render(component0, component1, component2)
+	return 
+}

@@ -1,0 +1,6 @@
+// 1247 clientscript
+fun script1247(boolean0: Boolean, component1: Component, text0: String) {
+
+	~script1248(boolean0, component1, text0)
+	return 
+}

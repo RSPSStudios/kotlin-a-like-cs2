@@ -1,0 +1,14 @@
+// 689 clientscript
+fun trail_slidepuzzle_synch(boolean0: Boolean, component1: Component, int2: Int, int3: Int, int4: Int, int5: Int, component6: Component, component7: Component) {
+
+	val clock8: Int = calc(VARCINT[110] + 50)
+	if (boolean0 = true | clientclock <= clock8) {
+		if_setontimer(null, component1)
+		~trail_slidepuzzle_synch(component1, int2, int3, int4, int5, component6, component7)
+	} else {
+		if_setontimer({
+			script2123(clock8, component1, int2, int3, int4, int5, component6, component7)
+		}, component1)
+	}
+	return 
+}

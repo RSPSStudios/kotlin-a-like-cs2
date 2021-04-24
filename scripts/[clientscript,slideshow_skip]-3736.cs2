@@ -1,0 +1,9 @@
+// 3736 clientscript
+fun slideshow_skip(component0: Component, enum1: Enum, int2: Int, int3: Int) {
+
+	if_setontimer({
+		slideshow_timer(component0, enum1, int2, int3, clientclock)
+	}, component0)
+	~slideshow_transition(component0, enum1, int2, int3)
+	return 
+}

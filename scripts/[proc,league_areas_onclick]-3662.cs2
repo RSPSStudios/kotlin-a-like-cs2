@@ -1,0 +1,13 @@
+// 3662 proc
+fun league_areas_onclick(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component) {
+
+	val string0: String = enum(int, string, enum_3330, int0)
+	if (int0 ! 2 & VARBIT[10037] < 9 & ~script3681(2) = 0) {
+		sound_synth(pillory_wrong, 1, 0)
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	if_sethide(false, component14)
+	~league_areas_mouseleave(int0, component1, component2)
+	return 
+}

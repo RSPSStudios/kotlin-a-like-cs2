@@ -1,0 +1,22 @@
+// 1394 proc
+fun poh_viewer_preview_pulse(component0: Component, clock1: Int) {
+
+	val int2: Int = calc((clientclock - clock1) % 40)
+	val int3: Int = 0
+	if (int2 <= 20) {
+		int3 = calc(120 + interpolate(0, int2, 0, 20, 100))
+	} else {
+		int3 = calc(120 + (100 - interpolate(0, int2 - 20, 0, 20, 100)))
+	}
+	val trans4: Int = calc(int3 + 30)
+	if (cc_find(component0, 1) = ^true) {
+		cc_settrans(trans4)
+	}
+	if (cc_find(component0, 2) = ^true) {
+		cc_settrans(int3)
+	}
+	if (cc_find(component0, 3) = ^true) {
+		cc_settrans(trans4)
+	}
+	return 
+}

@@ -1,0 +1,13 @@
+// 2867 clientscript
+fun seed_vault_search_refresh(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component) {
+
+	if (VARCINT[5] ! 11) {
+		~seed_vault_build(component0, component1, component2, component3, component4, component5, component6)
+		~seed_vault_search_setbutton(component0, component1, component2, component3, component4, component5, component6, component7)
+		return 
+	}
+	if (calc(clientclock % 40) = 0) {
+		~seed_vault_build(component0, component1, component2, component3, component4, component5, component6)
+	}
+	return 
+}

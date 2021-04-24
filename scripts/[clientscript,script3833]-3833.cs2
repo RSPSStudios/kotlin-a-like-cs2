@@ -1,0 +1,17 @@
+// 3833 clientscript
+fun script3833(component0: Component, component1: Component, clock2: Int) {
+
+	if (VARCINT[222] = clock2) {
+		return 
+	}
+	val enum3: Enum = ~toplevel_getcomponents
+	if (enum3 = enum_1745) {
+		~script3834(component1, enum3)
+	} else {
+		if_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre, component1)
+	}
+	if_setontimer({
+		script3833(component0, component1, VARCINT[222])
+	}, component0)
+	return 
+}

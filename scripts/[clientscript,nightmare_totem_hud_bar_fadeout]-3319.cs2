@@ -1,0 +1,6 @@
+// 3319 clientscript
+fun nightmare_totem_hud_bar_fadeout(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component) {
+
+	~nightmare_totem_hud_bar_fadeout(component0, component1, component2, component3, component4, component5, component6, component7, component8)
+	return 
+}

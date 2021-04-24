@@ -1,0 +1,6 @@
+// 1396 clientscript
+fun poh_viewer_sideupdate(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component) {
+
+	~poh_viewer_sideupdate(component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15)
+	return 
+}

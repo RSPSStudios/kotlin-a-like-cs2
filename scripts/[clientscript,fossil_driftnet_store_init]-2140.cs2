@@ -1,0 +1,24 @@
+// 2140 clientscript
+fun fossil_driftnet_store_init(component0: Component, component1: Component, component2: Component) {
+
+	if_setnpchead(annette_7510, component1)
+	if_setmodelanim(seq_579, component1)
+	cc_deleteall(component2)
+	cc_create(component2, ^iftype_graphic, 0)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+	cc_setoutline(1)
+	cc_setgraphicshadow(0x333333)
+	cc_setop(1, "Withdraw-1")
+	cc_setop(2, "Withdraw-5")
+	cc_setop(3, "Withdraw-X")
+	cc_setop(4, "Withdraw-All")
+	cc_setop(9, "Banknote-All")
+	cc_setop(10, "Examine")
+	cc_setopbase("<col=ff9040>${oc_name(drift_net_21652)}</col>")
+	~fossil_driftnet_store_update
+	if_setonvartransmit({
+		fossil_driftnet_store_update(component2, cc_getid){VARP[1632]}
+	}, component0)
+	return 
+}

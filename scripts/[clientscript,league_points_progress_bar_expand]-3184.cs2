@@ -1,0 +1,17 @@
+// 3184 clientscript
+fun league_points_progress_bar_expand(component0: Component, width1: Int) {
+
+	val width2: Int = 0
+	if (cc_find(component0, 1) = ^true) {
+		width2 = cc_getwidth
+	}
+	val int3: Int = 0
+	if (cc_find(component0, 2) = ^true) {
+		if (cc_getwidth >= width2 | cc_getwidth >= width1) {
+			if_setontimer(null, component0)
+			return 
+		}
+		cc_setsize(calc(cc_getwidth + 1), cc_getheight, ^setsize_abs, ^setsize_abs)
+	}
+	return 
+}

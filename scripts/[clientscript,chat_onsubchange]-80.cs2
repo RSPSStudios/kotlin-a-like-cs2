@@ -1,0 +1,36 @@
+// 80 clientscript
+fun chat_onsubchange(component0: Component, windowmode1: Int, boolean2: Boolean, boolean3: Boolean, enum4: Enum) {
+
+	val int5: Int = 0
+	val windowmode6: Int = getwindowmode
+	val boolean7: Boolean = if_hassub(interface_162:562)
+	val boolean8: Boolean = if_hassub(interface_162:561)
+	val enum9: Enum = ~toplevel_getcomponents
+	if (windowmode6 ! windowmode1) {
+		int5 = 1
+	} else if (enum9 ! enum4) {
+		int5 = 1
+	} else {
+		if (boolean7 = true) {
+			if (boolean2 = false) {
+				int5 = 1
+			}
+		} else if (boolean2 = true) {
+			int5 = 1
+		}
+		if (boolean8 = true) {
+			if (boolean3 = false) {
+				int5 = 1
+			}
+		} else if (boolean3 = true) {
+			int5 = 1
+		}
+	}
+	if (int5 = 1) {
+		~script113
+		if_setonsubchange({
+			chat_onsubchange(event_com, windowmode6, boolean7, boolean8, enum9)
+		}, interface_162:0)
+	}
+	return 
+}

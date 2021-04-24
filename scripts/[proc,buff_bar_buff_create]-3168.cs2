@@ -1,0 +1,55 @@
+// 3168 proc
+fun buff_bar_buff_create(component0: Component, int1: Int, colour2: Int, graphic3: Graphic, component4: Component, string0: String) {
+
+	val int5: Int = 0
+	val int6: Int = 0
+	val trans7: Int = enum(int, int, enum_2653, colour2)
+	int5, int6 = ~buff_bar_buff_position(component0, int1)
+	int1 = calc(int1 * 7)
+	if (int5 < 0 | int6 < 0) {
+		return 
+	}
+	cc_create(component0, ^iftype_rectangle, int1)
+	cc_setposition(calc(int5 + 1), calc(int6 + 1), ^setpos_abs_left, ^setpos_abs_bottom)
+	cc_setsize(26, 26, ^setsize_abs, ^setsize_abs)
+	cc_setfill(true)
+	cc_setcolour(colour2)
+	cc_settrans(trans7)
+	int1 = calc(int1 + 1)
+	trans7 = enum(int, int, enum_2654, colour2)
+	cc_create(component0, ^iftype_rectangle, int1)
+	cc_setsize(1, 28, ^setsize_abs, ^setsize_abs)
+	cc_setposition(int5, int6, ^setpos_abs_left, ^setpos_abs_bottom)
+	cc_setfill(true)
+	cc_setcolour(colour2)
+	cc_settrans(trans7)
+	int1 = calc(int1 + 1)
+	cc_create(component0, ^iftype_rectangle, int1)
+	cc_setsize(1, 28, ^setsize_abs, ^setsize_abs)
+	cc_setposition(calc(int5 + 27), int6, ^setpos_abs_left, ^setpos_abs_bottom)
+	cc_setfill(true)
+	cc_setcolour(colour2)
+	cc_settrans(trans7)
+	int1 = calc(int1 + 1)
+	cc_create(component0, ^iftype_rectangle, int1)
+	cc_setsize(26, 1, ^setsize_abs, ^setsize_abs)
+	cc_setposition(calc(int5 + 1), int6, ^setpos_abs_left, ^setpos_abs_bottom)
+	cc_setfill(true)
+	cc_setcolour(colour2)
+	cc_settrans(trans7)
+	int1 = calc(int1 + 1)
+	cc_create(component0, ^iftype_rectangle, int1)
+	cc_setsize(26, 1, ^setsize_abs, ^setsize_abs)
+	cc_setposition(calc(int5 + 1), calc(int6 + 27), ^setpos_abs_left, ^setpos_abs_bottom)
+	cc_setfill(true)
+	cc_setcolour(colour2)
+	cc_settrans(trans7)
+	int1 = calc(int1 + 1)
+	cc_create(component0, ^iftype_graphic, int1)
+	cc_setposition(calc(int5 + 2), calc(int6 + 2), ^setpos_abs_left, ^setpos_abs_bottom)
+	cc_setsize(24, 24, ^setsize_abs, ^setsize_abs)
+	cc_setgraphic(graphic3)
+	int1 = calc(int1 + 1)
+	~buff_bar_buff_create_tooltip(component0, int1, component4, string0, int5, int6)
+	return 
+}

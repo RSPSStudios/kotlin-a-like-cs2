@@ -1,0 +1,13 @@
+// 1167 clientscript
+fun deadman_lootall(component0: Component, graphic1: Graphic, graphic2: Graphic, int3: Int) {
+
+	if (int3 ! 1) {
+		return 
+	}
+	if_setgraphic(graphic1, component0)
+	sound_synth(synth_2266, 1, 0)
+	if_setontimer({
+		deadman_lootall_end(event_com, graphic2, calc(clientclock + 20))
+	}, component0)
+	return 
+}

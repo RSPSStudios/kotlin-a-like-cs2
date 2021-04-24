@@ -1,0 +1,12 @@
+// 889 clientscript
+fun ii_impling_count(component0: Component, obj1: Obj) {
+
+	val total2: Int = inv_total(inv, obj1)
+	if (total2 > 0) {
+		if_setcolour(^red, component0)
+	} else {
+		if_setcolour(0xb5b54a, component0)
+	}
+	if_settext(tostring(total2), component0)
+	return 
+}

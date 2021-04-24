@@ -1,0 +1,6 @@
+// 2752 clientscript
+fun snapshot_openkeyboard(int0: Int, int1: Int) {
+
+	~keyboard_show_string(int0, int1, VARCSTRING[370])
+	return 
+}

@@ -1,0 +1,6 @@
+// 484 clientscript
+fun barbassault_tutorial_button_setup(component0: Component, int1: Int) {
+
+	~barbassault_tutorial_button_setup(component0, int1)
+	return 
+}

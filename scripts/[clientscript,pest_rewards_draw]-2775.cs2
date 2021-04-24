@@ -1,0 +1,6 @@
+// 2775 clientscript
+fun pest_rewards_draw(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	~pest_rewards_draw(int0, component1, component2, component3, component4)
+	return 
+}

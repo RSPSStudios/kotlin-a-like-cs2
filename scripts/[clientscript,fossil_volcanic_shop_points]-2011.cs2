@@ -1,0 +1,6 @@
+// 2011 clientscript
+fun fossil_volcanic_shop_points(component0: Component) {
+
+	~fossil_volcanic_shop_points(component0, 1)
+	return 
+}

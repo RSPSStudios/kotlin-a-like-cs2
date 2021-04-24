@@ -1,0 +1,6 @@
+// 364 clientscript
+fun script364(component0: Component, int1: Int) {
+
+	~script365(component0, int1)
+	return 
+}

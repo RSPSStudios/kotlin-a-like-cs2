@@ -1,0 +1,24 @@
+// 1328 proc
+fun ii_tracker_build_split(string0: String, component0: Component, component1: Component, component2: Component, component3: Component) {
+
+	val int4: Int = 0
+	val int5: Int = 15
+	val int6: Int = 20
+	val index7: Int = string_indexof_string(string0, "|", 0)
+	val text1: String = ""
+	while (index7 ! -1) {
+		text1 = substring(string0, 0, index7)
+		int4, int5, int6 = ~ii_tracker_build_element(text1, component0, component1, component2, int4, int5, int6)
+		string0 = substring(string0, calc(index7 + 1), string_length(string0))
+		index7 = string_indexof_string(string0, "|", 0)
+	}
+	int4, int5, int6 = ~ii_tracker_build_element(string0, component0, component1, component2, int4, int5, int6)
+	if (calc(int6 + 38) > if_getheight(component0)) {
+		if_setscrollsize(0, calc(int6 + 50), component0)
+		if_setscrollpos(0, 0, component0)
+		~scrollbar_vertical(component3, component0, "scrollbar_parchment_dragger_v2,3", "scrollbar_parchment_dragger_v2,0", "scrollbar_parchment_dragger_v2,1", "scrollbar_parchment_dragger_v2,2", "scrollbar_parchment_v2,0", "scrollbar_parchment_v2,1")
+	} else {
+		cc_deleteall(component3)
+	}
+	return 
+}

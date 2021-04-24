@@ -1,0 +1,22 @@
+// 1955 clientscript
+fun script1955() {
+
+	val width0: Int = if_getwidth(interface_599:47)
+	val height1: Int = if_getheight(interface_599:47)
+	val int2: Int = width0
+	val int3: Int = VARP[1607]
+	val text0: String = "${tostring(int3)}/99"
+	int2 = scale(int3, 99, int2)
+	if (int2 = 0 & int3 > 0) {
+		int2 = 1
+	}
+	if (int2 = width0 & int3 < 99) {
+		int2 = calc(int2 - 1)
+	}
+	if (int2 > width0) {
+		int2 = width0
+	}
+	if_settext(text0, interface_599:57)
+	if_setsize(int2, height1, ^setsize_abs, ^setsize_abs, interface_599:52)
+	return 
+}

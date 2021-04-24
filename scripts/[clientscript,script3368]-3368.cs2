@@ -1,0 +1,6 @@
+// 3368 clientscript
+fun script3368(component0: Component) {
+
+	~script3369(component0)
+	return 
+}

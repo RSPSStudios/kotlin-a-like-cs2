@@ -1,0 +1,8 @@
+// 3493 clientscript
+fun death_office_title(component0: Component, comsubid1: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_settext(~death_office_title)
+	}
+	return 
+}

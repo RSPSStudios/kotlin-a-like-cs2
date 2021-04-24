@@ -1,0 +1,31 @@
+// 1104 clientscript
+fun snapshot_init(int0: Int, int1: Int, string0: String) {
+
+	~chatdefault_stopinput
+	if (int1 = 1) {
+		VARCSTRING[370] = string0
+	}
+	if_setonkey({
+		snapshot_onkey(event_key, event_keychar)
+	}, snapshot_main:5)
+	if_settext("${escape(VARCSTRING[370])}<col=ffff00>|", snapshot_main:5)
+	VARCINT[6], VARCINT[140], VARCINT[224] = 0, 1, int0
+	if (playermod = true | staffmodlevel > 0) {
+		VARCINT[140] = 0
+		if_setcolour(^white, snapshot_main:14)
+		~snapshot_toggle(snapshot_main:15, VARCINT[6])
+	} else {
+		if_setgraphic("checkbox,0", snapshot_main:15)
+		if_setcolour(0xbbbbbb, snapshot_main:14)
+		if_clearops(snapshot_main:15)
+		if_clearops(snapshot_main:14)
+	}
+	~snapshot_toggle(snapshot_main:12, VARCINT[140])
+	if (~on_mobile = true) {
+		~keyboard_show(0, 12)
+		if_setonclick({
+			snapshot_openkeyboard(0, 12)
+		}, snapshot_main:5)
+	}
+	return 
+}

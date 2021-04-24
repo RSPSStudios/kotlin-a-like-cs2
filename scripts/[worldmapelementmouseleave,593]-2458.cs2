@@ -1,0 +1,6 @@
+// 2458 worldmapelementmouseleave
+fun 593(int0: Int, int1: Int) {
+
+	~deltooltip_action(interface_595:41)
+	return 
+}

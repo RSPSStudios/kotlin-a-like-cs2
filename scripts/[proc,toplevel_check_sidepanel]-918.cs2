@@ -1,0 +1,6 @@
+// 918 proc
+fun toplevel_check_sidepanel(int0: Int): Boolean {
+
+	val component1: Component = enum(int, component, enum_1137, int0)
+	return if_hassub(enum(component, component, ~toplevel_getcomponents, component1))
+}

@@ -1,0 +1,117 @@
+// 974 proc
+fun deathkeep_left_redraw(int0: Int, int1: Int, int2: Int, int3: Int, int4: Int, obj5: Obj, obj6: Obj, obj7: Obj, obj8: Obj) {
+
+	cc_deleteall(interface_4:6)
+	val int9: Int = 0
+	val int10: Int = 0
+	val int11: Int = 0
+	cc_deleteall(interface_4:7)
+	val int12: Int = 0
+	val int13: Int = 0
+	cc_deleteall(interface_4:8)
+	val int14: Int = 0
+	val int15: Int = 0
+	cc_deleteall(interface_4:9)
+	val int16: Int = 0
+	val int17: Int = 0
+	cc_deleteall(interface_4:10)
+	val int18: Int = 0
+	val int19: Int = 0
+	if (int4 > 0) {
+		if (obj5 ! null) {
+			int9, int10, int11 = ~deathkeep_left_protecteditem(obj5, int4, int1, int2, int3, int9, int11)
+		}
+		if (obj6 ! null) {
+			int9, int10, int11 = ~deathkeep_left_protecteditem(obj6, int4, int1, int2, int3, int9, int11)
+		}
+		if (obj7 ! null) {
+			int9, int10, int11 = ~deathkeep_left_protecteditem(obj7, int4, int1, int2, int3, int9, int11)
+		}
+		if (obj8 ! null) {
+			int9, int10, int11 = ~deathkeep_left_protecteditem(obj8, int4, int1, int2, int3, int9, int11)
+		}
+	}
+	val int20: Int = 500000
+	if (VARBIT[1777] ! 0) {
+		int20 = calc(int20 / 2)
+	}
+	val int21: Int = 0
+	val int22: Int = 0
+	val obj23: Obj = null
+	val obj24: Obj = null
+	val int25: Int = 0
+	while (int25 < 50) {
+		obj23 = inv_getobj(inv_584, int25)
+		if (obj23 ! null) {
+			obj24 = inv_getobj(inv_468, int25)
+			when (obj24): Obj {
+				burnt_fish_323, burnt_fish_343 -> {
+				
+					int9, int10, int11 = ~deathkeep_left_keepitem(obj23, inv_getnum(inv_584, int25), obj24, int1, int2, int3, int9, int11)
+				}
+				burnt_fish_367, burnt_fish_369 -> {
+				
+					int12, int13, int21 = ~deathkeep_left_graveitem(obj23, inv_getnum(inv_584, int25), obj24, calc(inv_getnum(inv_468, int25) - 1), int20, int1, int2, int3, int12)
+					int22 = ~min(int20, calc(int22 + ~min(int20, int21)))
+				}
+				burnt_fishcake_7531 -> {
+				
+					int16, int17 = ~deathkeep_left_coinsitem(obj23, inv_getnum(inv_584, int25), calc(inv_getnum(inv_468, int25) - 1), int1, int2, int3, int16)
+				}
+				jug_of_bad_wine_1991 -> {
+				
+					int14, int15 = ~script1695(obj23, inv_getnum(inv_584, int25), int1, int2, int3, int14)
+				}
+			else -> {
+			
+				int18, int19 = ~deathkeep_left_deleteditem(obj23, inv_getnum(inv_584, int25), int1, int2, int3, int18)
+			}
+			}
+		}
+		int25 = calc(int25 + 1)
+	}
+	int25 = inv_total(inv, old_school_bond_13190)
+	while (int25 > 0) {
+		int9, int10, int11 = ~deathkeep_left_keepitem(old_school_bond_13190, 1, burnt_fish_323, int1, int2, int3, int9, int11)
+		int25 = calc(int25 - 1)
+	}
+	int25 = inv_total(inv, old_school_bond_untradeable_13192)
+	while (int25 > 0) {
+		int9, int10, int11 = ~deathkeep_left_keepitem(old_school_bond_untradeable_13192, 1, burnt_fish_323, int1, int2, int3, int9, int11)
+		int25 = calc(int25 - 1)
+	}
+	cc_deleteall(interface_4:5)
+	val int26: Int = 0
+	val int27: Int = 0
+	val text0: String = ""
+	int26, int27 = ~deathkeep_left_setsection("Items that are <col=ffffff>KEPT</col>:", interface_4:6, int9, int10, int26, int27)
+	if (VARBIT[1777] = 2) {
+		text0 = "Items <col=ff0000>DROPPED</col> near where you die:"
+	} else if (int22 > 1) {
+		text0 = "Items that go to your <col=ffffff>GRAVESTONE</col>: <col=ffffff>(Fee: ${~tostring_spacer(int22, ",")} coins)</col>"
+	} else if (int22 = 1) {
+		text0 = "Items that go to your <col=ffffff>GRAVESTONE</col>: <col=ffffff>(Fee: 1 coin)</col>"
+	} else {
+		text0 = "Items that go to your <col=ffffff>GRAVESTONE</col>: <col=ffffff>(Fee: None)</col>"
+	}
+	int26, int27 = ~deathkeep_left_setsection(text0, interface_4:7, int12, int13, int26, int27)
+	int26, int27 = ~deathkeep_left_setsection("Items <col=ff0000>LOST</col> to the player who kills you:", interface_4:8, int14, int15, int26, int27)
+	if (VARBIT[1777] = 2) {
+		text0 = "Items <col=ff0000>DROPPED</col> as coins:"
+	} else {
+		text0 = "Items that go to your <col=ffffff>GRAVESTONE</col> as coins:"
+	}
+	int26, int27 = ~deathkeep_left_setsection(text0, interface_4:9, int16, int17, int26, int27)
+	int26, int27 = ~deathkeep_left_setsection("Items that are <col=ff0000>DELETED</col>:", interface_4:10, int18, int19, int26, int27)
+	if (int27 > 0) {
+		int27 = calc(int27 + 3)
+	}
+	if_setscrollpos(0, 0, interface_4:5)
+	if (if_getheight(interface_4:5) < int27) {
+		if_setscrollsize(0, int27, interface_4:5)
+	} else {
+		if_setscrollsize(0, 0, interface_4:5)
+	}
+	~scrollbar_vertical(interface_4:11, interface_4:5, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+	return 
+}

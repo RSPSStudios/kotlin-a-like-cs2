@@ -1,0 +1,8 @@
+// 2767 clientscript
+fun tol_pressure_valveop(opindex0: Int, synth1: Synth) {
+
+	if (opindex0 = 1) {
+		sound_synth(synth1, 1, 0)
+	}
+	return 
+}

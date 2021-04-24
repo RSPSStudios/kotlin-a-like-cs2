@@ -1,0 +1,9 @@
+// 3408 clientscript
+fun highlight_start(component0: Component) {
+
+	if_sethide(false, component0)
+	if_sethide(true, interface_664:2)
+	if_sethide(true, interface_664:7)
+	if_sethide(true, interface_664:8)
+	return 
+}

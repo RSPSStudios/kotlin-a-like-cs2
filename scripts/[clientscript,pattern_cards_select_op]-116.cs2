@@ -1,0 +1,17 @@
+// 116 clientscript
+fun pattern_cards_select_op(opindex0: Int, component1: Component, comsubid2: Int, index3: Int) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	if (cc_find(component1, comsubid2) = ^true) {
+		sound_synth(synth_3809, 1, 0)
+		if (testbit(VARBIT[9756], index3) = ^true) {
+			VARBIT[9756] = clearbit(VARBIT[9756], index3)
+		} else {
+			VARBIT[9756] = setbit(VARBIT[9756], index3)
+		}
+		~pattern_cards_select_update(index3)
+	}
+	return 
+}

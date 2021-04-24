@@ -1,0 +1,6 @@
+// 3743 clientscript
+fun bankside_bag_draw(component0: Component, inv1: Inv) {
+
+	~bankside_bag_draw(component0, inv1)
+	return 
+}

@@ -1,0 +1,6 @@
+// 2931 clientscript
+fun skillmain_button_draw(component0: Component, text0: String, boolean1: Boolean, boolean2: Boolean) {
+
+	~skillmain_button_draw(component0, text0, boolean1, boolean2)
+	return 
+}

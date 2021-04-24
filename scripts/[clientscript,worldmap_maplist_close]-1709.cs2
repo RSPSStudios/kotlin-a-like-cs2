@@ -1,0 +1,6 @@
+// 1709 clientscript
+fun worldmap_maplist_close(component0: Component, component1: Component) {
+
+	~worldmap_maplist_close(component0, component1)
+	return 
+}

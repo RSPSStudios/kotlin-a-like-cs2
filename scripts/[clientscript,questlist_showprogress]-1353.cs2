@@ -1,0 +1,6 @@
+// 1353 clientscript
+fun questlist_showprogress(component0: Component, component1: Component, component2: Component) {
+
+	~questlist_showprogress(component0, component1, component2)
+	return 
+}

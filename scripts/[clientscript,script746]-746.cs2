@@ -1,0 +1,7 @@
+// 746 clientscript
+fun script746(string0: String) {
+
+	if_settext(string0, interface_68:7)
+	if_setop(1, removetags(string0), interface_68:7)
+	return 
+}

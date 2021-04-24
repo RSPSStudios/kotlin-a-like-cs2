@@ -1,0 +1,6 @@
+// 3731 clientscript
+fun stop_slideshow(component0: Component) {
+
+	~stop_slideshow(component0)
+	return 
+}

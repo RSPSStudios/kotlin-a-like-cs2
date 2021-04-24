@@ -1,0 +1,8 @@
+// 2817 proc
+fun seed_vault_catselect(component0: Component, component1: Component, component2: Component) {
+
+	if (.cc_find(component0, VARBIT[8171]) = ^true & cc_find(component2, 1) = ^true) {
+		~scrollbar_vertical_doscroll(component2, component1, .cc_gety, true)
+	}
+	return 
+}

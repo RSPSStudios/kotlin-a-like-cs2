@@ -1,0 +1,10 @@
+// 1625 proc
+fun glidermap_showglider(x0: Int, y1: Int, int2: Int, int3: Int, int4: Int, seq5: Seq) {
+
+	cc_setmodel(model_3063)
+	cc_setsize(32, 32, ^setsize_abs, ^setsize_abs)
+	cc_setposition(x0, y1, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setmodelangle(0, 0, int2, int3, 0, int4)
+	cc_setmodelanim(seq5)
+	return 
+}

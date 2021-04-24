@@ -1,0 +1,7 @@
+// 2071 clientscript
+fun deadman_spectator_update(int0: Int) {
+
+	~deadman_spectator_names(int0)
+	~deadman_spectator_chat(int0)
+	return 
+}

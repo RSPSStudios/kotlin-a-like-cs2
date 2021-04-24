@@ -1,0 +1,8 @@
+// 2151 proc
+fun graphic_device(graphic0: Graphic, graphic1: Graphic): Graphic {
+
+	if (~on_mobile = true) {
+		return graphic1
+	}
+	return graphic0
+}

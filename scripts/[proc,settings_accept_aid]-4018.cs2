@@ -1,0 +1,14 @@
+// 4018 proc
+fun settings_accept_aid() {
+
+	if (VARBIT[4180] = 0) {
+		if (VARBIT[1777] ! 0) {
+			mes("${text_gender("Iron Men", "Iron Women")} do not accept aid.")
+		} else {
+			VARBIT[4180] = 1
+		}
+	} else {
+		VARBIT[4180] = 0
+	}
+	return 
+}

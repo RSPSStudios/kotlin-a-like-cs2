@@ -1,0 +1,42 @@
+// 2173 proc
+fun script2173() {
+
+	if (VARBIT[6275] = 5) {
+		if_setgraphic("miscgraphics4,10", logout:26)
+		if_setgraphic("miscgraphics4,10", logout:29)
+		if_setgraphic("miscgraphics4,10", logout:32)
+		if_setgraphic("miscgraphics4,10", logout:35)
+		if_setgraphic("miscgraphics4,11", logout:38)
+	} else if (VARBIT[6275] = 4) {
+		if_setgraphic("miscgraphics4,10", logout:26)
+		if_setgraphic("miscgraphics4,10", logout:29)
+		if_setgraphic("miscgraphics4,10", logout:32)
+		if_setgraphic("miscgraphics4,11", logout:35)
+		if_setgraphic("miscgraphics4,10", logout:38)
+	} else if (VARBIT[6275] = 3) {
+		if_setgraphic("miscgraphics4,10", logout:26)
+		if_setgraphic("miscgraphics4,10", logout:29)
+		if_setgraphic("miscgraphics4,11", logout:32)
+		if_setgraphic("miscgraphics4,10", logout:35)
+		if_setgraphic("miscgraphics4,10", logout:38)
+	} else if (VARBIT[6275] = 2) {
+		if_setgraphic("miscgraphics4,10", logout:26)
+		if_setgraphic("miscgraphics4,11", logout:29)
+		if_setgraphic("miscgraphics4,10", logout:32)
+		if_setgraphic("miscgraphics4,10", logout:35)
+		if_setgraphic("miscgraphics4,10", logout:38)
+	} else if (VARBIT[6275] = 1) {
+		if_setgraphic("miscgraphics4,11", logout:26)
+		if_setgraphic("miscgraphics4,10", logout:29)
+		if_setgraphic("miscgraphics4,10", logout:32)
+		if_setgraphic("miscgraphics4,10", logout:35)
+		if_setgraphic("miscgraphics4,10", logout:38)
+	} else {
+		if_setgraphic("miscgraphics4,10", logout:26)
+		if_setgraphic("miscgraphics4,10", logout:29)
+		if_setgraphic("miscgraphics4,10", logout:32)
+		if_setgraphic("miscgraphics4,10", logout:35)
+		if_setgraphic("miscgraphics4,10", logout:38)
+	}
+	return 
+}

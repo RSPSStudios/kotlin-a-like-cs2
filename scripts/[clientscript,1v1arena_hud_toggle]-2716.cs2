@@ -1,0 +1,7 @@
+// 2716 clientscript
+fun 1v1arena_hud_toggle(boolean0: Boolean, component1: Component, component2: Component, component3: Component) {
+
+	sound_synth(synth_2266, 1, 0)
+	~1v1arena_hud_toggle(boolean0, component1, component2, component3)
+	return 
+}

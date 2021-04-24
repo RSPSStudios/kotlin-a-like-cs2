@@ -1,0 +1,6 @@
+// 786 clientscript
+fun ge_pricechecker_redraw() {
+
+	~ge_pricechecker_redraw
+	return 
+}

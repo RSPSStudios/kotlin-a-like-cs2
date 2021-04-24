@@ -1,0 +1,6 @@
+// 2942 clientscript
+fun silver_crafting_miscellaneous_draw(component0: Component, obj1: Obj, lvl2: Int, obj3: Obj, string0: String) {
+
+	~silver_crafting_miscellaneous_draw(component0, obj1, lvl2, obj3, string0)
+	return 
+}

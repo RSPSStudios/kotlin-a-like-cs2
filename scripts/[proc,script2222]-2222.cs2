@@ -1,0 +1,8 @@
+// 2222 proc
+fun script2222() {
+
+	~script2224
+	VARCINT[204] = ~min(calc(VARCINT[204] + 1), 12)
+	_3129(VARCINT[204], 6)
+	return 
+}

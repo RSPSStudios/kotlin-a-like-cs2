@@ -1,0 +1,18 @@
+// 2740 clientscript
+fun lovaquest_power_grid_rotate(opindex0: Int, component1: Component, comsubid2: Int) {
+
+	val int3: Int = 0
+	if (opindex0 = 1) {
+		int3 = 1
+	} else if (opindex0 = 2) {
+		int3 = 3
+	} else {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	val int4: Int = ~lovaquest_power_grid_getslot(comsubid2)
+	val int5: Int = calc((int4 + int3) % 4)
+	~lovaquest_power_grid_setslot(comsubid2, int5)
+	~lovaquest_power_grid_redraw(component1)
+	return 
+}

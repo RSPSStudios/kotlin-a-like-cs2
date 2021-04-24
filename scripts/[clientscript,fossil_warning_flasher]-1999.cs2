@@ -1,0 +1,28 @@
+// 1999 clientscript
+fun fossil_warning_flasher(component0: Component, component1: Component, clock2: Int, int3: Int) {
+
+	VARCINT[198] = 1
+	if (VARBIT[5811] >= 100 | VARBIT[5811] = 0) {
+		if_settrans(255, component0)
+		if_setontimer(null, component1)
+		VARCINT[198] = 0
+		return 
+	}
+	val int4: Int = 1
+	val int5: Int = 100
+	val int6: Int = 255
+	val int7: Int = 180
+	if (VARBIT[5811] < 50) {
+		int4 = 2
+		int5 = calc(VARBIT[5811] * 2)
+	}
+	if_settrans(int3, component0)
+	if (calc(clientclock % int5) <= calc(int5 / 2)) {
+		int4 = calc(0 - int4)
+	}
+	int3 = ~minmax(int7, int6, calc(int3 + int4))
+	if_setontimer({
+		fossil_warning_flasher(component0, component1, clock2, int3)
+	}, component1)
+	return 
+}

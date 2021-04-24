@@ -1,0 +1,10 @@
+// 1748 clientscript
+fun worldmap_window_drag_end(clock0: Int, int1: Int, int2: Int, int3: Int, int4: Int, component5: Component, component6: Component, component7: Component, component8: Component, int9: Int) {
+
+	if (clientclock < clock0) {
+		return 
+	}
+	VARCINT[191], VARCINT[192], VARCINT[193], VARCINT[194] = int1, int2, int3, int4
+	~worldmap_window_set(component5, component6, component7, component8, int9)
+	return 
+}

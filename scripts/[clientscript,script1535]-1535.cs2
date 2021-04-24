@@ -1,0 +1,13 @@
+// 1535 clientscript
+fun script1535(component0: Component, int1: Int, string0: String, clock2: Int) {
+
+	if (clientclock < clock2) {
+		return 
+	}
+	if (cc_find(component0, int1) = ^true) {
+		cc_setcolour(0xff981f)
+		~script1533(component0, string0)
+	}
+	~script1531(component0, int1, string0)
+	return 
+}

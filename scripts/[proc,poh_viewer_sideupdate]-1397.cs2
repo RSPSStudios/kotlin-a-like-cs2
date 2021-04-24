@@ -1,0 +1,193 @@
+// 1397 proc
+fun poh_viewer_sideupdate(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component) {
+
+	val int15: Int = calc(pow(7 + 2, 2) * 3)
+	val int16: Int = int15
+	if (VARBIT[5330] > int15) {
+		while (int16 > 0) {
+			int16 = calc(int16 - 1)
+			if (cc_find(interface_422:5, int16) = ^true) {
+				cc_clearops
+				cc_setop(1, "Select")
+				cc_setonop({
+					opsound(event_opindex, 2)
+				})
+				cc_setcolour(0x8f8f8f)
+				cc_setonmouserepeat({
+					cc_colour_swapper(event_com, event_comsubid, ^white)
+				})
+				cc_setonmouseleave({
+					cc_colour_swapper(event_com, event_comsubid, 0x8f8f8f)
+				})
+			}
+		}
+	} else if (VARBIT[5332] = 0 & VARBIT[5330] = 0) {
+		while (int16 > 0) {
+			int16 = calc(int16 - 1)
+			if (cc_find(interface_422:5, int16) = ^true) {
+				cc_clearops
+				cc_setop(6, "Add room")
+				cc_setonop({
+					opsound(event_opindex, 64)
+				})
+				cc_setcolour(0xafafaf)
+				cc_setonmouserepeat(null)
+				cc_setonmouseleave(null)
+			}
+		}
+	} else {
+		while (int16 > 0) {
+			int16 = calc(int16 - 1)
+			if (cc_find(interface_422:5, int16) = ^true) {
+				cc_clearops
+				cc_setonop(null)
+				cc_setcolour(0xafafaf)
+				cc_setonmouserepeat(null)
+				cc_setonmouseleave(null)
+			}
+		}
+	}
+	val component17: Component = enum(int, component, enum_1424, -1)
+	if (VARBIT[5333] <= 0) {
+		if_settext("---", component0)
+		if_setgraphic(null, component1)
+		if_set2dangle(0, component1)
+		if (cc_find(component17, 0) = ^true) {
+			cc_setgraphic(null)
+			cc_set2dangle(0)
+		}
+		if_settrans(255, component2)
+		if_settrans(255, component3)
+		if_settrans(255, component4)
+		if_settrans(255, component5)
+		if_settext("Select a room on the map.", component6)
+		~poh_viewer_disablebutton(component7, "Move", 0)
+		~poh_viewer_disablebutton(component8, "Rotate", 0)
+		~poh_viewer_disablerotate(component9, "miscgraphics3,2")
+		~poh_viewer_disablerotate(component10, "miscgraphics3,3")
+		~poh_viewer_disablebutton(component11, "Delete", 0)
+		~poh_viewer_disablebutton(component12, "Cancel", 0)
+		~poh_viewer_disablebutton(component13, "Done", 0)
+		return 
+	}
+	val obj18: Obj = enum(int, obj, enum_250, VARBIT[5333])
+	if_settext(oc_name(obj18), component0)
+	val graphic19: Graphic = enum(int, graphic, enum_1423, VARBIT[5333])
+	if_setgraphic(graphic19, component1)
+	val angle20: Int = calc(16384 * (4 - VARBIT[5331]) % 65536)
+	if_set2dangle(angle20, component1)
+	if (cc_find(component17, 0) = ^true) {
+		if (VARBIT[5330] ! 0) {
+			cc_setgraphic(graphic19)
+			cc_set2dangle(angle20)
+		} else {
+			cc_setgraphic(null)
+			cc_set2dangle(0)
+		}
+	}
+	val trans21: Int = 255
+	if (testbit(VARBIT[5335], 0) = ^true) {
+		trans21 = 150
+		if (VARBIT[5331] = 1) {
+			if (testbit(VARBIT[5334], 3) = ^true) {
+				trans21 = 0
+			}
+		} else if (VARBIT[5331] = 2) {
+			trans21 = 0
+		} else if (VARBIT[5331] = 3) {
+			if (testbit(VARBIT[5334], 1) = ^true) {
+				trans21 = 0
+			}
+		} else if (testbit(VARBIT[5334], 0) = ^true) {
+			trans21 = 0
+		}
+	}
+	if_settrans(trans21, component2)
+	trans21 = 255
+	if (testbit(VARBIT[5335], 2) = ^true) {
+		trans21 = 150
+		if (VARBIT[5331] = 1) {
+			if (testbit(VARBIT[5334], 1) = ^true) {
+				trans21 = 0
+			}
+		} else if (VARBIT[5331] = 2) {
+			if (testbit(VARBIT[5334], 0) = ^true) {
+				trans21 = 0
+			}
+		} else if (VARBIT[5331] = 3) {
+			if (testbit(VARBIT[5334], 3) = ^true) {
+				trans21 = 0
+			}
+		} else {
+			trans21 = 0
+		}
+	}
+	if_settrans(trans21, component3)
+	trans21 = 255
+	if (testbit(VARBIT[5335], 1) = ^true) {
+		trans21 = 150
+		if (VARBIT[5331] = 1) {
+			if (testbit(VARBIT[5334], 0) = ^true) {
+				trans21 = 0
+			}
+		} else if (VARBIT[5331] = 2) {
+			if (testbit(VARBIT[5334], 3) = ^true) {
+				trans21 = 0
+			}
+		} else if (VARBIT[5331] = 3) {
+			trans21 = 0
+		} else if (testbit(VARBIT[5334], 1) = ^true) {
+			trans21 = 0
+		}
+	}
+	if_settrans(trans21, component4)
+	trans21 = 255
+	if (testbit(VARBIT[5335], 3) = ^true) {
+		trans21 = 150
+		if (VARBIT[5331] = 1) {
+			trans21 = 0
+		} else if (VARBIT[5331] = 2) {
+			if (testbit(VARBIT[5334], 1) = ^true) {
+				trans21 = 0
+			}
+		} else if (VARBIT[5331] = 3) {
+			if (testbit(VARBIT[5334], 0) = ^true) {
+				trans21 = 0
+			}
+		} else if (testbit(VARBIT[5334], 3) = ^true) {
+			trans21 = 0
+		}
+	}
+	if_settrans(trans21, component5)
+	if (VARBIT[5330] > int15) {
+		if_settext("Use the map to select a position for the room.", component6)
+		~poh_viewer_disablebutton(component7, "Move", 1)
+		~poh_viewer_disablebutton(component8, "Rotate", 0)
+		~poh_viewer_disablerotate(component9, "miscgraphics3,2")
+		~poh_viewer_disablerotate(component10, "miscgraphics3,3")
+		~poh_viewer_disablebutton(component11, "Delete", 0)
+		~poh_viewer_enablebutton(component12, "Cancel", component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14)
+		~poh_viewer_disablebutton(component13, "Done", 0)
+		return 
+	}
+	if (VARBIT[5332] = 1) {
+		if_settext("Choose an orientation for the room, then select 'Done'.", component6)
+		~poh_viewer_disablebutton(component7, "Move", 0)
+		~poh_viewer_disablebutton(component8, "Rotate", 1)
+		~poh_viewer_enablerotate(component9, "Clockwise", "miscgraphics3,2", component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14)
+		~poh_viewer_enablerotate(component10, "Counter-clockwise", "miscgraphics3,3", component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14)
+		~poh_viewer_disablebutton(component11, "Delete", 0)
+		~poh_viewer_enablebutton(component12, "Cancel", component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14)
+		~poh_viewer_enablebutton(component13, "Done", component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14)
+		return 
+	}
+	if_settext("Use the options to edit the room.", component6)
+	~poh_viewer_enablebutton(component7, "Move", component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14)
+	~poh_viewer_enablebutton(component8, "Rotate", component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14)
+	~poh_viewer_disablerotate(component9, "miscgraphics3,2")
+	~poh_viewer_disablerotate(component10, "miscgraphics3,3")
+	~poh_viewer_enablebutton(component11, "Delete", component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14)
+	~poh_viewer_disablebutton(component12, "Cancel", 0)
+	~poh_viewer_disablebutton(component13, "Done", 0)
+	return 
+}

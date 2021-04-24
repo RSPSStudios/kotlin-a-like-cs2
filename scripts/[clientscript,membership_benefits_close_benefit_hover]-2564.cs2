@@ -1,0 +1,12 @@
+// 2564 clientscript
+fun membership_benefits_close_benefit_hover(component0: Component, comsubid1: Int, boolean2: Boolean) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		if (boolean2 = true) {
+			cc_setgraphic("open_buttons,3")
+		} else {
+			cc_setgraphic("open_buttons,2")
+		}
+	}
+	return 
+}

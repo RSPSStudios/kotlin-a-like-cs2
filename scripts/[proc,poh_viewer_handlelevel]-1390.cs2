@@ -1,0 +1,54 @@
+// 1390 proc
+fun poh_viewer_handlelevel(int0: Int, int1: Int, int2: Int, int3: Int, int4: Int) {
+
+	val component5: Component = enum(int, component, enum_1424, int0)
+	if (component5 = null) {
+		return 
+	}
+	val int6: Int = 0
+	val int7: Int = 0
+	val int8: Int = 0
+	int6, int7, int8 = ~script1387(int1)
+	if (int7 = 3) {
+		if_sethide(true, component5)
+		if_clearops(component5)
+		if_setonop(null, component5)
+		return 
+	}
+	val int9: Int = -1
+	if (int7 = int2) {
+		if_sethide(false, component5)
+		if_setop(1, "View", component5)
+		if_setonop({
+			poh_viewer_room_op(event_opindex, event_com, int0)
+		}, component5)
+		if (cc_find(interface_422:5, calc(int2 * int4 + int8 * int3 + int6)) = ^true) {
+			cc_sethide(true)
+		}
+		if (cc_find(component5, 1) = ^true) {
+			cc_sethide(true)
+		}
+	} else if (int7 = 1 & int2 = 2) {
+		int9 = ~script1386(int6, 2, int8)
+		if (VARCINT[141] ! int9 & VARCINT[142] ! int9 & VARCINT[143] ! int9 & VARCINT[144] ! int9 & VARCINT[145] ! int9 & VARCINT[146] ! int9 & VARCINT[147] ! int9 & VARCINT[148] ! int9 & VARCINT[149] ! int9 & VARCINT[150] ! int9 & VARCINT[151] ! int9 & VARCINT[152] ! int9 & VARCINT[153] ! int9 & VARCINT[154] ! int9 & VARCINT[155] ! int9 & VARCINT[156] ! int9 & VARCINT[157] ! int9 & VARCINT[158] ! int9 & VARCINT[159] ! int9 & VARCINT[160] ! int9 & VARCINT[161] ! int9 & VARCINT[162] ! int9 & VARCINT[163] ! int9 & VARCINT[164] ! int9 & VARCINT[165] ! int9 & VARCINT[166] ! int9 & VARCINT[167] ! int9 & VARCINT[168] ! int9 & VARCINT[169] ! int9 & VARCINT[170] ! int9 & VARCINT[174] ! int9 & VARCINT[176] ! int9 & VARCINT[177] ! int9 & VARCINT[419] ! int9) {
+			if_sethide(false, component5)
+			if_clearops(component5)
+			if_setonop(null, component5)
+			if (cc_find(interface_422:5, calc(int2 * int4 + int8 * int3 + int6)) = ^true) {
+				cc_sethide(false)
+			}
+			if (cc_find(component5, 1) = ^true) {
+				cc_sethide(false)
+			}
+		} else {
+			if_sethide(true, component5)
+			if_clearops(component5)
+			if_setonop(null, component5)
+		}
+	} else {
+		if_sethide(true, component5)
+		if_clearops(component5)
+		if_setonop(null, component5)
+	}
+	return 
+}

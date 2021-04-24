@@ -1,0 +1,89 @@
+// 1517 clientscript
+fun raids_partydetails_addline(int0: Int, string0: String) {
+
+	if (if_hassub(enum(component, component, ~toplevel_getcomponents, interface_161:15)) = false) {
+		return 
+	}
+	if (string_length(string0) <= 0) {
+		return 
+	}
+	val string1: String = ""
+	string1, string0 = ~script632(string0)
+	val string2: String = ""
+	string2, string0 = ~script632(string0)
+	val string3: String = ""
+	string3, string0 = ~script632(string0)
+	val string4: String = ""
+	string4, string0 = ~script632(string0)
+	val y1: Int = calc(VARCINT[178] * 14)
+	cc_create(interface_507:11, ^iftype_rectangle, calc(VARCINT[178] * 8))
+	cc_setsize(0, 14, ^setsize_minus, ^setsize_abs)
+	cc_setposition(0, y1, ^setpos_abs_centre, ^setpos_abs_top)
+	cc_setcolour(^white)
+	cc_setfill(true)
+	~raids_partydetails_entry_init(VARCINT[178], VARCINT[178], -1, false)
+	val string5: String = removetags(string1)
+	cc_setopbase("<col=ff9040>${string5}</col>")
+	cc_setonop({
+		raids_partydetails_entry_op(event_opindex, VARCINT[178], string5, string0)
+	})
+	val width2: Int = if_getwidth(interface_507:7)
+	cc_create(interface_507:11, ^iftype_text, calc(VARCINT[178] * 8 + 1))
+	cc_setsize(width2, 14, ^setsize_abs, ^setsize_abs)
+	cc_setposition(0, y1, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setcolour(0xff981f)
+	cc_settextfont(p11_full)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_settextshadow(true)
+	cc_settext(string1)
+	val int3: Int = width2
+	width2 = if_getwidth(interface_507:8)
+	cc_create(interface_507:11, ^iftype_text, calc(VARCINT[178] * 8 + 2))
+	cc_setsize(width2, 14, ^setsize_abs, ^setsize_abs)
+	cc_setposition(int3, y1, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setcolour(0xff981f)
+	cc_settextfont(p11_full)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_settextshadow(true)
+	cc_settext(string2)
+	int3 = calc(int3 + width2)
+	cc_create(interface_507:11, ^iftype_text, calc(VARCINT[178] * 8 + 3))
+	cc_setsize(width2, 14, ^setsize_abs, ^setsize_abs)
+	cc_setposition(int3, y1, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setcolour(0xff981f)
+	cc_settextfont(p11_full)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_settextshadow(true)
+	cc_settext(string3)
+	cc_create(interface_507:11, ^iftype_text, calc(VARCINT[178] * 8 + 4))
+	cc_setsize(calc(int3 + width2), 14, ^setsize_minus, ^setsize_abs)
+	cc_setposition(0, y1, ^setpos_abs_right, ^setpos_abs_top)
+	cc_setcolour(0xff981f)
+	cc_settextfont(p11_full)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_settextshadow(true)
+	cc_settext(string4)
+	cc_create(interface_507:11, ^iftype_text, calc(VARCINT[178] * 8 + 5))
+	cc_sethide(true)
+	cc_setcolour(0xff981f)
+	cc_settextfont(p11_full)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_settextshadow(true)
+	cc_settext(append_num(~string_prependzero(string2, 3), VARCINT[178]))
+	cc_create(interface_507:11, ^iftype_text, calc(VARCINT[178] * 8 + 6))
+	cc_sethide(true)
+	cc_setcolour(0xff981f)
+	cc_settextfont(p11_full)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_settextshadow(true)
+	cc_settext(append_num(~string_prependzero(string3, 4), VARCINT[178]))
+	cc_create(interface_507:11, ^iftype_text, calc(VARCINT[178] * 8 + 7))
+	cc_sethide(true)
+	cc_setcolour(0xff981f)
+	cc_settextfont(p11_full)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_settextshadow(true)
+	cc_settext(append_num(~string_prependzero(string4, 4), VARCINT[178]))
+	VARCINT[178] = calc(VARCINT[178] + 1)
+	return 
+}

@@ -1,0 +1,22 @@
+// 2282 proc
+fun bondif_redeem_package_draw(int0: Int, component1: Component, text0: String, num2: Int, graphic3: Graphic, int4: Int, height5: Int, text1: String) {
+
+	val comsubid6: Int = -1
+	val int7: Int = 0
+	if (VARP[1204] ! int0) {
+		comsubid6, int7 = ~v2_stone_button_fadable(component1, int7)
+		int7 = ~bondif_redeem_package_details(component1, int7, text0, num2, graphic3, int4, height5, text1)
+		if_setonmouserepeat({
+			bondif_redeem_hover(true, component1, comsubid6)
+		}, component1)
+		if_setonmouseleave({
+			bondif_redeem_hover(false, component1, comsubid6)
+		}, component1)
+	} else {
+		int7 = ~v2_stone_button_in_filled(component1)
+		int7 = ~bondif_redeem_package_details(component1, int7, text0, num2, graphic3, int4, height5, text1)
+		if_setonmouserepeat(null, component1)
+		if_setonmouseleave(null, component1)
+	}
+	return 
+}

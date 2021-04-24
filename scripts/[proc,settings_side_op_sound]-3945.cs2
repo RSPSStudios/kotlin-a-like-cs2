@@ -1,0 +1,6 @@
+// 3945 proc
+fun settings_side_op_sound() {
+
+	sound_synth(synth_2266, 1, 0)
+	return 
+}

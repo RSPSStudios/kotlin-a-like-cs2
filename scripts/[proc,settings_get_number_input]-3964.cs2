@@ -1,0 +1,22 @@
+// 3964 proc
+fun settings_get_number_input(int0: Int): Int {
+
+	when (int0): Int {
+		39 -> {
+		
+			return VARBIT[5400]
+		}
+		43 -> {
+		
+			return VARBIT[5412]
+		}
+		66 -> {
+		
+			return VARBIT[6091]
+		}
+	else -> {
+	
+		return 0
+	}
+	}
+}

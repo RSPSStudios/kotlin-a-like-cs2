@@ -1,0 +1,6 @@
+// 3821 clientscript
+fun script3821(boolean0: Boolean, boolean1: Boolean, component2: Component) {
+
+	~script3822(boolean0, boolean1, component2)
+	return 
+}

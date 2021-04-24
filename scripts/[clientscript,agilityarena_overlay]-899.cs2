@@ -1,0 +1,12 @@
+// 899 clientscript
+fun agilityarena_overlay(component0: Component, component1: Component) {
+
+	if (VARBIT[5965] = 1) {
+		if_setcolour(0x220000, component0)
+		if_setcolour(^green, component1)
+	} else {
+		if_setcolour(^red, component0)
+		if_setcolour(0x002200, component1)
+	}
+	return 
+}

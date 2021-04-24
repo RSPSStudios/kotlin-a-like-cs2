@@ -1,0 +1,175 @@
+// 1664 proc
+fun chatchannel_setup_build(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component) {
+
+	~script1665(component0, 2, 3, "Sort by name", component0, component1, component2, component3, component4, component5)
+	~script1665(component1, 6, 7, "Sort by rank", component0, component1, component2, component3, component4, component5)
+	~script1665(component2, 0, 1, "Legacy sort", component0, component1, component2, component3, component4, component5)
+	if_settext("${~text_device("Right-click", "Long press")} on white text to change options.", interface_94:8)
+	cc_deleteall(component3)
+	val width6: Int = if_getwidth(component0)
+	val width7: Int = 0
+	val width8: Int = 0
+	val width9: Int = 0
+	val int10: Int = 0
+	val height11: Int = 0
+	val int12: Int = 15
+	val string0: String = ""
+	val string1: String = ""
+	val rank13: Int = 0
+	val count14: Int = 0
+	val boolean15: Boolean = null
+	val count16: Int = friend_count
+	if (count16 <= -2) {
+		cc_create(component3, ^iftype_text, 0)
+		cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_centre)
+		cc_setsize(width6, calc(16384 / 2), ^setsize_abs, ^setsize_2)
+		cc_setcolour(0xffff64)
+		cc_settextfont(b12_full)
+		cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+		cc_settextshadow(true)
+		cc_settext("Loading friend list<br>Please wait...")
+	} else if (count16 = -1) {
+		cc_create(component3, ^iftype_text, 0)
+		cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_centre)
+		cc_setsize(width6, calc(16384 / 2), ^setsize_abs, ^setsize_2)
+		cc_setcolour(0xffff64)
+		cc_settextfont(b12_full)
+		cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+		cc_settextshadow(true)
+		cc_settext("Loading<br>Please wait...")
+	} else {
+		boolean15 = ~on_mobile
+		if (boolean15 = true) {
+			int12 = scale(8, 5, int12)
+		}
+		_3628
+		when (VARCINT[186]): Int {
+			1 -> {
+			
+				_3629(false)
+			}
+			2 -> {
+			
+				_3630(true)
+			}
+			3 -> {
+			
+				_3630(false)
+			}
+			6 -> {
+			
+				_3656(true)
+				_3630(true)
+			}
+			7 -> {
+			
+				_3656(false)
+				_3630(true)
+			}
+		}
+		_3639
+		width9, width7, width8 = if_getwidth(component3), calc(width6 - 5), calc(if_getwidth(component1) - 5)
+		while (count14 < count16) {
+			string0, string1 = friend_getname(count14)
+			cc_create(component3, ^iftype_rectangle, int10)
+			int10 = calc(int10 + 1)
+			cc_setsize(0, int12, ^setsize_minus, ^setsize_abs)
+			cc_setposition(0, height11, ^setpos_abs_centre, ^setpos_abs_top)
+			cc_setcolour(^white)
+			cc_setfill(true)
+			cc_settrans(255)
+			cc_setopbase("<col=ff9040>${string0}</col>")
+			if (calc(count14 % 2) = 0) {
+				cc_settrans(255)
+				cc_setonmouseleave({
+					cc_settrans(event_com, event_comsubid, 255, null)
+				})
+			} else {
+				cc_settrans(245)
+				cc_setonmouseleave({
+					cc_settrans(event_com, event_comsubid, 245, null)
+				})
+			}
+			cc_setonmouserepeat({
+				cc_settrans(event_com, event_comsubid, 230, null)
+			})
+			rank13 = enum(int, int, enum_1544, 1)
+			cc_setop(1, enum(int, string, enum_1541, rank13))
+			rank13 = enum(int, int, enum_1544, 2)
+			cc_setop(2, enum(int, string, enum_1541, rank13))
+			rank13 = enum(int, int, enum_1544, 3)
+			cc_setop(3, enum(int, string, enum_1541, rank13))
+			rank13 = enum(int, int, enum_1544, 4)
+			cc_setop(4, enum(int, string, enum_1541, rank13))
+			rank13 = enum(int, int, enum_1544, 5)
+			cc_setop(5, enum(int, string, enum_1541, rank13))
+			rank13 = enum(int, int, enum_1544, 6)
+			cc_setop(6, enum(int, string, enum_1541, rank13))
+			rank13 = enum(int, int, enum_1544, 7)
+			cc_setop(7, enum(int, string, enum_1541, rank13))
+			.cc_create(component3, ^iftype_text, int10)
+			int10 = calc(int10 + 1)
+			rank13 = friend_getrank(count14)
+			.cc_setsize(width8, int12, ^setsize_abs, ^setsize_abs)
+			.cc_setposition(0, height11, ^setpos_abs_right, ^setpos_abs_top)
+			.cc_setcolour(^white)
+			.cc_settextshadow(true)
+			.cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
+			.cc_settextfont(b12_full)
+			.cc_settext(enum(int, string, enum_1541, rank13))
+			cc_setonop({
+				chatchannel_setup_setrank(component3, .cc_getid, event_opbase, event_opindex)
+			})
+			cc_create(component3, ^iftype_text, int10)
+			int10 = calc(int10 + 1)
+			cc_setsize(width7, int12, ^setsize_abs, ^setsize_abs)
+			cc_setposition(5, height11, ^setpos_abs_left, ^setpos_abs_top)
+			cc_setcolour(0xffff64)
+			cc_settextfont(b12_full)
+			cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
+			cc_settextshadow(true)
+			cc_settext(string0)
+			.cc_create(component3, ^iftype_graphic, int10)
+			int10 = calc(int10 + 1)
+			.cc_setsize(14, 14, ^setsize_abs, ^setsize_abs)
+			.cc_setposition(calc(parawidth(string0, width9, b12_full) + 9), calc(height11 + (int12 - 14) / 2), ^setpos_abs_left, ^setpos_abs_top)
+			.cc_setgraphic("friends_changed_name")
+			.cc_setgraphicshadow(0x333333)
+			if (string_length(string1) > 0) {
+				if (boolean15 = true) {
+					cc_setop(1, "Reveal previous name")
+					cc_setopbase("<col=ff9040>${string0}</col>")
+					cc_setonop({
+						script1926(event_com, cc_getid, .cc_getid, string1, string0)
+					})
+				} else {
+					string1 = "Previous name:<br>${string1}"
+					cc_setonmouserepeat({
+						tooltip_mouserepeat(event_com, event_comsubid, component5, string1, 25, width9)
+					})
+					cc_setonmouseleave({
+						deltooltip(component5)
+					})
+				}
+				.cc_sethide(false)
+			} else {
+				cc_setonmouseover({
+					deltooltip(component5)
+				})
+				.cc_sethide(true)
+			}
+			count14, height11 = calc(count14 + 1), calc(height11 + int12)
+		}
+		if (count16 >= 1) {
+			height11 = calc(height11 + 5)
+		}
+	}
+	if (height11 > if_getheight(component3)) {
+		if_setscrollsize(0, height11, component3)
+		~scrollbar_resize(component4, component3, if_getscrolly(component3))
+	} else {
+		if_setscrollsize(0, 0, component3)
+		~scrollbar_resize(component4, component3, 0)
+	}
+	return 
+}

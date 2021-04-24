@@ -1,0 +1,15 @@
+// 3541 proc
+fun poh_costumes_countalternates(namedobj0: Namedobj): Int {
+
+	if (enum(obj, boolean, enum_3305, namedobj0) = true) {
+		return 1
+	}
+	if (enum(obj, namedobj, enum_3303, namedobj0) ! null) {
+		return 2
+	}
+	val enum1: Enum = enum(obj, enum, enum_3304, namedobj0)
+	if (enum1 ! null) {
+		return calc(1 + enum_getoutputcount(enum1))
+	}
+	return 1
+}

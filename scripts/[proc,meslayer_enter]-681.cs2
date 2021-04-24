@@ -1,0 +1,126 @@
+// 681 proc
+fun meslayer_enter() {
+
+	if (VARCINT[5] = 14 | VARCINT[5] = 17) {
+		VARCINT[66] = 1
+		return 
+	}
+	val mesuid0: Int = -1
+	val string0: String = ""
+	val length1: Int = string_length(VARCSTRING[359])
+	if (length1 > 0) {
+		when (VARCINT[5]): Int {
+			1 -> {
+			
+				return 
+			}
+			4, 5 -> {
+			
+				if (ignore_count < 0) {
+					mes("Unable to update ignore list - system busy.")
+				} else if (VARCINT[5] = 4) {
+					ignore_add(VARCSTRING[359])
+				} else if (VARCINT[5] = 5) {
+					ignore_del(VARCSTRING[359])
+				}
+			}
+			2, 3, 6 -> {
+			
+				if (friend_count < 0) {
+					mes("Unable to complete action - system busy.")
+				} else if (VARCINT[5] = 2) {
+					friend_add(VARCSTRING[359])
+				} else if (VARCINT[5] = 3) {
+					friend_del(VARCSTRING[359])
+				} else if (VARCINT[5] = 6) {
+					if (VARBIT[8119] = 0) {
+						~meslayer_close(1, 1)
+						mes("You must set a name before you can chat.")
+						return 
+					}
+					if (chat_getfilter_private = ^chatfilter_off) {
+						chat_setfilter(chat_getfilter_public, ^chatfilter_friends, chat_getfilter_trade)
+						~redraw_chat_buttons
+						mesuid0 = ~script553
+						~rebuildchatbox(mesuid0)
+						~rebuildpmbox(mesuid0)
+					}
+					if (VARBIT[4394] = 1) {
+						friend_del(VARCSTRING[360])
+					} else {
+						chat_sendprivate(VARCSTRING[360], VARCSTRING[359])
+					}
+					VARCINT[61] = clientclock
+				}
+			}
+			7 -> {
+			
+				resume_countdialog(~script212(VARCSTRING[359]))
+			}
+			8 -> {
+			
+				VARCSTRING[361] = removetags(VARCSTRING[359])
+				resume_namedialog(VARCSTRING[359])
+			}
+			9, 15 -> {
+			
+				resume_stringdialog(VARCSTRING[359])
+			}
+			10 -> {
+			
+				if (VARBIT[8119] = 0) {
+					~meslayer_close(1, 1)
+					mes("You must set a name before you can chat.")
+					return 
+				}
+				VARCSTRING[362] = removetags(VARCSTRING[359])
+				clan_joinchat(VARCSTRING[359])
+			}
+			12 -> {
+			
+				if (length1 > 10) {
+					string0 = substring(VARCSTRING[359], 0, 9)
+				} else {
+					string0 = VARCSTRING[359]
+				}
+				chat_setmessagefilter(lowercase(string0))
+				~rebuildchatbox(~script553)
+			}
+			13 -> {
+			
+				if (VARBIT[8119] = 0) {
+					~meslayer_close(1, 1)
+					mes("You must set a name before you can chat.")
+					return 
+				}
+				VARCSTRING[358], VARCINT[62] = VARCSTRING[359], 0
+				~chat_autotyper_updateop
+				if_setontimer({
+					chat_autotyper(event_com, true)
+				}, interface_162:13)
+			}
+			11 -> {
+			
+				~meslayer_close(0, 1)
+				return 
+			}
+			16 -> {
+			
+				~skillmulti_quantitybutton_x_receive(VARCSTRING[359])
+			}
+		}
+	} else {
+		when (VARCINT[5]): Int {
+			7, 8, 9, 15 -> {
+			
+				return 
+			}
+			16 -> {
+			
+				return 
+			}
+		}
+	}
+	~meslayer_close(1, 1)
+	return 
+}

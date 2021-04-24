@@ -1,0 +1,18 @@
+// 1508 clientscript
+fun script1508(string0: String) {
+
+	if (string_length(string0) <= 0 | compare(string0, " ") = 0) {
+		VARCINT[223] = calc(clientclock + 20)
+		~toplevel_chatbox_background
+		if_setontimer({
+			script1509
+		}, interface_229:0)
+	} else {
+		if (VARCINT[223] > clientclock) {
+			VARCINT[223] = 0
+			~toplevel_chatbox_background
+		}
+		if_setontimer(null, interface_229:0)
+	}
+	return 
+}

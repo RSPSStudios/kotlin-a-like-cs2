@@ -1,0 +1,19 @@
+// 2351 proc
+fun script2351(int0: Int, int1: Int, int2: Int): Int {
+
+	if (int0 = -1) {
+		return 0
+	}
+	if (int1 = -1) {
+		return 0
+	}
+	if (int2 = -1) {
+		return 0
+	}
+	val string0: String = enum_string(enum_1373, int0)
+	if (compare(string0, "") = 0) {
+		return 0
+	}
+	val int3: Int = _3701(string0, int1, int2)
+	return int3
+}

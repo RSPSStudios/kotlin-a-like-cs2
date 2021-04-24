@@ -1,0 +1,8 @@
+// 1680 clientscript
+fun script1680(component0: Component, component1: Component, clock2: Int) {
+
+	if (clientclock >= clock2) {
+		~script1678(component0, component1)
+	}
+	return 
+}

@@ -1,0 +1,22 @@
+// 1223 clientscript
+fun zeah_overlay_grow_it(component0: Component, component1: Component, component2: Component, boolean3: Boolean) {
+
+	val width4: Int = ~min(calc(if_getwidth(component0) + 5), 240)
+	val height5: Int = ~min(calc(if_getheight(component0) + 2), 100)
+	if_setsize(width4, height5, ^setsize_abs, ^setsize_abs, component0)
+	if (width4 >= 240 & height5 >= 100) {
+		if_sethide(false, component2)
+		if_setnoclickthrough(true, component2)
+		if (boolean3 = true) {
+			if_setontimer({
+				zeah_overlay_shrink(component0, component1, component2, calc(clientclock + 150), true)
+			}, component0)
+			if_setonclick({
+				zeah_overlay_shrink(component0, component1, component2, 0, true)
+			}, component1)
+		} else {
+			if_setontimer(null, component0)
+		}
+	}
+	return 
+}

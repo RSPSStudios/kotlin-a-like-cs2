@@ -1,0 +1,7 @@
+// 712 clientscript
+fun stonebox(component0: Component, int1: Int) {
+
+	cc_deleteall(component0)
+	~stonebox(component0, int1, 0)
+	return 
+}

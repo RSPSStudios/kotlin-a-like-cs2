@@ -1,0 +1,11 @@
+// 22 clientscript
+fun tt_reward_highlight_off(comsubid0: Int, component1: Component, component2: Component) {
+
+	if (cc_find(component1, comsubid0) = ^true) {
+		cc_settrans(0)
+		if (.cc_find(component2, comsubid0) = ^true) {
+			.cc_setcolour(0xff981f)
+		}
+	}
+	return 
+}

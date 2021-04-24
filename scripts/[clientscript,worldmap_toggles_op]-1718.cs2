@@ -1,0 +1,17 @@
+// 1718 clientscript
+fun worldmap_toggles_op(opindex0: Int, component1: Component, index2: Int, comsubid3: Int, component4: Component, component5: Component, component6: Component) {
+
+	if (opindex0 ! 1 | index2 < 0 | index2 > 4) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	if (cc_find(component1, comsubid3) = ^true & .cc_find(component1, index2) = ^true) {
+		if (testbit(VARBIT[5640], index2) = ^true) {
+			VARBIT[5640] = clearbit(VARBIT[5640], index2)
+		} else {
+			VARBIT[5640] = setbit(VARBIT[5640], index2)
+		}
+		~worldmap_toggles_set(component1, index2, component4, component5, component6)
+	}
+	return 
+}

@@ -1,0 +1,26 @@
+// 3781 proc
+fun script3781(): String {
+
+	when (VARBIT[698]): Int {
+		0 -> {
+		
+			return "Gnome Cocktails"
+		}
+		1 -> {
+		
+			return "Gnome Battas"
+		}
+		2 -> {
+		
+			return "Gnome Crunchies"
+		}
+		3 -> {
+		
+			return "Gnome Bowls"
+		}
+	else -> {
+	
+		return ""
+	}
+	}
+}

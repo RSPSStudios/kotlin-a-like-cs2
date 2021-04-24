@@ -1,0 +1,21 @@
+// 2318 proc
+fun script2318(int0: Int, component1: Component, string0: String, int2: Int, int3: Int, y4: Int, colour5: Int): String, Int {
+
+	val string1: String = ""
+	string1, string0 = ~script632(string0)
+	cc_create(interface_50:26, ^iftype_text, calc(int2 + int0))
+	cc_setposition(int3, y4, ^setpos_abs_left, ^setpos_abs_top)
+	val width6: Int = if_getwidth(component1)
+	cc_setsize(width6, 13, ^setsize_abs, ^setsize_abs)
+	cc_settextfont(p11_full)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_settextshadow(true)
+	if (string_length(string1) > 0) {
+		cc_setcolour(colour5)
+		cc_settext(string1)
+	} else {
+		cc_setcolour(0x7f7f7f)
+		cc_settext("-")
+	}
+	return string0, calc(int3 + width6)
+}

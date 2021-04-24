@@ -1,0 +1,10 @@
+// 1446 proc
+fun playermember(int0: Int) {
+
+	if (int0 = 1) {
+		VARCINT[103] = 1
+	} else {
+		VARCINT[103] = 0
+	}
+	return 
+}

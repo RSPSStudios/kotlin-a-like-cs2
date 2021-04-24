@@ -1,0 +1,86 @@
+// 3789 proc
+fun script3789(obj0: Obj): Namedobj {
+
+	when (obj0): Obj {
+		orange_2108 -> {
+		
+			return dummy_orange_9493
+		}
+		lime_2120 -> {
+		
+			return dummy_lime_9555
+		}
+		pineapple_2114 -> {
+		
+			return dummy_pineapple_9497
+		}
+		lemon_2102 -> {
+		
+			return dummy_lemon_9492
+		}
+		dwellberries_2126 -> {
+		
+			return dummy_dwellberries_9496
+		}
+		equa_leaves_2128 -> {
+		
+			return dummy_equa_leaves_9494
+		}
+		bucket_of_milk_1927 -> {
+		
+			return dummy_bucket_of_wax_9495
+		}
+		chocolate_bar_1973 -> {
+		
+			return dummy_chocolate_bar_9507
+		}
+		brandy_2021 -> {
+		
+			return obj_9556
+		}
+		vodka_2015 -> {
+		
+			return obj_9557
+		}
+		lime_chunks_2122, orange_chunks_2110, pineapple_chunks_2116 -> {
+		
+			return dummy_lemon_chunks_9498
+		}
+		toads_legs_2152 -> {
+		
+			return dummy_toads_legs_9499
+		}
+		gnome_spice_2169 -> {
+		
+			return dummy_spice_9500
+		}
+		cheese_1985 -> {
+		
+			return dummy_cheese_9502
+		}
+		king_worm_2162 -> {
+		
+			return dummy_red_vine_worm_9501
+		}
+		tomato_1982 -> {
+		
+			return dummy_tomato_9503
+		}
+		onion_1957 -> {
+		
+			return dummy_garlic_9504
+		}
+		cabbage_1965 -> {
+		
+			return dummy_cabbage_9505
+		}
+		potato_1942 -> {
+		
+			return dummy_potato_9506
+		}
+	else -> {
+	
+		return dummy_vodka_9491
+	}
+	}
+}

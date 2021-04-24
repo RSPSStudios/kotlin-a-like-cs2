@@ -1,0 +1,17 @@
+// 39 clientscript
+fun camera_zoom(mousey0: Int) {
+
+	val int1: Int = calc(0 - mousey0 * 25)
+	val int2: Int = 512
+	val int3: Int = 512
+	if (VARBIT[6357] = 0) {
+		if (VARBIT[4606] ! 0) {
+			return 
+		}
+		int3, int2 = viewport_getfov
+		int3 = calc(int3 + int1)
+		int2 = calc(int2 + int1)
+		~camera_do_zoom(int3, int2)
+	}
+	return 
+}

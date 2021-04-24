@@ -1,0 +1,7 @@
+// 1211 proc
+fun zeah_favour_settitle(int0: Int, int1: Int) {
+
+	val int2: Int = interpolate(0, int1, 0, 1000, 1000)
+	cc_settext("${enum(int, string, enum_1264, int0)}: <col=ffffff>${tostring(calc(int2 / 10))}.${tostring(calc(int2 % 10))}%</col>")
+	return 
+}

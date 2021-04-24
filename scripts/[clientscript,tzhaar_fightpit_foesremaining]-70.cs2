@@ -1,0 +1,10 @@
+// 70 clientscript
+fun tzhaar_fightpit_foesremaining() {
+
+	if (VARP[560] < 1) {
+		if_settext("You're the Winner!", tzhaar_fightpit:5)
+	} else {
+		if_settext("Foes Remaining: ${tostring(VARP[560])}", tzhaar_fightpit:5)
+	}
+	return 
+}

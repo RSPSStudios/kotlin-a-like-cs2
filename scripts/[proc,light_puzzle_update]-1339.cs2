@@ -1,0 +1,27 @@
+// 1339 proc
+fun light_puzzle_update(component0: Component) {
+
+	val int1: Int = 0
+	val width2: Int = if_getwidth(component0)
+	val int3: Int = 0
+	val namedobj4: Namedobj = null
+	val int5: Int = 8
+	val int6: Int = 5
+	val int7: Int = calc((width2 - 36 * int6) / (int6 + 1))
+	val int8: Int = calc((if_getheight(component0) - 32 * int6 - int5) / (int6 + 1))
+	cc_deleteall(component0)
+	while (int1 < 25) {
+		if (testbit(VARP[1356], int1) = ^true) {
+			namedobj4 = obj_20356
+		} else {
+			namedobj4 = obj_20357
+		}
+		cc_create(component0, ^iftype_graphic, int1)
+		cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+		cc_setposition(calc(int7 + int1 % int6 * (36 + int7) + 1), calc(int5 + int1 / int6 * (32 + int8)), ^setpos_abs_left, ^setpos_abs_top)
+		cc_setobject_nonum(namedobj4, 0)
+		cc_setoutline(1)
+		int1 = calc(int1 + 1)
+	}
+	return 
+}

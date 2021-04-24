@@ -1,0 +1,19 @@
+// 1752 proc
+fun worldmap_elements_chooseposition(coord0: Coord, boolean1: Boolean, component2: Component, int3: Int, int4: Int, int5: Int, int6: Int): Int, Int {
+
+	val int7: Int = 0
+	val int8: Int = 0
+	if (boolean1 = true) {
+		int7 = coordx(coord0)
+		int8 = coordz(coord0)
+	} else {
+		int7, int8 = worldmap_getdisplaycoord(coord0)
+	}
+	val width9: Int = if_getwidth(component2)
+	val height10: Int = if_getheight(component2)
+	int7 = scale(width9, calc(int5 - int6), calc(int7 - int6))
+	int8 = scale(height10, calc(int3 - int4), calc(int8 - int4))
+	int7 = calc(int7 - width9 / 2)
+	int8 = calc(height10 / 2 - int8)
+	return int7, int8
+}

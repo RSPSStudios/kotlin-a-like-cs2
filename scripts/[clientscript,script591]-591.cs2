@@ -1,0 +1,6 @@
+// 591 clientscript
+fun script591() {
+
+	VARCINT[59] = clientclock
+	return 
+}

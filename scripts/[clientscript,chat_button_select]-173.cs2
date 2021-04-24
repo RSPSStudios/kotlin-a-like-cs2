@@ -1,0 +1,7 @@
+// 173 clientscript
+fun chat_button_select(int0: Int) {
+
+	VARCINT[42] = int0
+	~redraw_chat_buttons
+	return 
+}

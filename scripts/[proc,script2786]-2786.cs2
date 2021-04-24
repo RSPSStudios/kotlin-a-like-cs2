@@ -1,0 +1,18 @@
+// 2786 proc
+fun script2786(stat0: Stat): Int {
+
+	when (stat0): Stat {
+		ranged, magic -> {
+		
+			return calc(pow(stat_base(stat0), 2) / 600 * 32)
+		}
+		prayer -> {
+		
+			return calc(pow(stat_base(stat0), 2) / 600 * 18)
+		}
+	else -> {
+	
+		return calc(pow(stat_base(stat0), 2) / 600 * 35)
+	}
+	}
+}

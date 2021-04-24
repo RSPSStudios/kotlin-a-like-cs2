@@ -1,0 +1,26 @@
+// 2619 proc
+fun magic_spellbook_passfilter(obj0: Obj): Int {
+
+	val int1: Int = oc_param(obj0, spell_type)
+	if (int1 = 0) {
+		if (VARBIT[6605] = 1) {
+			return 0
+		}
+	} else if (int1 = 1) {
+		if (VARBIT[6606] = 1) {
+			return 0
+		}
+	} else if (int1 = 2 & VARBIT[6609] = 1) {
+		return 0
+	}
+	if (VARBIT[6607] = 1) {
+		int1 = oc_param(obj0, spell_levelreq)
+		if (stat_base(magic) < int1 & stat(magic) < int1) {
+			return 0
+		}
+	}
+	if (VARBIT[6608] = 1 & ~magic_spellbook_hasrunes(obj0) = 0) {
+		return 0
+	}
+	return 1
+}

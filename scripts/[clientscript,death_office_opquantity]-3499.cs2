@@ -1,0 +1,16 @@
+// 3499 clientscript
+fun death_office_opquantity(opindex0: Int, string0: String, component1: Component) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	~death_office_drawquantity(string0, component1, false, true)
+	if_setonmouserepeat(null, component1)
+	if_setonmouseleave(null, component1)
+	if_setonop(null, component1)
+	if_setontimer({
+		death_office_resetquantity(calc(clientclock + 20), string0, component1)
+	}, component1)
+	return 
+}

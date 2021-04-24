@@ -1,0 +1,6 @@
+// 3982 proc
+fun script3982() {
+
+	VARBIT[6357] = calc(1 - VARBIT[6357])
+	return 
+}

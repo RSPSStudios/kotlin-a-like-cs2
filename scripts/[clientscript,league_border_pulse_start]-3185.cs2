@@ -1,0 +1,9 @@
+// 3185 clientscript
+fun league_border_pulse_start(component0: Component) {
+
+	if_settrans(255, component0)
+	if_setontimer({
+		league_border_pulse(component0, true, 0)
+	}, component0)
+	return 
+}

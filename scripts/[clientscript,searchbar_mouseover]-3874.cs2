@@ -1,0 +1,6 @@
+// 3874 clientscript
+fun searchbar_mouseover(component0: Component) {
+
+	if_setcolour(^white, component0)
+	return 
+}

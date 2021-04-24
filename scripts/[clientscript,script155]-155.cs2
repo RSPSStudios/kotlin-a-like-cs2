@@ -1,0 +1,11 @@
+// 155 clientscript
+fun script155(inv0: Inv, comsubid1: Int, dropsubid2: Int, component3: Component, int4: Int, component5: Component, string0: String, string1: String, string2: String, string3: String, string4: String, string5: String, string6: String, string7: String, string8: String) {
+
+	if (dropsubid2 = -1) {
+		~script154(inv0, comsubid1, component3, comsubid1, int4, component5, string0, string1, string2, string3, string4, string5, string6, string7, string8)
+		return 
+	}
+	~script154(inv0, comsubid1, component3, dropsubid2, int4, component5, string0, string1, string2, string3, string4, string5, string6, string7, string8)
+	~script154(inv0, dropsubid2, component3, comsubid1, int4, component5, string0, string1, string2, string3, string4, string5, string6, string7, string8)
+	return 
+}

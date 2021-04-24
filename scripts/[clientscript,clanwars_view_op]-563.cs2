@@ -1,0 +1,10 @@
+// 563 clientscript
+fun clanwars_view_op(opindex0: Int, int1: Int, model2: Model) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	~clanwars_view_setup(int1, model2)
+	return 
+}

@@ -1,0 +1,13 @@
+// 652 clientscript
+fun poh_add_room_op(component0: Component, comsubid1: Int) {
+
+	sound_synth(synth_2266, 1, 0)
+	component0 = if_getlayer(component0)
+	if (component0 = null) {
+		return 
+	}
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_resume_pausebutton
+	}
+	return 
+}

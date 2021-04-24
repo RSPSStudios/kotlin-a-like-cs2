@@ -1,0 +1,6 @@
+// 1740 clientscript
+fun worldmap_size_handler(component0: Component, component1: Component, component2: Component, component3: Component, width4: Int, height5: Int, component6: Component, component7: Component, int8: Int, int9: Int, component10: Component, int11: Int) {
+
+	~worldmap_size_handler(component0, component1, component2, component3, width4, height5, component6, component7, int8, int9, component10, int11)
+	return 
+}

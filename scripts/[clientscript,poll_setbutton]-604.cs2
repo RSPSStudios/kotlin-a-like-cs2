@@ -1,0 +1,9 @@
+// 604 clientscript
+fun poll_setbutton(component0: Component, component1: Component, string0: String) {
+
+	if (if_hassub(enum(component, component, ~toplevel_getcomponents, interface_161:15)) = false) {
+		return 
+	}
+	~poll_setbutton(component0, component1, string0)
+	return 
+}

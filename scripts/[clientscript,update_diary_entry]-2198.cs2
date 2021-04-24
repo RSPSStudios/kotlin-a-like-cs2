@@ -1,0 +1,6 @@
+// 2198 clientscript
+fun update_diary_entry(component0: Component, comsubid1: Int, int2: Int) {
+
+	~update_diary_entry(component0, comsubid1, int2)
+	return 
+}

@@ -1,0 +1,6 @@
+// 2307 clientscript
+fun tob_hud_portal(string0: String) {
+
+	~tob_hud_fade(0x400000, 0, 0, string0, 1)
+	return 
+}

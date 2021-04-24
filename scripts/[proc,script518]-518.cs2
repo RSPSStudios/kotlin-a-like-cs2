@@ -1,0 +1,18 @@
+// 518 proc
+fun script518(component0: Component, int1: Int, op0: String, width2: Int) {
+
+	cc_create(component0, ^iftype_text, int1)
+	cc_setposition(4, calc(4 + (int1 + 1) * 17), ^setpos_abs_left, ^setpos_abs_top)
+	cc_setsize(width2, 17, ^setsize_abs, ^setsize_abs)
+	cc_setop(1, op0)
+	cc_setonmouserepeat({
+		cc_colour_swapper(event_com, calc(int1 + 8), ^white)
+	})
+	cc_setonmouseleave({
+		cc_colour_swapper(event_com, calc(int1 + 8), 0xff981f)
+	})
+	cc_setonop({
+		script521(event_opindex, event_com, int1)
+	})
+	return 
+}

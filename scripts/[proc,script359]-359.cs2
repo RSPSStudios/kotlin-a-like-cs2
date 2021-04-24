@@ -1,0 +1,8 @@
+// 359 proc
+fun script359(): Int {
+
+	if (VARBIT[3815] ! 0) {
+		return 1
+	}
+	return 0
+}

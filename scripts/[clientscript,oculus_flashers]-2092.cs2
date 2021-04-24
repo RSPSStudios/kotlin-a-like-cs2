@@ -1,0 +1,6 @@
+// 2092 clientscript
+fun oculus_flashers(component0: Component, component1: Component, component2: Component) {
+
+	~oculus_flashers(component0, component1, component2)
+	return 
+}

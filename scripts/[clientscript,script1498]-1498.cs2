@@ -1,0 +1,7 @@
+// 1498 clientscript
+fun script1498() {
+
+	if_settext(tostring(VARBIT[2880]), zep_interface_side:19)
+	if_settext(tostring(VARBIT[2881]), zep_interface_side:26)
+	return 
+}

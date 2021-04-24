@@ -1,0 +1,16 @@
+// 2246 proc
+fun hud_clamp_review(component0: Component, component1: Component, width2: Int, height3: Int) {
+
+	val width4: Int = if_getwidth(component1)
+	val height5: Int = if_getheight(component1)
+	if (width4 ! width2 | height5 ! height3) {
+		~hud_clamp(component0)
+		if_setonresize({
+			hud_clamp_review(component0, component1, width4, height5)
+		}, component0)
+		if_setonsubchange({
+			hud_clamp_review(component0, component1, width4, height5)
+		}, component0)
+	}
+	return 
+}

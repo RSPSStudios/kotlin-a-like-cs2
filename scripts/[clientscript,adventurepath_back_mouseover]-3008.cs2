@@ -1,0 +1,7 @@
+// 3008 clientscript
+fun adventurepath_back_mouseover(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component) {
+
+	~v2_stone_button_in_filled(component0)
+	~adventurepath_back_button_text(component0, 9, component1, component2, component3, component4, component5)
+	return 
+}

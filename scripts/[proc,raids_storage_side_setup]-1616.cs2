@@ -1,0 +1,15 @@
+// 1616 proc
+fun raids_storage_side_setup(component0: Component, component1: Component, component2: Component) {
+
+	~raids_storage_side_warning(component1)
+	cc_deleteall(component2)
+	if (VARBIT[5509] = 1 | VARBIT[3459] = 1) {
+		if_sethide(true, component0)
+		if_setonop(null, component2)
+		if_setontimer(null, component2)
+		return 
+	}
+	if_sethide(false, component0)
+	~raids_storage_side_dismiss_enable(component2)
+	return 
+}

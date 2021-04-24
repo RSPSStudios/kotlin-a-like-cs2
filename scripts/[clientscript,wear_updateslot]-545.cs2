@@ -1,0 +1,8 @@
+// 545 clientscript
+fun wear_updateslot(component0: Component, int1: Int, boolean2: Boolean, comsubid3: Int, comsubid4: Int) {
+
+	if (cc_find(component0, comsubid3) = ^true & .cc_find(component0, comsubid4) = ^true) {
+		~wear_updateslot(component0, int1, boolean2)
+	}
+	return 
+}

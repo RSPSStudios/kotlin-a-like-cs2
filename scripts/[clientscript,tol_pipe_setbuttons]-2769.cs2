@@ -1,0 +1,6 @@
+// 2769 clientscript
+fun tol_pipe_setbuttons(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	~tol_pipe_setbuttons(component0, component1, component2, component3, component4)
+	return 
+}

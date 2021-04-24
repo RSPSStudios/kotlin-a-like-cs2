@@ -1,0 +1,7 @@
+// 1732 clientscript
+fun worldmap_key_toggle(int0: Int, int1: Int, component2: Component, component3: Component, component4: Component) {
+
+	sound_synth(synth_2266, 1, 0)
+	~worldmap_key_toggle(int0, int1, component2, component3, component4)
+	return 
+}

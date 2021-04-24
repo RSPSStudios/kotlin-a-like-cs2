@@ -1,0 +1,11 @@
+// 1319 clientscript
+fun bankmain_incinerator_close(int0: Int, component1: Component) {
+
+	if (int0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	cc_deleteall(component1)
+	if_sethide(true, component1)
+	return 
+}

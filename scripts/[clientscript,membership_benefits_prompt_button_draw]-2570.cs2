@@ -1,0 +1,6 @@
+// 2570 clientscript
+fun membership_benefits_prompt_button_draw(component0: Component, text0: String, boolean1: Boolean) {
+
+	~membership_benefits_prompt_button_draw(component0, text0, boolean1)
+	return 
+}

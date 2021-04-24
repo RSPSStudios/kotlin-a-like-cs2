@@ -1,0 +1,12 @@
+// 1144 proc
+fun script1144(component0: Component, int1: Int) {
+
+	VARP[1295] = clearbit(VARP[1295], calc(int1 - 1))
+	~deadman_stats_set_unprotect(component0, int1)
+	val int2: Int = 0
+	val int3: Int = 0
+	int2, int3 = ~deadmanprotect_xp_counts
+	if_settext("Combat ${tostring(int2)}/2", interface_226:46)
+	if_settext("Other ${tostring(int3)}/3", interface_226:47)
+	return 
+}

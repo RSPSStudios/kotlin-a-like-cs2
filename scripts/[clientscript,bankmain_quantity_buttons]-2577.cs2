@@ -1,0 +1,6 @@
+// 2577 clientscript
+fun bankmain_quantity_buttons(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	~bankmain_quantity_buttons(component0, component1, component2, component3, component4)
+	return 
+}

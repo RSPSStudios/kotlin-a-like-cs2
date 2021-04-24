@@ -1,0 +1,11 @@
+// 3992 proc
+fun script3992() {
+
+	VARBIT[5542] = calc(1 - VARBIT[5542])
+	if (VARBIT[5542] = 1) {
+		~shiftclick_toggle(true)
+	} else {
+		~shiftclick_toggle(false)
+	}
+	return 
+}

@@ -1,0 +1,27 @@
+// 43 clientscript
+fun zoom_mouse_toggle(component0: Component, component1: Component, int2: Int, component3: Component) {
+
+	~settings_side_op_sound
+	VARCINT[2] = 0
+	val string0: String = "${~text_device("Click", "Tap")} here to enable zooming using ${~text_device("the mouse scroll wheel", "the pinch gesture")}."
+	if (int2 = 1) {
+		VARBIT[6357] = calc(1 - VARBIT[6357])
+		if (VARBIT[6357] = 0) {
+			if_sethide(true, component1)
+			if_setop(1, "Disable", component0)
+			string0 = "${~text_device("Click", "Tap")} here to disable zooming using ${~text_device("the mouse scroll wheel", "the pinch gesture")}."
+		} else {
+			if_setop(1, "Enable", component0)
+			if_sethide(false, component1)
+		}
+		if_setonmouserepeat({
+			tooltip_mouserepeat(component0, -1, component3, string0, 25, 190)
+		}, component0)
+		if_setonmouseleave({
+			deltooltip(component3)
+		}, component0)
+	} else if (int2 = 2) {
+		~camera_do_zoom(512, 512)
+	}
+	return 
+}

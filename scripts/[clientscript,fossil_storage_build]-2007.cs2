@@ -1,0 +1,6 @@
+// 2007 clientscript
+fun fossil_storage_build(component0: Component, component1: Component, component2: Component, component3: Component) {
+
+	~fossil_storage_build(component0, component1, component2, component3)
+	return 
+}

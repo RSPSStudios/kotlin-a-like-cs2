@@ -1,0 +1,8 @@
+// 3161 clientscript
+fun clear_chat_all() {
+
+	val mesuid0: Int = ~script553
+	VARCINT[383] = clientclock
+	~rebuildchatbox(mesuid0)
+	return 
+}

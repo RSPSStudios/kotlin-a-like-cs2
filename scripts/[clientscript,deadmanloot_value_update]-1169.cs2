@@ -1,0 +1,8 @@
+// 1169 clientscript
+fun deadmanloot_value_update(int0: Int, text0: String) {
+
+	if (cc_find(interface_234:14, calc(5 * 2 + int0)) = ^true) {
+		cc_settext(text0)
+	}
+	return 
+}

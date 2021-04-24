@@ -1,0 +1,8 @@
+// 489 clientscript
+fun opsound(index0: Int, flags1: Int) {
+
+	if (testbit(flags1, index0) = ^true) {
+		sound_synth(synth_2266, 1, 0)
+	}
+	return 
+}

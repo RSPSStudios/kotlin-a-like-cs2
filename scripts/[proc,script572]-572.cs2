@@ -1,0 +1,62 @@
+// 572 proc
+fun script572(enum0: Enum): Int {
+
+	when (enum0): Enum {
+		enum_374 -> {
+		
+			return VARBIT[4270]
+		}
+		enum_913 -> {
+		
+			return VARBIT[4271]
+		}
+		enum_915 -> {
+		
+			return VARBIT[4272]
+		}
+		enum_917 -> {
+		
+			return VARBIT[4273]
+		}
+		enum_919 -> {
+		
+			return VARBIT[4274]
+		}
+		enum_921 -> {
+		
+			return VARBIT[4275]
+		}
+		enum_923 -> {
+		
+			return VARBIT[4276]
+		}
+		enum_925 -> {
+		
+			return VARBIT[4277]
+		}
+		enum_927 -> {
+		
+			return VARBIT[4278]
+		}
+		enum_929 -> {
+		
+			return VARBIT[4283]
+		}
+		enum_2336 -> {
+		
+			return VARBIT[8377]
+		}
+		enum_2338 -> {
+		
+			return VARBIT[8378]
+		}
+		enum_2340 -> {
+		
+			return VARBIT[8379]
+		}
+	else -> {
+	
+		return 0
+	}
+	}
+}

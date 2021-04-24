@@ -1,0 +1,26 @@
+// 176 proc
+fun skill_guide_subsection_thieving(int0: Int): String, Int {
+
+	when (int0): Int {
+		0 -> {
+		
+			return "Pickpocket", 1
+		}
+		1 -> {
+		
+			return "Stalls", 1
+		}
+		2 -> {
+		
+			return "Chests", 1
+		}
+		3 -> {
+		
+			return "Other", 1
+		}
+	else -> {
+	
+		return "", -1
+	}
+	}
+}

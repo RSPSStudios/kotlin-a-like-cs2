@@ -1,0 +1,12 @@
+// 1350 clientscript
+fun questlist_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component) {
+
+	~questlist_qp(component3)
+	if_setonvartransmit({
+		questlist_qp(component3){VARP[101]}
+	}, component3)
+	cc_deleteall(component0)
+	~steelbox(component0, 0, 0)
+	~questlist_draw(component0, component1, component2, component4, component5, component6)
+	return 
+}

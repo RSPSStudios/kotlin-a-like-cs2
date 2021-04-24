@@ -1,0 +1,8 @@
+// 2862 proc
+fun seed_vault_searching(): Int {
+
+	if (VARCINT[5] = 11 | VARCINT[5] <= 0 & string_length(VARCSTRING[359]) > 0) {
+		return 1
+	}
+	return 0
+}

@@ -1,0 +1,9 @@
+// 1937 clientscript
+fun bookofscrolls_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component, component16: Component, component17: Component, component18: Component, component19: Component, component20: Component, component21: Component, component22: Component, component23: Component, component24: Component, component25: Component, component26: Component, component27: Component, component28: Component, component29: Component, component30: Component) {
+
+	~bookofscrolls_populate(component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25, component26, component27, component28, component29, component30)
+	if_setonvartransmit({
+		bookofscrolls_populate(component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25, component26, component27, component28, component29, component30){VARP[1589], VARP[1590], VARP[1591], VARP[1592], VARP[1593]}
+	}, component0)
+	return 
+}

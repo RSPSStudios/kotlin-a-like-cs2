@@ -1,0 +1,6 @@
+// 2540 clientscript
+fun brew_lobby_overlay_init(component0: Component) {
+
+	~script2249(component0, setbit(0, 1))
+	return 
+}

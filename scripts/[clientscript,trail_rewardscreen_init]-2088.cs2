@@ -1,0 +1,10 @@
+// 2088 clientscript
+fun trail_rewardscreen_init(component0: Component, component1: Component) {
+
+	val size2: Int = inv_size(inv_141)
+	~trail_rewardscreen_draw(component1, size2)
+	if_setoninvtransmit({
+		trail_rewardscreen_draw(component1, size2){inv_141}
+	}, component0)
+	return 
+}

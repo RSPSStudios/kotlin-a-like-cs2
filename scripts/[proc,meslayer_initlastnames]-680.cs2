@@ -1,0 +1,9 @@
+// 680 proc
+fun meslayer_initlastnames() {
+
+	if (VARCINT[56] = 1) {
+		return 
+	}
+	VARCINT[56], VARCSTRING[361], VARCSTRING[362] = 1, "", ""
+	return 
+}

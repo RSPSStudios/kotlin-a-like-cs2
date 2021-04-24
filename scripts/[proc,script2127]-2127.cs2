@@ -1,0 +1,36 @@
+// 2127 proc
+fun script2127(boolean0: Boolean, component1: Component, text0: String, component2: Component, component3: Component, component4: Component) {
+
+	cc_deleteall(component1)
+	val int5: Int = 0
+	if (boolean0 = true) {
+		int5 = ~v2_stone_button_in_filled(component1)
+	} else {
+		int5 = ~v2_stone_button_out_filled(component1)
+	}
+	cc_create(component1, ^iftype_text, int5)
+	int5 = calc(int5 + 1)
+	.cc_create(component1, ^iftype_text, int5)
+	int5 = calc(int5 + 1)
+	cc_setsize(0, 20, ^setsize_minus, ^setsize_abs)
+	.cc_setsize(0, 25, ^setsize_minus, ^setsize_abs)
+	cc_setposition(0, 5, ^setpos_abs_centre, ^setpos_abs_top)
+	.cc_setposition(0, 5, ^setpos_abs_centre, ^setpos_abs_bottom)
+	cc_setcolour(0xff981f)
+	.cc_setcolour(0xff981f)
+	cc_settextfont(b12_full)
+	.cc_settextfont(p11_full)
+	cc_settextshadow(true)
+	.cc_settextshadow(true)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	.cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_settext(text0)
+	if (component1 = component2) {
+		.cc_settext("<col=ffffff>${~tostring_spacer(VARP[261], ",")}</col> Agility XP")
+	} else if (component1 = component3) {
+		.cc_settext("<col=ffffff>${~tostring_spacer(VARP[262], ",")}</col> Thieving XP")
+	} else {
+		.cc_settext("<col=ffffff>${~tostring_spacer(VARP[263], ",")}</col> Agility XP +<br><col=ffffff>${~tostring_spacer(VARP[264], ",")}</col> Thieving XP")
+	}
+	return 
+}

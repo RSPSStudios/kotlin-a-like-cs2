@@ -1,0 +1,47 @@
+// 1969 proc
+fun vm_kudos_get_quest_status(int0: Int): Int {
+
+	if (int0 = 19 & (VARP[26] = 80 | VARP[26] = 90)) {
+		return 1
+	}
+	if (int0 = 20 & VARBIT[821] = 1) {
+		return 1
+	}
+	if (int0 = 21 & (VARP[145] = 7 | VARP[146] = 4)) {
+		return 1
+	}
+	if (int0 = 22 & (VARP[112] = 7 | VARP[112] = 8)) {
+		return 1
+	}
+	if (int0 = 23 & VARP[14] = 7) {
+		return 1
+	}
+	if (int0 = 24 & VARBIT[2561] = 3) {
+		return 1
+	}
+	if (int0 = 25 & VARP[150] = 160) {
+		return 1
+	}
+	if (int0 = 26 & VARBIT[1028] = 70) {
+		return 1
+	}
+	if (int0 = 27 & VARBIT[1383] > 3) {
+		return 1
+	}
+	if (int0 = 28 & VARP[302] > 59) {
+		return 1
+	}
+	if (int0 = 29 & VARBIT[1990] > 420) {
+		return 1
+	}
+	if (int0 = 30 & VARP[223] = 9) {
+		return 1
+	}
+	if (int0 = 31 & VARBIT[3523] = 150) {
+		return 1
+	}
+	if (int0 = 32 & VARP[63] = 6) {
+		return 1
+	}
+	return 0
+}

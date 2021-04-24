@@ -1,0 +1,15 @@
+// 2941 proc
+fun silver_crafting_miscellaneous_setup(component0: Component, namedobj1: Namedobj, lvl2: Int, namedobj3: Namedobj, string0: String) {
+
+	if_sethide(false, component0)
+	if_setop(1, "Craft", component0)
+	if_setopbase("<col=ff9040>${string0}</col>", component0)
+	~silver_crafting_miscellaneous_draw(component0, namedobj1, lvl2, namedobj3, string0)
+	if_setoninvtransmit({
+		silver_crafting_miscellaneous_draw(component0, namedobj1, lvl2, namedobj3, string0){inv}
+	}, component0)
+	if_setonstattransmit({
+		silver_crafting_miscellaneous_draw(component0, namedobj1, lvl2, namedobj3, string0){crafting}
+	}, component0)
+	return 
+}

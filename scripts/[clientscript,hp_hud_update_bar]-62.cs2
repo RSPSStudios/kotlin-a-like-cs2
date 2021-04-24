@@ -1,0 +1,6 @@
+// 62 clientscript
+fun hp_hud_update_bar(component0: Component, width1: Int) {
+
+	~hp_hud_update_bar(component0, width1)
+	return 
+}

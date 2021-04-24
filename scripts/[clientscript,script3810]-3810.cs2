@@ -1,0 +1,8 @@
+// 3810 clientscript
+fun script3810(component0: Component, model1: Model) {
+
+	if (~on_mobile = false) {
+		if_setmodel(model1, component0)
+	}
+	return 
+}

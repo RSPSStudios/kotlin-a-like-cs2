@@ -1,0 +1,10 @@
+// 2573 clientscript
+fun tutorial_displayname_init(component0: Component, component1: Component, component2: Component) {
+
+	~chatdefault_stopinput
+	~tutorial_displayname_buttons(component1, component2)
+	if_setonvartransmit({
+		tutorial_displayname_buttons(component1, component2){VARP[1042]}
+	}, component0)
+	return 
+}

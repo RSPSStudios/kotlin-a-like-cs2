@@ -1,0 +1,8 @@
+// 1499 clientscript
+fun script1499(component0: Component) {
+
+	sound_synth(synth_2266, 1, 0)
+	VARBIT[11764] = 1
+	~script1501(component0, false)
+	return 
+}

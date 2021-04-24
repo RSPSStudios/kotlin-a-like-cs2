@@ -1,0 +1,30 @@
+// 3103 proc
+fun canoe_get_state(int0: Int): Int {
+
+	when (int0): Int {
+		3 -> {
+		
+			return VARBIT[1841]
+		}
+		2 -> {
+		
+			return VARBIT[1840]
+		}
+		4 -> {
+		
+			return VARBIT[1842]
+		}
+		1 -> {
+		
+			return VARBIT[1839]
+		}
+		5 -> {
+		
+			return VARBIT[10527]
+		}
+	else -> {
+	
+		return 0
+	}
+	}
+}

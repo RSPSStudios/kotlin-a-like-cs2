@@ -1,0 +1,7 @@
+// 3198 clientscript
+fun league_relic_confirm_back(component0: Component) {
+
+	sound_synth(synth_2266, 1, 0)
+	if_sethide(true, component0)
+	return 
+}

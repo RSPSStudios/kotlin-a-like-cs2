@@ -1,0 +1,6 @@
+// 3980 proc
+fun settings_health_overlay() {
+
+	VARBIT[10345] = calc(1 - VARBIT[10345])
+	return 
+}

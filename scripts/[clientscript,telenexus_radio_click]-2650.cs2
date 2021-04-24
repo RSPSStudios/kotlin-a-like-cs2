@@ -1,0 +1,11 @@
+// 2650 clientscript
+fun telenexus_radio_click(component0: Component, component1: Component, component2: Component, component3: Component, comsubid4: Int, component5: Component, component6: Component) {
+
+	if ((comsubid4 = 1 | comsubid4 = 3) & VARBIT[6669] < 150 & VARBIT[6669] > 0) {
+		VARBIT[6669] = calc(VARBIT[6669] + 150)
+	} else if ((comsubid4 = 0 | comsubid4 = 2) & VARBIT[6669] > 150) {
+		VARBIT[6669] = calc(VARBIT[6669] - 150)
+	}
+	~telenexus_left_click(component0, component1, component2, component5, component6)
+	return 
+}

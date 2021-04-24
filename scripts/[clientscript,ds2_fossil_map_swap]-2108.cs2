@@ -1,0 +1,21 @@
+// 2108 clientscript
+fun ds2_fossil_map_swap(drop0: Component, comsubid1: Int, drop2: Component, dropsubid3: Int) {
+
+	if (drop2 ! drop0) {
+		return 
+	}
+	val int4: Int = 0
+	val int5: Int = 0
+	int4, int5 = ~ds2_fossil_map_getslot(comsubid1)
+	val int6: Int = 0
+	val int7: Int = 0
+	int6, int7 = ~ds2_fossil_map_getslot(dropsubid3)
+	if (int4 = 0 | int6 = 0) {
+		return 
+	}
+	~ds2_fossil_map_setslot(dropsubid3, int4, int5)
+	~ds2_fossil_map_setslot(comsubid1, int6, int7)
+	sound_synth(synth_2266, 1, 0)
+	~ds2_fossil_map_redraw(drop0)
+	return 
+}

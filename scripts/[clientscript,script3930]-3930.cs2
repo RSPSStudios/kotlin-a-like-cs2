@@ -1,0 +1,14 @@
+// 3930 clientscript
+fun script3930(component0: Component, int1: Int, component2: Component) {
+
+	~settings_side_op_sound
+	VARCINT[2] = 0
+	if (int1 = 0) {
+		~script3932(component0, 1, component2)
+		VARBIT[10078] = 1
+	} else {
+		~script3932(component0, 0, component2)
+		VARBIT[10078] = 0
+	}
+	return 
+}

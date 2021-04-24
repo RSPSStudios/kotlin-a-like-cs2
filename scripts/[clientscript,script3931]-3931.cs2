@@ -1,0 +1,7 @@
+// 3931 clientscript
+fun script3931(component0: Component, component1: Component) {
+
+	VARCINT[2] = 0
+	~script3932(component0, VARBIT[10078], component1)
+	return 
+}

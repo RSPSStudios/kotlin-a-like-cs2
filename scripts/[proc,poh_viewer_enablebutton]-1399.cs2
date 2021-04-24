@@ -1,0 +1,25 @@
+// 1399 proc
+fun poh_viewer_enablebutton(component0: Component, op0: String, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component) {
+
+	cc_deleteall(component0)
+	val comsubid16: Int = ~options_button_off(component0, 0)
+	cc_create(component0, ^iftype_text, comsubid16)
+	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	cc_setcolour(0xff981f)
+	cc_settextfont(p12_full)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_settextshadow(true)
+	cc_settext(op0)
+	if_setonmouserepeat({
+		cc_colour_swapper(event_com, comsubid16, ^white)
+	}, component0)
+	if_setonmouseleave({
+		cc_colour_swapper(event_com, comsubid16, 0xff981f)
+	}, component0)
+	if_setonop({
+		poh_viewer_opbutton(event_opindex, event_com, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15)
+	}, component0)
+	if_setop(1, op0, component0)
+	return 
+}

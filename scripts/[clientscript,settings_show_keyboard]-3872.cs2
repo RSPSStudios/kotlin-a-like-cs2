@@ -1,0 +1,6 @@
+// 3872 clientscript
+fun settings_show_keyboard() {
+
+	~keyboard_show_string(0, 50, VARCSTRING[417])
+	return 
+}

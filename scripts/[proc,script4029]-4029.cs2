@@ -1,0 +1,24 @@
+// 4029 proc
+fun script4029(struct0: Struct): Int {
+
+	if (struct0 = null) {
+		return 1
+	}
+	val int1: Int = ~script4030(struct0)
+	if (int1 ! -1) {
+		return int1
+	}
+	val int2: Int = struct_param(struct0, param_1161)
+	val int3: Int = struct_param(struct0, param_1162)
+	val int4: Int = ~script4024(struct0)
+	if (int2 = -1 | int3 = -1 | int4 = -1 | int3 <= int2) {
+		return 1
+	}
+	if (int4 >= int3) {
+		return 2
+	}
+	if (int4 <= int2) {
+		return 1
+	}
+	return 0
+}

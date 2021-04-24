@@ -1,0 +1,7 @@
+// 3345 clientscript
+fun notification_store_data() {
+
+	VARCINT[390] = if_getwidth(interface_660:1)
+	VARCINT[389] = if_getheight(interface_660:1)
+	return 
+}

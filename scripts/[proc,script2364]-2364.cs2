@@ -1,0 +1,14 @@
+// 2364 proc
+fun script2364(int0: Int): String {
+
+	when (int0): Int {
+		79 -> {
+		
+			return " - ${tostring(calc(100 + VARBIT[11864] * 10))}%"
+		}
+	else -> {
+	
+		return ""
+	}
+	}
+}

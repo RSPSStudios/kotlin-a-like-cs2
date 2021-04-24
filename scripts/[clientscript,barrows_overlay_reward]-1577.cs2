@@ -1,0 +1,6 @@
+// 1577 clientscript
+fun barrows_overlay_reward(component0: Component) {
+
+	~barrows_overlay_reward(component0)
+	return 
+}

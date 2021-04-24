@@ -1,0 +1,8 @@
+// 4078 clientscript
+fun script4078(string0: String) {
+
+	if (~script3720 = 1) {
+		mes("DEBUG - ${string0}")
+	}
+	return 
+}

@@ -1,0 +1,8 @@
+// 3904 clientscript
+fun settings_button_repeat(component0: Component, component1: Component) {
+
+	val string0: String = "Open the settings menu, this menu contains all the settings."
+	~tooltip_mouserepeat(component0, -1, component1, string0, 25, 190)
+	~v2_stone_button_change_in(component0, 0)
+	return 
+}

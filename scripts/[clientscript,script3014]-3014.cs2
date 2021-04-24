@@ -1,0 +1,7 @@
+// 3014 clientscript
+fun script3014(component0: Component) {
+
+	~v2_stone_button_in_filled(component0)
+	~script3016(component0, 9)
+	return 
+}

@@ -1,0 +1,12 @@
+// 3946 clientscript
+fun settings_controls_init(component0: Component, layer1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component) {
+
+	~script3947(component2, component6, "Player 'Attack' options:", component0, layer1, component2, component3, component4, component5, component6, component7, component8, component9)
+	~script3947(component3, component7, "NPC 'Attack' options:", component0, layer1, component2, component3, component4, component5, component6, component7, component8, component9)
+	~script3954(component2, component3)
+	if_setonvartransmit({
+		script3953(component2, component3){VARP[1107], VARP[1306]}
+	}, component0)
+	if_sethide(true, component4)
+	return 
+}

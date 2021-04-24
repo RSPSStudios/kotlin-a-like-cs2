@@ -1,0 +1,48 @@
+// 668 clientscript
+fun rune_pouch_pouchreorder(drop0: Component, drop1: Component, comsubid2: Int, dropsubid3: Int) {
+
+	val int4: Int = 0
+	val num5: Int = 0
+	if (comsubid2 = 0) {
+		int4, num5 = VARBIT[29], VARBIT[1624]
+	} else if (comsubid2 = 1) {
+		int4, num5 = VARBIT[1622], VARBIT[1625]
+	} else if (comsubid2 = 2) {
+		int4, num5 = VARBIT[1623], VARBIT[1626]
+	} else {
+		return 
+	}
+	if (int4 = 0) {
+		return 
+	}
+	if (drop1 ! drop0) {
+		if (cc_find(drop0, comsubid2) = ^true) {
+			cc_settrans(255)
+			cc_setontimer({
+				cc_settrans_temporarily_end(event_com, event_comsubid, 0, calc(clientclock + 30))
+			})
+		}
+		return 
+	}
+	if (comsubid2 = dropsubid3) {
+		return 
+	}
+	val int6: Int = 0
+	val num7: Int = 0
+	if (dropsubid3 = 0) {
+		int6, num7 = VARBIT[29], VARBIT[1624]
+	} else if (dropsubid3 = 1) {
+		int6, num7 = VARBIT[1622], VARBIT[1625]
+	} else if (dropsubid3 = 2) {
+		int6, num7 = VARBIT[1623], VARBIT[1626]
+	} else {
+		return 
+	}
+	if (cc_find(drop0, comsubid2) = ^true) {
+		~rune_pouch_drawpouch_slot(enum(int, namedobj, enum_982, int6), num7)
+	}
+	if (cc_find(drop0, dropsubid3) = ^true) {
+		~rune_pouch_drawpouch_slot(enum(int, namedobj, enum_982, int4), num5)
+	}
+	return 
+}

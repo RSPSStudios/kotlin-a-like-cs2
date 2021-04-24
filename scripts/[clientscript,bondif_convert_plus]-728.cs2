@@ -1,0 +1,9 @@
+// 728 clientscript
+fun bondif_convert_plus() {
+
+	if (VARCINT[67] < inv_total(inv, old_school_bond_untradeable_13192)) {
+		VARCINT[67] = calc(VARCINT[67] + 1)
+		~bondif_convert_updatevalues
+	}
+	return 
+}

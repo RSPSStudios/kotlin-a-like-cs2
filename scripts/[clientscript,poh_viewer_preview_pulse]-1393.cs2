@@ -1,0 +1,6 @@
+// 1393 clientscript
+fun poh_viewer_preview_pulse(component0: Component, clock1: Int) {
+
+	~poh_viewer_preview_pulse(component0, clock1)
+	return 
+}

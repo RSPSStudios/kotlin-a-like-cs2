@@ -1,0 +1,9 @@
+// 1122 clientscript
+fun snapshot_rules_hover(component0: Component, comsubid1: Int, colour2: Int) {
+
+	if (cc_find(component0, calc(comsubid1 + 1)) = ^true & .cc_find(component0, calc(comsubid1 + 2)) = ^true) {
+		cc_setcolour(colour2)
+		.cc_setcolour(colour2)
+	}
+	return 
+}

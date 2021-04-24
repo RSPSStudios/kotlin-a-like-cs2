@@ -1,0 +1,8 @@
+// 405 clientscript
+fun slayer_rewards_init(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component) {
+
+	~slayer_rewards_tabs(component1, component2, component3, component4, component5, component2)
+	if_sethide(false, component6)
+	if_sethide(true, component7)
+	return 
+}

@@ -1,0 +1,10 @@
+// 2157 proc
+fun chatdefault_stopinput() {
+
+	VARCINT[11] = 1
+	if (if_gethide(interface_162:40) = false) {
+		~meslayer_close(1, 1)
+	}
+	~chatdefault_setonkey(0)
+	return 
+}

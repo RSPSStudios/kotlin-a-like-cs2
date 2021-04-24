@@ -1,0 +1,37 @@
+// 2973 proc
+fun script2973(int0: Int, int1: Int): Int {
+
+	val enum2: Enum = enum(int, enum, enum_2620, int1)
+	if (enum2 = null) {
+		return int0
+	}
+	val count3: Int = 0
+	val count4: Int = enum_getoutputcount(enum2)
+	val struct5: Struct = null
+	while (count3 < count4) {
+		struct5 = enum(int, struct, enum2, count3)
+		if (struct5 ! null & struct_param(struct5, param_806) = int0) {
+			count3 = count4
+		}
+		count3 = calc(count3 + 1)
+	}
+	count3 = 0
+	val struct6: Struct = struct_param(struct5, param_808)
+	if (struct6 = null) {
+		return int0
+	}
+	val int7: Int = 0
+	while (count3 < count4) {
+		int7 = struct_param(struct6, param_806)
+		if (~adventurepath_return_task_status(int7) = ^true) {
+			return int0
+		}
+		int0 = int7
+		struct6 = struct_param(struct6, param_808)
+		if (struct6 = null) {
+			return int0
+		}
+		count3 = calc(count3 + 1)
+	}
+	return int0
+}

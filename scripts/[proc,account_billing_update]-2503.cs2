@@ -1,0 +1,46 @@
+// 2503 proc
+fun account_billing_update() {
+
+	val component0: Component = interface_109:25
+	val component1: Component = interface_109:26
+	val component2: Component = interface_109:30
+	val component3: Component = interface_109:28
+	val component4: Component = interface_109:29
+	val component5: Component = interface_109:35
+	val component6: Component = interface_109:33
+	val component7: Component = interface_109:34
+	val text0: String = "Membership: <col=ff0000>None</col>"
+	val op1: String = "Upgrade Now"
+	val graphic8: Graphic = "graphic_2151"
+	val text2: String = "Bond Pouch"
+	val graphic9: Graphic = "graphic_1705"
+	if (VARCINT[103] = 1 & VARP[1780] > 0) {
+		if (VARP[1780] > 99999) {
+			text0 = "Membership: 99999+ days left"
+		} else if (VARP[1780] = 1) {
+			if (VARCINT[226] = 0) {
+				text0 = "Membership: <col=ff0000>1 day left</col>"
+			} else {
+				text0 = "Membership: 1 day left"
+			}
+		} else if (VARP[1780] <= 3 & VARCINT[226] = 0) {
+			text0 = "Membership: <col=ff0000>${tostring(VARP[1780])} days left</col>"
+		} else {
+			text0 = "Membership: ${tostring(VARP[1780])} days left"
+		}
+		op1 = "Open Store"
+		graphic8 = "graphic_1704"
+	} else if (VARBIT[6713] = 0) {
+		text2 = "View Benefits"
+		graphic9 = "graphic_2150"
+	}
+	if_settext(text2, component5)
+	if_setgraphic(graphic9, component6)
+	if_setgraphic(graphic9, component7)
+	if_settext(text0, component0)
+	if_setop(1, op1, component1)
+	if_settext(op1, component2)
+	if_setgraphic(graphic8, component3)
+	if_setgraphic(graphic8, component4)
+	return 
+}

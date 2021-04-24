@@ -1,0 +1,5 @@
+// 568 proc
+fun clanwars_ffa_arena(coord0: Coord): Int {
+
+	return ~inzone(0_51_74_0_0, 3_52_75_63_63, coord0)
+}

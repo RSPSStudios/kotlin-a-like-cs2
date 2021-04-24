@@ -1,0 +1,8 @@
+// 1561 clientscript
+fun script1561(opindex0: Int, component1: Component, string0: String, component2: Component, int3: Int) {
+
+	if (opindex0 = 1) {
+		~script890(component1, string0, component2, int3)
+	}
+	return 
+}

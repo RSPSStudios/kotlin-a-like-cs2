@@ -1,0 +1,17 @@
+// 2876 proc
+fun script2876(component0: Component, component1: Component, component2: Component, component3: Component, int4: Int, width5: Int, height6: Int) {
+
+	val width7: Int = if_getwidth(component0)
+	val height8: Int = if_getheight(component0)
+	if (width7 = width5 & height8 = height6) {
+		return 
+	}
+	val height9: Int = ~max(300, ~min(int4, calc(height8 - 10)))
+	if_setsize(350, height9, ^setsize_abs, ^setsize_abs, component1)
+	~scrollbar_vertical_rebuild(component3, component2)
+	~scrollbar_resize(component3, component2, VARCINT[203])
+	if_setontimer({
+		script2875(component0, component1, component2, component3, int4, width7, height8)
+	}, component0)
+	return 
+}

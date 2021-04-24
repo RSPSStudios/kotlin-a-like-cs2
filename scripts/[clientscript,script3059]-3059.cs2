@@ -1,0 +1,33 @@
+// 3059 clientscript
+fun script3059(clock0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component) {
+
+	if (clientclock < clock0) {
+		return 
+	}
+	VARCINT[404] = calc((VARCINT[404] + random(4) + 2) % 2048)
+	VARCINT[407] = calc((VARCINT[407] + random(4) + 2) % 2048)
+	VARCINT[410] = calc((VARCINT[410] + random(4) + 2) % 2048)
+	VARCINT[413] = calc((VARCINT[413] + random(4) + 2) % 2048)
+	if (VARCINT[403] < 20 & (VARCINT[403] < -20 | random(2) = 0)) {
+		VARCINT[403] = ~min(calc(VARCINT[403] + random(3) + 1), 25)
+	} else {
+		VARCINT[403] = ~max(calc(VARCINT[403] - (random(3) + 1)), -25)
+	}
+	if (VARCINT[406] < 20 & (VARCINT[406] < -20 | random(2) = 0)) {
+		VARCINT[406] = ~min(calc(VARCINT[406] + random(3) + 1), 25)
+	} else {
+		VARCINT[406] = ~max(calc(VARCINT[406] - (random(3) + 1)), -25)
+	}
+	if (VARCINT[409] < 20 & (VARCINT[409] < -20 | random(2) = 0)) {
+		VARCINT[409] = ~min(calc(VARCINT[409] + random(3) + 1), 25)
+	} else {
+		VARCINT[409] = ~max(calc(VARCINT[409] - (random(3) + 1)), -25)
+	}
+	if (VARCINT[412] < 20 & (VARCINT[412] < -20 | random(2) = 0)) {
+		VARCINT[412] = ~min(calc(VARCINT[412] + random(3) + 1), 25)
+	} else {
+		VARCINT[412] = ~max(calc(VARCINT[412] - (random(3) + 1)), -25)
+	}
+	~script3060(0, component1, component2, component3, component4, component5, component6, component7, component8, component9)
+	return 
+}

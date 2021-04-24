@@ -1,0 +1,37 @@
+// 3073 proc
+fun br_loadout_sort(arrayint0: Int, int1: Int, int2: Int) {
+
+	val index3: Int = calc((int1 + int2) / 2)
+	val int4: Int = int0[index3]
+	int0[index3] = int0[int2]
+	int0[int2] = int4
+	val int5: Int = int1
+	val int6: Int = int1
+	val int7: Int = 0
+	val namedobj8: Namedobj = null
+	val int9: Int = 0
+	val namedobj10: Namedobj = enum(int, namedobj, enum_2630, int4)
+	val int11: Int = oc_param(namedobj10, param_850)
+	val string0: String = oc_name(namedobj10)
+	val int12: Int = 0
+	while (int6 < int2) {
+		namedobj8 = enum(int, namedobj, enum_2630, int0[int6])
+		int9 = oc_param(namedobj8, param_850)
+		if (int9 < int11 | int9 = int11 & compare(oc_name(namedobj8), string0) <= 0) {
+			int12 = int0[int6]
+			int0[int6] = int0[int5]
+			int0[int5] = int12
+			int5 = calc(int5 + 1)
+		}
+		int6 = calc(int6 + 1)
+	}
+	int0[int2] = int0[int5]
+	int0[int5] = int4
+	if (int1 < calc(int5 - 1)) {
+		~br_loadout_sort(int0, int1, calc(int5 - 1))
+	}
+	if (calc(int5 + 1) < int2) {
+		~br_loadout_sort(int0, calc(int5 + 1), int2)
+	}
+	return 
+}

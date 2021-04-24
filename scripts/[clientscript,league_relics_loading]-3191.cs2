@@ -1,0 +1,8 @@
+// 3191 clientscript
+fun league_relics_loading(component0: Component, comsubid1: Int, component2: Component, trans3: Int, component4: Component, graphic5: Graphic, component6: Component, colour7: Int) {
+
+	sound_synth(synth_2266, 1, 0)
+	if_sethide(false, component0)
+	~league_relic_hover(component2, trans3, component4, graphic5, component6, colour7, comsubid1)
+	return 
+}

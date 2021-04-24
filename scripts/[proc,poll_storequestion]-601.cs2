@@ -1,0 +1,236 @@
+// 601 proc
+fun poll_storequestion(int0: Int, string0: String) {
+
+	if (int0 < 50) {
+		if (int0 < 25) {
+			if (int0 < 13) {
+				if (int0 < 6) {
+					if (int0 <= 0) {
+						VARCSTRING[230] = string0
+					} else if (int0 = 1) {
+						VARCSTRING[231] = string0
+					} else if (int0 = 2) {
+						VARCSTRING[232] = string0
+					} else if (int0 = 3) {
+						VARCSTRING[233] = string0
+					} else if (int0 = 4) {
+						VARCSTRING[234] = string0
+					} else {
+						VARCSTRING[235] = string0
+					}
+				} else if (int0 = 6) {
+					VARCSTRING[236] = string0
+				} else if (int0 = 7) {
+					VARCSTRING[237] = string0
+				} else if (int0 = 8) {
+					VARCSTRING[238] = string0
+				} else if (int0 = 9) {
+					VARCSTRING[239] = string0
+				} else if (int0 = 10) {
+					VARCSTRING[240] = string0
+				} else if (int0 = 11) {
+					VARCSTRING[241] = string0
+				} else {
+					VARCSTRING[242] = string0
+				}
+			} else if (int0 < 19) {
+				if (int0 = 13) {
+					VARCSTRING[243] = string0
+				} else if (int0 = 14) {
+					VARCSTRING[244] = string0
+				} else if (int0 = 15) {
+					VARCSTRING[245] = string0
+				} else if (int0 = 16) {
+					VARCSTRING[246] = string0
+				} else if (int0 = 17) {
+					VARCSTRING[247] = string0
+				} else {
+					VARCSTRING[248] = string0
+				}
+			} else if (int0 = 19) {
+				VARCSTRING[249] = string0
+			} else if (int0 = 20) {
+				VARCSTRING[250] = string0
+			} else if (int0 = 21) {
+				VARCSTRING[251] = string0
+			} else if (int0 = 22) {
+				VARCSTRING[252] = string0
+			} else if (int0 = 23) {
+				VARCSTRING[253] = string0
+			} else {
+				VARCSTRING[254] = string0
+			}
+		} else if (int0 < 38) {
+			if (int0 < 32) {
+				if (int0 = 25) {
+					VARCSTRING[255] = string0
+				} else if (int0 = 26) {
+					VARCSTRING[256] = string0
+				} else if (int0 = 27) {
+					VARCSTRING[257] = string0
+				} else if (int0 = 28) {
+					VARCSTRING[258] = string0
+				} else if (int0 = 29) {
+					VARCSTRING[259] = string0
+				} else if (int0 = 30) {
+					VARCSTRING[260] = string0
+				} else {
+					VARCSTRING[261] = string0
+				}
+			} else if (int0 = 32) {
+				VARCSTRING[262] = string0
+			} else if (int0 = 33) {
+				VARCSTRING[263] = string0
+			} else if (int0 = 34) {
+				VARCSTRING[264] = string0
+			} else if (int0 = 35) {
+				VARCSTRING[265] = string0
+			} else if (int0 = 36) {
+				VARCSTRING[266] = string0
+			} else {
+				VARCSTRING[267] = string0
+			}
+		} else if (int0 < 44) {
+			if (int0 = 38) {
+				VARCSTRING[268] = string0
+			} else if (int0 = 39) {
+				VARCSTRING[269] = string0
+			} else if (int0 = 40) {
+				VARCSTRING[270] = string0
+			} else if (int0 = 41) {
+				VARCSTRING[271] = string0
+			} else if (int0 = 42) {
+				VARCSTRING[272] = string0
+			} else {
+				VARCSTRING[273] = string0
+			}
+		} else if (int0 = 44) {
+			VARCSTRING[274] = string0
+		} else if (int0 = 45) {
+			VARCSTRING[275] = string0
+		} else if (int0 = 46) {
+			VARCSTRING[276] = string0
+		} else if (int0 = 47) {
+			VARCSTRING[277] = string0
+		} else if (int0 = 48) {
+			VARCSTRING[278] = string0
+		} else {
+			VARCSTRING[279] = string0
+		}
+	} else if (int0 < 75) {
+		if (int0 < 63) {
+			if (int0 < 56) {
+				if (int0 = 50) {
+					VARCSTRING[280] = string0
+				} else if (int0 = 51) {
+					VARCSTRING[281] = string0
+				} else if (int0 = 52) {
+					VARCSTRING[282] = string0
+				} else if (int0 = 53) {
+					VARCSTRING[283] = string0
+				} else if (int0 = 54) {
+					VARCSTRING[284] = string0
+				} else {
+					VARCSTRING[285] = string0
+				}
+			} else if (int0 = 56) {
+				VARCSTRING[286] = string0
+			} else if (int0 = 57) {
+				VARCSTRING[287] = string0
+			} else if (int0 = 58) {
+				VARCSTRING[288] = string0
+			} else if (int0 = 59) {
+				VARCSTRING[289] = string0
+			} else if (int0 = 60) {
+				VARCSTRING[290] = string0
+			} else if (int0 = 61) {
+				VARCSTRING[291] = string0
+			} else {
+				VARCSTRING[292] = string0
+			}
+		} else if (int0 < 69) {
+			if (int0 = 63) {
+				VARCSTRING[293] = string0
+			} else if (int0 = 64) {
+				VARCSTRING[294] = string0
+			} else if (int0 = 65) {
+				VARCSTRING[295] = string0
+			} else if (int0 = 66) {
+				VARCSTRING[296] = string0
+			} else if (int0 = 67) {
+				VARCSTRING[297] = string0
+			} else {
+				VARCSTRING[298] = string0
+			}
+		} else if (int0 = 69) {
+			VARCSTRING[299] = string0
+		} else if (int0 = 70) {
+			VARCSTRING[300] = string0
+		} else if (int0 = 71) {
+			VARCSTRING[301] = string0
+		} else if (int0 = 72) {
+			VARCSTRING[302] = string0
+		} else if (int0 = 73) {
+			VARCSTRING[303] = string0
+		} else {
+			VARCSTRING[304] = string0
+		}
+	} else if (int0 < 88) {
+		if (int0 < 82) {
+			if (int0 = 75) {
+				VARCSTRING[305] = string0
+			} else if (int0 = 76) {
+				VARCSTRING[306] = string0
+			} else if (int0 = 77) {
+				VARCSTRING[307] = string0
+			} else if (int0 = 78) {
+				VARCSTRING[308] = string0
+			} else if (int0 = 79) {
+				VARCSTRING[309] = string0
+			} else if (int0 = 80) {
+				VARCSTRING[310] = string0
+			} else {
+				VARCSTRING[311] = string0
+			}
+		} else if (int0 = 82) {
+			VARCSTRING[312] = string0
+		} else if (int0 = 83) {
+			VARCSTRING[313] = string0
+		} else if (int0 = 84) {
+			VARCSTRING[314] = string0
+		} else if (int0 = 85) {
+			VARCSTRING[315] = string0
+		} else if (int0 = 86) {
+			VARCSTRING[316] = string0
+		} else {
+			VARCSTRING[317] = string0
+		}
+	} else if (int0 < 94) {
+		if (int0 = 88) {
+			VARCSTRING[318] = string0
+		} else if (int0 = 89) {
+			VARCSTRING[319] = string0
+		} else if (int0 = 90) {
+			VARCSTRING[320] = string0
+		} else if (int0 = 91) {
+			VARCSTRING[321] = string0
+		} else if (int0 = 92) {
+			VARCSTRING[322] = string0
+		} else {
+			VARCSTRING[323] = string0
+		}
+	} else if (int0 = 94) {
+		VARCSTRING[324] = string0
+	} else if (int0 = 95) {
+		VARCSTRING[325] = string0
+	} else if (int0 = 96) {
+		VARCSTRING[326] = string0
+	} else if (int0 = 97) {
+		VARCSTRING[327] = string0
+	} else if (int0 = 98) {
+		VARCSTRING[328] = string0
+	} else if (int0 = 99) {
+		VARCSTRING[329] = string0
+	}
+	return 
+}

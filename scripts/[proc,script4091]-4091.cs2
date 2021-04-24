@@ -1,0 +1,16 @@
+// 4091 proc
+fun script4091(component0: Component, component1: Component) {
+
+	~settings_op_sound(1)
+	if (VARBIT[9638] = 1) {
+		return 
+	}
+	~chatdefault_stopinput
+	VARBIT[9638] = 1
+	VARBIT[9639] = 1
+	if (~on_mobile = true) {
+		~keyboard_show(0, 50)
+	}
+	~script4088(1, component0, component1)
+	return 
+}

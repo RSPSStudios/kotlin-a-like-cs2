@@ -1,0 +1,6 @@
+// 3524 proc
+fun script3524(component0: Component) {
+
+	if_settext("Carpenter Points:<br><col=ffffff>${~tostring_spacer(VARP[261], ",")}</col>", component0)
+	return 
+}

@@ -1,0 +1,7 @@
+// 2122 clientscript
+fun script2122(boolean0: Boolean, component1: Component) {
+
+	sound_synth(synth_2266, 1, 0)
+	if_sethide(boolean0, component1)
+	return 
+}

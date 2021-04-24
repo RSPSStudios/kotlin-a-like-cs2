@@ -1,0 +1,6 @@
+// 163 clientscript
+fun cws_toggle(component0: Component) {
+
+	if_setgraphic("warning_icons,1", component0)
+	return 
+}

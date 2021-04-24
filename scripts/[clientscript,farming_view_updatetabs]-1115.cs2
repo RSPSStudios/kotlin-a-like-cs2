@@ -1,0 +1,6 @@
+// 1115 clientscript
+fun farming_view_updatetabs(component0: Component, component1: Component, component2: Component) {
+
+	~farming_view_updatetabs(component0, component1, component2)
+	return 
+}

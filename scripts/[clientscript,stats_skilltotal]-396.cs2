@@ -1,0 +1,34 @@
+// 396 clientscript
+fun stats_skilltotal(component0: Component, component1: Component) {
+
+	val int2: Int = ~stat_totallevel
+	if_settext("Total level:<br>${tostring(int2)}", component0)
+	if_clearops(component0)
+	val string0: String = ""
+	val string1: String = ""
+	if (map_members = ^true | VARCINT[103] = 1) {
+		string0 = "Total XP:"
+		string1 = ~stats_tostring_totalxp(~stats_totalxp)
+	} else {
+		string0 = "Total XP:|Free Total Level:"
+		string1 = "${~stats_tostring_totalxp(~stats_totalxp)}|${tostring(~stat_f2plevel)}"
+	}
+	if (~on_mobile = true) {
+		if_setop(1, "Toggle Total XP", component0)
+		if_setonop({
+			stats_op(event_opindex, event_com, -1, component1, string0, string1, p12_full)
+		}, component0)
+		if (VARCINT[218] = component0 & VARCINT[217] = -1) {
+			~script2344(component0, -1, component1, string0, string1, p12_full)
+		}
+	} else {
+		if_setonmouserepeat({
+			script992(event_com, -1, component1, string0, string1, p12_full, calc(25 / 5))
+		}, component0)
+		if_setonmouseleave({
+			deltooltip(component1)
+		}, component0)
+		VARCINT[2] = 0
+	}
+	return 
+}

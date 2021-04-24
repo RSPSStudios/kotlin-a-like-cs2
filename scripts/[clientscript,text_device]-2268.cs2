@@ -1,0 +1,12 @@
+// 2268 clientscript
+fun text_device(component0: Component, comsubid1: Int, text0: String, text1: String) {
+
+	if (comsubid1 = -1 & if_find(component0) = true | cc_find(component0, comsubid1) = ^true) {
+		if (~on_mobile = true) {
+			cc_settext(text1)
+		} else {
+			cc_settext(text0)
+		}
+	}
+	return 
+}

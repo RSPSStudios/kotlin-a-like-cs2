@@ -1,0 +1,6 @@
+// 3237 proc
+fun questlist_members_progress_grey(count0: Int): Int {
+
+	val struct1: Struct = enum(int, struct, enum_2099, count0)
+	return ~questlist_showprogress_grey(struct1)
+}

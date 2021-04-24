@@ -1,0 +1,16 @@
+// 1414 proc
+fun hp_hud_update_bar(component0: Component, width1: Int) {
+
+	val width2: Int = if_getwidth(component0)
+	if (width2 = width1) {
+		if_setsize(width1, if_getheight(component0), ^setsize_abs, ^setsize_abs, component0)
+		if_setontimer(null, component0)
+		return 
+	}
+	if (width2 < width1) {
+		if_setsize(calc(width2 + 1), if_getheight(component0), ^setsize_abs, ^setsize_abs, component0)
+	} else if (width2 > width1) {
+		if_setsize(calc(width2 - 1), if_getheight(component0), ^setsize_abs, ^setsize_abs, component0)
+	}
+	return 
+}

@@ -1,0 +1,6 @@
+// 600 clientscript
+fun if_settextalign(settextalignh0: Int, settextalignv1: Int, int2: Int, component3: Component) {
+
+	if_settextalign(settextalignh0, settextalignv1, int2, component3)
+	return 
+}

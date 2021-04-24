@@ -1,0 +1,8 @@
+// 1503 proc
+fun string_prependzero(string0: String, length0: Int): String {
+
+	while (string_length(string0) < length0) {
+		string0 = append("0", string0)
+	}
+	return string0
+}

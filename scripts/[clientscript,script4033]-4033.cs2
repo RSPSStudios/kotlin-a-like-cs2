@@ -1,0 +1,39 @@
+// 4033 clientscript
+fun script4033(int0: Int) {
+
+	~v2_stone_button_out_filled(warguild_defence_mini:6)
+	~v2_stone_button_out_filled(warguild_defence_mini:8)
+	~v2_stone_button_out_filled(warguild_defence_mini:10)
+	~v2_stone_button_out_filled(warguild_defence_mini:12)
+	if_setcolour(0xff6600, warguild_defence_mini:7)
+	if_setcolour(0xff6600, warguild_defence_mini:9)
+	if_setcolour(0xff6600, warguild_defence_mini:11)
+	if_setcolour(0xff6600, warguild_defence_mini:13)
+	if_setmodelanim(null, warguild_defence_mini:1)
+	if_setmodelanim(null, warguild_defence_mini:2)
+	if_setmodelanim(null, warguild_defence_mini:3)
+	if_setmodelanim(null, warguild_defence_mini:4)
+	when (int0): Int {
+		26935302 -> {
+		
+			if_setcolour(^white, warguild_defence_mini:7)
+			if_setmodelanim(seq_4165, warguild_defence_mini:1)
+		}
+		26935304 -> {
+		
+			if_setcolour(^white, warguild_defence_mini:9)
+			if_setmodelanim(seq_4165, warguild_defence_mini:2)
+		}
+		26935306 -> {
+		
+			if_setcolour(^white, warguild_defence_mini:11)
+			if_setmodelanim(seq_4165, warguild_defence_mini:3)
+		}
+		26935308 -> {
+		
+			if_setcolour(^white, warguild_defence_mini:13)
+			if_setmodelanim(seq_4165, warguild_defence_mini:4)
+		}
+	}
+	return 
+}

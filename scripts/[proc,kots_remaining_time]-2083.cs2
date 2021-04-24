@@ -1,0 +1,5 @@
+// 2083 proc
+fun kots_remaining_time(): Int {
+
+	return ~max(calc(144000 - VARBIT[6024]), 0)
+}

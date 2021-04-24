@@ -1,0 +1,22 @@
+// 1489 proc
+fun script1489(component0: Component, component1: Component, component2: Component, component3: Component, width4: Int, height5: Int) {
+
+	val width6: Int = if_getwidth(component0)
+	val height7: Int = if_getheight(component0)
+	if (width6 = width4 & height7 = height5) {
+		return 
+	}
+	val height8: Int = calc(height7 - 10)
+	val height9: Int = 800
+	if (height9 > height8) {
+		height9 = height8
+	}
+	val height10: Int = if_getscrollheight(component2)
+	if_setsize(500, height9, ^setsize_abs, ^setsize_abs, component1)
+	~scrollbar_vertical_rebuild(component3, component2)
+	~scrollbar_resize(component3, component2, VARCINT[63])
+	if_setontimer({
+		script1488(component0, component1, component2, component3, width6, height7)
+	}, component0)
+	return 
+}

@@ -1,0 +1,6 @@
+// 2656 clientscript
+fun telenexus_examine_cost(obj0: Obj) {
+
+	mes(oc_name(obj0))
+	return 
+}

@@ -1,0 +1,49 @@
+// 3858 clientscript
+fun settings_input_setting_transmit(struct0: Struct, int1: Int, comsubid2: Int, comsubid3: Int, comsubid4: Int, component5: Component, comsubid6: Int) {
+
+	val int7: Int = ~script3957(struct0)
+	val string0: String = ","
+	val int8: Int = 0
+	if (cc_find(component5, comsubid2) = ^true) {
+		if (int7 = 1) {
+			cc_setcolour(0xff981f)
+		} else {
+			cc_setcolour(0x9f9f9f)
+		}
+		int8 = ~settings_get_number_input(int1)
+		if (int8 > 1) {
+			cc_settext("${~tostring_spacer(int8, string0)} ${struct_param(struct0, param_1112)}")
+		} else if (int8 = 0) {
+			cc_settext(struct_param(struct0, param_1113))
+		} else {
+			cc_settext("1 ${struct_param(struct0, param_1111)}")
+		}
+	}
+	if (cc_find(component5, comsubid4) = ^true) {
+		if (int7 = 1) {
+			cc_setcolour(0xff981f)
+		} else {
+			cc_setcolour(0x9f9f9f)
+		}
+	}
+	if (cc_find(component5, comsubid3) = ^true) {
+		if (~on_mobile = false & int7 = 1) {
+			cc_setonmouseover({
+				cc_settrans(component5, comsubid3, 220, null)
+			})
+			cc_setonmouseleave({
+				cc_settrans(component5, comsubid3, 255, null)
+			})
+		} else {
+			cc_setonmouseover(null)
+			cc_setonmouseleave(null)
+		}
+	}
+	if (VARBIT[9647] = 1 & VARBIT[9657] = int1 & cc_find(component5, comsubid6) = ^true) {
+		cc_setcolour(^white)
+		cc_setontimer({
+			settings_input_timer(component5, comsubid6)
+		})
+	}
+	return 
+}

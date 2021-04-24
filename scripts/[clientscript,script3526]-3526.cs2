@@ -1,0 +1,6 @@
+// 3526 clientscript
+fun script3526(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	~script3527(int0, component1, component2, component3, component4)
+	return 
+}

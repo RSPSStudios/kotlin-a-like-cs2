@@ -1,0 +1,14 @@
+// 1142 clientscript
+fun deadman_stats_click(opindex0: Int, component1: Component, int2: Int) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	if (testbit(VARP[1295], calc(int2 - 1)) = ^false) {
+		~script1143(component1, int2)
+	} else {
+		~script1144(component1, int2)
+	}
+	return 
+}

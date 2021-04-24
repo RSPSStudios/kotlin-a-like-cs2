@@ -1,0 +1,8 @@
+// 823 clientscript
+fun itemsets_redraw(component0: Component, comsubid1: Int, enum2: Enum) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		~itemsets_redraw(enum2)
+	}
+	return 
+}

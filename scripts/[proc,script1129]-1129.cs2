@@ -1,0 +1,23 @@
+// 1129 proc
+fun script1129(namedobj0: Namedobj): Int {
+
+	val int1: Int = 0
+	val int2: Int = 999999
+	int1 = oc_param(namedobj0, param_916)
+	int2 = oc_param(namedobj0, param_917)
+	when (int1): Int {
+		1 -> {
+		
+			if (int2 > VARP[2771]) {
+				return 0
+			}
+		}
+		2 -> {
+		
+			if (int2 > VARP[2772]) {
+				return 0
+			}
+		}
+	}
+	return 1
+}

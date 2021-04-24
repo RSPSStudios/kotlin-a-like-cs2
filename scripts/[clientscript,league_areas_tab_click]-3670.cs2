@@ -1,0 +1,6 @@
+// 3670 clientscript
+fun league_areas_tab_click(component0: Component, int1: Int, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, colour7: Int, colour8: Int, component9: Component, component10: Component) {
+
+	~league_areas_tab_details(component0, int1, component2, component3, component4, component5, component6, colour7, colour8, component9, component10)
+	return 
+}

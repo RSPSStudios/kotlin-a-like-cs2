@@ -1,0 +1,7 @@
+// 1136 clientscript
+fun script1136(trans0: Int, trans1: Int, component2: Component, component3: Component) {
+
+	if_settrans(trans0, component2)
+	if_settrans(trans1, component3)
+	return 
+}

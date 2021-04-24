@@ -1,0 +1,6 @@
+// 1241 clientscript
+fun forget_yellow_counter(component0: Component) {
+
+	if_settext("x ${tostring(VARBIT[861])}", component0)
+	return 
+}

@@ -1,0 +1,14 @@
+// 3403 clientscript
+fun prayer_flash_prayer(int0: Int) {
+
+	val component1: Component = enum(int, component, enum_859, int0)
+	if (component1 = null) {
+		return 
+	}
+	if (cc_find(component1, 1) = ^true) {
+		if_setontimer({
+			prayer_flash_timer(component1, 0, 0)
+		}, component1)
+	}
+	return 
+}

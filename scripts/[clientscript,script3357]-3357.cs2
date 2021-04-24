@@ -1,0 +1,7 @@
+// 3357 clientscript
+fun script3357() {
+
+	VARBIT[68] = calc(1 - VARBIT[68])
+	~script3358(VARBIT[68])
+	return 
+}

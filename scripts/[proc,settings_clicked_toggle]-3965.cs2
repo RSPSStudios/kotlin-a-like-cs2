@@ -1,0 +1,196 @@
+// 3965 proc
+fun settings_clicked_toggle(int0: Int) {
+
+	VARBIT[9657] = int0
+	when (int0): Int {
+		7 -> {
+		
+			~settings_remove_roof
+		}
+		33 -> {
+		
+			~script3972
+		}
+		5 -> {
+		
+			~script3973
+		}
+		9 -> {
+		
+			~settings_wiki_lookup
+		}
+		8 -> {
+		
+			~settings_data_orbs
+		}
+		2 -> {
+		
+			~script3976
+		}
+		3 -> {
+		
+			~script3977
+		}
+		4 -> {
+		
+			~script3978
+		}
+		6 -> {
+		
+			~script3979
+		}
+		10 -> {
+		
+			~settings_health_overlay
+		}
+		11 -> {
+		
+			~script3981
+		}
+		13 -> {
+		
+			~script3982
+		}
+		34 -> {
+		
+			~script3983
+		}
+		35 -> {
+		
+			~script3984
+		}
+		36 -> {
+		
+			~script3985
+		}
+		37 -> {
+		
+			~script3986
+		}
+		38 -> {
+		
+			~script4014
+		}
+		40 -> {
+		
+			~script4016
+		}
+		41 -> {
+		
+			~script4017
+		}
+		42 -> {
+		
+			~script4015
+		}
+		44 -> {
+		
+			~script3987
+		}
+		46 -> {
+		
+			~script3988
+		}
+		47 -> {
+		
+			~settings_store_button
+		}
+		49 -> {
+		
+			~settings_mouse_camera
+		}
+		50 -> {
+		
+			~script3991
+		}
+		51 -> {
+		
+			~script3992
+		}
+		48 -> {
+		
+			~script3993
+		}
+		52 -> {
+		
+			~settings_function_button
+		}
+		54 -> {
+		
+			~script3995
+		}
+		57 -> {
+		
+			~script3996
+		}
+		59 -> {
+		
+			~settings_accept_aid
+		}
+		60 -> {
+		
+			~script4001
+		}
+		61 -> {
+		
+			~script4002
+		}
+		62 -> {
+		
+			~script1
+		}
+		63 -> {
+		
+			~script4004
+		}
+		64 -> {
+		
+			~script4005
+		}
+		65 -> {
+		
+			~script4009
+		}
+		67 -> {
+		
+			~script4006
+		}
+		68 -> {
+		
+			~script4007
+		}
+		69 -> {
+		
+			~script4008
+		}
+		70 -> {
+		
+			~script4010
+		}
+		71 -> {
+		
+			~script50
+		}
+		72 -> {
+		
+			~script4012
+		}
+		73 -> {
+		
+			~script4013
+		}
+		82 -> {
+		
+			~script2400
+		}
+		83 -> {
+		
+			~script4034
+		}
+		84 -> {
+		
+			~script4036
+		}
+	}
+	return 
+}

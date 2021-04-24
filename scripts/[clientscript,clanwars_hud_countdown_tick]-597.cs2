@@ -1,0 +1,11 @@
+// 597 clientscript
+fun clanwars_hud_countdown_tick(component0: Component, component1: Component, comsubid2: Int, int3: Int) {
+
+	if (cc_find(component1, comsubid2) = ^true) {
+		if (int3 > 0) {
+			int3 = calc(int3 - 1)
+		}
+		~clanwars_hud_countdown_redraw(component0, component1, int3)
+	}
+	return 
+}

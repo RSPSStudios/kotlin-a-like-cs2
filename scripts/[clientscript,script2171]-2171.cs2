@@ -1,0 +1,15 @@
+// 2171 clientscript
+fun script2171(component0: Component, opindex1: Int) {
+
+	if (opindex1 ! 1) {
+		return 
+	}
+	val int2: Int = enum(component, int, enum_1896, component0)
+	if (VARBIT[6275] = int2) {
+		VARBIT[6275] = 0
+	} else {
+		VARBIT[6275] = int2
+	}
+	~script2173
+	return 
+}

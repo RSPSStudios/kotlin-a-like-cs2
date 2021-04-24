@@ -1,0 +1,8 @@
+// 2175 proc
+fun script2175(): Int {
+
+	if (testbit(worldflags, 25) = ^true) {
+		return 1
+	}
+	return 0
+}

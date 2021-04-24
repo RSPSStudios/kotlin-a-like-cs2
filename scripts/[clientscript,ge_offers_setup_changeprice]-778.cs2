@@ -1,0 +1,43 @@
+// 778 clientscript
+fun ge_offers_setup_changeprice(int0: Int, opindex1: Int, component2: Component, comsubid3: Int, comsubid4: Int, comsubid5: Int, comsubid6: Int, comsubid7: Int, comsubid8: Int, comsubid9: Int, comsubid10: Int, comsubid11: Int, comsubid12: Int, comsubid13: Int, comsubid14: Int, component15: Component, comsubid16: Int) {
+
+	if (opindex1 ! 1 | VARP[1151] = null) {
+		return 
+	}
+	val int17: Int = 0
+	if (int0 = 1) {
+		if (VARBIT[4398] < ^max_32bit_int) {
+			VARBIT[4398] = calc(VARBIT[4398] + 1)
+		}
+		sound_synth(synth_3929, 1, 0)
+	} else if (int0 = -1) {
+		if (VARBIT[4398] > 1) {
+			VARBIT[4398] = calc(VARBIT[4398] - 1)
+		}
+		sound_synth(synth_3930, 1, 0)
+	} else if (int0 = 5) {
+		int17 = calc(VARBIT[4398] / 20)
+		if (int17 <= 0) {
+			int17 = 1
+		}
+		if (calc(^max_32bit_int - int17) < VARBIT[4398]) {
+			VARBIT[4398] = ^max_32bit_int
+		} else {
+			VARBIT[4398] = calc(VARBIT[4398] + int17)
+		}
+		sound_synth(synth_3929, 1, 0)
+	} else if (int0 = -5) {
+		int17 = calc(VARBIT[4398] / 20)
+		if (int17 <= 0) {
+			int17 = 1
+		}
+		if (int17 >= VARBIT[4398]) {
+			VARBIT[4398] = 1
+		} else {
+			VARBIT[4398] = calc(VARBIT[4398] - int17)
+		}
+		sound_synth(synth_3930, 1, 0)
+	}
+	~ge_offers_setup_draw(component2, comsubid3, comsubid4, comsubid5, comsubid6, comsubid7, comsubid8, comsubid9, comsubid10, comsubid11, comsubid12, comsubid13, comsubid14, component15, comsubid16)
+	return 
+}

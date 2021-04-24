@@ -1,0 +1,12 @@
+// 844 proc
+fun soul_wars_rewards_select(int0: Int, component1: Component, component2: Component, component3: Component, int4: Int, y5: Int, component6: Component, component7: Component) {
+
+	if (int4 = 0) {
+		~script536(int0, component1, component2, component3, component6, component7)
+	} else if (int4 = 1) {
+		~script675(int0, component1, component2, component3, interface_442:17, y5, component6, component7)
+	} else if (int4 = 2) {
+		~script842(int0, component1, component2, component3, interface_442:20, y5, component6, component7)
+	}
+	return 
+}

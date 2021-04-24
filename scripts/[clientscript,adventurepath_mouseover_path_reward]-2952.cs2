@@ -1,0 +1,11 @@
+// 2952 clientscript
+fun adventurepath_mouseover_path_reward(int0: Int, component1: Component, text0: String) {
+
+	~v2_stone_button_in_filled(component1)
+	~adventurepath_button_text(component1, 9, text0)
+	cc_setop(1, "Show <col=ff9040>path reward")
+	cc_setonop({
+		button_select_sound
+	})
+	return 
+}

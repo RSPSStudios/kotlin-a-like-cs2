@@ -1,0 +1,6 @@
+// 782 clientscript
+fun ge_offer_side_draw(component0: Component, component1: Component) {
+
+	~ge_offer_side_draw(component0, component1)
+	return 
+}

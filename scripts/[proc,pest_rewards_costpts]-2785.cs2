@@ -1,0 +1,8 @@
+// 2785 proc
+fun pest_rewards_costpts(int0: Int): String {
+
+	if (int0 = 1) {
+		return "1 Pt"
+	}
+	return "${tostring(int0)} Pts"
+}

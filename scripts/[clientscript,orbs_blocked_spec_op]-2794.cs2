@@ -1,0 +1,9 @@
+// 2794 clientscript
+fun orbs_blocked_spec_op(opindex0: Int) {
+
+	if (opindex0 = 2) {
+		sound_synth(pillory_wrong, 1, 0)
+		mes("The orb does not control special attacks in PvP areas.")
+	}
+	return 
+}

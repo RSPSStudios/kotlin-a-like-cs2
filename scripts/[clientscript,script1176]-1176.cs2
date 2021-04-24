@@ -1,0 +1,10 @@
+// 1176 clientscript
+fun script1176(int0: Int) {
+
+	if (int0 = 1) {
+		if_settrans(255, interface_90:51)
+	} else {
+		if_settrans(0, interface_90:51)
+	}
+	return 
+}

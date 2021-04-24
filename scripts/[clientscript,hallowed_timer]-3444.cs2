@@ -1,0 +1,6 @@
+// 3444 clientscript
+fun hallowed_timer(int0: Int) {
+
+	~hallowed_timer_text(int0)
+	return 
+}

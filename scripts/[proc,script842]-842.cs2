@@ -1,0 +1,37 @@
+// 842 proc
+fun script842(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component, y5: Int, component6: Component, component7: Component) {
+
+	cc_deleteall(component1)
+	val int8: Int = 0
+	val height9: Int = 10
+	val int10: Int = 2
+	val width11: Int = if_getwidth(component1)
+	val int12: Int = calc((if_getwidth(component1) - 2) / 2)
+	val count13: Int = 0
+	val count14: Int = enum_getoutputcount(enum_3553)
+	while (count13 < count14) {
+		int8 = ~soul_wars_rewards_drawitem(count13, enum_3553, enum_3540, height9, int10, int12, 2, component1, component2, component3, int8, int0, component6, component7)
+		count13 = calc(count13 + 1)
+		int10 = calc(int10 + int12)
+		if (calc(int10 + int12) > width11 & count13 < count14) {
+			int10 = 2
+			height9 = calc(height9 + 32 + 10)
+		}
+	}
+	~scrollbar_vertical(component4, component1, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+	height9 = calc(height9 + 32 + 10)
+	if (height9 >= if_getheight(component1)) {
+		if_setscrollsize(0, height9, component1)
+	} else {
+		if_setscrollsize(0, 0, component1)
+	}
+	if_setscrollpos(0, y5, component1)
+	~scrollbar_vertical_rebuild(component4, component1)
+	~soul_wars_rewards_drawconfirm(int0, component1, component2, component3, enum_3553, 2, component6, component7)
+	if_setonvartransmit({
+		script676(-1, component1, component2, component3, component4, component6, component7){VARP[2876]}
+	}, component1)
+	if_setonvartransmit(null, component6)
+	if_setonvartransmit(null, component7)
+	return 
+}

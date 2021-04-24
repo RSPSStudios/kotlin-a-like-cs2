@@ -1,0 +1,11 @@
+// 521 clientscript
+fun script521(opindex0: Int, component1: Component, int2: Int) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	VARBIT[4170] = int2
+	~script523(component1)
+	return 
+}

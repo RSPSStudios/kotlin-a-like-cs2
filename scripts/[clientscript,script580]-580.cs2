@@ -1,0 +1,6 @@
+// 580 clientscript
+fun script580(enum0: Enum, component1: Component, component2: Component, component3: Component, int4: Int) {
+
+	~script581(enum0, component1, component2, component3, int4)
+	return 
+}

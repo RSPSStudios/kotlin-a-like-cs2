@@ -1,0 +1,5 @@
+// 2265 proc
+fun miniquest_count(): Int {
+
+	return enum_getoutputcount(enum_2100)
+}

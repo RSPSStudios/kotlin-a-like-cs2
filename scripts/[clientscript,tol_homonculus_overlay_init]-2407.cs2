@@ -1,0 +1,6 @@
+// 2407 clientscript
+fun tol_homonculus_overlay_init(component0: Component) {
+
+	~script2249(component0, setbit(0, 3))
+	return 
+}

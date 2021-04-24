@@ -1,0 +1,6 @@
+// 2398 proc
+fun recurring_membership(int0: Int) {
+
+	VARCINT[226] = int0
+	return 
+}

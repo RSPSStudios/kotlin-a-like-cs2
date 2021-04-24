@@ -1,0 +1,6 @@
+// 2306 clientscript
+fun tob_hud_fade(int0: Int, int1: Int, string0: String) {
+
+	~tob_hud_fade(^black, int0, int1, string0, 0)
+	return 
+}

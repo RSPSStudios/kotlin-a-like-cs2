@@ -1,0 +1,7 @@
+// 2301 clientscript
+fun tob_hud_statusnames(string0: String, string1: String, string2: String, string3: String, string4: String) {
+
+	VARCSTRING[330], VARCSTRING[331], VARCSTRING[332], VARCSTRING[333], VARCSTRING[334] = string0, string1, string2, string3, string4
+	VARCINT[219] = 0
+	return 
+}

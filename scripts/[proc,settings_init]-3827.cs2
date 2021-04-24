@@ -1,0 +1,13 @@
+// 3827 proc
+fun settings_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component, component16: Component, component17: Component, component18: Component, component19: Component, component20: Component, component21: Component) {
+
+	~settings_window_setup(component0, component1, component2, component3, component4, component5, component11, component8, component9, component10, component12, component13, component14, component15, component16, component17, component18, component21)
+	~searchbar_create(component19, component20)
+	~searchbar_setup_op(component6, component7, component19, component20, 1, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component21)
+	if (VARBIT[9638] = 1 & VARBIT[9639] = 1) {
+		~chatdefault_stopinput
+	}
+	~settings_create_tabs(component6, component7, VARBIT[9656], component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21)
+	~settings_populate_settings(0, 0, 0, 1, component8, component9, component10, VARBIT[9656], component11, component12, component13, component14, component15, component16, component17, component18, component21)
+	return 
+}

@@ -1,0 +1,49 @@
+// 3255 proc
+fun magic_training_rewards(component0: Component, component1: Component, component2: Component): Int {
+
+	cc_deleteall(component0)
+	val count3: Int = 0
+	val count4: Int = enum_getoutputcount(enum_2753)
+	val int5: Int = 0
+	val namedobj6: Namedobj = null
+	val string0: String = ""
+	val int7: Int = calc(if_getwidth(component0) / 6)
+	val int8: Int = calc(if_getheight(component0) / 4)
+	val int9: Int = 0
+	val int10: Int = 0
+	while (count3 < count4) {
+		namedobj6 = enum(int, namedobj, enum_2753, count3)
+		if (namedobj6 ! null) {
+			string0 = oc_name(namedobj6)
+			cc_create(component0, ^iftype_graphic, int5)
+			cc_setoutline(1)
+			cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+			cc_setposition(calc(int7 / 2 - 36 / 2 + int10 * int7), calc(int8 / 2 - 32 / 2 + int9 * int8), ^setpos_abs_left, ^setpos_abs_top)
+			cc_setobject(namedobj6, 1)
+			cc_setop(1, "Select <col=ff981f>${string0}")
+			cc_setop(2, "Examine <col=ff981f>${string0}")
+			cc_setonop({
+				magic_training_rewards_op(event_opindex, component1, count3, component2, component0)
+			})
+			if (~on_mobile = false) {
+				cc_setonmouseleave({
+					cc_settrans(event_com, cc_getid, 0, null)
+				})
+				cc_setonmouserepeat({
+					cc_settrans(event_com, cc_getid, 140, null)
+				})
+			}
+			int5 = calc(int5 + 1)
+			int10 = calc(int10 + 1)
+			if (int10 > 5) {
+				int9 = calc(int9 + 1)
+				int10 = 0
+			}
+		}
+		count3 = calc(count3 + 1)
+	}
+	if (int10 = 0) {
+		int9 = calc(int9 - 1)
+	}
+	return calc((1 + int9) * int8)
+}

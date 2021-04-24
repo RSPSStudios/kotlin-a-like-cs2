@@ -1,0 +1,10 @@
+// 1725 clientscript
+fun worldmap_zoom_scroll(mousey0: Int, component1: Component, component2: Component) {
+
+	if (mousey0 > 0) {
+		~worldmap_zoom_adjust(false, component1, component2)
+	} else if (mousey0 < 0) {
+		~worldmap_zoom_adjust(true, component1, component2)
+	}
+	return 
+}

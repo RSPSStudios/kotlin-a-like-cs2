@@ -1,0 +1,47 @@
+// 2846 clientscript
+fun adventurepath_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component, component16: Component, component17: Component, component18: Component, component19: Component, component20: Component, component21: Component, component22: Component, component23: Component, component24: Component, component25: Component, component26: Component) {
+
+	cc_deleteall(component2)
+	val struct27: Struct = null
+	val enum28: Enum = null
+	val int29: Int = 0
+	val int30: Int = 0
+	val height31: Int = ~adventurepath_init(component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25, component26)
+	if_setonvartransmit({
+		script2944(height31, component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25, component26){VARP[2360], VARP[2357]}
+	}, component2)
+	if (height31 > if_getheight(component2)) {
+		if_setscrollsize(0, height31, component2)
+	} else {
+		if_setscrollsize(0, 0, component2)
+	}
+	~scrollbar_vertical(component1, component2, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+	if (VARBIT[9328] = 1) {
+		~adventurepath_task_init_op(component0, VARP[2357], component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component18, component17, component19, component20, component21, component22, component23, component24, component25, component26)
+		~adventurepath_change_page(component0, component3, component17, component19, 1)
+	} else if (VARBIT[9328] = 2) {
+		enum28 = enum(int, enum, enum_2620, VARP[2357])
+		if (enum28 ! null) {
+			int30 = enum_getoutputcount(enum28)
+			while (int29 < int30) {
+				struct27 = enum(int, struct, enum28, int29)
+				if (struct27 ! null & struct_param(struct27, param_806) = VARP[2358]) {
+					int29 = int30
+				}
+				int29 = calc(int29 + 1)
+			}
+			if (struct27 ! null) {
+				~adventurepath_task_init_op(component0, VARP[2357], component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component18, component17, component19, component20, component21, component22, component23, component24, component25, component26)
+				~adventurepath_set_info(VARP[2358], component7, component8, component9, component10, struct27, component11, component12, component3, component0, component4, component13, component14, component18, component17, component19, component20, component21, component22, component23, component24, component25, component26)
+				~adventurepath_change_page(component0, component3, component17, component19, 2)
+			} else {
+				~adventurepath_change_page(component0, component3, component17, component19, 0)
+			}
+		} else {
+			~adventurepath_change_page(component0, component3, component17, component19, 0)
+		}
+	} else {
+		~adventurepath_change_page(component0, component3, component17, component19, 0)
+	}
+	return 
+}

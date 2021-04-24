@@ -1,0 +1,9 @@
+// 1387 proc
+fun script1387(int0: Int): Int, Int, Int {
+
+	val int1: Int = calc(int0 / pow(2, 28))
+	int0 = calc(int0 % pow(2, 28))
+	val int2: Int = calc(int0 / pow(2, 14))
+	int0 = calc(int0 % pow(2, 14))
+	return int2, int1, int0
+}

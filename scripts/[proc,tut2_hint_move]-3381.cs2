@@ -1,0 +1,10 @@
+// 3381 proc
+fun tut2_hint_move() {
+
+	if (~on_mobile = true) {
+		~tut2_hint_move_mobile
+	} else {
+		~tut2_hint_move_desktop
+	}
+	return 
+}

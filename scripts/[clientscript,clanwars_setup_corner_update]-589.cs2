@@ -1,0 +1,6 @@
+// 589 clientscript
+fun clanwars_setup_corner_update(component0: Component, int1: Int, component2: Component, int3: Int) {
+
+	~clanwars_setup_corner_update(component0, int1, component2, int3)
+	return 
+}

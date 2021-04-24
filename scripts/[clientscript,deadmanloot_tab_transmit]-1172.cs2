@@ -1,0 +1,6 @@
+// 1172 clientscript
+fun deadmanloot_tab_transmit() {
+
+	~deadmanloot_inv_switch
+	return 
+}

@@ -1,0 +1,22 @@
+// 2891 proc
+fun orbs_worldmap_graphics(): Graphic, Graphic {
+
+	val graphic0: Graphic = null
+	val graphic1: Graphic = null
+	if (~toplevel_getcomponents = enum_1745) {
+		if (VARBIT[9178] = 1) {
+			graphic0 = "worldmap_icon_large,2"
+			graphic1 = "worldmap_icon_large,2"
+		} else {
+			graphic0 = "worldmap_icon_large,0"
+			graphic1 = "worldmap_icon_large,0"
+		}
+	} else if (VARBIT[9178] = 1) {
+		graphic0 = "worldmap_icon,2"
+		graphic1 = "worldmap_icon,3"
+	} else {
+		graphic0 = "worldmap_icon,0"
+		graphic1 = "worldmap_icon,1"
+	}
+	return graphic0, graphic1
+}

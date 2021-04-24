@@ -1,0 +1,6 @@
+// 4020 clientscript
+fun chatdefault_stopinput() {
+
+	~chatdefault_stopinput
+	return 
+}

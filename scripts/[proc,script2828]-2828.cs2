@@ -1,0 +1,29 @@
+// 2828 proc
+fun script2828(int0: Int): Int {
+
+	if (VARBIT[8172] = int0) {
+		return 1
+	}
+	if (VARBIT[8173] = int0) {
+		return 2
+	}
+	if (VARBIT[8174] = int0) {
+		return 3
+	}
+	if (VARBIT[8175] = int0) {
+		return 4
+	}
+	if (VARBIT[8176] = int0) {
+		return 5
+	}
+	if (VARBIT[8177] = int0) {
+		return 6
+	}
+	if (VARBIT[8178] = int0) {
+		return 7
+	}
+	if (VARBIT[8179] = int0) {
+		return 8
+	}
+	return -1
+}

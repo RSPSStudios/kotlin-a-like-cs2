@@ -1,0 +1,26 @@
+// 2579 proc
+fun script2579(): String {
+
+	when (VARBIT[6590]): Int {
+		1 -> {
+		
+			return "5"
+		}
+		2 -> {
+		
+			return "10"
+		}
+		3 -> {
+		
+			return tostring(~max(1, VARBIT[3960]))
+		}
+		4 -> {
+		
+			return "All"
+		}
+	else -> {
+	
+		return "1"
+	}
+	}
+}

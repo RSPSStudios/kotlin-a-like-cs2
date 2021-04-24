@@ -1,0 +1,361 @@
+// 4103 proc
+fun script4103(struct0: Struct): Int {
+
+	if (struct0 = null) {
+		return 0
+	}
+	when (struct0): Struct {
+		abyssal_sire_476 -> {
+		
+			return VARBIT[11963]
+		}
+		barrows_chests_477 -> {
+		
+			return VARBIT[11964]
+		}
+		bryophyta_478 -> {
+		
+			return VARBIT[11965]
+		}
+		callisto_479 -> {
+		
+			return VARBIT[11966]
+		}
+		cerberus_480 -> {
+		
+			return VARBIT[11967]
+		}
+		chaos_elemental_481 -> {
+		
+			return VARBIT[11968]
+		}
+		chaos_fanatic_482 -> {
+		
+			return VARBIT[11969]
+		}
+		commander_zilyana_483 -> {
+		
+			return VARBIT[11970]
+		}
+		corporeal_beast_484 -> {
+		
+			return VARBIT[11971]
+		}
+		crazy_archaeologist_485 -> {
+		
+			return VARBIT[11972]
+		}
+		dagannoth_kings_486 -> {
+		
+			return VARBIT[11973]
+		}
+		general_graardor_487 -> {
+		
+			return VARBIT[11974]
+		}
+		giant_mole_488 -> {
+		
+			return VARBIT[11975]
+		}
+		grotesque_guardians_489 -> {
+		
+			return VARBIT[11976]
+		}
+		kalphite_queen_490 -> {
+		
+			return VARBIT[11977]
+		}
+		king_black_dragon_491 -> {
+		
+			return VARBIT[11978]
+		}
+		kraken_492 -> {
+		
+			return VARBIT[11979]
+		}
+		kreearra_493 -> {
+		
+			return VARBIT[11980]
+		}
+		kril_tsutsaroth_494 -> {
+		
+			return VARBIT[11981]
+		}
+		obor_495 -> {
+		
+			return VARBIT[11982]
+		}
+		scorpia_496 -> {
+		
+			return VARBIT[11983]
+		}
+		skotizo_497 -> {
+		
+			return VARBIT[11984]
+		}
+		thermonuclear_smoke_devil_498 -> {
+		
+			return VARBIT[11985]
+		}
+		the_inferno_499 -> {
+		
+			return VARBIT[11986]
+		}
+		the_fight_caves_500 -> {
+		
+			return VARBIT[11987]
+		}
+		venenatis_501 -> {
+		
+			return VARBIT[11988]
+		}
+		vetion_502 -> {
+		
+			return VARBIT[11989]
+		}
+		vorkath_503 -> {
+		
+			return VARBIT[11990]
+		}
+		wintertodt_504 -> {
+		
+			return VARBIT[11991]
+		}
+		zalcano_604 -> {
+		
+			return VARBIT[11992]
+		}
+		zulrah_505 -> {
+		
+			return VARBIT[11993]
+		}
+		alchemical_hydra_539 -> {
+		
+			return VARBIT[12030]
+		}
+		sarachnis_601 -> {
+		
+			return VARBIT[12031]
+		}
+		hespori_541 -> {
+		
+			return VARBIT[12033]
+		}
+		the_gauntlet_605 -> {
+		
+			return VARBIT[12038]
+		}
+		the_nightmare_1263 -> {
+		
+			return VARBIT[12039]
+		}
+		struct_2867 -> {
+		
+			return VARBIT[12049]
+		}
+		theatre_of_blood_506 -> {
+		
+			return VARBIT[11994]
+		}
+		chambers_of_xeric_507 -> {
+		
+			return VARBIT[11995]
+		}
+		beginner_treasure_trails_593 -> {
+		
+			return VARBIT[11996]
+		}
+		easy_treasure_trails_508 -> {
+		
+			return VARBIT[11997]
+		}
+		medium_treasure_trails_509 -> {
+		
+			return VARBIT[11998]
+		}
+		hard_treasure_trails_510 -> {
+		
+			return VARBIT[11999]
+		}
+		elite_treasure_trails_511 -> {
+		
+			return VARBIT[12000]
+		}
+		master_treasure_trails_512 -> {
+		
+			return VARBIT[12001]
+		}
+		struct_2869 -> {
+		
+			return VARBIT[12044]
+		}
+		struct_2870 -> {
+		
+			return VARBIT[12045]
+		}
+		struct_2871 -> {
+		
+			return VARBIT[12046]
+		}
+		shared_treasure_trail_rewards_513 -> {
+		
+			return VARBIT[12002]
+		}
+		castle_wars_514 -> {
+		
+			return VARBIT[12003]
+		}
+		magic_training_arena_515 -> {
+		
+			return VARBIT[12004]
+		}
+		barbarian_assault_516 -> {
+		
+			return VARBIT[12005]
+		}
+		shades_of_mortton_517 -> {
+		
+			return VARBIT[12006]
+		}
+		pest_control_518 -> {
+		
+			return VARBIT[12007]
+		}
+		temple_trekking_519 -> {
+		
+			return VARBIT[12008]
+		}
+		fishing_trawler_520 -> {
+		
+			return VARBIT[12009]
+		}
+		gnome_restaurant_521 -> {
+		
+			return VARBIT[12010]
+		}
+		hallowed_sepulchre_1279 -> {
+		
+			return VARBIT[12011]
+		}
+		last_man_standing_1720 -> {
+		
+			return VARBIT[12041]
+		}
+		rogues_den_522 -> {
+		
+			return VARBIT[12012]
+		}
+		trouble_brewing_523 -> {
+		
+			return VARBIT[12013]
+		}
+		tithe_farm_524 -> {
+		
+			return VARBIT[12014]
+		}
+		mahogany_homes_1689 -> {
+		
+			return VARBIT[12015]
+		}
+		soul_wars_2825 -> {
+		
+			return VARBIT[12047]
+		}
+		revenants_525 -> {
+		
+			return VARBIT[12016]
+		}
+		gloughs_experiments_526 -> {
+		
+			return VARBIT[12017]
+		}
+		slayer_527 -> {
+		
+			return VARBIT[12018]
+		}
+		champions_challenge_528 -> {
+		
+			return VARBIT[12019]
+		}
+		skilling_pets_529 -> {
+		
+			return VARBIT[12020]
+		}
+		motherlode_mine_530 -> {
+		
+			return VARBIT[12021]
+		}
+		shayzien_armour_531 -> {
+		
+			return VARBIT[12022]
+		}
+		cyclopes_532 -> {
+		
+			return VARBIT[12023]
+		}
+		chaos_druids_533 -> {
+		
+			return VARBIT[12024]
+		}
+		miscellaneous_534 -> {
+		
+			return VARBIT[12025]
+		}
+		all_pets_535 -> {
+		
+			return VARBIT[12026]
+		}
+		tzhaar_536 -> {
+		
+			return VARBIT[12027]
+		}
+		chompy_bird_hunting_537 -> {
+		
+			return VARBIT[12028]
+		}
+		random_events_538 -> {
+		
+			return VARBIT[12029]
+		}
+		aerial_fishing_540 -> {
+		
+			return VARBIT[12032]
+		}
+		creature_creation_546 -> {
+		
+			return VARBIT[12034]
+		}
+		rooftop_agility_547 -> {
+		
+			return VARBIT[12035]
+		}
+		fossil_island_notes_548 -> {
+		
+			return VARBIT[12036]
+		}
+		my_notes_549 -> {
+		
+			return VARBIT[12037]
+		}
+		monkey_backpacks_1397 -> {
+		
+			return VARBIT[12040]
+		}
+		struct_2872 -> {
+		
+			return VARBIT[12042]
+		}
+		struct_2873 -> {
+		
+			return VARBIT[12043]
+		}
+		struct_2858 -> {
+		
+			return VARBIT[12048]
+		}
+	else -> {
+	
+		return 0
+	}
+	}
+}

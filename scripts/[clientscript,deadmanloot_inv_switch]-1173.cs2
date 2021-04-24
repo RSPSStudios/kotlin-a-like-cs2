@@ -1,0 +1,10 @@
+// 1173 clientscript
+fun deadmanloot_inv_switch(int0: Int) {
+
+	if (VARBIT[4842] ! int0) {
+		VARBIT[4842] = int0
+		sound_synth(synth_2266, 1, 0)
+		~deadmanloot_inv_switch
+	}
+	return 
+}

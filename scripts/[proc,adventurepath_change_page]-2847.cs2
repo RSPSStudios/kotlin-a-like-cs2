@@ -1,0 +1,24 @@
+// 2847 proc
+fun adventurepath_change_page(component0: Component, component1: Component, component2: Component, component3: Component, int4: Int) {
+
+	if_sethide(true, component0)
+	if_sethide(true, component2)
+	if_sethide(true, component1)
+	if_sethide(true, component3)
+	when (int4): Int {
+		1 -> {
+		
+			if_sethide(false, component1)
+		}
+		2 -> {
+		
+			if_sethide(false, component3)
+		}
+	else -> {
+	
+		if_sethide(false, component0)
+		if_sethide(false, component2)
+	}
+	}
+	return 
+}

@@ -1,0 +1,6 @@
+// 574 proc
+fun gnomeball_score(component0: Component) {
+
+	if_settext(tostring(VARBIT[8387]), component0)
+	return 
+}

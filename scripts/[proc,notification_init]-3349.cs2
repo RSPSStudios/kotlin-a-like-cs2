@@ -1,0 +1,8 @@
+// 3349 proc
+fun notification_init(component0: Component) {
+
+	if (if_getlayer(component0) ! null) {
+		~notification_positioning(component0, ^min_32bit_int)
+	}
+	return 
+}

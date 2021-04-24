@@ -1,0 +1,6 @@
+// 493 clientscript
+fun misc_collection_draw(size0: Int, int1: Int, int2: Int, component3: Component, component4: Component) {
+
+	~misc_collection_draw(size0, int1, int2, component3, component4)
+	return 
+}

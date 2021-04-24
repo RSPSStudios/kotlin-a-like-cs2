@@ -1,0 +1,11 @@
+// 1670 clientscript
+fun friends_sortbutton_clicksort(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component) {
+
+	sound_synth(synth_2266, 1, 0)
+	if (int0 ! enum(int, int, enum_1912, VARCINT[183])) {
+		VARCINT[205] = VARCINT[183]
+	}
+	VARCINT[183] = int0
+	~friend_update(component1, component2, component3, component4, component5, component6, component7, component8, component9)
+	return 
+}

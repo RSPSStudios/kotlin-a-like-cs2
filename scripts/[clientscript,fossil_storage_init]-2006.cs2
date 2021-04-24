@@ -1,0 +1,9 @@
+// 2006 clientscript
+fun fossil_storage_init(component0: Component, component1: Component, component2: Component, component3: Component) {
+
+	if_setonvartransmit({
+		fossil_storage_build(component0, component1, component2, component3){VARP[1635], VARP[1636], VARP[1637], VARP[1638], VARP[1639], VARP[1640], VARP[1641], VARP[1642], VARP[2852], VARP[2853], VARP[2854]}
+	}, component1)
+	~fossil_storage_build(component0, component1, component2, component3)
+	return 
+}

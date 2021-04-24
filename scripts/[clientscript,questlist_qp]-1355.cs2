@@ -1,0 +1,6 @@
+// 1355 clientscript
+fun questlist_qp(component0: Component) {
+
+	~questlist_qp(component0)
+	return 
+}

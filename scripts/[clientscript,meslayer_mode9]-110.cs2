@@ -1,0 +1,22 @@
+// 110 clientscript
+fun meslayer_mode9(int0: Int, text0: String) {
+
+	if (int0 = 2) {
+		~meslayer_open(15)
+	} else {
+		~meslayer_open(9)
+	}
+	if_settext(text0, interface_162:44)
+	~script222("")
+	val string1: String = ""
+	if_setonkey({
+		meslayer_onkey(event_key, event_keychar, string1)
+	}, interface_162:45)
+	if_setondialogabort({
+		meslayer_ondialogabort
+	}, interface_162:45)
+	if (~on_mobile = true) {
+		~keyboard_show(0, 80)
+	}
+	return 
+}

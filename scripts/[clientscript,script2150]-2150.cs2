@@ -1,0 +1,10 @@
+// 2150 clientscript
+fun script2150(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component) {
+
+	~script1649(enum_2850, component0, butterfly_net_10010, "Butterfly Net")
+	~script1649(enum_2850, component1, imp_repellent_11262, "Imp repellent")
+	~script1649(enum_2850, component2, impling_jar_11260, "Impling jar")
+	~script1962(component3, "Withdraw", false)
+	~script1647(enum_2850, component4, component5, component6, component7, component8, 1, 1, 1, 1)
+	return 
+}

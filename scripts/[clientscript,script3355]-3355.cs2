@@ -1,0 +1,6 @@
+// 3355 clientscript
+fun script3355(int0: Int) {
+
+	~script3356(int0)
+	return 
+}

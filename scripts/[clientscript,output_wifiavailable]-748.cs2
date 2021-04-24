@@ -1,0 +1,13 @@
+// 748 clientscript
+fun output_wifiavailable() {
+
+	if (~on_mobile = false) {
+		return 
+	}
+	if (mobile_wifiavailable = true) {
+		mes("WiFi IS available")
+	} else {
+		mes("WiFi IS NOT available")
+	}
+	return 
+}

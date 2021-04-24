@@ -1,0 +1,8 @@
+// 1719 clientscript
+fun worldmap_toggles_vartransmit(component0: Component, index1: Int, comsubid2: Int, component3: Component, component4: Component, component5: Component) {
+
+	if (cc_find(component0, comsubid2) = ^true & .cc_find(component0, index1) = ^true) {
+		~worldmap_toggles_set(component0, index1, component3, component4, component5)
+	}
+	return 
+}

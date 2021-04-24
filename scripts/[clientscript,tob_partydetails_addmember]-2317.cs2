@@ -1,0 +1,63 @@
+// 2317 clientscript
+fun tob_partydetails_addmember(int0: Int, string0: String) {
+
+	if (if_hassub(enum(component, component, ~toplevel_getcomponents, interface_161:15)) = false) {
+		return 
+	}
+	val string1: String = ""
+	val string2: String = ""
+	string1, string2 = ~script632(string0)
+	if (VARCINT[178] = 0) {
+		if (string_length(string1) > 0) {
+			~steelborder(interface_50:1, "Party of ${string1}", 0)
+		} else {
+			~steelborder(interface_50:1, "Leaderless party", 0)
+		}
+	}
+	val colour1: Int = 0xff981f
+	if (compare(lowercase(string1), lowercase(removetags(chat_playername))) = 0) {
+		colour1 = ^white
+	}
+	val int2: Int = calc(~max(0, VARCINT[178]) * 11)
+	val y3: Int = calc(VARCINT[178] * 13)
+	cc_create(interface_50:26, ^iftype_rectangle, int2)
+	cc_setsize(0, 13, ^setsize_minus, ^setsize_abs)
+	cc_setposition(0, y3, ^setpos_abs_centre, ^setpos_abs_top)
+	cc_setfill(true)
+	cc_setcolour(^black)
+	val int4: Int = 255
+	if (calc(VARCINT[178] % 2) = 0) {
+		int4 = 235
+	}
+	cc_settrans(int4)
+	if (int0 = 2 & string_length(string1) > 0) {
+		cc_setonmouserepeat({
+			cc_settrans(event_com, event_comsubid, 220, null)
+		})
+		cc_setonmouseleave({
+			cc_settrans(event_com, event_comsubid, int4, null)
+		})
+		if (VARCINT[178] > 0) {
+			cc_setop(10, "Kick")
+			cc_setopbase("<col=ff9040>${string1}</col>")
+		} else {
+			cc_setop(10, "Quit party")
+		}
+		cc_setonop({
+			tob_partydetails_kickmember(event_opindex, VARCINT[178], event_com, event_comsubid, string1, int4)
+		})
+	}
+	val int5: Int = 0
+	string0, int5 = ~script2318(1, interface_50:31, string0, int2, int5, y3, colour1)
+	string0, int5 = ~script2318(2, interface_50:32, string0, int2, int5, y3, colour1)
+	string0, int5 = ~script2318(3, interface_50:33, string0, int2, int5, y3, colour1)
+	string0, int5 = ~script2318(4, interface_50:34, string0, int2, int5, y3, colour1)
+	string0, int5 = ~script2318(5, interface_50:35, string0, int2, int5, y3, colour1)
+	string0, int5 = ~script2318(6, interface_50:36, string0, int2, int5, y3, colour1)
+	string0, int5 = ~script2318(7, interface_50:37, string0, int2, int5, y3, colour1)
+	string0, int5 = ~script2318(8, interface_50:38, string0, int2, int5, y3, colour1)
+	string0, int5 = ~script2318(9, interface_50:39, string0, int2, int5, y3, colour1)
+	string0, int5 = ~script2318(10, interface_50:40, string0, int2, int5, y3, colour1)
+	VARCINT[178] = calc(VARCINT[178] + 1)
+	return 
+}

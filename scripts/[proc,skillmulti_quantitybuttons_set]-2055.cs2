@@ -1,0 +1,113 @@
+// 2055 proc
+fun skillmulti_quantitybuttons_set(int0: Int, int1: Int) {
+
+	val boolean2: Boolean = enum(int, boolean, enum_1810, int0)
+	if (boolean2 = true) {
+		VARCINT[200] = ~max(1, ~min(int1, VARCINT[200]))
+	} else {
+		if (VARCINT[200] > 5) {
+			VARCINT[200] = 10
+		} else if (VARCINT[200] > 1) {
+			VARCINT[200] = 5
+		} else {
+			VARCINT[200] = 1
+		}
+		VARCINT[200] = ~min(VARCINT[200], int1)
+	}
+	val int3: Int = 0
+	val text0: String = "X"
+	if (boolean2 = true) {
+		if (int1 > 1) {
+			if (VARCINT[200] = 1) {
+				int3 = ~skillmulti_quantitybutton_setup(1, 1, interface_270:7, int0, int1, int3)
+			} else {
+				int3 = ~skillmulti_quantitybutton_setup(0, 1, interface_270:7, int0, int1, int3)
+			}
+		} else {
+			~skillmulti_wipebutton(interface_270:7)
+		}
+		if (int1 > 5) {
+			if (VARCINT[200] = 5) {
+				int3 = ~skillmulti_quantitybutton_setup(1, 5, interface_270:8, int0, int1, int3)
+			} else {
+				int3 = ~skillmulti_quantitybutton_setup(0, 5, interface_270:8, int0, int1, int3)
+			}
+		} else {
+			~skillmulti_wipebutton(interface_270:8)
+		}
+		if (int1 > 10) {
+			if (VARCINT[200] = 10) {
+				int3 = ~skillmulti_quantitybutton_setup(1, 10, interface_270:9, int0, int1, int3)
+			} else {
+				int3 = ~skillmulti_quantitybutton_setup(0, 10, interface_270:9, int0, int1, int3)
+			}
+		} else {
+			~skillmulti_wipebutton(interface_270:9)
+		}
+		if (VARCINT[201] = 1 | VARCINT[201] = 5 | VARCINT[201] = 10 | VARCINT[201] = int1) {
+			~skillmulti_wipebutton(interface_270:10)
+		} else if (VARCINT[201] < 1 | VARCINT[201] > int1) {
+			~skillmulti_wipebutton(interface_270:10)
+		} else if (VARCINT[200] = VARCINT[201]) {
+			int3 = ~skillmulti_quantitybutton_setup(1, VARCINT[201], interface_270:10, int0, int1, int3)
+		} else {
+			int3 = ~skillmulti_quantitybutton_setup(0, VARCINT[201], interface_270:10, int0, int1, int3)
+		}
+		if (int1 > 2) {
+			if_setposition(int3, 0, ^setpos_abs_left, ^setpos_abs_centre, interface_270:11)
+			int3 = calc(int3 + if_getwidth(interface_270:11) + 5)
+			~skillmulti_quantitybutton_draw(false, text0, interface_270:11)
+			if_setonmouseover({
+				skillmulti_quantitybutton_draw(true, text0, event_com)
+			}, interface_270:11)
+			if_setonmouseleave({
+				skillmulti_quantitybutton_draw(false, text0, event_com)
+			}, interface_270:11)
+			if_setop(1, "Other quantity", interface_270:11)
+			if_setonop({
+				skillmulti_quantitybutton_x_start(event_opindex, int0, int1)
+			}, interface_270:11)
+			if_setontimer(null, interface_270:11)
+		} else {
+			~skillmulti_wipebutton(interface_270:11)
+		}
+		if (VARCINT[200] >= int1) {
+			int3 = ~skillmulti_quantitybutton_setup(1, int1, interface_270:12, int0, int1, int3)
+		} else {
+			int3 = ~skillmulti_quantitybutton_setup(0, int1, interface_270:12, int0, int1, int3)
+		}
+	} else {
+		if (VARCINT[200] = 1) {
+			int3 = ~skillmulti_quantitybutton_setup(1, 1, interface_270:7, int0, int1, int3)
+		} else {
+			int3 = ~skillmulti_quantitybutton_setup(0, 1, interface_270:7, int0, int1, int3)
+		}
+		if (int1 >= 5) {
+			if (VARCINT[200] = 5) {
+				int3 = ~skillmulti_quantitybutton_setup(1, 5, interface_270:8, int0, int1, int3)
+			} else {
+				int3 = ~skillmulti_quantitybutton_setup(0, 5, interface_270:8, int0, int1, int3)
+			}
+		} else {
+			~skillmulti_wipebutton(interface_270:8)
+		}
+		if (int1 >= 10) {
+			if (VARCINT[200] = 10) {
+				int3 = ~skillmulti_quantitybutton_setup(1, 10, interface_270:9, int0, int1, int3)
+			} else {
+				int3 = ~skillmulti_quantitybutton_setup(0, 10, interface_270:9, int0, int1, int3)
+			}
+		} else {
+			~skillmulti_wipebutton(interface_270:9)
+		}
+		~skillmulti_wipebutton(interface_270:10)
+		~skillmulti_wipebutton(interface_270:11)
+		~skillmulti_wipebutton(interface_270:12)
+	}
+	if (int3 > 0) {
+		int3 = calc(int3 - 5)
+	}
+	if_setsize(int3, 0, ^setsize_abs, ^setsize_minus, interface_270:6)
+	if_setsize(int3, 0, ^setsize_minus, ^setsize_minus, interface_270:3)
+	return 
+}

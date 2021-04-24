@@ -1,0 +1,6 @@
+// 534 clientscript
+fun script534(int0: Int, int1: Int) {
+
+	~script2261(int0, int1)
+	return 
+}

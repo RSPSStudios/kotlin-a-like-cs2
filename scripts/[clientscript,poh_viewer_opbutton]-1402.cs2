@@ -1,0 +1,37 @@
+// 1402 clientscript
+fun poh_viewer_opbutton(opindex0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component, component16: Component) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	if (component1 = component9) {
+		VARBIT[5330] = calc(pow(7 + 2, 2) * 3 + 1)
+	} else if (component1 = component10) {
+		VARBIT[5332] = 1
+	} else if (component1 = component11) {
+		VARBIT[5331] = calc((VARBIT[5331] + 1) % 4)
+		if (cc_find(component1, 0) = ^true) {
+			cc_setgraphic("miscgraphics3,1")
+			cc_setontimer({
+				poh_viewer_rotate_timeout(event_com, event_comsubid, calc(clientclock + 10))
+			})
+		}
+	} else if (component1 = component12) {
+		VARBIT[5331] = calc((VARBIT[5331] + 3) % 4)
+		if (cc_find(component1, 0) = ^true) {
+			cc_setgraphic("miscgraphics3,1")
+			cc_setontimer({
+				poh_viewer_rotate_timeout(event_com, event_comsubid, calc(clientclock + 10))
+			})
+		}
+	} else if (component1 = component13) {
+		VARBIT[5333] = 0
+	} else if (component1 = component14) {
+		VARBIT[5332], VARBIT[5330] = 0, 0
+	} else if (component1 = component15) {
+		VARBIT[5332] = 0
+	}
+	~poh_viewer_sideupdate(component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16)
+	return 
+}

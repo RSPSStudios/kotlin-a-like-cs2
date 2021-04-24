@@ -1,0 +1,16 @@
+// 1510 clientscript
+fun raids_overlay_databox(component0: Component, comsubid1: Int, comsubid2: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true & .cc_find(component0, comsubid2) = ^true) {
+		~raids_overlay_databox(component0)
+		if (VARBIT[6386] > 0 & VARBIT[5425] < 5) {
+			cc_setontimer({
+				raids_overlay_timer(component0, comsubid1, comsubid2)
+			})
+		}
+		if (VARBIT[5425] >= 5) {
+			cc_setontimer(null)
+		}
+	}
+	return 
+}

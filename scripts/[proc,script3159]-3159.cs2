@@ -1,0 +1,17 @@
+// 3159 proc
+fun script3159(obj0: Obj): Obj {
+
+	val struct1: Struct = enum(int, struct, enum_2670, VARBIT[10032])
+	val enum2: Enum = null
+	val obj3: Obj = null
+	if (struct1 ! null) {
+		enum2 = struct_param(struct1, param_867)
+	}
+	if (enum2 ! null) {
+		obj3 = enum(obj, obj, enum2, obj0)
+	}
+	if (obj3 ! null) {
+		obj0 = obj3
+	}
+	return obj0
+}

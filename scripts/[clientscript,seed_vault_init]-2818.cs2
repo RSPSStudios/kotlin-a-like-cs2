@@ -1,0 +1,21 @@
+// 2818 clientscript
+fun seed_vault_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component) {
+
+	val int8: Int = VARCINT[376]
+	if (~seed_vault_searching = 1) {
+		~meslayer_close(1, 1)
+	}
+	~scrollbar_vertical(component5, component4, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+	~seed_vault_build(component0, component1, component2, component3, component4, component5, component6)
+	if_setonop({
+		seed_vault_search_toggle(component0, component1, component2, component3, component4, component5, component6, component7)
+	}, component7)
+	if_setoninvtransmit({
+		seed_vault_build(component0, component1, component2, component3, component4, component5, component6){inv_626}
+	}, component4)
+	if_setonvartransmit({
+		seed_vault_build(component0, component1, component2, component3, component4, component5, component6){VARP[2195], VARP[2196], VARP[2197]}
+	}, component4)
+	VARCINT[376] = int8
+	return 
+}

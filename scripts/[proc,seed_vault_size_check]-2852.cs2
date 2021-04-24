@@ -1,0 +1,24 @@
+// 2852 proc
+fun seed_vault_size_check(component0: Component, component1: Component, width2: Int, height3: Int, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component) {
+
+	val width9: Int = if_getwidth(component1)
+	val height10: Int = if_getheight(component1)
+	if (width9 = width2 & height10 = height3) {
+		return 
+	}
+	val int11: Int = calc(height10 - 3)
+	val int12: Int = 800
+	if (int12 > int11) {
+		int12 = int11
+	}
+	if_setsize(500, int12, ^setsize_abs, ^setsize_abs, component0)
+	if_setposition(0, calc((height10 - int12) / 2), ^setpos_abs_centre, ^setpos_abs_bottom, component0)
+	~scrollbar_vertical_rebuild(component5, component4)
+	~scrollbar_vertical_rebuild(component7, component6)
+	cc_deleteall(component8)
+	~stoneborder(component8, "Seed Vault", 0)
+	if_setontimer({
+		seed_vault_size_check(component0, component1, width9, height10, component4, component5, component6, component7, component8)
+	}, component0)
+	return 
+}

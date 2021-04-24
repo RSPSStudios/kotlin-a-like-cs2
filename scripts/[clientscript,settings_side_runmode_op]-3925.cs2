@@ -1,0 +1,12 @@
+// 3925 clientscript
+fun settings_side_runmode_op(component0: Component, component1: Component) {
+
+	sound_synth(synth_2266, 1, 0)
+	if (VARP[173] <= 0) {
+		VARP[173] = 1
+	} else {
+		VARP[173] = 0
+	}
+	~settings_side_runmode_create(component0, component1)
+	return 
+}

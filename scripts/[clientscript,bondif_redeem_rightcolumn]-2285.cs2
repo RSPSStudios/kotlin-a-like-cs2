@@ -1,0 +1,6 @@
+// 2285 clientscript
+fun bondif_redeem_rightcolumn(component0: Component, component1: Component) {
+
+	~bondif_redeem_rightcolumn(component0, component1)
+	return 
+}

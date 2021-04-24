@@ -1,0 +1,6 @@
+// 2384 clientscript
+fun wint_layout_update(component0: Component) {
+
+	~wint_layout_update(component0)
+	return 
+}

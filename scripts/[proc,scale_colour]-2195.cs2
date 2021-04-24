@@ -1,0 +1,20 @@
+// 2195 proc
+fun scale_colour(colour0: Int, colour1: Int, int2: Int, int3: Int): Int {
+
+	val int4: Int = 0
+	val int5: Int = 0
+	val int6: Int = 0
+	val int7: Int = 0
+	val int8: Int = 0
+	val int9: Int = 0
+	val int10: Int = 0
+	val int11: Int = 0
+	val int12: Int = 0
+	int4, int5, int6 = ~hex_to_rgb(colour0)
+	int7, int8, int9 = ~hex_to_rgb(colour1)
+	int10 = calc(int4 + scale(int2, int3, int7 - int4))
+	int11 = calc(int5 + scale(int2, int3, int8 - int5))
+	int12 = calc(int6 + scale(int2, int3, int9 - int6))
+	val colour13: Int = ~rgb_to_hex(int10, int11, int12)
+	return colour13
+}

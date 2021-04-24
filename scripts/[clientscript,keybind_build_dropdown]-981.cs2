@@ -1,0 +1,6 @@
+// 981 clientscript
+fun keybind_build_dropdown(component0: Component, component1: Component, component2: Component, int3: Int) {
+
+	~keybind_build_dropdown(component0, component1, component2, int3)
+	return 
+}

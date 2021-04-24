@@ -1,0 +1,7 @@
+// 2027 proc
+fun script2027(component0: Component, int1: Int, clock2: Int) {
+
+	val int3: Int = calc(int1 * 30 - (clientclock - clock2))
+	~script2029(component0, int3)
+	return 
+}

@@ -1,0 +1,6 @@
+// 2391 clientscript
+fun mobile_billing_open(int0: Int, boolean1: Boolean) {
+
+	~mobile_billing_open(int0, boolean1)
+	return 
+}

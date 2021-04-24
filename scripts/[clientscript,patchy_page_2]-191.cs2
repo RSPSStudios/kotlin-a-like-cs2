@@ -1,0 +1,7 @@
+// 191 clientscript
+fun patchy_page_2() {
+
+	if_sethide(true, interface_419:1)
+	if_sethide(false, interface_419:3)
+	return 
+}

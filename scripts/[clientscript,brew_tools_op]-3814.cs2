@@ -1,0 +1,16 @@
+// 3814 clientscript
+fun brew_tools_op(opindex0: Int, component1: Component, component2: Component) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	if_settrans(225, component2)
+	if_setonmouserepeat(null, component1)
+	if_setonmouseleave(null, component1)
+	if_setonop(null, component1)
+	if_setontimer({
+		brew_tools_resetbutton(calc(clientclock + 20), component1, component2)
+	}, component1)
+	return 
+}

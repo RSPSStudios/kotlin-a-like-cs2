@@ -1,0 +1,11 @@
+// 3206 clientscript
+fun league_task_hover(comsubid0: Int, component1: Component, component2: Component, trans3: Int, graphic4: Graphic) {
+
+	if (cc_find(component1, comsubid0) = ^true) {
+		cc_settrans(trans3)
+	}
+	if (cc_find(component2, comsubid0) = ^true) {
+		cc_setgraphic(graphic4)
+	}
+	return 
+}

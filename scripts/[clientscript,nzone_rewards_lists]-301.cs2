@@ -1,0 +1,6 @@
+// 301 clientscript
+fun nzone_rewards_lists(component0: Component, component1: Component) {
+
+	~nzone_rewards_lists(component0, component1)
+	return 
+}

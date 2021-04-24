@@ -1,0 +1,8 @@
+// 2336 clientscript
+fun tob_partydetails_clicksort(int0: Int, int1: Int, int2: Int) {
+
+	sound_synth(synth_2266, 1, 0)
+	VARCINT[181] = int0
+	~tob_partydetails_setsort(int1, int2)
+	return 
+}

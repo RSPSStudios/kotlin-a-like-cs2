@@ -1,0 +1,10 @@
+// 1088 clientscript
+fun stonebutton_url_clickrelease(clock0: Int, component1: Component, string0: String, string1: String) {
+
+	if (clientclock < clock0) {
+		return 
+	}
+	if_setontimer(null, component1)
+	~stonebutton_url_draw(false, true, component1, string0, string1)
+	return 
+}

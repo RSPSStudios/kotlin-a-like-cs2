@@ -1,0 +1,9 @@
+// 3994 proc
+fun settings_function_button() {
+
+	if (~on_mobile = false) {
+		return 
+	}
+	VARBIT[6257] = calc(1 - VARBIT[6257])
+	return 
+}

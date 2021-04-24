@@ -1,0 +1,15 @@
+// 3171 clientscript
+fun buff_bar_mobile_tooltip_remove(component0: Component, clock1: Int, component2: Component) {
+
+	if (VARCINT[382] = -1) {
+		if_setontimer(null, component2)
+		return 
+	}
+	if (clientclock < clock1) {
+		return 
+	}
+	~deltooltip_action(component0)
+	VARCINT[382] = -1
+	if_setontimer(null, component2)
+	return 
+}

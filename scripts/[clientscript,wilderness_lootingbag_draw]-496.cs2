@@ -1,0 +1,6 @@
+// 496 clientscript
+fun wilderness_lootingbag_draw(inv0: Inv) {
+
+	~wilderness_lootingbag_draw(inv0)
+	return 
+}

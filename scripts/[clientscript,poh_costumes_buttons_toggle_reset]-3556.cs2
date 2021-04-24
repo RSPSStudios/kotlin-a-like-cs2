@@ -1,0 +1,8 @@
+// 3556 clientscript
+fun poh_costumes_buttons_toggle_reset(component0: Component, graphic1: Graphic, clock2: Int) {
+
+	if (clientclock >= clock2) {
+		~poh_costumes_buttons_toggle_reset(component0, graphic1)
+	}
+	return 
+}

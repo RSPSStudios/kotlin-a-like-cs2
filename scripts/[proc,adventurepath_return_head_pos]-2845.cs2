@@ -1,0 +1,14 @@
+// 2845 proc
+fun adventurepath_return_head_pos(npc0: Npc, height1: Int): Int {
+
+	when (npc0): Npc {
+		apothecary_5036 -> {
+		
+			return calc(height1 + 24)
+		}
+	else -> {
+	
+		return calc(height1 + 14)
+	}
+	}
+}

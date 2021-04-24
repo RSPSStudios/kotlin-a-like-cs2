@@ -1,0 +1,14 @@
+// 579 clientscript
+fun script579(opindex0: Int, int1: Int, enum2: Enum, component3: Component, component4: Component, component5: Component, int6: Int) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	if (int1 < 0 | int1 >= int6) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	~script573(enum2, int1)
+	~script581(enum2, component3, component4, component5, int6)
+	return 
+}

@@ -1,0 +1,10 @@
+// 3460 clientscript
+fun gravestone_hud_tickdown(component0: Component, comsubid1: Int, int2: Int, clock3: Int) {
+
+	val int4: Int = 0
+	if (cc_find(component0, comsubid1) = ^true) {
+		int4 = ~min(calc(clientclock - clock3), calc(3 * 30))
+		~gravestone_hud_write(calc(int2 - int4))
+	}
+	return 
+}

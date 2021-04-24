@@ -1,0 +1,8 @@
+// 947 clientscript
+fun script947(component0: Component, component1: Component, component2: Component) {
+
+	if_settext("${tostring(VARP[343])}%", component0)
+	if_settext("${tostring(VARP[344])}%", component1)
+	if_settext("${tostring(VARP[345])}%", component2)
+	return 
+}

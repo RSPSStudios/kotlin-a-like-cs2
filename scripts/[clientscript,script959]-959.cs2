@@ -1,0 +1,6 @@
+// 959 clientscript
+fun script959(component0: Component) {
+
+	if_settext("${tostring(VARBIT[907])} %", component0)
+	return 
+}

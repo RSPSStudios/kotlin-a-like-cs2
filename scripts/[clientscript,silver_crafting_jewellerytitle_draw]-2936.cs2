@@ -1,0 +1,6 @@
+// 2936 clientscript
+fun silver_crafting_jewellerytitle_draw(component0: Component, obj1: Obj, text0: String, text1: String) {
+
+	~silver_crafting_jewellerytitle_draw(component0, obj1, text0, text1)
+	return 
+}

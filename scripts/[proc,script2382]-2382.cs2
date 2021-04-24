@@ -1,0 +1,45 @@
+// 2382 proc
+fun script2382(component0: Component, component1: Component) {
+
+	when (VARP[75]): Int {
+		-1 -> {
+		
+			if_setmodelanim(seq_8173, component0)
+		}
+		-2 -> {
+		
+			if_setmodelanim(seq_8174, component0)
+		}
+		1 -> {
+		
+			if_setmodelanim(seq_8175, component0)
+		}
+		2 -> {
+		
+			if_setmodelanim(seq_8176, component0)
+		}
+		3 -> {
+		
+			if_setmodelanim(seq_8177, component0)
+		}
+		4 -> {
+		
+			if_setmodelanim(seq_8178, component0)
+		}
+		5 -> {
+		
+			if_setmodelanim(seq_8179, component0)
+		}
+		6 -> {
+		
+			if_setmodelanim(seq_8180, component0)
+		}
+	else -> {
+	
+		if_sethide(false, component1)
+		return 
+	}
+	}
+	if_sethide(true, component1)
+	return 
+}

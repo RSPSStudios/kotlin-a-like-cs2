@@ -1,0 +1,18 @@
+// 1048 proc
+fun zoom_slider_specific_pos(component0: Component, component1: Component, int2: Int) {
+
+	if (VARBIT[4606] ! 0) {
+		return 
+	}
+	val int3: Int = 512
+	val int4: Int = 512
+	val int5: Int = calc(if_getwidth(component1) - if_getwidth(component0))
+	int2 = ~max(0, int2)
+	int2 = ~min(calc(if_getwidth(component1) - if_getwidth(component0)), int2)
+	val int6: Int = calc(896 - 128)
+	val int7: Int = calc(896 - 128)
+	int3 = calc(int2 * int6 / int5 + 128)
+	int4 = calc(int2 * int7 / int5 + 128)
+	~camera_do_zoom(int4, int3)
+	return 
+}

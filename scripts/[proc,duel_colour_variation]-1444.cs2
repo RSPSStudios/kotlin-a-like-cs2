@@ -1,0 +1,15 @@
+// 1444 proc
+fun duel_colour_variation(colour0: Int): Int {
+
+	val int1: Int = 0
+	val int2: Int = 0
+	val int3: Int = 0
+	int1, int2, int3 = ~hex_to_rgb(colour0)
+	val int4: Int = calc(random(30) - random(30))
+	int1 = ~minmax(0, 255, calc(int1 + int4))
+	int4 = calc(random(30) - random(30))
+	int2 = ~minmax(0, 255, calc(int2 + int4))
+	int4 = calc(random(30) - random(30))
+	int3 = ~minmax(0, 255, calc(int3 + int4))
+	return ~rgb_to_hex(int1, int2, int3)
+}

@@ -1,0 +1,7 @@
+// 1474 proc
+fun script1474() {
+
+	if_sethide(true, interface_53:33)
+	if_sethide(false, interface_53:34)
+	return 
+}

@@ -1,0 +1,151 @@
+// 2111 proc
+fun ds2_fossil_map_setslot(comsubid0: Int, int1: Int, int2: Int) {
+
+	when (comsubid0): Int {
+		0 -> {
+		
+			VARBIT[6157], VARBIT[6166] = int1, int2
+		}
+		1 -> {
+		
+			VARBIT[6168], VARBIT[6172] = int1, int2
+		}
+		2 -> {
+		
+			VARBIT[6159], VARBIT[6177] = int1, int2
+		}
+		3 -> {
+		
+			VARBIT[6178], VARBIT[6181] = int1, int2
+		}
+		4 -> {
+		
+			return 
+		}
+		5 -> {
+		
+			VARBIT[6203], VARBIT[6197] = int1, int2
+		}
+		6 -> {
+		
+			VARBIT[6173], VARBIT[6201] = int1, int2
+		}
+		7 -> {
+		
+			VARBIT[6167], VARBIT[6202] = int1, int2
+		}
+		8 -> {
+		
+			VARBIT[6158], VARBIT[6160] = int1, int2
+		}
+		9 -> {
+		
+			VARBIT[6169], VARBIT[6161] = int1, int2
+		}
+		10 -> {
+		
+			VARBIT[6208], VARBIT[6163] = int1, int2
+		}
+		11 -> {
+		
+			VARBIT[6199], VARBIT[6164] = int1, int2
+		}
+		12 -> {
+		
+			VARBIT[6204], VARBIT[6165] = int1, int2
+		}
+		13 -> {
+		
+			VARBIT[6174], VARBIT[6205] = int1, int2
+		}
+		14 -> {
+		
+			VARBIT[6183], VARBIT[6206] = int1, int2
+		}
+		15 -> {
+		
+			VARBIT[6176], VARBIT[6207] = int1, int2
+		}
+		16 -> {
+		
+			VARBIT[6162], VARBIT[6185] = int1, int2
+		}
+		17 -> {
+		
+			return 
+		}
+		18 -> {
+		
+			return 
+		}
+		19 -> {
+		
+			VARBIT[6179], VARBIT[6186] = int1, int2
+		}
+		20 -> {
+		
+			return 
+		}
+		21 -> {
+		
+			VARBIT[6180], VARBIT[6187] = int1, int2
+		}
+		22 -> {
+		
+			VARBIT[6182], VARBIT[6188] = int1, int2
+		}
+		23 -> {
+		
+			VARBIT[6175], VARBIT[6189] = int1, int2
+		}
+		24 -> {
+		
+			VARBIT[6184], VARBIT[6210] = int1, int2
+		}
+		25 -> {
+		
+			VARBIT[6170], VARBIT[6212] = int1, int2
+		}
+		26 -> {
+		
+			VARBIT[6209], VARBIT[6213] = int1, int2
+		}
+		27 -> {
+		
+			VARBIT[6190], VARBIT[6214] = int1, int2
+		}
+		28 -> {
+		
+			VARBIT[6191], VARBIT[6215] = int1, int2
+		}
+		29 -> {
+		
+			VARBIT[6216], VARBIT[6192] = int1, int2
+		}
+		30 -> {
+		
+			return 
+		}
+		31 -> {
+		
+			VARBIT[6217], VARBIT[6193] = int1, int2
+		}
+		32 -> {
+		
+			VARBIT[6198], VARBIT[6194] = int1, int2
+		}
+		33 -> {
+		
+			VARBIT[6171], VARBIT[6195] = int1, int2
+		}
+		34 -> {
+		
+			VARBIT[6200], VARBIT[6196] = int1, int2
+		}
+		35 -> {
+		
+			VARBIT[6211], VARBIT[6218] = int1, int2
+		}
+	}
+	return 
+}

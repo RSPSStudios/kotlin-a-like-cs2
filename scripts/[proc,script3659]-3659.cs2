@@ -1,0 +1,35 @@
+// 3659 proc
+fun script3659() {
+
+	val component0: Component = enum(int, component, enum_3332, VARBIT[10662])
+	val component1: Component = enum(int, component, enum_3332, VARBIT[10663])
+	val component2: Component = enum(int, component, enum_3332, VARBIT[10664])
+	val component3: Component = enum(int, component, enum_3332, VARBIT[10665])
+	val component4: Component = enum(int, component, enum_3332, VARBIT[10666])
+	val component5: Component = enum(int, component, enum_3332, VARBIT[10667])
+	val graphic6: Graphic = enum(int, graphic, enum_3331, VARBIT[10662])
+	val graphic7: Graphic = enum(int, graphic, enum_3331, VARBIT[10663])
+	val graphic8: Graphic = enum(int, graphic, enum_3331, VARBIT[10664])
+	val graphic9: Graphic = enum(int, graphic, enum_3331, VARBIT[10665])
+	val graphic10: Graphic = enum(int, graphic, enum_3331, VARBIT[10666])
+	val graphic11: Graphic = enum(int, graphic, enum_3331, VARBIT[10667])
+	if (component0 ! null & graphic6 ! null) {
+		if_setgraphic(graphic6, component0)
+	}
+	if (component1 ! null & graphic7 ! null) {
+		if_setgraphic(graphic7, component1)
+	}
+	if (component2 ! null & graphic8 ! null) {
+		if_setgraphic(graphic8, component2)
+	}
+	if (component3 ! null & graphic9 ! null) {
+		if_setgraphic(graphic9, component3)
+	}
+	if (component4 ! null & graphic10 ! null) {
+		if_setgraphic(graphic10, component4)
+	}
+	if (component5 ! null & graphic11 ! null) {
+		if_setgraphic(graphic11, component5)
+	}
+	return 
+}

@@ -1,0 +1,6 @@
+// 3234 clientscript
+fun script3234(int0: Int, int1: Int) {
+
+	~deltooltip_action(interface_595:41)
+	return 
+}

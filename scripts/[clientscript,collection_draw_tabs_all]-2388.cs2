@@ -1,0 +1,7 @@
+// 2388 clientscript
+fun collection_draw_tabs_all(int0: Int) {
+
+	~collection_draw_tabs_all(int0)
+	~script4085(true)
+	return 
+}

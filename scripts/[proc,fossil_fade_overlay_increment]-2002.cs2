@@ -1,0 +1,24 @@
+// 2002 proc
+fun fossil_fade_overlay_increment(component0: Component, component1: Component, colour2: Int, int3: Int, colour4: Int, int5: Int, int6: Int, int7: Int) {
+
+	if (int7 <= 0) {
+		if_setcolour(colour4, component1)
+		if_settrans(int5, component1)
+		if_setontimer(null, component0)
+		return 
+	}
+	val int8: Int = 0
+	val int9: Int = 0
+	val int10: Int = 0
+	int8, int9, int10 = ~hex_to_rgb(colour2)
+	val int11: Int = 0
+	val int12: Int = 0
+	val int13: Int = 0
+	int11, int12, int13 = ~hex_to_rgb(colour4)
+	val int14: Int = calc(int11 - interpolate(0, int7, 0, int6, int11 - int8))
+	val int15: Int = calc(int12 - interpolate(0, int7, 0, int6, int12 - int9))
+	val int16: Int = calc(int13 - interpolate(0, int7, 0, int6, int13 - int10))
+	if_setcolour(~rgb_to_hex(int14, int15, int16), component1)
+	if_settrans(calc(int5 - interpolate(0, int7, 0, int6, int5 - int3)), component1)
+	return 
+}

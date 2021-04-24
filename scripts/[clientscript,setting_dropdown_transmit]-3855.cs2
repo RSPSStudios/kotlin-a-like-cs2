@@ -1,0 +1,49 @@
+// 3855 clientscript
+fun setting_dropdown_transmit(int0: Int, struct1: Struct, comsubid2: Int, comsubid3: Int, comsubid4: Int, component5: Component, enum6: Enum, int7: Int, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component) {
+
+	val int13: Int = 0
+	val int14: Int = ~script3957(struct1)
+	if (cc_find(component5, comsubid2) = ^true) {
+		if (int0 = 2) {
+			int13 = ~settings_get_dropdown(int7)
+		} else {
+			int13 = ~settings_get_keybind(int7)
+		}
+		if (int14 = 1) {
+			cc_setcolour(0xff981f)
+		} else {
+			cc_setcolour(0x9f9f9f)
+		}
+		cc_settext(enum(int, string, enum6, int13))
+	}
+	if (cc_find(component5, comsubid3) = ^true) {
+		if (int14 = 1) {
+			cc_setcolour(0xff981f)
+		} else {
+			cc_setcolour(0x9f9f9f)
+		}
+	}
+	if (~on_mobile = false & cc_find(component5, comsubid4) = ^true) {
+		if (int14 = 1) {
+			cc_setonmouseover({
+				cc_settrans(component5, comsubid4, 220, null)
+			})
+			cc_setonmouseleave({
+				cc_settrans(component5, comsubid4, 255, null)
+			})
+		} else {
+			cc_setonmouseover(null)
+			cc_setonmouseleave(null)
+		}
+	}
+	if (VARBIT[9657] = int7 & int14 = 0) {
+		cc_deleteall(component8)
+		cc_deleteall(component9)
+		cc_deleteall(component10)
+		cc_deleteall(component11)
+		cc_deleteall(component12)
+		if_setonop(null, component9)
+		if_sethide(true, component12)
+	}
+	return 
+}

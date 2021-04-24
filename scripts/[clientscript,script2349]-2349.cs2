@@ -1,0 +1,6 @@
+// 2349 clientscript
+fun script2349(component0: Component) {
+
+	if_settext("Points Available: <col=ffffff>${tostring(VARBIT[6460])}</col>", component0)
+	return 
+}

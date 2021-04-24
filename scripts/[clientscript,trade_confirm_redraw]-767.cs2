@@ -1,0 +1,6 @@
+// 767 clientscript
+fun trade_confirm_redraw(size0: Int, width1: Int, x2: Int, component3: Component, component4: Component, component5: Component, component6: Component) {
+
+	~trade_confirm_redraw(size0, width1, x2, component3, component4, component5, component6)
+	return 
+}

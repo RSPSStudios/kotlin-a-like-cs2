@@ -1,0 +1,38 @@
+// 1117 proc
+fun farming_view_tabpanel(int0: Int, int1: Int, width2: Int, height3: Int, width4: Int, height5: Int, int6: Int): Int {
+
+	val int7: Int = 0
+	val int8: Int = 0
+	val component9: Component = enum(int, component, enum_1235, int0)
+	val component10: Component = enum(int, component, enum_1236, int0)
+	val component11: Component = enum(int, component, enum_1237, int0)
+	if (component9 ! null & component10 ! null & component11 ! null) {
+		if (int1 = VARBIT[4776]) {
+			if_sethide(false, component9)
+			if_sethide(false, component10)
+			if_sethide(false, component11)
+			int7 = calc(int6 % 3)
+			int8 = calc((height3 + 2) * (int6 / 3))
+			if (int7 = 0) {
+				if_setposition(0, int8, ^setpos_abs_left, ^setpos_abs_top, component9)
+				if_setposition(calc((width2 - width4) / 2), calc(int8 + (height3 - height5) / 2), ^setpos_abs_left, ^setpos_abs_top, component10)
+				if_setposition(0, int8, ^setpos_abs_left, ^setpos_abs_top, component11)
+			} else if (int7 = 1) {
+				if_setposition(0, int8, ^setpos_abs_centre, ^setpos_abs_top, component9)
+				if_setposition(0, calc(int8 + (height3 - height5) / 2), ^setpos_abs_centre, ^setpos_abs_top, component10)
+				if_setposition(0, int8, ^setpos_abs_centre, ^setpos_abs_top, component11)
+			} else {
+				if_setposition(0, int8, ^setpos_abs_right, ^setpos_abs_top, component9)
+				if_setposition(calc((width2 - width4) / 2), calc(int8 + (height3 - height5) / 2), ^setpos_abs_right, ^setpos_abs_top, component10)
+				if_setposition(0, int8, ^setpos_abs_right, ^setpos_abs_top, component11)
+			}
+			int6 = calc(int6 + 1)
+		} else {
+			if_sethide(true, component9)
+			if_sethide(true, component10)
+			if_sethide(true, component11)
+			if_setposition(0, calc(0 - height3), ^setpos_abs_left, ^setpos_abs_top, component10)
+		}
+	}
+	return int6
+}

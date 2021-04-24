@@ -1,0 +1,9 @@
+// 1250 clientscript
+fun script1250(clock0: Int, component1: Component, string0: String) {
+
+	if (clientclock < clock0) {
+		return 
+	}
+	~script1246(component1, string0)
+	return 
+}

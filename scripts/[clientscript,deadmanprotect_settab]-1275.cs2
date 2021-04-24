@@ -1,0 +1,6 @@
+// 1275 clientscript
+fun deadmanprotect_settab(int0: Int) {
+
+	~deadmanprotect_settab(int0)
+	return 
+}

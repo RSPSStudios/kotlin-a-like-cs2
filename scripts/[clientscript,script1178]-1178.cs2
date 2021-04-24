@@ -1,0 +1,8 @@
+// 1178 clientscript
+fun script1178(component0: Component, component1: Component) {
+
+	if_sethide(true, component0)
+	if_sethide(true, component1)
+	if_sethide(false, interface_234:15)
+	return 
+}

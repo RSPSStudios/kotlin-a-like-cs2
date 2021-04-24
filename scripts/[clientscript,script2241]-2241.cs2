@@ -1,0 +1,9 @@
+// 2241 clientscript
+fun script2241(int0: Int) {
+
+	if (~on_mobile = false) {
+		return 
+	}
+	~script2242(int0)
+	return 
+}

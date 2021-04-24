@@ -1,0 +1,8 @@
+// 1972 proc
+fun on_mobile(): Boolean {
+
+	if (VARBIT[6352] = 1) {
+		return true
+	}
+	return on_mobile
+}

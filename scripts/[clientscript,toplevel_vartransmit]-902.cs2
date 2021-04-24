@@ -1,0 +1,6 @@
+// 902 clientscript
+fun toplevel_vartransmit(component0: Component, enum1: Enum) {
+
+	~toplevel_redraw(component0, enum1)
+	return 
+}

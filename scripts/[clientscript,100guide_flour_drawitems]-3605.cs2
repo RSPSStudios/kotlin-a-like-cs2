@@ -1,0 +1,6 @@
+// 3605 clientscript
+fun 100guide_flour_drawitems(size0: Int, component1: Component, inv2: Inv) {
+
+	~100guide_flour_drawitems(size0, component1, inv2)
+	return 
+}

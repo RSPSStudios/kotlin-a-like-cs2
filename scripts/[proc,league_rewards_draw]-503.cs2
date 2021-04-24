@@ -1,0 +1,161 @@
+// 503 proc
+fun league_rewards_draw(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, y13: Int) {
+
+	cc_deleteall(component4)
+	val int14: Int = 0
+	val height15: Int = 7
+	val int16: Int = calc(if_getwidth(component4) / 2)
+	val enum17: Enum = enum_2670
+	val count18: Int = enum_getoutputcount(enum17)
+	val int19: Int = 0
+	val int20: Int = 1
+	val int21: Int = 0
+	val int22: Int = 0
+	val struct23: Struct = null
+	val enum24: Enum = null
+	val int25: Int = 0
+	VARBIT[10110] = -1
+	while (int20 <= count18) {
+		struct23 = enum(int, struct, enum17, int20)
+		enum24 = struct_param(struct23, param_87)
+		if (enum24 ! null & enum_getoutputcount(enum24) > 0) {
+			if (int20 ! 1) {
+				height15, int25 = ~pest_rewards_divider(5, component4, height15, int25)
+			}
+			cc_create(component4, ^iftype_text, int25)
+			cc_settext(struct_param(struct23, param_858))
+			cc_settextfont(b12_full)
+			cc_settextshadow(true)
+			cc_setcolour(0xff891f)
+			cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+			cc_setsize(if_getwidth(component4), 13, ^setsize_abs, ^setsize_abs)
+			cc_setposition(0, height15, ^setpos_abs_left, ^setpos_abs_top)
+			height15 = calc(height15 + 13)
+			int25 = calc(int25 + 1)
+			height15, int25 = ~pest_rewards_divider(5, component4, height15, int25)
+			while (int21 < enum_getoutputcount(enum24)) {
+				if (calc(int21 % 2) = 0) {
+					int14 = 0
+				} else {
+					int14 = calc(int16 - 1)
+				}
+				int14 = calc(int14 + 4)
+				if (int21 ! 0 & calc(int21 % 2) = 0) {
+					height15 = calc(height15 + 32 + 8)
+				}
+				int25 = ~league_reward_draw_item(component4, int14, height15, int16, enum(int, struct, enum24, int21), int22, int0, int25, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, struct23)
+				int21 = calc(int21 + 1)
+				int22 = calc(int22 + 1)
+			}
+			height15 = calc(height15 + 32 + 10)
+		}
+		int20 = calc(int20 + 1)
+		int21 = 0
+	}
+	int25 = 0
+	val text0: String = ""
+	val string1: String = ""
+	val int26: Int = 0
+	val op2: String = ""
+	val string3: String = ","
+	val struct27: Struct = null
+	cc_deleteall(component5)
+	cc_deleteall(component8)
+	cc_deleteall(component10)
+	cc_deleteall(component11)
+	if (int0 ! -1) {
+		text0, string1, int26, struct27 = ~script3286(int0)
+		if (~script3292(struct27) = 1) {
+			VARBIT[10110] = int0
+			~pest_rewards_confirmdraw(false, text0, component6)
+			while (int25 < int0) {
+				cc_create(component5, ^iftype_rectangle, int25)
+				cc_sethide(true)
+				int25 = calc(int25 + 1)
+			}
+			cc_create(component5, ^iftype_rectangle, int25)
+			cc_sethide(false)
+			cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+			cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+			cc_setop(1, "Confirm")
+			cc_setopbase("<col=ff981f>${text0}</col>")
+			if (~on_mobile = false) {
+				cc_setonmouserepeat({
+					pest_rewards_confirmdraw(true, text0, component6)
+				})
+				cc_setonmouseleave({
+					pest_rewards_confirmdraw(false, text0, component6)
+				})
+			}
+			cc_setonop({
+				league_reward_shop_confirmop(event_opindex, component7, struct27)
+			})
+			~steelborder(component8, text0, 1)
+			if_settext("<col=ffffff>${text0}</col><br>${string1}<br><br>Are you sure that you wish to buy this item for <col=ffffff>${~tostring_spacer(int26, string3)}</col> points?<br><col=ffffff>You cannot sell this item back</col> if you change your mind.", component9)
+			int25 = ~v2_stone_button(component10)
+			cc_create(component10, ^iftype_text, int25)
+			cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+			cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+			op2 = "Confirm"
+			cc_settext(op2)
+			cc_settextfont(p12_full)
+			cc_settextshadow(true)
+			cc_setcolour(^white)
+			cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+			if_setop(1, op2, component10)
+			if (~on_mobile = false) {
+				if_setonmouseleave({
+					league_relic_button_hover(component10, false, op2, ^white)
+				}, component10)
+				if_setonmouseover({
+					league_relic_button_hover(component10, true, op2, 0xaaaaaa)
+				}, component10)
+			}
+			if_setonop({
+				league_reward_shop_buy(event_opindex, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12)
+			}, component10)
+			int25 = ~v2_stone_button(component11)
+			cc_create(component11, ^iftype_text, int25)
+			cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+			cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+			op2 = "Cancel"
+			cc_settext(op2)
+			cc_settextfont(p12_full)
+			cc_settextshadow(true)
+			cc_setcolour(^white)
+			cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+			if_setop(1, op2, component11)
+			if (~on_mobile = false) {
+				if_setonmouseleave({
+					league_relic_button_hover(component11, false, op2, ^white)
+				}, component11)
+				if_setonmouseover({
+					league_relic_button_hover(component11, true, op2, 0xaaaaaa)
+				}, component11)
+			}
+			if_setonop({
+				league_reward_confirm_back(int0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12)
+			}, component11)
+		}
+	} else {
+		int25 = ~v2_stone_button_in_filled(component6)
+		cc_create(component6, ^iftype_text, int25)
+		cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+		cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+		cc_setcolour(0x9f9f9f)
+		cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+		cc_settextfont(p12_full)
+		cc_settextshadow(false)
+		cc_settext("Confirm")
+	}
+	cc_deleteall(component12)
+	~scrollbar_vertical(component12, component4, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+	if (height15 > if_getheight(component4)) {
+		if_setscrollsize(0, height15, component4)
+	} else {
+		if_setscrollsize(0, 0, component4)
+	}
+	if_setscrollpos(0, y13, component4)
+	~scrollbar_vertical_rebuild(component12, component4)
+	return 
+}

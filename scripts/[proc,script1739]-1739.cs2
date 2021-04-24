@@ -1,0 +1,10 @@
+// 1739 proc
+fun script1739(int0: Int) {
+
+	if (parawidth(.cc_gettext, 4000, p11_full) > calc(int0 - 4)) {
+		.cc_settextalign(^settextalign_right, ^settextalign_centre, 0)
+	} else {
+		.cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	}
+	return 
+}

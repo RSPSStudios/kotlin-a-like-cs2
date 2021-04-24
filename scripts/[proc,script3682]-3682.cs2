@@ -1,0 +1,55 @@
+// 3682 proc
+fun script3682(int0: Int): Struct {
+
+	val struct1: Struct = enum(int, struct, enum_2670, VARBIT[10032])
+	val enum2: Enum = enum_3369
+	val struct3: Struct = null
+	val int4: Int = 0
+	val int5: Int = -1
+	val int6: Int = 0
+	val int7: Int = 0
+	if (struct1 ! null & enum2 ! null) {
+		int4 = enum_getoutputcount(enum2)
+		if (int0 = 1) {
+			return enum(int, struct, enum2, calc(int4 - 1))
+		}
+		while (int6 < int4) {
+			struct3 = enum(int, struct, enum2, int6)
+			int5 = struct_param(struct3, param_1010)
+			if (VARBIT[10046] < int5) {
+				return struct3
+			}
+			when (int6): Int {
+				0 -> {
+				
+					int7 = VARBIT[10662]
+				}
+				1 -> {
+				
+					int7 = VARBIT[10663]
+				}
+				2 -> {
+				
+					int7 = VARBIT[10664]
+				}
+				3 -> {
+				
+					int7 = VARBIT[10665]
+				}
+				4 -> {
+				
+					int7 = VARBIT[10666]
+				}
+			else -> {
+			
+				int7 = 0
+			}
+			}
+			if (int7 = 0) {
+				return struct3
+			}
+			int6 = calc(int6 + 1)
+		}
+	}
+	return null
+}

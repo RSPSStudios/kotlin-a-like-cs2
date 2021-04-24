@@ -1,0 +1,6 @@
+// 64 clientscript
+fun script64() {
+
+	VARCINT[380] = 0
+	return 
+}

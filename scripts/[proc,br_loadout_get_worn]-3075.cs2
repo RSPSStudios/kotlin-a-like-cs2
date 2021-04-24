@@ -1,0 +1,54 @@
+// 3075 proc
+fun br_loadout_get_worn(int0: Int): Int {
+
+	when (int0): Int {
+		0 -> {
+		
+			return VARBIT[9436]
+		}
+		1 -> {
+		
+			return VARBIT[9437]
+		}
+		2 -> {
+		
+			return VARBIT[9438]
+		}
+		3 -> {
+		
+			return VARBIT[9439]
+		}
+		4 -> {
+		
+			return VARBIT[9403]
+		}
+		5 -> {
+		
+			return VARBIT[9404]
+		}
+		7 -> {
+		
+			return VARBIT[9405]
+		}
+		9 -> {
+		
+			return VARBIT[9373]
+		}
+		10 -> {
+		
+			return VARBIT[9440]
+		}
+		12 -> {
+		
+			return VARBIT[9441]
+		}
+		13 -> {
+		
+			return VARBIT[9406]
+		}
+	else -> {
+	
+		return 0
+	}
+	}
+}

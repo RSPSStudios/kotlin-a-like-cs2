@@ -1,0 +1,10 @@
+// 49 clientscript
+fun docheat(string0: String) {
+
+	val length0: Int = string_length(string0)
+	if (length0 > 2 & string_indexof_string(string0, "::", 0) = 0) {
+		string0 = substring(string0, 2, length0)
+	}
+	docheat(string0)
+	return 
+}

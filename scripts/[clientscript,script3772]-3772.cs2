@@ -1,0 +1,12 @@
+// 3772 clientscript
+fun script3772(opindex0: Int, int1: Int, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2307, 1, 0)
+	VARBIT[9594] = calc((VARBIT[9594] + int1) % 4)
+	~script3773(component2, component3, component4, component5, component6, component7, component8, component9, component10)
+	VARCINT[110] = clientclock
+	return 
+}

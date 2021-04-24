@@ -1,0 +1,5 @@
+// 1340 proc
+fun quest_f2p_count(): Int {
+
+	return enum_getoutputcount(enum_2098)
+}

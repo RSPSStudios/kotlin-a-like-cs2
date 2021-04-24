@@ -1,0 +1,22 @@
+// 2581 proc
+fun mobile_chatbox_resize() {
+
+	if (~on_mobile = false) {
+		return 
+	}
+	val height0: Int = if_getheight(interface_162:37)
+	val int1: Int = 0
+	if (if_hassub(interface_162:562) = true | if_hassub(interface_162:561) = true | if_gethide(interface_162:40) = false) {
+		int1 = 1
+	}
+	val height2: Int = calc(165 - 23)
+	if (int1 = 0) {
+		height2 = calc(165 - 23 - 30)
+	}
+	if_setsize(519, height2, ^setsize_abs, ^setsize_abs, interface_162:37)
+	if (height0 ! height2) {
+		~scrollbar_resize(interface_162:560, interface_162:59, ~max(calc(if_getscrollheight(interface_162:59) - if_getheight(interface_162:59)), 0))
+	}
+	~rebuildchatbox(~script553)
+	return 
+}

@@ -1,0 +1,28 @@
+// 3604 clientscript
+fun 100guide_flour_init(inv0: Inv) {
+
+	cc_deleteall(interface_264:23)
+	val size1: Int = inv_size(inv0)
+	val int2: Int = calc(if_getwidth(interface_264:23) / 5 - 36)
+	val int3: Int = calc(int2 / 2)
+	val int4: Int = calc(if_getheight(interface_264:23) / 2 - 32)
+	val int5: Int = calc(int4 / 2)
+	val size6: Int = 0
+	while (size6 < size1) {
+		cc_create(interface_264:23, ^iftype_graphic, size6)
+		cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+		cc_setposition(calc(int3 + size6 % 5 * (36 + int2)), calc(int5 + size6 / 5 * (32 + int4)), ^setpos_abs_left, ^setpos_abs_top)
+		cc_setgraphicshadow(0x333333)
+		cc_setoutline(1)
+		cc_setop(10, "Examine")
+		cc_setonop({
+			cc_settrans_temporarily(event_com, event_comsubid, 125, 0)
+		})
+		size6 = calc(size6 + 1)
+	}
+	~100guide_flour_drawitems(size1, interface_264:23, inv0)
+	if_setoninvtransmit({
+		100guide_flour_drawitems(size1, event_com, inv0){inv0}
+	}, interface_264:23)
+	return 
+}

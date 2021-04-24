@@ -1,0 +1,6 @@
+// 3488 clientscript
+fun death_coffer_drawbutton(boolean0: Boolean, boolean1: Boolean, component2: Component, text0: String, component3: Component) {
+
+	~death_coffer_drawbutton(boolean0, boolean1, component2, text0, component3)
+	return 
+}

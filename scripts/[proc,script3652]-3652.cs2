@@ -1,0 +1,33 @@
+// 3652 proc
+fun script3652(component0: Component) {
+
+	cc_deleteall(component0)
+	val graphic1: Graphic = "close_buttons,5"
+	val graphic2: Graphic = "close_buttons,4"
+	cc_create(component0, ^iftype_graphic, 0)
+	cc_setgraphic(graphic2)
+	cc_setsize(26, 23, ^setsize_abs, ^setsize_abs)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	if (~on_mobile = false) {
+		cc_setonmouserepeat({
+			script3440(event_com, event_comsubid, graphic1, null)
+		})
+		cc_setonmouseleave({
+			script3440(event_com, event_comsubid, graphic2, null)
+		})
+	}
+	val width3: Int = 26
+	val height4: Int = 23
+	val x5: Int = 5
+	val y6: Int = 5
+	if (~on_mobile = true) {
+		width3, height4, x5, y6 = 32, 32, 2, 1
+	}
+	if_setsize(width3, height4, ^setsize_abs, ^setsize_abs, component0)
+	if_setposition(x5, y6, ^setpos_abs_right, ^setpos_abs_top, component0)
+	if_setop(1, "Close", component0)
+	if_setonop({
+		closebutton_click
+	}, component0)
+	return 
+}

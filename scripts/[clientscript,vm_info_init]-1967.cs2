@@ -1,0 +1,9 @@
+// 1967 clientscript
+fun vm_info_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	~vm_info_draw(component0, component1, component2, component3, component4)
+	if_setonvartransmit({
+		vm_info_draw(component0, component1, component2, component3, component4){VARP[1011], VARP[1014]}
+	}, component0)
+	return 
+}

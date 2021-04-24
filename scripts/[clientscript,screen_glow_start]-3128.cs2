@@ -1,0 +1,18 @@
+// 3128 clientscript
+fun screen_glow_start(colour0: Int, component1: Component, int2: Int, int3: Int, int4: Int, int5: Int) {
+
+	cc_deleteall(component1)
+	cc_create(component1, ^iftype_rectangle, 0)
+	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_bottom)
+	cc_setfill(true)
+	cc_setcolour(colour0)
+	cc_setfillcolour(colour0)
+	cc_settrans(255)
+	_1124(255)
+	_1125(2)
+	cc_setontimer({
+		screen_glow_fadein(calc(clientclock + int2), calc(clientclock + int3), int4, int5, colour0, component1)
+	})
+	return 
+}

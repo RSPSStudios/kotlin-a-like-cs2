@@ -1,0 +1,7 @@
+// 1586 proc
+fun script1586() {
+
+	if_sethide(true, interface_549:17)
+	if_sethide(true, interface_549:19)
+	return 
+}

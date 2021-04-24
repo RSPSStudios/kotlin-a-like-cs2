@@ -1,0 +1,34 @@
+// 1226 clientscript
+fun zeah_favour_update(component0: Component, component1: Component, int2: Int) {
+
+	val int3: Int = 0
+	when (int2): Int {
+		3 -> {
+		
+			int3 = VARBIT[4896]
+		}
+		2 -> {
+		
+			int3 = VARBIT[4895]
+		}
+		4 -> {
+		
+			int3 = VARBIT[4898]
+		}
+		5 -> {
+		
+			int3 = VARBIT[4899]
+		}
+		1 -> {
+		
+			int3 = VARBIT[4894]
+		}
+	}
+	if_setsize(scale(int3, 1000, 16384), 0, ^setsize_2, ^setsize_minus, component0)
+	if (int3 > 0 & if_getwidth(component0) < 2) {
+		if_setsize(2, 0, ^setsize_abs, ^setsize_minus, component0)
+	}
+	val int4: Int = scale(int3, 1000, 1000)
+	if_settext("${tostring(calc(int4 / 10))}.${tostring(calc(int4 % 10))}%", component1)
+	return 
+}

@@ -1,0 +1,13 @@
+// 1628 proc
+fun script1628(enum0: Enum, component1: Component, obj2: Obj, text0: String, int3: Int, int4: Int) {
+
+	when (enum0): Enum {
+		enum_2850 -> {
+		
+			if_setonvartransmit({
+				script2112(enum_2850, component1, obj2, text0, int3, int4){VARP[1018], VARP[2894]}
+			}, component1)
+		}
+	}
+	return 
+}

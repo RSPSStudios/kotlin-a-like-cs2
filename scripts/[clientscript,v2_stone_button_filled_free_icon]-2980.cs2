@@ -1,0 +1,6 @@
+// 2980 clientscript
+fun v2_stone_button_filled_free_icon(component0: Component, int1: Int, colour2: Int) {
+
+	~v2_stone_button_filled_free_icon(component0, int1, colour2)
+	return 
+}

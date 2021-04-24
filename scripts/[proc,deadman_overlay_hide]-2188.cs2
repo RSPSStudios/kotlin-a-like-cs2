@@ -1,0 +1,6 @@
+// 2188 proc
+fun deadman_overlay_hide() {
+
+	docheat("~dmm_overlay_close")
+	return 
+}

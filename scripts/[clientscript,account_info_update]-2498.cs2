@@ -1,0 +1,9 @@
+// 2498 clientscript
+fun account_info_update(int0: Int, int1: Int, int2: Int) {
+
+	~playermember(int0)
+	~recurring_membership(int1)
+	~script2700(int2)
+	~account_update_display
+	return 
+}

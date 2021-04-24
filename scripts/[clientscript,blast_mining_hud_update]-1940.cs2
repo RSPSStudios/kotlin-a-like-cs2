@@ -1,0 +1,6 @@
+// 1940 clientscript
+fun blast_mining_hud_update(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	~blast_mining_hud_update(component0, component1, component2, component3, component4)
+	return 
+}

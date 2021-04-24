@@ -1,0 +1,6 @@
+// 3127 clientscript
+fun script3127() {
+
+	mes("This house is not available to enter at the moment.")
+	return 
+}

@@ -1,0 +1,17 @@
+// 2807 proc
+fun deadman_broadcast_message_sizing(string0: String) {
+
+	val height0: Int = 60
+	val width1: Int = if_getwidth(interface_90:25)
+	val int2: Int = if_getwidth(interface_90:20)
+	val width3: Int = parawidth(string0, width1, q8_full)
+	val height4: Int = paraheight(string0, width1, q8_full)
+	if (height4 = 1 & int2 > calc(width3 + 20)) {
+		int2 = calc(width3 + 20)
+	}
+	if_setsize(int2, height0, ^setsize_abs, ^setsize_abs, interface_90:21)
+	if_setsize(int2, height0, ^setsize_abs, ^setsize_abs, interface_90:24)
+	if_setsize(calc(int2 - 4), height0, ^setsize_abs, ^setsize_abs, interface_90:23)
+	if_setsize(int2, height0, ^setsize_abs, ^setsize_abs, interface_90:22)
+	return 
+}

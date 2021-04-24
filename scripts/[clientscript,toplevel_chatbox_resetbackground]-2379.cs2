@@ -1,0 +1,6 @@
+// 2379 clientscript
+fun toplevel_chatbox_resetbackground() {
+
+	VARCINT[223] = 0
+	return 
+}

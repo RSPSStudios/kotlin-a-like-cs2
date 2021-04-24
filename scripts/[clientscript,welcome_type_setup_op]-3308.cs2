@@ -1,0 +1,9 @@
+// 3308 clientscript
+fun welcome_type_setup_op(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component) {
+
+	VARBIT[10116] = calc(1 - VARBIT[10116])
+	~welcome_type_setup(VARBIT[10116], component0, component1, component2, component3, component4)
+	~welcome_screen_messages(component3, component5, component6, VARBIT[10116])
+	~welcome_screen_credit(component2, component7, component8, VARBIT[10116])
+	return 
+}

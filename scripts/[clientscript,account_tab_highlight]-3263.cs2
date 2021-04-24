@@ -1,0 +1,10 @@
+// 3263 clientscript
+fun account_tab_highlight(component0: Component, component1: Component, component2: Component, int3: Int) {
+
+	if (VARBIT[10060] = int3) {
+		~account_tab_highlight_reset(component0, component1, component2, int3)
+	} else {
+		~account_tab_highlight(component0, component1, component2, int3)
+	}
+	return 
+}

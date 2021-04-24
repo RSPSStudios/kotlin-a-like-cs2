@@ -1,0 +1,19 @@
+// 984 clientscript
+fun script984() {
+
+	if_settext(enum(int, string, enum_1159, VARBIT[4675]), interface_121:8)
+	if_settext(enum(int, string, enum_1159, VARBIT[4676]), interface_121:15)
+	if_settext(enum(int, string, enum_1159, VARBIT[4677]), interface_121:22)
+	if_settext(enum(int, string, enum_1159, VARBIT[4678]), interface_121:29)
+	if_settext(enum(int, string, enum_1159, VARBIT[4679]), interface_121:36)
+	if_settext(enum(int, string, enum_1159, VARBIT[4680]), interface_121:43)
+	if_settext(enum(int, string, enum_1159, VARBIT[4682]), interface_121:50)
+	if_settext(enum(int, string, enum_1159, VARBIT[4684]), interface_121:57)
+	if_settext(enum(int, string, enum_1159, VARBIT[6517]), interface_121:64)
+	if_settext(enum(int, string, enum_1159, VARBIT[4689]), interface_121:71)
+	if_settext(enum(int, string, enum_1159, VARBIT[4686]), interface_121:78)
+	if_settext(enum(int, string, enum_1159, VARBIT[4687]), interface_121:85)
+	if_settext(enum(int, string, enum_1159, VARBIT[4683]), interface_121:92)
+	if_settext(enum(int, string, enum_1159, VARBIT[4688]), interface_121:99)
+	return 
+}

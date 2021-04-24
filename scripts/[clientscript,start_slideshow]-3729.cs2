@@ -1,0 +1,6 @@
+// 3729 clientscript
+fun start_slideshow(component0: Component, enum1: Enum, int2: Int, int3: Int, int4: Int) {
+
+	~start_slideshow(component0, enum1, int2, int3, int4)
+	return 
+}

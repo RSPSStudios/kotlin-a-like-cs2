@@ -1,0 +1,8 @@
+// 196 clientscript
+fun script196(component0: Component) {
+
+	if (if_find(component0) = true & VARBIT[3468] >= 80) {
+		if_setmodel(model_25889, component0)
+	}
+	return 
+}

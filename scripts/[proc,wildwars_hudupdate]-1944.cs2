@@ -1,0 +1,7 @@
+// 1944 proc
+fun wildwars_hudupdate() {
+
+	if_settext("Champions remaining:", interface_90:34)
+	if_settext(tostring(VARBIT[5706]), interface_90:35)
+	return 
+}

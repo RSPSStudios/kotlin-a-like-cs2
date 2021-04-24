@@ -1,0 +1,6 @@
+// 340 clientscript
+fun godwars_killcount_zamorak(component0: Component) {
+
+	~godwars_killcount(component0, VARBIT[3976])
+	return 
+}

@@ -1,0 +1,38 @@
+// 996 proc
+fun xpdrops_setdropsize(component0: Component, int1: Int, fontmetrics2: Fontmetrics, fontmetrics3: Fontmetrics, string0: String) {
+
+	val int4: Int = 0
+	if (string_length(string0) > 0) {
+		int4 = parawidth(string0, 512, fontmetrics2)
+	}
+	val int5: Int = calc(int1 - 1)
+	val int6: Int = 0
+	val int7: Int = 1
+	while (int7 <= 5) {
+		if (.cc_find(component0, int7) = ^true) {
+			int6 = int7
+		}
+		int7 = calc(int7 + 1)
+	}
+	val width8: Int = calc(int5 * int6 + 3 + int4)
+	if (~on_mobile = true | VARBIT[4692] = 0) {
+		if_setposition(0, 0, ^setpos_abs_right, ^setpos_abs_centre, component0)
+	} else if (VARBIT[4692] = 2) {
+		if_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_centre, component0)
+	} else {
+		if_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre, component0)
+	}
+	if_setsize(width8, 0, ^setsize_abs, ^setsize_minus, component0)
+	cc_settextfont(fontmetrics3)
+	cc_setsize(0, int1, ^setsize_minus, ^setsize_abs)
+	cc_setposition(0, cc_gety, ^setpos_abs_centre, ^setpos_abs_top)
+	int7 = 1
+	while (int7 <= int6) {
+		if (.cc_find(component0, int7) = ^true) {
+			.cc_setsize(int1, int1, ^setsize_abs, ^setsize_abs)
+			.cc_setposition(calc((int7 - 1) * int5), .cc_gety, ^setpos_abs_left, ^setpos_abs_top)
+		}
+		int7 = calc(int7 + 1)
+	}
+	return 
+}

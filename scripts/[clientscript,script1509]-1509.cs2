@@ -1,0 +1,13 @@
+// 1509 clientscript
+fun script1509() {
+
+	val int0: Int = 0
+	if (VARCINT[223] < clientclock) {
+		int0 = 1
+	}
+	VARCINT[223] = calc(clientclock + 20)
+	if (int0 = 1) {
+		~toplevel_chatbox_background
+	}
+	return 
+}

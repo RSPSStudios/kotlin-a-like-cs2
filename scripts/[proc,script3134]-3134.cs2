@@ -1,0 +1,9 @@
+// 3134 proc
+fun script3134() {
+
+	~script3135(interface_622:12, interface_622:13, VARBIT[9477])
+	~script3135(interface_622:18, interface_622:19, VARBIT[9478])
+	~script3135(interface_622:24, interface_622:25, VARBIT[9479])
+	~script3135(interface_622:30, interface_622:31, VARBIT[9480])
+	return 
+}

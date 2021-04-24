@@ -1,0 +1,6 @@
+// 547 clientscript
+fun runweight_visible(component0: Component) {
+
+	if_settext("${tostring(runweight_visible)} kg", component0)
+	return 
+}

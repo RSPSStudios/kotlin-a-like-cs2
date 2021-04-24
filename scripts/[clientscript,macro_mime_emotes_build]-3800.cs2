@@ -1,0 +1,14 @@
+// 3800 clientscript
+fun macro_mime_emotes_build(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component) {
+
+	cc_deleteall(component0)
+	~macro_mime_emotes_drawbutton(component1, "Think", false)
+	~macro_mime_emotes_drawbutton(component2, "Laugh", false)
+	~macro_mime_emotes_drawbutton(component3, "Climb rope", false)
+	~macro_mime_emotes_drawbutton(component4, "Glass box", false)
+	~macro_mime_emotes_drawbutton(component5, "Cry", false)
+	~macro_mime_emotes_drawbutton(component6, "Dance", false)
+	~macro_mime_emotes_drawbutton(component7, "Lean", false)
+	~macro_mime_emotes_drawbutton(component8, "Glass wall", false)
+	return 
+}

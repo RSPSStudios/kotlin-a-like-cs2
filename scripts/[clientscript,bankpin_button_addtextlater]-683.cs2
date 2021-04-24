@@ -1,0 +1,12 @@
+// 683 clientscript
+fun bankpin_button_addtextlater(component0: Component, comsubid1: Int, int2: Int, clock3: Int) {
+
+	if (clientclock < clock3) {
+		return 
+	}
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_settext(tostring(int2))
+		cc_setontimer(null)
+	}
+	return 
+}

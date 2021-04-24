@@ -1,0 +1,6 @@
+// 2215 clientscript
+fun welcome_screen_credit(component0: Component, component1: Component, component2: Component) {
+
+	~welcome_screen_credit(component0, component1, component2, VARBIT[10116])
+	return 
+}

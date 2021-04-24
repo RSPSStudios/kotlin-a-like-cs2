@@ -1,0 +1,6 @@
+// 1541 clientscript
+fun raids_sidepanel_drawbutton(boolean0: Boolean, text0: String, component1: Component) {
+
+	~raids_sidepanel_drawbutton(boolean0, text0, component1)
+	return 
+}

@@ -1,0 +1,29 @@
+// 3792 clientscript
+fun script3792(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component) {
+
+	if_setmodel(enum(int, model, enum_1551, calc(VARBIT[2511] / 10)), component0)
+	if_setmodel(enum(int, model, enum_1551, calc(VARBIT[2511] % 10)), component1)
+	if_setobject_nonum(VARP[850], 1, component5)
+	if (VARBIT[2540] = 0) {
+		if_setmodel(model_17219, component3)
+		if_setmodel(null, component2)
+		if_setmodel(null, component4)
+		return 
+	}
+	if (VARBIT[2540] > VARBIT[2511]) {
+		if_setmodel(model_17219, component3)
+		if_setmodel(model_17221, component2)
+		if_setmodel(model_17217, component4)
+		return 
+	}
+	if (VARBIT[2540] < VARBIT[2511]) {
+		if_setmodel(model_17219, component3)
+		if_setmodel(model_17220, component2)
+		if_setmodel(model_17218, component4)
+		return 
+	}
+	if_setmodel(model_17216, component3)
+	if_setmodel(null, component2)
+	if_setmodel(null, component4)
+	return 
+}

@@ -1,0 +1,57 @@
+// 4053 proc
+fun script4053(obj0: Obj, num1: Int, comsubid2: Int) {
+
+	val trans3: Int = 150
+	val trans4: Int = 200
+	val int5: Int = 0
+	val int6: Int = 0
+	val namedobj7: Namedobj = enum(int, namedobj, enum_3702, int6)
+	while (int5 = 0 & namedobj7 ! null) {
+		if (obj0 = namedobj7) {
+			int5, trans3, trans4 = 1, 0, 120
+		}
+		int6 = calc(int6 + 1)
+		namedobj7 = enum(int, namedobj, enum_3702, int6)
+	}
+	cc_settrans(trans3)
+	cc_setobject(obj0, num1)
+	when (VARBIT[11896]): Int {
+		1 -> {
+		
+			cc_setop(1, "Deposit-5")
+			cc_setop(2, "Deposit-1")
+			cc_setop(4, "Deposit-X")
+			cc_setop(5, "Deposit-All")
+		}
+		3 -> {
+		
+			cc_setop(1, "Deposit-X")
+			cc_setop(2, "Deposit-1")
+			cc_setop(3, "Deposit-5")
+			cc_setop(5, "Deposit-All")
+		}
+		2 -> {
+		
+			cc_setop(1, "Deposit-All")
+			cc_setop(2, "Deposit-1")
+			cc_setop(3, "Deposit-5")
+			cc_setop(4, "Deposit-X")
+		}
+	else -> {
+	
+		cc_setop(1, "Deposit-1")
+		cc_setop(3, "Deposit-5")
+		cc_setop(4, "Deposit-X")
+		cc_setop(5, "Deposit-All")
+	}
+	}
+	cc_setop(10, "Examine")
+	cc_setopbase("<col=ff9040>${oc_name(obj0)}</col>")
+	cc_setonop({
+		script4055(event_opindex, event_com, event_comsubid, trans4, trans3)
+	})
+	cc_setondragcomplete({
+		script4057(event_com, event_comsubid, event_drop, event_dropsubid, comsubid2)
+	})
+	return 
+}

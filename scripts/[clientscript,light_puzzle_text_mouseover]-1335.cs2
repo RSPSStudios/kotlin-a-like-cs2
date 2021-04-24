@@ -1,0 +1,8 @@
+// 1335 clientscript
+fun light_puzzle_text_mouseover(component0: Component, comsubid1: Int, colour2: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_setcolour(colour2)
+	}
+	return 
+}

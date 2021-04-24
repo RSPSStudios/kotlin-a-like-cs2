@@ -1,0 +1,18 @@
+// 1755 clientscript
+fun script1755(boolean0: Boolean, component1: Component, comsubid2: Int, comsubid3: Int, comsubid4: Int, colour5: Int) {
+
+	if (cc_find(component1, comsubid2) = ^true) {
+		cc_setcolour(colour5)
+	}
+	if (comsubid3 ! -1 & cc_find(component1, comsubid3) = ^true) {
+		cc_setcolour(colour5)
+	}
+	if (boolean0 = true) {
+		if (cc_find(component1, comsubid4) = ^true) {
+			cc_sethide(false)
+		}
+	} else if (cc_find(component1, comsubid4) = ^true) {
+		cc_sethide(true)
+	}
+	return 
+}

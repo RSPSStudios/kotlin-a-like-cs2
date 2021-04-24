@@ -1,0 +1,18 @@
+// 3873 clientscript
+fun searchbar_op(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component) {
+
+	~settings_op_sound(1)
+	if (VARBIT[9638] = 1) {
+		return 
+	}
+	~chatdefault_stopinput
+	VARBIT[9638] = 1
+	VARBIT[9639] = 1
+	if (~on_mobile = true) {
+		~keyboard_show(0, 50)
+	}
+	~searchbar_setup_op(component0, component1, component2, component3, 1, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15)
+	~settings_populate_settings(0, 0, 0, 1, component4, component5, component6, 0, component7, component8, component9, component10, component11, component12, component13, component14, component15)
+	~settings_create_tabs(component0, component1, 0, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component2, component3, component15)
+	return 
+}

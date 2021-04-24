@@ -1,0 +1,32 @@
+// 672 clientscript
+fun rune_pouch_inventoryreorder(drop0: Component, drop1: Component, comsubid2: Int, dropsubid3: Int, trans4: Int, trans5: Int) {
+
+	val size6: Int = inv_size(inv)
+	if (comsubid2 < 0 | comsubid2 >= size6) {
+		return 
+	}
+	if (drop1 ! drop0) {
+		if (cc_find(drop0, comsubid2) = ^true) {
+			cc_settrans(trans4)
+			cc_setontimer({
+				cc_settrans_temporarily_end(event_com, event_comsubid, trans5, calc(clientclock + 30))
+			})
+		}
+		return 
+	}
+	if (comsubid2 = dropsubid3 | dropsubid3 < 0 | dropsubid3 >= size6) {
+		return 
+	}
+	val obj7: Obj = inv_getobj(inv, comsubid2)
+	if (obj7 = null) {
+		return 
+	}
+	val obj8: Obj = inv_getobj(inv, dropsubid3)
+	if (cc_find(drop0, dropsubid3) = ^true) {
+		~rune_pouch_drawinventory_slot(obj7, inv_getnum(inv, comsubid2))
+	}
+	if (cc_find(drop0, comsubid2) = ^true) {
+		~rune_pouch_drawinventory_slot(obj8, inv_getnum(inv, dropsubid3))
+	}
+	return 
+}

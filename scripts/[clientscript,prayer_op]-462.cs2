@@ -1,0 +1,34 @@
+// 462 clientscript
+fun prayer_op(opindex0: Int, boolean1: Boolean, int2: Int, component3: Component, comsubid4: Int, comsubid5: Int, component6: Component, component7: Component) {
+
+	if (opindex0 = 1) {
+		if (boolean1 = false & cc_find(component3, comsubid4) = ^true & .cc_find(component3, comsubid5) = ^true) {
+			if (testbit(VARBIT[4101], int2) = ^true) {
+				VARBIT[4101] = clearbit(VARBIT[4101], int2)
+				~prayer_updatebutton(boolean1, int2, component3, component6, component7)
+				return 
+			}
+			if (~prayer_isavailable(int2) = 0) {
+				sound_synth(synth_2673, 1, 0)
+				return 
+			}
+			if (stat(prayer) <= 0) {
+				sound_synth(synth_2673, 1, 0)
+				mes("You need to recharge your Prayer at an altar.")
+				return 
+			}
+			VARBIT[4101] = setbit(VARBIT[4101], int2)
+			~prayer_updatebutton(boolean1, int2, component3, component6, component7)
+		}
+	} else if (opindex0 = 2) {
+		~deltooltip_action(component7)
+		if (boolean1 = true & VARCINT[218] ! component3) {
+			sound_synth(synth_2266, 1, 0)
+			~tooltip_build(component3, -1, component7, ~prayer_gettooltiptext(int2), if_getwidth(component6))
+			VARCINT[218] = component3
+		} else {
+			VARCINT[218] = null
+		}
+	}
+	return 
+}

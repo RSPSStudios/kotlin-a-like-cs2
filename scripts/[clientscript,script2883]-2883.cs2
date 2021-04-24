@@ -1,0 +1,7 @@
+// 2883 clientscript
+fun script2883(component0: Component) {
+
+	if_setontimer(null, component0)
+	if_settrans(0, component0)
+	return 
+}

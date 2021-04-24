@@ -1,0 +1,20 @@
+// 2629 proc
+fun script2629(component0: Component, int1: Int) {
+
+	if (int1 = 2) {
+		if (VARBIT[6385] = 1) {
+			if_setgraphic("checkbox,4", component0)
+		} else if (VARBIT[5408] = 1) {
+			if_setgraphic("checkbox,5", component0)
+		} else {
+			if_setgraphic("checkbox,3", component0)
+		}
+	} else if (VARBIT[6385] = 1) {
+		if_setgraphic("checkbox,1", component0)
+	} else if (VARBIT[5408] = 1 & VARBIT[6385] = 0) {
+		if_setgraphic("checkbox,2", component0)
+	} else {
+		if_setgraphic("checkbox,0", component0)
+	}
+	return 
+}

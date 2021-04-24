@@ -1,0 +1,8 @@
+// 725 clientscript
+fun bondif_convert_vartransmit() {
+
+	VARCINT[67] = VARP[1202]
+	VARCINT[68] = VARP[1203]
+	~bondif_convert_updatevalues
+	return 
+}

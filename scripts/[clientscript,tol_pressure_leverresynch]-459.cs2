@@ -1,0 +1,6 @@
+// 459 clientscript
+fun tol_pressure_leverresynch(int0: Int, component1: Component, component2: Component, component3: Component) {
+
+	~tol_pressure_leverresynch(int0, component1, component2, component3)
+	return 
+}

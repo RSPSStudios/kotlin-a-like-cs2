@@ -1,0 +1,6 @@
+// 227 clientscript
+fun steelborder(component0: Component, text0: String) {
+
+	~steelborder(component0, text0, 0)
+	return 
+}

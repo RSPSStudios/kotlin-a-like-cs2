@@ -1,0 +1,8 @@
+// 85 clientscript
+fun cc_colour_swapper(component0: Component, comsubid1: Int, colour2: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_setcolour(colour2)
+	}
+	return 
+}

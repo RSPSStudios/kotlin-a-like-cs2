@@ -1,0 +1,8 @@
+// 65 clientscript
+fun set_spinner(int0: Int, int1: Int, int2: Int, component3: Component) {
+
+	if_setontimer({
+		spinner(int0, int1, int2, component3)
+	}, component3)
+	return 
+}

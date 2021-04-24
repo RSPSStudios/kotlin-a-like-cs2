@@ -1,0 +1,8 @@
+// 1423 clientscript
+fun blast_furnace_hud_update(component0: Component, comsubid1: Int) {
+
+	if (.cc_find(component0, comsubid1) = ^true) {
+		~blast_furnace_hud_update(component0)
+	}
+	return 
+}

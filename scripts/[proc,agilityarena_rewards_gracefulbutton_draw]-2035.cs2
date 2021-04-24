@@ -1,0 +1,38 @@
+// 2035 proc
+fun agilityarena_rewards_gracefulbutton_draw(component0: Component, obj1: Obj, obj2: Obj, string0: String, int3: Int, boolean4: Boolean) {
+
+	val text1: String = ""
+	if (int3 = 1) {
+		text1 = "${string0}<br>1 ticket"
+	} else {
+		text1 = "${string0}<br>${~tostring_spacer(int3, ",")} tickets"
+	}
+	val int5: Int = 0
+	if (obj2 ! null) {
+		if (inv_total(inv, obj2) > 0) {
+			int5 = 1
+		}
+	} else if (inv_total(inv, graceful_hood_11850) > 0 & inv_total(inv, graceful_top_11854) > 0 & inv_total(inv, graceful_legs_11856) > 0 & inv_total(inv, graceful_cape_11852) > 0 & inv_total(inv, graceful_gloves_11858) > 0 & inv_total(inv, graceful_boots_11860) > 0) {
+		int5 = 1
+	}
+	cc_deleteall(component0)
+	val int6: Int = 0
+	if (inv_total(inv, agility_arena_ticket_2996) < int3 | int5 = 0) {
+		int6 = ~v2_stone_button_filled(component0)
+		~agilityarena_rewards_gracefulbutton_drawcomponents(component0, int6, obj1, text1, ^red)
+		if_setonop(null, component0)
+	} else if (boolean4 = true) {
+		int6 = ~v2_stone_button_in_filled(component0)
+		~agilityarena_rewards_gracefulbutton_drawcomponents(component0, int6, obj1, text1, ^white)
+		if_setonop({
+			opsound(event_opindex, 2)
+		}, component0)
+	} else {
+		int6 = ~v2_stone_button_out_filled(component0)
+		~agilityarena_rewards_gracefulbutton_drawcomponents(component0, int6, obj1, text1, 0xff981f)
+		if_setonop({
+			opsound(event_opindex, 2)
+		}, component0)
+	}
+	return 
+}

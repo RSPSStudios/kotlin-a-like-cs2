@@ -1,0 +1,8 @@
+// 3173 proc
+fun script3173(component0: Component) {
+
+	if (if_getlayer(component0) ! null) {
+		~script3175(component0, ^min_32bit_int)
+	}
+	return 
+}

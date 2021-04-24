@@ -1,0 +1,7 @@
+// 994 clientscript
+fun xpdrops_vartransmit(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component) {
+
+	~xpdrops_redraw(component0, component1, component3, component4, component6, component7)
+	~xpdrops_setbar(component1, component2, component3, component4, component5, component6, component7)
+	return 
+}

@@ -1,0 +1,6 @@
+// 2679 clientscript
+fun telenexus_scry_vartrans(component0: Component, component1: Component) {
+
+	~telenexus_options(component0, component1)
+	return 
+}

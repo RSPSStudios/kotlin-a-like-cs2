@@ -1,0 +1,6 @@
+// 3679 clientscript
+fun league_area_confirm_selection() {
+
+	sound_synth(synth_2266, 1, 0)
+	return 
+}

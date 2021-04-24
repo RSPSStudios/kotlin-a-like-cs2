@@ -1,0 +1,19 @@
+// 4109 proc
+fun script4109(int0: Int) {
+
+	val int1: Int = 0
+	val component2: Component = null
+	if (int0 = 5) {
+		int1 = VARBIT[12106]
+		component2 = interface_685:12
+		if (cc_find(component2, 0) = ^true) {
+			if (int1 > 0) {
+				cc_settext("<col=0dc10d>Time: ${tostring(int1)} min</col>")
+			} else {
+				~script4110(struct_2884, 0, interface_685:12, interface_685:13)
+			}
+		}
+		return 
+	}
+	return 
+}

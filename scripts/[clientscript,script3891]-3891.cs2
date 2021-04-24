@@ -1,0 +1,6 @@
+// 3891 clientscript
+fun script3891(component0: Component, comsubid1: Int, mousex2: Int, int3: Int, y4: Int, int5: Int) {
+
+	~script3893(component0, comsubid1, mousex2, int3, y4, int5)
+	return 
+}

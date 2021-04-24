@@ -1,0 +1,8 @@
+// 1263 clientscript
+fun deadman_tournament_refresh_reset(clock0: Int, component1: Component) {
+
+	if (clientclock >= clock0) {
+		~deadman_tournament_refresh_reset(component1)
+	}
+	return 
+}

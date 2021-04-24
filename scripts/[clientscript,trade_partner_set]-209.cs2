@@ -1,0 +1,12 @@
+// 209 clientscript
+fun trade_partner_set(string0: String) {
+
+	VARCSTRING[357] = string0
+	val mesuid0: Int = -1
+	if (VARCINT[41] = 5) {
+		mesuid0 = ~script553
+		~rebuildchatbox(mesuid0)
+		~chatalerts(mesuid0)
+	}
+	return 
+}

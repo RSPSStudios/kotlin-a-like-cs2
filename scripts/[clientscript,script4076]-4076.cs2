@@ -1,0 +1,6 @@
+// 4076 clientscript
+fun script4076(boolean0: Boolean, component1: Component, width2: Int) {
+
+	~script4077(boolean0, component1, width2)
+	return 
+}

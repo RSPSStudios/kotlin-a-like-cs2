@@ -1,0 +1,74 @@
+// 166 proc
+fun cws_cc_getvar(int0: Int): Int {
+
+	if (int0 = 1) {
+		return VARBIT[3851]
+	}
+	if (int0 = 2) {
+		return VARBIT[3852]
+	}
+	if (int0 = 3) {
+		return VARBIT[3853]
+	}
+	if (int0 = 4) {
+		return VARBIT[3854]
+	}
+	if (int0 = 5) {
+		return VARBIT[3855]
+	}
+	if (int0 = 6) {
+		return VARBIT[3856]
+	}
+	if (int0 = 7) {
+		return VARBIT[3857]
+	}
+	if (int0 = 8) {
+		return VARBIT[3858]
+	}
+	if (int0 = 9) {
+		return VARBIT[3859]
+	}
+	if (int0 = 10) {
+		return VARBIT[3860]
+	}
+	if (int0 = 11) {
+		return VARBIT[3861]
+	}
+	if (int0 = 12) {
+		return VARBIT[3862]
+	}
+	if (int0 = 13) {
+		return VARBIT[3863]
+	}
+	if (int0 = 14) {
+		return VARBIT[3864]
+	}
+	if (int0 = 15) {
+		return VARBIT[3865]
+	}
+	if (int0 = 16) {
+		return VARBIT[3866]
+	}
+	if (int0 = 17) {
+		return VARBIT[3867]
+	}
+	if (int0 = 18) {
+		return VARBIT[3868]
+	}
+	if (int0 = 19) {
+		return VARBIT[3869]
+	}
+	if (int0 = 20) {
+		return VARBIT[3870]
+	}
+	if (int0 = 23) {
+		return VARBIT[3871]
+	}
+	if (int0 = 24) {
+		return VARBIT[3872]
+	}
+	if (int0 = 25) {
+		return VARBIT[3964]
+	}
+	return 0
+}

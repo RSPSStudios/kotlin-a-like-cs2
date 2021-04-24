@@ -1,0 +1,200 @@
+// 3216 proc
+fun league_task_is_completed(struct0: Struct): Int {
+
+	val struct1: Struct = enum(int, struct, enum_2670, VARBIT[10032])
+	if (struct1 = null) {
+		return ^false
+	}
+	val enum2: Enum = struct_param(struct1, param_869)
+	if (enum2 = null | enum(struct, boolean, enum2, struct0) = false) {
+		return ^false
+	}
+	val int3: Int = struct_param(struct0, param_873)
+	if (int3 = -1 | int3 < 0) {
+		return ^false
+	}
+	val index4: Int = calc(int3 % 32)
+	val int5: Int = calc(int3 / 32)
+	when (int5): Int {
+		0 -> {
+		
+			return testbit(VARP[2616], index4)
+		}
+		1 -> {
+		
+			return testbit(VARP[2617], index4)
+		}
+		2 -> {
+		
+			return testbit(VARP[2618], index4)
+		}
+		3 -> {
+		
+			return testbit(VARP[2619], index4)
+		}
+		4 -> {
+		
+			return testbit(VARP[2620], index4)
+		}
+		5 -> {
+		
+			return testbit(VARP[2621], index4)
+		}
+		6 -> {
+		
+			return testbit(VARP[2622], index4)
+		}
+		7 -> {
+		
+			return testbit(VARP[2623], index4)
+		}
+		8 -> {
+		
+			return testbit(VARP[2624], index4)
+		}
+		9 -> {
+		
+			return testbit(VARP[2625], index4)
+		}
+		10 -> {
+		
+			return testbit(VARP[2626], index4)
+		}
+		11 -> {
+		
+			return testbit(VARP[2627], index4)
+		}
+		12 -> {
+		
+			return testbit(VARP[2628], index4)
+		}
+		13 -> {
+		
+			return testbit(VARP[2629], index4)
+		}
+		14 -> {
+		
+			return testbit(VARP[2630], index4)
+		}
+		15 -> {
+		
+			return testbit(VARP[2631], index4)
+		}
+		16 -> {
+		
+			return testbit(VARP[2808], index4)
+		}
+		17 -> {
+		
+			return testbit(VARP[2809], index4)
+		}
+		18 -> {
+		
+			return testbit(VARP[2810], index4)
+		}
+		19 -> {
+		
+			return testbit(VARP[2811], index4)
+		}
+		20 -> {
+		
+			return testbit(VARP[2812], index4)
+		}
+		21 -> {
+		
+			return testbit(VARP[2813], index4)
+		}
+		22 -> {
+		
+			return testbit(VARP[2814], index4)
+		}
+		23 -> {
+		
+			return testbit(VARP[2815], index4)
+		}
+		24 -> {
+		
+			return testbit(VARP[2816], index4)
+		}
+		25 -> {
+		
+			return testbit(VARP[2817], index4)
+		}
+		26 -> {
+		
+			return testbit(VARP[2818], index4)
+		}
+		27 -> {
+		
+			return testbit(VARP[2819], index4)
+		}
+		28 -> {
+		
+			return testbit(VARP[2820], index4)
+		}
+		29 -> {
+		
+			return testbit(VARP[2821], index4)
+		}
+		30 -> {
+		
+			return testbit(VARP[2822], index4)
+		}
+		31 -> {
+		
+			return testbit(VARP[2823], index4)
+		}
+		32 -> {
+		
+			return testbit(VARP[2824], index4)
+		}
+		33 -> {
+		
+			return testbit(VARP[2825], index4)
+		}
+		34 -> {
+		
+			return testbit(VARP[2826], index4)
+		}
+		35 -> {
+		
+			return testbit(VARP[2827], index4)
+		}
+		36 -> {
+		
+			return testbit(VARP[2828], index4)
+		}
+		37 -> {
+		
+			return testbit(VARP[2829], index4)
+		}
+		38 -> {
+		
+			return testbit(VARP[2830], index4)
+		}
+		39 -> {
+		
+			return testbit(VARP[2831], index4)
+		}
+		40 -> {
+		
+			return testbit(VARP[2832], index4)
+		}
+		41 -> {
+		
+			return testbit(VARP[2833], index4)
+		}
+		42 -> {
+		
+			return testbit(VARP[2834], index4)
+		}
+		43 -> {
+		
+			return testbit(VARP[2835], index4)
+		}
+	else -> {
+	
+		return ^false
+	}
+	}
+}

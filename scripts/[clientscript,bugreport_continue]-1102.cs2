@@ -1,0 +1,11 @@
+// 1102 clientscript
+fun bugreport_continue(component0: Component, component1: Component) {
+
+	sound_synth(synth_2266, 1, 0)
+	if_sethide(true, component0)
+	if_sethide(false, component1)
+	if (~on_mobile = true) {
+		~keyboard_show_string(0, 500, VARCSTRING[372])
+	}
+	return 
+}

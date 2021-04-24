@@ -1,0 +1,10 @@
+// 1047 clientscript
+fun camera_zoom_slider_click(component0: Component, component1: Component, int2: Int) {
+
+	~settings_side_op_sound
+	~zoom_slider_specific_pos(component0, component1, calc(int2 - if_getwidth(component0) / 2))
+	if_setontimer({
+		script3901(0)
+	}, interface_134:3)
+	return 
+}

@@ -1,0 +1,21 @@
+// 2031 proc
+fun script2031(int0: Int): Int {
+
+	val int1: Int = VARP[1588]
+	val int2: Int = calc(~max(10 * stat_xp(attack), VARP[1435]) - VARP[1714])
+	int2 = calc(~min(int2, VARP[1588] / 2) * 2)
+	int1 = calc(int1 - ~min(int2, int1))
+	int2 = calc(~max(10 * stat_xp(strength), VARP[1436]) - VARP[1715])
+	int2 = calc(~min(int2, VARP[1588] / 2) * 2)
+	int1 = calc(int1 - ~min(int2, int1))
+	int2 = calc(~max(10 * stat_xp(defence), VARP[1439]) - VARP[1718])
+	int2 = calc(~min(int2, VARP[1588] / 4) * 4)
+	int1 = calc(int1 - ~min(int2, int1))
+	int2 = calc(~max(10 * stat_xp(ranged), VARP[1437]) - VARP[1716])
+	int2 = calc(~min(int2, VARP[1588] / 3) * 3)
+	int1 = calc(int1 - ~min(int2, int1))
+	int2 = calc(~max(10 * stat_xp(magic), VARP[1438]) - VARP[1717])
+	int2 = calc(~min(int2, VARP[1588] / 2) * 2)
+	int1 = calc(int1 - ~min(int2, int1))
+	return calc(int1 / int0)
+}

@@ -1,0 +1,11 @@
+// 2233 proc
+fun welcome_screen_continue_text(component0: Component) {
+
+	if (~on_mobile = false) {
+		return 
+	}
+	if (if_find(component0) = true) {
+		cc_settext("TAP HERE TO PLAY")
+	}
+	return 
+}

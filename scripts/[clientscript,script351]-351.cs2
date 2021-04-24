@@ -1,0 +1,8 @@
+// 351 clientscript
+fun script351(component0: Component, int1: Int) {
+
+	cc_deleteall(component0)
+	val int2: Int = ~stonepanel(int1, component0, 0)
+	~script352(component0, int2)
+	return 
+}

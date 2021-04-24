@@ -1,0 +1,6 @@
+// 2397 clientscript
+fun recurring_membership(int0: Int) {
+
+	~recurring_membership(int0)
+	return 
+}

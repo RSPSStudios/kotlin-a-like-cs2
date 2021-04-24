@@ -1,0 +1,6 @@
+// 526 clientscript
+fun tooltip_mouserepeat(component0: Component, comsubid1: Int, component2: Component, string0: String, int3: Int, width4: Int) {
+
+	~tooltip_mouserepeat(component0, comsubid1, component2, string0, int3, width4)
+	return 
+}

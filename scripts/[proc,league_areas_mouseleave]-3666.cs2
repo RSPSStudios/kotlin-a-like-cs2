@@ -1,0 +1,17 @@
+// 3666 proc
+fun league_areas_mouseleave(int0: Int, component1: Component, component2: Component) {
+
+	val component3: Component = enum(int, component, enum_3332, int0)
+	val graphic4: Graphic = enum(component, graphic, enum_3333, component1)
+	val graphic5: Graphic = enum(component, graphic, enum_3335, component2)
+	if_setgraphic(graphic4, component1)
+	if_setgraphic(graphic5, component2)
+	if (~script3681(int0) = 1) {
+		if_setgraphic(enum(int, graphic, enum_3331, int0), component3)
+	} else {
+		if_setgraphic(null, component3)
+	}
+	if_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre, component3)
+	if_settrans(0, component3)
+	return 
+}

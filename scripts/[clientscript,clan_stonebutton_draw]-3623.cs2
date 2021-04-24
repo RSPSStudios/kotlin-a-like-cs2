@@ -1,0 +1,6 @@
+// 3623 clientscript
+fun clan_stonebutton_draw(boolean0: Boolean, text0: String, graphic1: Graphic, component2: Component) {
+
+	~clan_stonebutton_draw(boolean0, text0, graphic1, component2)
+	return 
+}

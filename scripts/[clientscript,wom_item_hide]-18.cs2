@@ -1,0 +1,9 @@
+// 18 clientscript
+fun wom_item_hide(comsubid0: Int, component1: Component, opindex2: Int, component3: Component) {
+
+	if (opindex2 = 1 & cc_find(component1, comsubid0) = ^true) {
+		~chatdefault_opt_item
+		~wom_build_item_list(component1, component3)
+	}
+	return 
+}

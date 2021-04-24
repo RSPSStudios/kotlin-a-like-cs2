@@ -1,0 +1,18 @@
+// 1150 clientscript
+fun deadman_delay_timer(component0: Component, string0: String, clock1: Int, int2: Int, int3: Int) {
+
+	val int4: Int = calc(int2 - (clientclock - clock1))
+	val int5: Int = calc((49 + int4) / 50)
+	if (int4 <= 0) {
+		if_setontimer(null, component0)
+		if (int3 ! -1) {
+			logout
+		}
+		if_resume_pausebutton(interface_228:4)
+	} else if (int5 = 1) {
+		if_settext("There is 1 second remaining ${string0}", interface_228:2)
+	} else {
+		if_settext("There are ${tostring(int5)} seconds remaining ${string0}", interface_228:2)
+	}
+	return 
+}

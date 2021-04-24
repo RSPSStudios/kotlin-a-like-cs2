@@ -1,0 +1,10 @@
+// 323 clientscript
+fun combat_interface_opbutton(graphic0: Graphic, graphic1: Graphic, graphic2: Graphic, graphic3: Graphic, opindex4: Int, int5: Int) {
+
+	if (opindex4 ! 1) {
+		return 
+	}
+	VARP[43] = int5
+	~combat_interface_setbuttons(graphic0, graphic1, graphic2, graphic3)
+	return 
+}

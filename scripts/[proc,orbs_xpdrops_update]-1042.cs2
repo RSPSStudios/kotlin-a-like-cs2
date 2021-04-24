@@ -1,0 +1,26 @@
+// 1042 proc
+fun orbs_xpdrops_update(component0: Component) {
+
+	val graphic1: Graphic = "orb_xp,0"
+	val graphic2: Graphic = "orb_xp,2"
+	val op0: String = "Show"
+	if (VARBIT[4702] = 1) {
+		graphic1, graphic2, op0 = "orb_xp,1", "orb_xp,3", "Hide"
+		if_setonop({
+			orbs_xpdrops_op(event_opindex, event_com, 0)
+		}, component0)
+	} else {
+		if_setonop({
+			orbs_xpdrops_op(event_opindex, event_com, 1)
+		}, component0)
+	}
+	if_setop(1, op0, component0)
+	if_setgraphic(graphic1, component0)
+	if_setonmouserepeat({
+		graphic_swapper(event_com, graphic2)
+	}, component0)
+	if_setonmouseleave({
+		graphic_swapper(event_com, graphic1)
+	}, component0)
+	return 
+}

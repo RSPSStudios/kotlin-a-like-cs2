@@ -1,0 +1,63 @@
+// 2526 proc
+fun script2526(): Int {
+
+	val enum0: Enum = ~toplevel_getcomponents
+	if (enum0 ! enum_1745) {
+		return 0
+	}
+	VARCINT[222] = clientclock
+	val component1: Component = enum(component, component, enum0, interface_161:15)
+	val int2: Int = 0
+	val int3: Int = 0
+	val int4: Int = 0
+	val height5: Int = if_getheight(component1)
+	val width6: Int = if_getwidth(component1)
+	val height7: Int = if_getheight(if_getlayer(component1))
+	val width8: Int = if_getwidth(if_getlayer(component1))
+	val int9: Int = calc(width8 - 204 + 3)
+	val int10: Int = calc(int9 / 2 - width6 / 2)
+	val height11: Int = calc(height7 - 184 + 26)
+	val int12: Int = calc(width8 - 182 + 40)
+	val int13: Int = calc(int12 / 2 - width6 / 2)
+	if (height5 >= height11) {
+		int4 = 1
+	}
+	if (~script2518 = 1) {
+		int2 = 1
+	}
+	if (~script2519 = 1) {
+		int3 = 1
+	}
+	val int14: Int = calc((height7 - height5) / 2)
+	if (VARCINT[41] = 1337 & if_hassub(interface_162:561) = false & VARBIT[6538] = 1) {
+		int13 = calc((int12 - 18) / 2 - width6 / 2)
+		if_setposition(~max(0, int13), 0, ^setpos_abs_left, ^setpos_abs_top, component1)
+		return 3
+	}
+	if (calc(width6 + 204 * 2 + 10) <= width8 & int4 = 0) {
+		if_setposition(0, ~min(64, int14), ^setpos_abs_centre, ^setpos_abs_centre, component1)
+		return 0
+	}
+	if (int2 = 1) {
+		if (int4 = 0) {
+			if_setposition(~max(0, int10), ~min(64, int14), ^setpos_abs_right, ^setpos_abs_centre, component1)
+		} else {
+			if_setposition(~max(calc(width8 - int12), int13), ~min(64, int14), ^setpos_abs_right, ^setpos_abs_centre, component1)
+		}
+		return 1
+	}
+	if (int3 = 1) {
+		if (int4 = 1 & calc(int13 + width6 + 204 + 4) <= width8) {
+			if_setposition(~max(0, int13), ~min(64, int14), ^setpos_abs_left, ^setpos_abs_centre, component1)
+		} else {
+			if_setposition(~max(0, int10), ~min(64, int14), ^setpos_abs_left, ^setpos_abs_centre, component1)
+		}
+		return 2
+	}
+	if (int4 = 0) {
+		if_setposition(0, ~min(64, int14), ^setpos_abs_centre, ^setpos_abs_centre, component1)
+	} else {
+		if_setposition(~max(0, int13), ~min(64, int14), ^setpos_abs_left, ^setpos_abs_centre, component1)
+	}
+	return 0
+}

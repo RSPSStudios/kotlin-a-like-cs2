@@ -1,0 +1,8 @@
+// 2810 clientscript
+fun script2810(boolean0: Boolean, component1: Component) {
+
+	if (~on_mobile = false) {
+		if_sethide(boolean0, component1)
+	}
+	return 
+}

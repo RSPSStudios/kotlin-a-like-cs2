@@ -1,0 +1,6 @@
+// 273 clientscript
+fun settrans(component0: Component, trans1: Int) {
+
+	if_settrans(trans1, component0)
+	return 
+}

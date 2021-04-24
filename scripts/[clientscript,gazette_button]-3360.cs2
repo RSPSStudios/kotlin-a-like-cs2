@@ -1,0 +1,6 @@
+// 3360 clientscript
+fun gazette_button(component0: Component, boolean1: Boolean) {
+
+	~gazette_button(component0, boolean1)
+	return 
+}

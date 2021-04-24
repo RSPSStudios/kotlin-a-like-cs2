@@ -1,0 +1,8 @@
+// 530 proc
+fun script530(component0: Component) {
+
+	if (cc_find(component0, 4) = ^true) {
+		cc_settext(enum(int, string, enum_3509, ~settings_get_dropdown(12)))
+	}
+	return 
+}

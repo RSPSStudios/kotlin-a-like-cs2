@@ -1,0 +1,12 @@
+// 3239 proc
+fun questlist_showprogress_grey(struct0: Struct): Int {
+
+	val enum1: Enum = null
+	if (~league_world = 1) {
+		enum1 = struct_param(enum(int, struct, enum_2670, VARBIT[10032]), param_890)
+		if (enum1 ! null & enum(struct, boolean, enum1, struct0) = false) {
+			return 1
+		}
+	}
+	return 0
+}

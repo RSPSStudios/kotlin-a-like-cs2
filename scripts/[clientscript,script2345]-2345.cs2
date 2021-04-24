@@ -1,0 +1,6 @@
+// 2345 clientscript
+fun script2345(int0: Int, int1: Int, int2: Int) {
+
+	~script2351(int0, int1, int2)
+	return 
+}

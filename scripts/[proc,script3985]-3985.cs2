@@ -1,0 +1,11 @@
+// 3985 proc
+fun script3985() {
+
+	if (VARP[287] = 0 | getwindowmode = ^windowmode_fixed) {
+		VARBIT[4089] = VARBIT[4089]
+		mes("That option is applicable only in resizable mode with 'Split Private Chat' enabled.")
+		return 
+	}
+	VARBIT[4089] = calc(1 - VARBIT[4089])
+	return 
+}

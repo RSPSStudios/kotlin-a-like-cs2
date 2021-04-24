@@ -1,0 +1,6 @@
+// 3953 clientscript
+fun script3953(component0: Component, component1: Component) {
+
+	~script3954(component0, component1)
+	return 
+}

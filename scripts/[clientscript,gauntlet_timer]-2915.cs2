@@ -1,0 +1,45 @@
+// 2915 clientscript
+fun gauntlet_timer(int0: Int, int1: Int) {
+
+	val component2: Component = interface_637:4
+	int0 = calc(int0 - clientclock)
+	if (int0 <= 0) {
+		if_setontimer(null, interface_637:3)
+		return 
+	}
+	val int3: Int = calc(int0 / 50)
+	val int4: Int = calc(int3 / 60)
+	val int5: Int = calc(int3 % 60)
+	val text0: String = "Time Left: ${tostring(int4)}:${tostring(int5)}"
+	if (int5 < 10) {
+		text0 = "Time Left: ${tostring(int4)}:0${tostring(int5)}"
+	}
+	if_settext(text0, component2)
+	if (calc(clientclock % 20) < 10 & int3 <= 10) {
+		if_setcolour(0xfc0000, component2)
+	} else {
+		if_setcolour(0xfcfce7, component2)
+	}
+	if (calc(int0 % 50) ! 0) {
+		return 
+	}
+	if (int3 = 451) {
+		mes("<col=ef1020>Time remaining: 7:30")
+	}
+	if (int3 = 301) {
+		mes("<col=ef1020>Time remaining: 5:00")
+	}
+	if (int3 = 151) {
+		mes("<col=ef1020>Time remaining: 2:30")
+	}
+	if (int3 = 61) {
+		mes("<col=ef1020>Time remaining: 1:00")
+	}
+	if (int3 = 31) {
+		mes("<col=ef1020>Time remaining: 0:30")
+	}
+	if (int3 = 11) {
+		mes("<col=ef1020>Time remaining: 0:10")
+	}
+	return 
+}

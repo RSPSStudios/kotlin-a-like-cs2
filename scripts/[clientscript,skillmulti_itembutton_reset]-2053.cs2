@@ -1,0 +1,22 @@
+// 2053 clientscript
+fun skillmulti_itembutton_reset(clock0: Int, obj1: Obj, component2: Component, string0: String, key3: Int, int4: Int, int5: Int) {
+
+	if (clientclock < clock0) {
+		return 
+	}
+	~skillmulti_itembutton_draw(false, obj1, component2, int4, int5)
+	if_setonmouseover({
+		skillmulti_itembutton_hover(true, obj1, component2, int4, int5)
+	}, component2)
+	if_setonmouseleave({
+		skillmulti_itembutton_hover(false, obj1, component2, int4, int5)
+	}, component2)
+	if_setonop({
+		skillmulti_itembutton_op(event_opindex, obj1, component2, string0, key3, int4, int5)
+	}, component2)
+	if_setonkey({
+		skillmulti_itembutton_key(event_keychar, event_key, obj1, component2, string0, key3, int4, int5)
+	}, component2)
+	if_setontimer(null, component2)
+	return 
+}

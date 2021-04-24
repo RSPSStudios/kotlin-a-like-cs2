@@ -1,0 +1,9 @@
+// 124 clientscript
+fun grouping_viewchannel(int0: Int) {
+
+	sound_synth(synth_2266, 1, 0)
+	if_sethide(true, interface_76:14)
+	VARCINT[64] = int0
+	~grouping_rebuild
+	return 
+}

@@ -1,0 +1,1053 @@
+// 2791 proc
+fun skill_guide_data_magic(int0: Int, int1: Int): Int, Namedobj, String {
+
+	val string0: String = ""
+	val string1: String = ""
+	val string2: String = ""
+	val string3: String = ""
+	when (int0): Int {
+		0 -> {
+		
+			when (int1): Int {
+				0 -> {
+				
+					string0 = "you can see what each spell does by moving your mouse over its icon."
+					string1 = "you can see what each spell does by activating the spellbook's Info mode, then tapping the spells."
+					string2 = "Click a spell icon below to see the required runes to cast each spell.<br><br>"
+					string3 = "Tap a spell icon below to see the required runes to cast each spell.<br><br>"
+					return -1, battlestaff_1391, "${~text_device(string2, string3)}By opening the spellbook icon on the side interface,${~text_device(string0, string1)}"
+				}
+				1 -> {
+				
+					if (~league_world = 1 & VARBIT[10032] = 1) {
+						return -1, kourend_home_teleport_24369, "Home teleport (Kourend)"
+					}
+					return -1, lumbridge_home_teleport_9712, "Home teleport (Lumbridge)"
+				}
+				2 -> {
+				
+					return 1, wind_strike_3273, "Wind Strike"
+				}
+				3 -> {
+				
+					return 3, confuse_3274, "Confuse"
+				}
+				4 -> {
+				
+					return 5, water_strike_3275, "Water Strike"
+				}
+				5 -> {
+				
+					return 7, lvl_1_enchant_3276, "Level 1 enchant"
+				}
+				6 -> {
+				
+					return 9, earth_strike_3277, "Earth Strike"
+				}
+				7 -> {
+				
+					return 11, weaken_3278, "Weaken"
+				}
+				8 -> {
+				
+					return 13, fire_strike_3279, "Fire Strike"
+				}
+				9 -> {
+				
+					return 15, bones_to_bananas_3280, "Bones to bananas"
+				}
+				10 -> {
+				
+					return 17, wind_bolt_3281, "Wind Bolt"
+				}
+				11 -> {
+				
+					return 19, curse_3282, "Curse"
+				}
+				12 -> {
+				
+					return 20, bind_3283, "Bind"
+				}
+				13 -> {
+				
+					return 21, low_level_alchemy_3284, "Low level alchemy"
+				}
+				14 -> {
+				
+					return 23, water_bolt_3285, "Water Bolt"
+				}
+				15 -> {
+				
+					return 25, varrock_teleport_3286, "Varrock teleport"
+				}
+				16 -> {
+				
+					return 27, lvl_2_enchant_3287, "Level 2 enchant"
+				}
+				17 -> {
+				
+					return 29, earth_bolt_3288, "Earth Bolt"
+				}
+				18 -> {
+				
+					return 31, lumbridge_teleport_3289, "Lumbridge teleport"
+				}
+				19 -> {
+				
+					return 33, telekinetic_grab_3290, "Telekinetic grab"
+				}
+				20 -> {
+				
+					return 35, fire_bolt_3291, "Fire Bolt"
+				}
+				21 -> {
+				
+					return 37, falador_teleport_3292, "Falador teleport"
+				}
+				22 -> {
+				
+					return 39, crumble_undead_3293, "Crumble undead"
+				}
+				23 -> {
+				
+					return 40, teleport_to_house_8828, "Teleport to house"
+				}
+				24 -> {
+				
+					return 41, wind_blast_3294, "Wind Blast"
+				}
+				25 -> {
+				
+					return 43, superheat_item_3295, "Superheat item"
+				}
+				26 -> {
+				
+					return 45, camelot_teleport_3296, "Camelot teleport"
+				}
+				27 -> {
+				
+					return 47, water_blast_3297, "Water Blast"
+				}
+				28 -> {
+				
+					return 49, lvl_3_enchant_3298, "Level 3 enchant"
+				}
+				29 -> {
+				
+					return 50, iban_blast_3299, "Iban blast<br>(after Underground Pass)"
+				}
+				30 -> {
+				
+					return 50, snare_3300, "Snare"
+				}
+				31 -> {
+				
+					return 50, magic_dart_4176, "Magic dart<br>(with 55 Slayer)"
+				}
+				32 -> {
+				
+					return 51, ardougne_teleport_3301, "Ardougne teleport<br>(after Plague City)"
+				}
+				33 -> {
+				
+					return 53, earth_blast_3302, "Earth Blast"
+				}
+				34 -> {
+				
+					return 55, high_level_alchemy_3303, "High level alchemy"
+				}
+				35 -> {
+				
+					return 56, charge_water_orb_3304, "Charge water orb"
+				}
+				36 -> {
+				
+					return 57, lvl_4_enchant_3305, "Level 4 enchant"
+				}
+				37 -> {
+				
+					return 58, watchtower_teleport_3306, "Watchtower teleport<br>(after Watchtower)"
+				}
+				38 -> {
+				
+					return 59, fire_blast_3307, "Fire Blast"
+				}
+				39 -> {
+				
+					return 60, charge_earth_orb_3308, "Charge earth orb"
+				}
+				40 -> {
+				
+					return 60, bones_to_peaches_6884, "Bones to peaches"
+				}
+				41 -> {
+				
+					return 60, claws_of_guthix_3309, "Claws of Guthix<br>(after Mage Arena)"
+				}
+				42 -> {
+				
+					return 60, flames_of_zamorak_3310, "Flames of Zamorak<br>(after Mage Arena)"
+				}
+				43 -> {
+				
+					return 60, saradomin_strike_3311, "Saradomin Strike<br>(after Mage Arena)"
+				}
+				44 -> {
+				
+					return 61, trollheim_teleport_3312, "Trollheim teleport<br>(after Eadgar's Ruse)"
+				}
+				45 -> {
+				
+					return 62, wind_wave_3313, "Wind Wave"
+				}
+				46 -> {
+				
+					return 63, charge_fire_orb_3314, "Charge fire orb"
+				}
+				47 -> {
+				
+					return 64, ape_atoll_teleport_7619, "Ape Atoll teleport<br>(after Recipe for Disaster)"
+				}
+				48 -> {
+				
+					return 65, water_wave_3315, "Water Wave"
+				}
+				49 -> {
+				
+					return 66, charge_air_orb_3316, "Charge air orb"
+				}
+				50 -> {
+				
+					return 66, vulnerability_3317, "Vulnerability"
+				}
+				51 -> {
+				
+					return 68, lvl_5_enchant_3318, "Level 5 enchant"
+				}
+				52 -> {
+				
+					return 69, kourend_castle_teleport_21836, "Kourend Castle teleport<br>(after unlocking the spell)"
+				}
+				53 -> {
+				
+					return 70, earth_wave_3319, "Earth Wave"
+				}
+				54 -> {
+				
+					return 73, enfeeble_3320, "Enfeeble"
+				}
+				55 -> {
+				
+					return 74, teleother_lumbridge_4553, "Teleother Lumbridge"
+				}
+				56 -> {
+				
+					return 75, fire_wave_3321, "Fire Wave"
+				}
+				57 -> {
+				
+					return 79, entangle_3322, "Entangle"
+				}
+				58 -> {
+				
+					return 80, stun_3324, "Stun"
+				}
+				59 -> {
+				
+					return 80, charge_3323, "Charge<br>(after Mage Arena)"
+				}
+				60 -> {
+				
+					return 81, wind_surge_21876, "Wind Surge"
+				}
+				61 -> {
+				
+					return 82, teleother_falador_4554, "Teleother Falador"
+				}
+				62 -> {
+				
+					return 85, water_surge_21877, "Water Surge"
+				}
+				63 -> {
+				
+					return 85, tele_block_4555, "Tele block"
+				}
+				64 -> {
+				
+					return 85, dead_orb_17152, "Teleport to Target"
+				}
+				65 -> {
+				
+					return 87, lvl_6_enchant_6567, "Level 6 enchant"
+				}
+				66 -> {
+				
+					return 90, earth_surge_21878, "Earth Surge"
+				}
+				67 -> {
+				
+					return 90, teleother_camelot_4556, "Teleother Camelot"
+				}
+				68 -> {
+				
+					return 93, lvl_7_enchant_19475, "Level 7 enchant"
+				}
+				69 -> {
+				
+					return 95, fire_surge_21879, "Fire Surge"
+				}
+			else -> {
+			
+				return -1, null, ""
+			}
+			}
+		}
+		1 -> {
+		
+			when (int1): Int {
+				0 -> {
+				
+					return -1, ancient_staff_4675, "Ancient magicks are available after<br>completing the Desert Treasure quest."
+				}
+				1 -> {
+				
+					return -1, edgeville_home_teleport_11142, "Home teleport (Edgeville)"
+				}
+				2 -> {
+				
+					return 50, smoke_rush_4629, "Smoke rush"
+				}
+				3 -> {
+				
+					return 52, shadow_rush_4630, "Shadow rush"
+				}
+				4 -> {
+				
+					return 54, paddewwa_teleport_4631, "Paddewwa teleport"
+				}
+				5 -> {
+				
+					return 56, blood_rush_4632, "Blood rush"
+				}
+				6 -> {
+				
+					return 58, ice_rush_4633, "Ice rush"
+				}
+				7 -> {
+				
+					return 60, senntisten_teleport_4634, "Senntisten teleport"
+				}
+				8 -> {
+				
+					return 62, smoke_burst_4635, "Smoke burst"
+				}
+				9 -> {
+				
+					return 64, shadow_burst_4636, "Shadow burst"
+				}
+				10 -> {
+				
+					return 66, kharyrll_teleport_4637, "Kharyll teleport"
+				}
+				11 -> {
+				
+					return 68, blood_burst_4638, "Blood burst"
+				}
+				12 -> {
+				
+					return 70, ice_burst_4639, "Ice burst"
+				}
+				13 -> {
+				
+					return 72, lassar_teleport_4640, "Lassar teleport"
+				}
+				14 -> {
+				
+					return 74, smoke_blitz_4641, "Smoke blitz"
+				}
+				15 -> {
+				
+					return 76, shadow_blitz_4642, "Shadow blitz"
+				}
+				16 -> {
+				
+					return 78, dareeyak_teleport_4643, "Dareeyak teleport"
+				}
+				17 -> {
+				
+					return 80, blood_blitz_4644, "Blood blitz"
+				}
+				18 -> {
+				
+					return 82, ice_blitz_4645, "Ice blitz"
+				}
+				19 -> {
+				
+					return 84, carrallangar_teleport_4646, "Carrallangar teleport"
+				}
+				20 -> {
+				
+					return 85, dead_orb_17152, "Teleport to Target"
+				}
+				21 -> {
+				
+					return 86, smoke_barrage_4647, "Smoke barrage"
+				}
+				22 -> {
+				
+					return 88, shadow_barrage_4648, "Shadow barrage"
+				}
+				23 -> {
+				
+					return 90, annakarl_teleport_4649, "Annakarl teleport"
+				}
+				24 -> {
+				
+					return 92, blood_barrage_4650, "Blood barrage"
+				}
+				25 -> {
+				
+					return 94, ice_barrage_4651, "Ice barrage"
+				}
+				26 -> {
+				
+					return 96, ghorrock_teleport_4652, "Ghorrock teleport"
+				}
+			else -> {
+			
+				return -1, null, ""
+			}
+			}
+		}
+		2 -> {
+		
+			when (int1): Int {
+				0 -> {
+				
+					return -1, lunar_staff_9084, "Lunar spells are available after<br>completing the Lunar Diplomacy quest."
+				}
+				1 -> {
+				
+					return -1, lunar_home_teleport_11143, "Home teleport (Lunar Isle)"
+				}
+				2 -> {
+				
+					return 65, bake_pie_9107, "Bake pie"
+				}
+				3 -> {
+				
+					return 65, watering_can_6797, "Geomancy"
+				}
+				4 -> {
+				
+					return 66, cure_plant_9108, "Cure plant"
+				}
+				5 -> {
+				
+					return 66, monster_examine_11144, "Monster examine<br>(after Dream Mentor)"
+				}
+				6 -> {
+				
+					return 67, npc_contact_9109, "NPC Contact"
+				}
+				7 -> {
+				
+					return 68, cure_other_9110, "Cure other"
+				}
+				8 -> {
+				
+					return 68, humidify_11145, "Humidify<br>(after Dream Mentor)"
+				}
+				9 -> {
+				
+					return 69, moonclan_teleport_9111, "Moonclan teleport"
+				}
+				10 -> {
+				
+					return 70, tele_group_moonclan_9112, "Tele group Moonclan"
+				}
+				11 -> {
+				
+					return 71, cure_me_9113, "Cure me"
+				}
+				12 -> {
+				
+					return 71, hunter_kit_11146, "Hunter kit<br>(after Dream Mentor)"
+				}
+				13 -> {
+				
+					return 71, ourania_teleport_20759, "Ourania teleport"
+				}
+				14 -> {
+				
+					return 72, waterbirth_teleport_9114, "Waterbirth teleport"
+				}
+				15 -> {
+				
+					return 73, tele_group_waterbirth_9115, "Tele group Waterbirth"
+				}
+				16 -> {
+				
+					return 74, cure_group_9116, "Cure group"
+				}
+				17 -> {
+				
+					return 75, stat_spy_11147, "Stat spy<br>(after Dream Mentor)"
+				}
+				18 -> {
+				
+					return 75, barbarian_teleport_9117, "Barbarian teleport"
+				}
+				19 -> {
+				
+					return 76, tele_group_barbarian_9118, "Tele group Barbarian"
+				}
+				20 -> {
+				
+					return 76, spin_flax_20589, "Spin Flax"
+				}
+				21 -> {
+				
+					return 77, superglass_make_9119, "Superglass make"
+				}
+				22 -> {
+				
+					return 78, leather_1741, "Tan Leather"
+				}
+				23 -> {
+				
+					return 78, khazard_teleport_9120, "Khazard teleport"
+				}
+				24 -> {
+				
+					return 79, tele_group_khazard_9121, "Tele group Khazard"
+				}
+				25 -> {
+				
+					return 79, dream_11148, "Dream<br>(after Dream Mentor)"
+				}
+				26 -> {
+				
+					return 80, string_jewellery_9122, "String jewellery"
+				}
+				27 -> {
+				
+					return 81, stat_restore_pot_share_9123, "Stat restore pot share"
+				}
+				28 -> {
+				
+					return 82, magic_imbue_9124, "Magic imbue"
+				}
+				29 -> {
+				
+					return 83, fertile_soil_9125, "Fertile soil"
+				}
+				30 -> {
+				
+					return 84, boost_potion_share_9126, "Boost potion share"
+				}
+				31 -> {
+				
+					return 85, fishing_guild_teleport_9127, "Fishing guild teleport"
+				}
+				32 -> {
+				
+					return 85, dead_orb_17152, "Teleport to Target"
+				}
+				33 -> {
+				
+					return 86, tele_group_fishing_guild_9128, "Tele group fishing guild"
+				}
+				34 -> {
+				
+					return 86, plank_make_11149, "Plank make<br>(after Dream Mentor)"
+				}
+				35 -> {
+				
+					return 87, catherby_teleport_9129, "Catherby teleport"
+				}
+				36 -> {
+				
+					return 88, tele_group_catherby_9130, "Tele group Catherby"
+				}
+				37 -> {
+				
+					return 89, dead_orb_2529, "Recharge Dragonstone"
+				}
+				38 -> {
+				
+					return 89, ice_plateau_teleport_9131, "Ice plateau teleport"
+				}
+				39 -> {
+				
+					return 90, tele_group_ice_plateau_9132, "Tele group Ice plateau"
+				}
+				40 -> {
+				
+					return 91, energy_transfer_9133, "Energy transfer"
+				}
+				41 -> {
+				
+					return 92, heal_other_9134, "Heal other"
+				}
+				42 -> {
+				
+					return 93, vengeance_other_9135, "Vengeance other"
+				}
+				43 -> {
+				
+					return 94, vengeance_9136, "Vengeance"
+				}
+				44 -> {
+				
+					return 95, heal_group_9137, "Heal group"
+				}
+				45 -> {
+				
+					return 96, spellbook_swap_11150, "Spellbook swap<br>(after Dream Mentor)"
+				}
+			else -> {
+			
+				return -1, null, ""
+			}
+			}
+		}
+		3 -> {
+		
+			when (int1): Int {
+				0 -> {
+				
+					return -1, obj_13578, "Arceuus spells are unlocked<br>in Arceuus."
+				}
+				1 -> {
+				
+					return -1, arceuus_home_teleport_21835, "Home teleport (Dark Altar)"
+				}
+				2 -> {
+				
+					return 3, easter_11997, "Reanimate goblins"
+				}
+				3 -> {
+				
+					return 6, lumbridge_graveyard_teleport_20409, "Lumbridge Graveyard teleport"
+				}
+				4 -> {
+				
+					return 7, reanimate_monkey_2885, "Reanimate monkeys"
+				}
+				5 -> {
+				
+					return 12, reanimate_imp_6208, "Reanimate imps"
+				}
+				6 -> {
+				
+					return 16, reanimate_minotaur_6888, "Reanimate minotaurs"
+				}
+				7 -> {
+				
+					return 17, draynor_manor_teleport_20410, "Draynor Manor teleport"
+				}
+				8 -> {
+				
+					return 19, reanimate_scorpion_15297, "Reanimate scorpions"
+				}
+				9 -> {
+				
+					return 21, reanimate_bear_15309, "Reanimate bears"
+				}
+				10 -> {
+				
+					return 22, reanimate_unicorn_15303, "Reanimate unicorns"
+				}
+				11 -> {
+				
+					return 23, battlefront_teleport_22779, "Battlefront teleport"
+				}
+				12 -> {
+				
+					return 26, reanimate_dog_15304, "Reanimate dogs"
+				}
+				13 -> {
+				
+					return 28, mind_altar_teleport_20411, "Mind Altar teleport"
+				}
+				14 -> {
+				
+					return 30, reanimate_chaos_druid_15344, "Reanimate chaos druids"
+				}
+				15 -> {
+				
+					return 34, respawn_teleport_8092, "Respawn teleport"
+				}
+				16 -> {
+				
+					return 37, reanimate_giant_15345, "Reanimate giants"
+				}
+				17 -> {
+				
+					return 40, salve_graveyard_teleport_20412, "Salve Graveyard teleport"
+				}
+				18 -> {
+				
+					return 40, reanimate_ogre_15346, "Reanimate ogres"
+				}
+				19 -> {
+				
+					return 43, reanimate_elf_8796, "Reanimate elves"
+				}
+				20 -> {
+				
+					return 46, reanimate_troll_10511, "Reanimate trolls"
+				}
+				21 -> {
+				
+					return 48, fenkenstrains_castle_teleport_20413, "Fenkenstrain's Castle teleport"
+				}
+				22 -> {
+				
+					return 52, reanimate_horror_20762, "Reanimate horrors"
+				}
+				23 -> {
+				
+					return 57, reanimate_kalphite_20763, "Reanimate kalphite"
+				}
+				24 -> {
+				
+					return 61, west_ardougne_teleport_20414, "West Ardougne teleport"
+				}
+				25 -> {
+				
+					return 62, redundant_hat_21826, "Reanimate dagannoth"
+				}
+				26 -> {
+				
+					return 65, redundant_top_21829, "Reanimate bloodveld"
+				}
+				27 -> {
+				
+					return 65, harmony_island_teleport_20419, "Harmony Island teleport"
+				}
+				28 -> {
+				
+					return 69, redundant_leggings_21832, "Reanimate TzHaar"
+				}
+				29 -> {
+				
+					return 71, cemetery_teleport_20420, "Cemetery teleport"
+				}
+				30 -> {
+				
+					return 72, reanimate_demon_20392, "Reanimate demons"
+				}
+				31 -> {
+				
+					return 78, reanimate_aviansie_20398, "Reanimate aviansie"
+				}
+				32 -> {
+				
+					return 78, resurrect_crops_20391, "Resurrect crops"
+				}
+				33 -> {
+				
+					return 83, barrows_teleport_20404, "Barrows teleport"
+				}
+				34 -> {
+				
+					return 85, reanimate_abyssal_creature_20399, "Reanimate abyssal demons"
+				}
+				35 -> {
+				
+					return 90, ape_atoll_teleport_20427, "Ape Atoll teleport"
+				}
+				36 -> {
+				
+					return 93, reanimate_dragon_20400, "Reanimate dragons"
+				}
+			else -> {
+			
+				return -1, null, ""
+			}
+			}
+		}
+		4 -> {
+		
+			when (int1): Int {
+				0 -> {
+				
+					return 20, wizard_boots_2579, "Wizard boots"
+				}
+				1 -> {
+				
+					return 20, xerician_hat_13385, "Xerician armour<br> (with 10 Defence)"
+				}
+				2 -> {
+				
+					return 40, elder_chaos_top_20517, "Elder chaos druid robes"
+				}
+				3 -> {
+				
+					return 40, mystic_robe_top_4091, "Mystic robes<br> (with 20 Defence)"
+				}
+				4 -> {
+				
+					return 40, enchanted_top_7399, "Enchanted robes<br> (with 20 Defence)"
+				}
+				5 -> {
+				
+					return 40, robe_top_of_darkness_20131, "Robes of darkness<br> (with 20 Defence)"
+				}
+				6 -> {
+				
+					return 40, splitbark_body_3387, "Splitbark armour<br> (with 40 Defence)"
+				}
+				7 -> {
+				
+					return 40, skeletal_top_6139, "Skeletal armour<br> (after The Fremmenik Trials, with 40 Defence)"
+				}
+				8 -> {
+				
+					return 42, void_knight_top_8839, "Void Knight equipment<br>(with 42 combat stats and 22 Prayer)"
+				}
+				9 -> {
+				
+					return 50, infinity_top_6916, "Infinity robes<br> (with 25 Defence)"
+				}
+				10 -> {
+				
+					return 50, swampbark_body_25389, "Swampbark armour<br> (with 50 Defence)"
+				}
+				11 -> {
+				
+					return 60, guthix_cape_2413, "God capes<br> (after Mage Arena)"
+				}
+				12 -> {
+				
+					return 60, bloodbark_body_25404, "Bloodbark armour<br> (with 60 Defence)"
+				}
+				13 -> {
+				
+					return 65, lunar_torso_9097, "Lunar armour<br> (after Lunar Diplomacy, with 40 Defence)"
+				}
+				14 -> {
+				
+					return 65, 3rd_age_robe_top_10338, "3rd age robes<br> (with 30 Defence)"
+				}
+				15 -> {
+				
+					return 70, occult_necklace_12002, "Occult necklace"
+				}
+				16 -> {
+				
+					return 70, dagonhai_robe_top_24291, "Dagon'hai robes<br> (with 40 Defence)"
+				}
+				17 -> {
+				
+					return 70, ahrims_robetop_4712, "Ahrims robes<br> (with 70 Defence)"
+				}
+				18 -> {
+				
+					return 70, boots_of_brimstone_22951, "Boots of brimstone<br> (with 70 Defence and Ranged)"
+				}
+				19 -> {
+				
+					return 75, eternal_boots_13235, "Eternal boots<br> (with 75 Defence)"
+				}
+				20 -> {
+				
+					return 75, ancestral_robe_top_21021, "Ancestral robes<br> (with 65 Defence)"
+				}
+			else -> {
+			
+				return -1, null, ""
+			}
+			}
+		}
+		5 -> {
+		
+			when (int1): Int {
+				0 -> {
+				
+					return 4, opal_bolts_e_9236, "Opal-tipped crossbow bolts<br>1 cosmic + 2 air runes"
+				}
+				1 -> {
+				
+					return 7, sapphire_bolts_e_9240, "Sapphire-tipped crossbow bolts<br>1 cosmic + 1 water + 1 mind rune"
+				}
+				2 -> {
+				
+					return 14, jade_bolts_e_9237, "Jade-tipped crossbow bolts<br>1 cosmic + 2 earth runes"
+				}
+				3 -> {
+				
+					return 24, pearl_bolts_e_9238, "Pearl-tipped crossbow bolts<br>1 cosmic + 2 water runes"
+				}
+				4 -> {
+				
+					return 27, emerald_bolts_e_9241, "Emerald-tipped crossbow bolts<br>1 cosmic + 3 air + 1 nature rune"
+				}
+				5 -> {
+				
+					return 29, topaz_bolts_e_9239, "Red topaz-tipped crossbow bolts<br>1 cosmic + 2 blood runes"
+				}
+				6 -> {
+				
+					return 49, ruby_bolts_e_9242, "Ruby-tipped crossbow bolts<br>1 cosmic + 5 fire + 1 blood rune"
+				}
+				7 -> {
+				
+					return 57, diamond_bolts_e_9243, "Diamond-tipped crossbow bolts<br>1 cosmic + 10 earth + 2 law runes"
+				}
+				8 -> {
+				
+					return 68, dragonstone_bolts_e_9244, "Dragonstone-tipped crossbow bolts<br>1 cosmic + 15 earth + 1 soul rune"
+				}
+				9 -> {
+				
+					return 87, onyx_bolts_e_9245, "Onyx-tipped crossbow bolts<br>1 cosmic + 20 fire + 1 death rune"
+				}
+			else -> {
+			
+				return -1, null, ""
+			}
+			}
+		}
+		6 -> {
+		
+			when (int1): Int {
+				0 -> {
+				
+					return 30, battlestaff_1391, "Battlestaves (with 30 Attack)"
+				}
+				1 -> {
+				
+					return 30, bryophytas_staff_22370, "Bryophyta's staff (with 30 Attack)"
+				}
+				2 -> {
+				
+					return 40, mystic_air_staff_1405, "Mystic staves (with 40 Attack)"
+				}
+				3 -> {
+				
+					return 42, void_knight_mace_8841, "Void Knight equipment<br>(with 42 combat stats and 22 Prayer)"
+				}
+				4 -> {
+				
+					return 45, beginner_wand_6908, "Beginner wand"
+				}
+				5 -> {
+				
+					return 50, apprentice_wand_6910, "Apprentice wand"
+				}
+				6 -> {
+				
+					return 50, ancient_staff_4675, "Ancient staff<br> (after Desert Treasure, with 50 Attack)"
+				}
+				7 -> {
+				
+					return 50, slayers_staff_4170, "Slayer's staff<br> (with 55 Slayer)"
+				}
+				8 -> {
+				
+					return 55, teacher_wand_6912, "Teacher wand"
+				}
+				9 -> {
+				
+					return 60, master_wand_6914, "Master wand"
+				}
+				10 -> {
+				
+					return 60, thammarons_sceptre_22555, "Thammaron's Sceptre"
+				}
+				11 -> {
+				
+					return 60, guthix_staff_2416, "God staves<br> (after Mage Arena)"
+				}
+				12 -> {
+				
+					return 60, toktz_mej_tal_6526, "TokTz-Mej-Tal<br> (with 60 Attack)"
+				}
+				13 -> {
+				
+					return 65, 3rd_age_wand_12422, "3rd age wand"
+				}
+				14 -> {
+				
+					return 65, nightmare_staff_24422, "Nightmare Staff (without orb)<br> (with 50 Hitpoints)"
+				}
+				15 -> {
+				
+					return 70, ahrims_staff_4710, "Ahrim's staff<br> (with 70 Attack)"
+				}
+				16 -> {
+				
+					return 75, staff_of_the_dead_11791, "Staff of the Dead (with 75 Attack)"
+				}
+				17 -> {
+				
+					return 75, staff_of_light_22296, "Staff of Light (with 75 Attack)"
+				}
+				18 -> {
+				
+					return 75, staff_of_balance_24144, "Staff of Balance<br> (with 75 Attack)"
+				}
+				19 -> {
+				
+					return 75, trident_of_the_seas_full_11905, "Trident of the Seas"
+				}
+				20 -> {
+				
+					return 75, kodai_wand_21006, "Kodai Wand"
+				}
+				21 -> {
+				
+					return 75, slayers_staff_e_21255, "Slayer's staff (e)<br> (with 55 Slayer)"
+				}
+				22 -> {
+				
+					return 75, sanguinesti_staff_22323, "Sanguinesti staff"
+				}
+				23 -> {
+				
+					return 75, harmonised_nightmare_staff_24423, "Nightmare Staff (with orb)<br> (with 50 Hitpoints)"
+				}
+			else -> {
+			
+				return -1, null, ""
+			}
+			}
+		}
+		7 -> {
+		
+			when (int1): Int {
+				0 -> {
+				
+					return 50, obj_25574, "Tome of Water"
+				}
+				1 -> {
+				
+					return 50, tome_of_fire_20714, "Tome of Fire"
+				}
+				2 -> {
+				
+					return 66, ancient_wyvern_shield_21633, "Make Ancient Wyvern shield"
+				}
+				3 -> {
+				
+					return 70, ancient_wyvern_shield_21633, "Wield Ancient Wyvern shield"
+				}
+			else -> {
+			
+				return -1, null, ""
+			}
+			}
+		}
+		8 -> {
+		
+			return ~skill_guide_salamanders(int1)
+		}
+	else -> {
+	
+		return -1, null, ""
+	}
+	}
+}

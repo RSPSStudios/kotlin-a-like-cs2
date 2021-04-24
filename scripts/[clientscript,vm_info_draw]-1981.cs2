@@ -1,0 +1,6 @@
+// 1981 clientscript
+fun vm_info_draw(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	~vm_info_draw(component0, component1, component2, component3, component4)
+	return 
+}

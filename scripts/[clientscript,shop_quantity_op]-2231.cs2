@@ -1,0 +1,17 @@
+// 2231 clientscript
+fun shop_quantity_op(opindex0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, int6: Int, component7: Component) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	if (~on_mobile = false) {
+		sound_synth(pillory_wrong, 1, 0)
+		return 
+	}
+	if (VARBIT[6348] ! int6) {
+		VARBIT[6348] = int6
+		sound_synth(synth_2266, 1, 0)
+	}
+	~shop_quantity(component1, component2, component3, component4, component5, component7)
+	return 
+}

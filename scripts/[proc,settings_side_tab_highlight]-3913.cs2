@@ -1,0 +1,11 @@
+// 3913 proc
+fun settings_side_tab_highlight(component0: Component, component1: Component, component2: Component, int3: Int) {
+
+	if (VARBIT[9683] = int3) {
+		return 
+	}
+	if_setgraphic("tabs_tall,4", component0)
+	if_setgraphic("tabs_tall,5", component1)
+	if_setgraphic("tabs_tall,4", component2)
+	return 
+}

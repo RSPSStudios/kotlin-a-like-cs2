@@ -1,0 +1,15 @@
+// 400 clientscript
+fun fairyrings_confirm_expire(component0: Component, clock1: Int) {
+
+	if (clientclock < clock1) {
+		return 
+	}
+	if_sethide(false, interface_398:19)
+	if_sethide(false, interface_398:20)
+	if_sethide(false, interface_398:21)
+	if_sethide(false, interface_398:22)
+	if_sethide(false, interface_398:23)
+	if_sethide(false, interface_398:24)
+	if_setontimer(null, component0)
+	return 
+}

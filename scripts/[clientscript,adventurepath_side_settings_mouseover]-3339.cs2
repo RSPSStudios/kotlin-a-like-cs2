@@ -1,0 +1,9 @@
+// 3339 clientscript
+fun adventurepath_side_settings_mouseover(component0: Component, comsubid1: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_settrans(80)
+	}
+	~v2_stone_button_change_in(component0, 0)
+	return 
+}

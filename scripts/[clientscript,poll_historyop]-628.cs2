@@ -1,0 +1,15 @@
+// 628 clientscript
+fun poll_historyop(component0: Component, comsubid1: Int, comsubid2: Int, text0: String) {
+
+	sound_synth(synth_2266, 1, 0)
+	if (cc_find(component0, comsubid2) = ^true) {
+		cc_settext("<col=ffffff>Loading...</col>")
+		cc_setontimer({
+			poll_historyreset(event_com, event_comsubid, text0, calc(clientclock + 30))
+		})
+	}
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_resume_pausebutton
+	}
+	return 
+}

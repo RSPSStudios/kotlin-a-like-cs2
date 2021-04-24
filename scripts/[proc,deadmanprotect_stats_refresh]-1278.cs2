@@ -1,0 +1,32 @@
+// 1278 proc
+fun deadmanprotect_stats_refresh(int0: Int) {
+
+	val component1: Component = enum(int, component, enum_1302, int0)
+	val int2: Int = 0
+	val int3: Int = 0
+	val int4: Int = 0
+	int2, int3, int4 = ~script1279(int0)
+	if (int4 <= 0) {
+		if (cc_find(component1, 3) = ^true) {
+			cc_sethide(true)
+		}
+		if (cc_find(component1, 6) = ^true) {
+			cc_settext(tostring(int2))
+		}
+		if (cc_find(component1, 7) = ^true) {
+			cc_sethide(true)
+		}
+	} else {
+		if (cc_find(component1, 3) = ^true) {
+			cc_sethide(false)
+			cc_settext(tostring(int2))
+		}
+		if (cc_find(component1, 6) = ^true) {
+			cc_settext(tostring(int3))
+		}
+		if (cc_find(component1, 7) = ^true) {
+			cc_sethide(false)
+		}
+	}
+	return 
+}

@@ -1,0 +1,6 @@
+// 738 clientscript
+fun inferno_hud_update(component0: Component, component1: Component) {
+
+	~inferno_hud_update(component0, component1)
+	return 
+}

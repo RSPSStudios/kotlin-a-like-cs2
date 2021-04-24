@@ -1,0 +1,9 @@
+// 3024 clientscript
+fun adventurepath_side_settings_button_op(component0: Component, component1: Component) {
+
+	sound_synth(synth_2266, 1, 0)
+	VARBIT[9327] = 1
+	if_sethide(true, component0)
+	if_sethide(false, component1)
+	return 
+}

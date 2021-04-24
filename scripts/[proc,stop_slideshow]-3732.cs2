@@ -1,0 +1,7 @@
+// 3732 proc
+fun stop_slideshow(component0: Component) {
+
+	if_setontimer(null, component0)
+	cc_deleteall(component0)
+	return 
+}

@@ -1,0 +1,7 @@
+// 674 clientscript
+fun script674(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component) {
+
+	val y7: Int = if_getscrolly(component1)
+	~script675(int0, component1, component2, component3, component4, y7, component5, component6)
+	return 
+}

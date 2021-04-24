@@ -1,0 +1,6 @@
+// 938 clientscript
+fun script938(component0: Component, width1: Int, height2: Int, component3: Component) {
+
+	~script939(component0, width1, height2, component3)
+	return 
+}

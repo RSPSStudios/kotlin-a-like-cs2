@@ -1,0 +1,82 @@
+// 1747 clientscript
+fun worldmap_window_drag_preview(comsubid0: Int, mousex1: Int, mousey2: Int, x3: Int, y4: Int, component5: Component, component6: Component, component7: Component, component8: Component, int9: Int) {
+
+	val int10: Int = VARCINT[191]
+	val int11: Int = VARCINT[192]
+	val int12: Int = VARCINT[193]
+	val int13: Int = VARCINT[194]
+	val int14: Int = 0
+	val width15: Int = if_getwidth(component5)
+	val height16: Int = if_getheight(component5)
+	if (cc_find(component5, comsubid0) = ^true) {
+		cc_setgraphic(null)
+		when (comsubid0): Int {
+			0 -> {
+			
+				int12, int13 = calc(int12 + (mousex1 - x3)), calc(int13 + (mousey2 - y4))
+			}
+			1 -> {
+			
+				int11 = calc(int11 - (mousey2 - y4))
+			}
+			2 -> {
+			
+				int14 = calc(mousex1 - x3)
+				int10, int12 = calc(int10 + int14), calc(int12 + int14)
+			}
+			3 -> {
+			
+				int10 = calc(int10 - (mousex1 - x3))
+			}
+			4 -> {
+			
+				int14 = calc(mousex1 - x3)
+				int10, int12 = calc(int10 + int14), calc(int12 + int14)
+				int14 = calc(mousey2 - y4)
+				int11, int13 = calc(int11 + int14), calc(int13 + int14)
+			}
+			5 -> {
+			
+				int10 = calc(int10 - (mousex1 - x3))
+				int14 = calc(mousey2 - y4)
+				int11, int13 = calc(int11 + int14), calc(int13 + int14)
+			}
+			6 -> {
+			
+				int14 = calc(mousex1 - x3)
+				int10, int12 = calc(int10 + int14), calc(int12 + int14)
+				int11 = calc(int11 - (mousey2 - y4))
+			}
+			7 -> {
+			
+				int10 = calc(int10 - (mousex1 - x3))
+				int11 = calc(int11 - (mousey2 - y4))
+			}
+		}
+		if (int12 < 10) {
+			int10 = calc(int10 - int12)
+			int12 = 0
+		}
+		if (int10 < calc(int12 + 10)) {
+			int10 = int12
+		}
+		if (int13 < 10) {
+			int11 = calc(int11 - int13)
+			int13 = 0
+		}
+		if (int11 < calc(int13 + 10)) {
+			int11 = int13
+		}
+		int10 = ~max(~min(int10, calc(width15 - int9)), 0)
+		int11 = ~max(~min(int11, calc(height16 - 280)), 0)
+		int12, int13 = ~max(~min(int12, int10), 0), ~max(~min(int13, int11), 0)
+		if_setposition(int12, int13, ^setpos_abs_left, ^setpos_abs_top, component7)
+		if_setsize(int10, int11, ^setsize_minus, ^setsize_minus, component7)
+		if_sethide(false, component7)
+		if_sethide(true, component8)
+		cc_setontimer({
+			worldmap_window_drag_end(calc(clientclock + 3), int10, int11, int12, int13, component5, component6, component7, component8, int9)
+		})
+	}
+	return 
+}

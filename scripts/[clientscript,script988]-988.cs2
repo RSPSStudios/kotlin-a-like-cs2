@@ -1,0 +1,6 @@
+// 988 clientscript
+fun script988(component0: Component) {
+
+	~script990(component0)
+	return 
+}

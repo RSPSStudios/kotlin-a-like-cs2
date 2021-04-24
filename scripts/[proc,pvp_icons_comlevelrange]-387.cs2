@@ -1,0 +1,31 @@
+// 387 proc
+fun pvp_icons_comlevelrange(int0: Int) {
+
+	val int1: Int = 15
+	if (VARCINT[53] = 1) {
+		int1 = calc(int1 + int0)
+	}
+	val int2: Int = calc(VARCINT[52] - int1)
+	val int3: Int = calc(VARCINT[52] + int1)
+	if (~deadman_world = 1) {
+		if (VARBIT[4965] > 0) {
+			if_sethide(true, interface_90:52)
+			return 
+		}
+		int2 = 3
+		int3 = 126
+		if (VARCINT[78] = 2) {
+			if_settext("", interface_90:52)
+			return 
+		}
+	} else {
+		if (int2 < 3) {
+			int2 = 3
+		}
+		if (int3 > 126) {
+			int3 = 126
+		}
+	}
+	if_settext("${tostring(int2)}-${tostring(int3)}", interface_90:52)
+	return 
+}

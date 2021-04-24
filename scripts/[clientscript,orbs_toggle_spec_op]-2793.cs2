@@ -1,0 +1,14 @@
+// 2793 clientscript
+fun orbs_toggle_spec_op(opindex0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	if (VARP[301] = 0) {
+		VARP[301] = 1
+	} else if (VARP[301] ! 2) {
+		VARP[301] = 0
+	}
+	~orbs_spec_draw_button(component1, component2, component3, component4, component5, component6)
+	return 
+}

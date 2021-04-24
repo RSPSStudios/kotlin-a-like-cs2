@@ -1,0 +1,63 @@
+// 925 clientscript
+fun chatbox_init() {
+
+	~chatdefault_setonkey(1)
+	if_setonvartransmit({
+		script924{VARP[1054], VARP[1055], VARP[1021], VARP[499], VARP[1737]}
+	}, interface_162:0)
+	if_setonsubchange({
+		chat_onsubchange(event_com, getwindowmode, if_hassub(interface_162:562), if_hassub(interface_162:561), ~toplevel_getcomponents)
+	}, interface_162:0)
+	if_setonchattransmit({
+		chat_onchattransmit
+	}, interface_162:0)
+	if_setonfriendtransmit({
+		chat_onchattransmit
+	}, interface_162:0)
+	if_setonclantransmit({
+		rebuildchatbox
+	}, interface_162:0)
+	if_setonmisctransmit({
+		script664(true)
+	}, interface_162:0)
+	VARCSTRING[335], VARCINT[42] = "", -1
+	when (VARCINT[41]): Int {
+		0, 1, 2, 3, 4, 5, 1337 -> {
+		
+			VARCINT[41] = VARCINT[41]
+		}
+	else -> {
+	
+		VARCINT[41] = 0
+	}
+	}
+	VARCINT[3], VARCINT[4] = -1, 0
+	VARCSTRING[336], VARCSTRING[337], VARCSTRING[338], VARCSTRING[339], VARCSTRING[340], VARCSTRING[341], VARCSTRING[342], VARCSTRING[343], VARCSTRING[344], VARCSTRING[345], VARCSTRING[346], VARCSTRING[347], VARCSTRING[348], VARCSTRING[349], VARCSTRING[350], VARCSTRING[351], VARCSTRING[352], VARCSTRING[353], VARCSTRING[354], VARCSTRING[355] = "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""
+	VARCSTRING[356], VARCSTRING[357] = "", ""
+	VARCINT[55] = ^min_32bit_int
+	VARCSTRING[358], VARCINT[62] = "", 0
+	val int0: Int = 0
+	val component1: Component = enum(int, component, enum_579, int0)
+	while (component1 ! null) {
+		cc_create(interface_162:59, ^iftype_text, calc(int0 * 2))
+		.cc_create(interface_162:59, ^iftype_text, calc(int0 * 2 + 1))
+		cc_setcolour(^black)
+		.cc_setcolour(^black)
+		cc_settextfont(p12_full)
+		.cc_settextfont(p12_full)
+		cc_settextalign(^settextalign_left, ^settextalign_top, 14)
+		.cc_settextalign(^settextalign_left, ^settextalign_top, 14)
+		cc_sethide(true)
+		.cc_sethide(true)
+		int0 = calc(int0 + 1)
+		component1 = enum(int, component, enum_579, int0)
+	}
+	if_setscrollpos(0, 0, interface_162:59)
+	~scrollbar_vertical(interface_162:560, interface_162:59, null, null, null, null, null, null)
+	~toplevel_chatbox_background
+	chat_setmessagefilter("")
+	~script223
+	~redraw_chat_buttons
+	~rebuildchatbox(~script553)
+	return 
+}

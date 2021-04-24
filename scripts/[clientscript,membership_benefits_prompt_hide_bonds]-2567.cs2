@@ -1,0 +1,6 @@
+// 2567 clientscript
+fun membership_benefits_prompt_hide_bonds() {
+
+	~membership_benefits_prompt_hide_bonds
+	return 
+}

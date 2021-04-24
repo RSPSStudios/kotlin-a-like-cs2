@@ -1,0 +1,96 @@
+// 2668 proc
+fun telenexus_slots_full(): Int {
+
+	val int0: Int = 0
+	if (VARBIT[6672] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[6673] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[6674] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[6675] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[6676] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[6677] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[6678] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[6679] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[6680] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[6681] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[6682] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[6683] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[6684] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[6685] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[6686] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[6568] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[6569] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[6582] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[10092] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[10093] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[10094] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[10095] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[10096] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[10097] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[10098] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[10099] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[10100] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[10101] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[10102] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	if (VARBIT[10103] > 0) {
+		int0 = calc(int0 + 1)
+	}
+	return int0
+}

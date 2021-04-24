@@ -1,0 +1,9 @@
+// 727 clientscript
+fun bondif_convert_minus() {
+
+	if (VARCINT[67] > 0) {
+		VARCINT[67] = calc(VARCINT[67] - 1)
+		~bondif_convert_updatevalues
+	}
+	return 
+}

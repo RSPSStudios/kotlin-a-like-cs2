@@ -1,0 +1,56 @@
+// 1412 proc
+fun questdisplay_setup(int0: Int, text0: String, string1: String, component1: Component, count2: Int, enum3: Enum): Int {
+
+	cc_deleteall(component1)
+	if_setposition(0, int0, ^setpos_abs_centre, ^setpos_abs_top, component1)
+	val length4: Int = string_length(string1)
+	if (length4 < count2) {
+		count2 = length4
+	}
+	if (count2 <= 0) {
+		if_setsize(0, 0, ^setsize_minus, ^setsize_abs, component1)
+		return int0
+	}
+	val int5: Int = 0
+	count0[count2]: Int
+	val count6: Int = 0
+	while (count6 < count2) {
+		cc_create(component1, ^iftype_text, count6)
+		cc_setsize(0, 18, ^setsize_minus, ^setsize_abs)
+		cc_settextfont(p12_full)
+		cc_settextshadow(true)
+		cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+		cc_settext(~get_quest_name(enum(int, struct, enum3, count6)))
+		int5 = string_indexof_string("${tostring(1)}${tostring(0)}${tostring(2)}", substring(string1, count6, calc(count6 + 1)), 0)
+		if (int5 = 0) {
+			cc_setcolour(^red)
+		} else if (int5 = 1) {
+			cc_setcolour(^yellow)
+		} else {
+			cc_setcolour(0x0dc10d)
+		}
+		count0[count6] = count6
+		count6 = calc(count6 + 1)
+	}
+	if (count2 > 1) {
+		~quicksort_questlist(count0, 0, calc(count2 - 1), enum3)
+	}
+	val int7: Int = 25
+	count6 = 0
+	while (count6 < count2) {
+		if (cc_find(component1, count0[count6]) = ^true) {
+			cc_setposition(0, int7, ^setpos_abs_centre, ^setpos_abs_top)
+		}
+		count6, int7 = calc(count6 + 1), calc(int7 + 18)
+	}
+	cc_create(component1, ^iftype_text, count6)
+	cc_setsize(0, 25, ^setsize_minus, ^setsize_abs)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_top)
+	cc_setcolour(if_getcolour(interface_473:8))
+	cc_settextfont(b12_full)
+	cc_settextshadow(true)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_settext(text0)
+	if_setsize(0, int7, ^setsize_minus, ^setsize_abs, component1)
+	return calc(int0 + int7 + 10)
+}

@@ -1,0 +1,70 @@
+// 1063 proc
+fun farming_tools_getstored(obj0: Obj): Int, Namedobj {
+
+	when (obj0): Obj {
+		rake_5341 -> {
+		
+			return calc(pow(2, 1) * VARBIT[8357] + VARBIT[1435]), rake_5341
+		}
+		seed_dibber_5343 -> {
+		
+			return calc(pow(2, 1) * VARBIT[8358] + VARBIT[1436]), seed_dibber_5343
+		}
+		spade_952 -> {
+		
+			return calc(pow(2, 1) * VARBIT[8361] + VARBIT[1437]), spade_952
+		}
+		secateurs_5329 -> {
+		
+			if (VARBIT[1848] = 1) {
+				return calc(pow(2, 1) * VARBIT[8359] + VARBIT[1438]), magic_secateurs_7409
+			}
+			return calc(pow(2, 1) * VARBIT[8359] + VARBIT[1438]), secateurs_5329
+		}
+		watering_can_6797 -> {
+		
+			if (VARBIT[1439] <= 0) {
+				return 0, null
+			}
+			return 1, enum(int, namedobj, enum_136, VARBIT[1439])
+		}
+		gardening_trowel_5325 -> {
+		
+			return calc(pow(2, 1) * VARBIT[8360] + VARBIT[1440]), gardening_trowel_5325
+		}
+		plant_cure_6036 -> {
+		
+			return VARBIT[6268], plant_cure_6036
+		}
+		bottomless_compost_bucket_22994 -> {
+		
+			if (VARBIT[7915] = 1) {
+				return 1, bottomless_compost_bucket_22994
+			}
+			if (VARBIT[7915] > 1) {
+				return 1, bottomless_compost_bucket_22997
+			}
+			return 0, bottomless_compost_bucket_22994
+		}
+		bucket_1925 -> {
+		
+			return calc(pow(2, 8) * VARBIT[6265] + pow(2, 5) * VARBIT[4731] + VARBIT[1441]), bucket_1925
+		}
+		compost_6032 -> {
+		
+			return calc(pow(2, 8) * VARBIT[6266] + VARBIT[1442]), compost_6032
+		}
+		supercompost_6034 -> {
+		
+			return calc(pow(2, 8) * VARBIT[6267] + VARBIT[1443]), supercompost_6034
+		}
+		ultracompost_21483 -> {
+		
+			return VARBIT[5732], ultracompost_21483
+		}
+	else -> {
+	
+		return 0, null
+	}
+	}
+}

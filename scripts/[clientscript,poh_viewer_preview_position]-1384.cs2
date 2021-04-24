@@ -1,0 +1,7 @@
+// 1384 clientscript
+fun poh_viewer_preview_position(component0: Component, int1: Int, int2: Int, int3: Int, int4: Int, int5: Int) {
+
+	val int6: Int = calc((VARBIT[5330] - 1) % int2)
+	if_setposition(calc(int6 % int1 * int3 - int4), calc(int6 / int1 * int3 - int5), ^setpos_abs_left, ^setpos_abs_bottom, component0)
+	return 
+}

@@ -1,0 +1,12 @@
+// 3574 proc
+fun script3574(component0: Component, op0: String, boolean1: Boolean) {
+
+	if_setonmouserepeat({
+		script3575(component0, op0, true, boolean1)
+	}, component0)
+	if_setonmouseleave({
+		script3575(component0, op0, false, boolean1)
+	}, component0)
+	~script3576(component0, op0, false, boolean1)
+	return 
+}

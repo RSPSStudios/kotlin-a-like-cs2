@@ -1,0 +1,13 @@
+// 1759 proc
+fun script1759(struct0: Struct): Int {
+
+	if (testbit(VARBIT[5640], 4) = ^true | struct_param(struct0, param_986) = false) {
+		return 0
+	}
+	val int1: Int = calc(clientclock % 40)
+	if (int1 < 20) {
+		return scale(pow(int1, 2), 400, 8192)
+	}
+	int1 = calc(40 - int1)
+	return calc(16384 - scale(pow(int1, 2), 400, 8192))
+}

@@ -1,0 +1,8 @@
+// 2187 proc
+fun deadman_freecam_enable() {
+
+	docheat("~freecam")
+	~script2224
+	_3129(VARCINT[204], 6)
+	return 
+}

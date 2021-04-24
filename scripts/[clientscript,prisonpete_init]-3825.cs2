@@ -1,0 +1,8 @@
+// 3825 clientscript
+fun prisonpete_init(int0: Int, component1: Component) {
+
+	if_setontimer({
+		spinmodel(0, 0, 10, 15, 0, component1, -1)
+	}, component1)
+	return 
+}

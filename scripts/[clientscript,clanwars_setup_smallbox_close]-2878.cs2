@@ -1,0 +1,18 @@
+// 2878 clientscript
+fun clanwars_setup_smallbox_close(int0: Int, int1: Int, enum2: Enum, component3: Component, comsubid4: Int, component5: Component, component6: Component) {
+
+	if (int0 = 1 & enum2 ! null & (int1 = -1 | int1 >= 0 & int1 < enum_getoutputcount(enum2))) {
+		sound_synth(synth_2266, 1, 0)
+		if (int1 ! -1) {
+			~script573(enum2, int1)
+		}
+		~script2881
+		if_sethide(true, component5)
+		if_sethide(false, component6)
+		~xpdrops_setup_display_hoveroff(component3)
+		if (cc_find(component3, comsubid4) = ^true) {
+			~clanwars_setup_smallbox_updatetext(enum2)
+		}
+	}
+	return 
+}

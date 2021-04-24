@@ -1,0 +1,39 @@
+// 4047 proc
+fun script4047(int0: Int): Obj, Int {
+
+	val int1: Int = 0
+	val int2: Int = 0
+	val obj3: Obj = null
+	when (int0): Int {
+		0 -> {
+		
+			obj3 = inv_getobj(worn, 13)
+			int2 = inv_total(worn, obj3)
+		}
+		1 -> {
+		
+			int1 = VARBIT[2473]
+			int2 = VARBIT[2469]
+			obj3 = enum(int, obj, enum_336, int1)
+		}
+		2 -> {
+		
+			int1 = VARBIT[2474]
+			int2 = VARBIT[2470]
+			obj3 = enum(int, obj, enum_336, int1)
+		}
+		3 -> {
+		
+			int1 = VARBIT[2475]
+			int2 = VARBIT[2471]
+			obj3 = enum(int, obj, enum_336, int1)
+		}
+		4 -> {
+		
+			int1 = VARBIT[2476]
+			int2 = VARBIT[2472]
+			obj3 = enum(int, obj, enum_336, int1)
+		}
+	}
+	return obj3, int2
+}

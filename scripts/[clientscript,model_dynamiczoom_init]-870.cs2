@@ -1,0 +1,6 @@
+// 870 clientscript
+fun model_dynamiczoom_init(component0: Component, component1: Component, int2: Int, int3: Int, int4: Int, int5: Int, int6: Int, int7: Int, int8: Int) {
+
+	~model_dynamiczoom(component0, ^min_32bit_int, component1, int2, int3, int4, int5, int6, int7, int8)
+	return 
+}

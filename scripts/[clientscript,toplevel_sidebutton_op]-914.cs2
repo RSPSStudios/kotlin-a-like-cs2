@@ -1,0 +1,8 @@
+// 914 clientscript
+fun toplevel_sidebutton_op(opindex0: Int, enum1: Enum, int2: Int) {
+
+	if (opindex0 = 1) {
+		~toplevel_sidebutton_op(enum1, int2, true)
+	}
+	return 
+}

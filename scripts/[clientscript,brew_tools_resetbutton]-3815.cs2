@@ -1,0 +1,8 @@
+// 3815 clientscript
+fun brew_tools_resetbutton(clock0: Int, component1: Component, component2: Component) {
+
+	if (clientclock >= clock0) {
+		~brew_tools_resetbutton(component1, component2)
+	}
+	return 
+}

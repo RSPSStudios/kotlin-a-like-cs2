@@ -1,0 +1,23 @@
+// 1359 clientscript
+fun script1359(clock0: Int, component1: Component) {
+
+	if (clientclock < clock0) {
+		return 
+	}
+	VARCINT[420] = calc((VARCINT[420] + random(8) + 15) % 2048)
+	VARCINT[422] = calc((VARCINT[422] + random(8) + 15) % 2048)
+	VARCINT[424] = calc((VARCINT[424] + random(8) + 15) % 2048)
+	VARCINT[426] = calc((VARCINT[426] + random(8) + 15) % 2048)
+	VARCINT[428] = calc((VARCINT[428] + random(8) + 15) % 2048)
+	VARCINT[430] = calc((VARCINT[430] + random(8) + 15) % 2048)
+	VARCINT[432] = calc((VARCINT[432] + random(8) + 15) % 2048)
+	VARCINT[421] = calc((VARCINT[420] + random(8) + 15) % 2048)
+	VARCINT[423] = calc((VARCINT[422] + random(8) + 15) % 2048)
+	VARCINT[425] = calc((VARCINT[424] + random(8) + 15) % 2048)
+	VARCINT[427] = calc((VARCINT[426] + random(8) + 15) % 2048)
+	VARCINT[429] = calc((VARCINT[428] + random(8) + 15) % 2048)
+	VARCINT[431] = calc((VARCINT[430] + random(8) + 15) % 2048)
+	VARCINT[433] = calc((VARCINT[432] + random(8) + 15) % 2048)
+	~script2266
+	return 
+}

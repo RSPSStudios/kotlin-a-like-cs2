@@ -1,0 +1,10 @@
+// 237 proc
+fun autocast_spellhighlight(obj0: Obj) {
+
+	if (stat(magic) >= oc_param(obj0, spell_levelreq) & ~magic_spellbook_hasrunes(obj0) = 1) {
+		cc_setgraphic(oc_param(obj0, spell_graphic1_on))
+	} else {
+		cc_setgraphic(oc_param(obj0, spell_graphic1_off))
+	}
+	return 
+}

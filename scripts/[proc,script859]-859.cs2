@@ -1,0 +1,18 @@
+// 859 proc
+fun script859(enum0: Enum): String {
+
+	val int1: Int = 0
+	val string0: String = ""
+	val string1: String = ""
+	val count2: Int = enum_getoutputcount(enum0)
+	while (int1 < count2) {
+		string1 = enum(int, string, enum0, int1)
+		if (int1 = 0) {
+			string0 = append(string0, string1)
+		} else {
+			string0 = append(string0, ", ${string1}")
+		}
+		int1 = calc(int1 + 1)
+	}
+	return string0
+}

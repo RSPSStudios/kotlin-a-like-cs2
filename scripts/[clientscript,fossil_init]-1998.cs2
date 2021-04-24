@@ -1,0 +1,9 @@
+// 1998 clientscript
+fun fossil_init(component0: Component, component1: Component, component2: Component, component3: Component) {
+
+	~script2249(component0, setbit(0, 3))
+	~script1486(component3, ^setpos_abs_centre, 0, 1)
+	~script1490(component1)
+	~hud_clamp_init(component2)
+	return 
+}

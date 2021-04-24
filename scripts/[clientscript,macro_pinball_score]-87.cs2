@@ -1,0 +1,6 @@
+// 87 clientscript
+fun macro_pinball_score(component0: Component) {
+
+	~macro_pinball_score(component0)
+	return 
+}

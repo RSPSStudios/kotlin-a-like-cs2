@@ -1,0 +1,130 @@
+// 2009 proc
+fun fossil_storage_get(namedobj0: Namedobj): Int {
+
+	when (namedobj0): Namedobj {
+		small_fossilised_limbs_21570 -> {
+		
+			return VARBIT[5832]
+		}
+		small_fossilised_spine_21572 -> {
+		
+			return VARBIT[5833]
+		}
+		small_fossilised_ribs_21574 -> {
+		
+			return VARBIT[5834]
+		}
+		small_fossilised_pelvis_21576 -> {
+		
+			return VARBIT[5835]
+		}
+		small_fossilised_skull_21578 -> {
+		
+			return VARBIT[5836]
+		}
+		medium_fossilised_limbs_21580 -> {
+		
+			return VARBIT[5837]
+		}
+		medium_fossilised_spine_21582 -> {
+		
+			return VARBIT[5838]
+		}
+		medium_fossilised_ribs_21584 -> {
+		
+			return VARBIT[5839]
+		}
+		medium_fossilised_pelvis_21586 -> {
+		
+			return VARBIT[5840]
+		}
+		medium_fossilised_skull_21588 -> {
+		
+			return VARBIT[5841]
+		}
+		large_fossilised_limbs_21600 -> {
+		
+			return VARBIT[5842]
+		}
+		large_fossilised_spine_21602 -> {
+		
+			return VARBIT[5843]
+		}
+		large_fossilised_ribs_21604 -> {
+		
+			return VARBIT[5844]
+		}
+		large_fossilised_pelvis_21606 -> {
+		
+			return VARBIT[5845]
+		}
+		large_fossilised_skull_21608 -> {
+		
+			return VARBIT[5846]
+		}
+		fossilised_roots_21590 -> {
+		
+			return VARBIT[5847]
+		}
+		fossilised_stump_21592 -> {
+		
+			return VARBIT[5848]
+		}
+		fossilised_branch_21594 -> {
+		
+			return VARBIT[5849]
+		}
+		fossilised_leaf_21596 -> {
+		
+			return VARBIT[5850]
+		}
+		fossilised_mushroom_21598 -> {
+		
+			return VARBIT[5851]
+		}
+		rare_fossilised_limbs_21610 -> {
+		
+			return VARBIT[5852]
+		}
+		rare_fossilised_spine_21612 -> {
+		
+			return VARBIT[5853]
+		}
+		rare_fossilised_ribs_21614 -> {
+		
+			return VARBIT[5854]
+		}
+		rare_fossilised_pelvis_21616 -> {
+		
+			return VARBIT[5855]
+		}
+		rare_fossilised_skull_21618 -> {
+		
+			return VARBIT[5856]
+		}
+		rare_fossilised_tusk_21620 -> {
+		
+			return VARBIT[5952]
+		}
+		unidentified_small_fossil_21562 -> {
+		
+			return VARBIT[5828]
+		}
+		unidentified_medium_fossil_21564 -> {
+		
+			return VARBIT[5829]
+		}
+		unidentified_large_fossil_21566 -> {
+		
+			return VARBIT[5830]
+		}
+		unidentified_rare_fossil_21568 -> {
+		
+			return VARBIT[5831]
+		}
+	else -> {
+	
+		return -1
+	}
+	}
+}

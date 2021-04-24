@@ -1,0 +1,6 @@
+// 3305 clientscript
+fun wiki_icon_update(component0: Component, component1: Component, component2: Component, boolean3: Boolean) {
+
+	~wiki_icon_update(component0, component1, component2, boolean3)
+	return 
+}

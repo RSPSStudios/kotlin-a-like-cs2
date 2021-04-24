@@ -1,0 +1,8 @@
+// 2162 clientscript
+fun script2162(component0: Component, string0: String, clock1: Int) {
+
+	if (clientclock >= clock1) {
+		~script2160(component0, string0)
+	}
+	return 
+}

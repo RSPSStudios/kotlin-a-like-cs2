@@ -1,0 +1,34 @@
+// 3582 proc
+fun hallowed_tools_getcarried(obj0: Obj): Int, Namedobj {
+
+	when (obj0): Obj {
+		hallowed_token_24719 -> {
+		
+			return ~script716(hallowed_token_24719), hallowed_token_24719
+		}
+		hallowed_grapple_24721 -> {
+		
+			return ~script716(hallowed_grapple_24721), hallowed_grapple_24721
+		}
+		hallowed_focus_24723 -> {
+		
+			return ~script716(hallowed_focus_24723), hallowed_focus_24723
+		}
+		hallowed_symbol_24725 -> {
+		
+			return ~script716(hallowed_symbol_24725), hallowed_symbol_24725
+		}
+		hallowed_hammer_24727 -> {
+		
+			return ~script716(hallowed_hammer_24727), hallowed_hammer_24727
+		}
+		hallowed_ring_24731 -> {
+		
+			return ~script716(hallowed_ring_24731), hallowed_ring_24731
+		}
+	else -> {
+	
+		return 0, null
+	}
+	}
+}

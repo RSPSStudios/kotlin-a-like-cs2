@@ -1,0 +1,18 @@
+// 3001 clientscript
+fun script3001(component0: Component, int1: Int, int2: Int) {
+
+	sound_synth(synth_2266, 1, 0)
+	val int3: Int = ~adventurepath_return_task_focus(int2)
+	if (int3 = int1) {
+		~adventurepath_set_task_focus(0, int2)
+		int3 = 0
+	} else {
+		~adventurepath_set_task_focus(int1, int2)
+		int3 = int1
+	}
+	~adventurepath_task_focus(component0, int3, int1, 0, int2)
+	if_setonvartransmit({
+		script3000(component0){VARP[2360], VARP[2358]}
+	}, component0)
+	return 
+}

@@ -1,0 +1,14 @@
+// 788 clientscript
+fun ge_collect_init(int0: Int, component1: Component, component2: Component, component3: Component) {
+
+	val int4: Int = 0
+	val component5: Component = enum(int, component, enum_1011, int4)
+	while (component5 ! null) {
+		~ge_collect_initslot(component5, int4, component3)
+		int4 = calc(int4 + 1)
+		component5 = enum(int, component, enum_1011, int4)
+	}
+	~ge_collect_all_init(component1, "Inventory", "Collect to inventory")
+	~ge_collect_all_init(component2, "Bank", "Collect to bank")
+	return 
+}

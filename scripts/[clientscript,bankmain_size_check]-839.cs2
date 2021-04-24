@@ -1,0 +1,6 @@
+// 839 clientscript
+fun bankmain_size_check(component0: Component, component1: Component, width2: Int, height3: Int, component4: Component, component5: Component) {
+
+	~bankmain_size_check(component0, component1, width2, height3, component4, component5)
+	return 
+}

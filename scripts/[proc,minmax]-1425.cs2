@@ -1,0 +1,10 @@
+// 1425 proc
+fun minmax(int0: Int, int1: Int, int2: Int): Int {
+
+	if (int1 <= int0) {
+		int0, int1 = int1, int0
+	}
+	int2 = ~min(int1, int2)
+	int2 = ~max(int0, int2)
+	return int2
+}

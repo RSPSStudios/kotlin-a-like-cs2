@@ -1,0 +1,7 @@
+// 307 clientscript
+fun nzone_rewards_tabs(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	sound_synth(synth_2266, 1, 0)
+	~nzone_rewards_tabs(component0, component1, component2, component3, component4)
+	return 
+}

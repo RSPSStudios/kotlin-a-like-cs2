@@ -1,0 +1,13 @@
+// 133 clientscript
+fun snapshot_onkey(key0: Int, keychar1: Char) {
+
+	if (~keypress_permit(553, -1) = 0) {
+		return 
+	}
+	if (key0 = ^key_return & ~on_mobile = true) {
+		~keyboard_hide
+	}
+	VARCSTRING[370] = ~add_to_inputstring(VARCSTRING[370], 2, key0, keychar1)
+	if_settext("${escape(VARCSTRING[370])}<col=ffff00>|", snapshot_main:5)
+	return 
+}

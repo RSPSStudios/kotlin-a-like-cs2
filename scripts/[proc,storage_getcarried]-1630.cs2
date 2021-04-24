@@ -1,0 +1,14 @@
+// 1630 proc
+fun storage_getcarried(enum0: Enum, obj1: Obj): Int, Namedobj {
+
+	when (enum0): Enum {
+		enum_2850 -> {
+		
+			return ~script2260(obj1)
+		}
+	else -> {
+	
+		return 0, null
+	}
+	}
+}

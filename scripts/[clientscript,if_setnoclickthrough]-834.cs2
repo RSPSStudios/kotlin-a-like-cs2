@@ -1,0 +1,6 @@
+// 834 clientscript
+fun if_setnoclickthrough(component0: Component, boolean1: Boolean) {
+
+	if_setnoclickthrough(boolean1, component0)
+	return 
+}

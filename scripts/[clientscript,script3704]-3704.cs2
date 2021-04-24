@@ -1,0 +1,14 @@
+// 3704 clientscript
+fun script3704(int0: Int, text0: String) {
+
+	if_settext(text0, interface_678:1)
+	val inv1: Inv = inv_646
+	if (int0 = 1) {
+		inv1 = inv
+	}
+	~script3706(inv1)
+	if_setoninvtransmit({
+		script3705(inv1){inv1}
+	}, interface_678:1)
+	return 
+}

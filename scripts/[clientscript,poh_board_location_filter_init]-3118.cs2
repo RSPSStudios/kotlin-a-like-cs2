@@ -1,0 +1,9 @@
+// 3118 clientscript
+fun poh_board_location_filter_init(component0: Component, component1: Component, component2: Component) {
+
+	~poh_board_location_filter_build(component0, component1)
+	if_setonvartransmit({
+		poh_board_location_filter_ontransmit(component0, component1, component2){VARP[738]}
+	}, component0)
+	return 
+}

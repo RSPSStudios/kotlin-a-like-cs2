@@ -1,0 +1,9 @@
+// 2073 clientscript
+fun sailing_menu_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component) {
+
+	~sailing_menu_filter(component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12)
+	if_setonvartransmit({
+		sailing_menu_filter(component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12){VARP[302], VARP[365], VARP[150], VARP[328], VARP[655], VARP[176]}
+	}, component0)
+	return 
+}

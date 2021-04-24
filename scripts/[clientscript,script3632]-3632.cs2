@@ -1,0 +1,8 @@
+// 3632 clientscript
+fun script3632(component0: Component) {
+
+	if (cc_find(component0, 0) = ^true) {
+		cc_settext(tostring(VARBIT[3433]))
+	}
+	return 
+}

@@ -1,0 +1,59 @@
+// 573 proc
+fun script573(enum0: Enum, int1: Int) {
+
+	when (enum0): Enum {
+		enum_374 -> {
+		
+			VARBIT[4270] = int1
+		}
+		enum_913 -> {
+		
+			VARBIT[4271] = int1
+		}
+		enum_915 -> {
+		
+			VARBIT[4272] = int1
+		}
+		enum_917 -> {
+		
+			VARBIT[4273] = int1
+		}
+		enum_919 -> {
+		
+			VARBIT[4274] = int1
+		}
+		enum_921 -> {
+		
+			VARBIT[4275] = int1
+		}
+		enum_923 -> {
+		
+			VARBIT[4276] = int1
+		}
+		enum_925 -> {
+		
+			VARBIT[4277] = int1
+		}
+		enum_927 -> {
+		
+			VARBIT[4278] = int1
+		}
+		enum_929 -> {
+		
+			VARBIT[4283] = int1
+		}
+		enum_2336 -> {
+		
+			VARBIT[8377] = int1
+		}
+		enum_2338 -> {
+		
+			VARBIT[8378] = int1
+		}
+		enum_2340 -> {
+		
+			VARBIT[8379] = int1
+		}
+	}
+	return 
+}

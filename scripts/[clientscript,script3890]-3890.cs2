@@ -1,0 +1,9 @@
+// 3890 clientscript
+fun script3890(component0: Component, comsubid1: Int, mousex2: Int, int3: Int, y4: Int, int5: Int, component6: Component) {
+
+	if_setposition(int5, y4, ^setpos_abs_left, ^setpos_abs_top, component6)
+	if_setsize(int3, 16, ^setsize_abs, ^setsize_abs, component6)
+	val int7: Int = calc(int3 - 16)
+	~script3893(component0, comsubid1, ~min(int7, mousex2), int3, y4, int5)
+	return 
+}

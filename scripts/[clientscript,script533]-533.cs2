@@ -1,0 +1,6 @@
+// 533 clientscript
+fun script533(component0: Component) {
+
+	if_settext("You may reclaim these pets for ${~tostring_spacer(1000000, ",")} coins each:", component0)
+	return 
+}

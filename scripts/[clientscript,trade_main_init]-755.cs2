@@ -1,0 +1,74 @@
+// 755 clientscript
+fun trade_main_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	VARCINT[12] = 0
+	VARCINT[13] = 0
+	VARCINT[14] = 0
+	VARCINT[15] = 0
+	VARCINT[16] = 0
+	VARCINT[17] = 0
+	VARCINT[18] = 0
+	VARCINT[19] = 0
+	VARCINT[20] = 0
+	VARCINT[21] = 0
+	VARCINT[22] = 0
+	VARCINT[23] = 0
+	VARCINT[24] = 0
+	VARCINT[25] = 0
+	VARCINT[26] = 0
+	VARCINT[27] = 0
+	VARCINT[28] = 0
+	VARCINT[29] = 0
+	VARCINT[30] = 0
+	VARCINT[31] = 0
+	VARCINT[32] = 0
+	VARCINT[33] = 0
+	VARCINT[34] = 0
+	VARCINT[35] = 0
+	VARCINT[36] = 0
+	VARCINT[37] = 0
+	VARCINT[38] = 0
+	VARCINT[39] = 0
+	val size5: Int = inv_size(inv_90)
+	cc_deleteall(component1)
+	cc_deleteall(component3)
+	val size6: Int = 0
+	while (size6 < size5) {
+		cc_create(component1, ^iftype_graphic, size6)
+		.cc_create(component3, ^iftype_graphic, size6)
+		cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+		.cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+		cc_setgraphicshadow(0x333333)
+		.cc_setgraphicshadow(0x333333)
+		cc_setoutline(1)
+		.cc_setoutline(1)
+		cc_sethide(true)
+		.cc_sethide(true)
+		size6 = calc(size6 + 1)
+	}
+	val comsubid7: Int = 0
+	size6 = 0
+	while (size6 < size5) {
+		comsubid7 = calc(size5 + size6)
+		cc_create(component1, ^iftype_graphic, comsubid7)
+		.cc_create(component3, ^iftype_graphic, comsubid7)
+		cc_setgraphic("exclamation_mark")
+		.cc_setgraphic("exclamation_mark")
+		cc_setsize(10, 32, ^setsize_abs, ^setsize_abs)
+		.cc_setsize(10, 32, ^setsize_abs, ^setsize_abs)
+		cc_sethide(false)
+		.cc_sethide(false)
+		cc_settrans(255)
+		.cc_settrans(255)
+		size6 = calc(size6 + 1)
+	}
+	val int8: Int = calc((36 - 10) / 2)
+	~trade_main_drawitems(size5, int8, component1, component2, component3, component4)
+	if_setoninvtransmit({
+		trade_main_drawitems(size5, int8, component1, component2, component3, component4){inv_90}
+	}, component0)
+	if_setonvartransmit({
+		trade_main_drawitems(size5, int8, component1, component2, component3, component4){VARP[1042]}
+	}, component0)
+	return 
+}

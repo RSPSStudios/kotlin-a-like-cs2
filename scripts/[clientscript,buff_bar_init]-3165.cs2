@@ -1,0 +1,14 @@
+// 3165 clientscript
+fun buff_bar_init(component0: Component, component1: Component) {
+
+	if_setonsubchange({
+		buff_bar_setup(component0, component1)
+	}, component0)
+	if_setonvartransmit({
+		buff_bar_setup(component0, component1){VARP[1734], VARP[2632]}
+	}, component0)
+	~buff_bar_setup(component0, component1)
+	~deltooltip_action(component1)
+	VARCINT[382] = -1
+	return 
+}

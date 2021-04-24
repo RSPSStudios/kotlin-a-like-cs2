@@ -1,0 +1,6 @@
+// 1306 clientscript
+fun tog_sidepanel_timer(component0: Component, component1: Component) {
+
+	~tog_sidepanel_timer(component0, component1)
+	return 
+}

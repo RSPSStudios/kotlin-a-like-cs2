@@ -1,0 +1,8 @@
+// 3877 proc
+fun script3877(component0: Component) {
+
+	val string0: String = VARCSTRING[417]
+	string0 = append(string0, "<col=f4f4f4>*</col>")
+	if_settext("<col=ff981f>${string0}</col>", component0)
+	return 
+}

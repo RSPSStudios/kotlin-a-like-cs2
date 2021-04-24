@@ -1,0 +1,164 @@
+// 3193 clientscript
+fun league_relic_expanded_view(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component, int16: Int, struct17: Struct, struct18: Struct) {
+
+	val struct19: Struct = enum(int, struct, enum_2670, VARBIT[10032])
+	if (struct19 = null) {
+		return 
+	}
+	val colour20: Int = struct_param(struct19, param_1027)
+	val string0: String = ~script3739(colour20, "u")
+	if_setcolour(colour20, component4)
+	if_setcolour(colour20, component5)
+	if_setcolour(colour20, component6)
+	if_setcolour(colour20, component14)
+	if_setcolour(colour20, component15)
+	if_setcolour(colour20, component11)
+	val comsubid21: Int = -1
+	val op1: String = ""
+	val string2: String = struct_param(struct17, param_880)
+	val string3: String = struct_param(struct18, param_1020)
+	val width22: Int = if_getwidth(interface_655:21)
+	if_sethide(true, component2)
+	if_sethide(true, component0)
+	if_sethide(false, component1)
+	if_setgraphic(struct_param(struct17, param_884), component3)
+	if_settext("${string0}${struct_param(struct17, param_879)}</u>", component4)
+	if_settext("Relic Effect:", component5)
+	val int23: Int = calc(paraheight(string2, width22, p12_full) * 15)
+	val height24: Int = calc(paraheight(string3, if_getwidth(interface_655:45), p12_full) * 15)
+	val height25: Int = calc(int23 + 34)
+	cc_deleteall(interface_655:24)
+	if (height25 > if_getheight(interface_655:21)) {
+		if_setscrollsize(0, height25, interface_655:21)
+	} else {
+		if_setscrollsize(0, 0, interface_655:21)
+	}
+	if_setscrollpos(0, 0, interface_655:21)
+	~scrollbar_vertical(interface_655:24, interface_655:21, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+	if_sethide(false, interface_655:24)
+	if_settext(string2, component6)
+	if_setsize(0, int23, ^setsize_minus, ^setsize_abs, component6)
+	if (struct18 ! null) {
+		if_setsize(14, height24, ^setsize_minus, ^setsize_abs, component15)
+		if_settext(string3, component15)
+		if_settext("Passive Effect:", component14)
+		if_sethide(false, component15)
+		if_sethide(false, component14)
+	} else {
+		if_settext("", component15)
+		if_settext("", component14)
+		if_sethide(true, component15)
+		if_sethide(true, component14)
+	}
+	if (int16 = 2) {
+		comsubid21 = ~v2_stone_button(component7)
+		op1 = "Select"
+		if_setopbase("<col=ff981f>${struct_param(struct17, param_879)}</col>", component7)
+	} else {
+		comsubid21 = ~v2_stone_button_in(component7)
+		op1 = "Locked"
+		if_setopbase("", component7)
+	}
+	cc_create(component7, ^iftype_text, comsubid21)
+	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	cc_settext(op1)
+	cc_settextfont(p12_full)
+	cc_settextshadow(true)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	if_setop(1, op1, component7)
+	if (int16 = 2) {
+		cc_setcolour(0x53d93c)
+		if (~on_mobile = false) {
+			if_setonmouseleave({
+				league_relic_button_hover(component7, false, op1, 0x53d93c)
+			}, component7)
+			if_setonmouserepeat({
+				league_relic_button_hover(component7, true, op1, 0xaaaaaa)
+			}, component7)
+		}
+		if_setonop({
+			league_relic_confirm(component9, component7, false, op1, 0x53d93c)
+		}, component7)
+	} else {
+		cc_setcolour(0xaaaaaa)
+		if_setonmouseleave(null, component7)
+		if_setonmouserepeat(null, component7)
+		if_setonop({
+			league_relic_not_available(int16)
+		}, component7)
+	}
+	comsubid21 = ~v2_stone_button(component8)
+	cc_create(component8, ^iftype_text, comsubid21)
+	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	op1 = "Back"
+	cc_settext(op1)
+	cc_settextfont(p12_full)
+	cc_settextshadow(true)
+	cc_setcolour(^white)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	if_setop(1, op1, component8)
+	if (~on_mobile = false) {
+		if_setonmouseleave({
+			league_relic_button_hover(component8, false, op1, ^white)
+		}, component8)
+		if_setonmouserepeat({
+			league_relic_button_hover(component8, true, op1, 0xaaaaaa)
+		}, component8)
+	}
+	if_setonop({
+		league_relic_back(component0, component1, component2)
+	}, component8)
+	val comsubid26: Int = ~steelborder(component10, struct_param(struct17, param_879), 1)
+	if (cc_find(component10, comsubid26) = ^true) {
+		cc_setcolour(colour20)
+	}
+	if_settext("Are you sure that you wish to unlock the <col=ffffff>${struct_param(struct17, param_879)}</col> Relic?<br><br>You can only unlock <col=ffffff>one</col> Relic from each tier, and you <col=ffffff>cannot</col> go back on this decision at any later point.", component11)
+	comsubid21 = ~v2_stone_button(component12)
+	cc_create(component12, ^iftype_text, comsubid21)
+	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	op1 = "Confirm"
+	cc_settext(op1)
+	cc_settextfont(p12_full)
+	cc_settextshadow(true)
+	cc_setcolour(^white)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	if_setop(1, op1, component12)
+	if_setopbase("<col=ff981f>Selection</col>", component12)
+	if (~on_mobile = false) {
+		if_setonmouseleave({
+			league_relic_button_hover(component12, false, op1, ^white)
+		}, component12)
+		if_setonmouserepeat({
+			league_relic_button_hover(component12, true, op1, 0xaaaaaa)
+		}, component12)
+	}
+	if_setonop({
+		button_select_sound
+	}, component12)
+	comsubid21 = ~v2_stone_button(component13)
+	cc_create(component13, ^iftype_text, comsubid21)
+	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	op1 = "Cancel"
+	cc_settext(op1)
+	cc_settextfont(p12_full)
+	cc_settextshadow(true)
+	cc_setcolour(^white)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	if_setop(1, op1, component13)
+	if (~on_mobile = false) {
+		if_setonmouseleave({
+			league_relic_button_hover(component13, false, op1, ^white)
+		}, component13)
+		if_setonmouserepeat({
+			league_relic_button_hover(component13, true, op1, 0xaaaaaa)
+		}, component13)
+	}
+	if_setonop({
+		league_relic_confirm_back(component9)
+	}, component13)
+	return 
+}

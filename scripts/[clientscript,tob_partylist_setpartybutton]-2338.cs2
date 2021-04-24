@@ -1,0 +1,6 @@
+// 2338 clientscript
+fun tob_partylist_setpartybutton() {
+
+	~tob_partylist_setpartybutton
+	return 
+}

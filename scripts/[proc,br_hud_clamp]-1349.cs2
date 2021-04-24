@@ -1,0 +1,11 @@
+// 1349 proc
+fun br_hud_clamp(component0: Component, component1: Component, component2: Component) {
+
+	~hud_clamp(component1)
+	if (enum(enum, int, enum_1135, ~toplevel_getcomponents) > 0) {
+		if_setposition(-7, 200, ^setpos_abs_right, ^setpos_abs_top, component2)
+	} else {
+		if_setposition(2, 2, ^setpos_abs_right, ^setpos_abs_bottom, component2)
+	}
+	return 
+}

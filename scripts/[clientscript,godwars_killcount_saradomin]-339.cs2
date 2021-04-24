@@ -1,0 +1,6 @@
+// 339 clientscript
+fun godwars_killcount_saradomin(component0: Component) {
+
+	~godwars_killcount(component0, VARBIT[3972])
+	return 
+}

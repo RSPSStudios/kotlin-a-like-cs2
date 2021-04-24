@@ -1,0 +1,130 @@
+// 2669 proc
+fun telenexus_get_slot_value(int0: Int): Int {
+
+	when (int0): Int {
+		1 -> {
+		
+			return VARBIT[6672]
+		}
+		2 -> {
+		
+			return VARBIT[6673]
+		}
+		3 -> {
+		
+			return VARBIT[6674]
+		}
+		4 -> {
+		
+			return VARBIT[6675]
+		}
+		5 -> {
+		
+			return VARBIT[6676]
+		}
+		6 -> {
+		
+			return VARBIT[6677]
+		}
+		7 -> {
+		
+			return VARBIT[6678]
+		}
+		8 -> {
+		
+			return VARBIT[6679]
+		}
+		9 -> {
+		
+			return VARBIT[6680]
+		}
+		10 -> {
+		
+			return VARBIT[6681]
+		}
+		11 -> {
+		
+			return VARBIT[6682]
+		}
+		12 -> {
+		
+			return VARBIT[6683]
+		}
+		13 -> {
+		
+			return VARBIT[6684]
+		}
+		14 -> {
+		
+			return VARBIT[6685]
+		}
+		15 -> {
+		
+			return VARBIT[6686]
+		}
+		16 -> {
+		
+			return VARBIT[6568]
+		}
+		17 -> {
+		
+			return VARBIT[6569]
+		}
+		18 -> {
+		
+			return VARBIT[6582]
+		}
+		19 -> {
+		
+			return VARBIT[10092]
+		}
+		20 -> {
+		
+			return VARBIT[10093]
+		}
+		21 -> {
+		
+			return VARBIT[10094]
+		}
+		22 -> {
+		
+			return VARBIT[10095]
+		}
+		23 -> {
+		
+			return VARBIT[10096]
+		}
+		24 -> {
+		
+			return VARBIT[10097]
+		}
+		25 -> {
+		
+			return VARBIT[10098]
+		}
+		26 -> {
+		
+			return VARBIT[10099]
+		}
+		27 -> {
+		
+			return VARBIT[10100]
+		}
+		28 -> {
+		
+			return VARBIT[10101]
+		}
+		29 -> {
+		
+			return VARBIT[10102]
+		}
+		30 -> {
+		
+			return VARBIT[10103]
+		}
+	else -> {
+	
+		return -1
+	}
+	}
+}

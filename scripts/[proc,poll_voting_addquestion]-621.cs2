@@ -1,0 +1,122 @@
+// 621 proc
+fun poll_voting_addquestion(int0: Int, boolean1: Boolean, string0: String, int2: Int, flags3: Int) {
+
+	val width4: Int = if_getwidth(interface_400:10)
+	val int5: Int = calc(width4 - 4 * 2)
+	val int6: Int = VARCINT[43]
+	val height7: Int = VARCINT[49]
+	cc_create(interface_400:10, ^iftype_rectangle, VARCINT[43])
+	VARCINT[43] = calc(VARCINT[43] + 1)
+	cc_setposition(0, height7, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setcolour(^white)
+	cc_setfill(true)
+	cc_settrans(225)
+	cc_create(interface_400:10, ^iftype_rectangle, VARCINT[43])
+	VARCINT[43] = calc(VARCINT[43] + 1)
+	cc_setposition(0, height7, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setcolour(0x777775)
+	cc_setfill(false)
+	cc_create(interface_400:10, ^iftype_rectangle, VARCINT[43])
+	VARCINT[43] = calc(VARCINT[43] + 1)
+	cc_setposition(1, calc(height7 + 1), ^setpos_abs_left, ^setpos_abs_top)
+	cc_setcolour(0x474745)
+	cc_setfill(false)
+	VARCINT[49] = calc(VARCINT[49] + 4)
+	val string1: String = ""
+	string1, string0 = ~script632(string0)
+	val int8: Int = calc(paraheight(string1, int5, p11_full) * 10 + 2)
+	int8 = ~max(int8, 15)
+	cc_create(interface_400:10, ^iftype_text, VARCINT[43])
+	VARCINT[43] = calc(VARCINT[43] + 1)
+	cc_setposition(4, VARCINT[49], ^setpos_abs_left, ^setpos_abs_top)
+	cc_setsize(int5, int8, ^setsize_abs, ^setsize_abs)
+	VARCINT[49] = calc(VARCINT[49] + int8)
+	cc_setcolour(0xff981f)
+	cc_settextfont(p11_full)
+	cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
+	cc_settextshadow(true)
+	cc_settext(string1)
+	string1, string0 = ~script632(string0)
+	int8 = calc(paraheight(string1, int5, p12_full) * 12 + 5)
+	cc_create(interface_400:10, ^iftype_text, VARCINT[43])
+	VARCINT[43] = calc(VARCINT[43] + 1)
+	cc_setposition(4, VARCINT[49], ^setpos_abs_left, ^setpos_abs_top)
+	cc_setsize(int5, int8, ^setsize_abs, ^setsize_abs)
+	VARCINT[49] = calc(VARCINT[49] + int8)
+	cc_setcolour(^white)
+	cc_settextfont(p12_full)
+	cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
+	cc_settextshadow(true)
+	cc_settext(string1)
+	val string2: String = ""
+	string1, string0 = ~script632(string0)
+	string2, string0 = ~script632(string0)
+	~poll_addlink(string1, string2, interface_400:10, int5, 4, p11_full, p11_full, 10, 2)
+	val int9: Int = calc(4 + 17 + 4)
+	val width10: Int = calc(int5 - (4 + int9))
+	val int11: Int = 0
+	while (int11 < int2) {
+		string1, string0 = ~script632(string0)
+		int8 = calc(paraheight(string1, width10, p11_full) * 10 + 2)
+		int8 = ~max(int8, 17)
+		if (~on_mobile = true) {
+			int8 = ~max(int8, 27)
+		}
+		cc_create(interface_400:10, ^iftype_rectangle, VARCINT[43])
+		cc_settrans(255)
+		cc_setcolour(^white)
+		cc_setfill(true)
+		VARCINT[43] = calc(VARCINT[43] + 1)
+		.cc_create(interface_400:10, ^iftype_text, VARCINT[43])
+		VARCINT[43] = calc(VARCINT[43] + 1)
+		cc_setposition(4, VARCINT[49], ^setpos_abs_left, ^setpos_abs_top)
+		.cc_setposition(int9, VARCINT[49], ^setpos_abs_left, ^setpos_abs_top)
+		cc_setsize(int5, int8, ^setsize_abs, ^setsize_abs)
+		.cc_setsize(width10, int8, ^setsize_abs, ^setsize_abs)
+		.cc_settextfont(p11_full)
+		.cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
+		.cc_settextshadow(true)
+		.cc_setcolour(0xff981f)
+		cc_setonmouserepeat({
+			cc_colour_swapper(event_com, .cc_getid, ^white)
+		})
+		cc_setonmouseleave({
+			cc_colour_swapper(event_com, .cc_getid, 0xff981f)
+		})
+		.cc_settext(string1)
+		.cc_create(interface_400:10, ^iftype_graphic, VARCINT[43])
+		VARCINT[43] = calc(VARCINT[43] + 1)
+		.cc_setposition(4, calc(VARCINT[49] + (int8 - 17) / 2), ^setpos_abs_left, ^setpos_abs_top)
+		.cc_setsize(17, 17, ^setsize_abs, ^setsize_abs)
+		if (testbit(flags3, int11) = ^true) {
+			.cc_setgraphic("options_radio_buttons,2")
+		} else if (boolean1 = true) {
+			.cc_setgraphic("options_radio_buttons,1")
+		} else {
+			.cc_setgraphic("options_radio_buttons,0")
+		}
+		.cc_settiling(false)
+		if (boolean1 = true & testbit(flags3, int11) = ^true) {
+			cc_setop(1, "De-select")
+		} else {
+			cc_setop(1, "Select")
+		}
+		cc_setonop({
+			script623(event_com, event_comsubid, int0, int11)
+		})
+		int11, VARCINT[49] = calc(int11 + 1), calc(VARCINT[49] + int8)
+	}
+	VARCINT[49] = calc(VARCINT[49] + 4)
+	int8 = calc(VARCINT[49] - height7)
+	if (cc_find(interface_400:10, int6) = ^true) {
+		cc_setsize(width4, int8, ^setsize_abs, ^setsize_abs)
+	}
+	if (cc_find(interface_400:10, calc(int6 + 1)) = ^true) {
+		cc_setsize(width4, int8, ^setsize_abs, ^setsize_abs)
+	}
+	if (cc_find(interface_400:10, calc(int6 + 2)) = ^true) {
+		cc_setsize(calc(width4 - 2), calc(int8 - 2), ^setsize_abs, ^setsize_abs)
+	}
+	VARCINT[49] = calc(VARCINT[49] + 4)
+	return 
+}

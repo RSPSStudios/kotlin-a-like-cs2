@@ -1,0 +1,62 @@
+// 1453 proc
+fun script1453(obj0: Obj, obj1: Obj, obj2: Obj, obj3: Obj, obj4: Obj, obj5: Obj, obj6: Obj, obj7: Obj, obj8: Obj, obj9: Obj, obj10: Obj, obj11: Obj, obj12: Obj, obj13: Obj, obj14: Obj, obj15: Obj, obj16: Obj, obj17: Obj, obj18: Obj, obj19: Obj, obj20: Obj, obj21: Obj, obj22: Obj, obj23: Obj, obj24: Obj, obj25: Obj, obj26: Obj, obj27: Obj) {
+
+	cc_deleteall(interface_481:31)
+	val size28: Int = 0
+	val int29: Int = -1
+	val int30: Int = -1
+	obj0[inv_size(inv)]: Obj
+	obj0[0] = obj0
+	obj0[1] = obj1
+	obj0[2] = obj2
+	obj0[3] = obj3
+	obj0[4] = obj4
+	obj0[5] = obj5
+	obj0[6] = obj6
+	obj0[7] = obj7
+	obj0[8] = obj8
+	obj0[9] = obj9
+	obj0[10] = obj10
+	obj0[11] = obj11
+	obj0[12] = obj12
+	obj0[13] = obj13
+	obj0[14] = obj14
+	obj0[15] = obj15
+	obj0[16] = obj16
+	obj0[17] = obj17
+	obj0[18] = obj18
+	obj0[19] = obj19
+	obj0[20] = obj20
+	obj0[21] = obj21
+	obj0[22] = obj22
+	obj0[23] = obj23
+	obj0[24] = obj24
+	obj0[25] = obj25
+	obj0[26] = obj26
+	obj0[27] = obj27
+	val int31: Int = calc(if_getwidth(interface_481:31) - 10)
+	val int32: Int = calc(if_getheight(interface_481:31) - 10)
+	val int33: Int = calc(int31 / 4)
+	val int34: Int = calc(int32 / 7)
+	val int35: Int = 5
+	val int36: Int = 5
+	while (size28 < inv_size(inv)) {
+		cc_create(interface_481:31, ^iftype_graphic, size28)
+		cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+		cc_setposition(int35, int36, ^setpos_abs_left, ^setpos_abs_top)
+		if (obj0[size28] ! null) {
+			cc_setobject_nonum(obj0[size28], 0)
+			cc_setopbase("<col=ff981f>${oc_name(obj0[size28])}")
+			cc_setop(10, "Examine<col=ff9040>")
+			cc_setgraphicshadow(0x333333)
+			cc_setoutline(1)
+		}
+		int35 = calc(int35 + int33)
+		size28 = calc(size28 + 1)
+		if (calc(size28 % 4) = 0) {
+			int35 = 10
+			int36 = calc(int36 + int34)
+		}
+	}
+	return 
+}

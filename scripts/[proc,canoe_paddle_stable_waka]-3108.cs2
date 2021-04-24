@@ -1,0 +1,30 @@
+// 3108 proc
+fun canoe_paddle_stable_waka(int0: Int): Int, Int, Int, Int, Int, Int {
+
+	when (int0): Int {
+		1 -> {
+		
+			return 1, 0, 0, 0, 0, 0
+		}
+		2 -> {
+		
+			return 0, 1, 0, 0, 0, 0
+		}
+		3 -> {
+		
+			return 0, 0, 1, 0, 0, 0
+		}
+		4 -> {
+		
+			return 0, 0, 0, 1, 0, 0
+		}
+		5 -> {
+		
+			return 0, 0, 0, 0, 0, 1
+		}
+	else -> {
+	
+		return 0, 0, 0, 0, 0, 0
+	}
+	}
+}

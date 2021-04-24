@@ -1,0 +1,6 @@
+// 3190 clientscript
+fun league_relic_hover(component0: Component, trans1: Int, component2: Component, graphic3: Graphic, component4: Component, colour5: Int, comsubid6: Int) {
+
+	~league_relic_hover(component0, trans1, component2, graphic3, component4, colour5, comsubid6)
+	return 
+}

@@ -1,0 +1,19 @@
+// 1662 clientscript
+fun chatchannel_setup_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component) {
+
+	~scrollbar_vertical(component5, component4, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+	when (VARCINT[186]): Int {
+		0, 1, 2, 3, 6, 7 -> {
+		
+		}
+	else -> {
+	
+		VARCINT[186] = 0
+	}
+	}
+	~chatchannel_setup_build(component1, component2, component3, component4, component5, component6)
+	if_setonfriendtransmit({
+		chatchannel_setup_build(component1, component2, component3, component4, component5, component6)
+	}, component0)
+	return 
+}

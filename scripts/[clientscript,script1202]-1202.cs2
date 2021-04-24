@@ -1,0 +1,6 @@
+// 1202 clientscript
+fun script1202(int0: Int) {
+
+	VARCINT[79] = int0
+	return 
+}

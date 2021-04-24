@@ -1,0 +1,8 @@
+// 451 proc
+fun high_risk_world(): Int {
+
+	if (testbit(worldflags, 10) = ^true) {
+		return 1
+	}
+	return 0
+}

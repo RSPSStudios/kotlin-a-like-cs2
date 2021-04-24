@@ -1,0 +1,12 @@
+// 2135 clientscript
+fun script2135(clock0: Int, component1: Component, string0: String, graphic2: Graphic, string1: String, component3: Component, component4: Component, component5: Component, component6: Component) {
+
+	if (clientclock < clock0) {
+		return 
+	}
+	if (component3 ! null & if_gethide(component3) = false) {
+		return 
+	}
+	~script2133(component1, string0, graphic2, string1, component3, component4, component5, component6)
+	return 
+}

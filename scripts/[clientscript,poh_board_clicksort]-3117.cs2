@@ -1,0 +1,8 @@
+// 3117 clientscript
+fun poh_board_clicksort(int0: Int) {
+
+	sound_synth(synth_2266, 1, 0)
+	VARCINT[379] = int0
+	~poh_board_setsort(interface_52:5, interface_52:2, interface_52:21)
+	return 
+}

@@ -1,0 +1,13 @@
+// 3277 clientscript
+fun script3277(boolean0: Boolean, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component) {
+
+	if (VARCINT[386] = true) {
+		if (boolean0 = true) {
+			return 
+		}
+	} else if (boolean0 = false | boolean0 = null) {
+		return 
+	}
+	~bankside_build(component1, component2, component3, component4, component5, component6)
+	return 
+}

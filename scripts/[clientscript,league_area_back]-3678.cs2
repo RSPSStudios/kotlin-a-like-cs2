@@ -1,0 +1,11 @@
+// 3678 clientscript
+fun league_area_back(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	sound_synth(synth_2266, 1, 0)
+	if_sethide(false, component1)
+	if_sethide(false, component0)
+	if_sethide(false, component2)
+	if_sethide(true, component3)
+	~stop_slideshow(component4)
+	return 
+}

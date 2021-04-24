@@ -1,0 +1,7 @@
+// 2279 clientscript
+fun bondif_redeem_package_op_disabled(mes0: String) {
+
+	sound_synth(pillory_wrong, 1, 0)
+	mes(mes0)
+	return 
+}

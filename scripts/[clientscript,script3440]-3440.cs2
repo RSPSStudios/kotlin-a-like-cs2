@@ -1,0 +1,14 @@
+// 3440 clientscript
+fun script3440(component0: Component, comsubid1: Int, graphic2: Graphic, component3: Component) {
+
+	if (~on_mobile = true) {
+		return 
+	}
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_setgraphic(graphic2)
+	}
+	if (component3 ! null) {
+		~deltooltip_action(component3)
+	}
+	return 
+}

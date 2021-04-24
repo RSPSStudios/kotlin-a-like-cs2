@@ -1,0 +1,8 @@
+// 2051 clientscript
+fun skillmulti_itembutton_key(keychar0: Char, key1: Int, obj2: Obj, component3: Component, string0: String, key4: Int, int5: Int, int6: Int) {
+
+	if (~keypress_permit(270, -1) = 1 & (key4 ! null & key1 = key4 | keychar0 ! null & string_length(string0) > 0 & string_indexof_char(string0, keychar0) ! -1)) {
+		~skillmulti_itembutton_triggered(obj2, component3, string0, key4, int5, int6)
+	}
+	return 
+}

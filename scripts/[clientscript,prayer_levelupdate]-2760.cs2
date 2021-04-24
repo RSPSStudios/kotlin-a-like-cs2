@@ -1,0 +1,8 @@
+// 2760 clientscript
+fun prayer_levelupdate(component0: Component, comsubid1: Int) {
+
+	if (.cc_find(component0, comsubid1) = ^true) {
+		~prayer_levelupdate
+	}
+	return 
+}

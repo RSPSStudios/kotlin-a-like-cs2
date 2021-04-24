@@ -1,0 +1,8 @@
+// 650 clientscript
+fun poh_add_room_costupdate(component0: Component, comsubid1: Int, total2: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		~poh_add_room_costupdate(total2)
+	}
+	return 
+}

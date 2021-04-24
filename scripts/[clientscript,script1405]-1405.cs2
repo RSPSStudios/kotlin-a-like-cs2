@@ -1,0 +1,21 @@
+// 1405 clientscript
+fun script1405(opindex0: Int, comsubid1: Int, obj2: Obj, component3: Component, comsubid4: Int) {
+
+	if (opindex0 ! 1) {
+		if (opindex0 = 10) {
+			mes("${oc_name(obj2)}.")
+		}
+		return 
+	}
+	if (cc_find(component3, comsubid4) = ^true) {
+		cc_settrans(120)
+		cc_setontimer({
+			cc_settrans_temporarily_end(event_com, event_comsubid, 0, calc(clientclock + 10))
+		})
+	}
+	sound_synth(synth_2266, 1, 0)
+	if (cc_find(interface_458:2, comsubid1) = ^true) {
+		cc_resume_pausebutton
+	}
+	return 
+}

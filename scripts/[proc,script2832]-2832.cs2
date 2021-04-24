@@ -1,0 +1,5 @@
+// 2832 proc
+fun script2832(): Int {
+
+	return calc(VARBIT[8252] * 256 + VARBIT[8253])
+}

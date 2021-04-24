@@ -1,0 +1,7 @@
+// 11 clientscript
+fun wom_tab_highlight(component0: Component, component1: Component) {
+
+	~wom_tab_highlight
+	~wom_build_item_list(component0, component1)
+	return 
+}

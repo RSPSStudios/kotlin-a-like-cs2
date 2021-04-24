@@ -1,0 +1,15 @@
+// 964 clientscript
+fun tournament_supplies_search_toggle(boolean0: Boolean, component1: Component, component2: Component, component3: Component, int4: Int, int5: Int) {
+
+	sound_synth(synth_2266, 1, 0)
+	if (boolean0 = true) {
+		~meslayer_mode11
+		~tournament_supplies_search_on(component1, component2, component3, int4, int5)
+	} else {
+		if (VARCINT[5] = 11) {
+			~meslayer_close(1, 1)
+		}
+		~tournament_supplies_search_off(component1, component2, component3, int4, int5)
+	}
+	return 
+}

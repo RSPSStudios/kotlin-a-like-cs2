@@ -1,0 +1,11 @@
+// 3638 clientscript
+fun script3638(opindex0: Int, component1: Component, int2: Int, count3: Int, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	VARBIT[6348] = int2
+	~script3640(count3, component4, component5, component6, component7, component8)
+	return 
+}

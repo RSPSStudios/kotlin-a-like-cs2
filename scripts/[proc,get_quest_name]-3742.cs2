@@ -1,0 +1,5 @@
+// 3742 proc
+fun get_quest_name(struct0: Struct): String {
+
+	return struct_param(struct0, param_610)
+}

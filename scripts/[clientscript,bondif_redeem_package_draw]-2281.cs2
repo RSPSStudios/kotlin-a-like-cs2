@@ -1,0 +1,6 @@
+// 2281 clientscript
+fun bondif_redeem_package_draw(int0: Int, component1: Component, text0: String, num2: Int, graphic3: Graphic, int4: Int, height5: Int, text1: String) {
+
+	~bondif_redeem_package_draw(int0, component1, text0, num2, graphic3, int4, height5, text1)
+	return 
+}

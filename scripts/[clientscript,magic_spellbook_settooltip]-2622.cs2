@@ -1,0 +1,6 @@
+// 2622 clientscript
+fun magic_spellbook_settooltip(boolean0: Boolean, obj1: Obj, component2: Component, comsubid3: Int, component4: Component, int5: Int) {
+
+	~magic_spellbook_settooltip(boolean0, obj1, component2, comsubid3, component4, int5)
+	return 
+}

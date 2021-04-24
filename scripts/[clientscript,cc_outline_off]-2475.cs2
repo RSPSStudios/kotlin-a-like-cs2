@@ -1,0 +1,8 @@
+// 2475 clientscript
+fun cc_outline_off(component0: Component, comsubid1: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_setoutline(0)
+	}
+	return 
+}

@@ -1,0 +1,6 @@
+// 201 clientscript
+fun pet_insurance_insured(component0: Component, component1: Component) {
+
+	~pet_insurance_drawlist(component0, 32, component1, VARP[866], VARBIT[2168])
+	return 
+}

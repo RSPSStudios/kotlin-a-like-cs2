@@ -1,0 +1,6 @@
+// 1643 clientscript
+fun deadman_finallocation(component0: Component) {
+
+	~deadman_finallocation(component0)
+	return 
+}

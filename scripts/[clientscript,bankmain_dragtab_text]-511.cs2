@@ -1,0 +1,19 @@
+// 511 clientscript
+fun bankmain_dragtab_text(drop0: Component, comsubid1: Int, drop2: Component, dropsubid3: Int, flags4: Int) {
+
+	if (drop2 ! drop0) {
+		return 
+	}
+	val index5: Int = calc(comsubid1 - (9 + 1))
+	val index6: Int = calc(dropsubid3 - (9 + 1))
+	if (index5 = 0 | index6 = 0 | testbit(flags4, index5) = ^false | testbit(flags4, index6) = ^false) {
+		return 
+	}
+	if (cc_find(drop0, comsubid1) = ^true) {
+		cc_setcolour(0x3f3f3f)
+		cc_setontimer({
+			cc_colour_temporarily_end(event_com, event_comsubid, 0xe4d8a2, calc(clientclock + 10))
+		})
+	}
+	return 
+}

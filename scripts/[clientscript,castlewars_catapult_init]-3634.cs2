@@ -1,0 +1,22 @@
+// 3634 clientscript
+fun castlewars_catapult_init(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component) {
+
+	~steelborder(component1, "Catapult Controls", 0)
+	~steelbox(component2, 0, 0)
+	~steelbox(component8, 0, 0)
+	~steelbox(component9, 0, 0)
+	~steelbox(component10, 0, 0)
+	~steelbox(component11, 0, 0)
+	if_setop(1, "Move Up", component4)
+	if_setop(1, "Move Down", component5)
+	if_setop(1, "Move Left", component6)
+	if_setop(1, "Move Right", component7)
+	~castlewars_catapult_hover(component3, false)
+	if_setonmouseover({
+		castlewars_catapult_hover(component3, true)
+	}, component3)
+	if_setonmouseleave({
+		castlewars_catapult_hover(component3, false)
+	}, component3)
+	return 
+}

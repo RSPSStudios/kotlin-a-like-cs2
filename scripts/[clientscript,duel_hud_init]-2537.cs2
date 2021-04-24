@@ -1,0 +1,6 @@
+// 2537 clientscript
+fun duel_hud_init(component0: Component) {
+
+	~script2249(component0, setbit(0, 1))
+	return 
+}

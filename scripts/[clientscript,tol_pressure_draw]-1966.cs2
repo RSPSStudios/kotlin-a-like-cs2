@@ -1,0 +1,6 @@
+// 1966 clientscript
+fun tol_pressure_draw() {
+
+	~tol_pressure_draw
+	return 
+}

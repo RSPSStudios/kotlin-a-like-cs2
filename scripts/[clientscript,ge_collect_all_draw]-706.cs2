@@ -1,0 +1,8 @@
+// 706 clientscript
+fun ge_collect_all_draw(component0: Component, comsubid1: Int, comsubid2: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true & .cc_find(component0, comsubid2) = ^true) {
+		~ge_collect_all_draw(component0)
+	}
+	return 
+}

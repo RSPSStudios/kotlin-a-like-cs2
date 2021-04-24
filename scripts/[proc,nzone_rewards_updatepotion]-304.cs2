@@ -1,0 +1,16 @@
+// 304 proc
+fun nzone_rewards_updatepotion(obj0: Obj) {
+
+	if (obj0 = super_ranging_1_11725) {
+		cc_settext("(${tostring(VARBIT[3951])})")
+	} else if (obj0 = super_magic_potion_1_11729) {
+		cc_settext("(${tostring(VARBIT[3952])})")
+	} else if (obj0 = overload_1_11733) {
+		cc_settext("(${tostring(VARBIT[3953])})")
+	} else if (obj0 = absorption_1_11737) {
+		cc_settext("(${tostring(VARBIT[3954])})")
+	} else {
+		cc_settext("")
+	}
+	return 
+}

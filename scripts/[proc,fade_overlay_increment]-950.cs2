@@ -1,0 +1,24 @@
+// 950 proc
+fun fade_overlay_increment(colour0: Int, int1: Int, colour2: Int, int3: Int, int4: Int, int5: Int) {
+
+	if (int5 <= 0) {
+		if_setcolour(colour2, interface_174:1)
+		if_settrans(int3, interface_174:1)
+		if_setontimer(null, interface_174:0)
+		return 
+	}
+	val int6: Int = 0
+	val int7: Int = 0
+	val int8: Int = 0
+	int6, int7, int8 = ~hex_to_rgb(colour0)
+	val int9: Int = 0
+	val int10: Int = 0
+	val int11: Int = 0
+	int9, int10, int11 = ~hex_to_rgb(colour2)
+	val int12: Int = calc(int9 - interpolate(0, int5, 0, int4, int9 - int6))
+	val int13: Int = calc(int10 - interpolate(0, int5, 0, int4, int10 - int7))
+	val int14: Int = calc(int11 - interpolate(0, int5, 0, int4, int11 - int8))
+	if_setcolour(~rgb_to_hex(int12, int13, int14), interface_174:1)
+	if_settrans(calc(int3 - interpolate(0, int5, 0, int4, int3 - int1)), interface_174:1)
+	return 
+}

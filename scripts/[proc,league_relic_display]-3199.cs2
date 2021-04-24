@@ -1,0 +1,18 @@
+// 3199 proc
+fun league_relic_display(component0: Component, component1: Component) {
+
+	if (~league_world = 0) {
+		return 
+	}
+	when (VARBIT[10032]): Int {
+		1 -> {
+		
+			~league_relic_display_core(component0, component1, 0x00bb00)
+		}
+		2 -> {
+		
+			~league_relic_display_core(component0, component1, 0x0098b1)
+		}
+	}
+	return 
+}

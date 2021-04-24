@@ -1,0 +1,14 @@
+// 4082 proc
+fun script4082() {
+
+	~script4083(1)
+	~thinbox(interface_621:77, 0)
+	~script4086(interface_621:71, 40697928)
+	~script4088(1, interface_621:74, interface_621:79)
+	if_sethide(true, interface_621:69)
+	if_setopkey(1, 80, 0, interface_621:68)
+	if_setonop({
+		script4084(false)
+	}, interface_621:68)
+	return 
+}

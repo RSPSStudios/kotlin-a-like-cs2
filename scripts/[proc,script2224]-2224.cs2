@@ -1,0 +1,8 @@
+// 2224 proc
+fun script2224() {
+
+	if (VARCINT[204] < 3 | VARCINT[204] > 12) {
+		VARCINT[204] = 12
+	}
+	return 
+}

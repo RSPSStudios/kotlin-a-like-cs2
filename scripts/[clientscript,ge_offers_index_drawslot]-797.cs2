@@ -1,0 +1,6 @@
+// 797 clientscript
+fun ge_offers_index_drawslot(inv0: Inv, int1: Int, component2: Component, comsubid3: Int, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, int9: Int, comsubid10: Int, comsubid11: Int, comsubid12: Int, comsubid13: Int, comsubid14: Int, comsubid15: Int, comsubid16: Int, comsubid17: Int, comsubid18: Int, comsubid19: Int, comsubid20: Int, comsubid21: Int, comsubid22: Int, comsubid23: Int, comsubid24: Int, comsubid25: Int, comsubid26: Int, component27: Component) {
+
+	~ge_offers_index_drawslot(inv0, int1, component2, comsubid3, component4, component5, component6, component7, component8, int9, comsubid10, comsubid11, comsubid12, comsubid13, comsubid14, comsubid15, comsubid16, comsubid17, comsubid18, comsubid19, comsubid20, comsubid21, comsubid22, comsubid23, comsubid24, comsubid25, comsubid26, component27)
+	return 
+}

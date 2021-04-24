@@ -1,0 +1,6 @@
+// 2691 clientscript
+fun script2691(boolean0: Boolean, boolean1: Boolean) {
+
+	~script2692(boolean0, boolean1)
+	return 
+}

@@ -1,0 +1,8 @@
+// 394 clientscript
+fun stats_setlevels(stat0: Stat, component1: Component, string0: String, comsubid2: Int, comsubid3: Int, component4: Component) {
+
+	if (cc_find(component1, comsubid2) = ^true & .cc_find(component1, comsubid3) = ^true) {
+		~stats_setlevels(stat0, component1, string0, component4)
+	}
+	return 
+}

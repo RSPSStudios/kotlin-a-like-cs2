@@ -1,0 +1,19 @@
+// 612 proc
+fun poll_setuplink(component0: Component, int1: Int, int2: Int, string0: String, string1: String) {
+
+	.cc_setcolour(0xffa82f)
+	.cc_settext(string0)
+	if (clienttype ! ^clienttype_ios) {
+		cc_setonclick({
+			poll_clicklink(component0, int1, int2, string0, string1)
+		})
+		cc_setonmouseleave({
+			cc_text_swapper(component0, int2, string0)
+		})
+		string0 = "<u=ffa82f>${string0}</u>"
+		cc_setonmouseover({
+			cc_text_swapper(component0, int2, string0)
+		})
+	}
+	return 
+}

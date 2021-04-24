@@ -1,0 +1,56 @@
+// 6 clientscript
+fun wom_tab_init(component0: Component, component1: Component, component2: Component) {
+
+	val count3: Int = 0
+	val component4: Component = null
+	val component5: Component = null
+	val string0: String = ""
+	val int6: Int = 0
+	val int7: Int = 0
+	val int8: Int = 0
+	val count9: Int = enum_getoutputcount(enum_2070)
+	while (count3 <= count9) {
+		component4 = ~wom_get_tab(count3)
+		component5 = ~wom_get_text(count3)
+		string0 = enum(int, string, enum_2071, count3)
+		if (map_members = ^false & compare(string0, "Free") ! 0) {
+			string0 = ""
+		}
+		if (component4 = null) {
+			return 
+		}
+		if (component5 = null) {
+			if_sethide(true, component4)
+		}
+		if (compare(string0, "") = 0) {
+			if_sethide(true, component4)
+		} else {
+			int7 = ~max(40, calc(40 + parawidth(string0, 400, p11_full)))
+			if_setonmouseover({
+				text_colour_swapper(component5, ^white)
+			}, component4)
+			if_setonmouseleave({
+				text_colour_swapper(component5, 0xff981f)
+			}, component4)
+			if_setonop({
+				wom_tab_highlight_onclick(count3, component1, component2)
+			}, component4)
+			if_setonvartransmit({
+				wom_tab_highlight(component1, component2){VARP[279]}
+			}, component0)
+			if_setoninvtransmit({
+				wom_item_update(component1, component2){inv, worn, bank}
+			}, component1)
+			if_sethide(false, component4)
+			if_setsize(int7, 0, ^setsize_abs, ^setsize_minus, component4)
+			if_settext(string0, component5)
+			if_setposition(int6, 0, ^setpos_abs_left, ^setpos_abs_centre, component4)
+			int6 = calc(int6 + int7)
+		}
+		count3 = calc(count3 + 1)
+	}
+	~wom_build_item_list(component1, component2)
+	if_setscrollpos(0, 0, component1)
+	~scrollbar_vertical(component2, component1, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+	return 
+}

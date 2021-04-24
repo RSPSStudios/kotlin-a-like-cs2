@@ -1,0 +1,6 @@
+// 1356 proc
+fun questlist_qp(component0: Component) {
+
+	if_settext("Quest Points: ${tostring(VARP[101])}", component0)
+	return 
+}

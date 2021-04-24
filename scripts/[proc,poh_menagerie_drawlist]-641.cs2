@@ -1,0 +1,52 @@
+// 641 proc
+fun poh_menagerie_drawlist(component0: Component, component1: Component, y2: Int) {
+
+	cc_deleteall(component0)
+	val width3: Int = if_getwidth(component0)
+	val height4: Int = if_getheight(component0)
+	val int5: Int = calc((width3 - 36 * 6) / 5 + 36)
+	val int6: Int = 0
+	val height7: Int = 0
+	val int8: Int = -1
+	val int9: Int = 0
+	val namedobj10: Namedobj = null
+	while (int9 <= 47) {
+		cc_create(component0, ^iftype_graphic, int9)
+		if (int9 < 32 & testbit(VARP[864], int9) = ^true | int9 >= 32 & testbit(VARP[1416], calc(int9 - 32)) = ^true) {
+			namedobj10 = enum(int, namedobj, enum_985, int9)
+			int8 = oc_param(namedobj10, param_446)
+			height7 = ~poh_menagerie_drawpet(namedobj10, int8, int5, int6)
+			int6 = calc(int6 + 1)
+		} else {
+			cc_sethide(true)
+		}
+		int9 = calc(int9 + 1)
+	}
+	val obj11: Obj = null
+	val size12: Int = 0
+	val size13: Int = inv_size(inv_517)
+	while (size12 < size13) {
+		cc_create(component0, ^iftype_graphic, int9)
+		obj11 = inv_getobj(inv_517, size12)
+		if (obj11 ! null) {
+			height7 = ~poh_menagerie_drawpet(obj11, null, int5, int6)
+			int6 = calc(int6 + 1)
+		} else {
+			cc_sethide(true)
+		}
+		int9, size12 = calc(int9 + 1), calc(size12 + 1)
+	}
+	if (int6 > 0) {
+		height7 = calc(height7 + 32)
+	}
+	if (height7 > height4) {
+		if_setscrollsize(0, height7, component0)
+		if_setscrollpos(0, y2, component0)
+	} else {
+		height7 = 0
+		if_setscrollsize(0, 0, component0)
+		if_setscrollpos(0, 0, component0)
+	}
+	~scrollbar_resize(component1, component0, height7)
+	return 
+}

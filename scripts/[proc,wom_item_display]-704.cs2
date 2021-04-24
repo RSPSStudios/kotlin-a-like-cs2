@@ -1,0 +1,67 @@
+// 704 proc
+fun wom_item_display(component0: Component, component1: Component, int2: Int, int3: Int, int4: Int, int5: Int, int6: Int): Int, Int, Int {
+
+	val enum7: Enum = enum(int, enum, enum_2070, int2)
+	val int8: Int = 0
+	val int9: Int = 0
+	val int10: Int = 0
+	val namedobj11: Namedobj = null
+	val int12: Int = calc(36 / 2)
+	val int13: Int = calc(32 / 2)
+	if (int5 = 0) {
+		int5 = int12
+	}
+	if (int6 = 0) {
+		int6 = int13
+	}
+	val enum14: Enum = enum(int, enum, enum7, int9)
+	val num15: Int = 0
+	val int16: Int = 0
+	while (enum14 ! null) {
+		int10 = enum_getoutputcount(enum14)
+		int16 = 0
+		if (int2 = 1) {
+			if (~script4029(enum(enum, struct, enum_2074, enum14)) = 2) {
+				int16 = 1
+			}
+		} else if (int2 = 2 & ~script4029(enum(enum, struct, enum_2075, enum14)) = 2) {
+			int16 = 1
+		}
+		while (int8 < int10) {
+			namedobj11 = enum(int, namedobj, enum14, int8)
+			cc_create(component0, ^iftype_graphic, calc(int8 + int3))
+			num15 = calc(inv_total(bank, namedobj11) + inv_total(inv, namedobj11) + inv_total(worn, namedobj11))
+			if (num15 > 0 & int16 = 1) {
+				cc_setposition(int5, int6, ^setpos_abs_left, ^setpos_abs_top)
+				cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+				cc_setobject(namedobj11, num15)
+				cc_setop(1, "Remove")
+				cc_setop(2, "Examine")
+				cc_setoutline(1)
+				cc_setopbase("<col=ff9040>${oc_name(namedobj11)}</col>")
+				cc_setdragdeadzone(5)
+				cc_setdragdeadtime(5)
+				cc_setonop({
+					wom_item_hide(event_comsubid, component0, event_opindex, component1)
+				})
+				cc_setondragcomplete({
+					wom_item_move(event_comsubid, event_com, event_drop)
+				})
+				int5 = calc(int5 + 3 * int12)
+				if (int5 >= calc(if_getwidth(component0) - int12)) {
+					int6 = calc(int6 + 3 * int13)
+					int5 = int12
+				}
+			} else {
+				cc_sethide(true)
+			}
+			int8 = calc(int8 + 1)
+		}
+		int3 = calc(int3 + int8)
+		int8 = 0
+		int9 = calc(int9 + 1)
+		enum14 = enum(int, enum, enum7, int9)
+	}
+	int4 = calc(int6 + 2 * int13)
+	return int4, int5, int6
+}

@@ -1,0 +1,6 @@
+// 1774 worldmapelementmouserepeat
+fun 14(int0: Int, int1: Int) {
+
+	~worldmap_element_tooltip(int0, int1)
+	return 
+}

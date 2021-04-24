@@ -1,0 +1,6 @@
+// 2473 clientscript
+fun model_transparent_init(component0: Component) {
+
+	if_setmodeltransparent(true, component0)
+	return 
+}

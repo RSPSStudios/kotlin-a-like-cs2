@@ -1,0 +1,22 @@
+// 419 proc
+fun skill_guide_subsection_slayer(int0: Int): String, Int {
+
+	when (int0): Int {
+		0 -> {
+		
+			return "Monsters", 1
+		}
+		1 -> {
+		
+			return "Equipment", 1
+		}
+		2 -> {
+		
+			return "Slayer Masters", 1
+		}
+	else -> {
+	
+		return "", -1
+	}
+	}
+}

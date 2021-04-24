@@ -1,0 +1,6 @@
+// 1488 clientscript
+fun script1488(component0: Component, component1: Component, component2: Component, component3: Component, width4: Int, height5: Int) {
+
+	~script1489(component0, component1, component2, component3, width4, height5)
+	return 
+}

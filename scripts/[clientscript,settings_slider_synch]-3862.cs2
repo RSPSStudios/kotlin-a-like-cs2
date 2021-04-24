@@ -1,0 +1,33 @@
+// 3862 clientscript
+fun settings_slider_synch(int0: Int, struct1: Struct, int2: Int, int3: Int, int4: Int, int5: Int, component6: Component, comsubid7: Int, y8: Int, int9: Int, int10: Int, component11: Component, comsubid12: Int, comsubid13: Int, string0: String) {
+
+	val int14: Int = 0
+	val string1: String = ""
+	if (cc_find(component11, comsubid12) = ^true) {
+		int0 = calc(int0 + 1)
+		if (int0 < 35) {
+			cc_setontimer({
+				settings_slider_synch(int0, struct1, int2, int3, int4, int5, component6, comsubid7, y8, int9, int10, component11, comsubid12, comsubid13, string0)
+			})
+		} else {
+			if (.cc_find(component6, comsubid7) = ^true) {
+				int14 = ~settings_get_slider(int2)
+				if (int14 = 0) {
+					.cc_setposition(int9, y8, ^setpos_abs_left, ^setpos_abs_top)
+				} else if (int14 = calc(int4 - 1)) {
+					.cc_setposition(calc(int10 - 16), y8, ^setpos_abs_left, ^setpos_abs_top)
+				} else {
+					.cc_setposition(calc(int9 + scale(int14 * 2, (int4 - 1) * 2, int5 - 16)), y8, ^setpos_abs_left, ^setpos_abs_top)
+				}
+			}
+			if (.cc_find(component11, comsubid13) = ^true) {
+				if (struct_param(struct1, param_1158) = true) {
+					string1 = ~script2364(int2)
+				}
+				.cc_settext(append(string0, string1))
+			}
+			cc_setontimer(null)
+		}
+	}
+	return 
+}

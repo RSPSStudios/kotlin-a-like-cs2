@@ -1,0 +1,18 @@
+// 2156 proc
+fun poh_options_doors_render(component0: Component, component1: Component, component2: Component) {
+
+	if (VARBIT[6269] = 0) {
+		if_setgraphic("options_radio_buttons,2", component0)
+		if_setgraphic("options_radio_buttons,0", component1)
+		if_setgraphic("options_radio_buttons,0", component2)
+	} else if (VARBIT[6269] = 1) {
+		if_setgraphic("options_radio_buttons,0", component0)
+		if_setgraphic("options_radio_buttons,2", component1)
+		if_setgraphic("options_radio_buttons,0", component2)
+	} else {
+		if_setgraphic("options_radio_buttons,0", component0)
+		if_setgraphic("options_radio_buttons,0", component1)
+		if_setgraphic("options_radio_buttons,2", component2)
+	}
+	return 
+}

@@ -1,0 +1,8 @@
+// 1977 clientscript
+fun script1977(int0: Int, int1: Int) {
+
+	VARCINT[41] = 1337
+	~toplevel_chatbox_background
+	~redraw_chat_buttons
+	return 
+}

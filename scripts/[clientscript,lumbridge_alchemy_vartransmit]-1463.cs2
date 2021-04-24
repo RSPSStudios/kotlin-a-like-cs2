@@ -1,0 +1,6 @@
+// 1463 clientscript
+fun lumbridge_alchemy_vartransmit(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, size5: Int) {
+
+	~lumbridge_alchemy_vartransmit(component0, component1, component2, component3, component4, size5)
+	return 
+}

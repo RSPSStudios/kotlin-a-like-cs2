@@ -1,0 +1,47 @@
+// 2823 proc
+fun script2823(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component) {
+
+	when (int0): Int {
+		41353235 -> {
+		
+			if (VARP[2195] = 1) {
+				if_setcolour(^white, component1)
+			} else {
+				if_setcolour(0xff981f, component1)
+			}
+		}
+		41353236 -> {
+		
+			if (VARP[2195] = 5) {
+				if_setcolour(^white, component2)
+			} else {
+				if_setcolour(0xff981f, component2)
+			}
+		}
+		41353237 -> {
+		
+			if (VARP[2195] = 10) {
+				if_setcolour(^white, component3)
+			} else {
+				if_setcolour(0xff981f, component3)
+			}
+		}
+		41353239 -> {
+		
+			if (VARP[2195] = ^max_32bit_int) {
+				if_setcolour(^white, component5)
+			} else {
+				if_setcolour(0xff981f, component5)
+			}
+		}
+	else -> {
+	
+		if (VARP[2195] ! 1 & VARP[2195] ! 5 & VARP[2195] ! 10 & VARP[2195] ! ^max_32bit_int) {
+			if_setcolour(^white, component4)
+		} else {
+			if_setcolour(0xff981f, component4)
+		}
+	}
+	}
+	return 
+}

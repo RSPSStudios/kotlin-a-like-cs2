@@ -1,0 +1,8 @@
+// 2291 clientscript
+fun raids_challenge_move_highlight(component0: Component, comsubid1: Int, y2: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_setposition(0, y2, ^setpos_abs_left, ^setpos_abs_top)
+	}
+	return 
+}

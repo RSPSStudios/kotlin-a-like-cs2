@@ -1,0 +1,9 @@
+// 2927 clientscript
+fun skillmain_setup(component0: Component, int1: Int, int2: Int, obj3: Obj, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component) {
+
+	if (obj3 = hammer_2347) {
+		obj3 = enum(int, obj, enum_1253, VARBIT[3216])
+	}
+	~skillmain_setup(component0, int1, int2, obj3, component4, component5, component6, component7, component8, component9)
+	return 
+}

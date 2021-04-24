@@ -1,0 +1,7 @@
+// 2180 clientscript
+fun deadman_spectator_single(int0: Int, int1: Int, int2: Int, int3: Int, int4: Int, int5: Int, text0: String, text1: String) {
+
+	~deadman_spectator_stats(text0, text1, int0, int1, int2, int3, int4, int5)
+	~deadman_spectator_inventory(int5)
+	return 
+}

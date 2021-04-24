@@ -1,0 +1,8 @@
+// 2920 proc
+fun script2920(): String {
+
+	if (VARBIT[9292] = 0) {
+		return "Crystal"
+	}
+	return "Corrupted"
+}

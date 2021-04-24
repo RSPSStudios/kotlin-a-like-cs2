@@ -1,0 +1,6 @@
+// 3497 clientscript
+fun death_office_drawquantity(text0: String, component0: Component, boolean1: Boolean, boolean2: Boolean) {
+
+	~death_office_drawquantity(text0, component0, boolean1, boolean2)
+	return 
+}

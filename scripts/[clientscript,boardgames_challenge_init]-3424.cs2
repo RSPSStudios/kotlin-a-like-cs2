@@ -1,0 +1,9 @@
+// 3424 clientscript
+fun boardgames_challenge_init(component0: Component) {
+
+	if_setonvartransmit({
+		boardgames_challenge_update(-1){VARP[355]}
+	}, component0)
+	~boardgames_challenge_update(-1)
+	return 
+}

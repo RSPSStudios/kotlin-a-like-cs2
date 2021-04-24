@@ -1,0 +1,11 @@
+// 2355 proc
+fun script2355(): Int {
+
+	if (~deadman_mode ! 0) {
+		return 0
+	}
+	if (~league_world = 1) {
+		return 0
+	}
+	return 1
+}

@@ -1,0 +1,6 @@
+// 1965 clientscript
+fun script1965(enum0: Enum, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, string0: String, boolean6: Boolean, int7: Int) {
+
+	~script2004(enum0, component1, component2, component3, component4, component5, string0, boolean6, int7)
+	return 
+}

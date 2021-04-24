@@ -1,0 +1,6 @@
+// 2158 clientscript
+fun chatdefault_restoreinput() {
+
+	~script4079
+	return 
+}

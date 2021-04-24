@@ -1,0 +1,642 @@
+// 4024 proc
+fun script4024(struct0: Struct): Int {
+
+	when (struct0): Struct {
+		black_knights_fortress_299 -> {
+		
+			return VARP[130]
+		}
+		cooks_assistant_300 -> {
+		
+			return VARP[29]
+		}
+		demon_slayer_302 -> {
+		
+			return VARBIT[2561]
+		}
+		dorics_quest_303 -> {
+		
+			return VARP[31]
+		}
+		dragon_slayer_i_304 -> {
+		
+			return VARP[176]
+		}
+		ernest_the_chicken_305 -> {
+		
+			return VARP[32]
+		}
+		goblin_diplomacy_306 -> {
+		
+			return VARBIT[2378]
+		}
+		imp_catcher_307 -> {
+		
+			return VARP[160]
+		}
+		the_knights_sword_308 -> {
+		
+			return VARP[122]
+		}
+		pirates_treasure_310 -> {
+		
+			return VARP[71]
+		}
+		prince_ali_rescue_311 -> {
+		
+			return VARP[273]
+		}
+		the_restless_ghost_312 -> {
+		
+			return VARP[107]
+		}
+		romeo_juliet_313 -> {
+		
+			return VARP[144]
+		}
+		rune_mysteries_314 -> {
+		
+			return VARP[63]
+		}
+		sheep_shearer_315 -> {
+		
+			return VARP[179]
+		}
+		vampyre_slayer_1278 -> {
+		
+			return VARP[178]
+		}
+		witchs_potion_318 -> {
+		
+			return VARP[67]
+		}
+		misthalin_mystery_309 -> {
+		
+			return VARBIT[3468]
+		}
+		the_corsair_curse_301 -> {
+		
+			return VARBIT[6071]
+		}
+		animal_magnetism_331 -> {
+		
+			return VARBIT[3185]
+		}
+		between_a_rock_333 -> {
+		
+			return VARBIT[299]
+		}
+		big_chompy_bird_hunting_334 -> {
+		
+			return VARP[293]
+		}
+		biohazard_335 -> {
+		
+			return VARP[68]
+		}
+		cabin_fever_336 -> {
+		
+			return VARP[655]
+		}
+		clock_tower_337 -> {
+		
+			return VARP[10]
+		}
+		contact_339 -> {
+		
+			return VARBIT[3274]
+		}
+		zogre_flesh_eaters_449 -> {
+		
+			return VARBIT[487]
+		}
+		creature_of_fenkenstrain_340 -> {
+		
+			return VARP[399]
+		}
+		darkness_of_hallowvale_341 -> {
+		
+			return VARBIT[2573]
+		}
+		death_to_the_dorgeshuun_343 -> {
+		
+			return VARBIT[2258]
+		}
+		death_plateau_342 -> {
+		
+			return VARP[314]
+		}
+		desert_treasure_345 -> {
+		
+			return VARBIT[358]
+		}
+		devious_minds_346 -> {
+		
+			return VARBIT[1465]
+		}
+		the_dig_site_347 -> {
+		
+			return VARP[131]
+		}
+		druidic_ritual_350 -> {
+		
+			return VARP[80]
+		}
+		dwarf_cannon_351 -> {
+		
+			return VARP[0]
+		}
+		eadgars_ruse_352 -> {
+		
+			return VARP[335]
+		}
+		eagles_peak_353 -> {
+		
+			return VARBIT[2780]
+		}
+		elemental_workshop_ii_355 -> {
+		
+			return VARBIT[2639]
+		}
+		enakhras_lament_356 -> {
+		
+			return VARBIT[1560]
+		}
+		enlightened_journey_357 -> {
+		
+			return VARBIT[2866]
+		}
+		the_eyes_of_glouphrie_358 -> {
+		
+			return VARBIT[2497]
+		}
+		fairytale_i_growing_pains_359 -> {
+		
+			return VARBIT[1803]
+		}
+		fairytale_ii_cure_a_queen_360 -> {
+		
+			return VARBIT[2326]
+		}
+		family_crest_361 -> {
+		
+			return VARP[148]
+		}
+		the_feud_362 -> {
+		
+			return VARBIT[334]
+		}
+		fight_arena_363 -> {
+		
+			return VARP[17]
+		}
+		fishing_contest_364 -> {
+		
+			return VARP[11]
+		}
+		forgettable_tale_365 -> {
+		
+			return VARBIT[822]
+		}
+		the_fremennik_trials_368 -> {
+		
+			return VARP[347]
+		}
+		waterfall_quest_446 -> {
+		
+			return VARP[65]
+		}
+		garden_of_tranquillity_369 -> {
+		
+			return VARBIT[961]
+		}
+		gertrudes_cat_370 -> {
+		
+			return VARP[180]
+		}
+		ghosts_ahoy_371 -> {
+		
+			return VARBIT[217]
+		}
+		the_giant_dwarf_372 -> {
+		
+			return VARBIT[571]
+		}
+		the_golem_373 -> {
+		
+			return VARBIT[346]
+		}
+		the_grand_tree_374 -> {
+		
+			return VARP[150]
+		}
+		the_hand_in_the_sand_377 -> {
+		
+			return VARBIT[1527]
+		}
+		haunted_mine_378 -> {
+		
+			return VARP[382]
+		}
+		hazeel_cult_379 -> {
+		
+			return VARP[223]
+		}
+		heroes_quest_380 -> {
+		
+			return VARP[188]
+		}
+		holy_grail_381 -> {
+		
+			return VARP[5]
+		}
+		horror_from_the_deep_382 -> {
+		
+			return VARBIT[34]
+		}
+		icthlarins_little_helper_383 -> {
+		
+			return VARBIT[418]
+		}
+		in_aid_of_the_myreque_384 -> {
+		
+			return VARBIT[1990]
+		}
+		in_search_of_the_myreque_385 -> {
+		
+			return VARP[387]
+		}
+		jungle_potion_386 -> {
+		
+			return VARP[175]
+		}
+		legends_quest_388 -> {
+		
+			return VARP[139]
+		}
+		lost_city_389 -> {
+		
+			return VARP[147]
+		}
+		the_lost_tribe_390 -> {
+		
+			return VARBIT[532]
+		}
+		lunar_diplomacy_391 -> {
+		
+			return VARBIT[2448]
+		}
+		making_history_393 -> {
+		
+			return VARBIT[1383]
+		}
+		merlins_crystal_394 -> {
+		
+			return VARP[14]
+		}
+		monkey_madness_i_395 -> {
+		
+			return VARP[365]
+		}
+		monks_friend_397 -> {
+		
+			return VARP[30]
+		}
+		mountain_daughter_398 -> {
+		
+			return VARBIT[260]
+		}
+		mournings_end_part_i_399 -> {
+		
+			return VARP[517]
+		}
+		mournings_end_part_ii_400 -> {
+		
+			return VARBIT[1103]
+		}
+		murder_mystery_401 -> {
+		
+			return VARP[192]
+		}
+		my_arms_big_adventure_402 -> {
+		
+			return VARBIT[2790]
+		}
+		nature_spirit_403 -> {
+		
+			return VARP[307]
+		}
+		observatory_quest_404 -> {
+		
+			return VARP[112]
+		}
+		one_small_favour_406 -> {
+		
+			return VARP[416]
+		}
+		plague_city_407 -> {
+		
+			return VARP[165]
+		}
+		priest_in_peril_408 -> {
+		
+			return VARP[302]
+		}
+		rag_and_bone_man_i_410 -> {
+		
+			return VARP[714]
+		}
+		ratcatchers_412 -> {
+		
+			return VARBIT[1404]
+		}
+		recipe_for_disaster_413 -> {
+		
+			return VARBIT[1850]
+		}
+		recruitment_drive_414 -> {
+		
+			return VARBIT[657]
+		}
+		regicide_415 -> {
+		
+			return VARP[328]
+		}
+		roving_elves_416 -> {
+		
+			return VARP[402]
+		}
+		royal_trouble_417 -> {
+		
+			return VARBIT[2140]
+		}
+		rum_deal_418 -> {
+		
+			return VARP[600]
+		}
+		scorpion_catcher_419 -> {
+		
+			return VARP[76]
+		}
+		sea_slug_420 -> {
+		
+			return VARP[159]
+		}
+		the_slug_menace_425 -> {
+		
+			return VARBIT[2610]
+		}
+		shades_of_mortton_421 -> {
+		
+			return VARP[339]
+		}
+		shadow_of_the_storm_422 -> {
+		
+			return VARBIT[1372]
+		}
+		sheep_herder_423 -> {
+		
+			return VARP[60]
+		}
+		shilo_village_424 -> {
+		
+			return VARP[116]
+		}
+		a_souls_bane_426 -> {
+		
+			return VARBIT[2011]
+		}
+		spirits_of_the_elid_427 -> {
+		
+			return VARBIT[1444]
+		}
+		swan_song_428 -> {
+		
+			return VARBIT[2098]
+		}
+		tai_bwo_wannai_trio_429 -> {
+		
+			return VARP[320]
+		}
+		a_tail_of_two_cats_430 -> {
+		
+			return VARBIT[1028]
+		}
+		tears_of_guthix_433 -> {
+		
+			return VARBIT[451]
+		}
+		temple_of_ikov_434 -> {
+		
+			return VARP[26]
+		}
+		throne_of_miscellania_435 -> {
+		
+			return VARP[359]
+		}
+		the_tourist_trap_436 -> {
+		
+			return VARP[197]
+		}
+		witchs_house_448 -> {
+		
+			return VARP[226]
+		}
+		tree_gnome_village_438 -> {
+		
+			return VARP[111]
+		}
+		tribal_totem_439 -> {
+		
+			return VARP[200]
+		}
+		troll_romance_440 -> {
+		
+			return VARP[385]
+		}
+		troll_stronghold_441 -> {
+		
+			return VARP[317]
+		}
+		underground_pass_442 -> {
+		
+			return VARP[161]
+		}
+		wanted_444 -> {
+		
+			return VARBIT[1051]
+		}
+		watchtower_445 -> {
+		
+			return VARP[212]
+		}
+		cold_war_338 -> {
+		
+			return VARBIT[3293]
+		}
+		the_fremennik_isles_367 -> {
+		
+			return VARBIT[3311]
+		}
+		tower_of_life_437 -> {
+		
+			return VARBIT[3337]
+		}
+		the_great_brain_robbery_375 -> {
+		
+			return VARP[980]
+		}
+		what_lies_below_447 -> {
+		
+			return VARBIT[3523]
+		}
+		olafs_quest_405 -> {
+		
+			return VARBIT[3534]
+		}
+		another_slice_of_h_a_m_332 -> {
+		
+			return VARBIT[3550]
+		}
+		dream_mentor_349 -> {
+		
+			return VARBIT[3618]
+		}
+		grim_tales_376 -> {
+		
+			return VARBIT[2783]
+		}
+		kings_ransom_387 -> {
+		
+			return VARBIT[3888]
+		}
+		monkey_madness_ii_396 -> {
+		
+			return VARBIT[5027]
+		}
+		client_of_kourend_443 -> {
+		
+			return VARBIT[5619]
+		}
+		rag_and_bone_man_ii_411 -> {
+		
+			return VARP[714]
+		}
+		bone_voyage_366 -> {
+		
+			return VARBIT[5795]
+		}
+		the_queen_of_thieves_409 -> {
+		
+			return VARBIT[6037]
+		}
+		the_depths_of_despair_344 -> {
+		
+			return VARBIT[6027]
+		}
+		dragon_slayer_ii_348 -> {
+		
+			return VARBIT[6104]
+		}
+		tale_of_the_righteous_431 -> {
+		
+			return VARBIT[6358]
+		}
+		a_taste_of_hope_432 -> {
+		
+			return VARBIT[6396]
+		}
+		making_friends_with_my_arm_392 -> {
+		
+			return VARBIT[6528]
+		}
+		the_forsaken_tower_543 -> {
+		
+			return VARBIT[7796]
+		}
+		the_ascent_of_arceuus_542 -> {
+		
+			return VARBIT[7856]
+		}
+		enter_the_abyss_319 -> {
+		
+			return VARP[492]
+		}
+		architectural_alliance_320 -> {
+		
+			return VARBIT[4982]
+		}
+		bear_your_soul_321 -> {
+		
+			return VARBIT[5078]
+		}
+		alfred_grimhands_barcrawl_322 -> {
+		
+			return VARP[77]
+		}
+		the_generals_shadow_325 -> {
+		
+			return VARBIT[3330]
+		}
+		in_search_of_knowledge_602 -> {
+		
+			return VARBIT[8403]
+		}
+		skippy_and_the_mogres_326 -> {
+		
+			return VARBIT[1344]
+		}
+		the_mage_arena_327 -> {
+		
+			return VARP[267]
+		}
+		lair_of_tarn_razorlor_328 -> {
+		
+			return VARBIT[3290]
+		}
+		family_pest_329 -> {
+		
+			return VARBIT[5347]
+		}
+		the_mage_arena_ii_330 -> {
+		
+			return VARBIT[6067]
+		}
+		daddys_home_1688 -> {
+		
+			return VARBIT[10570]
+		}
+		x_marks_the_spot_550 -> {
+		
+			return VARBIT[8063]
+		}
+		song_of_the_elves_603 -> {
+		
+			return VARBIT[9016]
+		}
+		the_fremennik_exiles_718 -> {
+		
+			return VARBIT[9459]
+		}
+		sins_of_the_father_1276 -> {
+		
+			return VARBIT[7255]
+		}
+		a_porcine_of_interest_1690 -> {
+		
+			return VARBIT[10582]
+		}
+		getting_ahead_752 -> {
+		
+			return VARBIT[693]
+		}
+		struct_2874 -> {
+		
+			return VARBIT[12063]
+		}
+	else -> {
+	
+		return -1
+	}
+	}
+}

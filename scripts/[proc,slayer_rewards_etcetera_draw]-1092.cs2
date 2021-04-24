@@ -1,0 +1,58 @@
+// 1092 proc
+fun slayer_rewards_etcetera_draw(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component) {
+
+	val int6: Int = 0
+	val int7: Int = 0
+	val int8: Int = 0
+	val int9: Int = enum(int, int, enum_273, int8)
+	while (int9 ! -1 & int9 <= 50) {
+		if ((int9 < 32 & testbit(VARP[1076], int9) = ^false | int9 >= 32 & testbit(VARP[1344], calc(int9 % 32)) = ^false) & ~script3689(VARBIT[10032], int9) = 0) {
+			int6, int7 = calc(int6 + 1), calc(int7 + enum(int, int, enum_836, int9))
+		}
+		int8 = calc(int8 + 1)
+		int9 = enum(int, int, enum_273, int8)
+	}
+	cc_deleteall(component0)
+	val int10: Int = ~options_button_off(component0, 0)
+	cc_create(component0, ^iftype_text, int10)
+	int10 = calc(int10 + 1)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+	cc_settextfont(p11_full)
+	cc_settextshadow(true)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	val string0: String = "Nothing more to extend"
+	val string1: String = ""
+	if (int6 > 0 & int7 > 0) {
+		if (int6 > 1) {
+			int7 = interpolate(0, 95, 0, 100, int7)
+			if (int7 < 2) {
+				int7 = 2
+			}
+			string0 = "Extend remaining ${tostring(int6)} tasks: ${~tostring_spacer(int7, ",")} points"
+		} else {
+			string0 = "Extend remaining task: ${~tostring_spacer(int7, ",")} points"
+		}
+		cc_setcolour(0xff981f)
+		cc_settext(string0)
+		if_setonmouserepeat({
+			options_button_on(event_com, 0)
+		}, component0)
+		if_setonmouseleave({
+			options_button_off(event_com, 0)
+		}, component0)
+		if_setop(1, "Extend", component0)
+		if_setonop({
+			slayer_rewards_unlock_confirm(null, calc(50 + 9), string1, component1, component2, component3, component4, component5, int7)
+		}, component0)
+	} else {
+		cc_setcolour(0x7f4c0f)
+		cc_settext(string0)
+		if_setonmouserepeat(null, component0)
+		if_setonmouseleave(null, component0)
+		if_clearops(component0)
+		if_setonop(null, component0)
+	}
+	if_setsize(calc(parawidth(string0, if_getwidth(if_getlayer(component0)), p11_full) + 20), if_getheight(component0), ^setsize_abs, ^setsize_abs, component0)
+	return 
+}

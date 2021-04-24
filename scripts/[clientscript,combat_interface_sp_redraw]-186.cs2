@@ -1,0 +1,6 @@
+// 186 clientscript
+fun combat_interface_sp_redraw(component0: Component) {
+
+	~combat_interface_sp_redraw(component0)
+	return 
+}

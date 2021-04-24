@@ -1,0 +1,11 @@
+// 3084 proc
+fun br_reward_shop_showpoints(component0: Component) {
+
+	val string0: String = ","
+	if (VARP[262] < 32767) {
+		if_settext("Points: <col=ffffff>${~tostring_spacer(VARP[261], string0)}</col><br>Wins: <col=ffffff>${~tostring_spacer(VARP[262], string0)}</col>", component0)
+	} else {
+		if_settext("Points: <col=ffffff>${~tostring_spacer(VARP[261], string0)}</col><br>Wins: <col=ffffff>Lots!</col>", component0)
+	}
+	return 
+}

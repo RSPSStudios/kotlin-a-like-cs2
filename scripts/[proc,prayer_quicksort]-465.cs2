@@ -1,0 +1,29 @@
+// 465 proc
+fun prayer_quicksort(arrayint0: Int, int1: Int, int2: Int) {
+
+	val index3: Int = calc((int1 + int2) / 2)
+	val int4: Int = int0[index3]
+	int0[index3] = int0[int2]
+	int0[int2] = int4
+	val int5: Int = int1
+	val int6: Int = int1
+	val int7: Int = -1
+	while (int6 < int2) {
+		if (enum(int, int, enum_861, int0[int6]) <= enum(int, int, enum_861, int4)) {
+			int7 = int0[int6]
+			int0[int6] = int0[int5]
+			int0[int5] = int7
+			int5 = calc(int5 + 1)
+		}
+		int6 = calc(int6 + 1)
+	}
+	int0[int2] = int0[int5]
+	int0[int5] = int4
+	if (int1 < calc(int5 - 1)) {
+		~prayer_quicksort(int0, int1, calc(int5 - 1))
+	}
+	if (calc(int5 + 1) < int2) {
+		~prayer_quicksort(int0, calc(int5 + 1), int2)
+	}
+	return 
+}

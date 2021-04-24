@@ -1,0 +1,30 @@
+// 2822 clientscript
+fun script2822(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component) {
+
+	when (int0): Int {
+		41353235 -> {
+		
+			VARP[2195] = 1
+		}
+		41353236 -> {
+		
+			VARP[2195] = 5
+		}
+		41353237 -> {
+		
+			VARP[2195] = 10
+		}
+		41353239 -> {
+		
+			VARP[2195] = ^max_32bit_int
+		}
+		41353238 -> {
+		
+			if (~seed_vault_searching = 1) {
+				~meslayer_close(1, 1)
+			}
+		}
+	}
+	~script2823(int0, component1, component2, component3, component4, component5)
+	return 
+}

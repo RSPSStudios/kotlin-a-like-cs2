@@ -1,0 +1,12 @@
+// 1213 proc
+fun zeah_favour_recolour_list(int0: Int, int1: Int) {
+
+	if (int1 < int0) {
+		cc_setcolour(^red)
+		.cc_setcolour(^red)
+	} else {
+		cc_setcolour(0xff981f)
+		.cc_setcolour(0xff981f)
+	}
+	return 
+}

@@ -1,0 +1,141 @@
+// 3062 clientscript
+fun script3062(component0: Component, drop1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component) {
+
+	if (component0 = component3) {
+		if (drop1 = component4) {
+			VARBIT[10601], VARBIT[10602] = VARBIT[10602], VARBIT[10601]
+		} else if (drop1 = component5) {
+			VARBIT[10601], VARBIT[10603] = VARBIT[10603], VARBIT[10601]
+		} else if (drop1 = component6) {
+			VARBIT[10601], VARBIT[10604] = VARBIT[10604], VARBIT[10601]
+		} else if (drop1 = component7) {
+			VARBIT[10601], VARBIT[10605] = VARBIT[10605], VARBIT[10601]
+		} else if (drop1 = component8) {
+			VARBIT[10601], VARBIT[10606] = VARBIT[10606], VARBIT[10601]
+		} else if (drop1 = component9) {
+			VARBIT[10601], VARBIT[10607] = VARBIT[10607], VARBIT[10601]
+		} else if (drop1 = component10) {
+			VARBIT[10601], VARBIT[10608] = VARBIT[10608], VARBIT[10601]
+		}
+	} else if (component0 = component4) {
+		if (drop1 = component3) {
+			VARBIT[10602], VARBIT[10601] = VARBIT[10601], VARBIT[10602]
+		} else if (drop1 = component5) {
+			VARBIT[10602], VARBIT[10603] = VARBIT[10603], VARBIT[10602]
+		} else if (drop1 = component6) {
+			VARBIT[10602], VARBIT[10604] = VARBIT[10604], VARBIT[10602]
+		} else if (drop1 = component7) {
+			VARBIT[10602], VARBIT[10605] = VARBIT[10605], VARBIT[10602]
+		} else if (drop1 = component8) {
+			VARBIT[10602], VARBIT[10606] = VARBIT[10606], VARBIT[10602]
+		} else if (drop1 = component9) {
+			VARBIT[10602], VARBIT[10607] = VARBIT[10607], VARBIT[10602]
+		} else if (drop1 = component10) {
+			VARBIT[10602], VARBIT[10608] = VARBIT[10608], VARBIT[10602]
+		}
+	} else if (component0 = component5) {
+		if (drop1 = component3) {
+			VARBIT[10603], VARBIT[10601] = VARBIT[10601], VARBIT[10603]
+		} else if (drop1 = component4) {
+			VARBIT[10603], VARBIT[10602] = VARBIT[10602], VARBIT[10603]
+		} else if (drop1 = component6) {
+			VARBIT[10603], VARBIT[10604] = VARBIT[10604], VARBIT[10603]
+		} else if (drop1 = component7) {
+			VARBIT[10603], VARBIT[10605] = VARBIT[10605], VARBIT[10603]
+		} else if (drop1 = component8) {
+			VARBIT[10603], VARBIT[10606] = VARBIT[10606], VARBIT[10603]
+		} else if (drop1 = component9) {
+			VARBIT[10603], VARBIT[10607] = VARBIT[10607], VARBIT[10603]
+		} else if (drop1 = component10) {
+			VARBIT[10603], VARBIT[10608] = VARBIT[10608], VARBIT[10603]
+		}
+	} else if (component0 = component6) {
+		if (drop1 = component3) {
+			VARBIT[10604], VARBIT[10601] = VARBIT[10601], VARBIT[10604]
+		} else if (drop1 = component4) {
+			VARBIT[10604], VARBIT[10602] = VARBIT[10602], VARBIT[10604]
+		} else if (drop1 = component5) {
+			VARBIT[10604], VARBIT[10603] = VARBIT[10603], VARBIT[10604]
+		} else if (drop1 = component7) {
+			VARBIT[10604], VARBIT[10605] = VARBIT[10605], VARBIT[10604]
+		} else if (drop1 = component8) {
+			VARBIT[10604], VARBIT[10606] = VARBIT[10606], VARBIT[10604]
+		} else if (drop1 = component9) {
+			VARBIT[10604], VARBIT[10607] = VARBIT[10607], VARBIT[10604]
+		} else if (drop1 = component10) {
+			VARBIT[10604], VARBIT[10608] = VARBIT[10608], VARBIT[10604]
+		}
+	} else if (component0 = component7) {
+		if (drop1 = component3) {
+			VARBIT[10605], VARBIT[10601] = VARBIT[10601], VARBIT[10605]
+		} else if (drop1 = component4) {
+			VARBIT[10605], VARBIT[10602] = VARBIT[10602], VARBIT[10605]
+		} else if (drop1 = component5) {
+			VARBIT[10605], VARBIT[10603] = VARBIT[10603], VARBIT[10605]
+		} else if (drop1 = component6) {
+			VARBIT[10605], VARBIT[10604] = VARBIT[10604], VARBIT[10605]
+		} else if (drop1 = component8) {
+			VARBIT[10605], VARBIT[10606] = VARBIT[10606], VARBIT[10605]
+		} else if (drop1 = component9) {
+			VARBIT[10605], VARBIT[10607] = VARBIT[10607], VARBIT[10605]
+		} else if (drop1 = component10) {
+			VARBIT[10605], VARBIT[10608] = VARBIT[10608], VARBIT[10605]
+		}
+	} else if (component0 = component8) {
+		if (drop1 = component3) {
+			VARBIT[10606], VARBIT[10601] = VARBIT[10601], VARBIT[10606]
+		} else if (drop1 = component4) {
+			VARBIT[10606], VARBIT[10602] = VARBIT[10602], VARBIT[10606]
+		} else if (drop1 = component5) {
+			VARBIT[10606], VARBIT[10603] = VARBIT[10603], VARBIT[10606]
+		} else if (drop1 = component6) {
+			VARBIT[10606], VARBIT[10604] = VARBIT[10604], VARBIT[10606]
+		} else if (drop1 = component7) {
+			VARBIT[10606], VARBIT[10605] = VARBIT[10605], VARBIT[10606]
+		} else if (drop1 = component9) {
+			VARBIT[10606], VARBIT[10607] = VARBIT[10607], VARBIT[10606]
+		} else if (drop1 = component10) {
+			VARBIT[10606], VARBIT[10608] = VARBIT[10608], VARBIT[10606]
+		}
+	} else if (component0 = component9) {
+		if (drop1 = component3) {
+			VARBIT[10607], VARBIT[10601] = VARBIT[10601], VARBIT[10607]
+		} else if (drop1 = component4) {
+			VARBIT[10607], VARBIT[10602] = VARBIT[10602], VARBIT[10607]
+		} else if (drop1 = component5) {
+			VARBIT[10607], VARBIT[10603] = VARBIT[10603], VARBIT[10607]
+		} else if (drop1 = component6) {
+			VARBIT[10607], VARBIT[10604] = VARBIT[10604], VARBIT[10607]
+		} else if (drop1 = component7) {
+			VARBIT[10607], VARBIT[10605] = VARBIT[10605], VARBIT[10607]
+		} else if (drop1 = component8) {
+			VARBIT[10607], VARBIT[10606] = VARBIT[10606], VARBIT[10607]
+		} else if (drop1 = component10) {
+			VARBIT[10607], VARBIT[10608] = VARBIT[10608], VARBIT[10607]
+		}
+	} else if (component0 = component10) {
+		if (drop1 = component3) {
+			VARBIT[10608], VARBIT[10601] = VARBIT[10601], VARBIT[10608]
+		} else if (drop1 = component4) {
+			VARBIT[10608], VARBIT[10602] = VARBIT[10602], VARBIT[10608]
+		} else if (drop1 = component5) {
+			VARBIT[10608], VARBIT[10603] = VARBIT[10603], VARBIT[10608]
+		} else if (drop1 = component6) {
+			VARBIT[10608], VARBIT[10604] = VARBIT[10604], VARBIT[10608]
+		} else if (drop1 = component7) {
+			VARBIT[10608], VARBIT[10605] = VARBIT[10605], VARBIT[10608]
+		} else if (drop1 = component8) {
+			VARBIT[10608], VARBIT[10606] = VARBIT[10606], VARBIT[10608]
+		} else if (drop1 = component9) {
+			VARBIT[10608], VARBIT[10607] = VARBIT[10607], VARBIT[10608]
+		}
+	} else {
+		return 
+	}
+	sound_synth(synth_938, 1, 0)
+	~script3060(1, component2, component3, component4, component5, component6, component7, component8, component9, component10)
+	if_setontimer({
+		script3059(calc(clientclock + 3), component2, component3, component4, component5, component6, component7, component8, component9, component10)
+	}, component2)
+	return 
+}

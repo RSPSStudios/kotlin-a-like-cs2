@@ -1,0 +1,21 @@
+// 75 proc
+fun chatout_scrollup() {
+
+	val int0: Int = VARCINT[3]
+	val string0: String = "null"
+	if (int0 = -1) {
+		int0 = VARCINT[4]
+	}
+	if (VARCINT[3] ! VARCINT[4]) {
+		int0 = calc(int0 - 1)
+		if (int0 < 0) {
+			int0 = 19
+		}
+		string0 = ~chatout_get(int0)
+		if (string_length(string0) > 0) {
+			VARCSTRING[335] = string0
+			VARCINT[3] = int0
+		}
+	}
+	return 
+}

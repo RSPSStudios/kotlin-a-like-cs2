@@ -1,0 +1,13 @@
+// 1321 clientscript
+fun script1321(opindex0: Int, component1: Component, comsubid2: Int) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	if (cc_find(component1, comsubid2) = ^true) {
+		sound_synth(synth_2266, 1, 0)
+		VARBIT[5102] = calc(1 - VARBIT[5102])
+		~script1323(component1)
+	}
+	return 
+}

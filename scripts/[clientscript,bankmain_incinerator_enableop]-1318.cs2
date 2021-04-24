@@ -1,0 +1,27 @@
+// 1318 clientscript
+fun bankmain_incinerator_enableop(num0: Int, component1: Component, comsubid2: Int, comsubid3: Int, clock4: Int) {
+
+	if (clientclock < clock4) {
+		return 
+	}
+	if (cc_find(component1, comsubid2) = ^true & .cc_find(component1, comsubid3) = ^true) {
+		cc_setontimer(null)
+		.cc_settext("Destroy")
+		.cc_setcolour(0xff981f)
+		cc_setonmouserepeat({
+			cc_colour_swapper(component1, comsubid3, ^red)
+		})
+		cc_setonmouseleave({
+			cc_colour_swapper(component1, comsubid3, 0xff981f)
+		})
+		if (num0 > 1) {
+			cc_setop(1, "Destroy ALL")
+		} else {
+			cc_setop(1, "Destroy")
+		}
+		cc_setonop({
+			bankmain_incinerator_close(event_opindex, component1)
+		})
+	}
+	return 
+}

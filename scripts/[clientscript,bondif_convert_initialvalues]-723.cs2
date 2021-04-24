@@ -1,0 +1,8 @@
+// 723 clientscript
+fun bondif_convert_initialvalues(int0: Int, int1: Int) {
+
+	VARCINT[67] = int0
+	VARCINT[68] = int1
+	~bondif_convert_updatevalues
+	return 
+}

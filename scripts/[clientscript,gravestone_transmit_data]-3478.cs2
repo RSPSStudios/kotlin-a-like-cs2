@@ -1,0 +1,6 @@
+// 3478 clientscript
+fun gravestone_transmit_data(int0: Int, int1: Int) {
+
+	VARCINT[399], VARCINT[400] = int0, int1
+	return 
+}

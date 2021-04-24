@@ -1,0 +1,8 @@
+// 2311 clientscript
+fun script2311(comsubid0: Int, comsubid1: Int, int2: Int, int3: Int, int4: Int, int5: Int, int6: Int, int7: Int, int8: Int, int9: Int, int10: Int, int11: Int, int12: Int, int13: Int, int14: Int) {
+
+	if (cc_find(interface_28:1, comsubid0) = ^true & .cc_find(interface_28:1, comsubid1) = ^true) {
+		~script2312(int2, int3, int4, int5, int6, int7, int8, int9, int10, int11, int12, int13, int14)
+	}
+	return 
+}

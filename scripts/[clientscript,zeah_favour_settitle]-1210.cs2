@@ -1,0 +1,20 @@
+// 1210 clientscript
+fun zeah_favour_settitle(component0: Component, comsubid1: Int, int2: Int) {
+
+	val int3: Int = 0
+	if (int2 = 3) {
+		int3 = VARBIT[4896]
+	} else if (int2 = 2) {
+		int3 = VARBIT[4895]
+	} else if (int2 = 4) {
+		int3 = VARBIT[4898]
+	} else if (int2 = 5) {
+		int3 = VARBIT[4899]
+	} else if (int2 = 1) {
+		int3 = VARBIT[4894]
+	}
+	if (cc_find(component0, comsubid1) = ^true) {
+		~zeah_favour_settitle(int2, int3)
+	}
+	return 
+}

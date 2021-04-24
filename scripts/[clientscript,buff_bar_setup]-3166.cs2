@@ -1,0 +1,6 @@
+// 3166 clientscript
+fun buff_bar_setup(component0: Component, component1: Component) {
+
+	~buff_bar_setup(component0, component1)
+	return 
+}

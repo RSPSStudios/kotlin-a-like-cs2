@@ -1,0 +1,16 @@
+// 1721 proc
+fun worldmap_applyzoom(int0: Int, component1: Component, component2: Component) {
+
+	worldmap_setzoom(int0)
+	if (int0 >= 200) {
+		~worldmap_zoombutton_build(component2, "", true, component1, component2)
+	} else {
+		~worldmap_zoombutton_build(component2, "Zoom in", true, component1, component2)
+	}
+	if (int0 <= 25) {
+		~worldmap_zoombutton_build(component1, "", false, component1, component2)
+	} else {
+		~worldmap_zoombutton_build(component1, "Zoom out", false, component1, component2)
+	}
+	return 
+}

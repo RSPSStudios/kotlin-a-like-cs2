@@ -1,0 +1,6 @@
+// 2190 proc
+fun deadman_area_switch() {
+
+	docheat("~dmm_switch")
+	return 
+}

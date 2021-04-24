@@ -1,0 +1,6 @@
+// 1455 clientscript
+fun bank_payment_draw(component0: Component, int1: Int, boolean2: Boolean) {
+
+	~bank_payment_draw(component0, int1, boolean2)
+	return 
+}

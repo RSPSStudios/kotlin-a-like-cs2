@@ -1,0 +1,6 @@
+// 2574 clientscript
+fun tutorial_displayname_buttons(component0: Component, component1: Component) {
+
+	~tutorial_displayname_buttons(component0, component1)
+	return 
+}

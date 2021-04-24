@@ -1,0 +1,11 @@
+// 3200 clientscript
+fun clock_init(component0: Component) {
+
+	if_setontimer({
+		clock_fake_update(event_com)
+	}, component0)
+	if_setonvartransmit({
+		clock_update(event_com){VARP[1042]}
+	}, component0)
+	return 
+}

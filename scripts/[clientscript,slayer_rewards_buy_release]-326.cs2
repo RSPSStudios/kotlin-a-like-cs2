@@ -1,0 +1,12 @@
+// 326 clientscript
+fun slayer_rewards_buy_release(component0: Component, comsubid1: Int, clock2: Int) {
+
+	if (clientclock < clock2) {
+		return 
+	}
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_settrans(0)
+		cc_setontimer(null)
+	}
+	return 
+}

@@ -1,0 +1,31 @@
+// 3061 proc
+fun script3061(component0: Component, int1: Int) {
+
+	when (int1): Int {
+		1 -> {
+		
+			if_setmodel(model_28806, component0)
+			if_setmodelangle(0, 0, ~modulo(VARCINT[403], 2048), VARCINT[404], ~modulo(VARCINT[405], 2048), 800, component0)
+		}
+		2 -> {
+		
+			if_setmodel(model_28428, component0)
+			if_setmodelangle(0, 23, ~modulo(VARCINT[406], 2048), VARCINT[407], ~modulo(VARCINT[408], 2048), 800, component0)
+		}
+		3 -> {
+		
+			if_setmodel(model_28803, component0)
+			if_setmodelangle(0, 0, ~modulo(VARCINT[409], 2048), VARCINT[410], ~modulo(VARCINT[411], 2048), 800, component0)
+		}
+		4 -> {
+		
+			if_setmodel(model_28808, component0)
+			if_setmodelangle(0, 0, ~modulo(VARCINT[412], 2048), VARCINT[413], ~modulo(VARCINT[414], 2048), 800, component0)
+		}
+	else -> {
+	
+		if_setmodel(null, component0)
+	}
+	}
+	return 
+}

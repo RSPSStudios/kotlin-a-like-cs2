@@ -1,0 +1,8 @@
+// 1200 clientscript
+fun script1200(component0: Component, component1: Component, component2: Component, component3: Component, obj4: Obj, comsubid5: Int, comsubid6: Int) {
+
+	if (cc_find(component1, comsubid5) = ^true & .cc_find(component2, comsubid6) = ^true) {
+		~script1201(component0, component1, component2, component3, obj4)
+	}
+	return 
+}

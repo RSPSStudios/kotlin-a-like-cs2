@@ -1,0 +1,6 @@
+// 2302 clientscript
+fun tob_hud_nameflasher(component0: Component) {
+
+	if_setcolour(~tob_hud_nameflasher, component0)
+	return 
+}

@@ -1,0 +1,6 @@
+// 3192 clientscript
+fun league_relics_stop_loading(component0: Component) {
+
+	if_sethide(true, component0)
+	return 
+}

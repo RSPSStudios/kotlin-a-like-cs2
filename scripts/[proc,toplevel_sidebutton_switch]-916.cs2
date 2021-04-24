@@ -1,0 +1,34 @@
+// 916 proc
+fun toplevel_sidebutton_switch(int0: Int, enum1: Enum) {
+
+	val component2: Component = null
+	val component3: Component = null
+	val component4: Component = null
+	val int5: Int = 0
+	val component6: Component = enum(int, component, enum_1138, int5)
+	while (component6 ! null) {
+		component6 = enum(component, component, enum1, component6)
+		if (component6 ! null) {
+			if_setgraphic(null, component6)
+			component2 = enum(int, component, enum_1137, int5)
+			component2 = enum(component, component, enum1, component2)
+			if_sethide(true, component2)
+			if (int5 = int0) {
+				component3, component4 = component2, component6
+			}
+		}
+		int5 = calc(int5 + 1)
+		component6 = enum(int, component, enum_1138, int5)
+	}
+	if (component3 ! null & component4 ! null) {
+		VARCINT[171] = int0
+		if (if_hassub(component3) = true) {
+			if_sethide(false, component3)
+			~toplevel_sidebutton_highlight(component4)
+		}
+	} else {
+		VARCINT[171] = -1
+	}
+	~script919(enum1)
+	return 
+}

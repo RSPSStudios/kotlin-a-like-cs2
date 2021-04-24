@@ -1,0 +1,10 @@
+// 3162 clientscript
+fun league_icon_flash(int0: Int) {
+
+	if (int0 = 41222176) {
+		if_setontimer({
+			league_flash_timer(interface_629:32)
+		}, interface_629:28)
+	}
+	return 
+}

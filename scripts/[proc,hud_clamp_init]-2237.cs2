@@ -1,0 +1,9 @@
+// 2237 proc
+fun hud_clamp_init(component0: Component) {
+
+	val layer1: Component = if_getlayer(component0)
+	if (layer1 ! null) {
+		~hud_clamp_review(component0, layer1, -1, -1)
+	}
+	return 
+}

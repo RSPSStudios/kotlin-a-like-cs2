@@ -1,0 +1,51 @@
+// 2576 proc
+fun bankside_extraop(obj0: Obj, index1: Int): String {
+
+	if (VARBIT[10079] = 1) {
+		return ""
+	}
+	val string0: String = oc_param(obj0, param_595)
+	when (obj0): Obj {
+		small_pouch_5509 -> {
+		
+			if (testbit(VARP[261], 0) = ^true) {
+				string0 = "Empty"
+			}
+		}
+		medium_pouch_5510, medium_pouch_5511 -> {
+		
+			if (testbit(VARP[261], 1) = ^true) {
+				string0 = "Empty"
+			}
+		}
+		large_pouch_5512, large_pouch_5513 -> {
+		
+			if (testbit(VARP[261], 2) = ^true) {
+				string0 = "Empty"
+			}
+		}
+		giant_pouch_5514, giant_pouch_5515 -> {
+		
+			if (testbit(VARP[261], 3) = ^true) {
+				string0 = "Empty"
+			}
+		}
+		coal_bag_12019, open_coal_bag_24480 -> {
+		
+			if (testbit(VARP[261], 4) = ^true) {
+				string0 = "Fill"
+			}
+		}
+	else -> {
+	
+		if (string_length(string0) <= 0 & (map_members = ^true | oc_members(obj0) = ^false)) {
+			if (testbit(VARP[262], index1) = ^true) {
+				string0 = oc_iop(obj0, oc_param(obj0, param_148))
+			} else if (testbit(VARP[263], index1) = ^true) {
+				string0 = oc_iop(obj0, 1)
+			}
+		}
+	}
+	}
+	return string0
+}

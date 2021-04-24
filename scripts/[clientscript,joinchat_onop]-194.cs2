@@ -1,0 +1,17 @@
+// 194 clientscript
+fun joinchat_onop(opindex0: Int, opindex1: Int) {
+
+	if (opindex0 = opindex1) {
+		sound_synth(synth_2266, 1, 0)
+		if (clan_getchatcount > 0) {
+			if (~wildwars_world = 1) {
+				mes("You can't leave your team's chat channel during Wilderness Wars.")
+				return 
+			}
+			clan_leavechat
+		} else {
+			~meslayer_mode10
+		}
+	}
+	return 
+}

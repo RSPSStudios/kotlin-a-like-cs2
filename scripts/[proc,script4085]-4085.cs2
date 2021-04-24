@@ -1,0 +1,28 @@
+// 4085 proc
+fun script4085(boolean0: Boolean) {
+
+	val component1: Component = interface_621:2
+	val component2: Component = interface_621:69
+	val component3: Component = interface_621:80
+	if (if_gethide(component2) = false | boolean0 = true) {
+		if_sethide(true, component2)
+		if_sethide(true, component3)
+		if_sethide(false, component1)
+		~script4079
+		VARBIT[9638] = 0
+		VARBIT[9639] = 0
+		if (~on_mobile = true) {
+			~keyboard_hide
+		}
+		~script4083(1)
+	} else {
+		if_sethide(true, component1)
+		if_sethide(false, component2)
+		if_sethide(false, component3)
+		~script4083(0)
+		VARCSTRING[417] = ""
+		~script4095(interface_621:72)
+		~script4091(interface_621:74, interface_621:79)
+	}
+	return 
+}

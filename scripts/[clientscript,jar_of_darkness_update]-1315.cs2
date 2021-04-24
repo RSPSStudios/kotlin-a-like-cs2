@@ -1,0 +1,8 @@
+// 1315 clientscript
+fun jar_of_darkness_update(component0: Component, comsubid1: Int, clock2: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		~jar_of_darkness_update(component0, calc(clientclock - clock2))
+	}
+	return 
+}

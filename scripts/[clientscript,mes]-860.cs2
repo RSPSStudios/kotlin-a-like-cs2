@@ -1,0 +1,6 @@
+// 860 clientscript
+fun mes(mes0: String) {
+
+	mes(mes0)
+	return 
+}

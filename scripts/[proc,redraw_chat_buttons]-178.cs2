@@ -1,0 +1,52 @@
+// 178 proc
+fun redraw_chat_buttons() {
+
+	val int0: Int = 0
+	while (int0 <= 5) {
+		if (VARCINT[42] = int0 & VARCINT[41] = int0) {
+			if_setgraphic(~graphic_device("small_button_pressed_highlight", "med_buttons,3"), enum(int, component, enum_683, int0))
+		} else if (VARCINT[42] = int0) {
+			if_setgraphic(~graphic_device("small_button_highlight", "med_buttons,0"), enum(int, component, enum_683, int0))
+		} else if (VARCINT[41] = int0) {
+			if_setgraphic(~graphic_device("small_button_pressed", "med_buttons,3"), enum(int, component, enum_683, int0))
+		} else if (calc(~chat_alert_get(int0) / 25 % 2) = 1) {
+			if_setgraphic(~graphic_device("small_button_blue", "med_buttons,1"), enum(int, component, enum_683, int0))
+		} else {
+			if_setgraphic(~graphic_device("small_button", "med_buttons,0"), enum(int, component, enum_683, int0))
+		}
+		int0 = calc(int0 + 1)
+	}
+	int0 = 2
+	if (VARBIT[26] = 1) {
+		if_settext("<col=ffff00>Filtered", interface_162:12)
+	} else {
+		if_settext("On", interface_162:12)
+	}
+	val int1: Int = 0
+	while (int0 <= 5) {
+		when (~chat_get_filter(int0)): Int {
+			^chatfilter_friends -> {
+			
+				if_settext("<col=ffff00>Friends", enum(int, component, enum_684, int0))
+			}
+			^chatfilter_off -> {
+			
+				if_settext("<col=ff0000>Off", enum(int, component, enum_684, int0))
+			}
+			^chatfilter_hide -> {
+			
+				if_settext("<col=00ffff>Hide", enum(int, component, enum_684, int0))
+			}
+			^chatfilter_autochat -> {
+			
+				if_settext("<col=00afff>Autochat", enum(int, component, enum_684, int0))
+			}
+		else -> {
+		
+			if_settext("On", enum(int, component, enum_684, int0))
+		}
+		}
+		int0 = calc(int0 + 1)
+	}
+	return 
+}

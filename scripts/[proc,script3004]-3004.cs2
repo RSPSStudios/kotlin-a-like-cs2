@@ -1,0 +1,20 @@
+// 3004 proc
+fun script3004(component0: Component, int1: Int, text0: String, int2: Int, int3: Int, int4: Int, int5: Int, int6: Int): Int, Int {
+
+	cc_create(component0, ^iftype_text, int2)
+	cc_setsize(if_getwidth(component0), 15, ^setsize_abs, ^setsize_abs)
+	cc_setposition(calc(if_getwidth(component0) / 2 * int5 + 3), calc(32 * int4 + int3 + 2), ^setpos_abs_left, ^setpos_abs_top)
+	cc_settext(text0)
+	if (int1 = 1) {
+		cc_settextfont(b12_full)
+	} else {
+		cc_settextfont(p12_full)
+	}
+	cc_settextshadow(true)
+	cc_setcolour(0xff981f)
+	cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
+	if (int6 = 1) {
+		return calc(1 + int2), calc(int3 + 16)
+	}
+	return calc(1 + int2), int3
+}

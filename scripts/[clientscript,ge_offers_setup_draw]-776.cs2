@@ -1,0 +1,6 @@
+// 776 clientscript
+fun ge_offers_setup_draw(component0: Component, comsubid1: Int, comsubid2: Int, comsubid3: Int, comsubid4: Int, comsubid5: Int, comsubid6: Int, comsubid7: Int, comsubid8: Int, comsubid9: Int, comsubid10: Int, comsubid11: Int, comsubid12: Int, component13: Component, comsubid14: Int) {
+
+	~ge_offers_setup_draw(component0, comsubid1, comsubid2, comsubid3, comsubid4, comsubid5, comsubid6, comsubid7, comsubid8, comsubid9, comsubid10, comsubid11, comsubid12, component13, comsubid14)
+	return 
+}

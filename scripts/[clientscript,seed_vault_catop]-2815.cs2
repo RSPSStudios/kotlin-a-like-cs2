@@ -1,0 +1,10 @@
+// 2815 clientscript
+fun seed_vault_catop(component0: Component, comsubid1: Int, component2: Component, component3: Component) {
+
+	if (~seed_vault_searching = 1) {
+		~meslayer_close(1, 1)
+	}
+	VARBIT[8171] = comsubid1
+	~seed_vault_catselect(component0, component2, component3)
+	return 
+}

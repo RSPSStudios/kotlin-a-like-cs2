@@ -1,0 +1,12 @@
+// 3988 proc
+fun script3988() {
+
+	if (VARBIT[4608] = 0) {
+		return 
+	}
+	if (getwindowmode = ^windowmode_fixed) {
+		return 
+	}
+	VARBIT[2570] = calc(1 - VARBIT[2570])
+	return 
+}

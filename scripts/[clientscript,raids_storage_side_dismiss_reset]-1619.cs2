@@ -1,0 +1,9 @@
+// 1619 clientscript
+fun raids_storage_side_dismiss_reset(component0: Component, clock1: Int) {
+
+	if (clientclock < clock1) {
+		return 
+	}
+	~raids_storage_side_dismiss_enable(component0)
+	return 
+}

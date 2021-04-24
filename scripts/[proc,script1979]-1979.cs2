@@ -1,0 +1,12 @@
+// 1979 proc
+fun script1979(): Int {
+
+	if (VARCINT[41] ! 1337) {
+		VARCINT[196] = VARCINT[41]
+		VARCINT[41] = 1337
+		~toplevel_chatbox_background
+		~redraw_chat_buttons
+		return 1
+	}
+	return 0
+}

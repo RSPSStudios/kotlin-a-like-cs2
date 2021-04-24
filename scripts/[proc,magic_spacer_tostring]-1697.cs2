@@ -1,0 +1,14 @@
+// 1697 proc
+fun magic_spacer_tostring(int0: Int, string0: String): String {
+
+	if (int0 >= ^max_32bit_int) {
+		return "*"
+	}
+	if (int0 >= 10000000) {
+		return append(~tostring_spacer(calc(int0 / 1000000), ","), "M")
+	}
+	if (int0 >= 10000) {
+		return append(~tostring_spacer(calc(int0 / 1000), ","), "K")
+	}
+	return tostring(int0)
+}

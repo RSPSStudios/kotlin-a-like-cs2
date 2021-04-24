@@ -1,0 +1,6 @@
+// 3155 clientscript
+fun offer_banner(graphic0: Graphic) {
+
+	~offer_banner(interface_650:3, graphic0)
+	return 
+}

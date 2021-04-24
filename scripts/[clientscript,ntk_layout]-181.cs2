@@ -1,0 +1,6 @@
+// 181 clientscript
+fun ntk_layout(component0: Component) {
+
+	~ntk_layout(component0)
+	return 
+}

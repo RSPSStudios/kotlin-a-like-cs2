@@ -1,0 +1,7 @@
+// 1075 clientscript
+fun shop_main_update(component0: Component, size1: Int, inv2: Inv, obj3: Obj, int4: Int) {
+
+	~shop_main_update(component0, size1, inv2, obj3, int4)
+	~shop_quantity(interface_300:5, interface_300:8, interface_300:10, interface_300:12, interface_300:14, interface_300:2)
+	return 
+}

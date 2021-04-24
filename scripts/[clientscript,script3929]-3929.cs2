@@ -1,0 +1,9 @@
+// 3929 clientscript
+fun script3929(component0: Component, component1: Component) {
+
+	if (~on_mobile = false & cc_find(component0, 0) = ^true) {
+		cc_setcolour(0xff981f)
+	}
+	~deltooltip_action(component1)
+	return 
+}

@@ -1,0 +1,6 @@
+// 2772 clientscript
+fun pest_rewards_showpoints(component0: Component) {
+
+	~pest_rewards_showpoints(component0)
+	return 
+}

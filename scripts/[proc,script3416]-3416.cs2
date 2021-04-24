@@ -1,0 +1,29 @@
+// 3416 proc
+fun script3416(string0: String, fontmetrics0: Fontmetrics, int1: Int): Int, Int {
+
+	val int2: Int = 0
+	val int3: Int = 500
+	val int4: Int = 0
+	val int5: Int = 0
+	val int6: Int = 0
+	while (int2 < int3) {
+		int6 = calc(int6 + 10)
+		int4 = paraheight(string0, int6, fontmetrics0)
+		int5 = calc(int4 * int1)
+		if (int6 >= int5) {
+			int2 = int3
+			int6 = scale(150, 100, calc(int6 + 22))
+			int4 = paraheight(string0, calc(int6 - 22), fontmetrics0)
+			int5 = calc(int4 * int1)
+			int5 = ~max(calc(int5 + 76), 95)
+		}
+		int2 = calc(int2 + 1)
+	}
+	if (int6 < 185) {
+		int6 = 185
+		int4 = paraheight(string0, calc(int6 - 22), fontmetrics0)
+		int5 = calc(int4 * int1)
+		int5 = ~max(calc(int5 + 76), 95)
+	}
+	return int6, int5
+}

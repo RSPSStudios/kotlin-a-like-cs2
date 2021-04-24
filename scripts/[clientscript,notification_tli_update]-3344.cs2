@@ -1,0 +1,32 @@
+// 3344 clientscript
+fun notification_tli_update() {
+
+	if_setcolour(VARCINT[415], interface_660:4)
+	if_settext(VARCSTRING[387], interface_660:4)
+	if_setcolour(VARCINT[415], interface_660:8)
+	if_settext(VARCSTRING[388], interface_660:8)
+	if_setsize(VARCINT[390], VARCINT[389], ^setsize_abs, ^setsize_abs, interface_660:1)
+	val int0: Int = VARCINT[391]
+	val int1: Int = calc(VARCINT[392] * 30)
+	when (int0): Int {
+		1, 2 -> {
+		
+			if_setontimer({
+				notification_start(int0, VARCINT[390], VARCINT[389])
+			}, interface_660:2)
+		}
+		3 -> {
+		
+			if_setontimer({
+				notification_delay(int1)
+			}, interface_660:2)
+		}
+		4, 5 -> {
+		
+			if_setontimer({
+				notification_end(int0, VARCINT[390], VARCINT[389])
+			}, interface_660:2)
+		}
+	}
+	return 
+}

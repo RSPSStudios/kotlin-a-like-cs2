@@ -1,0 +1,6 @@
+// 4084 clientscript
+fun script4084(boolean0: Boolean) {
+
+	~script4085(boolean0)
+	return 
+}

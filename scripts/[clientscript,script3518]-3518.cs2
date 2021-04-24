@@ -1,0 +1,6 @@
+// 3518 clientscript
+fun script3518(component0: Component, component1: Component, component2: Component, boolean3: Boolean, text0: String, boolean4: Boolean, component5: Component, component6: Component) {
+
+	~script3519(component0, component1, component2, boolean3, text0, boolean4, component5, component6)
+	return 
+}

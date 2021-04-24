@@ -1,0 +1,6 @@
+// 1061 clientscript
+fun farming_tools_side_update(component0: Component, obj1: Obj, text0: String, int2: Int) {
+
+	~farming_tools_side_update(component0, obj1, text0, int2)
+	return 
+}

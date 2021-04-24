@@ -1,0 +1,18 @@
+// 877 proc
+fun br_hud_writetimer(component0: Component) {
+
+	val int1: Int = 0
+	if (VARBIT[9407] <= 0) {
+		if_settext("", component0)
+	} else {
+		int1 = calc((VARBIT[9407] - 1) / 2)
+		if (VARBIT[9407] <= 1) {
+			if_settext("<col=ff0000>0 mins</col>", component0)
+		} else if (int1 = 1) {
+			if_settext("1 min", component0)
+		} else {
+			if_settext("${tostring(int1)} mins", component0)
+		}
+	}
+	return 
+}

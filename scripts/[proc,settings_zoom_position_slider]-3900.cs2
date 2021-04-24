@@ -1,0 +1,20 @@
+// 3900 proc
+fun settings_zoom_position_slider(component0: Component, comsubid1: Int, int2: Int, y3: Int, int4: Int) {
+
+	val int5: Int = calc(896 - 128)
+	val int6: Int = calc(896 - 128)
+	val int7: Int = calc(int2 - 16)
+	val int8: Int = 0
+	val int9: Int = 0
+	int8, int9 = viewport_geteffectivesize
+	val int10: Int = 0
+	if (int8 > 334) {
+		int10 = calc((VARCINT[74] - 128) * int7 / int5)
+	} else {
+		int10 = calc((VARCINT[73] - 128) * int7 / int6)
+	}
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_setposition(calc(int4 + int10), y3, ^setpos_abs_left, ^setpos_abs_top)
+	}
+	return 
+}

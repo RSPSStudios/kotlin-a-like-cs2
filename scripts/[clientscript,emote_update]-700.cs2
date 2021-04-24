@@ -1,0 +1,6 @@
+// 700 clientscript
+fun emote_update(component0: Component) {
+
+	~emote_update(component0)
+	return 
+}

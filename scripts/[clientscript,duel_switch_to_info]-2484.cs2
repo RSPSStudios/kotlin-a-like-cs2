@@ -1,0 +1,10 @@
+// 2484 clientscript
+fun duel_switch_to_info(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component) {
+
+	if_sethide(false, component4)
+	if_sethide(true, component1)
+	if_sethide(true, component2)
+	if_sethide(true, component3)
+	~duel_switch_buttons(component0, component5, component6, component7, component8)
+	return 
+}

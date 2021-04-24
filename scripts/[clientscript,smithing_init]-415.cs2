@@ -1,0 +1,15 @@
+// 415 clientscript
+fun smithing_init(component0: Component) {
+
+	~smithing_setup
+	if_setonvartransmit({
+		smithing_setup{VARP[210], VARP[281], VARP[197], VARP[314], VARP[1317], VARP[1318]}
+	}, component0)
+	if_setonstattransmit({
+		smithing_setup{smithing}
+	}, component0)
+	if_setoninvtransmit({
+		smithing_setup{inv}
+	}, component0)
+	return 
+}

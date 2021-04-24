@@ -1,0 +1,19 @@
+// 933 proc
+fun snowflakes_zoom(component0: Component, height1: Int) {
+
+	val int2: Int = height1
+	if (int2 < 334) {
+		int2 = 334
+	} else if (int2 > 1500) {
+		int2 = 1500
+	}
+	val int3: Int = invpow(calc(int2 - 334), 2)
+	val int4: Int = invpow(calc(1500 - 334), 2)
+	val int5: Int = calc(180 - interpolate(0, int3, 0, int4, 125))
+	cc_setmodelangle(0, 20, 0, 0, 0, int5)
+	.cc_setmodelangle(0, 20, 0, 0, 0, int5)
+	if_setontimer({
+		snowflakes_zoom(event_com, cc_getid, .cc_getid, height1)
+	}, component0)
+	return 
+}

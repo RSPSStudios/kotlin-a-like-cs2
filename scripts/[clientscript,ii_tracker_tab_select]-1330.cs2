@@ -1,0 +1,6 @@
+// 1330 clientscript
+fun ii_tracker_tab_select(int0: Int, int1: Int, component2: Component, component3: Component, component4: Component, int5: Int, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component) {
+
+	~ii_tracker_tab_select(int0, int1, component2, component3, component4, int5, component6, component7, component8, component9, component10, component11, component12)
+	return 
+}

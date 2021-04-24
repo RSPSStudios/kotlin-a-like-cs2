@@ -1,0 +1,6 @@
+// 289 clientscript
+fun bankmain_itemnote(component0: Component, component1: Component) {
+
+	~bankmain_itemnote(component0, component1)
+	return 
+}

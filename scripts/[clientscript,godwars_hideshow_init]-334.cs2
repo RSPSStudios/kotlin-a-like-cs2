@@ -1,0 +1,14 @@
+// 334 clientscript
+fun godwars_hideshow_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component) {
+
+	~script2249(component1, setbit(0, 2))
+	~script1486(component6, ^setpos_abs_right, 1, 0)
+	VARCINT[50] = 256
+	~godwars_hideshow(component2, component3)
+	if_setontimer({
+		godwars_hideshow(component2, component3)
+	}, component0)
+	~script1490(component4)
+	~hud_clamp_init(component5)
+	return 
+}

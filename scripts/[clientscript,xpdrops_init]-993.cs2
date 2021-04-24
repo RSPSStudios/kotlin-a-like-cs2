@@ -1,0 +1,37 @@
+// 993 clientscript
+fun xpdrops_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component) {
+
+	~script2511(component1)
+	VARCINT[70], VARCINT[71] = 0, 0
+	VARCINT[207], VARCINT[208], VARCINT[209], VARCINT[210], VARCINT[211], VARCINT[212], VARCINT[213] = null, null, null, null, null, null, null
+	if (VARCINT[76] <= 0) {
+		VARCINT[76] = clientclock
+	}
+	val int10: Int = 0
+	val component11: Component = enum(int, component, enum_1163, int10)
+	while (component11 ! null) {
+		cc_deleteall(component11)
+		cc_create(component11, ^iftype_text, 0)
+		cc_settextshadow(true)
+		cc_settextalign(^settextalign_right, ^settextalign_centre, 0)
+		cc_settext("")
+		cc_sethide(true)
+		if_sethide(true, component11)
+		int10 = calc(int10 + 1)
+		component11 = enum(int, component, enum_1163, int10)
+	}
+	~xpdrops_redraw(component0, component3, component5, component6, component8, component9)
+	~xpdrops_setbar(component3, component4, component5, component6, component7, component8, component9)
+	if_setonvartransmit({
+		xpdrops_vartransmit(component0, component3, component4, component5, component6, component7, component8, component9){VARP[1227], VARP[1228], VARP[1229], VARP[1230], VARP[1231], VARP[1232], VARP[1233], VARP[1234], VARP[1235], VARP[1236], VARP[1237], VARP[1238], VARP[1239], VARP[1240], VARP[1241], VARP[1242], VARP[1243], VARP[1244], VARP[1245], VARP[1246], VARP[1247], VARP[1248], VARP[1249], VARP[1250], VARP[1251], VARP[1252], VARP[1253], VARP[1254], VARP[1255], VARP[1256], VARP[1257], VARP[1258], VARP[1259], VARP[1260], VARP[1261], VARP[1262], VARP[1263], VARP[1264], VARP[1265], VARP[1266], VARP[1267], VARP[1268], VARP[1269], VARP[1270], VARP[1271], VARP[1272], VARP[1273], VARP[1274], VARP[1275]}
+	}, component0)
+	~script1003(component0, component2, component3, component4, component5, component6, component7, component8, component9, int10)
+	if_setonvartransmit({
+		xpdrops_setposition(component3){VARP[1227]}
+	}, component3)
+	if_setonsubchange({
+		xpdrops_setposition(component3)
+	}, component3)
+	~xpdrops_showpanel(component0, component3, component8, component9)
+	return 
+}

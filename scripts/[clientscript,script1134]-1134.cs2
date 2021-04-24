@@ -1,0 +1,11 @@
+// 1134 clientscript
+fun script1134(opindex0: Int, int1: Int, component2: Component, component3: Component) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	VARBIT[4814] = int1
+	~script1135(component2, component3)
+	return 
+}

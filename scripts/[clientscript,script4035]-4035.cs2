@@ -1,0 +1,18 @@
+// 4035 clientscript
+fun script4035() {
+
+	val string0: String = "Unknown"
+	mes("Before type of platform call.")
+	val boolean0: Boolean = _6527
+	if (boolean0 = true) {
+		string0 = "Steam"
+	} else if (boolean0 = false) {
+		string0 = "Default"
+	} else if (boolean0 = true) {
+		string0 = "Android"
+	} else if (boolean0 = true) {
+		string0 = "Apple"
+	}
+	mes("Client: You are on platform type: ${string0}")
+	return 
+}

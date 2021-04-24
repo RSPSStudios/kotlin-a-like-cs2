@@ -1,0 +1,18 @@
+// 3718 proc
+fun league_tutorial_interface_update_graphic(): Graphic {
+
+	val struct0: Struct = enum(int, struct, enum_2670, VARBIT[10032])
+	if (struct0 = null) {
+		return null
+	}
+	val struct1: Struct = struct_param(struct0, param_1033)
+	if (struct1 = null) {
+		return null
+	}
+	val enum2: Enum = struct_param(struct1, param_1038)
+	if (enum2 = null) {
+		return null
+	}
+	val graphic3: Graphic = enum(int, graphic, enum2, VARBIT[10037])
+	return graphic3
+}

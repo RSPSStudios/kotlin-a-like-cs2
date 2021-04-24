@@ -1,0 +1,12 @@
+// 3438 proc
+fun script3438(index0: Int, int1: Int): Int {
+
+	VARP[2715] = clearbit(VARP[2715], index0)
+	VARP[2716] = clearbit(VARP[2716], index0)
+	if (int1 = 2) {
+		VARP[2715] = setbit(VARP[2715], index0)
+	} else if (int1 = 1) {
+		VARP[2716] = setbit(VARP[2716], index0)
+	}
+	return int1
+}

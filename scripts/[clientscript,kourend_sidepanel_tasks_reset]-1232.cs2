@@ -1,0 +1,9 @@
+// 1232 clientscript
+fun kourend_sidepanel_tasks_reset(component0: Component, string0: String, clock1: Int) {
+
+	if (clientclock < clock1) {
+		return 
+	}
+	~kourend_sidepanel_tasks_default(component0, string0)
+	return 
+}

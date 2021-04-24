@@ -1,0 +1,6 @@
+// 188 clientscript
+fun combat_interface_sp_updatebar(component0: Component, int1: Int) {
+
+	~combat_interface_sp_updatebar(component0, int1, 0)
+	return 
+}

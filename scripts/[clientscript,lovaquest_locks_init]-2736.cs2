@@ -1,0 +1,25 @@
+// 2736 clientscript
+fun lovaquest_locks_init(component0: Component, component1: Component, component2: Component, component3: Component) {
+
+	if (VARBIT[7797] < 4) {
+		if_setmodel(model_36241, component0)
+	} else {
+		if_setmodel(model_36244, component0)
+	}
+	if (VARBIT[7798] < 4) {
+		if_setmodel(model_36241, component1)
+	} else {
+		if_setmodel(model_36244, component1)
+	}
+	if (VARBIT[7799] < 4) {
+		if_setmodel(model_36241, component2)
+	} else {
+		if_setmodel(model_36244, component2)
+	}
+	if (VARBIT[7800] < 2) {
+		if_setmodel(model_36241, component3)
+	} else {
+		if_setmodel(model_36244, component3)
+	}
+	return 
+}

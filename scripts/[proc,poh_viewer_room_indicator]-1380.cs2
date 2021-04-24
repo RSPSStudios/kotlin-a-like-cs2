@@ -1,0 +1,10 @@
+// 1380 proc
+fun poh_viewer_room_indicator(int0: Int) {
+
+	if (VARBIT[5329] = int0) {
+		cc_sethide(false)
+	} else {
+		cc_sethide(true)
+	}
+	return 
+}

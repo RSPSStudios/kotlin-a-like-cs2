@@ -1,0 +1,12 @@
+// 905 clientscript
+fun toplevel_keypress(key0: Int, enum1: Enum, boolean2: Boolean) {
+
+	if (if_gettop = interface_80 & VARBIT[1463] = 1) {
+		~spectator_keypress(key0)
+	} else if (if_gettop = interface_165 & VARBIT[6331] = 1) {
+		~deadman_map_keypress(key0)
+	} else {
+		~toplevel_keypress(key0, enum1, boolean2)
+	}
+	return 
+}

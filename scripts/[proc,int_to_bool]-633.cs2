@@ -1,0 +1,8 @@
+// 633 proc
+fun int_to_bool(bool0: Int): Boolean {
+
+	if (bool0 >= ^true) {
+		return true
+	}
+	return false
+}

@@ -1,0 +1,11 @@
+// 2251 clientscript
+fun chatbox_open_input() {
+
+	if (~on_mobile = true) {
+		if (if_hassub(interface_162:562) = true | if_hassub(interface_162:561) = true | if_gethide(interface_162:40) = false) {
+			return 
+		}
+		_6522(VARCSTRING[335], 80)
+	}
+	return 
+}

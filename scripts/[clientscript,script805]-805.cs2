@@ -1,0 +1,25 @@
+// 805 clientscript
+fun script805(opindex0: Int, int1: Int, int2: Int, component3: Component, comsubid4: Int, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component) {
+
+	if (opindex0 ! 1 & opindex0 ! 2) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	if (opindex0 ! 1) {
+		return 
+	}
+	val inv10: Inv = enum(int, inv, enum_150, int1)
+	if (inv10 = null) {
+		VARBIT[4439] = 0
+	} else {
+		if (stockmarket_isofferempty(int1) = true & (inv_getobj(inv10, 0) ! null | inv_getobj(inv10, 1) ! null)) {
+			return 
+		}
+		VARBIT[4439] = calc(int1 + 1)
+		if (int2 ! -1 & stockmarket_isofferempty(int1) = true) {
+			VARBIT[4397] = int2
+		}
+	}
+	~ge_offers_switchpanel(component3, comsubid4, component5, component6, component7, component8, component9)
+	return 
+}

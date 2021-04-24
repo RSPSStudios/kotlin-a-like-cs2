@@ -1,0 +1,16 @@
+// 165 clientscript
+fun cws_graphic_swap_2(component0: Component, int1: Int) {
+
+	val int2: Int = ~cws_cc_getvar(int1)
+	if (int2 = 7) {
+		if_setgraphic("graphic_833", component0)
+		if_setcolour(^red, enum(int, component, enum_688, int1))
+	} else if (int2 = 6) {
+		if_setgraphic("graphic_834", component0)
+		if_setcolour(^green, enum(int, component, enum_688, int1))
+	} else {
+		if_setgraphic("graphic_943", component0)
+		if_setcolour(0xcccccc, enum(int, component, enum_688, int1))
+	}
+	return 
+}

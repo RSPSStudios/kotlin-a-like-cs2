@@ -1,0 +1,6 @@
+// 2480 clientscript
+fun duel_stake_load_highlight(component0: Component) {
+
+	if_setoutline(2, component0)
+	return 
+}

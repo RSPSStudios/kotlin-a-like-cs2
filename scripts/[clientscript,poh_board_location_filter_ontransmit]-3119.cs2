@@ -1,0 +1,6 @@
+// 3119 clientscript
+fun poh_board_location_filter_ontransmit(component0: Component, component1: Component, component2: Component) {
+
+	~poh_board_location_filter_activate(component0, component1, component2)
+	return 
+}

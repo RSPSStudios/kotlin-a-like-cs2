@@ -1,0 +1,19 @@
+// 490 clientscript
+fun bankside_switchview(int0: Int, component1: Component, component2: Component, component3: Component, int4: Int) {
+
+	if (int0 = 1 & (int4 = 1 | int4 = 2 | int4 = 0)) {
+		sound_synth(synth_2266, 1, 0)
+		if (int4 = 1) {
+			VARBIT[4139] = 1
+			VARBIT[9545] = 0
+		} else if (int4 = 2) {
+			VARBIT[4139] = 0
+			VARBIT[9545] = 1
+		} else {
+			VARBIT[4139] = 0
+			VARBIT[9545] = 0
+		}
+	}
+	~bankside_switchview(component1, component2, component3)
+	return 
+}

@@ -1,0 +1,11 @@
+// 1729 clientscript
+fun worldmap_keyreset(category0: Category, component1: Component, comsubid2: Int, clock3: Int) {
+
+	if (clientclock < clock3) {
+		return 
+	}
+	if (cc_find(component1, comsubid2) = ^true) {
+		~worldmap_keybutton(category0, component1, comsubid2)
+	}
+	return 
+}

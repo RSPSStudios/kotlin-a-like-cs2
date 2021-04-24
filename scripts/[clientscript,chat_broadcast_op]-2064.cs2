@@ -1,0 +1,43 @@
+// 2064 clientscript
+fun chat_broadcast_op(opindex0: Int, string0: String, int1: Int) {
+
+	val mesuid2: Int = -1
+	val boolean3: Boolean = false
+	val enum4: Enum = null
+	val component5: Component = null
+	if (opindex0 = 9) {
+		VARCINT[202] = clientclock
+		mesuid2 = ~script553
+		~rebuildchatbox(mesuid2)
+		~rebuildpmbox(mesuid2)
+	} else if (string_length(string0) > 0) {
+		if (clienttype = ^clienttype_ios) {
+			boolean3 = enum(int, boolean, enum_2761, int1)
+		}
+		if (boolean3 = false) {
+			if (int1 = 25) {
+				if (opindex0 = 6) {
+					enum4 = ~toplevel_getcomponents
+					if (enum4 ! null) {
+						component5 = enum(int, component, enum_1137, 8)
+						component5 = enum(component, component, enum4, component5)
+						if (component5 ! null & if_hassub(component5) = true) {
+							if_triggerop(interface_109:54, -1, 1)
+						} else {
+							mes("You can't open the poll menu at the moment.")
+						}
+					} else {
+						mes("You can't open the poll menu at the moment.")
+					}
+				} else {
+					mes("This link attempts to open the poll menu.")
+				}
+			} else if (opindex0 = 6) {
+				~openurl_raw(string0, true, true)
+			} else {
+				mes("Link destination: <col=ef1020>${string0}</col>")
+			}
+		}
+	}
+	return 
+}

@@ -1,0 +1,10 @@
+// 2210 clientscript
+fun script2210(opindex0: Int, component1: Component) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	VARBIT[6281] = enum(component, int, enum_1907, component1)
+	~script2213
+	return 
+}

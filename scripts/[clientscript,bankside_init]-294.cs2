@@ -1,0 +1,51 @@
+// 294 clientscript
+fun bankside_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component) {
+
+	cc_deleteall(component3)
+	cc_deleteall(component4)
+	val size11: Int = 0
+	val size12: Int = inv_size(inv)
+	while (size11 < size12) {
+		cc_create(component3, ^iftype_graphic, size11)
+		.cc_create(component4, ^iftype_graphic, size11)
+		cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+		.cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+		cc_setgraphicshadow(0x333333)
+		.cc_setgraphicshadow(0x333333)
+		cc_setoutline(1)
+		.cc_setoutline(1)
+		cc_setdragdeadzone(5)
+		.cc_setdragdeadzone(5)
+		cc_setdragdeadtime(5)
+		.cc_setdragdeadtime(5)
+		cc_sethide(false)
+		.cc_sethide(false)
+		size11 = calc(size11 + 1)
+	}
+	~bankside_build(component1, component3, component2, component4, component5, component8)
+	if_setoninvtransmit({
+		bankside_build(component1, component3, component2, component4, component5, component8){inv, inv_516, inv_646}
+	}, component1)
+	if_setonvartransmit({
+		bankside_build(component1, component3, component2, component4, component5, component8){VARP[304], VARP[1666], VARP[1141], VARP[261], VARP[262], VARP[263]}
+	}, component1)
+	~bankside_bag_draw(component6, inv_516)
+	if_setoninvtransmit({
+		bankside_bag_draw(component6, inv_516){inv_516}
+	}, component5)
+	~bankside_bag_draw(component9, inv_646)
+	if_setoninvtransmit({
+		bankside_bag_draw(component9, inv_646){inv_646}
+	}, component8)
+	~bankside_switchview(component1, component5, component8)
+	if_setonvartransmit({
+		bankside_switchview(-1, component1, component5, component8, -1){VARP[115]}
+	}, component0)
+	if_setonop({
+		bankside_switchview(event_opindex, component1, component5, component8, 0)
+	}, component7)
+	if_setonop({
+		bankside_switchview(event_opindex, component1, component5, component8, 0)
+	}, component10)
+	return 
+}

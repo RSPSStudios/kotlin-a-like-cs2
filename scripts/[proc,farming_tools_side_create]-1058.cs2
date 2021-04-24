@@ -1,0 +1,12 @@
+// 1058 proc
+fun farming_tools_side_create(component0: Component, namedobj1: Namedobj, text0: String) {
+
+	if_setonmouserepeat({
+		farming_tools_side_recreate(component0, namedobj1, text0, true)
+	}, component0)
+	if_setonmouseleave({
+		farming_tools_side_recreate(component0, namedobj1, text0, false)
+	}, component0)
+	~farming_tools_side_recreate(component0, namedobj1, text0, false)
+	return 
+}

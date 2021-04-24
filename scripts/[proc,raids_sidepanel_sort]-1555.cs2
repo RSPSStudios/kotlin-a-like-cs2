@@ -1,0 +1,41 @@
+// 1555 proc
+fun raids_sidepanel_sort(arrayint0: Int, int1: Int, int2: Int, int3: Int) {
+
+	val index4: Int = calc((int1 + int2) / 2)
+	val int5: Int = int0[index4]
+	int0[index4] = int0[int2]
+	int0[int2] = int5
+	val int6: Int = int1
+	val int7: Int = int1
+	val int8: Int = -1
+	val string0: String = ""
+	val string1: String = ""
+	while (int7 < int2) {
+		if (cc_find(interface_500:10, calc(int0[int7] * 7 + int3)) = ^true) {
+			string0 = cc_gettext
+		} else {
+			string0 = ""
+		}
+		if (cc_find(interface_500:10, calc(int5 * 7 + int3)) = ^true) {
+			string1 = cc_gettext
+		} else {
+			string1 = ""
+		}
+		if (compare(string0, string1) <= 0) {
+			int8 = int0[int7]
+			int0[int7] = int0[int6]
+			int0[int6] = int8
+			int6 = calc(int6 + 1)
+		}
+		int7 = calc(int7 + 1)
+	}
+	int0[int2] = int0[int6]
+	int0[int6] = int5
+	if (int1 < calc(int6 - 1)) {
+		~raids_sidepanel_sort(int0, int1, calc(int6 - 1), int3)
+	}
+	if (calc(int6 + 1) < int2) {
+		~raids_sidepanel_sort(int0, calc(int6 + 1), int2, int3)
+	}
+	return 
+}

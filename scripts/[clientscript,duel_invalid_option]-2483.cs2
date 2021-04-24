@@ -1,0 +1,6 @@
+// 2483 clientscript
+fun duel_invalid_option() {
+
+	mes("To view your opponent's backpack or worn inventories the option 'Show Inventories' must be enabled.")
+	return 
+}

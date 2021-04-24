@@ -1,0 +1,7 @@
+// 1433 clientscript
+fun wint_inside_event() {
+
+	if_sethide(false, interface_396:4)
+	if_sethide(false, interface_396:16)
+	return 
+}

@@ -1,0 +1,26 @@
+// 3104 proc
+fun canoe_return_locations(): Int, Int, Int, Int, Int, Int {
+
+	when (~canoe_get_state(VARBIT[1846])): Int {
+		11 -> {
+		
+			return ~canoe_paddle_log(VARBIT[1846])
+		}
+		12 -> {
+		
+			return ~canoe_paddle_dugout(VARBIT[1846])
+		}
+		13 -> {
+		
+			return ~canoe_paddle_stable_dugout(VARBIT[1846])
+		}
+		14 -> {
+		
+			return ~canoe_paddle_stable_waka(VARBIT[1846])
+		}
+	else -> {
+	
+		return 0, 0, 0, 0, 0, 0
+	}
+	}
+}

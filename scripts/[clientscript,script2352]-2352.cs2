@@ -1,0 +1,81 @@
+// 2352 clientscript
+fun script2352() {
+
+	val int0: Int = 0
+	if (VARP[281] = 1000 | VARP[2686] = 1000) {
+		~script2261(0, 0)
+	}
+	if (VARBIT[11843] = 1) {
+		~script2261(1, 0)
+	}
+	if (VARP[1116] > 0 | VARP[1111] > 0 | VARP[1112] > 0 | VARP[1354] > 0 | VARP[1533] > 0 | VARP[1534] > 0 | VARP[2201] > 0) {
+		~script2261(2, 0)
+	}
+	if (VARBIT[11844] = 1) {
+		~script2261(3, 0)
+	}
+	if (VARBIT[11845] = 1) {
+		~script2261(4, 0)
+	}
+	if (VARP[178] >= 3) {
+		~script2261(5, 0)
+	}
+	if (VARBIT[2561] >= 3) {
+		~script2261(6, 0)
+	}
+	if (VARBIT[11846] = 1) {
+		~script2261(7, 0)
+	}
+	if (VARBIT[11847] = 1) {
+		~script2261(8, 0)
+	}
+	if (VARBIT[11848] = 1) {
+		~script2261(9, 0)
+	}
+	if (VARBIT[11849] = 1) {
+		~script2261(11, 0)
+	}
+	if (VARBIT[11850] = 1) {
+		~script2261(12, 0)
+	}
+	if (VARBIT[11851] = 1) {
+		~script2261(13, 0)
+	}
+	if (VARBIT[11852] = 1) {
+		~script2261(15, 0)
+	}
+	if (VARBIT[11853] = 1) {
+		~script2261(16, 0)
+	}
+	if (VARP[29] >= 2) {
+		~script2261(17, 0)
+	}
+	val int1: Int = 0
+	if (VARBIT[11854] = 1) {
+		int1 = calc(int1 + 1)
+	}
+	if (VARBIT[11855] = 1) {
+		int1 = calc(int1 + 1)
+	}
+	if (VARBIT[11856] = 1) {
+		int1 = calc(int1 + 1)
+	}
+	if (VARBIT[11857] = 1) {
+		int1 = calc(int1 + 1)
+	}
+	if (VARBIT[11858] = 1) {
+		int1 = calc(int1 + 1)
+	}
+	if (VARBIT[11859] = 1) {
+		int1 = calc(int1 + 1)
+	}
+	if (VARBIT[11860] = 1) {
+		int1 = calc(int1 + 1)
+	}
+	~script2351(18, int1, 0)
+	if (VARP[176] >= 10) {
+		~script2261(19, 0)
+	}
+	int0 = _3702
+	return 
+}

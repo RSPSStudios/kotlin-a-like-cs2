@@ -1,0 +1,25 @@
+// 3883 proc
+fun script3883(struct0: Struct, int1: Int, comsubid2: Int, comsubid3: Int, comsubid4: Int, component5: Component, comsubid6: Int) {
+
+	when (int1): Int {
+		39 -> {
+		
+			cc_setonvartransmit({
+				settings_input_setting_transmit(struct0, int1, comsubid2, comsubid3, comsubid4, component5, comsubid6){VARP[427], VARP[284], VARP[2855]}
+			})
+		}
+		43 -> {
+		
+			cc_setonvartransmit({
+				settings_input_setting_transmit(struct0, int1, comsubid2, comsubid3, comsubid4, component5, comsubid6){VARP[284], VARP[2855]}
+			})
+		}
+		66 -> {
+		
+			cc_setonvartransmit({
+				settings_input_setting_transmit(struct0, int1, comsubid2, comsubid3, comsubid4, component5, comsubid6){VARP[1348], VARP[2855]}
+			})
+		}
+	}
+	return 
+}

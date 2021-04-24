@@ -1,0 +1,7 @@
+// 1742 clientscript
+fun worldmap_overview_toggle(boolean0: Boolean, component1: Component, component2: Component) {
+
+	sound_synth(synth_2266, 1, 0)
+	~worldmap_overview_toggle(boolean0, component1, component2)
+	return 
+}

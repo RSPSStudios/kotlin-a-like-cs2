@@ -1,0 +1,89 @@
+// 1757 proc
+fun worldmap_elements_marker(coord0: Coord, struct1: Struct, component2: Component, int3: Int, int4: Int, int5: Int, int6: Int, int7: Int): Int {
+
+	val int8: Int = struct_param(struct1, param_462)
+	coord0 = ~worldmap_findcoordinmap(worldmap_getcurrentmap, coord0)
+	if (coord0 = null) {
+		if (cc_find(component2, int7) = ^true) {
+			cc_sethide(true)
+		} else {
+			cc_create(component2, ^iftype_graphic, int7)
+			cc_sethide(true)
+			cc_setsize(int8, int8, ^setsize_abs, ^setsize_abs)
+		}
+		return calc(int7 + 1)
+	}
+	val x9: Int = 0
+	val y10: Int = 0
+	x9, y10 = ~worldmap_elements_chooseposition(coord0, false, component2, int3, int4, int5, int6)
+	val graphic11: Graphic = struct_param(struct1, param_459)
+	val int12: Int = calc(int8 / 2)
+	val angle13: Int = 0
+	val int14: Int = 0
+	val x15: Int = calc(if_getwidth(component2) / 2)
+	val y16: Int = calc(if_getheight(component2) / 2)
+	if (x9 < calc(0 - x15)) {
+		x9 = calc(int12 - x15)
+		if (y10 < calc(0 - y16)) {
+			graphic11, angle13, y10 = struct_param(struct1, param_461), 16384, calc(int12 - y16)
+		} else if (y10 > y16) {
+			graphic11, angle13, y10 = struct_param(struct1, param_461), 32768, calc(y16 - int12)
+		} else {
+			graphic11, angle13 = struct_param(struct1, param_460), 32768
+		}
+	} else if (x9 > x15) {
+		x9 = calc(x15 - int12)
+		if (y10 < calc(0 - y16)) {
+			graphic11, angle13, y10 = struct_param(struct1, param_461), 0, calc(int12 - y16)
+		} else if (y10 > y16) {
+			graphic11, angle13, y10 = struct_param(struct1, param_461), 49152, calc(y16 - int12)
+		} else {
+			graphic11, angle13 = struct_param(struct1, param_460), 0
+		}
+	} else if (y10 < calc(0 - y16)) {
+		graphic11, angle13, y10 = struct_param(struct1, param_460), 16384, calc(int12 - y16)
+	} else if (y10 > y16) {
+		graphic11, angle13, y10 = struct_param(struct1, param_460), 49152, calc(y16 - int12)
+	} else {
+		angle13, int14 = ~script1759(struct1), 1
+	}
+	if (cc_find(component2, int7) = ^true) {
+		cc_sethide(false)
+		cc_setop(1, "Focus on")
+		cc_setopbase("<col=ff9040>${struct_param(struct1, param_985)}</col>")
+		cc_setonop({
+			script1756(event_opindex, coord0, false)
+		})
+		cc_setposition(x9, y10, ^setpos_abs_centre, ^setpos_abs_centre)
+		cc_setgraphic(graphic11)
+		cc_set2dangle(angle13)
+		if (int14 = 1 & testbit(VARBIT[5640], 4) = ^false & struct_param(struct1, param_986) = true) {
+			cc_setontimer({
+				script1758(event_com, event_comsubid, struct1)
+			})
+		} else {
+			cc_setontimer(null)
+		}
+	} else {
+		cc_create(component2, ^iftype_graphic, int7)
+		cc_sethide(false)
+		cc_setop(1, "Focus on")
+		cc_setopbase("<col=ff9040>${struct_param(struct1, param_985)}</col>")
+		cc_setonop({
+			script1756(event_opindex, coord0, false)
+		})
+		cc_setsize(int8, int8, ^setsize_abs, ^setsize_abs)
+		cc_setposition(x9, y10, ^setpos_abs_centre, ^setpos_abs_centre)
+		cc_setgraphic(graphic11)
+		cc_set2dangle(angle13)
+		if (int14 = 1 & testbit(VARBIT[5640], 4) = ^false & struct_param(struct1, param_986) = true) {
+			cc_setontimer({
+				script1758(event_com, event_comsubid, struct1)
+			})
+		} else {
+			cc_setontimer(null)
+		}
+	}
+	int7 = calc(int7 + 1)
+	return int7
+}

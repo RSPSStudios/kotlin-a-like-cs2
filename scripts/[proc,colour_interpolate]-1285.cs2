@@ -1,0 +1,20 @@
+// 1285 proc
+fun colour_interpolate(int0: Int, int1: Int, int2: Int, int3: Int, int4: Int): Int {
+
+	if (int4 <= int2) {
+		return int0
+	}
+	if (int4 >= int3) {
+		return int1
+	}
+	val int5: Int = calc(int0 / 256 / 256)
+	val int6: Int = calc(int1 / 256 / 256)
+	val int7: Int = calc(int0 / 256 & 255)
+	val int8: Int = calc(int1 / 256 & 255)
+	val int9: Int = calc(int0 & 255)
+	val int10: Int = calc(int1 & 255)
+	val int11: Int = interpolate(int5, int6, int2, int3, int4)
+	val int12: Int = interpolate(int7, int8, int2, int3, int4)
+	val int13: Int = interpolate(int9, int10, int2, int3, int4)
+	return calc(int11 * 256 * 256 + int12 * 256 + int13)
+}

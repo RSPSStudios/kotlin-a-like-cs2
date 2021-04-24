@@ -1,0 +1,6 @@
+// 917 clientscript
+fun toplevel_mainmodal_background(colour0: Int, trans1: Int) {
+
+	~toplevel_mainmodal_background(colour0, trans1)
+	return 
+}

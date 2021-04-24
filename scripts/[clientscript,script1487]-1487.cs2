@@ -1,0 +1,6 @@
+// 1487 clientscript
+fun script1487(component0: Component, component1: Component, component2: Component, component3: Component) {
+
+	~script1489(component0, component1, component2, component3, ^min_32bit_int, ^min_32bit_int)
+	return 
+}

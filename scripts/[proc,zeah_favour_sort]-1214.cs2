@@ -1,0 +1,33 @@
+// 1214 proc
+fun zeah_favour_sort(arrayint0: Int, int1: Int, int2: Int) {
+
+	val index3: Int = calc((int1 + int2) / 2)
+	val int4: Int = int0[index3]
+	int0[index3] = int0[int2]
+	int0[int2] = int4
+	val int5: Int = int1
+	val int6: Int = int1
+	val int7: Int = -1
+	val int8: Int = 0
+	val int9: Int = 0
+	while (int6 < int2) {
+		int8 = calc(enum(int, int, enum_1267, int0[int6]) * 1000 + int0[int6])
+		int9 = calc(enum(int, int, enum_1267, int4) * 1000 + int4)
+		if (int8 <= int9) {
+			int7 = int0[int6]
+			int0[int6] = int0[int5]
+			int0[int5] = int7
+			int5 = calc(int5 + 1)
+		}
+		int6 = calc(int6 + 1)
+	}
+	int0[int2] = int0[int5]
+	int0[int5] = int4
+	if (int1 < calc(int5 - 1)) {
+		~zeah_favour_sort(int0, int1, calc(int5 - 1))
+	}
+	if (calc(int5 + 1) < int2) {
+		~zeah_favour_sort(int0, calc(int5 + 1), int2)
+	}
+	return 
+}

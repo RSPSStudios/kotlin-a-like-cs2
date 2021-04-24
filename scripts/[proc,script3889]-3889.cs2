@@ -1,0 +1,8 @@
+// 3889 proc
+fun script3889(component0: Component, comsubid1: Int, int2: Int, y3: Int, int4: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_setposition(calc(int4 + scale(VARCINT[381], 600, int2)), y3, ^setpos_abs_left, ^setpos_abs_top)
+	}
+	return 
+}

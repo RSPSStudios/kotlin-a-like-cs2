@@ -1,0 +1,83 @@
+// 2186 proc
+fun spectator_keypress(key0: Int) {
+
+	when (key0): Int {
+		^key_f1 -> {
+		
+			if (~deadman_world = 1) {
+				~deadman_freecam_enable
+			}
+		}
+		^key_f2 -> {
+		
+			if (~deadman_world = 1) {
+				~deadman_overlay_hide
+			}
+		}
+		^key_f3 -> {
+		
+			if (~deadman_world = 1) {
+				~deadman_map_enable
+			}
+		}
+		^key_f4 -> {
+		
+			if (~deadman_world = 1) {
+				~deadman_area_switch
+			}
+		}
+		^key_f5 -> {
+		
+			if (~deadman_world = 1) {
+				~script2191
+			}
+		}
+		^key_f6 -> {
+		
+			if (~deadman_world = 1) {
+				~script2192
+			}
+		}
+		^key_f7 -> {
+		
+			if (~deadman_world = 1) {
+				~deadman_arenas_tele
+			}
+		}
+		^key_f8 -> {
+		
+			if (~deadman_world = 1) {
+				~deadman_1v1_tele
+			}
+		}
+		^key_f9 -> {
+		
+			if (~deadman_world = 1) {
+				~deadman_chest_tele
+			}
+		}
+		^key_f10 -> {
+		
+			if (~deadman_world = 1) {
+				~deadman_lobby_tele
+			}
+		}
+		^key_f12 -> {
+		
+			docheat("~dmm_disablespectator_request")
+		}
+		^key_page_up -> {
+		
+			~script2222
+		}
+		^key_page_down -> {
+		
+			~script2223
+		}
+	else -> {
+	
+		return 
+	}
+	}
+	return 
+}

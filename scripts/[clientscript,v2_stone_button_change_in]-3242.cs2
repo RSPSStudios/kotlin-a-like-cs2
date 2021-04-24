@@ -1,0 +1,6 @@
+// 3242 clientscript
+fun v2_stone_button_change_in(component0: Component, int1: Int) {
+
+	~v2_stone_button_change_in(component0, int1)
+	return 
+}

@@ -1,0 +1,6 @@
+// 1441 clientscript
+fun duel_wait_button(component0: Component, int1: Int) {
+
+	~duel_wait_button(component0, int1)
+	return 
+}

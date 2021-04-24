@@ -1,0 +1,6 @@
+// 3665 clientscript
+fun league_areas_mouseleave(int0: Int, component1: Component, component2: Component) {
+
+	~league_areas_mouseleave(int0, component1, component2)
+	return 
+}

@@ -1,0 +1,71 @@
+// 324 proc
+fun combat_interface_setbuttons(graphic0: Graphic, graphic1: Graphic, graphic2: Graphic, graphic3: Graphic) {
+
+	if (VARP[43] = 0) {
+		if (graphic0 ! null) {
+			~options_button_on(interface_593:5, 0)
+		}
+		if (graphic1 ! null) {
+			~options_button_off(interface_593:9, 0)
+		}
+		if (graphic2 ! null) {
+			~options_button_off(interface_593:13, 0)
+		}
+		if (graphic3 ! null) {
+			~options_button_off(interface_593:17, 0)
+		}
+	} else if (VARP[43] = 1) {
+		if (graphic0 ! null) {
+			~options_button_off(interface_593:5, 0)
+		}
+		if (graphic1 ! null) {
+			~options_button_on(interface_593:9, 0)
+		}
+		if (graphic2 ! null) {
+			~options_button_off(interface_593:13, 0)
+		}
+		if (graphic3 ! null) {
+			~options_button_off(interface_593:17, 0)
+		}
+	} else if (VARP[43] = 2) {
+		if (graphic0 ! null) {
+			~options_button_off(interface_593:5, 0)
+		}
+		if (graphic1 ! null) {
+			~options_button_off(interface_593:9, 0)
+		}
+		if (graphic2 ! null) {
+			~options_button_on(interface_593:13, 0)
+		}
+		if (graphic3 ! null) {
+			~options_button_off(interface_593:17, 0)
+		}
+	} else if (VARP[43] = 3) {
+		if (graphic0 ! null) {
+			~options_button_off(interface_593:5, 0)
+		}
+		if (graphic1 ! null) {
+			~options_button_off(interface_593:9, 0)
+		}
+		if (graphic2 ! null) {
+			~options_button_off(interface_593:13, 0)
+		}
+		if (graphic3 ! null) {
+			~options_button_on(interface_593:17, 0)
+		}
+	} else {
+		if (graphic0 ! null) {
+			~options_button_off(interface_593:5, 0)
+		}
+		if (graphic1 ! null) {
+			~options_button_off(interface_593:9, 0)
+		}
+		if (graphic2 ! null) {
+			~options_button_off(interface_593:13, 0)
+		}
+		if (graphic3 ! null) {
+			~options_button_off(interface_593:17, 0)
+		}
+	}
+	return 
+}

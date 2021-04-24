@@ -1,0 +1,9 @@
+// 314 proc
+fun music_setcolour(colour0: Int) {
+
+	cc_setcolour(colour0)
+	cc_setonmouseleave({
+		cc_colour_swapper(event_com, event_comsubid, colour0)
+	})
+	return 
+}

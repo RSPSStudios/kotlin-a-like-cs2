@@ -1,0 +1,36 @@
+// 3270 proc
+fun account_polls_update() {
+
+	val component0: Component = interface_109:53
+	val component1: Component = interface_109:54
+	val component2: Component = interface_109:58
+	val component3: Component = interface_109:59
+	val text0: String = "Current Poll: <col=ff0000>Inactive</col>"
+	val op1: String = "View Poll"
+	if (VARBIT[10065] = 1) {
+		text0 = "Current Poll: <col=00ff00>Active</col>"
+		if (VARBIT[4337] = 1) {
+			op1 = "Vote Now"
+		}
+		if_setop(1, op1, component1)
+		if_sethide(true, component3)
+		if_setonmouseover({
+			text_colour_swapper(component2, 0xc0c0c0)
+		}, component2)
+		if_setonmouseleave({
+			text_colour_swapper(component2, 0xf7f0df)
+		}, component2)
+	} else {
+		if_setop(1, "", component1)
+		if_sethide(false, component3)
+		if_setonmouseover({
+			text_colour_swapper(component2, 0xf7f0df)
+		}, component2)
+		if_setonmouseleave({
+			text_colour_swapper(component2, 0xf7f0df)
+		}, component2)
+	}
+	if_settext(text0, component0)
+	if_settext(op1, component2)
+	return 
+}

@@ -1,0 +1,7 @@
+// 4011 clientscript
+fun script4011() {
+
+	VARBIT[68] = calc(1 - VARBIT[68])
+	~script4019(VARBIT[68])
+	return 
+}

@@ -1,0 +1,21 @@
+// 1196 clientscript
+fun script1196(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component, component16: Component, component17: Component, component18: Component, component19: Component, component20: Component, component21: Component, component22: Component, component23: Component, component24: Component, component25: Component) {
+
+	if_setop(10, "Examine", component2)
+	if_setop(10, "Examine", component6)
+	if_setop(10, "Examine", component8)
+	if_setop(10, "Examine", component22)
+	if_setop(10, "Examine", component10)
+	if_setop(10, "Examine", component13)
+	if_setop(10, "Examine", component16)
+	if_setop(10, "Examine", component19)
+	if_setopbase("<col=ff9040>${oc_name(gricollers_can_13353)}</col>", component2)
+	if_setopbase("<col=ff9040>${oc_name(seed_box_13639)}</col>", component6)
+	if_setopbase("<col=ff9040>${oc_name(herb_sack_13226)}</col>", component8)
+	if_setopbase("<col=ff9040>Auto-weed</col>", component22)
+	~script1198(component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25)
+	if_setonvartransmit({
+		script1197(component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25){VARP[261], VARP[262], VARP[263], VARP[1329], VARP[1105], VARP[1329]}
+	}, component0)
+	return 
+}

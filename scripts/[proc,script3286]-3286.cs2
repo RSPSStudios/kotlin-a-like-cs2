@@ -1,0 +1,31 @@
+// 3286 proc
+fun script3286(int0: Int): String, String, Int, Struct {
+
+	val enum1: Enum = enum_2670
+	val count2: Int = 1
+	val int3: Int = 0
+	val count4: Int = 0
+	val struct5: Struct = null
+	val struct6: Struct = null
+	val enum7: Enum = null
+	while (count2 <= enum_getoutputcount(enum1)) {
+		struct6 = enum(int, struct, enum1, count2)
+		enum7 = struct_param(struct6, param_87)
+		if (enum7 ! null) {
+			while (count4 < enum_getoutputcount(enum7)) {
+				if (int3 = int0) {
+					struct5 = enum(int, struct, enum7, count4)
+					if (struct5 ! null) {
+						return struct_param(struct5, param_363), struct_param(struct5, param_914), struct_param(struct5, param_151), struct6
+					}
+					return "", "", -1, null
+				}
+				int3 = calc(int3 + 1)
+				count4 = calc(count4 + 1)
+			}
+		}
+		count2 = calc(count2 + 1)
+		count4 = 0
+	}
+	return "", "", -1, null
+}

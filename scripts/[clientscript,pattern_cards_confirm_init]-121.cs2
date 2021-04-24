@@ -1,0 +1,9 @@
+// 121 clientscript
+fun pattern_cards_confirm_init(component0: Component) {
+
+	~pattern_cards_confirm_update(component0)
+	if_setonvartransmit({
+		pattern_cards_confirm_update(component0){VARP[1037]}
+	}, component0)
+	return 
+}

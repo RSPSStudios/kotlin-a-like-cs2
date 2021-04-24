@@ -1,0 +1,21 @@
+// 3689 proc
+fun script3689(int0: Int, int1: Int): Int {
+
+	if (~league_world = 0) {
+		return 0
+	}
+	when (int0): Int {
+		1 -> {
+		
+			return 0
+		}
+		2 -> {
+		
+			return ~script3690(int1)
+		}
+	else -> {
+	
+		return 0
+	}
+	}
+}

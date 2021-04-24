@@ -1,0 +1,13 @@
+// 619 clientscript
+fun poll_voting_addquestion_full(int0: Int, flags1: Int, string0: String) {
+
+	if (if_hassub(enum(component, component, ~toplevel_getcomponents, interface_161:15)) = false) {
+		return 
+	}
+	val int2: Int = calc(int0 / 256)
+	val boolean3: Boolean = ~int_to_bool(testbit(int0, 1))
+	val int4: Int = calc((int0 & 252) / 4)
+	~poll_storequestion(int2, string0)
+	~poll_voting_addquestion(int2, boolean3, string0, int4, flags1)
+	return 
+}

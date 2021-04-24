@@ -1,0 +1,6 @@
+// 2164 clientscript
+fun xpdrops_setposition(component0: Component) {
+
+	~xpdrops_setposition(component0)
+	return 
+}

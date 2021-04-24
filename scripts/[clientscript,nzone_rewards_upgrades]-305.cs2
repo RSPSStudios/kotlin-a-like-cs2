@@ -1,0 +1,6 @@
+// 305 clientscript
+fun nzone_rewards_upgrades(component0: Component) {
+
+	~nzone_rewards_upgrades(component0)
+	return 
+}

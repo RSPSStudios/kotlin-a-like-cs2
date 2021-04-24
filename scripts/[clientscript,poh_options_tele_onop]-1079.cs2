@@ -1,0 +1,13 @@
+// 1079 clientscript
+fun poh_options_tele_onop(component0: Component, component1: Component, int2: Int) {
+
+	VARBIT[4744] = int2
+	if (VARBIT[4744] = 1) {
+		if_setgraphic("options_radio_buttons,0", component0)
+		if_setgraphic("options_radio_buttons,2", component1)
+	} else {
+		if_setgraphic("options_radio_buttons,2", component0)
+		if_setgraphic("options_radio_buttons,0", component1)
+	}
+	return 
+}

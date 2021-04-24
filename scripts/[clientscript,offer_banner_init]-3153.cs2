@@ -1,0 +1,13 @@
+// 3153 clientscript
+fun offer_banner_init(component0: Component) {
+
+	val component1: Component = interface_650:5
+	val component2: Component = interface_650:3
+	cc_deleteall(component1)
+	cc_deleteall(component0)
+	cc_deleteall(component2)
+	~offer_banner_close(component0)
+	~offer_banner(component1, "dynamic_membership_banner")
+	~offer_button(component2, "dynamic_membership_button")
+	return 
+}

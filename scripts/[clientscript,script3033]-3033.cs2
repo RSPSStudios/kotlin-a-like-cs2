@@ -1,0 +1,13 @@
+// 3033 clientscript
+fun script3033(component0: Component, comsubid1: Int) {
+
+	sound_synth(synth_2266, 1, 0)
+	if (VARBIT[9332] = 0) {
+		~script3034(component0, comsubid1, 1)
+		VARBIT[9332] = 1
+	} else {
+		~script3034(component0, comsubid1, 0)
+		VARBIT[9332] = 0
+	}
+	return 
+}

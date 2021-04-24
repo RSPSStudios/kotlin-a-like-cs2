@@ -1,0 +1,6 @@
+// 906 clientscript
+fun toplevel_timer(component0: Component, component1: Component) {
+
+	~toplevel_flashicon(component0, component1)
+	return 
+}

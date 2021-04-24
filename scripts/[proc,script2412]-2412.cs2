@@ -1,0 +1,8 @@
+// 2412 proc
+fun script2412(): String {
+
+	if (VARBIT[11866] = 1) {
+		return "<col=aaaaaa>00:00:00.00</col>"
+	}
+	return "<col=aaaaaa>00:00:00</col>"
+}

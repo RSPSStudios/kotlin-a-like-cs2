@@ -1,0 +1,9 @@
+// 3289 clientscript
+fun league_reward_confirm_back(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component) {
+
+	sound_synth(synth_2266, 1, 0)
+	if_sethide(true, component7)
+	VARBIT[10110] = -1
+	~league_rewards_draw(int0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, if_getscrolly(component4))
+	return 
+}

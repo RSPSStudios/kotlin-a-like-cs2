@@ -1,0 +1,9 @@
+// 654 clientscript
+fun skill_guide_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component) {
+
+	~skill_guide_build(component1, component2, component3, component4, component5, component6, component7, component8)
+	if_setonvartransmit({
+		skill_guide_build(component1, component2, component3, component4, component5, component6, component7, component8){VARP[965]}
+	}, component0)
+	return 
+}

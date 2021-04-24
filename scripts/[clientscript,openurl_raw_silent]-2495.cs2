@@ -1,0 +1,6 @@
+// 2495 clientscript
+fun openurl_raw_silent(boolean0: Boolean, url0: String) {
+
+	openurl(url0, boolean0)
+	return 
+}

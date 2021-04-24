@@ -1,0 +1,6 @@
+// 3030 clientscript
+fun script3030(component0: Component, comsubid1: Int) {
+
+	~script3034(component0, comsubid1, VARBIT[9331])
+	return 
+}

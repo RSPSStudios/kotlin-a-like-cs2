@@ -1,0 +1,8 @@
+// 4106 proc
+fun script4106(int0: Int) {
+
+	if (int0 = 50 & VARBIT[11757] = 6) {
+		cc_setop(2, "Area unlock")
+	}
+	return 
+}

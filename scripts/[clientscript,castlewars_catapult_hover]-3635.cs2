@@ -1,0 +1,6 @@
+// 3635 clientscript
+fun castlewars_catapult_hover(component0: Component, boolean1: Boolean) {
+
+	~castlewars_catapult_hover(component0, boolean1)
+	return 
+}

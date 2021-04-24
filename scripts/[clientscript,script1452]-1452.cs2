@@ -1,0 +1,6 @@
+// 1452 clientscript
+fun script1452(obj0: Obj, obj1: Obj, obj2: Obj, obj3: Obj, obj4: Obj, obj5: Obj, obj6: Obj, obj7: Obj, obj8: Obj, obj9: Obj, obj10: Obj, obj11: Obj, obj12: Obj, obj13: Obj, obj14: Obj, obj15: Obj, obj16: Obj, obj17: Obj, obj18: Obj, obj19: Obj, obj20: Obj, obj21: Obj, obj22: Obj, obj23: Obj, obj24: Obj, obj25: Obj, obj26: Obj, obj27: Obj) {
+
+	~script1453(obj0, obj1, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15, obj16, obj17, obj18, obj19, obj20, obj21, obj22, obj23, obj24, obj25, obj26, obj27)
+	return 
+}

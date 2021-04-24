@@ -1,0 +1,31 @@
+// 329 clientscript
+fun combat_interface_autocast(component0: Component, component1: Component, int2: Int) {
+
+	val width3: Int = 33
+	val height4: Int = 36
+	val x5: Int = 0
+	val graphic6: Graphic = "sideicons_interface,6"
+	val obj7: Obj = enum(int, obj, enum_1986, VARBIT[276])
+	if (obj7 ! null) {
+		graphic6 = oc_param(obj7, spell_graphic1_on)
+		if (graphic6 ! null) {
+			width3, height4 = 24, 24
+		} else {
+			graphic6 = "sideicons_interface,6"
+		}
+		if (VARBIT[2668] = int2) {
+			~options_button_on(component1, 0)
+		} else {
+			~options_button_off(component1, 0)
+		}
+	} else {
+		~options_button_off(component1, 0)
+	}
+	if_setsize(width3, height4, ^setsize_abs, ^setsize_abs, component0)
+	if_setgraphic(graphic6, component0)
+	if (int2 = 1) {
+		x5 = 14
+	}
+	if_setposition(x5, -5, ^setpos_abs_centre, ^setpos_abs_centre, component0)
+	return 
+}

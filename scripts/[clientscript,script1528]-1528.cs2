@@ -1,0 +1,9 @@
+// 1528 clientscript
+fun script1528(component0: Component, comsubid1: Int, trans2: Int, component3: Component, string0: String) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_settrans(trans2)
+	}
+	~tooltip_mouserepeat(component0, -1, component3, string0, 25, 190)
+	return 
+}

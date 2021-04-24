@@ -1,0 +1,8 @@
+// 331 clientscript
+fun thormac_highlight(component0: Component, comsubid1: Int, obj2: Obj) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		~thormac_highlight(component0, obj2)
+	}
+	return 
+}

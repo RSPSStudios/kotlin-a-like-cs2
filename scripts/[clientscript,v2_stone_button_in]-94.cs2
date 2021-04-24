@@ -1,0 +1,6 @@
+// 94 clientscript
+fun v2_stone_button_in(component0: Component) {
+
+	~v2_stone_button_in(component0)
+	return 
+}

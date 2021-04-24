@@ -1,0 +1,15 @@
+// 96 proc
+fun chat_sendpublic(mes0: String, int0: Int) {
+
+	if (VARBIT[4394] = 1) {
+		if (int0 = 1) {
+			mes("${chat_playername}: <col=2020ef>${mes0}</col>")
+		} else {
+			mes("${chat_playername}: <col=0000ff>${mes0}</col>")
+		}
+	} else {
+		chat_sendpublic(mes0, int0)
+	}
+	VARCINT[61] = clientclock
+	return 
+}

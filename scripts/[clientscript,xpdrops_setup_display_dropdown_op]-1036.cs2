@@ -1,0 +1,33 @@
+// 1036 clientscript
+fun xpdrops_setup_display_dropdown_op(opindex0: Int, component1: Component, int2: Int, int3: Int, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component, component16: Component, component17: Component, component18: Component, component19: Component, component20: Component, component21: Component, component22: Component, component23: Component) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	int2 = calc(int2 - 1)
+	if (int2 < 0 | int2 >= int3) {
+		return 
+	}
+	if (component1 = component7) {
+		VARBIT[4692] = int2
+	} else if (component1 = component9) {
+		VARBIT[4693] = int2
+	} else if (component1 = component11) {
+		VARBIT[4694] = int2
+	} else if (component1 = component13) {
+		VARBIT[4697] = int2
+	} else if (component1 = component15) {
+		VARBIT[4698] = int2
+	} else if (component1 = component17) {
+		VARBIT[4695] = int2
+	} else if (component1 = component19) {
+		VARBIT[4696] = int2
+	} else if (component1 = component21) {
+		VARBIT[4722] = int2
+	} else if (component1 = component23) {
+		VARBIT[8120] = int2
+	}
+	~xpdrops_setup_display_update(component6, component8, component10, component12, component14, component16, component18, component20, component22)
+	~xpdrops_setup_display_dropdown_close(component4, component5, component6, component8, component10, component12, component14, component16, component18, component20, component22)
+	return 
+}

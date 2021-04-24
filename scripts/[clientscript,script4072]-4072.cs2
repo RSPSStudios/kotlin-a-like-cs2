@@ -1,0 +1,6 @@
+// 4072 clientscript
+fun script4072(component0: Component) {
+
+	~script4073(component0)
+	return 
+}

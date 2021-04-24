@@ -1,0 +1,6 @@
+// 135 clientscript
+fun if_settextfont(component0: Component, fontmetrics1: Fontmetrics) {
+
+	if_settextfont(fontmetrics1, component0)
+	return 
+}

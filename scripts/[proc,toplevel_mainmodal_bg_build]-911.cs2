@@ -1,0 +1,18 @@
+// 911 proc
+fun toplevel_mainmodal_bg_build(component0: Component, comsubid1: Int, colour2: Int, trans3: Int, x4: Int, y5: Int, setposh6: Int, setposv7: Int, width8: Int, height9: Int, setsize10: Int, setsize11: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_setcolour(colour2)
+		cc_settrans(trans3)
+		cc_setposition(x4, y5, setposh6, setposv7)
+		cc_setsize(width8, height9, setsize10, setsize11)
+	} else {
+		cc_create(component0, ^iftype_rectangle, comsubid1)
+		cc_setfill(true)
+		cc_setcolour(colour2)
+		cc_settrans(trans3)
+		cc_setposition(x4, y5, setposh6, setposv7)
+		cc_setsize(width8, height9, setsize10, setsize11)
+	}
+	return 
+}

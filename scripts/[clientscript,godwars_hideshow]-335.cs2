@@ -1,0 +1,6 @@
+// 335 clientscript
+fun godwars_hideshow(component0: Component, component1: Component) {
+
+	~godwars_hideshow(component0, component1)
+	return 
+}

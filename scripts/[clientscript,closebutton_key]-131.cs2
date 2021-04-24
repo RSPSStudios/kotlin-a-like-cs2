@@ -1,0 +1,17 @@
+// 131 clientscript
+fun closebutton_key(key0: Int) {
+
+	if (~keypress_permit(-1, -1) = 0) {
+		return 
+	}
+	val enum1: Enum = ~toplevel_getcomponents
+	if (enum1 = null) {
+		return 
+	}
+	val component2: Component = enum(component, component, enum1, interface_161:15)
+	if (component2 ! null & key0 = ^key_escape & VARBIT[4681] = 1 & if_hassub(component2) = true) {
+		if_close
+		return 
+	}
+	return 
+}

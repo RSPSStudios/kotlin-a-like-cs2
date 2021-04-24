@@ -1,0 +1,151 @@
+// 2742 proc
+fun lovaquest_power_grid_setslot(comsubid0: Int, int1: Int) {
+
+	when (comsubid0): Int {
+		0 -> {
+		
+			VARBIT[7811] = int1
+		}
+		1 -> {
+		
+			VARBIT[7812] = int1
+		}
+		2 -> {
+		
+			VARBIT[7813] = int1
+		}
+		3 -> {
+		
+			VARBIT[7814] = int1
+		}
+		4 -> {
+		
+			VARBIT[7815] = int1
+		}
+		5 -> {
+		
+			VARBIT[7816] = int1
+		}
+		6 -> {
+		
+			VARBIT[7817] = int1
+		}
+		7 -> {
+		
+			VARBIT[7818] = int1
+		}
+		8 -> {
+		
+			VARBIT[7819] = int1
+		}
+		9 -> {
+		
+			VARBIT[7820] = int1
+		}
+		10 -> {
+		
+			VARBIT[7821] = int1
+		}
+		11 -> {
+		
+			VARBIT[7822] = int1
+		}
+		12 -> {
+		
+			VARBIT[7823] = int1
+		}
+		13 -> {
+		
+			VARBIT[7824] = int1
+		}
+		14 -> {
+		
+			VARBIT[7825] = int1
+		}
+		15 -> {
+		
+			VARBIT[7826] = int1
+		}
+		16 -> {
+		
+			VARBIT[7827] = int1
+		}
+		17 -> {
+		
+			VARBIT[7828] = int1
+		}
+		18 -> {
+		
+			VARBIT[7829] = int1
+		}
+		19 -> {
+		
+			VARBIT[7830] = int1
+		}
+		20 -> {
+		
+			VARBIT[7831] = int1
+		}
+		21 -> {
+		
+			VARBIT[7832] = int1
+		}
+		22 -> {
+		
+			VARBIT[7833] = int1
+		}
+		23 -> {
+		
+			VARBIT[7834] = int1
+		}
+		24 -> {
+		
+			VARBIT[7835] = int1
+		}
+		25 -> {
+		
+			VARBIT[7836] = int1
+		}
+		26 -> {
+		
+			VARBIT[7837] = int1
+		}
+		27 -> {
+		
+			VARBIT[7838] = int1
+		}
+		28 -> {
+		
+			VARBIT[7839] = int1
+		}
+		29 -> {
+		
+			VARBIT[7840] = int1
+		}
+		30 -> {
+		
+			VARBIT[7841] = int1
+		}
+		31 -> {
+		
+			VARBIT[7842] = int1
+		}
+		32 -> {
+		
+			VARBIT[7843] = int1
+		}
+		33 -> {
+		
+			VARBIT[7844] = int1
+		}
+		34 -> {
+		
+			VARBIT[7845] = int1
+		}
+		35 -> {
+		
+			VARBIT[7846] = int1
+		}
+	}
+	return 
+}

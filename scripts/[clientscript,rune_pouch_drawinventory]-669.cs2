@@ -1,0 +1,6 @@
+// 669 clientscript
+fun rune_pouch_drawinventory(component0: Component) {
+
+	~rune_pouch_drawinventory(component0)
+	return 
+}

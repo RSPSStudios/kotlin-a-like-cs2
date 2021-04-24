@@ -1,0 +1,6 @@
+// 880 clientscript
+fun boardgames_rank_runeversi(component0: Component) {
+
+	if_settext("Rank: ${tostring(VARP[649])}", component0)
+	return 
+}

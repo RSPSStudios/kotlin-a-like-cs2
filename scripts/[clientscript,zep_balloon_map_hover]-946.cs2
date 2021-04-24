@@ -1,0 +1,20 @@
+// 946 clientscript
+fun zep_balloon_map_hover(int0: Int, component1: Component, component2: Component) {
+
+	if (int0 = 1) {
+		if (component1 ! null) {
+			if_setcolour(0xdbdbb7, component1)
+		}
+		if (component2 ! null) {
+			if_setcolour(0xdbdbb7, component2)
+		}
+	} else {
+		if (component1 ! null) {
+			if_setcolour(0xd4b082, component1)
+		}
+		if (component2 ! null) {
+			if_setcolour(0xd4b082, component2)
+		}
+	}
+	return 
+}

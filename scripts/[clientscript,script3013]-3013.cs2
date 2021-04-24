@@ -1,0 +1,17 @@
+// 3013 clientscript
+fun script3013(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	~v2_stone_button_out_filled(component1)
+	if_setonmouseleave({
+		script3015(component1)
+	}, component1)
+	if_setonmouserepeat({
+		script3014(component1)
+	}, component1)
+	if_setonop({
+		script3017(component0, component2, component3, component4, component1)
+	}, component1)
+	if_setop(1, "Back", component1)
+	~script3016(component1, 9)
+	return 
+}

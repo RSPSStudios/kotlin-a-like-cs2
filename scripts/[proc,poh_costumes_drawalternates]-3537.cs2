@@ -1,0 +1,51 @@
+// 3537 proc
+fun poh_costumes_drawalternates(int0: Int, int1: Int, int2: Int, int3: Int, int4: Int, int5: Int, namedobj6: Namedobj, boolean7: Boolean, component8: Component, int9: Int): Int, Int, Int, Int {
+
+	val boolean10: Boolean = enum(obj, boolean, enum_3305, namedobj6)
+	val int11: Int = 0
+	val namedobj12: Namedobj = null
+	val num13: Int = 0
+	val int14: Int = 0
+	val enum15: Enum = enum(obj, enum, enum_3304, namedobj6)
+	if (enum15 ! null) {
+		int11 = enum_getoutputcount(enum15)
+		while (int11 > 0) {
+			int11 = calc(int11 - 1)
+			namedobj12 = enum(int, namedobj, enum15, int11)
+			if (namedobj12 ! null) {
+				num13 = invother_total(inv_637, namedobj12)
+				if (num13 > 0) {
+					int0, int1, int2, int14 = ~poh_costumes_drawitem(int0, int1, int2, int3, int4, int5, namedobj12, num13, boolean7, component8, int9), 1
+					if (boolean10 = true) {
+						return int0, int1, int2, int14
+					}
+				} else if (boolean10 = false) {
+					int2 = ~poh_costumes_hideitem(int2, component8, int9)
+				}
+			}
+		}
+	} else {
+		namedobj12 = enum(obj, namedobj, enum_3303, namedobj6)
+		if (namedobj12 ! null) {
+			num13 = invother_total(inv_637, namedobj12)
+			if (num13 > 0) {
+				int0, int1, int2, int14 = ~poh_costumes_drawitem(int0, int1, int2, int3, int4, int5, namedobj12, num13, boolean7, component8, int9), 1
+				if (boolean10 = true) {
+					return int0, int1, int2, int14
+				}
+			} else if (boolean10 = false) {
+				int2 = ~poh_costumes_hideitem(int2, component8, int9)
+			}
+		}
+	}
+	num13 = invother_total(inv_637, namedobj6)
+	if (int14 = 0 | num13 > 0) {
+		int0, int1, int2 = ~poh_costumes_drawitem(int0, int1, int2, int3, int4, int5, namedobj6, num13, boolean7, component8, int9)
+		if (num13 > 0) {
+			int14 = 1
+		}
+	} else {
+		int2 = ~poh_costumes_hideitem(int2, component8, int9)
+	}
+	return int0, int1, int2, int14
+}

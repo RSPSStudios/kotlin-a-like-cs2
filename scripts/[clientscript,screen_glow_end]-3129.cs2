@@ -1,0 +1,10 @@
+// 3129 clientscript
+fun screen_glow_end(colour0: Int, component1: Component, int2: Int, int3: Int, int4: Int, int5: Int) {
+
+	if (cc_find(component1, 0) = ^true) {
+		cc_setontimer({
+			screen_glow_fadeout(calc(clientclock + int2), calc(clientclock + int3), int4, int5, colour0, component1, true)
+		})
+	}
+	return 
+}

@@ -1,0 +1,9 @@
+// 1138 proc
+fun deadman_world(): Int {
+
+	val flags0: Int = worldflags
+	if (testbit(flags0, 29) = ^true) {
+		return 1
+	}
+	return 0
+}

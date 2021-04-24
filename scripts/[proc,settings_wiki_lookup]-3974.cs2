@@ -1,0 +1,9 @@
+// 3974 proc
+fun settings_wiki_lookup() {
+
+	if (~on_mobile = false & VARBIT[4084] = 1) {
+		return 
+	}
+	VARBIT[10113] = calc(1 - VARBIT[10113])
+	return 
+}

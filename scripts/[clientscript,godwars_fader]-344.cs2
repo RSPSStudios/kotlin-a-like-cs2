@@ -1,0 +1,22 @@
+// 344 clientscript
+fun godwars_fader(component0: Component, clock1: Int, int2: Int, int3: Int, int4: Int) {
+
+	val int5: Int = calc(clientclock - clock1)
+	if (int5 < int2) {
+		if_settrans(calc(255 - scale(int5, int2, 255)), component0)
+		return 
+	}
+	val int6: Int = calc(int2 + int3)
+	if (int5 < int6) {
+		if_settrans(0, component0)
+		return 
+	}
+	int6 = calc(int6 + int4)
+	if (int5 < int6) {
+		if_settrans(calc(255 - scale(int6 - int5, int4, 255)), component0)
+		return 
+	}
+	if_settrans(255, component0)
+	if_setontimer(null, component0)
+	return 
+}

@@ -1,0 +1,9 @@
+// 610 clientscript
+fun script610(component0: Component, string0: String, string1: String) {
+
+	if (if_hassub(enum(component, component, ~toplevel_getcomponents, interface_161:15)) = false) {
+		return 
+	}
+	~poll_addlink(string0, string1, component0, if_getwidth(component0), 0, p12_full, p12_full, 12, 5)
+	return 
+}

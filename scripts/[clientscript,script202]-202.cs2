@@ -1,0 +1,6 @@
+// 202 clientscript
+fun script202(flags0: Int, flags1: Int) {
+
+	~pet_insurance_drawlist(interface_148:14, 31, interface_148:15, flags0, flags1)
+	return 
+}

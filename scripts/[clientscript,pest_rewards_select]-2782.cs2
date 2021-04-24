@@ -1,0 +1,7 @@
+// 2782 clientscript
+fun pest_rewards_select(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	sound_synth(synth_2266, 1, 0)
+	~pest_rewards_draw(int0, component1, component2, component3, component4)
+	return 
+}

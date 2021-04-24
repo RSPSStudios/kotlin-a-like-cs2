@@ -1,0 +1,6 @@
+// 3737 clientscript
+fun script3737(component0: Component, text0: String) {
+
+	~steelborder(component0, text0, 1)
+	return 
+}

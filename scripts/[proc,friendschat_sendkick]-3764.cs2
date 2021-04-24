@@ -1,0 +1,11 @@
+// 3764 proc
+fun friendschat_sendkick(username0: String) {
+
+	if (~wildwars_world = 1) {
+		mes("You can't kick players from your team during Wilderness Wars.")
+		return 
+	}
+	~chat_sendpublic("-Attempting to kick player from friends chat...", 2)
+	clan_kickuser(username0)
+	return 
+}

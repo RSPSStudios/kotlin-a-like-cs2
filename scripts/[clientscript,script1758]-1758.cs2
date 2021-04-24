@@ -1,0 +1,8 @@
+// 1758 clientscript
+fun script1758(component0: Component, comsubid1: Int, struct2: Struct) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_set2dangle(~script1759(struct2))
+	}
+	return 
+}

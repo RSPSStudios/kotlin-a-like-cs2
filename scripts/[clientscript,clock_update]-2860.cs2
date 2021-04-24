@@ -1,0 +1,6 @@
+// 2860 clientscript
+fun clock_update(component0: Component) {
+
+	~clock_set(component0)
+	return 
+}

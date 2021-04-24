@@ -1,0 +1,16 @@
+// 1096 clientscript
+fun bugreport_switch_textinput(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component) {
+
+	sound_synth(synth_2266, 1, 0)
+	~bugreport_switch_textinput(component0, component1, component2, component3, component4, component5, component6, component7)
+	val string0: String = ""
+	if (~on_mobile = true) {
+		if (component0 = component5) {
+			string0 = VARCSTRING[372]
+		} else if (component0 = component6) {
+			string0 = VARCSTRING[373]
+		}
+		~keyboard_show_string(0, 500, string0)
+	}
+	return 
+}

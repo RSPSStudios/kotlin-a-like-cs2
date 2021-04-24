@@ -1,0 +1,179 @@
+// 595 proc
+fun clanwars_hud_info_update(component0: Component, component1: Component, int2: Int) {
+
+	if (VARBIT[4287] <= 0 & VARBIT[4288] <= 0) {
+		if_sethide(true, component1)
+		return 
+	}
+	if_sethide(false, component1)
+	val int3: Int = 0
+	val string0: String = ""
+	val string1: String = ""
+	val string2: String = ""
+	if (VARBIT[4285] = 1) {
+		int3 = 1
+		string0 = " "
+		string1 = clan_getchatdisplayname
+		string2 = "Opponents"
+	}
+	val string3: String = ","
+	val string4: String = ""
+	val int4: Int = 0
+	val int5: Int = 0
+	int3 = calc(int3 + 1)
+	string4 = "Fighters:"
+	if (string_length(string0) > 0) {
+		string0 = append(string0, "<br>")
+	}
+	string0 = append(string0, string4)
+	if (VARBIT[4289] = 2) {
+		string4 = ~tostring_spacer(VARBIT[4288], string3)
+	} else {
+		string4 = ~tostring_spacer(VARBIT[4287], string3)
+	}
+	if (string_length(string1) > 0) {
+		string1 = append(string1, "<br>")
+	}
+	string1 = append(string1, string4)
+	int4 = parawidth(string4, 512, p11_full)
+	if (int5 < int4) {
+		int5 = int4
+	}
+	if (VARBIT[4289] = 2) {
+		string4 = ~tostring_spacer(VARBIT[4287], string3)
+	} else {
+		string4 = ~tostring_spacer(VARBIT[4288], string3)
+	}
+	if (string_length(string2) > 0) {
+		string2 = append(string2, "<br>")
+	}
+	string2 = append(string2, string4)
+	val string5: String = ""
+	val int6: Int = 0
+	val int7: Int = enum(int, int, enum_376, VARBIT[4270])
+	val int8: Int = enum(int, int, enum_377, VARBIT[4270])
+	val int9: Int = enum(int, int, enum_1120, VARBIT[4270])
+	val int10: Int = enum(int, int, enum_1119, VARBIT[4270])
+	if (int7 > 0 | int8 > 0 | int9 > 0 | int10 > 0) {
+		int3 = calc(int3 + 1)
+		string4 = "Kills:"
+		string0 = append(string0, append("<br>", string4))
+		if (VARBIT[4289] = 2) {
+			if (VARBIT[4291] >= 65535) {
+				string4 = "Lots!"
+			} else {
+				string4 = ~tostring_spacer(VARBIT[4291], string3)
+			}
+		} else if (VARBIT[4290] >= 65535) {
+			string4 = "Lots!"
+		} else {
+			string4 = ~tostring_spacer(VARBIT[4290], string3)
+		}
+		string1 = append(string1, append("<br>", string4))
+		int4 = parawidth(string4, 512, p11_full)
+		if (int5 < int4) {
+			int5 = int4
+		}
+		if (VARBIT[4289] = 2) {
+			if (VARBIT[4290] >= 65535) {
+				string4 = "Lots!"
+			} else {
+				string4 = ~tostring_spacer(VARBIT[4290], string3)
+			}
+		} else if (VARBIT[4291] >= 65535) {
+			string4 = "Lots!"
+		} else {
+			string4 = ~tostring_spacer(VARBIT[4291], string3)
+		}
+		string2 = append(string2, append("<br>", string4))
+		if (int8 > 0 | int9 > 0) {
+			int3 = calc(int3 + 1)
+			if (int8 > 0) {
+				string4 = "Hill points:"
+			} else if (int9 > 0) {
+				string4 = "Skull points:"
+			} else {
+				string4 = "Points:"
+			}
+			string0 = append(string0, append("<br>", string4))
+			if (VARBIT[4289] = 2) {
+				string4 = ~tostring_spacer(VARBIT[4576], string3)
+			} else {
+				string4 = ~tostring_spacer(VARBIT[4575], string3)
+			}
+			string1 = append(string1, append("<br>", string4))
+			int4 = parawidth(string4, 512, p11_full)
+			if (int5 < int4) {
+				int5 = int4
+			}
+			if (VARBIT[4289] = 2) {
+				string4 = ~tostring_spacer(VARBIT[4575], string3)
+			} else {
+				string4 = ~tostring_spacer(VARBIT[4576], string3)
+			}
+			string2 = append(string2, append("<br>", string4))
+		}
+		if (int8 > 0) {
+			string5 = "Victory: ${~tostring_spacer(int8, string3)} points"
+		} else if (int9 > 0) {
+			string5 = "Victory: ${~tostring_spacer(int9, string3)} points"
+		} else if (int7 > 0) {
+			string5 = "Victory: ${~tostring_spacer(int7, string3)} kills"
+		} else if (int10 > 0 & cc_find(component1, calc(int2 + 3)) = ^true) {
+			string5 = ~script213
+		}
+		int6 = parawidth(string5, 512, p11_full)
+	}
+	val int11: Int = parawidth(string0, 512, p11_full)
+	val width12: Int = parawidth(string1, 512, p11_full)
+	val width13: Int = parawidth(string2, 512, p11_full)
+	int4 = calc(int11 + 4 + width12 + 4 + width13)
+	if (int6 > int4) {
+		int11 = calc(int11 + (int6 - int4))
+		int5 = width12
+	}
+	int3 = calc(int3 * 10 + 2)
+	val int14: Int = 4
+	if (cc_find(component1, int2) = ^true) {
+		cc_setsize(int11, int3, ^setsize_abs, ^setsize_abs)
+		cc_setposition(int14, 4, ^setpos_abs_left, ^setpos_abs_top)
+		cc_settext(string0)
+		int14 = calc(int14 + int11)
+	}
+	if (cc_find(component1, calc(int2 + 1)) = ^true) {
+		int4 = calc((width12 - int5) / 2)
+		int4 = calc(int4 - 4)
+		int14 = calc(int14 - int4)
+		if (int14 < 4) {
+			int14 = 4
+		}
+		cc_setsize(width12, int3, ^setsize_abs, ^setsize_abs)
+		cc_setposition(int14, 4, ^setpos_abs_left, ^setpos_abs_top)
+		cc_settext(string1)
+		int14 = calc(int14 + width12 + 4)
+	}
+	if (cc_find(component1, calc(int2 + 2)) = ^true) {
+		cc_setsize(width13, int3, ^setsize_abs, ^setsize_abs)
+		cc_setposition(int14, 4, ^setpos_abs_left, ^setpos_abs_top)
+		cc_settext(string2)
+		int14 = calc(int14 + width13)
+	}
+	if (cc_find(component1, calc(int2 + 3)) = ^true) {
+		cc_setsize(calc(int14 - 4), 11, ^setsize_abs, ^setsize_abs)
+		cc_setposition(4, calc(4 + int3), ^setpos_abs_left, ^setpos_abs_top)
+		cc_settext(string5)
+	}
+	int4 = calc(int14 + 4)
+	int3 = calc(4 + int3 + 4)
+	if (int6 > 0) {
+		int3 = calc(int3 + 11)
+	}
+	if_setsize(int4, int3, ^setsize_abs, ^setsize_abs, component1)
+	while (int2 > 0) {
+		int2 = calc(int2 - 1)
+		if (cc_find(component1, int2) = ^true) {
+			cc_setsize(int4, int3, ^setsize_abs, ^setsize_abs)
+		}
+	}
+	return 
+}

@@ -1,0 +1,6 @@
+// 143 clientscript
+fun cam_forceangle(int0: Int, int1: Int) {
+
+	cam_forceangle(int0, int1)
+	return 
+}

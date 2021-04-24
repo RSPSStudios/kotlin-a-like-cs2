@@ -1,0 +1,15 @@
+// 2358 clientscript
+fun script2358(int0: Int) {
+
+	if (~script2357 = 0) {
+		return 
+	}
+	if (getwindowmode = ^windowmode_fixed) {
+		return 
+	}
+	~script2363(int0)
+	val int1: Int = calc(100 + int0 * 10)
+	int1 = ~max(100, ~min(400, int1))
+	_6210(int1)
+	return 
+}

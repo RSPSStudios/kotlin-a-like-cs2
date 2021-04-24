@@ -1,0 +1,79 @@
+// 299 proc
+fun meslayer_close(int0: Int, int1: Int) {
+
+	if_sethide(true, interface_162:40)
+	if_sethide(false, interface_162:56)
+	~toplevel_chatbox_background
+	val mesuid2: Int = 0
+	if (int1 = 1) {
+		mesuid2 = ~script553
+		~rebuildchatbox(mesuid2)
+		~rebuildpmbox(mesuid2)
+		~script223
+		~chatdefault_setonkey(1)
+		if (~on_mobile = true) {
+			~keyboard_hide
+		}
+	}
+	if (~on_mobile = true) {
+		~mobile_chatbox_resize
+	}
+	VARCINT[5] = 0
+	if (int0 = 1) {
+		VARCSTRING[359] = ""
+	}
+	if_setposition(0, -8, ^setpos_abs_centre, ^setpos_abs_centre, interface_162:44)
+	if_setsize(0, 40, ^setsize_minus, ^setsize_abs, interface_162:44)
+	if_setposition(0, 22, ^setpos_abs_centre, ^setpos_abs_centre, interface_162:45)
+	if_setsize(0, 20, ^setsize_minus, ^setsize_abs, interface_162:45)
+	if_sethide(false, interface_162:44)
+	if_sethide(false, interface_162:45)
+	if_sethide(true, interface_162:49)
+	if_sethide(true, interface_162:55)
+	if_setscrollpos(0, 0, interface_162:53)
+	cc_deleteall(interface_162:53)
+	cc_deleteall(interface_162:54)
+	if_setposition(0, -8, ^setpos_abs_centre, ^setpos_abs_centre, interface_162:44)
+	if_setsize(0, 40, ^setsize_minus, ^setsize_abs, interface_162:44)
+	if_settextalign(^settextalign_centre, ^settextalign_centre, 0, interface_162:44)
+	if_settextfont(b12_full, interface_162:44)
+	if_settextfont(b12_full, interface_162:45)
+	if_setcolour(0x000080, interface_162:45)
+	if_setonmouseover(null, interface_162:45)
+	if_setonmouseleave(null, interface_162:45)
+	if_settext("", interface_162:45)
+	if_setposition(0, 22, ^setpos_abs_centre, ^setpos_abs_centre, interface_162:45)
+	if_setonclick(null, interface_162:40)
+	if_setonclick(null, interface_162:45)
+	if_setonkey(null, interface_162:45)
+	if_sethide(true, interface_162:42)
+	if_setonclick(null, interface_162:40)
+	if_setontimer(null, interface_162:40)
+	cc_deleteall(interface_162:40)
+	cc_deleteall(interface_162:46)
+	cc_deleteall(interface_162:47)
+	cc_deleteall(interface_162:48)
+	if_sethide(true, interface_162:46)
+	if_sethide(true, interface_162:47)
+	if_sethide(true, interface_162:48)
+	if_setonmouserepeat(null, interface_162:46)
+	if_setonmouserepeat(null, interface_162:47)
+	if_setonmouserepeat(null, interface_162:48)
+	if_setonmouseleave(null, interface_162:46)
+	if_setonmouseleave(null, interface_162:47)
+	if_setonmouseleave(null, interface_162:48)
+	if_setontimer(null, interface_162:46)
+	if_setontimer(null, interface_162:47)
+	if_setontimer(null, interface_162:48)
+	if_setonclick(null, interface_162:46)
+	if_setonclick(null, interface_162:47)
+	if_setonclick(null, interface_162:48)
+	if (VARCINT[41] = 1337) {
+		~script2526
+		VARCINT[384] = clientclock
+	}
+	if (~on_mobile = true) {
+		~mobile_chatbox_resize
+	}
+	return 
+}

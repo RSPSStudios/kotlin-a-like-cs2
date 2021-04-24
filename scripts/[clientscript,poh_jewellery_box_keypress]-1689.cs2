@@ -1,0 +1,11 @@
+// 1689 clientscript
+fun poh_jewellery_box_keypress(keychar0: Char, comsubid1: Int, component2: Component, comsubid3: Int, string0: String, string1: String, string2: String) {
+
+	if (~keypress_permit(590, -1) = 0) {
+		return 
+	}
+	if (keychar0 ! null & (string_indexof_char(string1, keychar0) ! -1 | string_indexof_char(string2, keychar0) ! -1) & cc_find(component2, comsubid3) = ^true & .cc_find(poh_jewellery_box:0, comsubid1) = ^true) {
+		~poh_jewellery_box_activate(string0, string1, string2)
+	}
+	return 
+}

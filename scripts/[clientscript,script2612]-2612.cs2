@@ -1,0 +1,16 @@
+// 2612 clientscript
+fun script2612(obj0: Obj, component1: Component, component2: Component, int3: Int) {
+
+	sound_synth(synth_2266, 1, 0)
+	cc_deleteall(component2)
+	if (VARCINT[225] = obj0) {
+		VARCINT[225] = null
+		if_setontimer(null, component1)
+		return 
+	}
+	VARCINT[225] = obj0
+	if_setontimer({
+		script2613(component1, component2, int3)
+	}, component1)
+	return 
+}

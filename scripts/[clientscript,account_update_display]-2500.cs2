@@ -1,0 +1,6 @@
+// 2500 clientscript
+fun account_update_display() {
+
+	~account_update_display
+	return 
+}

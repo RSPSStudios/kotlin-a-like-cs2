@@ -1,0 +1,6 @@
+// 1447 clientscript
+fun script1447(obj0: Obj, obj1: Obj, obj2: Obj, obj3: Obj, obj4: Obj, obj5: Obj, obj6: Obj, obj7: Obj, obj8: Obj, obj9: Obj, obj10: Obj, obj11: Obj, obj12: Obj, obj13: Obj) {
+
+	~script1448(obj0, obj1, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13)
+	return 
+}

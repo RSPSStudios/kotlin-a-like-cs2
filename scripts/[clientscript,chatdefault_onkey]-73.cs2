@@ -1,0 +1,105 @@
+// 73 clientscript
+fun chatdefault_onkey(key0: Int, keychar1: Char) {
+
+	if (if_gethide(interface_162:56) = true | if_gethide(interface_162:57) = true) {
+		return 
+	}
+	if (VARBIT[8119] = 0 | ~keypress_permit(-1, 162) = 0) {
+		return 
+	}
+	val length2: Int = string_length(VARCSTRING[335])
+	val int3: Int = 0
+	val int4: Int = 0
+	if (~on_mobile = true & VARCINT[41] = 4) {
+		int4 = 1
+	}
+	if (staffmodlevel > 0) {
+		int3 = 1
+	}
+	if (int3 = 1 & string_indexof_char("`", keychar1) ! -1 & length2 = 0) {
+		return 
+	}
+	if (key0 = ^key_return) {
+		~keyboard_hide
+		if (length2 > 0) {
+			if (string_indexof_string(VARCSTRING[335], "/", 0) = 0 | int4 = 1) {
+				if (clan_getchatcount > 0) {
+					if (length2 <= 1 & int4 = 0) {
+						return 
+					}
+					if (VARBIT[4394] = 1) {
+						clan_leavechat
+					} else {
+						if (int4 = 1) {
+							VARCSTRING[335] = append("/", VARCSTRING[335])
+						}
+						~chat_sendpublic(VARCSTRING[335], 2)
+					}
+				} else {
+					~chat_sendpublic(VARCSTRING[335], 0)
+				}
+			} else if (string_indexof_string(VARCSTRING[335], "::", 0) = 0) {
+				if (length2 > 2) {
+					if (string_indexof_string(VARCSTRING[335], "::toggleroof", 0) = 0) {
+						if (getremoveroofs = true) {
+							setremoveroofs(false)
+							mes("Roofs will only be removed selectively.")
+						} else {
+							setremoveroofs(true)
+							mes("Roofs are now all hidden.")
+						}
+					} else if (string_indexof_string(VARCSTRING[335], "::wiki ", 0) = 0 | compare(VARCSTRING[335], "::wiki") = 0) {
+						~wiki_chat_search(VARCSTRING[335])
+					} else if (string_indexof_string(VARCSTRING[335], "::bank", 0) = 0) {
+						~chat_sendpublic("Hey, everyone, I just tried to do something very silly!", 0)
+					} else {
+						VARCSTRING[335] = ~inputstring_handlecheat(VARCSTRING[335])
+						length2 = string_length(VARCSTRING[335])
+						docheat(substring(VARCSTRING[335], 2, length2))
+					}
+				} else {
+					~chat_sendpublic(VARCSTRING[335], 0)
+				}
+			} else {
+				~chat_sendpublic(VARCSTRING[335], 0)
+			}
+			~chatout_add(VARCSTRING[335])
+			VARCSTRING[335] = ""
+		}
+	} else if (key0 = ^key_page_up) {
+		if (int3 = 1) {
+			~chatout_scrollup
+		}
+	} else if (key0 = ^key_page_down) {
+		if (int3 = 1) {
+			~chatout_scrolldown
+		}
+	} else {
+		if (key0 = ^key_tab) {
+			if (cc_find(interface_621:79, 1) = ^true) {
+				return 
+			}
+			if (string_length(VARCSTRING[356]) > 0) {
+				if (friend_test(VARCSTRING[356]) = true) {
+					~meslayer_mode6(VARCSTRING[356])
+					return 
+				}
+				if (VARCINT[60] > clientclock) {
+					return 
+				}
+				VARCINT[60] = calc(clientclock + 50)
+				mes("That player was not found on your Friends list.")
+				return 
+			}
+			if (VARCINT[60] > clientclock) {
+				return 
+			}
+			VARCINT[60] = calc(clientclock + 50)
+			mes("You haven't received any messages to which you can reply.")
+			return 
+		}
+		VARCSTRING[335] = ~add_to_inputstring(VARCSTRING[335], 0, key0, keychar1)
+	}
+	~script223
+	return 
+}

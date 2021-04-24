@@ -1,0 +1,125 @@
+// 2665 proc
+fun script2665(int0: Int): Int {
+
+	if (VARBIT[6672] = 0) {
+		VARBIT[6672] = int0
+		return 1
+	}
+	if (VARBIT[6673] = 0) {
+		VARBIT[6673] = int0
+		return 2
+	}
+	if (VARBIT[6674] = 0) {
+		VARBIT[6674] = int0
+		return 3
+	}
+	if (VARBIT[6675] = 0) {
+		VARBIT[6675] = int0
+		return 4
+	}
+	if (VARBIT[6670] > 1 & VARBIT[6676] = 0) {
+		VARBIT[6676] = int0
+		return 5
+	}
+	if (VARBIT[6670] > 1 & VARBIT[6677] = 0) {
+		VARBIT[6677] = int0
+		return 6
+	}
+	if (VARBIT[6670] > 1 & VARBIT[6678] = 0) {
+		VARBIT[6678] = int0
+		return 7
+	}
+	if (VARBIT[6670] > 1 & VARBIT[6679] = 0) {
+		VARBIT[6679] = int0
+		return 8
+	}
+	if (VARBIT[6670] > 2 & VARBIT[6680] = 0) {
+		VARBIT[6680] = int0
+		return 9
+	}
+	if (VARBIT[6670] > 2 & VARBIT[6681] = 0) {
+		VARBIT[6681] = int0
+		return 10
+	}
+	if (VARBIT[6670] > 2 & VARBIT[6682] = 0) {
+		VARBIT[6682] = int0
+		return 11
+	}
+	if (VARBIT[6670] > 2 & VARBIT[6683] = 0) {
+		VARBIT[6683] = int0
+		return 12
+	}
+	if (VARBIT[6670] > 2 & VARBIT[6684] = 0) {
+		VARBIT[6684] = int0
+		return 13
+	}
+	if (VARBIT[6670] > 2 & VARBIT[6685] = 0) {
+		VARBIT[6685] = int0
+		return 14
+	}
+	if (VARBIT[6670] > 2 & VARBIT[6686] = 0) {
+		VARBIT[6686] = int0
+		return 15
+	}
+	if (VARBIT[6670] > 2 & VARBIT[6568] = 0) {
+		VARBIT[6568] = int0
+		return 16
+	}
+	if (VARBIT[6670] > 2 & VARBIT[6569] = 0) {
+		VARBIT[6569] = int0
+		return 17
+	}
+	if (VARBIT[6670] > 2 & VARBIT[6582] = 0) {
+		VARBIT[6582] = int0
+		return 18
+	}
+	if (VARBIT[6670] > 2 & VARBIT[10092] = 0) {
+		VARBIT[10092] = int0
+		return 19
+	}
+	if (VARBIT[6670] > 2 & VARBIT[10093] = 0) {
+		VARBIT[10093] = int0
+		return 20
+	}
+	if (VARBIT[6670] > 2 & VARBIT[10094] = 0) {
+		VARBIT[10094] = int0
+		return 21
+	}
+	if (VARBIT[6670] > 2 & VARBIT[10095] = 0) {
+		VARBIT[10095] = int0
+		return 22
+	}
+	if (VARBIT[6670] > 2 & VARBIT[10096] = 0) {
+		VARBIT[10096] = int0
+		return 23
+	}
+	if (VARBIT[6670] > 2 & VARBIT[10097] = 0) {
+		VARBIT[10097] = int0
+		return 24
+	}
+	if (VARBIT[6670] > 2 & VARBIT[10098] = 0) {
+		VARBIT[10098] = int0
+		return 25
+	}
+	if (VARBIT[6670] > 2 & VARBIT[10099] = 0) {
+		VARBIT[10099] = int0
+		return 26
+	}
+	if (VARBIT[6670] > 2 & VARBIT[10100] = 0) {
+		VARBIT[10100] = int0
+		return 27
+	}
+	if (VARBIT[6670] > 2 & VARBIT[10101] = 0) {
+		VARBIT[10101] = int0
+		return 28
+	}
+	if (VARBIT[6670] > 2 & VARBIT[10102] = 0) {
+		VARBIT[10102] = int0
+		return 29
+	}
+	if (VARBIT[6670] > 2 & VARBIT[10103] = 0) {
+		VARBIT[10103] = int0
+		return 30
+	}
+	return -1
+}

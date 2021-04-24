@@ -1,0 +1,6 @@
+// 557 clientscript
+fun clanwars_confirm_challenge_redraw(component0: Component) {
+
+	~clanwars_confirm_challenge_redraw(component0)
+	return 
+}

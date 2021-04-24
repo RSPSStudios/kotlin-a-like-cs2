@@ -1,0 +1,21 @@
+// 664 clientscript
+fun script664(boolean0: Boolean) {
+
+	val clock1: Int = clientclock
+	val mesuid2: Int = -1
+	if (boolean0 = true | clock1 = VARCINT[65] | calc(clock1 % 25) = 0) {
+		mesuid2 = ~script553
+		if (clock1 = VARCINT[65]) {
+			~rebuildchatbox(mesuid2)
+		}
+		~rebuildpmbox(mesuid2)
+		if (VARCINT[65] > clock1 | reboottimer > 0 | VARCINT[55] > calc(clock1 - 3000)) {
+			if_setontimer({
+				script664(false)
+			}, interface_162:0)
+		} else {
+			if_setontimer(null, interface_162:0)
+		}
+	}
+	return 
+}

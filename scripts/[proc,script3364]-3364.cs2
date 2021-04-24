@@ -1,0 +1,11 @@
+// 3364 proc
+fun script3364(enum0: Enum) {
+
+	when (enum0): Enum {
+		enum_2857, enum_877 -> {
+		
+			cc_settext("Bounty Hunter Shop - Archaic points: <col=ffffff>${~tostring_spacer(VARP[262], ",")}</col>")
+		}
+	}
+	return 
+}

@@ -1,0 +1,122 @@
+// 3074 proc
+fun br_loadout_get_inv(int0: Int): Int {
+
+	when (int0): Int {
+		0 -> {
+		
+			return VARBIT[9408]
+		}
+		1 -> {
+		
+			return VARBIT[9409]
+		}
+		2 -> {
+		
+			return VARBIT[9410]
+		}
+		3 -> {
+		
+			return VARBIT[9411]
+		}
+		4 -> {
+		
+			return VARBIT[9412]
+		}
+		5 -> {
+		
+			return VARBIT[9413]
+		}
+		6 -> {
+		
+			return VARBIT[9414]
+		}
+		7 -> {
+		
+			return VARBIT[9415]
+		}
+		8 -> {
+		
+			return VARBIT[9416]
+		}
+		9 -> {
+		
+			return VARBIT[9417]
+		}
+		10 -> {
+		
+			return VARBIT[9418]
+		}
+		11 -> {
+		
+			return VARBIT[9419]
+		}
+		12 -> {
+		
+			return VARBIT[9420]
+		}
+		13 -> {
+		
+			return VARBIT[9421]
+		}
+		14 -> {
+		
+			return VARBIT[9422]
+		}
+		15 -> {
+		
+			return VARBIT[9423]
+		}
+		16 -> {
+		
+			return VARBIT[9424]
+		}
+		17 -> {
+		
+			return VARBIT[9425]
+		}
+		18 -> {
+		
+			return VARBIT[9426]
+		}
+		19 -> {
+		
+			return VARBIT[9427]
+		}
+		20 -> {
+		
+			return VARBIT[9428]
+		}
+		21 -> {
+		
+			return VARBIT[9429]
+		}
+		22 -> {
+		
+			return VARBIT[9430]
+		}
+		23 -> {
+		
+			return VARBIT[9431]
+		}
+		24 -> {
+		
+			return VARBIT[9432]
+		}
+		25 -> {
+		
+			return VARBIT[9433]
+		}
+		26 -> {
+		
+			return VARBIT[9434]
+		}
+		27 -> {
+		
+			return VARBIT[9435]
+		}
+	else -> {
+	
+		return 0
+	}
+	}
+}

@@ -1,0 +1,9 @@
+// 2017 clientscript
+fun mesoverlay_checkheight(string0: String, height0: Int, component1: Component, component2: Component) {
+
+	val height3: Int = if_getheight(component1)
+	if (height3 ! height0) {
+		~mesoverlay_draw(string0, height3, component1, component2)
+	}
+	return 
+}

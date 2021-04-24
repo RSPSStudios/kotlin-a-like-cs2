@@ -1,0 +1,12 @@
+// 2166 clientscript
+fun script2166(component0: Component) {
+
+	if_setonvartransmit({
+		script2168{VARP[1707]}
+	}, component0)
+	if_setonop({
+		script2167(component0, event_opindex)
+	}, component0)
+	~script2169
+	return 
+}

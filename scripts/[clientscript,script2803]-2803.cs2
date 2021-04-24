@@ -1,0 +1,10 @@
+// 2803 clientscript
+fun script2803(component0: Component, component1: Component, component2: Component, int3: Int) {
+
+	if (VARBIT[8168] = int3) {
+		~side_journal_tab_highlight_reset(component0, component1, component2, int3)
+	} else {
+		~side_journal_tab_highlight(component0, component1, component2, int3)
+	}
+	return 
+}

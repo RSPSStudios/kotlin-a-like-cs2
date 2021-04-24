@@ -1,0 +1,60 @@
+// 711 proc
+fun stoneborder(component0: Component, text0: String, flags1: Int): Int {
+
+	cc_deleteall(component0)
+	val width2: Int = if_getwidth(component0)
+	val height3: Int = if_getheight(component0)
+	~create_graphic(component0, 0, "tradebacking", 1, 1, ^setpos_abs_left, ^setpos_abs_top, calc(width2 - 2), calc(height3 - 2), ^setsize_abs, ^setsize_abs)
+	cc_create(component0, ^iftype_text, 1)
+	cc_setposition(6, 6, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setsize(calc(width2 - 12), 23, ^setsize_abs, ^setsize_abs)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_setcolour(0xff981f)
+	cc_settextshadow(true)
+	cc_settextfont(b12_full)
+	cc_settext(text0)
+	val comsubid4: Int = cc_getid
+	val x5: Int = calc(width2 - 32)
+	val y6: Int = calc(height3 - 32)
+	~create_graphic(component0, 2, "v2_stone_borders,4", 0, 0, ^setpos_abs_left, ^setpos_abs_top, 32, 32, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, 3, "v2_stone_borders,5", x5, 0, ^setpos_abs_left, ^setpos_abs_top, 32, 32, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, 4, "v2_stone_borders,6", 0, y6, ^setpos_abs_left, ^setpos_abs_top, 32, 32, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, 5, "v2_stone_borders,7", x5, y6, ^setpos_abs_left, ^setpos_abs_top, 32, 32, ^setsize_abs, ^setsize_abs)
+	val width7: Int = calc(width2 - 64)
+	~create_graphic(component0, 6, "v2_stone_borders,0", 32, -13, ^setpos_abs_left, ^setpos_abs_top, width7, 32, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, 7, "v2_stone_borders,2", 32, calc(height3 - 20), ^setpos_abs_left, ^setpos_abs_top, width7, 32, ^setsize_abs, ^setsize_abs)
+	val height8: Int = calc(height3 - 64)
+	~create_graphic(component0, 8, "v2_stone_borders,1", -13, 32, ^setpos_abs_left, ^setpos_abs_top, 32, height8, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, 9, "v2_stone_borders,3", calc(width2 - 20), 32, ^setpos_abs_left, ^setpos_abs_top, 32, height8, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, 10, "v2_stone_borders,9", 0, 17, ^setpos_abs_left, ^setpos_abs_top, 32, 32, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, 11, "v2_stone_borders,10", x5, 17, ^setpos_abs_left, ^setpos_abs_top, 32, 32, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, 12, "v2_stone_borders,8", 11, 15, ^setpos_abs_left, ^setpos_abs_top, calc(width2 - 22), 32, ^setsize_abs, ^setsize_abs)
+	val graphic9: Graphic = "v2_stone_close_button,0"
+	val graphic10: Graphic = "v2_stone_close_button,1"
+	val x11: Int = calc(width2 - 26)
+	val y12: Int = 10
+	val width13: Int = 16
+	val height14: Int = 16
+	if (~on_mobile = true) {
+		graphic9 = "stoneborder_close_button,0"
+		graphic10 = "stoneborder_close_button,0"
+		x11 = calc(width2 - 34)
+		y12 = 2
+		width13 = 32
+		height14 = 32
+	}
+	if (testbit(flags1, 0) = ^false) {
+		~create_graphic(component0, 13, graphic9, x11, y12, ^setpos_abs_left, ^setpos_abs_top, width13, height14, ^setsize_abs, ^setsize_abs)
+		cc_setonmouseleave({
+			cc_graphic_swapper(event_com, event_comsubid, graphic9, null)
+		})
+		cc_setonmouseover({
+			cc_graphic_swapper(event_com, event_comsubid, graphic10, null)
+		})
+		cc_setop(1, "Close")
+		cc_setonop({
+			closebutton_click
+		})
+	}
+	return comsubid4
+}

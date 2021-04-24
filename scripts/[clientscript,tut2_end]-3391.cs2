@@ -1,0 +1,6 @@
+// 3391 clientscript
+fun tut2_end() {
+
+	setremoveroofs(false)
+	return 
+}

@@ -1,0 +1,9 @@
+// 1817 clientscript
+fun keyboard_show_string(int0: Int, int1: Int, string0: String) {
+
+	if (~on_mobile = false) {
+		return 
+	}
+	~keyboard_show_string(int0, int1, string0)
+	return 
+}

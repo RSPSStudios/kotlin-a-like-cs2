@@ -1,0 +1,14 @@
+// 1905 clientscript
+fun bugreport_textinput(int0: Int) {
+
+	val string0: String = ""
+	if (~on_mobile = true) {
+		if (int0 = 10223631) {
+			string0 = VARCSTRING[372]
+		} else if (int0 = 10223637) {
+			string0 = VARCSTRING[373]
+		}
+		~keyboard_show_string(0, 500, string0)
+	}
+	return 
+}

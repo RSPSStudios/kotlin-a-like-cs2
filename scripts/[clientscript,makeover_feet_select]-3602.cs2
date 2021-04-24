@@ -1,0 +1,30 @@
+// 3602 clientscript
+fun makeover_feet_select(comsubid0: Int, component1: Component, component2: Component) {
+
+	val count3: Int = enum_getoutputcount(enum_3314)
+	val int4: Int = 0
+	val int5: Int = 0
+	if (cc_find(component1, comsubid0) = ^true) {
+		int4 = cc_getx
+		int5 = cc_gety
+		cc_create(component1, ^iftype_graphic, count3)
+		cc_setgraphic("tick")
+		cc_setsize(20, 20, ^setsize_abs, ^setsize_abs)
+		cc_setposition(calc(int4 + 50), calc(int5 + 50), ^setpos_abs_left, ^setpos_abs_top)
+	}
+	if (cc_find(component2, count3) = ^true) {
+		cc_delete
+	}
+	val count6: Int = 0
+	while (count6 < count3) {
+		if (cc_find(component2, count6) = ^true) {
+			if (cc_getid = comsubid0) {
+				cc_sethide(false)
+			} else {
+				cc_sethide(true)
+			}
+		}
+		count6 = calc(count6 + 1)
+	}
+	return 
+}

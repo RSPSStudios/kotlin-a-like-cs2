@@ -1,0 +1,6 @@
+// 1590 clientscript
+fun raids_storage_shared_warning(component0: Component) {
+
+	~raids_storage_shared_warning(component0)
+	return 
+}

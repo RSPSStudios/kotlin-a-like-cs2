@@ -1,0 +1,13 @@
+// 288 clientscript
+fun bankmain_swapinsert_op(opindex0: Int, component1: Component, component2: Component, int3: Int) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	if (VARBIT[3959] ! int3) {
+		VARBIT[3959] = int3
+		sound_synth(synth_2266, 1, 0)
+	}
+	~bankmain_swapinsert(component1, component2)
+	return 
+}

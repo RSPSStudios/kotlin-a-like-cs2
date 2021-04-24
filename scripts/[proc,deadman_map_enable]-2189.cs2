@@ -1,0 +1,6 @@
+// 2189 proc
+fun deadman_map_enable() {
+
+	docheat("~dmm_map")
+	return 
+}

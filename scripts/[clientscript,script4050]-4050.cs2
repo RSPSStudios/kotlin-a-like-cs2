@@ -1,0 +1,6 @@
+// 4050 clientscript
+fun script4050(size0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component) {
+
+	~script4051(size0, component1, component2, component3, component4, component5, component6)
+	return 
+}

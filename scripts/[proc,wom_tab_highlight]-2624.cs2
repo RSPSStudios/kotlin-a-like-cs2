@@ -1,0 +1,26 @@
+// 2624 proc
+fun wom_tab_highlight() {
+
+	val component0: Component = null
+	val component1: Component = null
+	val component2: Component = null
+	val count3: Int = 0
+	val component4: Component = null
+	val component5: Component = ~wom_get_tab(VARBIT[6610])
+	val count6: Int = enum_getoutputcount(enum_2071)
+	while (count3 < count6) {
+		component4 = ~wom_get_tab(count3)
+		component0, component1, component2 = ~wom_get_graphics(component4)
+		if (component5 = component4) {
+			if_setgraphic("tabs_split,0", component0)
+			if_setgraphic("tabs_split,1", component1)
+			if_setgraphic("tabs_split,2", component2)
+		} else {
+			if_setgraphic("tabs_split,3", component0)
+			if_setgraphic("tabs_split,4", component1)
+			if_setgraphic("tabs_split,5", component2)
+		}
+		count3 = calc(count3 + 1)
+	}
+	return 
+}

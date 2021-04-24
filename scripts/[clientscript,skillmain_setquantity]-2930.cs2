@@ -1,0 +1,11 @@
+// 2930 clientscript
+fun skillmain_setquantity(opindex0: Int, int1: Int, component2: Component, int3: Int, int4: Int, obj5: Obj, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	VARP[2224] = ~min(28, int1)
+	~skillmain_setup(component2, int3, int4, obj5, component6, component7, component8, component9, component10, component11)
+	return 
+}

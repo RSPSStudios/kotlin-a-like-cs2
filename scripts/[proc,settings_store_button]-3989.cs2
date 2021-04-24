@@ -1,0 +1,6 @@
+// 3989 proc
+fun settings_store_button() {
+
+	VARBIT[6506] = calc(1 - VARBIT[6506])
+	return 
+}

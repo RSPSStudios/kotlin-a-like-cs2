@@ -1,0 +1,7 @@
+// 3738 clientscript
+fun closebutton_click_sound() {
+
+	sound_synth(synth_2266, 1, 0)
+	if_close
+	return 
+}

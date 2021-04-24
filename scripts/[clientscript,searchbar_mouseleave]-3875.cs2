@@ -1,0 +1,6 @@
+// 3875 clientscript
+fun searchbar_mouseleave(component0: Component) {
+
+	if_setcolour(0xff981f, component0)
+	return 
+}

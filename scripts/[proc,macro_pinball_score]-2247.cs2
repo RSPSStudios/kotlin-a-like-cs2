@@ -1,0 +1,6 @@
+// 2247 proc
+fun macro_pinball_score(component0: Component) {
+
+	if_settext("Score: ${tostring(VARBIT[2121])}", component0)
+	return 
+}

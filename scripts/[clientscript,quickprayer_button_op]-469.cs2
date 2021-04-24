@@ -1,0 +1,17 @@
+// 469 clientscript
+fun quickprayer_button_op(opindex0: Int, int1: Int, component2: Component, comsubid3: Int) {
+
+	if (opindex0 = 1 & .cc_find(component2, comsubid3) = ^true) {
+		if (testbit(VARBIT[4102], int1) = ^true) {
+			VARBIT[4102] = clearbit(VARBIT[4102], int1)
+		} else {
+			if (~prayer_isavailable(int1) = 0) {
+				return 
+			}
+			VARBIT[4102] = setbit(VARBIT[4102], int1)
+		}
+		sound_synth(synth_2266, 1, 0)
+		~quickprayer_button_update(int1)
+	}
+	return 
+}

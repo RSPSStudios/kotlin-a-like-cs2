@@ -1,0 +1,22 @@
+// 1358 clientscript
+fun script1358(component0: Component) {
+
+	VARCINT[420] = random(2048)
+	VARCINT[422] = random(2048)
+	VARCINT[424] = random(2048)
+	VARCINT[426] = random(2048)
+	VARCINT[428] = random(2048)
+	VARCINT[430] = random(2048)
+	VARCINT[432] = random(2048)
+	VARCINT[421] = calc(800 - randominc(50))
+	VARCINT[423] = calc(700 - randominc(50))
+	VARCINT[425] = calc(600 - randominc(50))
+	VARCINT[427] = calc(500 - randominc(50))
+	VARCINT[429] = calc(400 - randominc(50))
+	VARCINT[431] = calc(300 - randominc(50))
+	VARCINT[433] = calc(200 - randominc(50))
+	if_setontimer({
+		script1359(0, component0)
+	}, component0)
+	return 
+}

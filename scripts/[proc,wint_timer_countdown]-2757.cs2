@@ -1,0 +1,18 @@
+// 2757 proc
+fun wint_timer_countdown(component0: Component, int1: Int) {
+
+	val int2: Int = calc(int1 - clientclock)
+	if (int2 <= 0) {
+		if_settext("", component0)
+		return 
+	}
+	val int3: Int = calc(int2 / 50)
+	val int4: Int = calc(int3 / 60)
+	int3 = calc(int3 % 60)
+	if (int3 >= 10) {
+		if_settext("The Wintertodt returns in: ${tostring(int4)}:${tostring(int3)}", component0)
+	} else {
+		if_settext("The Wintertodt returns in: ${tostring(int4)}:0${tostring(int3)}", component0)
+	}
+	return 
+}

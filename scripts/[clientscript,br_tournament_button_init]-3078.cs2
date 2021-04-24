@@ -1,0 +1,6 @@
+// 3078 clientscript
+fun br_tournament_button_init(component0: Component, string0: String) {
+
+	~br_tournament_button_reset(component0, string0)
+	return 
+}

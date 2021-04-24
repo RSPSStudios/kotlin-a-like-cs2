@@ -1,0 +1,14 @@
+// 1193 clientscript
+fun hosidius_tithe_hud(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component) {
+
+	~script2249(component1, setbit(0, 2))
+	~script1486(component2, ^setpos_abs_right, 1, 0)
+	~hosidius_tithe_hud_update(component3, component4, component5)
+	if_setonvartransmit({
+		hosidius_tithe_hud_update(component3, component4, component5){VARP[1329], VARP[1105]}
+	}, component0)
+	if_setoninvtransmit({
+		hosidius_tithe_hud_update(component3, component4, component5){inv}
+	}, component0)
+	return 
+}

@@ -1,0 +1,12 @@
+// 3981 proc
+fun script3981() {
+
+	if (~on_mobile = true) {
+		return 
+	}
+	if (getwindowmode = ^windowmode_fixed) {
+		return 
+	}
+	VARBIT[4608] = calc(1 - VARBIT[4608])
+	return 
+}

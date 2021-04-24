@@ -1,0 +1,14 @@
+// 3437 proc
+fun script3437(index0: Int): Int {
+
+	val int1: Int = ~script3439(index0)
+	val int2: Int = -1
+	if (int1 = 0) {
+		int2 = ~script3438(index0, 2)
+	} else if (int1 = 2) {
+		int2 = ~script3438(index0, 1)
+	} else if (int1 = 1) {
+		int2 = ~script3438(index0, 0)
+	}
+	return int2
+}

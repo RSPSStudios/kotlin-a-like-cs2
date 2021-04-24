@@ -1,0 +1,29 @@
+// 3142 clientscript
+fun target_system_hideop(opindex0: Int, int1: Int, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component) {
+
+	if (int1 = 1) {
+		when (opindex0): Int {
+			1 -> {
+			
+				VARBIT[6704] = int1
+			}
+			2, 3, 4 -> {
+			
+				if (~on_mobile = false) {
+					VARBIT[6715] = opindex0
+				}
+			}
+		else -> {
+		
+			return 
+		}
+		}
+	} else if (opindex0 = 1) {
+		VARBIT[6704] = int1
+	} else {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	~target_system_redraw(component2, component3, component4, component5, component6, component7, component8, component9)
+	return 
+}

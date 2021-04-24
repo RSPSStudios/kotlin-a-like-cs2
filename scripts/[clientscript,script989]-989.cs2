@@ -1,0 +1,11 @@
+// 989 clientscript
+fun script989(component0: Component) {
+
+	if (VARBIT[4681] = 0) {
+		VARBIT[4681] = 1
+	} else {
+		VARBIT[4681] = 0
+	}
+	~script990(component0)
+	return 
+}

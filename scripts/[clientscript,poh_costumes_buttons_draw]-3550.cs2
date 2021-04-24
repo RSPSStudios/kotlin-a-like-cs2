@@ -1,0 +1,6 @@
+// 3550 clientscript
+fun poh_costumes_buttons_draw(component0: Component, graphic1: Graphic, obj2: Obj, boolean3: Boolean) {
+
+	~poh_costumes_buttons_draw(component0, graphic1, obj2, boolean3)
+	return 
+}

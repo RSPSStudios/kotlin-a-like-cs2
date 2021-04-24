@@ -1,0 +1,131 @@
+// 252 clientscript
+fun music_init_component(component0: Component, comsubid1: Int, count2: Int, int3: Int) {
+
+	val int4: Int = 0
+	val coord5: Coord = null
+	val int6: Int = -1
+	val index7: Int = -1
+	val flags8: Int = 0
+	val text0: String = ""
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_setontimer(null)
+		int4 = enum(int, int, enum_818, comsubid1)
+		if (int4 ! 0) {
+			cc_setsize(0, int3, ^setsize_minus, ^setsize_abs)
+			cc_setposition(0, calc(3 + count2 * int3), ^setpos_abs_centre, ^setpos_abs_top)
+			cc_settextfont(p12_full)
+			cc_settextshadow(true)
+			cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
+			text0 = enum(int, string, enum_812, int4)
+			cc_settext(text0)
+			cc_setop(1, "Play")
+			cc_setop(2, "Unlock hint")
+			cc_setopbase("<col=ff9040>${text0}</col>")
+			coord5 = enum(int, coord, enum_819, int4)
+			if (coord5 ! null) {
+				int6, index7 = coordx(coord5), coordz(coord5)
+				when (int6): Int {
+					1 -> {
+					
+						flags8 = VARP[20]
+					}
+					2 -> {
+					
+						flags8 = VARP[21]
+					}
+					3 -> {
+					
+						flags8 = VARP[22]
+					}
+					4 -> {
+					
+						flags8 = VARP[23]
+					}
+					5 -> {
+					
+						flags8 = VARP[24]
+					}
+					6 -> {
+					
+						flags8 = VARP[25]
+					}
+					7 -> {
+					
+						flags8 = VARP[298]
+					}
+					8 -> {
+					
+						flags8 = VARP[311]
+					}
+					9 -> {
+					
+						flags8 = VARP[346]
+					}
+					10 -> {
+					
+						flags8 = VARP[414]
+					}
+					11 -> {
+					
+						flags8 = VARP[464]
+					}
+					12 -> {
+					
+						flags8 = VARP[598]
+					}
+					13 -> {
+					
+						flags8 = VARP[662]
+					}
+					14 -> {
+					
+						flags8 = VARP[721]
+					}
+					15 -> {
+					
+						flags8 = VARP[906]
+					}
+					16 -> {
+					
+						flags8 = VARP[1009]
+					}
+					17 -> {
+					
+						flags8 = VARP[1338]
+					}
+					18 -> {
+					
+						flags8 = VARP[1681]
+					}
+					19 -> {
+					
+						flags8 = VARP[2065]
+					}
+					20 -> {
+					
+						flags8 = VARP[2237]
+					}
+					21 -> {
+					
+						flags8 = VARP[2950]
+					}
+				}
+				if (testbit(flags8, index7) = ^true) {
+					~music_setcolour(0x0dc10d)
+				} else if (int4 = 331 & VARBIT[1028] > 35) {
+					~music_setcolour(0x0dc10d)
+				} else {
+					~music_setcolour(^red)
+				}
+			} else {
+				~music_setcolour(0x0dc10d)
+			}
+			cc_setonmouseover({
+				cc_colour_swapper(event_com, event_comsubid, ^white)
+			})
+		} else {
+			cc_sethide(true)
+		}
+	}
+	return 
+}

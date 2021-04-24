@@ -1,0 +1,10 @@
+// 551 proc
+fun meslayer_mode13_setprompt() {
+
+	if (string_length(VARCSTRING[359]) > 0) {
+		if_settext("Send autochat: <col=0000ff>${escape(VARCSTRING[359])}</col>", interface_162:44)
+	} else {
+		if_settext("Send autochat: <col=7f0000>[off]</col>", interface_162:44)
+	}
+	return 
+}

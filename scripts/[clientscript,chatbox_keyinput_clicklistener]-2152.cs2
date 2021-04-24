@@ -1,0 +1,9 @@
+// 2152 clientscript
+fun chatbox_keyinput_clicklistener(component0: Component, int1: Int, component2: Component, key3: Int, string0: String, string1: String, colour4: Int, clock5: Int) {
+
+	if (clientclock < clock5) {
+		return 
+	}
+	~chatbox_keyinput_matched(component0, int1, component2, key3, string0, string1, colour4, clock5)
+	return 
+}

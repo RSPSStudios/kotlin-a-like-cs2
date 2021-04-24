@@ -1,0 +1,8 @@
+// 3769 proc
+fun on_steam(): Int {
+
+	if (_6527 ! true) {
+		return 0
+	}
+	return 1
+}

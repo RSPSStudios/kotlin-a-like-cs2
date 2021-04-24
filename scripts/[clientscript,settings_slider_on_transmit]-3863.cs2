@@ -1,0 +1,52 @@
+// 3863 clientscript
+fun settings_slider_on_transmit(struct0: Struct, int1: Int, int2: Int, int3: Int, int4: Int, component5: Component, comsubid6: Int, y7: Int, int8: Int, int9: Int, component10: Component, comsubid11: Int, string0: String, int12: Int, enum13: Enum, boolean14: Boolean) {
+
+	val int15: Int = ~script3957(struct0)
+	val int16: Int = ~settings_get_slider(int1)
+	val string1: String = ""
+	if (cc_find(component5, comsubid6) = ^true) {
+		if (int16 = 0) {
+			cc_setposition(int8, y7, ^setpos_abs_left, ^setpos_abs_top)
+		} else if (int16 = calc(int2 - 1)) {
+			cc_setposition(calc(int9 - 16), y7, ^setpos_abs_left, ^setpos_abs_top)
+		} else {
+			cc_setposition(calc(int8 + scale(int16 * 2, (int2 - 1) * 2, int4 - 16)), y7, ^setpos_abs_left, ^setpos_abs_top)
+		}
+		if (int15 = 1) {
+			if (boolean14 = true) {
+				cc_setgraphic("settings_slider,8")
+			} else {
+				cc_setgraphic("settings_slider,6")
+			}
+		} else {
+			cc_setgraphic("settings_slider,7")
+		}
+	}
+	if (cc_find(component10, comsubid11) = ^true) {
+		if (struct_param(struct0, param_1158) = true) {
+			string1 = ~script2364(int1)
+		}
+		cc_settext(append(string0, string1))
+		if (int15 = 1) {
+			cc_setcolour(0xff981f)
+		} else {
+			cc_setcolour(0x9f9f9f)
+		}
+	}
+	val int17: Int = 0
+	if (enum13 ! null) {
+		int17 = 0
+		while (int17 < int3) {
+			if (cc_find(component10, int12) = ^true) {
+				if (int15 = 1) {
+					cc_setcolour(0xff981f)
+				} else {
+					cc_setcolour(0x9f9f9f)
+				}
+			}
+			int12 = calc(int12 + 1)
+			int17 = calc(int17 + 1)
+		}
+	}
+	return 
+}

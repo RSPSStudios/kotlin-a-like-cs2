@@ -1,0 +1,14 @@
+// 3557 proc
+fun poh_costumes_buttons_toggle_reset(component0: Component, graphic1: Graphic) {
+
+	val boolean2: Boolean = ~int_to_bool(VARBIT[10581])
+	if_setonvartransmit({
+		poh_costumes_buttons_toggle_reset(component0, graphic1, 0){VARP[1141]}
+	}, component0)
+	~poh_costumes_buttons_draw(component0, graphic1, null, boolean2)
+	if_setontimer(null, component0)
+	if_setonop({
+		poh_costumes_buttons_toggle_op(event_opindex, component0, graphic1)
+	}, component0)
+	return 
+}

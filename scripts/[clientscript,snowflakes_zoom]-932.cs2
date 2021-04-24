@@ -1,0 +1,9 @@
+// 932 clientscript
+fun snowflakes_zoom(component0: Component, comsubid1: Int, comsubid2: Int, height3: Int) {
+
+	val height4: Int = if_getheight(component0)
+	if (height4 ! height3 & cc_find(component0, comsubid1) = ^true & .cc_find(component0, comsubid2) = ^true) {
+		~snowflakes_zoom(component0, height4)
+	}
+	return 
+}

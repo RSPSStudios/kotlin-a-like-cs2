@@ -1,0 +1,27 @@
+// 995 proc
+fun xpdrops_redraw(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component) {
+
+	val fontmetrics6: Fontmetrics = p11_full
+	val fontmetrics7: Fontmetrics = p11_full
+	val int8: Int = 16
+	if (VARBIT[4693] = 1 & ~on_mobile = false) {
+		fontmetrics6, fontmetrics7, int8 = p12_full, p12_full, 25
+	} else if (VARBIT[4693] = 2 & ~on_mobile = false) {
+		fontmetrics6, fontmetrics7, int8 = b12_full, b12_full, 25
+	}
+	val width9: Int = calc(28 + parawidth("+8,888,888,888", 512, fontmetrics6) + 2)
+	if_setsize(width9, if_getheight(component1), ^setsize_abs, ^setsize_abs, component1)
+	if_settextfont(fontmetrics7, component2)
+	val int10: Int = 0
+	val component11: Component = enum(int, component, enum_1163, int10)
+	while (component11 ! null) {
+		if (cc_find(component11, 0) = ^true) {
+			cc_setcolour(enum(int, int, enum_1169, VARBIT[4695]))
+			~xpdrops_setdropsize(component11, int8, fontmetrics6, fontmetrics7, cc_gettext)
+		}
+		int10 = calc(int10 + 1)
+		component11 = enum(int, component, enum_1163, int10)
+	}
+	~xpdrops_setposition(component1)
+	return 
+}

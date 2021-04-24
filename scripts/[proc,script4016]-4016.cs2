@@ -1,0 +1,8 @@
+// 4016 proc
+fun script4016() {
+
+	if (VARBIT[5399] = 1) {
+		VARBIT[5402] = calc(1 - VARBIT[5402])
+	}
+	return 
+}

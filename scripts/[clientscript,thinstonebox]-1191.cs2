@@ -1,0 +1,7 @@
+// 1191 clientscript
+fun thinstonebox(component0: Component) {
+
+	cc_deleteall(component0)
+	~thinstonebox(component0, 0)
+	return 
+}

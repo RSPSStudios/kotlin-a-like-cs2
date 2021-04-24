@@ -1,0 +1,10 @@
+// 1050 clientscript
+fun toplevel_compass_op(opindex0: Int) {
+
+	if (opindex0 ! 1 | VARBIT[542] = ^true | VARBIT[4606] ! 0) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	cam_forceangle(calc(225 + randominc(5)), 0)
+	return 
+}

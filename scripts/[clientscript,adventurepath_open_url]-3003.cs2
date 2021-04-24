@@ -1,0 +1,7 @@
+// 3003 clientscript
+fun adventurepath_open_url(url0: String) {
+
+	sound_synth(synth_2266, 1, 0)
+	~openurl_raw(url0, true, false)
+	return 
+}

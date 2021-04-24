@@ -1,0 +1,34 @@
+// 785 clientscript
+fun ge_pricechecker_prices(int0: Int, int1: Int, int2: Int, int3: Int, int4: Int, int5: Int, int6: Int, int7: Int, int8: Int, int9: Int, int10: Int, int11: Int, int12: Int, int13: Int, int14: Int, int15: Int, int16: Int, int17: Int, int18: Int, int19: Int, int20: Int, int21: Int, int22: Int, int23: Int, int24: Int, int25: Int, int26: Int, int27: Int) {
+
+	VARCINT[81] = int0
+	VARCINT[82] = int1
+	VARCINT[83] = int2
+	VARCINT[84] = int3
+	VARCINT[85] = int4
+	VARCINT[86] = int5
+	VARCINT[87] = int6
+	VARCINT[88] = int7
+	VARCINT[89] = int8
+	VARCINT[90] = int9
+	VARCINT[91] = int10
+	VARCINT[92] = int11
+	VARCINT[93] = int12
+	VARCINT[94] = int13
+	VARCINT[95] = int14
+	VARCINT[96] = int15
+	VARCINT[97] = int16
+	VARCINT[98] = int17
+	VARCINT[99] = int18
+	VARCINT[100] = int19
+	VARCINT[101] = int20
+	VARCINT[102] = int21
+	VARCINT[104] = int22
+	VARCINT[105] = int23
+	VARCINT[106] = int24
+	VARCINT[107] = int25
+	VARCINT[108] = int26
+	VARCINT[109] = int27
+	~ge_pricechecker_redraw
+	return 
+}

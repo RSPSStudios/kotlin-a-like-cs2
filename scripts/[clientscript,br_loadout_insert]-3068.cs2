@@ -1,0 +1,53 @@
+// 3068 clientscript
+fun br_loadout_insert(component0: Component, comsubid1: Int, drop2: Component, dropsubid3: Int, count4: Int, component5: Component, comsubid6: Int, comsubid7: Int, drop8: Component, drop9: Component, component10: Component) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_setontimer(null)
+	}
+	if (cc_find(component5, comsubid6) = ^true) {
+		cc_sethide(true)
+	}
+	if (cc_find(component5, comsubid7) = ^true) {
+		cc_sethide(true)
+	}
+	val namedobj11: Namedobj = enum(int, namedobj, enum_2630, count4)
+	if (namedobj11 = null) {
+		return 
+	}
+	val int12: Int = 0
+	val int13: Int = -1
+	if (drop2 = drop8) {
+		if (dropsubid3 >= 0 & dropsubid3 < inv_size(inv)) {
+			int13 = dropsubid3
+		}
+		int12 = 1
+	}
+	val int14: Int = inv_size(worn)
+	if (int13 = -1) {
+		while (int14 > 0) {
+			int14 = calc(int14 - 1)
+			if (int13 = -1 & enum(int, component, enum_2632, int14) = drop2) {
+				int13, int12 = int14, 0
+			}
+		}
+	}
+	if (int13 = -1) {
+		return 
+	}
+	if (int12 = 0) {
+		if (oc_param(namedobj11, param_850) ! int13) {
+			return 
+		}
+	} else if (enum(int, namedobj, enum_2630, ~br_loadout_get_inv(int13)) ! null) {
+		~br_loadout_additem(count4, namedobj11, int13, component5, drop8, drop9, component10)
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	if (int12 = 1) {
+		~br_loadout_set_inv(int13, count4)
+	} else {
+		~br_loadout_set_worn(int13, count4)
+	}
+	~br_loadout_drawloadout(component5, drop8, drop9, component10)
+	return 
+}

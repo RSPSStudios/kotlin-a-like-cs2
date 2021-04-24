@@ -1,0 +1,6 @@
+// 216 clientscript
+fun rebuildchatbox() {
+
+	~rebuildchatbox(~script553)
+	return 
+}

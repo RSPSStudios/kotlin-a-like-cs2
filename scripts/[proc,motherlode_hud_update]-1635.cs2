@@ -1,0 +1,15 @@
+// 1635 proc
+fun motherlode_hud_update(component0: Component) {
+
+	cc_settext(tostring(VARBIT[5558]))
+	val int1: Int = 81
+	if (VARBIT[5556] = 1) {
+		int1 = 162
+	}
+	if (VARBIT[5558] >= int1) {
+		cc_setcolour(^red)
+	} else {
+		cc_setcolour(0xc8c8c8)
+	}
+	return 
+}

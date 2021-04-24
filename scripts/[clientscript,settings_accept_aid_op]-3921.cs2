@@ -1,0 +1,13 @@
+// 3921 clientscript
+fun settings_accept_aid_op(component0: Component, component1: Component) {
+
+	sound_synth(synth_2266, 1, 0)
+	if (VARBIT[4180] = 0 & VARBIT[1777] = 0) {
+		VARBIT[4180] = 1
+	} else {
+		VARBIT[4180] = 0
+	}
+	VARCINT[2] = 0
+	~settings_side_accept_aid_create(component0, component1)
+	return 
+}

@@ -1,0 +1,6 @@
+// 1159 clientscript
+fun script1159(component0: Component) {
+
+	~script1160(component0)
+	return 
+}

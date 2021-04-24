@@ -1,0 +1,18 @@
+// 3244 clientscript
+fun script3244(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	cc_deleteall(component1)
+	cc_deleteall(component2)
+	cc_deleteall(component3)
+	cc_deleteall(component4)
+	~script3245(component2, component3, component4)
+	~script3248(component1)
+	~script3252(component3)
+	if_setonvartransmit({
+		script3251(component3){VARP[1018]}
+	}, component0)
+	if_setoninvtransmit({
+		script3247(component1){inv}
+	}, component0)
+	return 
+}

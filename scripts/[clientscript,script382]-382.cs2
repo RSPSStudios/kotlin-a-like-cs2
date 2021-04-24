@@ -1,0 +1,7 @@
+// 382 clientscript
+fun script382(int0: Int, component1: Component, component2: Component, int3: Int, component4: Component) {
+
+	val int5: Int = ~settings_get_slider(int0)
+	~script3941(int5, component1, component2, int3)
+	return 
+}

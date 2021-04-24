@@ -1,0 +1,8 @@
+// 2898 clientscript
+fun mirror_interface_button_reset(component0: Component, string0: String, clock1: Int, text1: String) {
+
+	if (clientclock >= clock1) {
+		~mirror_interface_button_draw(component0, text1, false)
+	}
+	return 
+}

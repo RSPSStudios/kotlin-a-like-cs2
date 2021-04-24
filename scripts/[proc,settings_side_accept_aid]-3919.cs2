@@ -1,0 +1,15 @@
+// 3919 proc
+fun settings_side_accept_aid(component0: Component, component1: Component) {
+
+	if_setonop({
+		settings_accept_aid_op(component0, component1)
+	}, component0)
+	if_setonvartransmit({
+		settings_side_accept_aid_resynch(component0, component1){VARP[427], VARP[499]}
+	}, component0)
+	if_setonmouseleave({
+		deltooltip(component1)
+	}, component0)
+	~settings_side_accept_aid_create(component0, component1)
+	return 
+}

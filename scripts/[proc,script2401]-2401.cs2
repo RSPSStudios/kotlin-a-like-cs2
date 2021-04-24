@@ -1,0 +1,11 @@
+// 2401 proc
+fun script2401(int0: Int): String {
+
+	val string0: String = ""
+	if (VARBIT[11866] = 1) {
+		string0 = ~script2411(int0)
+	} else {
+		string0 = ~time_convert(int0)
+	}
+	return string0
+}

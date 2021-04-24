@@ -1,0 +1,12 @@
+// 2919 proc
+fun gauntlet_select_item(namedobj0: Namedobj, int1: Int): Namedobj {
+
+	if (int1 = 0) {
+		return namedobj0
+	}
+	val namedobj2: Namedobj = enum(namedobj, namedobj, enum_2391, namedobj0)
+	if (namedobj2 ! null) {
+		return namedobj2
+	}
+	return namedobj0
+}

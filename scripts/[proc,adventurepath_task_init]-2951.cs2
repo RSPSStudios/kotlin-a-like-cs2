@@ -1,0 +1,134 @@
+// 2951 proc
+fun adventurepath_task_init(component0: Component, int1: Int, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component, component16: Component, component17: Component, component18: Component, component19: Component, component20: Component, component21: Component, component22: Component, component23: Component, component24: Component) {
+
+	cc_deleteall(component3)
+	cc_deleteall(component4)
+	cc_deleteall(component10)
+	cc_deleteall(component11)
+	cc_deleteall(component12)
+	cc_deleteall(component13)
+	cc_deleteall(component14)
+	cc_deleteall(component6)
+	val struct25: Struct = null
+	val width26: Int = if_getwidth(component4)
+	val enum27: Enum = null
+	val int28: Int = -1
+	val count29: Int = 0
+	val int30: Int = 0
+	val int31: Int = 0
+	if (~script3512(int1) = 0) {
+		int1 = 1
+	}
+	enum27 = enum(int, enum, enum_2620, int1)
+	val int32: Int = 0
+	val int33: Int = 0
+	val graphic34: Graphic = null
+	val int35: Int = 0
+	while (count29 < enum_getoutputcount(enum27)) {
+		struct25 = enum(int, struct, enum27, count29)
+		if (struct25 = null) {
+			mes("This Adventure path is not available at this time.")
+			if_close
+			return 
+		}
+		if (struct_param(struct25, param_807) = int1) {
+			graphic34 = struct_param(struct25, param_811)
+			int32 = struct_param(struct25, param_806)
+			if (VARP[2358] = 0) {
+				VARP[2358] = int32
+			}
+			if (int32 ! 0 & int32 = VARP[2358]) {
+				int33 = 1
+			} else {
+				int33 = 0
+			}
+			int35 = ~script2973(int32, int1)
+			if (int35 ! int32) {
+				int31 = ~create_v2_stone_button_filled_free_icon(component4, int31, width26, 50, 0, calc((50 + 5) * int30), struct_param(struct25, param_810), ^red, ^white, int32, int33, graphic34)
+				cc_setonop({
+					adventurepath_set_info(int32, component7, component8, component9, component10, struct25, component11, component12, component3, component0, component4, component13, component14, int1, component2, component5, component6, int32, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24)
+				})
+			} else if (~adventurepath_return_task_status(int32) = ^true) {
+				if (~adventurepath_return_reward_f2p(int32) = ^false | ~adventurepath_return_reward_p2p(int32) = ^false) {
+					int31 = ~create_v2_stone_button_filled_free_icon(component4, int31, width26, 50, 0, calc((50 + 5) * int30), struct_param(struct25, param_810), 0x32dbe9, ^white, int32, int33, graphic34)
+					cc_setonop({
+						adventurepath_set_info(int32, component7, component8, component9, component10, struct25, component11, component12, component3, component0, component4, component13, component14, int1, component2, component5, component6, int32, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24)
+					})
+				} else {
+					int31 = ~create_v2_stone_button_filled_free_icon(component4, int31, width26, 50, 0, calc((50 + 5) * int30), struct_param(struct25, param_810), 0x0dc10d, ^white, int32, int33, graphic34)
+					cc_setonop({
+						adventurepath_set_info(int32, component7, component8, component9, component10, struct25, component11, component12, component3, component0, component4, component13, component14, int1, component2, component5, component6, int32, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24)
+					})
+				}
+			} else {
+				int31 = ~create_v2_stone_button_filled_free_icon(component4, int31, width26, 50, 0, calc((50 + 5) * int30), struct_param(struct25, param_810), ^yellow, ^white, int32, int33, graphic34)
+				cc_setonop({
+					adventurepath_set_info(int32, component7, component8, component9, component10, struct25, component11, component12, component3, component0, component4, component13, component14, int1, component2, component5, component6, int32, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24)
+				})
+			}
+			if (VARP[2358] = int32) {
+				~adventurepath_set_info(int32, component7, component8, component9, component10, struct25, component11, component12, component3, component0, component4, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24)
+			}
+			int30 = calc(int30 + 1)
+		}
+		count29 = calc(1 + count29)
+	}
+	val height36: Int = calc((50 + 5) * int30 - 5)
+	if (height36 > if_getheight(component4)) {
+		if_setscrollsize(0, height36, component4)
+	} else {
+		if_setscrollsize(0, 0, component4)
+	}
+	int31 = ~v2_stone_button_out_filled(component12)
+	int31 = ~adventurepath_back_button_text(component12, int31, component3, component0, component4, component16, component17)
+	if_setonmouseover({
+		adventurepath_back_mouseover(component12, component3, component0, component4, component16, component17)
+	}, component12)
+	if_setonmouseleave({
+		adventurepath_back_mouseleave(component12, component3, component0, component4, component16, component17)
+	}, component12)
+	val text0: String = "Show path reward"
+	int31 = 0
+	int31 = ~v2_stone_button_out_filled(component13)
+	int31 = ~adventurepath_button_text(component13, int31, text0)
+	if_setonmouserepeat({
+		adventurepath_mouseover_path_reward(int1, component13, text0)
+	}, component13)
+	if_setonmouseleave({
+		adventurepath_mouseleave_path_reward(int1, component13, text0)
+	}, component13)
+	cc_setop(1, "Show <col=ff9040>path reward")
+	cc_setonop({
+		button_select_sound
+	})
+	int31 = 0
+	val int37: Int = ~adventurepath_return_path_length(VARP[2357])
+	val int38: Int = ~adventurepath_return_path_tasks_done(VARP[2357])
+	if (int37 <= 0) {
+		return 
+	}
+	cc_create(component14, ^iftype_text, int31)
+	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	cc_settext("Completed ${tostring(int38)}/${tostring(int37)} tasks")
+	cc_settextfont(p12_full)
+	cc_settextshadow(true)
+	cc_setcolour(0xff981f)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	val width39: Int = if_getwidth(component6)
+	int31 = 0
+	int31 = ~stonepanel(0, component6, int31)
+	cc_create(component6, ^iftype_graphic, int31)
+	cc_setgraphic("v2_borders_slim,0")
+	cc_setposition(0, 118, ^setpos_abs_centre, ^setpos_abs_top)
+	cc_setsize(width39, 32, ^setsize_abs, ^setsize_abs)
+	cc_create(component6, ^iftype_graphic, calc(1 + int31))
+	cc_setgraphic("v2_borders_slim,9")
+	cc_setposition(0, 116, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setsize(32, 32, ^setsize_abs, ^setsize_abs)
+	cc_create(component6, ^iftype_graphic, calc(2 + int31))
+	cc_setgraphic("v2_borders_slim,10")
+	cc_setposition(0, 116, ^setpos_abs_right, ^setpos_abs_top)
+	cc_setsize(32, 32, ^setsize_abs, ^setsize_abs)
+	return 
+}

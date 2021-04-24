@@ -1,0 +1,6 @@
+// 1108 clientscript
+fun script1108(int0: Int, int1: Int, component2: Component, int3: Int, component4: Component, colour5: Int) {
+
+	~script1107(int0, int1, component2, int3, component4, colour5)
+	return 
+}

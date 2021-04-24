@@ -1,0 +1,6 @@
+// 3795 clientscript
+fun script3795(component0: Component) {
+
+	if_setobject(VARP[856], 1, component0)
+	return 
+}

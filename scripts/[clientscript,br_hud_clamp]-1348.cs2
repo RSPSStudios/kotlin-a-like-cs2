@@ -1,0 +1,6 @@
+// 1348 clientscript
+fun br_hud_clamp(component0: Component, component1: Component, component2: Component) {
+
+	~br_hud_clamp(component0, component1, component2)
+	return 
+}

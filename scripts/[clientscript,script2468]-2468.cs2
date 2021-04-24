@@ -1,0 +1,10 @@
+// 2468 clientscript
+fun script2468(component0: Component, comsubid1: Int, comsubid2: Int, text0: String, clock3: Int) {
+
+	if (clientclock >= clock3 & cc_find(component0, comsubid1) = ^true & .cc_find(component0, comsubid2) = ^true) {
+		cc_settext(text0)
+		.cc_settrans(0)
+		.cc_setontimer(null)
+	}
+	return 
+}

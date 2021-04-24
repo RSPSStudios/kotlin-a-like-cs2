@@ -1,0 +1,86 @@
+// 3633 proc
+fun script3633(int0: Int): Int {
+
+	when (int0): Int {
+		0 -> {
+		
+			return VARBIT[3414]
+		}
+		1 -> {
+		
+			return VARBIT[3415]
+		}
+		2 -> {
+		
+			return VARBIT[3416]
+		}
+		3 -> {
+		
+			return VARBIT[3417]
+		}
+		4 -> {
+		
+			return VARBIT[3418]
+		}
+		5 -> {
+		
+			return VARBIT[3419]
+		}
+		6 -> {
+		
+			return VARBIT[3420]
+		}
+		7 -> {
+		
+			return VARBIT[3421]
+		}
+		8 -> {
+		
+			return VARBIT[3422]
+		}
+		9 -> {
+		
+			return VARBIT[3423]
+		}
+		10 -> {
+		
+			return VARBIT[3424]
+		}
+		11 -> {
+		
+			return VARBIT[3425]
+		}
+		12 -> {
+		
+			return VARBIT[3426]
+		}
+		13 -> {
+		
+			return VARBIT[3427]
+		}
+		14 -> {
+		
+			return VARBIT[3428]
+		}
+		15 -> {
+		
+			return VARBIT[3429]
+		}
+		16 -> {
+		
+			return VARBIT[3430]
+		}
+		17 -> {
+		
+			return VARBIT[3431]
+		}
+		18 -> {
+		
+			return VARBIT[3432]
+		}
+	else -> {
+	
+		return -1
+	}
+	}
+}

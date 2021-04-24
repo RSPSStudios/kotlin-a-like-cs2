@@ -1,0 +1,8 @@
+// 2959 proc
+fun adventurepath_return_task_status(index0: Int): Int {
+
+	if (index0 < 32) {
+		return testbit(VARP[2364], index0)
+	}
+	return ^false
+}

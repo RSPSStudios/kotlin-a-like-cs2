@@ -1,0 +1,11 @@
+// 2369 clientscript
+fun script2369(int0: Int, opindex1: Int, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component) {
+
+	if (opindex1 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	VARP[261] = ~min(6, ~max(1, calc(VARP[261] + int0)))
+	~script2371(component2, component3, component4, component5, component6, component7, component8, component9)
+	return 
+}

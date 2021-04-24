@@ -1,0 +1,13 @@
+// 3893 proc
+fun script3893(component0: Component, comsubid1: Int, int2: Int, int3: Int, y4: Int, int5: Int) {
+
+	val int6: Int = ~max(0, ~min(600, scale(int2, int3, 600)))
+	if (cc_find(component0, comsubid1) = ^true & VARCINT[381] ! int6) {
+		VARCINT[381] = int6
+		cc_setposition(calc(int5 + scale(VARCINT[381], 600, int3)), y4, ^setpos_abs_left, ^setpos_abs_top)
+		if (~toplevel_getcomponents = enum_1745) {
+			~script2236(interface_601:14, if_getlayer(interface_601:14), -1, -1, -1)
+		}
+	}
+	return 
+}

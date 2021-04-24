@@ -1,0 +1,18 @@
+// 1189 proc
+fun kourend_sidepanel_hudtoggle(component0: Component, component1: Component) {
+
+	val string0: String = "Enable a head-up display that shows your house favour while you're in Kourend. It is automatically hidden while other head-up displays are active."
+	if (VARBIT[619] = 1) {
+		cc_setgraphic("options_radio_buttons,2")
+		if_setop(1, "Disable", component0)
+		string0 = "Disable the head-up display that shows your house favour while you're in Kourend. It is automatically hidden while other head-up displays are active."
+	} else {
+		cc_setgraphic("options_radio_buttons,1")
+		if_setop(1, "Enable", component0)
+	}
+	.cc_setonmouserepeat({
+		tooltip_mouserepeat(event_com, event_comsubid, component1, string0, 25, 190)
+	})
+	VARCINT[2] = 0
+	return 
+}

@@ -1,0 +1,11 @@
+// 2300 proc
+fun script2300(component0: Component) {
+
+	val lvl1: Int = stat(hitpoints)
+	val int2: Int = ~min(26, scale(lvl1, ~max(1, stat_base(hitpoints)), 26))
+	if (lvl1 > 0) {
+		int2 = ~max(1, int2)
+	}
+	if_setsize(26, int2, ^setsize_abs, ^setsize_abs, component0)
+	return 
+}

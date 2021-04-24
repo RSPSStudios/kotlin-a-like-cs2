@@ -1,0 +1,12 @@
+// 3183 clientscript
+fun league_progress_bar_mobile_tooltip(component0: Component, comsubid1: Int, component2: Component, string0: String, width3: Int) {
+
+	if (VARCINT[385] = comsubid1) {
+		~deltooltip_action(component2)
+		VARCINT[385] = -1
+	} else {
+		~tooltip_build(component0, comsubid1, component2, string0, width3)
+		VARCINT[385] = comsubid1
+	}
+	return 
+}

@@ -1,0 +1,14 @@
+// 2387 proc
+fun script2387(): Int {
+
+	if (~on_mobile = false) {
+		return 0
+	}
+	if (VARCINT[171] ! 3) {
+		return 0
+	}
+	if (VARBIT[5542] = 0) {
+		return 0
+	}
+	return 1
+}

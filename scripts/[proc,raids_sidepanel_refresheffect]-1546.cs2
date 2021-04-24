@@ -1,0 +1,13 @@
+// 1546 proc
+fun raids_sidepanel_refresheffect(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component) {
+
+	if (int0 = 1) {
+		sound_synth(synth_2266, 1, 0)
+	}
+	if_sethide(true, component2)
+	if_sethide(true, component3)
+	if_sethide(true, component4)
+	if_sethide(true, component6)
+	if_sethide(false, component5)
+	return 
+}

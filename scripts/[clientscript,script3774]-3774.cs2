@@ -1,0 +1,8 @@
+// 3774 clientscript
+fun script3774(opindex0: Int) {
+
+	if (opindex0 = 1) {
+		sound_synth(synth_2308, 1, 0)
+	}
+	return 
+}

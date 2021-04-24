@@ -1,0 +1,6 @@
+// 1699 clientscript
+fun orbs_worldmap_setup(component0: Component, component1: Component, component2: Component) {
+
+	~orbs_worldmap_setup(component0, component1, component2)
+	return 
+}

@@ -1,0 +1,7 @@
+// 2652 clientscript
+fun telenexus_tick_mouseover(component0: Component, component1: Component, graphic2: Graphic) {
+
+	if_setcolour(^white, component1)
+	if_setgraphic(graphic2, component0)
+	return 
+}

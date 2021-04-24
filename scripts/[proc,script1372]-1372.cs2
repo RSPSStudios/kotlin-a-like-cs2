@@ -1,0 +1,5 @@
+// 1372 proc
+fun script1372(): Int {
+
+	return calc(VARBIT[4766] * 512 + VARBIT[4762])
+}

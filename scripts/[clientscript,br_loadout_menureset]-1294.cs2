@@ -1,0 +1,19 @@
+// 1294 clientscript
+fun br_loadout_menureset(clock0: Int, component1: Component, comsubid2: Int, comsubid3: Int, colour4: Int, trans5: Int, colour6: Int, trans7: Int) {
+
+	if (clientclock < clock0) {
+		return 
+	}
+	if (cc_find(component1, comsubid2) = ^true & .cc_find(component1, comsubid3) = ^true) {
+		cc_setonmouserepeat({
+			script1015(event_com, comsubid3, colour4, trans5)
+		})
+		cc_setonmouseleave({
+			script1015(event_com, comsubid3, colour6, trans7)
+		})
+		.cc_setcolour(colour6)
+		.cc_settrans(trans7)
+		.cc_setontimer(null)
+	}
+	return 
+}

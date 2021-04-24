@@ -1,0 +1,11 @@
+// 455 clientscript
+fun orbs_toggle_prayer(opindex0: Int, component1: Component, component2: Component, component3: Component) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	VARBIT[4103] = calc(1 - VARBIT[4103])
+	~orbs_update_prayer(component1, component2, component3)
+	return 
+}

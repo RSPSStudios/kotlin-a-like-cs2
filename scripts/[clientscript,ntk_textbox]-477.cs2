@@ -1,0 +1,6 @@
+// 477 clientscript
+fun ntk_textbox(component0: Component) {
+
+	if_settext("Room ${tostring(VARBIT[2377])} of 8<br>Thieving level required: ${tostring(VARBIT[2376])}", component0)
+	return 
+}

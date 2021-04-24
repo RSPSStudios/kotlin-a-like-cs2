@@ -1,0 +1,25 @@
+// 1460 clientscript
+fun lumbridge_alchemy_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component) {
+
+	val size6: Int = inv_size(inv)
+	val size7: Int = 0
+	while (size7 < size6) {
+		cc_create(component4, ^iftype_graphic, size7)
+		cc_sethide(true)
+		cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+		cc_setposition(calc(size7 % 4 * (36 + 8)), calc(size7 / 4 * 32), ^setpos_abs_left, ^setpos_abs_top)
+		cc_setoutline(1)
+		cc_setgraphicshadow(0x333333)
+		cc_setop(10, "Examine")
+		size7 = calc(size7 + 1)
+	}
+	~lumbridge_alchemy_invtransmit(component4, size6)
+	if_setoninvtransmit({
+		lumbridge_alchemy_invtransmit(component4, size6){inv}
+	}, component0)
+	~lumbridge_alchemy_vartransmit(component1, component2, component3, component4, component5, size6)
+	if_setonvartransmit({
+		lumbridge_alchemy_vartransmit(component1, component2, component3, component4, component5, size6){VARP[318], VARP[925]}
+	}, component0)
+	return 
+}

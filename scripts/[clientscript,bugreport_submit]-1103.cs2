@@ -1,0 +1,19 @@
+// 1103 clientscript
+fun bugreport_submit() {
+
+	if (string_length(VARCSTRING[372]) > 0) {
+		sound_synth(synth_2266, 1, 0)
+		if (VARBIT[4931] < 10 & string_length(VARCSTRING[372]) >= 15) {
+			bug_report(0, ~bugreport_parse(VARCSTRING[372], 0), ~bugreport_parse(VARCSTRING[373], 0))
+		}
+		if (~on_mobile = true) {
+			~keyboard_hide
+		}
+		if_close
+		mes("Your bug report has been submitted. Thank you.")
+		return 
+	}
+	sound_synth(pillory_wrong, 1, 0)
+	mes("Please describe the bug.")
+	return 
+}

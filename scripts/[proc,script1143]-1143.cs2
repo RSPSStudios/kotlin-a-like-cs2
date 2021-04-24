@@ -1,0 +1,22 @@
+// 1143 proc
+fun script1143(component0: Component, int1: Int) {
+
+	val int2: Int = 0
+	val int3: Int = 0
+	int2, int3 = ~deadmanprotect_xp_counts
+	if (enum(int, int, enum_1239, int1) = 1) {
+		if (int2 >= 2) {
+			mes("You already have the maximum number of combat skills protected.")
+			return 
+		}
+	} else if (int3 >= 3) {
+		mes("You already have the maximum number of non-combat skills protected.")
+		return 
+	}
+	VARP[1295] = setbit(VARP[1295], calc(int1 - 1))
+	~deadman_stats_set_protect(component0, int1)
+	int2, int3 = ~deadmanprotect_xp_counts
+	if_settext("Combat ${tostring(int2)}/2", interface_226:46)
+	if_settext("Other ${tostring(int3)}/3", interface_226:47)
+	return 
+}

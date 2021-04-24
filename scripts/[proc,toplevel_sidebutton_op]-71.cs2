@@ -1,0 +1,9 @@
+// 71 proc
+fun toplevel_sidebutton_op(enum0: Enum, int1: Int, boolean2: Boolean) {
+
+	if (boolean2 = true & VARCINT[171] = int1 & enum(enum, boolean, enum_1134, enum0) = true) {
+		int1 = -1
+	}
+	~toplevel_sidebutton_switch(int1, enum0)
+	return 
+}

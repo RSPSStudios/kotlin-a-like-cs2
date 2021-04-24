@@ -1,0 +1,26 @@
+// 109 clientscript
+fun meslayer_mode8(text0: String) {
+
+	~meslayer_open(8)
+	if_settext(text0, interface_162:44)
+	~script222("")
+	val string1: String = ""
+	if_setonkey({
+		meslayer_onkey(event_key, event_keychar, string1)
+	}, interface_162:45)
+	if_setondialogabort({
+		meslayer_ondialogabort
+	}, interface_162:45)
+	~meslayer_initlastnames
+	if (string_length(VARCSTRING[361]) > 0) {
+		~meslayer_dynamicbutton
+		cc_settext("<col=000000>Last name:</col> ${VARCSTRING[361]}")
+		cc_setonclick({
+			meslayer_lastname_click(8, VARCSTRING[361])
+		})
+	}
+	if (~on_mobile = true) {
+		~keyboard_show(0, 12)
+	}
+	return 
+}

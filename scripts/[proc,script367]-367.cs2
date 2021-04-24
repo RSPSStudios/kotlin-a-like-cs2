@@ -1,0 +1,5 @@
+// 367 proc
+fun script367(): Int {
+
+	return 0
+}

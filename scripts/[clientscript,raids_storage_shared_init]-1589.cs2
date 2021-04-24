@@ -1,0 +1,15 @@
+// 1589 clientscript
+fun raids_storage_shared_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component) {
+
+	~raids_storage_drawbutton("Private", component5, "p11_full")
+	~raids_storage_shared_warning(component1)
+	if_setonvartransmit({
+		raids_storage_shared_warning(component1){VARP[499]}
+	}, component1)
+	~scrollbar_vertical(component3, component2, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+	~raids_storage_shared_items(component2, component3, component4)
+	if_setoninvtransmit({
+		raids_storage_shared_items(component2, component3, component4){inv_582}
+	}, component0)
+	return 
+}

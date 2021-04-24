@@ -1,0 +1,7 @@
+// 41 proc
+fun deltooltip_action(component0: Component) {
+
+	cc_deleteall(component0)
+	VARCINT[2] = 0
+	return 
+}

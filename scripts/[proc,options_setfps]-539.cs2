@@ -1,0 +1,27 @@
+// 539 proc
+fun options_setfps() {
+
+	if (~on_mobile = false) {
+		mobile_setfps(0)
+		return 
+	}
+	when (VARBIT[6364]): Int {
+		1 -> {
+		
+			mobile_setfps(15)
+		}
+		2 -> {
+		
+			mobile_setfps(20)
+		}
+		3 -> {
+		
+			mobile_setfps(30)
+		}
+	else -> {
+	
+		mobile_setfps(0)
+	}
+	}
+	return 
+}

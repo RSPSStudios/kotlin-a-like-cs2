@@ -1,0 +1,6 @@
+// 3414 clientscript
+fun highlight_textbox_resize(string0: String, colour0: Int, boolean1: Boolean, boolean2: Boolean, component3: Component, height4: Int) {
+
+	~highlight_textbox(string0, colour0, boolean1, boolean2, component3, height4)
+	return 
+}

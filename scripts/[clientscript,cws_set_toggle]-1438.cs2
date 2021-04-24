@@ -1,0 +1,8 @@
+// 1438 clientscript
+fun cws_set_toggle(component0: Component, comsubid1: Int, int2: Int, comsubid3: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		~cws_set_toggle(component0, int2, comsubid3, ~cws_cc_getvar(int2))
+	}
+	return 
+}

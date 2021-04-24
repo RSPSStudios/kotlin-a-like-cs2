@@ -1,0 +1,14 @@
+// 3970 proc
+fun script3970(int0: Int) {
+
+	if (int0 = 0) {
+		VARBIT[6364] = 1
+	} else if (int0 = 1) {
+		VARBIT[6364] = 2
+	} else if (int0 = 2) {
+		VARBIT[6364] = 3
+	} else if (int0 = 3) {
+		VARBIT[6364] = 0
+	}
+	return 
+}

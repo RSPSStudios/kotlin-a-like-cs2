@@ -1,0 +1,6 @@
+// 2733 clientscript
+fun collection_item_click(obj0: Obj, int1: Int) {
+
+	mes("You have received ${tostring(int1)} x ${oc_name(obj0)}.")
+	return 
+}

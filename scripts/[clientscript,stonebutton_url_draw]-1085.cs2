@@ -1,0 +1,6 @@
+// 1085 clientscript
+fun stonebutton_url_draw(boolean0: Boolean, boolean1: Boolean, component2: Component, string0: String, string1: String) {
+
+	~stonebutton_url_draw(boolean0, boolean1, component2, string0, string1)
+	return 
+}

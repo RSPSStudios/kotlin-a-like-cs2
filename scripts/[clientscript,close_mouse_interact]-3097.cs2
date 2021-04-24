@@ -1,0 +1,12 @@
+// 3097 clientscript
+fun close_mouse_interact(component0: Component, boolean1: Boolean, comsubid2: Int) {
+
+	if (cc_find(component0, comsubid2) = ^true) {
+		if (boolean1 = true) {
+			cc_setgraphic("close_buttons,5")
+		} else {
+			cc_setgraphic("close_buttons,4")
+		}
+	}
+	return 
+}

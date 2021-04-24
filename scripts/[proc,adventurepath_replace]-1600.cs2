@@ -1,0 +1,6 @@
+// 1600 proc
+fun adventurepath_replace(string0: String): String {
+
+	string0 = ~script1299(string0, "@control_leftclick_caps", ~text_device("Click", "Tap"))
+	return string0
+}

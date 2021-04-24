@@ -1,0 +1,6 @@
+// 3831 clientscript
+fun settings_window_resize(component0: Component, component1: Component, component2: Component, component3: Component, int4: Int, width5: Int, height6: Int) {
+
+	~settings_window_resize(component0, component1, component2, component3, int4, width5, height6)
+	return 
+}

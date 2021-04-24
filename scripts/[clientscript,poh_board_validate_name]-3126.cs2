@@ -1,0 +1,6 @@
+// 3126 clientscript
+fun poh_board_validate_name(string0: String) {
+
+	resume_namedialog(string0)
+	return 
+}

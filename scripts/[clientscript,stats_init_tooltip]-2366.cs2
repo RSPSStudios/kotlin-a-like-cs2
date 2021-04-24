@@ -1,0 +1,7 @@
+// 2366 clientscript
+fun stats_init_tooltip(component0: Component) {
+
+	~deltooltip_action(component0)
+	VARCINT[218], VARCINT[217] = null, -1
+	return 
+}

@@ -1,0 +1,6 @@
+// 3924 clientscript
+fun settings_side_runmode_resynch(component0: Component, component1: Component) {
+
+	~settings_side_runmode_create(component0, component1)
+	return 
+}

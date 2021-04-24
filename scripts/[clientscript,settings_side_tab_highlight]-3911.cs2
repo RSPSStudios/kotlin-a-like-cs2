@@ -1,0 +1,10 @@
+// 3911 clientscript
+fun settings_side_tab_highlight(component0: Component, component1: Component, component2: Component, int3: Int) {
+
+	if (VARBIT[9683] = int3) {
+		~settings_side_tab_highlight_reset(component0, component1, component2, int3)
+	} else {
+		~settings_side_tab_highlight(component0, component1, component2, int3)
+	}
+	return 
+}

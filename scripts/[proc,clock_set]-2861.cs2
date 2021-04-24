@@ -1,0 +1,21 @@
+// 2861 proc
+fun clock_set(component0: Component) {
+
+	VARCINT[375] = calc(clientclock + 3000)
+	val int1: Int = calc(VARBIT[8354] % 60)
+	val int2: Int = calc(VARBIT[8354] / 60)
+	val string0: String = ""
+	val string1: String = ""
+	if (int2 < 10) {
+		string0 = "0${tostring(int2)}"
+	} else {
+		string0 = tostring(int2)
+	}
+	if (int1 < 10) {
+		string1 = "0${tostring(int1)}"
+	} else {
+		string1 = tostring(int1)
+	}
+	if_settext("${string0}:${string1} UTC", component0)
+	return 
+}

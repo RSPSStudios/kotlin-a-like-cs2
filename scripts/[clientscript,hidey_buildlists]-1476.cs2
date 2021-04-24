@@ -1,0 +1,6 @@
+// 1476 clientscript
+fun hidey_buildlists(flags0: Int, flags1: Int, flags2: Int) {
+
+	~hidey_buildlists(flags0, flags1, flags2)
+	return 
+}

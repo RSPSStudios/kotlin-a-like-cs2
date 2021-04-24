@@ -1,0 +1,7 @@
+// 2539 clientscript
+fun br_lobbyoverlay_init(component0: Component, component1: Component) {
+
+	~script2249(component0, setbit(0, 2))
+	~script1486(component1, ^setpos_abs_right, 1, 0)
+	return 
+}

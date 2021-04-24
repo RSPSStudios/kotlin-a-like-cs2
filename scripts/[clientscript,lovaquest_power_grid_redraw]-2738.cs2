@@ -1,0 +1,6 @@
+// 2738 clientscript
+fun lovaquest_power_grid_redraw(component0: Component) {
+
+	~lovaquest_power_grid_redraw(component0)
+	return 
+}

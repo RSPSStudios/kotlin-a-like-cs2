@@ -1,0 +1,6 @@
+// 3494 proc
+fun death_office_title(): String {
+
+	val size0: Int = inv_size(inv_636)
+	return "Death's Office Item Retrieval <col=ffb83f>(${tostring(calc(size0 - ~inv_freespace(inv_636, size0)))}/${tostring(size0)})</col>"
+}

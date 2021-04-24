@@ -1,0 +1,6 @@
+// 1956 clientscript
+fun wildwars_fogcolour() {
+
+	~wildwars_fogcolour
+	return 
+}

@@ -1,0 +1,26 @@
+// 160 proc
+fun interface_invother_update_big(component0: Component, inv1: Inv, int2: Int, int3: Int, int4: Int, component5: Component, string0: String, string1: String, string2: String, string3: String, string4: String, string5: String, string6: String, string7: String, string8: String, boolean6: Boolean) {
+
+	cc_deleteall(component0)
+	val int7: Int = 0
+	val int8: Int = 0
+	if (if_getscrollwidth(component0) > 0) {
+		int7 = calc((if_getscrollwidth(component0) - 36 * int2) / (int2 - 1))
+	} else {
+		int7 = calc((if_getwidth(component0) - 36 * int2) / (int2 - 1))
+	}
+	if (if_getscrollheight(component0) > 0) {
+		int8 = calc((if_getscrollheight(component0) - 32 * int3) / (int3 - 1))
+	} else {
+		int8 = calc((if_getheight(component0) - 32 * int3) / (int3 - 1))
+	}
+	val int9: Int = 0
+	while (int9 <= calc(int2 * int3)) {
+		cc_create(component0, ^iftype_graphic, int9)
+		cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+		cc_setposition(calc((36 + int7) * (int9 % int2)), calc(int9 / int2 * (32 + int8)), ^setpos_abs_left, ^setpos_abs_top)
+		~script161(inv1, int9, component0, int9, int4, component5, string0, string1, string2, string3, string4, string5, string6, string7, string8, boolean6)
+		int9 = calc(int9 + 1)
+	}
+	return 
+}

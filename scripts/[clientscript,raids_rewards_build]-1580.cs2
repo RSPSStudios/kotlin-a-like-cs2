@@ -1,0 +1,6 @@
+// 1580 clientscript
+fun raids_rewards_build(component0: Component, size1: Int) {
+
+	~raids_rewards_build(component0, size1)
+	return 
+}

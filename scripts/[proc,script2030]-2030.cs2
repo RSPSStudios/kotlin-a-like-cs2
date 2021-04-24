@@ -1,0 +1,223 @@
+// 2030 proc
+fun script2030(int0: Int): Int {
+
+	when (int0): Int {
+		1 -> {
+		
+			if (VARBIT[5876] = 5) {
+				return 1
+			}
+		}
+		2 -> {
+		
+			if (VARBIT[5877] = 5) {
+				return 1
+			}
+		}
+		3 -> {
+		
+			if (VARBIT[5878] = 5) {
+				return 1
+			}
+		}
+		4 -> {
+		
+			if (VARBIT[5879] = 5) {
+				return 1
+			}
+		}
+		5 -> {
+		
+			if (VARBIT[5880] = 5) {
+				return 1
+			}
+		}
+		6 -> {
+		
+			if (VARBIT[5881] = 5) {
+				return 1
+			}
+		}
+		7 -> {
+		
+			if (VARBIT[5882] = 5) {
+				return 1
+			}
+		}
+		8 -> {
+		
+			if (VARBIT[5883] = 5) {
+				return 1
+			}
+		}
+		9 -> {
+		
+			if (VARBIT[5884] = 5) {
+				return 1
+			}
+		}
+		10 -> {
+		
+			if (VARBIT[5885] = 5) {
+				return 1
+			}
+		}
+		11 -> {
+		
+			if (VARBIT[5886] = 5) {
+				return 1
+			}
+		}
+		12 -> {
+		
+			if (VARBIT[5887] = 5) {
+				return 1
+			}
+		}
+		13 -> {
+		
+			if (VARBIT[5888] = 5) {
+				return 1
+			}
+		}
+		14 -> {
+		
+			if (VARBIT[5889] = 5) {
+				return 1
+			}
+		}
+		15 -> {
+		
+			if (VARBIT[5890] = 5) {
+				return 1
+			}
+		}
+		16 -> {
+		
+			if (VARBIT[5891] = 5) {
+				return 1
+			}
+		}
+		17 -> {
+		
+			if (VARBIT[5892] = 5) {
+				return 1
+			}
+		}
+		18 -> {
+		
+			if (VARBIT[5893] = 5) {
+				return 1
+			}
+		}
+		19 -> {
+		
+			if (VARBIT[5894] = 5) {
+				return 1
+			}
+		}
+		20 -> {
+		
+			if (VARBIT[5895] = 5) {
+				return 1
+			}
+		}
+		21 -> {
+		
+			if (VARBIT[5896] = 5) {
+				return 1
+			}
+		}
+		22 -> {
+		
+			if (VARBIT[5897] = 5) {
+				return 1
+			}
+		}
+		23 -> {
+		
+			if (VARBIT[5898] = 5) {
+				return 1
+			}
+		}
+		24 -> {
+		
+			if (VARBIT[5899] = 5) {
+				return 1
+			}
+		}
+		25 -> {
+		
+			if (VARBIT[5900] = 5) {
+				return 1
+			}
+		}
+		26 -> {
+		
+			if (VARBIT[5901] = 5) {
+				return 1
+			}
+		}
+		27 -> {
+		
+			if (VARBIT[5902] = 5) {
+				return 1
+			}
+		}
+		28 -> {
+		
+			if (VARBIT[5903] = 5) {
+				return 1
+			}
+		}
+		29 -> {
+		
+			if (VARBIT[5904] = 5) {
+				return 1
+			}
+		}
+		30 -> {
+		
+			if (VARBIT[5905] = 5) {
+				return 1
+			}
+		}
+		31 -> {
+		
+			if (VARBIT[5906] = 5) {
+				return 1
+			}
+		}
+		32 -> {
+		
+			if (VARBIT[5907] = 5) {
+				return 1
+			}
+		}
+		33 -> {
+		
+			if (VARBIT[5908] = 5) {
+				return 1
+			}
+		}
+		34 -> {
+		
+			if (VARBIT[5909] = 5) {
+				return 1
+			}
+		}
+		35 -> {
+		
+			if (VARBIT[5910] = 5) {
+				return 1
+			}
+		}
+		36 -> {
+		
+			if (VARBIT[5911] = 5) {
+				return 1
+			}
+		}
+	}
+	return 0
+}

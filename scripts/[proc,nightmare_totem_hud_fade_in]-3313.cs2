@@ -1,0 +1,31 @@
+// 3313 proc
+fun nightmare_totem_hud_fade_in(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component, component16: Component, component17: Component, component18: Component) {
+
+	int0 = ~max(0, calc(int0 - 3))
+	if_settrans(int0, component1)
+	if_settrans(int0, component2)
+	if_settrans(int0, component4)
+	if_settrans(int0, component5)
+	if_settrans(int0, component6)
+	if_settrans(int0, component8)
+	if_settrans(int0, component9)
+	if_settrans(int0, component10)
+	if_settrans(int0, component12)
+	if_settrans(int0, component13)
+	if_settrans(int0, component14)
+	if_settrans(int0, component16)
+	if_settrans(int0, component17)
+	if_settrans(int0, component18)
+	if (int0 <= 0) {
+		if_sethide(false, component3)
+		if_sethide(false, component7)
+		if_sethide(false, component11)
+		if_sethide(false, component15)
+		if_setontimer(null, component1)
+		return 
+	}
+	if_setontimer({
+		nightmare_totem_hud_fade_in(int0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18)
+	}, component1)
+	return 
+}

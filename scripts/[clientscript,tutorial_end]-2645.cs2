@@ -1,0 +1,6 @@
+// 2645 clientscript
+fun tutorial_end() {
+
+	setremoveroofs(false)
+	return 
+}

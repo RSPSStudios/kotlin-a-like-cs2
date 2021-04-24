@@ -1,0 +1,15 @@
+// 1426 clientscript
+fun tol_pressure_leverop(opindex0: Int, int1: Int, component2: Component, component3: Component, component4: Component) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2400, 1, 0)
+	if (int1 = 1) {
+		VARBIT[3356] = calc(1 - VARBIT[3356])
+	} else if (int1 = 2) {
+		VARBIT[3357] = calc(1 - VARBIT[3357])
+	}
+	~tol_pressure_leverresynch(int1, component2, component3, component4)
+	return 
+}

@@ -1,0 +1,6 @@
+// 268 clientscript
+fun nzone_lobby_partynames(component0: Component) {
+
+	~nzone_lobby_partynames(component0)
+	return 
+}

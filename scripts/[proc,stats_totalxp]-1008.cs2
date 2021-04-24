@@ -1,0 +1,19 @@
+// 1008 proc
+fun stats_totalxp(): Int, Int {
+
+	val int0: Int = 0
+	val int1: Int = 0
+	val int2: Int = pow(10, 9)
+	val int3: Int = 1
+	val stat4: Stat = enum(int, stat, enum_681, int3)
+	while (stat4 ! null) {
+		int0 = calc(int0 + stat_xp(stat4))
+		while (int0 >= int2) {
+			int0 = calc(int0 - int2)
+			int1 = calc(int1 + 1)
+		}
+		int3 = calc(int3 + 1)
+		stat4 = enum(int, stat, enum_681, int3)
+	}
+	return int1, int0
+}

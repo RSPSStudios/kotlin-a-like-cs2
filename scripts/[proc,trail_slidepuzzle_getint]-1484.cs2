@@ -1,0 +1,110 @@
+// 1484 proc
+fun trail_slidepuzzle_getint(int0: Int): Int {
+
+	when (int0): Int {
+		0 -> {
+		
+			return VARCINT[81]
+		}
+		1 -> {
+		
+			return VARCINT[82]
+		}
+		2 -> {
+		
+			return VARCINT[83]
+		}
+		3 -> {
+		
+			return VARCINT[84]
+		}
+		4 -> {
+		
+			return VARCINT[85]
+		}
+		5 -> {
+		
+			return VARCINT[86]
+		}
+		6 -> {
+		
+			return VARCINT[87]
+		}
+		7 -> {
+		
+			return VARCINT[88]
+		}
+		8 -> {
+		
+			return VARCINT[89]
+		}
+		9 -> {
+		
+			return VARCINT[90]
+		}
+		10 -> {
+		
+			return VARCINT[91]
+		}
+		11 -> {
+		
+			return VARCINT[92]
+		}
+		12 -> {
+		
+			return VARCINT[93]
+		}
+		13 -> {
+		
+			return VARCINT[94]
+		}
+		14 -> {
+		
+			return VARCINT[95]
+		}
+		15 -> {
+		
+			return VARCINT[96]
+		}
+		16 -> {
+		
+			return VARCINT[97]
+		}
+		17 -> {
+		
+			return VARCINT[98]
+		}
+		18 -> {
+		
+			return VARCINT[99]
+		}
+		19 -> {
+		
+			return VARCINT[100]
+		}
+		20 -> {
+		
+			return VARCINT[101]
+		}
+		21 -> {
+		
+			return VARCINT[102]
+		}
+		22 -> {
+		
+			return VARCINT[104]
+		}
+		23 -> {
+		
+			return VARCINT[105]
+		}
+		24 -> {
+		
+			return VARCINT[106]
+		}
+	else -> {
+	
+		return -1
+	}
+	}
+}

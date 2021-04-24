@@ -1,0 +1,33 @@
+// 2606 proc
+fun script2606(int0: Int) {
+
+	val int1: Int = 0
+	when (int0): Int {
+		0 -> {
+		
+			int1 = VARBIT[6605]
+		}
+		1 -> {
+		
+			int1 = VARBIT[6609]
+		}
+		2 -> {
+		
+			int1 = VARBIT[6606]
+		}
+		3 -> {
+		
+			int1 = VARBIT[6607]
+		}
+		4 -> {
+		
+			int1 = VARBIT[6608]
+		}
+	}
+	if (int1 = 1) {
+		cc_setgraphic("options_radio_buttons,5")
+	} else {
+		cc_setgraphic("options_radio_buttons,6")
+	}
+	return 
+}

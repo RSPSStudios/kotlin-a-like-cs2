@@ -1,0 +1,6 @@
+// 828 clientscript
+fun playermember(int0: Int) {
+
+	~playermember(int0)
+	return 
+}

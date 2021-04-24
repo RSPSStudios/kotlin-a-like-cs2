@@ -1,0 +1,7 @@
+// 2684 clientscript
+fun bond_prompt_init(component0: Component, component1: Component) {
+
+	~membership_benefits_prompt_button_init(component0, "Open Store")
+	~membership_benefits_prompt_button_init(component1, "Bond Pouch")
+	return 
+}

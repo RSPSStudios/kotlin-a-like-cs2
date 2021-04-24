@@ -1,0 +1,13 @@
+// 1249 clientscript
+fun script1249(component0: Component, string0: String) {
+
+	sound_synth(synth_2266, 1, 0)
+	~script1248(true, component0, "---")
+	if_setonmouseover(null, component0)
+	if_setonmouseleave(null, component0)
+	if_setonclick(null, component0)
+	if_setontimer({
+		script1250(calc(clientclock + 60), component0, string0)
+	}, component0)
+	return 
+}

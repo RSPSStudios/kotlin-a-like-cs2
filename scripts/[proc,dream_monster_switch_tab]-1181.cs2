@@ -1,0 +1,37 @@
+// 1181 proc
+fun dream_monster_switch_tab(component0: Component) {
+
+	component0[4]: Component
+	component0[0] = dream_monster_stat:5
+	component0[1] = dream_monster_stat:8
+	component0[2] = dream_monster_stat:11
+	component0[3] = dream_monster_stat:14
+	component1[4]: Component
+	component1[0] = dream_monster_stat:19
+	component1[1] = dream_monster_stat:21
+	component1[2] = dream_monster_stat:23
+	component1[3] = dream_monster_stat:25
+	component2[4]: Component
+	component2[0] = dream_monster_stat:6
+	component2[1] = dream_monster_stat:9
+	component2[2] = dream_monster_stat:12
+	component2[3] = dream_monster_stat:15
+	val int1: Int = 0
+	while (int1 < 4) {
+		if (component0[int1] = component0) {
+			if_sethide(false, component1[int1])
+			if_setgraphic("banktabs,2", component2[int1])
+			if (if_getheight(component1[int1]) > if_getheight(dream_monster_stat:18)) {
+				if_sethide(false, dream_monster_stat:27)
+				~scrollbar_vertical(dream_monster_stat:27, component1[int1], "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+			} else {
+				if_sethide(true, dream_monster_stat:27)
+			}
+		} else {
+			if_sethide(true, component1[int1])
+			if_setgraphic("banktabs,0", component2[int1])
+		}
+		int1 = calc(int1 + 1)
+	}
+	return 
+}

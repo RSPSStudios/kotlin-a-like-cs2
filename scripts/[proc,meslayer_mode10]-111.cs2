@@ -1,0 +1,30 @@
+// 111 proc
+fun meslayer_mode10() {
+
+	if (VARCINT[11] = 1) {
+		if_close
+	}
+	if (VARBIT[8119] = 0) {
+		mes("You must set a name before you can chat.")
+		return 
+	}
+	~meslayer_open(10)
+	if_settext("Enter the player name whose channel you wish to join:", interface_162:44)
+	~script222("")
+	val string0: String = ""
+	if_setonkey({
+		meslayer_onkey(event_key, event_keychar, string0)
+	}, interface_162:45)
+	~meslayer_initlastnames
+	if (string_length(VARCSTRING[362]) > 0) {
+		~meslayer_dynamicbutton
+		cc_settext("<col=000000>Last name:</col> ${VARCSTRING[362]}")
+		cc_setonclick({
+			meslayer_lastname_click(10, VARCSTRING[362])
+		})
+	}
+	if (~on_mobile = true) {
+		~keyboard_show(0, 12)
+	}
+	return 
+}

@@ -1,0 +1,10 @@
+// 2159 clientscript
+fun script2159(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	~chatdefault_stopinput
+	~script2160(component1, "1")
+	~script2160(component2, "2")
+	~script2160(component3, "3")
+	~script2160(component4, "4")
+	return 
+}

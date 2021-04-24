@@ -1,0 +1,6 @@
+// 1100 clientscript
+fun bugreport_drawbutton(boolean0: Boolean, component1: Component, text0: String) {
+
+	~bugreport_drawbutton(boolean0, component1, text0)
+	return 
+}

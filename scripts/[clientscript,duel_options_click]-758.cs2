@@ -1,0 +1,11 @@
+// 758 clientscript
+fun duel_options_click(index0: Int) {
+
+	if (testbit(VARP[286], index0) = ^false) {
+		VARP[286] = setbit(VARP[286], index0)
+	} else {
+		VARP[286] = clearbit(VARP[286], index0)
+	}
+	~duel_options_radio_buttons
+	return 
+}

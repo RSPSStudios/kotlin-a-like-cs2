@@ -1,0 +1,19 @@
+// 1711 clientscript
+fun worldmap_maplist_select(opindex0: Int, maparea1: Maparea, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	~worldmap_maplist_close(component2, component3)
+	if (worldmap_getcurrentmap ! maparea1 & cc_find(component2, 4) = ^true) {
+		if (~worldmap_findcoordinmap(maparea1, VARCINT[188]) ! null) {
+			~worldmap_loadmap(maparea1, VARCINT[188], component2, component3, component4, component5, component6, component7, component8)
+		} else if (~worldmap_findcoordinmap(maparea1, VARCINT[401]) ! null) {
+			~worldmap_loadmap(maparea1, VARCINT[401], component2, component3, component4, component5, component6, component7, component8)
+		} else {
+			~worldmap_loadmap(maparea1, null, component2, component3, component4, component5, component6, component7, component8)
+		}
+	}
+	return 
+}

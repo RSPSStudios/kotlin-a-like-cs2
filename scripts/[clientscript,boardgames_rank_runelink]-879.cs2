@@ -1,0 +1,6 @@
+// 879 clientscript
+fun boardgames_rank_runelink(component0: Component) {
+
+	if_settext("Rank: ${tostring(VARP[353])}", component0)
+	return 
+}

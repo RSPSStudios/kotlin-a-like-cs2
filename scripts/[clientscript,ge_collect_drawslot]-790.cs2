@@ -1,0 +1,6 @@
+// 790 clientscript
+fun ge_collect_drawslot(component0: Component, int1: Int, component2: Component, int3: Int, inv4: Inv, comsubid5: Int, comsubid6: Int, comsubid7: Int, comsubid8: Int, comsubid9: Int, comsubid10: Int, comsubid11: Int) {
+
+	~ge_collect_drawslot(component0, int1, component2, int3, inv4, comsubid5, comsubid6, comsubid7, comsubid8, comsubid9, comsubid10, comsubid11)
+	return 
+}

@@ -1,0 +1,10 @@
+// 1667 clientscript
+fun chatchannel_setup_setrank(component0: Component, comsubid1: Int, opbase0: String, opindex2: Int) {
+
+	val rank3: Int = enum(int, int, enum_1544, opindex2)
+	friend_setrank(removetags(opbase0), rank3)
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_settext(enum(int, string, enum_1541, rank3))
+	}
+	return 
+}

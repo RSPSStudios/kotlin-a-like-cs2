@@ -1,0 +1,18 @@
+// 2903 clientscript
+fun script2903(int0: Int) {
+
+	int0 = calc(int0 - clientclock)
+	if (int0 <= 0) {
+		if_setontimer(null, interface_636:8)
+		return 
+	}
+	int0 = calc(int0 / 50)
+	val int1: Int = calc(int0 / 60)
+	val int2: Int = calc(int0 % 60)
+	val text0: String = "Time Left: ${tostring(int1)}:${tostring(int2)}"
+	if (int2 < 10) {
+		text0 = "Time Left: ${tostring(int1)}:0${tostring(int2)}"
+	}
+	if_settext(text0, interface_636:9)
+	return 
+}

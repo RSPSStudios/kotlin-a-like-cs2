@@ -1,0 +1,8 @@
+// 83 clientscript
+fun splitpm_changed() {
+
+	val mesuid0: Int = ~script553
+	~rebuildchatbox(mesuid0)
+	~rebuildpmbox(mesuid0)
+	return 
+}

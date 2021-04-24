@@ -1,0 +1,10 @@
+// 1051 clientscript
+fun spinmodel(int0: Int, int1: Int, int2: Int, int3: Int, int4: Int, component5: Component, comsubid6: Int) {
+
+	if (comsubid6 ! -1 & cc_find(component5, comsubid6) = ^true) {
+		cc_setmodelangle(int0, int1, calc((cc_getmodelangle_x + int2) % 2048), calc((cc_getmodelangle_y + int3) % 2048), calc((cc_getmodelangle_z + int4) % 2048), cc_getmodelzoom)
+	} else if (comsubid6 = -1) {
+		if_setmodelangle(int0, int1, calc((if_getmodelangle_x(component5) + int2) % 2048), calc((if_getmodelangle_y(component5) + int3) % 2048), calc((if_getmodelangle_z(component5) + int4) % 2048), if_getmodelzoom(component5), component5)
+	}
+	return 
+}

@@ -1,0 +1,55 @@
+// 4003 proc
+fun script4003(int0: Int) {
+
+	val graphic1: Graphic = "options_radio_buttons,0"
+	val graphic2: Graphic = "options_radio_buttons,1"
+	if_setgraphic(graphic1, interface_41:44)
+	if_setgraphic(graphic1, interface_41:47)
+	if_setgraphic(graphic1, interface_41:50)
+	if_setgraphic(graphic1, interface_41:53)
+	if (~on_mobile = false) {
+		if_setonmouserepeat({
+			settrans(interface_41:44, 127)
+		}, interface_41:43)
+		if_setonmouseleave({
+			settrans(interface_41:44, 0)
+		}, interface_41:43)
+		if_setonmouserepeat({
+			settrans(interface_41:47, 127)
+		}, interface_41:46)
+		if_setonmouseleave({
+			settrans(interface_41:47, 0)
+		}, interface_41:46)
+		if_setonmouserepeat({
+			settrans(interface_41:50, 127)
+		}, interface_41:49)
+		if_setonmouseleave({
+			settrans(interface_41:50, 0)
+		}, interface_41:49)
+		if_setonmouserepeat({
+			settrans(interface_41:53, 127)
+		}, interface_41:52)
+		if_setonmouseleave({
+			settrans(interface_41:53, 0)
+		}, interface_41:52)
+	}
+	when (int0): Int {
+		0 -> {
+		
+			if_setgraphic(graphic2, interface_41:44)
+		}
+		1 -> {
+		
+			if_setgraphic(graphic2, interface_41:47)
+		}
+		2 -> {
+		
+			if_setgraphic(graphic2, interface_41:50)
+		}
+		3 -> {
+		
+			if_setgraphic(graphic2, interface_41:53)
+		}
+	}
+	return 
+}

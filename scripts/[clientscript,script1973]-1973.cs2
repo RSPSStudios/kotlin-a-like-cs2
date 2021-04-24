@@ -1,0 +1,11 @@
+// 1973 clientscript
+fun script1973(component0: Component, int1: Int) {
+
+	if (clientclock >= int1) {
+		if (int1 = -1) {
+			sound_synth(synth_2266, 1, 0)
+		}
+		~script957(component0)
+	}
+	return 
+}

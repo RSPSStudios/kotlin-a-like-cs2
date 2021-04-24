@@ -1,0 +1,6 @@
+// 696 clientscript
+fun makeovermage_colour_update(component0: Component) {
+
+	~makeovermage_colour_update(component0)
+	return 
+}

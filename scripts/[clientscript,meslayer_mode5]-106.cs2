@@ -1,0 +1,18 @@
+// 106 clientscript
+fun meslayer_mode5() {
+
+	if (VARCINT[11] = 1) {
+		if_close
+	}
+	~meslayer_open(5)
+	if_settext("Enter name of player to delete from list", interface_162:44)
+	~script222("")
+	val string0: String = ""
+	if_setonkey({
+		meslayer_onkey(event_key, event_keychar, string0)
+	}, interface_162:45)
+	if (~on_mobile = true) {
+		~keyboard_show(0, 12)
+	}
+	return 
+}

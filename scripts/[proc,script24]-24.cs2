@@ -1,0 +1,10 @@
+// 24 proc
+fun script24(int0: Int) {
+
+	if (VARP[263] < int0) {
+		cc_setcolour(^red)
+	} else {
+		cc_setcolour(^white)
+	}
+	return 
+}

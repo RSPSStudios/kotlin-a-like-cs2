@@ -1,0 +1,6 @@
+// 63 clientscript
+fun scrollbar_vertical_graphics(component0: Component, component1: Component, graphic2: Graphic, graphic3: Graphic, graphic4: Graphic, graphic5: Graphic, graphic6: Graphic, graphic7: Graphic) {
+
+	~scrollbar_vertical(component0, component1, graphic2, graphic3, graphic4, graphic5, graphic6, graphic7)
+	return 
+}

@@ -1,0 +1,19 @@
+// 2081 clientscript
+fun magic_flash_spell(int0: Int, obj1: Obj) {
+
+	if (VARBIT[4070] ! int0) {
+		return 
+	}
+	val component2: Component = oc_param(obj1, spell_button)
+	if (component2 = null) {
+		return 
+	}
+	if_setontimer({
+		magic_flash(component2, 1, 0)
+	}, magic_spellbook:3)
+	if (VARCINT[393] ! null) {
+		~magic_stop_flash(VARCINT[393])
+	}
+	VARCINT[393] = obj1
+	return 
+}

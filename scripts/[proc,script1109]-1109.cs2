@@ -1,0 +1,8 @@
+// 1109 proc
+fun script1109(component0: Component, int1: Int) {
+
+	if (cc_find(component0, 4) = ^true) {
+		cc_settext(struct_param(enum(int, struct, enum_2670, int1), param_858))
+	}
+	return 
+}

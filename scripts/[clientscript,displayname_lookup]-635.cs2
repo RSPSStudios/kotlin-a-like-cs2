@@ -1,0 +1,6 @@
+// 635 clientscript
+fun displayname_lookup(string0: String) {
+
+	VARCSTRING[229] = string0
+	return 
+}

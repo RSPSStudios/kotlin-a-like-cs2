@@ -1,0 +1,11 @@
+// 2697 clientscript
+fun tournament_supplies_switchlayer(component0: Component, component1: Component, component2: Component, string0: String, component3: Component, string1: String, component4: Component, component5: Component, component6: Component, int7: Int, int8: Int) {
+
+	sound_synth(synth_2266, 1, 0)
+	if (VARCINT[5] = 11) {
+		~meslayer_close(1, 1)
+	}
+	~tournament_supplies_search_off(component4, component5, component6, int7, int8)
+	~tournament_supplies_switchlayer(component0, component1, component2, string0, component3, string1, component4, component5, component6, int7, int8)
+	return 
+}

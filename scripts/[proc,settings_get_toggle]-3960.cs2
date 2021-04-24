@@ -1,0 +1,201 @@
+// 3960 proc
+fun settings_get_toggle(int0: Int): Int {
+
+	when (int0): Int {
+		7 -> {
+		
+			if (getremoveroofs = true) {
+				return 1
+			}
+			return 0
+		}
+		33 -> {
+		
+			return VARBIT[10078]
+		}
+		5 -> {
+		
+			return VARBIT[10236]
+		}
+		9 -> {
+		
+			return VARBIT[10113]
+		}
+		8 -> {
+		
+			return VARBIT[4084]
+		}
+		2 -> {
+		
+			return VARBIT[4609]
+		}
+		3 -> {
+		
+			return VARBIT[4181]
+		}
+		4 -> {
+		
+			return VARBIT[5711]
+		}
+		6 -> {
+		
+			return VARBIT[5712]
+		}
+		10 -> {
+		
+			return VARBIT[10345]
+		}
+		11 -> {
+		
+			return VARBIT[4608]
+		}
+		13 -> {
+		
+			return VARBIT[6357]
+		}
+		34 -> {
+		
+			return VARP[171]
+		}
+		35 -> {
+		
+			return VARP[287]
+		}
+		36 -> {
+		
+			return VARBIT[4089]
+		}
+		37 -> {
+		
+			return VARP[1074]
+		}
+		38 -> {
+		
+			return VARBIT[5399]
+		}
+		40 -> {
+		
+			return VARBIT[5402]
+		}
+		41 -> {
+		
+			return VARBIT[4930]
+		}
+		42 -> {
+		
+			return VARBIT[5411]
+		}
+		44 -> {
+		
+			return VARBIT[1627]
+		}
+		46 -> {
+		
+			return VARBIT[2570]
+		}
+		47 -> {
+		
+			return VARBIT[6506]
+		}
+		49 -> {
+		
+			return VARBIT[4134]
+		}
+		50 -> {
+		
+			return VARBIT[5599]
+		}
+		51 -> {
+		
+			return VARBIT[5542]
+		}
+		48 -> {
+		
+			return VARP[170]
+		}
+		52 -> {
+		
+			return VARBIT[6257]
+		}
+		54 -> {
+		
+			return VARBIT[4611]
+		}
+		57 -> {
+		
+			return VARBIT[4681]
+		}
+		59 -> {
+		
+			return VARBIT[4180]
+		}
+		60 -> {
+		
+			return VARBIT[236]
+		}
+		61 -> {
+		
+			return VARBIT[6284]
+		}
+		62 -> {
+		
+			return VARBIT[6285]
+		}
+		63 -> {
+		
+			return VARBIT[6286]
+		}
+		64 -> {
+		
+			return VARBIT[6287]
+		}
+		65 -> {
+		
+			return VARBIT[6092]
+		}
+		67 -> {
+		
+			return VARBIT[2323]
+		}
+		68 -> {
+		
+			return VARBIT[2322]
+		}
+		69 -> {
+		
+			return VARBIT[3932]
+		}
+		70 -> {
+		
+			return VARBIT[3930]
+		}
+		71 -> {
+		
+			return VARBIT[2325]
+		}
+		72 -> {
+		
+			return VARBIT[2324]
+		}
+		73 -> {
+		
+			return VARBIT[3931]
+		}
+		82 -> {
+		
+			return VARBIT[11866]
+		}
+		83 -> {
+		
+			return VARBIT[11890]
+		}
+		84 -> {
+		
+			return VARBIT[11893]
+		}
+	else -> {
+	
+		return 0
+	}
+	}
+}

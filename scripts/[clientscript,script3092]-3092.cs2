@@ -1,0 +1,7 @@
+// 3092 clientscript
+fun script3092(graphic0: Graphic, op0: String) {
+
+	if_setgraphic(graphic0, welcome_screen:89)
+	if_setop(1, op0, welcome_screen:86)
+	return 
+}

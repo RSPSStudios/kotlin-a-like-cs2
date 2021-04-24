@@ -1,0 +1,28 @@
+// 2360 clientscript
+fun script2360(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, struct8: Struct, drop9: Component, int10: Int, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component, component16: Component) {
+
+	if (drop9 ! interface_19:37) {
+		return 
+	}
+	val int17: Int = ~telenexus_slots_full
+	val int18: Int = 0
+	val string0: String = ""
+	int18, string0 = ~script2664(struct8)
+	if (int18 = 0) {
+		return 
+	}
+	if (VARBIT[6670] = 1 & int17 >= 4) {
+		return 
+	}
+	if (VARBIT[6670] = 2 & int17 >= 8) {
+		return 
+	}
+	val int19: Int = ~script2665(int10)
+	if (int19 = -1) {
+		return 
+	}
+	int19 = calc(int19 + 1)
+	~script2271(component0, component1, component2, component3, component4, component5, component6, component7, component11, component12, component13, component14, component15, component16, false)
+	~script2273(if_getlayer(component15), component11, component12, component13, component14, component15, component16, true)
+	return 
+}

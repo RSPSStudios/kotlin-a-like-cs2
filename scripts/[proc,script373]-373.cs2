@@ -1,0 +1,15 @@
+// 373 proc
+fun script373(component0: Component, int1: Int) {
+
+	val int2: Int = ~script374
+	val height3: Int = if_getheight(if_getlayer(component0))
+	if (int1 <= 0) {
+		int1 = 0
+	} else if (int1 >= int2) {
+		int1 = height3
+	} else {
+		int1 = ~minmax(1, height3, scale(height3, int2, int1))
+	}
+	if_setsize(0, int1, ^setsize_minus, ^setsize_abs, component0)
+	return 
+}

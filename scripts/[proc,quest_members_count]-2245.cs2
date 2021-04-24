@@ -1,0 +1,5 @@
+// 2245 proc
+fun quest_members_count(): Int {
+
+	return enum_getoutputcount(enum_2099)
+}

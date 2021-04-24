@@ -1,0 +1,29 @@
+// 976 proc
+fun deathkeep_left_protecteditem(obj0: Obj, int1: Int, int2: Int, int3: Int, int4: Int, int5: Int, int6: Int): Int, Int, Int {
+
+	val x7: Int = calc(int4 + int6 % int2 * (36 + int3))
+	val int8: Int = calc(17 + int6 / int2 * (32 + int3))
+	cc_create(interface_4:6, ^iftype_graphic, int5)
+	cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+	cc_setposition(x7, int8, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setgraphicshadow(0x333333)
+	cc_setobject_nonum(obj0, 1)
+	cc_setop(1, "Check")
+	cc_setopbase("<col=ff9040>${oc_name(obj0)}</col>")
+	val mes0: String = ""
+	if (~script3516(obj0) = 1) {
+		cc_setoutline(2)
+		mes0 = "${oc_name(obj0)}: You'll protect a downgraded version of this item."
+	} else {
+		cc_setoutline(1)
+		if (int1 > 1) {
+			mes0 = "${oc_name(obj0)}: You'll protect your ${tostring(int1)} most valuable items."
+		} else {
+			mes0 = "${oc_name(obj0)}: You'll protect your most valuable item."
+		}
+	}
+	cc_setonop({
+		deathkeep_opitem(event_com, event_comsubid, mes0)
+	})
+	return calc(int5 + 1), int8, calc(int6 + 1)
+}

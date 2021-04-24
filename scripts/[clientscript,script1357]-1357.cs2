@@ -1,0 +1,6 @@
+// 1357 clientscript
+fun script1357(string0: String) {
+
+	~mesoverlay_draw(string0, if_getheight(interface_39:2), interface_39:2, interface_39:3)
+	return 
+}

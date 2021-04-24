@@ -1,0 +1,13 @@
+// 1303 clientscript
+fun tog_sidepanel_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component) {
+
+	~tog_sidepanel_tears(component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13)
+	if_setonvartransmit({
+		tog_sidepanel_tears(component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13){VARP[449]}
+	}, component0)
+	~tog_sidepanel_timer(component1, component2)
+	if_setonvartransmit({
+		tog_sidepanel_timer(component1, component2){VARP[101], VARP[904]}
+	}, component1)
+	return 
+}

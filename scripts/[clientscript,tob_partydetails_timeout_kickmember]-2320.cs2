@@ -1,0 +1,27 @@
+// 2320 clientscript
+fun tob_partydetails_timeout_kickmember(clock0: Int, int1: Int, component2: Component, comsubid3: Int, string0: String, int4: Int) {
+
+	if (clientclock < clock0) {
+		return 
+	}
+	if (cc_find(component2, comsubid3) = ^true) {
+		cc_setontimer(null)
+		cc_settrans(int4)
+		cc_setonmouserepeat({
+			cc_settrans(event_com, event_comsubid, int4, null)
+		})
+		cc_setonmouseleave({
+			cc_settrans(event_com, event_comsubid, 255, null)
+		})
+		if (int1 > 0) {
+			cc_setop(10, "Kick")
+			cc_setopbase("<col=ff9040>${string0}</col>")
+		} else {
+			cc_setop(10, "Quit party")
+		}
+		cc_setonop({
+			tob_partydetails_kickmember(event_opindex, int1, event_com, event_comsubid, string0, int4)
+		})
+	}
+	return 
+}

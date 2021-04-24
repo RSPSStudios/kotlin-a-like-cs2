@@ -1,0 +1,10 @@
+// 558 proc
+fun clanwars_confirm_challenge_redraw(component0: Component) {
+
+	if (VARBIT[4285] = 1) {
+		~clanwars_confirm_pressed(component0, "Waiting")
+	} else {
+		~clanwars_confirm_notpressed(component0)
+	}
+	return 
+}

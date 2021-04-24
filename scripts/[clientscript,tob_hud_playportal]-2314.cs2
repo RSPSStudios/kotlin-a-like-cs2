@@ -1,0 +1,15 @@
+// 2314 clientscript
+fun tob_hud_playportal(comsubid0: Int, clock1: Int) {
+
+	val int2: Int = 0
+	if (cc_find(interface_28:1, comsubid0) = ^true) {
+		int2 = calc(clientclock - clock1)
+		if (int2 >= 20) {
+			cc_setontimer(null)
+			cc_sethide(true)
+		} else {
+			cc_setmodelangle(0, 130, 0, 0, 0, ~max(1, scale(6464, 10000, cc_getmodelzoom)))
+		}
+	}
+	return 
+}

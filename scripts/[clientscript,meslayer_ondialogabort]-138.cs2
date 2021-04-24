@@ -1,0 +1,11 @@
+// 138 clientscript
+fun meslayer_ondialogabort() {
+
+	when (VARCINT[5]): Int {
+		7, 8, 9, 11, 14, 15, 16, 17 -> {
+		
+			~meslayer_close(1, 1)
+		}
+	}
+	return 
+}

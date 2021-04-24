@@ -1,0 +1,6 @@
+// 1559 clientscript
+fun script1559(component0: Component, text0: String, boolean1: Boolean) {
+
+	~script1560(component0, text0, boolean1, 0)
+	return 
+}

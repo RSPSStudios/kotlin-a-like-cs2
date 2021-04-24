@@ -1,0 +1,6 @@
+// 2899 clientscript
+fun mirror_interface_button_draw(component0: Component, text0: String, boolean1: Boolean) {
+
+	~mirror_interface_button_draw(component0, text0, boolean1)
+	return 
+}

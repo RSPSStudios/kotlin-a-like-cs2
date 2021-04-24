@@ -1,0 +1,53 @@
+// 453 clientscript
+fun rune_pouch_init(component0: Component, component1: Component, component2: Component) {
+
+	cc_deleteall(component1)
+	val int3: Int = 7
+	cc_create(component1, ^iftype_graphic, 0)
+	cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+	cc_setposition(int3, 25, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setgraphicshadow(0x333333)
+	cc_setoutline(1)
+	cc_setdragdeadzone(5)
+	cc_setdragdeadtime(5)
+	int3 = calc(int3 + 36 + 20)
+	cc_create(component1, ^iftype_graphic, 1)
+	cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+	cc_setposition(int3, 25, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setgraphicshadow(0x333333)
+	cc_setoutline(1)
+	cc_setdragdeadzone(5)
+	cc_setdragdeadtime(5)
+	int3 = calc(int3 + 36 + 20)
+	cc_create(component1, ^iftype_graphic, 2)
+	cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+	cc_setposition(int3, 25, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setgraphicshadow(0x333333)
+	cc_setoutline(1)
+	cc_setdragdeadzone(5)
+	cc_setdragdeadtime(5)
+	~rune_pouch_drawpouch(component1)
+	if_setonvartransmit({
+		rune_pouch_drawpouch(component1){VARP[1139], VARP[1140]}
+	}, component0)
+	cc_deleteall(component2)
+	int3 = calc((if_getwidth(component2) - (10 + 7 * 36)) / 6 + 36)
+	val int4: Int = calc((if_getheight(component2) - (30 + 4 * 32)) / 3 + 32)
+	val size5: Int = inv_size(inv)
+	val size6: Int = 0
+	while (size6 < size5) {
+		cc_create(component2, ^iftype_graphic, size6)
+		cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+		cc_setposition(calc(5 + size6 % 7 * int3), calc(25 + size6 / 7 * int4), ^setpos_abs_left, ^setpos_abs_top)
+		cc_setgraphicshadow(0x333333)
+		cc_setoutline(1)
+		cc_setdragdeadzone(5)
+		cc_setdragdeadtime(5)
+		size6 = calc(size6 + 1)
+	}
+	~rune_pouch_drawinventory(component2)
+	if_setoninvtransmit({
+		rune_pouch_drawinventory(component2){inv}
+	}, component0)
+	return 
+}

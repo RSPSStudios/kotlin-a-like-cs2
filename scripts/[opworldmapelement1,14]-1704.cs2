@@ -1,0 +1,6 @@
+// 1704 opworldmapelement1
+fun 14() {
+
+	~script1705(worldmap_elementcoord)
+	return 
+}

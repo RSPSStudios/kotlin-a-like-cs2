@@ -1,0 +1,19 @@
+// 3959 proc
+fun script3959(int0: Int): Int {
+
+	val int1: Int = 0
+	when (int0): Int {
+		53 -> {
+		
+			int1 = scale(600, 16384, if_getwidth(if_getlayer(interface_601:14)))
+			if (int1 <= _6220 & int1 <= _6222) {
+				return 0
+			}
+			return 1
+		}
+	else -> {
+	
+		return 1
+	}
+	}
+}

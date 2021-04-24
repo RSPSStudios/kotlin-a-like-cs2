@@ -1,0 +1,18 @@
+// 2022 proc
+fun volcanic_mine_set_otherinfo() {
+
+	if (VARBIT[5935] = 0) {
+		if_settext(tostring(VARBIT[5934]), interface_611:11)
+	} else {
+		if_settext("<col=ff0000>${tostring(VARBIT[5934])}</col>", interface_611:11)
+	}
+	if (VARBIT[5938] < 30) {
+		if_settext("<col=ff0000>${tostring(VARBIT[5938])}%</col>", interface_611:13)
+	} else if (VARBIT[5938] < 70) {
+		if_settext("<col=ffff00>${tostring(VARBIT[5938])}%</col>", interface_611:13)
+	} else {
+		if_settext("<col=00ff00>${tostring(VARBIT[5938])}%</col>", interface_611:13)
+	}
+	if_settext(tostring(VARBIT[5937]), interface_611:15)
+	return 
+}

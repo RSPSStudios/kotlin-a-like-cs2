@@ -1,0 +1,13 @@
+// 2205 clientscript
+fun decant_init(component0: Component, component1: Component, component2: Component, component3: Component) {
+
+	cc_deleteall(component0)
+	cc_deleteall(component1)
+	cc_deleteall(component2)
+	cc_deleteall(component3)
+	~decant_button(component0, false, obj_22670, "1 dose", "1")
+	~decant_button(component1, false, obj_22669, "2 doses", "2")
+	~decant_button(component2, false, obj_22668, "3 doses", "3")
+	~decant_button(component3, false, obj_22667, "4 doses", "4")
+	return 
+}

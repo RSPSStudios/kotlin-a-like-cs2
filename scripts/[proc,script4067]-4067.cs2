@@ -1,0 +1,5 @@
+// 4067 proc
+fun script4067(int0: Int): Int {
+
+	return interpolate(0, 16384, 0, 100, int0)
+}

@@ -1,0 +1,9 @@
+// 3857 clientscript
+fun settings_input_op(struct0: Struct) {
+
+	if (~settings_op_checker(struct0) = 0) {
+		return 
+	}
+	VARBIT[9639] = 0
+	return 
+}

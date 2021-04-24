@@ -1,0 +1,7 @@
+// 3374 clientscript
+fun graphicbox_set_graphic(graphic0: Graphic, width1: Int, height2: Int) {
+
+	if_setgraphic(graphic0, interface_633:2)
+	if_setsize(width1, height2, ^setsize_abs, ^setsize_abs, interface_633:2)
+	return 
+}

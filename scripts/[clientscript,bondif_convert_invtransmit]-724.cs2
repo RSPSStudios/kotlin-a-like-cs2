@@ -1,0 +1,6 @@
+// 724 clientscript
+fun bondif_convert_invtransmit() {
+
+	~bondif_convert_updatevalues
+	return 
+}

@@ -1,0 +1,53 @@
+// 1847 proc
+fun worldmap_element_tooltip(int0: Int, int1: Int) {
+
+	if (testbit(VARBIT[5640], 3) = ^true) {
+		~deltooltip_action(interface_595:41)
+		return 
+	}
+	if (VARCINT[2] = 1) {
+		return 
+	}
+	val string0: String = enum(category, string, enum_1713, mec_category(worldmap_element))
+	if (string_length(string0) <= 0) {
+		return 
+	}
+	val int2: Int = 150
+	val layer3: Component = if_getlayer(interface_595:41)
+	if (layer3 ! null) {
+		int2 = ~min(int2, if_getwidth(layer3))
+	}
+	int2 = calc(int2 - 4)
+	val int4: Int = calc(4 + parawidth(string0, int2, p12_full))
+	val int5: Int = calc(7 + 12 * paraheight(string0, int2, p12_full))
+	if_setsize(int4, int5, ^setsize_abs, ^setsize_abs, interface_595:41)
+	val int6: Int = calc(int0 + 5)
+	val y7: Int = calc(int1 + 20)
+	if (layer3 ! null) {
+		int6 = ~min(int6, calc(if_getwidth(layer3) - int4))
+		if (y7 > calc(if_getheight(layer3) - int5)) {
+			y7 = calc(int1 - (int5 + 5))
+		}
+	}
+	if_setposition(int6, y7, ^setpos_abs_left, ^setpos_abs_top, interface_595:41)
+	cc_deleteall(interface_595:41)
+	cc_create(interface_595:41, ^iftype_rectangle, 0)
+	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	cc_setfill(true)
+	cc_setcolour(0xffffa0)
+	cc_create(interface_595:41, ^iftype_rectangle, 1)
+	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	cc_setfill(false)
+	cc_setcolour(^black)
+	cc_create(interface_595:41, ^iftype_text, 2)
+	cc_setsize(4, 1, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_bottom)
+	cc_settext(string0)
+	cc_settextalign(^settextalign_left, ^settextalign_top, 0)
+	cc_settextfont(p12_full)
+	cc_setcolour(^black)
+	VARCINT[2] = 1
+	return 
+}

@@ -1,0 +1,8 @@
+// 3866 clientscript
+fun settings_button_op(struct0: Struct) {
+
+	if (~settings_op_checker(struct0) = 0) {
+		return 
+	}
+	return 
+}

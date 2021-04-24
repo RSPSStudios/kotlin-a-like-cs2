@@ -1,0 +1,14 @@
+// 1190 clientscript
+fun script1190(component0: Component, component1: Component) {
+
+	~scrollbar_vertical(component1, component0, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+	if (cc_find(component1, 1) = ^true) {
+		if (VARCINT[80] < 0 | VARCINT[80] >= if_getscrollheight(component0)) {
+			VARCINT[80] = 0
+		}
+		~scrollbar_vertical_doscroll(component1, component0, VARCINT[80], true)
+	} else {
+		VARCINT[80] = 0
+	}
+	return 
+}

@@ -1,0 +1,6 @@
+// 44 clientscript
+fun graphic_swapper(component0: Component, graphic1: Graphic) {
+
+	if_setgraphic(graphic1, component0)
+	return 
+}

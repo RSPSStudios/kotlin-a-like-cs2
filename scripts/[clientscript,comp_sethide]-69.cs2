@@ -1,0 +1,6 @@
+// 69 clientscript
+fun comp_sethide(boolean0: Boolean, component1: Component) {
+
+	if_sethide(boolean0, component1)
+	return 
+}

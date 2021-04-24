@@ -1,0 +1,6 @@
+// 848 clientscript
+fun script848(boolean0: Boolean, text0: String, component1: Component) {
+
+	~soul_wars_rewards_confirmtext(boolean0, text0, component1)
+	return 
+}

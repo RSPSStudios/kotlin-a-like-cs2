@@ -1,0 +1,12 @@
+// 437 clientscript
+fun grouping_joinchannel(int0: Int) {
+
+	if (string_length(clan_getchatownername) > 0) {
+		clan_leavechat
+	}
+	val string0: String = enum(int, string, enum_849, int0)
+	if (string_length(string0) > 0) {
+		clan_joinchat(string0)
+	}
+	return 
+}

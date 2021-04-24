@@ -1,0 +1,7 @@
+// 401 clientscript
+fun fairyrings_sort_mouseeffect(component0: Component, component1: Component, trans2: Int) {
+
+	if_settrans(trans2, component0)
+	if_settrans(trans2, component1)
+	return 
+}

@@ -1,0 +1,6 @@
+// 2102 clientscript
+fun hp_hud_update(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, boolean9: Boolean) {
+
+	~hp_hud_update(component0, component1, component2, component3, component4, component5, component6, component7, component8, boolean9)
+	return 
+}

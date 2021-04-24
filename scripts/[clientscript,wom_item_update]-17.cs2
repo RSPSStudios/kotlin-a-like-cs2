@@ -1,0 +1,6 @@
+// 17 clientscript
+fun wom_item_update(component0: Component, component1: Component) {
+
+	~wom_build_item_list(component0, component1)
+	return 
+}

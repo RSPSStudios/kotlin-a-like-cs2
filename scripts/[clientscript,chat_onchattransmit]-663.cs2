@@ -1,0 +1,21 @@
+// 663 clientscript
+fun chat_onchattransmit() {
+
+	val mesuid0: Int = ~script553
+	val chattype1: Int = ^chattype_gamemessage
+	val int2: Int = -1
+	val string0: String = ""
+	val string1: String = ""
+	val string2: String = ""
+	val int3: Int = 0
+	if (if_hassub(interface_162:561) = true & VARBIT[11879] = 1) {
+		chattype1, int2, string0, string1, string2, int3 = chat_gethistory_byuid(mesuid0)
+		if (~meslayer_mode1_enabled(chattype1) = 1) {
+			~meslayer_mode1(string2)
+		}
+	}
+	~rebuildchatbox(mesuid0)
+	~rebuildpmbox(mesuid0)
+	~chatalerts(mesuid0)
+	return 
+}

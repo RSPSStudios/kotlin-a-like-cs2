@@ -1,0 +1,6 @@
+// 1218 clientscript
+fun zeah_favour_overlay_hideshow(component0: Component) {
+
+	~zeah_favour_overlay_hideshow(component0)
+	return 
+}

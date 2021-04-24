@@ -1,0 +1,6 @@
+// 2986 clientscript
+fun script2986(component0: Component, int1: Int, graphic2: Graphic) {
+
+	~script2987(component0, int1, graphic2)
+	return 
+}

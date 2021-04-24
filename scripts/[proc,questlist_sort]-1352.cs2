@@ -1,0 +1,30 @@
+// 1352 proc
+fun questlist_sort(arrayint0: Int, int1: Int, int2: Int, enum3: Enum, int4: Int) {
+
+	val index5: Int = calc((int1 + int2) / 2)
+	val int6: Int = int0[index5]
+	int0[index5] = int0[int2]
+	int0[int2] = int6
+	val int7: Int = int1
+	val int8: Int = int1
+	val int9: Int = -1
+	val string0: String = ""
+	while (int8 < int2) {
+		if (compare("${tostring(calc(int0[int8] / int4))}${struct_param(enum(int, struct, enum3, calc(int0[int8] % int4)), param_579)}", "${tostring(calc(int6 / int4))}${struct_param(enum(int, struct, enum3, calc(int6 % int4)), param_579)}") <= 0) {
+			int9 = int0[int8]
+			int0[int8] = int0[int7]
+			int0[int7] = int9
+			int7 = calc(int7 + 1)
+		}
+		int8 = calc(int8 + 1)
+	}
+	int0[int2] = int0[int7]
+	int0[int7] = int6
+	if (int1 < calc(int7 - 1)) {
+		~questlist_sort(int0, int1, calc(int7 - 1), enum3, int4)
+	}
+	if (calc(int7 + 1) < int2) {
+		~questlist_sort(int0, calc(int7 + 1), int2, enum3, int4)
+	}
+	return 
+}

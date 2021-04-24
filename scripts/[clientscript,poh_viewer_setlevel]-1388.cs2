@@ -1,0 +1,9 @@
+// 1388 clientscript
+fun poh_viewer_setlevel(boolean0: Boolean, int1: Int, int2: Int, int3: Int) {
+
+	if (boolean0 = true) {
+		sound_synth(synth_2266, 1, 0)
+	}
+	~poh_viewer_setlevel(int1, int2, int3)
+	return 
+}

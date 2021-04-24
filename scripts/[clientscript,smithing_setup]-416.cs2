@@ -1,0 +1,6 @@
+// 416 clientscript
+fun smithing_setup() {
+
+	~smithing_setup
+	return 
+}

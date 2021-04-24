@@ -1,0 +1,9 @@
+// 370 clientscript
+fun script370(int0: Int) {
+
+	int0 = calc(clientclock + int0 * 30)
+	if_setontimer({
+		script371(int0)
+	}, interface_375:24)
+	return 
+}

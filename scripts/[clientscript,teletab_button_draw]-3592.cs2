@@ -1,0 +1,6 @@
+// 3592 clientscript
+fun teletab_button_draw(boolean0: Boolean, enum1: Enum, enum2: Enum, int3: Int, component4: Component, boolean5: Boolean) {
+
+	~teletab_button_draw(boolean0, enum1, enum2, int3, component4, boolean5)
+	return 
+}

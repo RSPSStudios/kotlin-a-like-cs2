@@ -1,0 +1,7 @@
+// 389 clientscript
+fun combat_level_transmit(int0: Int) {
+
+	VARCINT[52] = int0
+	~pvp_icons_comlevelrange(~wilderness_level)
+	return 
+}

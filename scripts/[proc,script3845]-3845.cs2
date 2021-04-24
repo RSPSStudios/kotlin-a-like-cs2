@@ -1,0 +1,12 @@
+// 3845 proc
+fun script3845(int0: Int) {
+
+	val string0: String = "|"
+	string0 = append(string0, tostring(int0))
+	if (string_indexof_string(VARCSTRING[416], string0, 0) = -1) {
+		VARCSTRING[416] = append(VARCSTRING[416], string0)
+	} else {
+		VARCSTRING[416] = ~script1299(VARCSTRING[416], string0, "")
+	}
+	return 
+}

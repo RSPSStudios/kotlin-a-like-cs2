@@ -1,0 +1,19 @@
+// 279 proc
+fun bankmain_filteritem(obj0: Obj): Int {
+
+	val string0: String = ""
+	val string1: String = ""
+	if (~bankmain_searching = 1) {
+		string1 = ~bankmain_filterstring
+		if (string_length(string1) > 0) {
+			if (obj0 ! null) {
+				string0 = lowercase(oc_name(obj0))
+			}
+			if (string_indexof_string(string0, string1, 0) ! -1) {
+				return 1
+			}
+			return 0
+		}
+	}
+	return 1
+}

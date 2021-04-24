@@ -1,0 +1,16 @@
+// 1578 proc
+fun barrows_overlay_reward(component0: Component) {
+
+	val int1: Int = 0
+	if (VARBIT[10465] > 0) {
+		int1 = enum(enum, int, enum_1135, ~toplevel_getcomponents)
+		if (int1 <= 0) {
+			if_settext("", component0)
+			return 
+		}
+	}
+	val int2: Int = calc(VARBIT[457] + VARBIT[458] + VARBIT[459] + VARBIT[460] + VARBIT[461] + VARBIT[462])
+	val int3: Int = calc(VARBIT[463] + int2 * 2)
+	if_settext("Rewards potential: ${tostring(interpolate(0, 100, 0, 1012, int3))}%", component0)
+	return 
+}

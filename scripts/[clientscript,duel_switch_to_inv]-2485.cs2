@@ -1,0 +1,12 @@
+// 2485 clientscript
+fun duel_switch_to_inv(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component) {
+
+	if (testbit(VARP[286], 3) = ^true) {
+		if_sethide(false, component1)
+		if_sethide(true, component2)
+		if_sethide(true, component3)
+		if_sethide(true, component4)
+		~duel_switch_buttons(component0, component5, component6, component7, component8)
+	}
+	return 
+}

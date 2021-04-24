@@ -1,0 +1,7 @@
+// 893 proc
+fun worldswitcher_wipe_favourite(component0: Component) {
+
+	if_setonop(null, component0)
+	if_setonmouserepeat(null, component0)
+	return 
+}

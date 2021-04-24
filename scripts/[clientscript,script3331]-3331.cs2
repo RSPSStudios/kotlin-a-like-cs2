@@ -1,0 +1,16 @@
+// 3331 clientscript
+fun script3331(component0: Component, coord1: Coord, mapelement2: Mapelement) {
+
+	if (coord1 = null | worldmap_isloaded = false) {
+		return 
+	}
+	val maparea3: Maparea = _6623(coord1)
+	if (maparea3 ! worldmap_getcurrentmap) {
+		worldmap_setmap(maparea3)
+	}
+	if_sethide(false, component0)
+	if_setontimer({
+		script3332(component0, coord1, mapelement2, 0)
+	}, component0)
+	return 
+}

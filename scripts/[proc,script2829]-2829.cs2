@@ -1,0 +1,42 @@
+// 2829 proc
+fun script2829(int0: Int): Int {
+
+	when (int0): Int {
+		1 -> {
+		
+			return VARBIT[8172]
+		}
+		2 -> {
+		
+			return VARBIT[8173]
+		}
+		3 -> {
+		
+			return VARBIT[8174]
+		}
+		4 -> {
+		
+			return VARBIT[8175]
+		}
+		5 -> {
+		
+			return VARBIT[8176]
+		}
+		6 -> {
+		
+			return VARBIT[8177]
+		}
+		7 -> {
+		
+			return VARBIT[8178]
+		}
+		8 -> {
+		
+			return VARBIT[8179]
+		}
+	else -> {
+	
+		return -1
+	}
+	}
+}

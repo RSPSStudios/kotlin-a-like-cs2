@@ -1,0 +1,8 @@
+// 1466 clientscript
+fun script1466() {
+
+	if (if_gethide(interface_53:37) = true) {
+		~script1468
+	}
+	return 
+}

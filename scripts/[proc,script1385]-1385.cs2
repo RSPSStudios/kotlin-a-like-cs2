@@ -1,0 +1,84 @@
+// 1385 proc
+fun script1385(int0: Int, int1: Int, int2: Int, int3: Int) {
+
+	if (int0 < 8) {
+		if (int0 = 1) {
+			VARCINT[141] = ~script1386(int1, int2, int3)
+		} else if (int0 = 2) {
+			VARCINT[142] = ~script1386(int1, int2, int3)
+		} else if (int0 = 3) {
+			VARCINT[143] = ~script1386(int1, int2, int3)
+		} else if (int0 = 4) {
+			VARCINT[144] = ~script1386(int1, int2, int3)
+		} else if (int0 = 5) {
+			VARCINT[145] = ~script1386(int1, int2, int3)
+		} else if (int0 = 6) {
+			VARCINT[146] = ~script1386(int1, int2, int3)
+		} else if (int0 = 7) {
+			VARCINT[147] = ~script1386(int1, int2, int3)
+		} else {
+			mes("The menu could not draw room ${tostring(int0)}.")
+		}
+	} else if (int0 < 16) {
+		if (int0 = 8) {
+			VARCINT[148] = ~script1386(int1, int2, int3)
+		} else if (int0 = 9) {
+			VARCINT[149] = ~script1386(int1, int2, int3)
+		} else if (int0 = 10) {
+			VARCINT[150] = ~script1386(int1, int2, int3)
+		} else if (int0 = 11) {
+			VARCINT[151] = ~script1386(int1, int2, int3)
+		} else if (int0 = 12) {
+			VARCINT[152] = ~script1386(int1, int2, int3)
+		} else if (int0 = 13) {
+			VARCINT[153] = ~script1386(int1, int2, int3)
+		} else if (int0 = 14) {
+			VARCINT[154] = ~script1386(int1, int2, int3)
+		} else {
+			VARCINT[155] = ~script1386(int1, int2, int3)
+		}
+	} else if (int0 < 24) {
+		if (int0 = 16) {
+			VARCINT[156] = ~script1386(int1, int2, int3)
+		} else if (int0 = 17) {
+			VARCINT[157] = ~script1386(int1, int2, int3)
+		} else if (int0 = 18) {
+			VARCINT[158] = ~script1386(int1, int2, int3)
+		} else if (int0 = 19) {
+			VARCINT[159] = ~script1386(int1, int2, int3)
+		} else if (int0 = 20) {
+			VARCINT[160] = ~script1386(int1, int2, int3)
+		} else if (int0 = 21) {
+			VARCINT[161] = ~script1386(int1, int2, int3)
+		} else if (int0 = 22) {
+			VARCINT[162] = ~script1386(int1, int2, int3)
+		} else {
+			VARCINT[163] = ~script1386(int1, int2, int3)
+		}
+	} else if (int0 = 24) {
+		VARCINT[164] = ~script1386(int1, int2, int3)
+	} else if (int0 = 25) {
+		VARCINT[165] = ~script1386(int1, int2, int3)
+	} else if (int0 = 26) {
+		VARCINT[166] = ~script1386(int1, int2, int3)
+	} else if (int0 = 27) {
+		VARCINT[167] = ~script1386(int1, int2, int3)
+	} else if (int0 = 28) {
+		VARCINT[168] = ~script1386(int1, int2, int3)
+	} else if (int0 = 29) {
+		VARCINT[169] = ~script1386(int1, int2, int3)
+	} else if (int0 = 30) {
+		VARCINT[170] = ~script1386(int1, int2, int3)
+	} else if (int0 = 31) {
+		VARCINT[174] = ~script1386(int1, int2, int3)
+	} else if (int0 = 32) {
+		VARCINT[176] = ~script1386(int1, int2, int3)
+	} else if (int0 = 33) {
+		VARCINT[177] = ~script1386(int1, int2, int3)
+	} else if (int0 = 34) {
+		VARCINT[419] = ~script1386(int1, int2, int3)
+	} else {
+		mes("The menu could not draw room ${tostring(int0)}.")
+	}
+	return 
+}

@@ -1,0 +1,9 @@
+// 1642 proc
+fun deadman_tournament_hudupdate() {
+
+	val int0: Int = VARBIT[4167]
+	int0 = ~max(1, int0)
+	if_settext(tostring(int0), interface_90:35)
+	~deadman_finallocation(interface_90:45)
+	return 
+}

@@ -1,0 +1,8 @@
+// 2050 clientscript
+fun skillmulti_itembutton_op(opindex0: Int, obj1: Obj, component2: Component, string0: String, key3: Int, int4: Int, int5: Int) {
+
+	if (opindex0 = 1) {
+		~skillmulti_itembutton_triggered(obj1, component2, string0, key3, int4, int5)
+	}
+	return 
+}

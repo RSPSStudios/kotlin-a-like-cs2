@@ -1,0 +1,11 @@
+// 556 clientscript
+fun clanwars_confirm_challenge_op(opindex0: Int, component1: Component) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	VARBIT[4285] = 1
+	~clanwars_confirm_challenge_redraw(component1)
+	return 
+}

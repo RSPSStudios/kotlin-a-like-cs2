@@ -1,0 +1,68 @@
+// 3175 proc
+fun script3175(component0: Component, clock1: Int) {
+
+	val enum2: Enum = null
+	val x3: Int = 0
+	val y4: Int = 0
+	val width5: Int = 0
+	val height6: Int = 0
+	val setposh7: Int = ^setpos_abs_left
+	val setposv8: Int = ^setpos_abs_bottom
+	if (clock1 ! VARCINT[384]) {
+		enum2 = ~toplevel_getcomponents
+		if (enum2 = enum_1745) {
+			if (~script2519 = 1) {
+				x3 = calc(204 - 1)
+			} else {
+				x3 = 0
+			}
+			y4 = 80
+			width5 = 75
+			height6 = 249
+			setposh7 = ^setpos_abs_right
+			setposv8 = ^setpos_abs_centre
+		} else if (enum2 = enum_1130 | enum2 = enum_1131) {
+			if (VARBIT[9530] = 0) {
+				x3 = 1
+				y4 = -66
+				width5 = 75
+				height6 = 249
+				setposh7 = ^setpos_abs_left
+				setposv8 = ^setpos_abs_centre
+			} else {
+				x3 = 1
+				if (~chatbox_open = 1) {
+					y4 = calc(165 + 1)
+				} else {
+					y4 = calc(23 + 1)
+				}
+				width5 = 497
+				height6 = 63
+				setposh7 = ^setpos_abs_left
+				setposv8 = ^setpos_abs_bottom
+			}
+		} else if (enum2 = enum_1129) {
+			if (VARBIT[9530] = 0) {
+				x3 = 1
+				y4 = 76
+				width5 = 75
+				height6 = 249
+				setposh7 = ^setpos_abs_left
+				setposv8 = ^setpos_abs_bottom
+			} else {
+				x3 = 1
+				y4 = 1
+				width5 = 435
+				height6 = 63
+				setposh7 = ^setpos_abs_left
+				setposv8 = ^setpos_abs_bottom
+			}
+		}
+		if_setposition(x3, y4, setposh7, setposv8, component0)
+		if_setsize(width5, height6, ^setsize_abs, ^setsize_abs, component0)
+		if_setontimer({
+			script3174(component0, VARCINT[384])
+		}, component0)
+	}
+	return 
+}

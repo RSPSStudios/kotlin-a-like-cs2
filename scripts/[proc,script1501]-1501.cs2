@@ -1,0 +1,12 @@
+// 1501 proc
+fun script1501(component0: Component, boolean1: Boolean) {
+
+	if (VARBIT[11764] = 1) {
+		~script1502(component0, "Waiting", 0)
+	} else if (boolean1 = true) {
+		~script1502(component0, "Confirm", 1)
+	} else {
+		~script1627(component0, "Confirm", 1)
+	}
+	return 
+}

@@ -1,0 +1,20 @@
+// 3694 proc
+fun league_relic_hover(component0: Component, trans1: Int, component2: Component, graphic3: Graphic, component4: Component, colour5: Int, comsubid6: Int) {
+
+	if (trans1 > 255) {
+		trans1 = 255
+	}
+	if (trans1 < 0) {
+		trans1 = 0
+	}
+	if (cc_find(component0, comsubid6) = ^true) {
+		cc_settrans(trans1)
+	}
+	if (cc_find(component2, comsubid6) = ^true) {
+		cc_setgraphic(graphic3)
+	}
+	if (cc_find(component4, comsubid6) = ^true) {
+		cc_setcolour(colour5)
+	}
+	return 
+}

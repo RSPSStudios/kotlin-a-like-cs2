@@ -1,0 +1,11 @@
+// 969 clientscript
+fun stake_tooltip(component0: Component, string0: String) {
+
+	if_setonmouserepeat({
+		addtooltip(component0, interface_481:83, string0, 50, 300)
+	}, component0)
+	if_setonmouseleave({
+		deltooltip(interface_481:83)
+	}, component0)
+	return 
+}

@@ -1,0 +1,20 @@
+// 454 proc
+fun orbs_update_runmode(component0: Component, component1: Component) {
+
+	if (VARP[173] = 1) {
+		if_setgraphic("orb_filler,6", component0)
+		if (VARBIT[25] = 1) {
+			if_setgraphic("orb_icon,5", component1)
+		} else {
+			if_setgraphic("orb_icon,3", component1)
+		}
+	} else {
+		if_setgraphic("orb_filler,5", component0)
+		if (VARBIT[25] = 1) {
+			if_setgraphic("orb_icon,5", component1)
+		} else {
+			if_setgraphic("orb_icon,2", component1)
+		}
+	}
+	return 
+}

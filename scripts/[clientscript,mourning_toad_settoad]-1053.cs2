@@ -1,0 +1,6 @@
+// 1053 clientscript
+fun mourning_toad_settoad(component0: Component) {
+
+	~mourning_toad_settoad(component0)
+	return 
+}

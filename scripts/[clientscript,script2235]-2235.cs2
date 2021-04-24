@@ -1,0 +1,6 @@
+// 2235 clientscript
+fun script2235(component0: Component, component1: Component, width2: Int, height3: Int, int4: Int) {
+
+	~script2236(component0, component1, width2, height3, int4)
+	return 
+}

@@ -1,0 +1,6 @@
+// 3350 clientscript
+fun notification_positioning(component0: Component, clock1: Int) {
+
+	~notification_positioning(component0, clock1)
+	return 
+}

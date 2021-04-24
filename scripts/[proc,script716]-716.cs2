@@ -1,0 +1,14 @@
+// 716 proc
+fun script716(namedobj0: Namedobj): Int {
+
+	val total1: Int = inv_total(inv, namedobj0)
+	val obj2: Obj = oc_cert(namedobj0)
+	if (obj2 = namedobj0) {
+		return total1
+	}
+	val total3: Int = inv_total(inv, obj2)
+	if (calc(^max_32bit_int - total1) < total3) {
+		return ^max_32bit_int
+	}
+	return calc(total1 + total3)
+}

@@ -1,0 +1,17 @@
+// 318 proc
+fun music_optionbuttons(component0: Component, component1: Component, component2: Component) {
+
+	if (VARP[18] = 1) {
+		if_setgraphic("miscgraphics2,1", component0)
+		if_setgraphic("miscgraphics2,0", component1)
+	} else {
+		if_setgraphic("miscgraphics2,0", component0)
+		if_setgraphic("miscgraphics2,1", component1)
+	}
+	if (VARBIT[4137] = 1) {
+		if_setgraphic("miscgraphics2,1", component2)
+	} else {
+		if_setgraphic("miscgraphics2,0", component2)
+	}
+	return 
+}

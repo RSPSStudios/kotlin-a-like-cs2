@@ -1,0 +1,35 @@
+// 86 clientscript
+fun chat_op(opindex0: Int, opbase0: String) {
+
+	val string1: String = removetags(opbase0)
+	if (opindex0 = 1) {
+		opplayer(4, string1)
+	} else if (opindex0 = 2) {
+		opplayer(1, string1)
+	} else if (opindex0 = 8) {
+		VARCSTRING[370] = string1
+	} else if (opindex0 = 9) {
+		~friendschat_sendkick(string1)
+	} else if (friend_test(string1) = true) {
+		if (opindex0 = 6 | opindex0 = 7) {
+			if (VARBIT[8119] = 1) {
+				~meslayer_mode6(string1)
+			} else {
+				mes("You must set a name before you can do that.")
+			}
+		}
+	} else if (opindex0 = 6) {
+		if (VARBIT[8119] = 1) {
+			friend_add(string1)
+		} else {
+			mes("You must set a name before you can do that.")
+		}
+	} else if (opindex0 = 7) {
+		if (VARBIT[8119] = 1) {
+			ignore_add(string1)
+		} else {
+			mes("You must set a name before you can do that.")
+		}
+	}
+	return 
+}

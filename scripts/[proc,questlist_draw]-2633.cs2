@@ -1,0 +1,32 @@
+// 2633 proc
+fun questlist_draw(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component) {
+
+	val height6: Int = 3
+	val int7: Int = ~questlist_sectioninit("Free Quests", component3, enum_2098, ~quest_f2p_count, component3, component4, component5)
+	if_setposition(0, height6, ^setpos_abs_centre, ^setpos_abs_top, component3)
+	height6 = calc(height6 + int7 + 8)
+	int7 = ~questlist_sectioninit("Members' Quests", component4, enum_2099, ~quest_members_count, component3, component4, component5)
+	if_setposition(0, height6, ^setpos_abs_centre, ^setpos_abs_top, component4)
+	height6 = calc(height6 + int7 + 8)
+	int7 = ~questlist_sectioninit("Miniquests", component5, enum_2100, ~miniquest_count, component3, component4, component5)
+	if_setposition(0, height6, ^setpos_abs_centre, ^setpos_abs_top, component5)
+	height6 = calc(height6 + int7)
+	height6 = calc(height6 + 2)
+	val int8: Int = VARCINT[10]
+	if (height6 > if_getheight(component1)) {
+		if_setscrollsize(0, height6, component1)
+		~scrollbar_vertical(component2, component1, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+		if (cc_find(component2, 1) = ^true) {
+			~scrollbar_vertical_doscroll(component2, component1, int8, true)
+		}
+	} else {
+		VARCINT[10] = 0
+		if_setscrollsize(0, 0, component1)
+		~scrollbar_vertical(component2, component1, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+	}
+	~questlist_showprogress(component3, component4, component5)
+	if_setonvartransmit({
+		questlist_showprogress(component3, component4, component5){VARP[101], VARP[130], VARP[29], VARP[222], VARP[31], VARP[176], VARP[32], VARP[62], VARP[160], VARP[122], VARP[71], VARP[273], VARP[107], VARP[144], VARP[63], VARP[179], VARP[146], VARP[145], VARP[178], VARP[67], VARP[939], VARP[433], VARP[293], VARP[68], VARP[655], VARP[10], VARP[964], VARP[455], VARP[399], VARP[400], VARP[869], VARP[794], VARP[314], VARP[440], VARP[622], VARP[131], VARP[80], VARP[0], VARP[335], VARP[934], VARP[299], VARP[896], VARP[641], VARP[912], VARP[844], VARP[671], VARP[810], VARP[148], VARP[435], VARP[17], VARP[11], VARP[521], VARP[347], VARP[65], VARP[553], VARP[180], VARP[408], VARP[482], VARP[437], VARP[150], VARP[635], VARP[382], VARP[223], VARP[188], VARP[5], VARP[351], VARP[445], VARP[705], VARP[387], VARP[175], VARP[139], VARP[147], VARP[465], VARP[823], VARP[604], VARP[14], VARP[365], VARP[30], VARP[423], VARP[517], VARP[574], VARP[192], VARP[905], VARP[307], VARP[112], VARP[416], VARP[165], VARP[302], VARP[714], VARP[607], VARP[678], VARP[496], VARP[328], VARP[402], VARP[730], VARP[600], VARP[76], VARP[159], VARP[874], VARP[339], VARP[602], VARP[60], VARP[116], VARP[709], VARP[616], VARP[723], VARP[320], VARP[568], VARP[449], VARP[26], VARP[359], VARP[197], VARP[226], VARP[111], VARP[200], VARP[385], VARP[317], VARP[161], VARP[162], VARP[571], VARP[212], VARP[968], VARP[970], VARP[977], VARP[980], VARP[992], VARP[994], VARP[997], VARP[1003], VARP[1016], VARP[1049], VARP[1339], VARP[492], VARP[1318], VARP[1329], VARP[695], VARP[77], VARP[520], VARP[976], VARP[597], VARP[267], VARP[967], VARP[1418], VARP[1535], VARP[1566], VARP[1630], VARP[1672], VARP[1671], VARP[1685], VARP[1675], VARP[1677], VARP[1729], VARP[1736], VARP[1785], VARP[2071], VARP[2066], VARP[2111], VARP[2231], VARP[2305], VARP[2595], VARP[2712], VARP[393], VARP[2748], VARP[2851], VARP[2951]}
+	}, component0)
+	return 
+}

@@ -1,0 +1,8 @@
+// 3011 clientscript
+fun adventurepath_back_to_paths(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	sound_synth(synth_2266, 1, 0)
+	cc_deleteall(component2)
+	~adventurepath_change_page(component1, component0, component3, component4, 0)
+	return 
+}

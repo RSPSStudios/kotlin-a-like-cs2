@@ -1,0 +1,65 @@
+// 691 clientscript
+fun trail_slidepuzzle_op(opindex0: Int, component1: Component, comsubid2: Int, int3: Int, int4: Int, int5: Int, int6: Int) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	val int7: Int = ~trail_slidepuzzle_getint(comsubid2)
+	if (int7 = -1) {
+		return 
+	}
+	val int8: Int = calc(comsubid2 % 5)
+	val int9: Int = calc(comsubid2 / 5)
+	val int10: Int = -1
+	val int11: Int = -1
+	if (int8 > 0) {
+		int10 = calc(int8 - 1 + int9 * 5)
+		int11 = ~trail_slidepuzzle_getint(int10)
+		if (int11 = -1) {
+			sound_synth(synth_1859, 1, 0)
+			~trail_slidepuzzle_setint(int10, int7)
+			~trail_slidepuzzle_setint(comsubid2, -1)
+			~trail_slidepuzzle_position(component1, int3, int4, int5, int6)
+			VARCINT[110] = clientclock
+			return 
+		}
+	}
+	if (int8 < calc(5 - 1)) {
+		int10 = calc(int8 + 1 + int9 * 5)
+		int11 = ~trail_slidepuzzle_getint(int10)
+		if (int11 = -1) {
+			sound_synth(synth_1859, 1, 0)
+			~trail_slidepuzzle_setint(int10, int7)
+			~trail_slidepuzzle_setint(comsubid2, -1)
+			~trail_slidepuzzle_position(component1, int3, int4, int5, int6)
+			VARCINT[110] = clientclock
+			return 
+		}
+	}
+	if (int9 > 0) {
+		int10 = calc(int8 + (int9 - 1) * 5)
+		int11 = ~trail_slidepuzzle_getint(int10)
+		if (int11 = -1) {
+			sound_synth(synth_1859, 1, 0)
+			~trail_slidepuzzle_setint(int10, int7)
+			~trail_slidepuzzle_setint(comsubid2, -1)
+			~trail_slidepuzzle_position(component1, int3, int4, int5, int6)
+			VARCINT[110] = clientclock
+			return 
+		}
+	}
+	if (int9 < calc(5 - 1)) {
+		int10 = calc(int8 + (int9 + 1) * 5)
+		int11 = ~trail_slidepuzzle_getint(int10)
+		if (int11 = -1) {
+			sound_synth(synth_1859, 1, 0)
+			~trail_slidepuzzle_setint(int10, int7)
+			~trail_slidepuzzle_setint(comsubid2, -1)
+			~trail_slidepuzzle_position(component1, int3, int4, int5, int6)
+			VARCINT[110] = clientclock
+			return 
+		}
+	}
+	sound_synth(synth_2304, 1, 0)
+	return 
+}

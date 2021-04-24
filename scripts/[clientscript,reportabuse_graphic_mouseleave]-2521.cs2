@@ -1,0 +1,7 @@
+// 2521 clientscript
+fun reportabuse_graphic_mouseleave(component0: Component) {
+
+	val graphic1: Graphic = ~graphic_device("large_button", "med_buttons,5")
+	if_setgraphic(graphic1, component0)
+	return 
+}

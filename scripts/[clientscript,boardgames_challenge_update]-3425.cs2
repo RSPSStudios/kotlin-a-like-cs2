@@ -1,0 +1,6 @@
+// 3425 clientscript
+fun boardgames_challenge_update(int0: Int) {
+
+	~boardgames_challenge_update(int0)
+	return 
+}

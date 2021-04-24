@@ -1,0 +1,8 @@
+// 3208 clientscript
+fun league_task_updatetext(component0: Component, comsubid1: Int, enum2: Enum) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		~league_task_filter_updatetext(enum2)
+	}
+	return 
+}

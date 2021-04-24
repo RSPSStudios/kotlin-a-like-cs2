@@ -1,0 +1,8 @@
+// 3631 clientscript
+fun script3631(int0: Int, component1: Component) {
+
+	if (cc_find(component1, int0) = ^true) {
+		cc_settext(tostring(~script3633(int0)))
+	}
+	return 
+}

@@ -1,0 +1,6 @@
+// 1991 clientscript
+fun gravestone_retrieval_items(component0: Component, component1: Component) {
+
+	~gravestone_retrieval_items(component0, component1)
+	return 
+}

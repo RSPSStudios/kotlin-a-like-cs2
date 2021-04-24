@@ -1,0 +1,8 @@
+// 3279 clientscript
+fun script3279(component0: Component, comsubid1: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		~script3280(component0)
+	}
+	return 
+}

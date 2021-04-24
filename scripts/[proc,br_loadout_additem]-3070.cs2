@@ -1,0 +1,21 @@
+// 3070 proc
+fun br_loadout_additem(comsubid0: Int, namedobj1: Namedobj, int2: Int, component3: Component, component4: Component, drop5: Component, component6: Component) {
+
+	if (namedobj1 = null) {
+		return 
+	}
+	val int7: Int = 0
+	val size8: Int = 0
+	val size9: Int = inv_size(inv)
+	while (size8 < size9) {
+		int7 = calc((int2 + size8) % size9)
+		if (enum(int, namedobj, enum_2630, ~br_loadout_get_inv(int7)) = null) {
+			sound_synth(synth_2266, 1, 0)
+			~br_loadout_set_inv(int7, comsubid0)
+			~br_loadout_drawloadout(component3, component4, drop5, component6)
+			return 
+		}
+		size8 = calc(size8 + 1)
+	}
+	return 
+}

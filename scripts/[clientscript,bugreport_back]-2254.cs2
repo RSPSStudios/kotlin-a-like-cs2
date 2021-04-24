@@ -1,0 +1,12 @@
+// 2254 clientscript
+fun bugreport_back(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component) {
+
+	sound_synth(synth_2266, 1, 0)
+	if_sethide(false, component0)
+	if_sethide(true, component1)
+	~bugreport_switch_textinput(component2, component3, component4, component5, component6, component7, component8, component9)
+	if (~on_mobile = true) {
+		~keyboard_show_string(0, 500, VARCSTRING[372])
+	}
+	return 
+}

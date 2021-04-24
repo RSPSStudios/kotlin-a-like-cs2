@@ -1,0 +1,10 @@
+// 543 clientscript
+fun ge_offers_bigbutton_reset(component0: Component, string0: String, clock1: Int) {
+
+	if (clientclock < clock1) {
+		return 
+	}
+	if_setontimer(null, component0)
+	~ge_offers_bigbutton(component0, string0, 0)
+	return 
+}

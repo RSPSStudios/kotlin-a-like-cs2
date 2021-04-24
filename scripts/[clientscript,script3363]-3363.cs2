@@ -1,0 +1,8 @@
+// 3363 clientscript
+fun script3363(enum0: Enum, component1: Component, comsubid2: Int) {
+
+	if (cc_find(component1, comsubid2) = ^true) {
+		~script3364(enum0)
+	}
+	return 
+}

@@ -1,0 +1,17 @@
+// 1553 clientscript
+fun script1553(int0: Int) {
+
+	if (if_hassub(enum(component, component, ~toplevel_getcomponents, interface_161:73)) = false) {
+		return 
+	}
+	if_sethide(false, interface_500:10)
+	if_sethide(false, interface_500:11)
+	if_sethide(false, interface_500:2)
+	if_sethide(false, interface_500:6)
+	if_sethide(true, interface_500:5)
+	if (VARCINT[181] ! 0 & VARCINT[181] ! 1 & VARCINT[181] ! 2 & VARCINT[181] ! 3 & VARCINT[181] ! 4 & VARCINT[181] ! 5) {
+		VARCINT[181] = 0
+	}
+	~raids_sidepanel_setsort(int0)
+	return 
+}

@@ -1,0 +1,16 @@
+// 2119 clientscript
+fun script2119(opindex0: Int, component1: Component, int2: Int, int3: Int, int4: Int, int5: Int, component6: Component, component7: Component) {
+
+	if (opindex0 = 1 & cc_find(component1, int4) = ^true & .cc_find(component1, int2) = ^true) {
+		sound_synth(synth_2266, 1, 0)
+		VARBIT[1776] = int5
+		~script2118(component1, int2, int3, int4, int5, component6, component7)
+		if (component1 ! component6 & cc_find(component6, int4) = ^true & .cc_find(component6, int2) = ^true) {
+			~script2118(component6, int2, int3, int4, 1, component6, component7)
+		}
+		if (component1 ! component7 & cc_find(component7, int4) = ^true & .cc_find(component7, int2) = ^true) {
+			~script2118(component7, int2, int3, int4, 0, component6, component7)
+		}
+	}
+	return 
+}

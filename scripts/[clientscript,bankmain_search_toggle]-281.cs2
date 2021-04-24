@@ -1,0 +1,17 @@
+// 281 clientscript
+fun bankmain_search_toggle(opindex0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component, component16: Component, component17: Component) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	VARBIT[4150] = 0
+	if (~bankmain_searching = 1) {
+		~meslayer_close(1, 1)
+		~bankmain_search_setbutton(component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17)
+		~bankmain_build(component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17)
+		return 
+	}
+	~meslayer_mode11
+	~bankmain_search_setbutton(component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17)
+	return 
+}

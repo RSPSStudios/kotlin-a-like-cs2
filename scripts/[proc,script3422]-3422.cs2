@@ -1,0 +1,12 @@
+// 3422 proc
+fun script3422(component0: Component) {
+
+	if (VARBIT[10336] = 1) {
+		cc_setgraphic("options_radio_buttons,1")
+		if_setop(1, "Show", component0)
+	} else {
+		cc_setgraphic("options_radio_buttons,2")
+		if_setop(1, "Hide", component0)
+	}
+	return 
+}

@@ -1,0 +1,6 @@
+// 1338 clientscript
+fun light_puzzle_update(component0: Component) {
+
+	~light_puzzle_update(component0)
+	return 
+}

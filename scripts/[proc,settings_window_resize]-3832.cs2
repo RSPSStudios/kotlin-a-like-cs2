@@ -1,0 +1,25 @@
+// 3832 proc
+fun settings_window_resize(component0: Component, component1: Component, component2: Component, component3: Component, int4: Int, width5: Int, height6: Int) {
+
+	val width7: Int = if_getwidth(component0)
+	val height8: Int = if_getheight(component0)
+	if (width7 = width5 & height8 = height6) {
+		return 
+	}
+	val int9: Int = calc(height8 - int4)
+	if (~on_mobile = true) {
+		if_setsize(512, 334, ^setsize_abs, ^setsize_abs, component1)
+	} else {
+		if_setsize(512, ~min(800, calc(int9 - 3)), ^setsize_abs, ^setsize_abs, component1)
+	}
+	if (VARCINT[418] > if_getheight(component3)) {
+		if_setscrollsize(0, VARCINT[418], component3)
+	} else {
+		if_setscrollsize(0, 0, component3)
+	}
+	~scrollbar_vertical_rebuild(component2, component3)
+	if_setontimer({
+		settings_window_resize(component0, component1, component2, component3, int4, width7, height8)
+	}, component1)
+	return 
+}

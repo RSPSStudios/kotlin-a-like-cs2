@@ -1,0 +1,10 @@
+// 1141 clientscript
+fun deadman_stats_vartransmit(component0: Component, int1: Int) {
+
+	if (testbit(VARP[1295], calc(int1 - 1)) = ^true) {
+		~deadman_stats_set_protect(component0, int1)
+	} else {
+		~deadman_stats_set_unprotect(component0, int1)
+	}
+	return 
+}

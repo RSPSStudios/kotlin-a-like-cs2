@@ -1,0 +1,6 @@
+// 616 clientscript
+fun poll_placeholder_pulse(component0: Component, clock1: Int) {
+
+	~poll_placeholder_pulse(component0, clock1)
+	return 
+}

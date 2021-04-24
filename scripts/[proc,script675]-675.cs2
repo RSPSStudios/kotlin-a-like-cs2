@@ -1,0 +1,79 @@
+// 675 proc
+fun script675(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component, y5: Int, component6: Component, component7: Component) {
+
+	cc_deleteall(component1)
+	val width8: Int = if_getwidth(component1)
+	val int9: Int = 0
+	val int10: Int = calc(width8 / 3)
+	val int11: Int = 0
+	val height12: Int = 10
+	val int13: Int = calc(32 + 30)
+	val size14: Int = 0
+	val int15: Int = 0
+	val size16: Int = inv_size(inv)
+	val int17: Int = 0
+	namedobj0[size16]: Namedobj
+	val int18: Int = 0
+	val int19: Int = 0
+	val int20: Int = 1
+	val obj21: Obj = null
+	val namedobj22: Namedobj = null
+	val int23: Int = 0
+	while (size14 < size16) {
+		obj21 = inv_getobj(inv, size14)
+		if (obj21 ! null) {
+			namedobj22 = enum(obj, namedobj, enum_3541, obj21)
+			while (int19 <= int17) {
+				if (namedobj0[int19] ! null & namedobj0[int19] = namedobj22) {
+					int20 = 0
+				}
+				int19 = calc(int19 + 1)
+			}
+			int19 = 0
+			if (namedobj22 ! null & int20 = 1) {
+				int23 = enum(namedobj, int, enum_3545, namedobj22)
+				int15 = ~soul_wars_rewards_drawitem(int23, enum_3544, enum_3543, height12, int11, int10, 1, component1, component2, component3, int15, int0, component6, component7)
+				int11 = calc(int11 + int10)
+				if (calc(int11 + int10) > width8 & size14 < size16) {
+					int11 = 0
+					height12 = calc(height12 + 32 + 10)
+				}
+				int17 = calc(int17 + 1)
+				namedobj0[int18] = namedobj22
+				int18 = calc(int18 + 1)
+			}
+		}
+		int20 = 1
+		size14 = calc(size14 + 1)
+	}
+	if (int17 <= 0) {
+		cc_create(component1, ^iftype_text, int15)
+		cc_setsize(width8, if_getheight(component1), ^setsize_abs, ^setsize_abs)
+		cc_setposition(9, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+		cc_settextfont(b12_full)
+		cc_setcolour(0xff981f)
+		cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+		cc_settextshadow(true)
+		cc_settext("There are no items in your inventory that can be imbued.<br><br>Black masks, slayer helmets,<br>salve amulets and certain rings can all be imbued.")
+	}
+	if (int17 > 0) {
+		~scrollbar_vertical(component4, component1, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+	}
+	height12 = calc(height12 + 32 + 10)
+	if (height12 >= if_getheight(component1)) {
+		if_setscrollsize(0, height12, component1)
+	} else {
+		if_setscrollsize(0, 0, component1)
+	}
+	if_setscrollpos(0, y5, component1)
+	if (int17 > 0) {
+		~scrollbar_vertical_rebuild(component4, component1)
+	}
+	~soul_wars_rewards_drawconfirm(int0, component1, component2, component3, enum_3544, 1, component6, component7)
+	if_setonvartransmit({
+		script674(-1, component1, component2, component3, component4, component6, component7){VARP[2876]}
+	}, component1)
+	if_setonvartransmit(null, component6)
+	if_setonvartransmit(null, component7)
+	return 
+}

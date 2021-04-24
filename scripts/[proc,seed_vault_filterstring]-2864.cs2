@@ -1,0 +1,9 @@
+// 2864 proc
+fun seed_vault_filterstring(): String {
+
+	val string0: String = lowercase(VARCSTRING[359])
+	if (string_length(string0) <= 16) {
+		return string0
+	}
+	return substring(string0, 0, 15)
+}

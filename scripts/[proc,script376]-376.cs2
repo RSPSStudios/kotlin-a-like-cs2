@@ -1,0 +1,18 @@
+// 376 proc
+fun script376(enum0: Enum): Int {
+
+	when (enum0): Enum {
+		enum_2193, enum_342 -> {
+		
+			return VARBIT[7792]
+		}
+		enum_2850 -> {
+		
+			return VARBIT[11795]
+		}
+	else -> {
+	
+		return 0
+	}
+	}
+}

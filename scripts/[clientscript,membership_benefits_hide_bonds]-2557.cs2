@@ -1,0 +1,6 @@
+// 2557 clientscript
+fun membership_benefits_hide_bonds() {
+
+	~membership_benefits_hide_bonds(interface_275:5, interface_275:6)
+	return 
+}

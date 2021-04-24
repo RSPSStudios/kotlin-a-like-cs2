@@ -1,0 +1,7 @@
+// 3000 clientscript
+fun script3000(component0: Component) {
+
+	val int1: Int = ~adventurepath_return_task_focus(VARP[2357])
+	~adventurepath_task_focus(component0, int1, VARP[2358], 0, VARP[2357])
+	return 
+}

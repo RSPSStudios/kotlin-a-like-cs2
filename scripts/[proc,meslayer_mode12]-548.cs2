@@ -1,0 +1,22 @@
+// 548 proc
+fun meslayer_mode12() {
+
+	if (VARCINT[11] = 1) {
+		if_close
+	}
+	~meslayer_open(12)
+	if (string_length(chat_getmessagefilter) > 0) {
+		chat_setmessagefilter("")
+		~rebuildchatbox(~script553)
+	}
+	~script222("")
+	~meslayer_mode12_setprompt
+	val string0: String = ""
+	if_setonkey({
+		meslayer_onkey(event_key, event_keychar, string0)
+	}, interface_162:45)
+	if (~on_mobile = true) {
+		~keyboard_show(0, 10)
+	}
+	return 
+}

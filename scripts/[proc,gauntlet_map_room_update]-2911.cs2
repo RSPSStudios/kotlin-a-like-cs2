@@ -1,0 +1,10 @@
+// 2911 proc
+fun gauntlet_map_room_update(component0: Component, int1: Int) {
+
+	if (int1 = 1) {
+		if_settrans(0, component0)
+	} else {
+		if_settrans(120, component0)
+	}
+	return 
+}

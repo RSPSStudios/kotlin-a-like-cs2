@@ -1,0 +1,15 @@
+// 2079 proc
+fun vm_kudos_update() {
+
+	val string0: String = "Museum Kudos:"
+	val string1: String = "${tostring(VARBIT[3637])}/${tostring(230)}"
+	if (VARBIT[3637] >= 230) {
+		string1 = "<col=00ff00>${string1}</col>"
+	}
+	val width0: Int = calc(parawidth(string0, 512, b12_full) + 5 + parawidth(string1, 512, p12_full))
+	cc_setsize(width0, 17, ^setsize_abs, ^setsize_abs)
+	.cc_setsize(width0, 17, ^setsize_abs, ^setsize_abs)
+	cc_settext(string0)
+	.cc_settext(string1)
+	return 
+}

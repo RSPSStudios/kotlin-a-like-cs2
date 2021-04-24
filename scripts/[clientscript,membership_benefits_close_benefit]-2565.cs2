@@ -1,0 +1,6 @@
+// 2565 clientscript
+fun membership_benefits_close_benefit() {
+
+	if_sethide(true, interface_275:14)
+	return 
+}

@@ -1,0 +1,28 @@
+// 2056 proc
+fun skillmulti_quantitybutton_setup(int0: Int, int1: Int, component2: Component, int3: Int, int4: Int, int5: Int): Int {
+
+	if_setposition(int5, 0, ^setpos_abs_left, ^setpos_abs_centre, component2)
+	val op0: String = "All"
+	if (component2 ! interface_270:12) {
+		op0 = tostring(int1)
+	}
+	if (int0 = 1) {
+		~skillmulti_wipebutton(component2)
+		op0 = "<col=ffffff>${op0}</col>"
+		~skillmulti_quantitybutton_draw(true, op0, component2)
+	} else {
+		~skillmulti_quantitybutton_draw(false, op0, component2)
+		if_setonmouseover({
+			skillmulti_quantitybutton_draw(true, op0, component2)
+		}, component2)
+		if_setonmouseleave({
+			skillmulti_quantitybutton_draw(false, op0, component2)
+		}, component2)
+		if_setop(1, op0, component2)
+		if_setonop({
+			skillmulti_quantitybutton_op(event_opindex, int1, int3, int4)
+		}, component2)
+		if_setontimer(null, component2)
+	}
+	return calc(int5 + if_getwidth(component2) + 5)
+}

@@ -1,0 +1,6 @@
+// 882 clientscript
+fun gnomeball_score(component0: Component) {
+
+	~gnomeball_score(component0)
+	return 
+}

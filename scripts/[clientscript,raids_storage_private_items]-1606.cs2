@@ -1,0 +1,6 @@
+// 1606 clientscript
+fun raids_storage_private_items(component0: Component, component1: Component, component2: Component) {
+
+	~raids_storage_private_items(component0, component1, component2)
+	return 
+}

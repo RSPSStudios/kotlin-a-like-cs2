@@ -1,0 +1,6 @@
+// 204 clientscript
+fun displayname_draw(component0: Component, component1: Component, component2: Component) {
+
+	~displayname_draw(component0, component1, component2)
+	return 
+}

@@ -1,0 +1,7 @@
+// 266 clientscript
+fun nzone_lobby_partystatus(component0: Component, component1: Component) {
+
+	~nzone_lobby_partystatus(0, component0)
+	~nzone_lobby_hint(0, component1)
+	return 
+}

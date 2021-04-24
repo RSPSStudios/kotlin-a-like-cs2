@@ -1,0 +1,18 @@
+// 694 clientscript
+fun makeovermage_gender(component0: Component, component1: Component, int2: Int, boolean3: Boolean) {
+
+	if (boolean3 = true) {
+		if_setonop({
+			opsound(event_opindex, 2)
+		}, component0)
+		if_setonvartransmit({
+			makeovermage_gender(component0, component1, int2, false){VARP[261]}
+		}, component0)
+	}
+	if (VARP[261] = int2) {
+		if_setcolour(^green, component1)
+	} else {
+		if_setcolour(^black, component1)
+	}
+	return 
+}

@@ -1,0 +1,9 @@
+// 1343 clientscript
+fun script1343() {
+
+	sound_synth(synth_2266, 1, 0)
+	if_sethide(true, interface_65:46)
+	if_sethide(false, interface_65:45)
+	if_setopbase("name change", interface_65:90)
+	return 
+}

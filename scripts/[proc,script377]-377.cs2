@@ -1,0 +1,15 @@
+// 377 proc
+fun script377(enum0: Enum, int1: Int) {
+
+	when (enum0): Enum {
+		enum_2193, enum_342 -> {
+		
+			VARBIT[7792] = int1
+		}
+		enum_2850 -> {
+		
+			VARBIT[11795] = int1
+		}
+	}
+	return 
+}

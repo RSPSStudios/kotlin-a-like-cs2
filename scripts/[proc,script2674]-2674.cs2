@@ -1,0 +1,72 @@
+// 2674 proc
+fun script2674(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component) {
+
+	cc_deleteall(component1)
+	cc_deleteall(component2)
+	cc_deleteall(component5)
+	cc_deleteall(component8)
+	cc_deleteall(component7)
+	cc_deleteall(component4)
+	val int11: Int = ~telenexus_slots_full
+	val int12: Int = 4
+	if (VARBIT[6670] = 2) {
+		int12 = 8
+	} else if (VARBIT[6670] = 3) {
+		int12 = 30
+	}
+	val int13: Int = 0
+	val int14: Int = 0
+	val struct15: Struct = null
+	val int16: Int = 0
+	val int17: Int = 1
+	val int18: Int = 10
+	val int19: Int = 24
+	if (~on_mobile = true) {
+		int17 = 0
+		int18 = 20
+		int19 = 40
+	}
+	if (int17 = 1) {
+		~chatdefault_stopinput
+	}
+	val height20: Int = 0
+	val int21: Int = 1
+	val int22: Int = 1
+	val int23: Int = 1
+	val int24: Int = 0
+	val string0: String = ""
+	while (int21 <= int12) {
+		int16 = ~telenexus_get_slot(int21)
+		struct15 = enum(int, struct, enum_1377, int16)
+		if (struct15 ! null) {
+			int13, int23, height20, int22 = ~script2675(component9, component1, component2, int19, int13, int18, height20, struct15, int23, int17, int22, component5)
+			struct15 = struct_param(struct15, param_679)
+			if (struct15 ! null) {
+				int24, string0 = ~script2664(struct15)
+				if (int24 = 1) {
+					int14, int23, height20, int22 = ~script2675(component10, component6, component8, int19, int14, int18, height20, struct15, int23, int17, int22, component7)
+				} else {
+					cc_create(component6, ^iftype_text, int14)
+					cc_sethide(true)
+					cc_create(component10, ^iftype_rectangle, int14)
+					cc_sethide(true)
+					cc_create(component7, ^iftype_rectangle, int14)
+					cc_sethide(true)
+					cc_create(component8, ^iftype_graphic, int14)
+					cc_sethide(true)
+					int14 = calc(int14 + 1)
+				}
+			}
+		}
+		int21 = calc(int21 + 1)
+	}
+	if (height20 > if_getheight(component0)) {
+		if_setscrollsize(0, height20, component3)
+	} else {
+		if_setscrollsize(0, 0, component3)
+		if_setscrollpos(0, 0, component3)
+	}
+	~scrollbar_vertical(component4, component3, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+	~scrollbar_resize(component4, component3, if_getscrolly(component3))
+	return 
+}

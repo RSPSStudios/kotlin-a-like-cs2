@@ -1,0 +1,6 @@
+// 1604 clientscript
+fun raids_storage_private_prompt(component0: Component, component1: Component, component2: Component, comsubid3: Int) {
+
+	~raids_storage_private_prompt(component0, component1, component2, comsubid3)
+	return 
+}

@@ -1,0 +1,66 @@
+// 658 proc
+fun skill_guide_subsection_construction(int0: Int): String, Int {
+
+	when (int0): Int {
+		0 -> {
+		
+			return "Rooms", 1
+		}
+		1 -> {
+		
+			return "Skills", 1
+		}
+		2 -> {
+		
+			return "Surfaces", 1
+		}
+		3 -> {
+		
+			return "Storage", 1
+		}
+		4 -> {
+		
+			return "Decorative", 1
+		}
+		5 -> {
+		
+			return "Trophies", 1
+		}
+		6 -> {
+		
+			return "Games", 1
+		}
+		7 -> {
+		
+			return "Garden", 1
+		}
+		8 -> {
+		
+			return "Dungeon", 1
+		}
+		9 -> {
+		
+			return "Chapel", 1
+		}
+		10 -> {
+		
+			return "Raids", 1
+		}
+		11 -> {
+		
+			return "Other", 1
+		}
+		12 -> {
+		
+			return "Servants", 1
+		}
+		13 -> {
+		
+			return "House Size", 1
+		}
+	else -> {
+	
+		return "", -1
+	}
+	}
+}

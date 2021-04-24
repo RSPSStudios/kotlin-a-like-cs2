@@ -1,0 +1,28 @@
+// 2890 proc
+fun hp_hud_fade_out(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, int11: Int) {
+
+	if (int11 <= 0) {
+		if_sethide(true, component2)
+		if_sethide(true, component6)
+	}
+	int11 = ~min(255, calc(int11 + 3))
+	VARCINT[394] = 2
+	if_settrans(int11, component0)
+	if_settrans(int11, component1)
+	if_settrans(int11, component3)
+	if_settrans(int11, component4)
+	if_settrans(int11, component5)
+	if_settrans(int11, component7)
+	if_settrans(int11, component8)
+	if_settrans(int11, component9)
+	if_settrans(int11, component10)
+	if (int11 >= 255) {
+		if_setontimer(null, component0)
+		VARCINT[394] = 0
+		return 
+	}
+	if_setontimer({
+		hp_hud_fade_out(component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, int11)
+	}, component0)
+	return 
+}

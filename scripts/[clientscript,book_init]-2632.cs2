@@ -1,0 +1,39 @@
+// 2632 clientscript
+fun book_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component) {
+
+	val graphic6: Graphic = "close_buttons,4"
+	val graphic7: Graphic = "close_buttons,5"
+	val graphic8: Graphic = "leftarrow"
+	val graphic9: Graphic = "leftarrow_highlight"
+	val graphic10: Graphic = "rightarrow"
+	val graphic11: Graphic = "rightarrow_highlight"
+	if (~on_mobile = false) {
+		if_setonmouseover({
+			graphic_swapper(component1, graphic7)
+		}, component0)
+		if_setonmouseleave({
+			graphic_swapper(component1, graphic6)
+		}, component0)
+		if_setonmouseover({
+			graphic_swapper(component3, graphic9)
+		}, component2)
+		if_setonmouseleave({
+			graphic_swapper(component3, graphic8)
+		}, component2)
+		if_setonmouseover({
+			graphic_swapper(component5, graphic11)
+		}, component4)
+		if_setonmouseleave({
+			graphic_swapper(component5, graphic10)
+		}, component4)
+		if_setposition(2, 2, ^setpos_abs_right, ^setpos_abs_top, component0)
+		if_setsize(26, 23, ^setsize_abs, ^setsize_abs, component0)
+	} else {
+		if_setposition(0, 0, ^setpos_abs_right, ^setpos_abs_top, component0)
+		if_setsize(30, 27, ^setsize_abs, ^setsize_abs, component0)
+	}
+	if_setonop({
+		closebutton_click
+	}, component0)
+	return 
+}

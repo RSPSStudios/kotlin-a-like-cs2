@@ -1,0 +1,6 @@
+// 3993 proc
+fun script3993() {
+
+	VARP[170] = calc(1 - VARP[170])
+	return 
+}

@@ -1,0 +1,31 @@
+// 183 proc
+fun chat_alert_set(int0: Int, int1: Int) {
+
+	when (int0): Int {
+		1 -> {
+		
+			VARCINT[44] = int1
+		}
+		2 -> {
+		
+			VARCINT[45] = int1
+		}
+		3 -> {
+		
+			VARCINT[46] = int1
+		}
+		4 -> {
+		
+			VARCINT[47] = int1
+		}
+		5 -> {
+		
+			VARCINT[48] = int1
+		}
+		0 -> {
+		
+			VARCINT[44], VARCINT[45], VARCINT[46], VARCINT[47], VARCINT[48] = int1, int1, int1, int1, int1
+		}
+	}
+	return 
+}

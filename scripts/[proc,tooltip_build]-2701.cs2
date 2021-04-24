@@ -1,0 +1,54 @@
+// 2701 proc
+fun tooltip_build(component0: Component, comsubid1: Int, component2: Component, string0: String, width3: Int) {
+
+	val layer4: Component = if_getlayer(component2)
+	if (layer4 ! null & width3 > if_getwidth(layer4)) {
+		width3 = if_getwidth(layer4)
+	}
+	width3 = calc(width3 - 4)
+	if_setsize(calc(4 + parawidth(string0, width3, p12_full)), calc(7 + 12 * paraheight(string0, width3, p12_full)), ^setsize_abs, ^setsize_abs, component2)
+	val int5: Int = if_getx(component0)
+	val int6: Int = if_gety(component0)
+	val int7: Int = 0
+	if (comsubid1 ! -1 & cc_find(component0, comsubid1) = ^true) {
+		int5, int6, int7 = calc(int5 + cc_getx - if_getscrollx(component0)), calc(int6 + cc_gety - if_getscrolly(component0)), cc_getheight
+	} else {
+		int7 = if_getheight(component0)
+	}
+	val layer8: Component = if_getlayer(component0)
+	while (layer8 ! null) {
+		int5, int6 = calc(int5 + if_getx(layer8) - if_getscrollx(layer8)), calc(int6 + if_gety(layer8) - if_getscrolly(layer8))
+		layer8 = if_getlayer(layer8)
+	}
+	val x9: Int = calc(int5 + 5)
+	val y10: Int = calc(int6 + int7 + 5)
+	if (layer4 ! null) {
+		if (x9 > calc(if_getwidth(layer4) - if_getwidth(component2))) {
+			x9 = calc(if_getwidth(layer4) - if_getwidth(component2))
+		}
+		if (y10 > calc(if_getheight(layer4) - if_getheight(component2))) {
+			y10 = calc(int6 - if_getheight(component2) - 5)
+		}
+	}
+	if_setposition(x9, y10, ^setpos_abs_left, ^setpos_abs_top, component2)
+	cc_deleteall(component2)
+	cc_create(component2, ^iftype_rectangle, 0)
+	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	cc_setfill(true)
+	cc_setcolour(0xffffa0)
+	cc_create(component2, ^iftype_rectangle, 1)
+	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	cc_setfill(false)
+	cc_setcolour(^black)
+	cc_create(component2, ^iftype_text, 2)
+	cc_setsize(4, 1, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_bottom)
+	cc_settext(string0)
+	cc_settextalign(^settextalign_left, ^settextalign_top, 0)
+	cc_settextfont(p12_full)
+	cc_setcolour(^black)
+	VARCINT[2] = 1
+	return 
+}

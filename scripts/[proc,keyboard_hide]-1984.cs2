@@ -1,0 +1,9 @@
+// 1984 proc
+fun keyboard_hide() {
+
+	if (~on_mobile = false) {
+		return 
+	}
+	mobile_keyboardhide
+	return 
+}

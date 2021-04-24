@@ -1,0 +1,21 @@
+// 3656 proc
+fun script3656(component0: Component, graphic1: Graphic, graphic2: Graphic, x3: Int, y4: Int, width5: Int, height6: Int, op0: String) {
+
+	cc_deleteall(component0)
+	if_setsize(width5, height6, ^setsize_abs, ^setsize_abs, component0)
+	if_setposition(x3, y4, ^setpos_abs_left, ^setpos_abs_top, component0)
+	cc_create(component0, ^iftype_graphic, 0)
+	cc_setgraphic(graphic1)
+	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	if (~on_mobile = false) {
+		cc_setonmouserepeat({
+			script3440(event_com, event_comsubid, graphic2, null)
+		})
+		cc_setonmouseleave({
+			script3440(event_com, event_comsubid, graphic1, null)
+		})
+	}
+	if_setop(1, op0, component0)
+	return 
+}

@@ -1,0 +1,6 @@
+// 1170 clientscript
+fun deadmanloot_inv_transmit() {
+
+	~deadmanloot_inv_update
+	return 
+}

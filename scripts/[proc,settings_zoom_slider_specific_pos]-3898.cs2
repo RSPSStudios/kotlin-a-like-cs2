@@ -1,0 +1,18 @@
+// 3898 proc
+fun settings_zoom_slider_specific_pos(component0: Component, comsubid1: Int, int2: Int, int3: Int, y4: Int, int5: Int) {
+
+	if (VARBIT[4606] ! 0) {
+		return 
+	}
+	val int6: Int = 512
+	val int7: Int = 512
+	val int8: Int = calc(int2 - 16)
+	int3 = ~max(0, int3)
+	int3 = ~min(calc(int2 - 16), int3)
+	val int9: Int = calc(896 - 128)
+	val int10: Int = calc(896 - 128)
+	int6 = calc(int3 * int9 / int8 + 128)
+	int7 = calc(int3 * int10 / int8 + 128)
+	~settings_camera_do_zoom(component0, comsubid1, int7, int6, int2, y4, int5)
+	return 
+}

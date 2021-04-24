@@ -1,0 +1,12 @@
+// 3943 clientscript
+fun zoom_timer(int0: Int, int1: Int) {
+
+	if (VARCINT[73] = int0 & VARCINT[74] = int1) {
+		return 
+	}
+	~zoom_position_slider
+	if_setontimer({
+		zoom_timer(VARCINT[73], VARCINT[74])
+	}, interface_116:60)
+	return 
+}

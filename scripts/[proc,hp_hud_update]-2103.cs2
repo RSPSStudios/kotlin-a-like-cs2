@@ -1,0 +1,56 @@
+// 2103 proc
+fun hp_hud_update(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, boolean9: Boolean) {
+
+	val string0: String = nc_param(VARP[1683], param_510)
+	if (compare(string0, "") = 0) {
+		if_sethide(true, component3)
+	} else {
+		if_sethide(false, component3)
+		if_settext(string0, component4)
+	}
+	val text1: String = "${tostring(VARBIT[6099])} / ${tostring(VARBIT[6100])}"
+	if_settext(text1, component0)
+	val width10: Int = if_getwidth(component1)
+	val int11: Int = width10
+	val int12: Int = calc(VARBIT[6100] + 1)
+	int11 = scale(VARBIT[6099], VARBIT[6100], int11)
+	if (VARBIT[10338] > 0 & VARBIT[10338] <= int12) {
+		if_sethide(false, component5)
+		if_setposition(scale(calc(VARBIT[10338] - 1), VARBIT[6100], width10), 0, ^setpos_abs_left, ^setpos_abs_centre, component5)
+	} else {
+		if_sethide(true, component5)
+	}
+	if (VARBIT[10339] > 0 & VARBIT[10339] <= int12) {
+		if_sethide(false, component6)
+		if_setposition(calc(width10 - scale(VARBIT[10339] - 1, VARBIT[6100], width10)), 0, ^setpos_abs_right, ^setpos_abs_centre, component6)
+	} else {
+		if_sethide(true, component6)
+	}
+	if (VARBIT[10340] > 0 & VARBIT[10340] <= int12) {
+		if_sethide(false, component7)
+		if_setposition(scale(calc(VARBIT[10340] - 1), VARBIT[6100], width10), 0, ^setpos_abs_left, ^setpos_abs_centre, component7)
+	} else {
+		if_sethide(true, component7)
+	}
+	if (VARBIT[10341] > 0 & VARBIT[10341] <= int12) {
+		if_sethide(false, component8)
+		if_setposition(scale(calc(VARBIT[10341] - 1), VARBIT[6100], width10), 0, ^setpos_abs_left, ^setpos_abs_centre, component8)
+	} else {
+		if_sethide(true, component8)
+	}
+	if (int11 = 0 & VARBIT[6099] > 0) {
+		int11 = 1
+	}
+	if (int11 = if_getwidth(component1) & VARBIT[6099] < VARBIT[6100]) {
+		int11 = calc(int11 - 1)
+	}
+	if (boolean9 = true | if_getwidth(component2) = 0) {
+		if_setsize(int11, if_getheight(component2), ^setsize_abs, ^setsize_abs, component2)
+		if_setontimer(null, component2)
+		return 
+	}
+	if_setontimer({
+		hp_hud_update_bar(component2, int11)
+	}, component2)
+	return 
+}

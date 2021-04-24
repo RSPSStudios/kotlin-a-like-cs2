@@ -1,0 +1,25 @@
+// 1364 clientscript
+fun barbassault_reward_shop_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	~steelborder(component0, "Barbarian Assault Reward Shop", 0)
+	~script1367(component1, component2)
+	~script1366
+	if_setonvartransmit({
+		script1365(component1, component2){VARP[946], VARP[947], VARP[948], VARP[949], VARP[466], VARP[261], VARP[262], VARP[263]}
+	}, component1)
+	if_setoninvtransmit({
+		script1365(component1, component2){inv}
+	}, component1)
+	if_setonmouseover({
+		text_colour_swapper(event_com, ^white)
+	}, component4)
+	if_setonmouseleave({
+		text_colour_swapper(event_com, 0x333300)
+	}, component4)
+	if_setop(1, "Accept", component4)
+	if_setonop({
+		text_colour_swapper(event_com, 0x333300)
+	}, component4)
+	~scrollbar_vertical(component3, component1, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+	return 
+}

@@ -1,0 +1,6 @@
+// 804 clientscript
+fun ge_offers_switchpanel(component0: Component, comsubid1: Int, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component) {
+
+	~ge_offers_switchpanel(component0, comsubid1, component2, component3, component4, component5, component6)
+	return 
+}

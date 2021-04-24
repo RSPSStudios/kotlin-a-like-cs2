@@ -1,0 +1,8 @@
+// 28 clientscript
+fun closebutton_leave(component0: Component) {
+
+	if (cc_find(component0, 1) = ^true) {
+		cc_sethide(false)
+	}
+	return 
+}

@@ -1,0 +1,24 @@
+// 199 proc
+fun script199(string0: String, int0: Int, component1: Component, component2: Component, width3: Int, int4: Int, int5: Int, int6: Int, setposv7: Int, int8: Int, colour9: Int, boolean10: Boolean): Int {
+
+	val width11: Int = calc(width3 - int4)
+	val int12: Int = calc(paraheight(string0, width11, p12_full) * int5)
+	if (setposv7 = ^setpos_abs_top & int8 = 103) {
+		int6 = calc(int6 - int12)
+	}
+	if (cc_find(component2, calc(int0 * 2)) = ^true) {
+		if_setsize(width11, int12, ^setsize_abs, ^setsize_abs, component1)
+		if_setposition(int4, int6, ^setpos_abs_left, setposv7, component1)
+		cc_sethide(false)
+		cc_setsize(width11, int12, ^setsize_abs, ^setsize_abs)
+		cc_setposition(int4, int6, ^setpos_abs_left, setposv7)
+		cc_settext(string0)
+		cc_setcolour(colour9)
+		cc_settextshadow(boolean10)
+	}
+	if (cc_find(component2, calc(int0 * 2 + 1)) = ^true) {
+		cc_settext("")
+		cc_sethide(true)
+	}
+	return int12
+}

@@ -1,0 +1,6 @@
+// 2089 clientscript
+fun trail_rewardscreen_draw(component0: Component, size1: Int) {
+
+	~trail_rewardscreen_draw(component0, size1)
+	return 
+}

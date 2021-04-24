@@ -1,0 +1,6 @@
+// 29 clientscript
+fun closebutton_click() {
+
+	if_close
+	return 
+}

@@ -1,0 +1,19 @@
+// 1449 clientscript
+fun duel_stake_exclamations(component0: Component, component1: Component, component2: Component) {
+
+	val int3: Int = 0
+	cc_deleteall(component0)
+	cc_create(component0, ^iftype_rectangle, 0)
+	cc_setsize(30, if_getheight(component1), ^setsize_abs, ^setsize_abs)
+	cc_setposition(if_getx(component1), if_gety(component1), ^setpos_abs_left, ^setpos_abs_top)
+	cc_setfill(true)
+	cc_setcolour(^red)
+	cc_sethide(true)
+	cc_create(component0, ^iftype_rectangle, 1)
+	cc_setsize(30, if_getheight(component2), ^setsize_abs, ^setsize_abs)
+	cc_setposition(if_getx(component2), if_gety(component2), ^setpos_abs_left, ^setpos_abs_top)
+	cc_setfill(true)
+	cc_setcolour(^red)
+	cc_sethide(true)
+	return 
+}

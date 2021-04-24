@@ -1,0 +1,11 @@
+// 555 clientscript
+fun clanwars_confirm_challenge_wait(component0: Component, component1: Component, clock2: Int) {
+
+	if (clientclock < clock2) {
+		return 
+	}
+	if_setontimer(null, component0)
+	if_sethide(false, component1)
+	~clanwars_confirm_challenge_redraw(component1)
+	return 
+}

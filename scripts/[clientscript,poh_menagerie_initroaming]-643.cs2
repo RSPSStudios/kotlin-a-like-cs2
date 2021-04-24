@@ -1,0 +1,31 @@
+// 643 clientscript
+fun poh_menagerie_initroaming(component0: Component) {
+
+	val width1: Int = if_getwidth(component0)
+	val y2: Int = calc(if_getheight(component0) - 17)
+	cc_deleteall(component0)
+	cc_create(component0, ^iftype_graphic, 0)
+	cc_setsize(17, 17, ^setsize_abs, ^setsize_abs)
+	cc_setposition(0, y2, ^setpos_abs_left, ^setpos_abs_top)
+	.cc_create(component0, ^iftype_text, 1)
+	.cc_setsize(calc(width1 - 22), 17, ^setsize_abs, ^setsize_abs)
+	.cc_setposition(22, y2, ^setpos_abs_left, ^setpos_abs_top)
+	.cc_setcolour(0xff981f)
+	.cc_settextfont(p12_full)
+	.cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
+	.cc_settext("Allow pets to roam")
+	if_setonmouseover({
+		cc_colour_swapper(event_com, .cc_getid, ^white)
+	}, component0)
+	if_setonmouseleave({
+		cc_colour_swapper(event_com, .cc_getid, 0xff981f)
+	}, component0)
+	~poh_menagerie_setroaming(component0)
+	if_setonvartransmit({
+		poh_menagerie_setroaming(event_com, cc_getid, 0){VARP[661]}
+	}, component0)
+	if_setonop({
+		poh_menagerie_toggleroaming(event_opindex, event_com, cc_getid)
+	}, component0)
+	return 
+}

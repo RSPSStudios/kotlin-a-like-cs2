@@ -1,0 +1,52 @@
+// 3144 proc
+fun target_system_redraw(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component) {
+
+	if (VARBIT[6704] = 1) {
+		if_sethide(true, component2)
+		if_sethide(false, component1)
+	} else {
+		if_sethide(false, component2)
+		if_sethide(true, component1)
+	}
+	if (~on_mobile = true) {
+		~script1486(interface_90:5, ^setpos_abs_right, 1, 0)
+	} else if (VARBIT[6715] = 2) {
+		if (VARBIT[4143] = 1) {
+			if_setposition(106, 2, ^setpos_abs_left, ^setpos_abs_top, component0)
+		} else {
+			if_setposition(5, 2, ^setpos_abs_left, ^setpos_abs_top, component0)
+		}
+		~script1486(interface_90:5, ^setpos_abs_left, 1, 0)
+	} else if (VARBIT[6715] = 3) {
+		if_setposition(0, 2, ^setpos_abs_centre, ^setpos_abs_top, component0)
+		~script1486(interface_90:5, ^setpos_abs_centre, 1, 0)
+	} else {
+		if_setposition(0, 2, ^setpos_abs_right, ^setpos_abs_top, component0)
+		~script1486(interface_90:5, ^setpos_abs_right, 1, 0)
+	}
+	if (VARBIT[9495] = 0) {
+		if_settext("---", component4)
+		if_setcolour(^white, component4)
+		if_sethide(true, component3)
+		if_sethide(true, component6)
+		return 
+	}
+	val int8: Int = 0
+	if (VARBIT[9493] > 0) {
+		int8 = calc((VARBIT[9493] - 1) * 5)
+		if (int8 > 0) {
+			if_settext("${tostring(int8)}-${tostring(calc(int8 + 4))}", component4)
+		} else {
+			if_settext("1-${tostring(calc(int8 + 4))}", component4)
+		}
+	} else {
+		if_settext("Safe", component4)
+	}
+	if (VARBIT[9494] = 1) {
+		if_sethide(false, component3)
+	} else {
+		if_sethide(true, component3)
+	}
+	if_sethide(false, component6)
+	return 
+}

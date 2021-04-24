@@ -1,0 +1,6 @@
+// 2777 clientscript
+fun pest_rewards_confirmdraw(boolean0: Boolean, text0: String, component1: Component) {
+
+	~pest_rewards_confirmdraw(boolean0, text0, component1)
+	return 
+}

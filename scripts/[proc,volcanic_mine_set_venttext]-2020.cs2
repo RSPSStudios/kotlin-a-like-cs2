@@ -1,0 +1,22 @@
+// 2020 proc
+fun volcanic_mine_set_venttext() {
+
+	val text0: String = "A: -%"
+	val text1: String = "B: -%"
+	val text2: String = "C: -%"
+	if (VARBIT[5941] >= 2) {
+		if (VARBIT[5939] ! 127) {
+			text0 = "A: ${~volcanic_mine_ventcolour(VARBIT[5939])}"
+		}
+		if (VARBIT[5940] ! 127) {
+			text1 = "B: ${~volcanic_mine_ventcolour(VARBIT[5940])}"
+		}
+		if (VARBIT[5942] ! 127) {
+			text2 = "C: ${~volcanic_mine_ventcolour(VARBIT[5942])}"
+		}
+	}
+	if_settext(text0, interface_611:20)
+	if_settext(text1, interface_611:21)
+	if_settext(text2, interface_611:22)
+	return 
+}

@@ -1,0 +1,6 @@
+// 1639 clientscript
+fun deadman_tournament_timer_update(component0: Component, int1: Int) {
+
+	~deadman_tournament_timer_update(component0, int1)
+	return 
+}

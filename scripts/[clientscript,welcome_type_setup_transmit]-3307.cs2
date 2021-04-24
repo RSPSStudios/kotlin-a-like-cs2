@@ -1,0 +1,6 @@
+// 3307 clientscript
+fun welcome_type_setup_transmit(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	~welcome_type_setup(VARBIT[10116], component0, component1, component2, component3, component4)
+	return 
+}

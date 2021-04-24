@@ -1,0 +1,111 @@
+// 2344 proc
+fun script2344(component0: Component, comsubid1: Int, component2: Component, string0: String, string1: String, fontmetrics3: Fontmetrics) {
+
+	val fontmetrics4: Fontmetrics = p12_full
+	val int5: Int = 12
+	val int6: Int = 4
+	if (fontmetrics3 = p11_full) {
+		fontmetrics4, int5, int6 = p11_full, 10, 2
+	} else if (fontmetrics3 = b12_full) {
+		fontmetrics4 = b12_full
+	}
+	val string2: String = ""
+	val string3: String = ""
+	val string4: String = ""
+	val string5: String = ""
+	val int7: Int = 0
+	val int8: Int = 0
+	val int9: Int = 0
+	val int10: Int = 0
+	val int11: Int = 0
+	string4, string0 = ~script632(string0)
+	string5, string1 = ~script632(string1)
+	val int12: Int = string_length(string4)
+	val int13: Int = string_length(string5)
+	while (int12 > 0 | int13 > 0) {
+		if (int12 > 0) {
+			int7 = parawidth(string4, ^max_32bit_int, fontmetrics3)
+		} else {
+			int7 = 0
+		}
+		if (int13 > 0) {
+			int8 = parawidth(string5, ^max_32bit_int, fontmetrics3)
+		} else {
+			int8 = 0
+		}
+		int9 = calc(int7 + int6 + int8)
+		if (int10 < int9) {
+			int10 = int9
+		}
+		if (int11 > 0) {
+			string2, string3 = append(string2, append("<br>", string4)), append(string3, append("<br>", string5))
+		} else {
+			string2, string3 = append(string2, string4), append(string3, string5)
+		}
+		int11 = calc(int11 + 1)
+		if (string_length(string0) > 0 | string_length(string1) > 0) {
+			string4, string0 = ~script632(string0)
+			string5, string1 = ~script632(string1)
+			int12 = string_length(string4)
+			int13 = string_length(string5)
+		} else {
+			int12, int13 = 0, 0
+		}
+	}
+	int9, int5 = calc(int10 + 4), calc(int11 * int5 + (int6 - 1) + 4)
+	if_setsize(int9, int5, ^setsize_abs, ^setsize_abs, component2)
+	val int14: Int = if_getx(component0)
+	val int15: Int = if_gety(component0)
+	val int16: Int = 0
+	if (comsubid1 ! -1 & cc_find(component0, comsubid1) = ^true) {
+		int14, int15, int16 = calc(int14 + cc_getx - if_getscrollx(component0)), calc(int15 + cc_gety - if_getscrolly(component0)), cc_getheight
+	} else {
+		int16 = if_getheight(component0)
+	}
+	val layer17: Component = if_getlayer(component0)
+	while (layer17 ! null) {
+		int14, int15 = calc(int14 + if_getx(layer17) - if_getscrollx(layer17)), calc(int15 + if_gety(layer17) - if_getscrolly(layer17))
+		layer17 = if_getlayer(layer17)
+	}
+	val x18: Int = calc(int14 + 5)
+	val y19: Int = calc(int15 + int16 + 5)
+	val x20: Int = 0
+	val layer21: Component = if_getlayer(component2)
+	if (layer21 ! null) {
+		x20 = calc(if_getwidth(layer21) - int9)
+		if (x18 > x20) {
+			x18 = x20
+		}
+		if (y19 > calc(if_getheight(layer21) - int5)) {
+			y19 = calc(int15 - int5 - 5)
+		}
+	}
+	if_setposition(x18, y19, ^setpos_abs_left, ^setpos_abs_top, component2)
+	cc_deleteall(component2)
+	cc_create(component2, ^iftype_rectangle, 0)
+	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	cc_setfill(true)
+	cc_setcolour(0xffffa0)
+	cc_create(component2, ^iftype_rectangle, 1)
+	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	cc_setfill(false)
+	cc_setcolour(^black)
+	cc_create(component2, ^iftype_text, 2)
+	cc_setsize(4, 1, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_bottom)
+	cc_settext(string2)
+	cc_settextalign(^settextalign_left, ^settextalign_top, 0)
+	cc_settextfont(fontmetrics4)
+	cc_setcolour(^black)
+	cc_create(component2, ^iftype_text, 3)
+	cc_setsize(4, 1, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_bottom)
+	cc_settext(string3)
+	cc_settextalign(^settextalign_right, ^settextalign_top, 0)
+	cc_settextfont(fontmetrics4)
+	cc_setcolour(^black)
+	VARCINT[2] = 1
+	return 
+}

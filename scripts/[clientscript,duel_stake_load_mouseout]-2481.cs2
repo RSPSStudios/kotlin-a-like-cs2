@@ -1,0 +1,7 @@
+// 2481 clientscript
+fun duel_stake_load_mouseout(component0: Component, component1: Component) {
+
+	if_setoutline(0, component0)
+	~deltooltip_action(component1)
+	return 
+}

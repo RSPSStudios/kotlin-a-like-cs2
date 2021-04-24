@@ -1,0 +1,10 @@
+// 3384 proc
+fun tut2_hint_interact() {
+
+	if (~on_mobile = true) {
+		~tut2_hint_interact_mobile
+	} else {
+		~tut2_hint_interact_desktop
+	}
+	return 
+}

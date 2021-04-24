@@ -1,0 +1,21 @@
+// 4070 clientscript
+fun script4070(clock0: Int, int1: Int, boolean2: Boolean) {
+
+	val int3: Int = calc(clientclock - clock0)
+	val int4: Int = scale(int3, int1, 100)
+	val int5: Int = 51
+	if (boolean2 = true) {
+		if_setposition(0, calc(16384 - ~script4067(int4)), ^setpos_abs_centre, ^setpos_5, interface_437:8)
+		if_settrans(interpolate(255, int5, 0, int1, int3), interface_437:7)
+	} else {
+		if_setposition(0, ~script4067(int4), ^setpos_abs_centre, ^setpos_3, interface_437:8)
+		if_settrans(interpolate(int5, 255, 0, int1, int3), interface_437:7)
+	}
+	if (int3 >= int1) {
+		if_setontimer(null, interface_437:5)
+		if (boolean2 = false) {
+			if_sethide(true, interface_437:5)
+		}
+	}
+	return 
+}

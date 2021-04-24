@@ -1,0 +1,22 @@
+// 2613 clientscript
+fun script2613(component0: Component, component1: Component, int2: Int) {
+
+	val int3: Int = 0
+	val int4: Int = 0
+	if (VARCINT[225] ! null) {
+		while (int4 = 0) {
+			if (cc_find(component0, int3) = ^true) {
+				if (cc_getinvobject = VARCINT[225]) {
+					~magic_spellbook_settooltip(true, VARCINT[225], component0, int3, component1, int2)
+					return 
+				}
+			} else {
+				int4 = 1
+			}
+			int3 = calc(int3 + 1)
+		}
+	}
+	VARCINT[225] = null
+	if_setontimer(null, component0)
+	return 
+}

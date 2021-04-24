@@ -1,0 +1,24 @@
+// 1099 proc
+fun bugreport_parse(string0: String, int0: Int): String {
+
+	string0 = escape(string0)
+	val length1: Int = string_length(string0)
+	val int2: Int = 0
+	if (length1 > 0 & compare(substring(string0, calc(length1 - 1), length1), "|") = 0) {
+		int2 = 1
+	}
+	val string1: String = ""
+	val string2: String = ""
+	while (string_length(string0) > 0) {
+		string2, string0 = ~script632(string0)
+		if (string_length(string1) > 0) {
+			string1 = append(string1, append("<br>", string2))
+		} else {
+			string1 = string2
+		}
+	}
+	if (int2 = 1 & int0 = 1) {
+		return append(string1, "<br>")
+	}
+	return string1
+}

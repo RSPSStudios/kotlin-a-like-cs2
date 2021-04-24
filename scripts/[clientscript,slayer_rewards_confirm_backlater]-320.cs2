@@ -1,0 +1,13 @@
+// 320 clientscript
+fun slayer_rewards_confirm_backlater(clock0: Int, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	if (clientclock < clock0) {
+		return 
+	}
+	if_setontimer(null, component3)
+	cc_deleteall(component3)
+	if_setonop(null, component4)
+	if_sethide(false, component1)
+	if_sethide(true, component2)
+	return 
+}

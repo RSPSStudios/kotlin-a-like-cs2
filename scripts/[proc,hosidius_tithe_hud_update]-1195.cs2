@@ -1,0 +1,33 @@
+// 1195 proc
+fun hosidius_tithe_hud_update(component0: Component, component1: Component, component2: Component) {
+
+	if (VARBIT[4901] = 1) {
+		if_setobject_nonum(golovanova_fruit_13426, 1, component0)
+	} else if (VARBIT[4901] = 2) {
+		if_setobject_nonum(bologano_fruit_13427, 1, component0)
+	} else if (VARBIT[4901] = 3) {
+		if_setobject_nonum(logavano_fruit_13428, 1, component0)
+	} else {
+		if_setobject_nonum(cabbage_1965, 1, component0)
+	}
+	val int3: Int = 100
+	if (VARBIT[4900] <= 100) {
+		int3 = VARBIT[4900]
+	}
+	if_settext(tostring(int3), component1)
+	val int4: Int = interpolate(0, 75, 0, 100, 100)
+	val int5: Int = 210
+	val int6: Int = 0
+	if (int3 < int4) {
+		int5 = interpolate(0, int3, 0, int4, 152)
+		int6 = interpolate(0, int3, 0, int4, 31)
+	}
+	if_setcolour(~rgb_to_hex(255, int5, int6), component1)
+	if_settext("Points: ${~tostring_spacer(VARBIT[4893], ",")}", component2)
+	if (VARBIT[4893] >= 1000) {
+		if_setcolour(^red, component2)
+	} else {
+		if_setcolour(0xff981f, component2)
+	}
+	return 
+}

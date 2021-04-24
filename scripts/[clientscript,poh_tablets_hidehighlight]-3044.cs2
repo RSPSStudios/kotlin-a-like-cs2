@@ -1,0 +1,9 @@
+// 3044 clientscript
+fun poh_tablets_hidehighlight(component0: Component, comsubid1: Int, comsubid2: Int, boolean3: Boolean) {
+
+	if (cc_find(component0, comsubid1) = ^true & .cc_find(component0, comsubid2) = ^true) {
+		cc_sethide(boolean3)
+		.cc_sethide(boolean3)
+	}
+	return 
+}

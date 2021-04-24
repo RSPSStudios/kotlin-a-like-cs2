@@ -1,0 +1,6 @@
+// 4089 clientscript
+fun script4089() {
+
+	~keyboard_show_string(0, 50, VARCSTRING[417])
+	return 
+}

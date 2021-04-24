@@ -1,0 +1,10 @@
+// 120 proc
+fun pattern_cards_select_update(index0: Int) {
+
+	if (testbit(VARBIT[9756], index0) = ^true) {
+		cc_sethide(false)
+	} else {
+		cc_sethide(true)
+	}
+	return 
+}

@@ -1,0 +1,7 @@
+// 2653 clientscript
+fun telenexus_tick_mouseleave(component0: Component, component1: Component, graphic2: Graphic) {
+
+	if_setcolour(0xff981f, component1)
+	if_setgraphic(graphic2, component0)
+	return 
+}

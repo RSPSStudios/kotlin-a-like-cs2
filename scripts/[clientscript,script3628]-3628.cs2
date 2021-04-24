@@ -1,0 +1,19 @@
+// 3628 clientscript
+fun script3628(component0: Component, int1: Int, int2: Int, int3: Int) {
+
+	cc_deleteall(component0)
+	val int4: Int = calc((if_getwidth(component0) - 36 * int2) / (int2 - 1))
+	val int5: Int = calc((if_getheight(component0) - 32 * int3) / (int3 - 1))
+	val int6: Int = 0
+	while (int6 < int1) {
+		cc_create(component0, ^iftype_text, int6)
+		cc_setsize(7, 7, ^setsize_abs, ^setsize_abs)
+		cc_setposition(calc((36 + int4) * (int6 % int2)), calc(int6 / int2 * (32 + int5)), ^setpos_abs_left, ^setpos_abs_top)
+		cc_setcolour(^yellow)
+		cc_settextfont(p12_full)
+		cc_settext(tostring(~script3633(int6)))
+		~script3630(int6, component0)
+		int6 = calc(int6 + 1)
+	}
+	return 
+}

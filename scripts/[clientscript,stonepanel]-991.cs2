@@ -1,0 +1,7 @@
+// 991 clientscript
+fun stonepanel(component0: Component, int1: Int) {
+
+	cc_deleteall(component0)
+	~stonepanel(int1, component0, 0)
+	return 
+}

@@ -1,0 +1,11 @@
+// 970 clientscript
+fun logout_op(opindex0: Int, flags1: Int, world2: Int) {
+
+	if (opindex0 = 1) {
+		logout
+	}
+	if (testbit(flags1, opindex0) = ^true) {
+		sound_synth(synth_2266, 1, 0)
+	}
+	return 
+}

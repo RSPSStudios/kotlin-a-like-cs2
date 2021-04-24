@@ -1,0 +1,80 @@
+// 1235 clientscript
+fun script1235(inv0: Inv, int1: Int, int2: Int, int3: Int, int4: Int, int5: Int, int6: Int, int7: Int, int8: Int, int9: Int, int10: Int, int11: Int, int12: Int, int13: Int, int14: Int, int15: Int, int16: Int, int17: Int, int18: Int, int19: Int, int20: Int, int21: Int, int22: Int, int23: Int, int24: Int, int25: Int, int26: Int, int27: Int, int28: Int) {
+
+	VARCINT[81] = int1
+	VARCINT[82] = int2
+	VARCINT[83] = int3
+	VARCINT[84] = int4
+	VARCINT[85] = int5
+	VARCINT[86] = int6
+	VARCINT[87] = int7
+	VARCINT[88] = int8
+	VARCINT[89] = int9
+	VARCINT[90] = int10
+	VARCINT[91] = int11
+	VARCINT[92] = int12
+	VARCINT[93] = int13
+	VARCINT[94] = int14
+	VARCINT[95] = int15
+	VARCINT[96] = int16
+	VARCINT[97] = int17
+	VARCINT[98] = int18
+	VARCINT[99] = int19
+	VARCINT[100] = int20
+	VARCINT[101] = int21
+	VARCINT[102] = int22
+	VARCINT[104] = int23
+	VARCINT[105] = int24
+	VARCINT[106] = int25
+	VARCINT[107] = int26
+	VARCINT[108] = int27
+	VARCINT[109] = int28
+	val int29: Int = inv_size(inv0)
+	int0[int29]: Int
+	int0[0] = int1
+	int0[1] = int2
+	int0[2] = int3
+	int0[3] = int4
+	int0[4] = int5
+	int0[5] = int6
+	int0[6] = int7
+	int0[7] = int8
+	int0[8] = int9
+	int0[9] = int10
+	int0[10] = int11
+	int0[11] = int12
+	int0[12] = int13
+	int0[13] = int14
+	int0[14] = int15
+	int0[15] = int16
+	int0[16] = int17
+	int0[17] = int18
+	int0[18] = int19
+	int0[19] = int20
+	int0[20] = int21
+	int0[21] = int22
+	int0[22] = int23
+	int0[23] = int24
+	int0[24] = int25
+	int0[25] = int26
+	int0[26] = int27
+	int0[27] = int28
+	val string0: String = "Invalid item."
+	while (int29 > 0) {
+		int29 = calc(int29 - 1)
+		if (cc_find(interface_81:5, int29) = ^true) {
+			if (inv0 = inv & int0[int29] <= -1 & inv_getobj(inv, int29) ! null) {
+				cc_setonmouserepeat({
+					tooltip_mouserepeat(event_com, event_comsubid, interface_81:7, string0, 25, 512)
+				})
+				cc_setonmouseleave({
+					deltooltip(interface_81:7)
+				})
+			} else {
+				~trade_tooltip(inv_getnum(inv0, int29), int0[int29], interface_81:7)
+			}
+		}
+	}
+	~deltooltip_action(interface_81:7)
+	return 
+}

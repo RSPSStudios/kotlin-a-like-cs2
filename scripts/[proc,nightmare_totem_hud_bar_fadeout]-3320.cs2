@@ -1,0 +1,54 @@
+// 3320 proc
+fun nightmare_totem_hud_bar_fadeout(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component) {
+
+	val int9: Int = 0
+	if (if_gettrans(component0) ! 0) {
+		int9 = if_gettrans(component0)
+	} else if (if_gettrans(component1) ! 0) {
+		int9 = if_gettrans(component1)
+	} else if (if_gettrans(component2) ! 0) {
+		int9 = if_gettrans(component2)
+	} else if (if_gettrans(component3) ! 0) {
+		int9 = if_gettrans(component3)
+	}
+	val int10: Int = 0
+	val int11: Int = 0
+	val int12: Int = 0
+	val int13: Int = 0
+	if (if_getwidth(component0) = if_getwidth(component4)) {
+		int10 = 1
+	}
+	if (if_getwidth(component1) = if_getwidth(component5)) {
+		int11 = 1
+	}
+	if (if_getwidth(component2) = if_getwidth(component6)) {
+		int12 = 1
+	}
+	if (if_getwidth(component3) = if_getwidth(component7)) {
+		int13 = 1
+	}
+	if (int10 = 0 & int11 = 0 & int12 = 0 & int13 = 0) {
+		return 
+	}
+	if (int9 >= 210) {
+		if_setontimer(null, component8)
+		if_setontimer({
+			nightmare_totem_hud_bar_fadein(component0, component1, component2, component3, component4, component5, component6, component7, component8)
+		}, component8)
+		return 
+	}
+	int9 = ~min(210, calc(int9 + 3))
+	if (int10 = 1) {
+		if_settrans(int9, component0)
+	}
+	if (int11 = 1) {
+		if_settrans(int9, component1)
+	}
+	if (int12 = 1) {
+		if_settrans(int9, component2)
+	}
+	if (int13 = 1) {
+		if_settrans(int9, component3)
+	}
+	return 
+}

@@ -1,0 +1,14 @@
+// 2219 proc
+fun oculus_flashers(component0: Component, component1: Component, component2: Component) {
+
+	val colour3: Int = calc(clientclock % 90)
+	if (colour3 > 0x00002d) {
+		colour3 = calc(90 - colour3)
+	}
+	val int4: Int = scale(invpow(calc(colour3 * 255), 2), invpow(11475, 2), 255)
+	colour3 = ~rgb_to_hex(255, int4, int4)
+	if_setcolour(colour3, component0)
+	if_setcolour(colour3, component1)
+	if_setcolour(colour3, component2)
+	return 
+}

@@ -1,0 +1,23 @@
+// 575 proc
+fun script575(stat0: Stat): Int {
+
+	if (stat_base(stat0) < 30) {
+		return 0
+	}
+	val int1: Int = 0
+	when (stat0): Stat {
+		attack, strength, defence, hitpoints -> {
+		
+			int1 = calc(stat_base(stat0) * stat_base(stat0) / 600 * 24 * 10)
+		}
+		ranged, magic -> {
+		
+			int1 = calc(stat_base(stat0) * stat_base(stat0) / 600 * 22 * 10)
+		}
+		prayer -> {
+		
+			int1 = calc(stat_base(stat0) * stat_base(stat0) / 600 * 12 * 10)
+		}
+	}
+	return int1
+}

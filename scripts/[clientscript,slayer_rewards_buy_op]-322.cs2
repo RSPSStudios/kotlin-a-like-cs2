@@ -1,0 +1,50 @@
+// 322 clientscript
+fun slayer_rewards_buy_op(opindex0: Int, component1: Component, comsubid2: Int, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component) {
+
+	val namedobj8: Namedobj = null
+	val string0: String = "Choose an item from the shop."
+	val int9: Int = 0
+	val int10: Int = 0
+	if (opindex0 <= 1) {
+		sound_synth(synth_2266, 1, 0)
+		if_sethide(true, component3)
+		if_sethide(false, component4)
+		cc_deleteall(component6)
+		if_setposition(92, 165, ^setpos_abs_left, ^setpos_abs_top, component7)
+		if_sethide(true, component6)
+		namedobj8 = enum(int, namedobj, enum_840, comsubid2)
+		if (namedobj8 ! null) {
+			string0 = "<u=ff981f>${oc_name(namedobj8)}</u><br><br>${enum(obj, string, enum_843, namedobj8)}<br><br>"
+			int9 = enum(obj, int, enum_842, namedobj8)
+			int10 = enum(obj, int, enum_841, namedobj8)
+			if (int9 ! 1) {
+				if (int10 > 1) {
+					string0 = append(string0, "Cost: ${tostring(int9)} points for ${tostring(int10)}")
+				} else {
+					string0 = append(string0, "Cost: ${tostring(int9)} points each")
+				}
+			} else if (int10 > 1) {
+				string0 = append(string0, "Cost: 1 point for ${tostring(int10)}")
+			} else {
+				string0 = append(string0, "Cost: 1 point each")
+			}
+		}
+		if_settext(string0, component5)
+		if_setop(1, "Back", component7)
+		if_setonop({
+			slayer_rewards_confirm_back(false, event_opindex, component3, component4, component5, component6, component7)
+		}, component7)
+		return 
+	}
+	if (opindex0 >= 10) {
+		return 
+	}
+	if (cc_find(component1, comsubid2) = ^true) {
+		cc_settrans(75)
+		sound_synth(synth_2266, 1, 0)
+		cc_setontimer({
+			slayer_rewards_buy_release(component1, comsubid2, calc(clientclock + 10))
+		})
+	}
+	return 
+}

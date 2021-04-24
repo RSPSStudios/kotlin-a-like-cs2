@@ -1,0 +1,30 @@
+// 2599 proc
+fun script2599(): String {
+
+	when (VARBIT[4430]): Int {
+		0 -> {
+		
+			return "Deposit-1"
+		}
+		1 -> {
+		
+			return "Deposit-5"
+		}
+		2 -> {
+		
+			return "Deposit-10"
+		}
+		3 -> {
+		
+			return "Deposit-${tostring(~max(1, VARP[1794]))}"
+		}
+		4 -> {
+		
+			return "Deposit-All"
+		}
+	else -> {
+	
+		return ""
+	}
+	}
+}

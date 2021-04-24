@@ -1,0 +1,22 @@
+// 72 proc
+fun scrollbar_resize(component0: Component, component1: Component, int2: Int) {
+
+	val height3: Int = if_getscrollheight(component1)
+	if (height3 <= 0) {
+		height3 = if_getheight(component1)
+	}
+	val height4: Int = 0
+	if (height3 > 0) {
+		height4 = calc((if_getheight(component0) - 32) * if_getheight(component1) / height3)
+	} else {
+		height4 = calc(if_getheight(component0) - 32)
+	}
+	if (height4 < 10) {
+		height4 = 10
+	}
+	if (cc_find(component0, 1) = ^true) {
+		cc_setsize(0, height4, ^setsize_minus, ^setsize_abs)
+		~scrollbar_vertical_doscroll(component0, component1, int2, true)
+	}
+	return 
+}

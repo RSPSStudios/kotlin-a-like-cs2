@@ -1,0 +1,15 @@
+// 2386 proc
+fun script2386() {
+
+	val enum0: Enum = ~toplevel_getcomponents
+	val component1: Component = enum(component, component, enum0, interface_601:72)
+	if (component1 = null) {
+		return 
+	}
+	if (~script2387 = 0) {
+		if_sethide(true, component1)
+	} else {
+		if_sethide(false, component1)
+	}
+	return 
+}

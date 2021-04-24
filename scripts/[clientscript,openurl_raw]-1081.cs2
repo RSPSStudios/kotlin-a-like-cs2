@@ -1,0 +1,6 @@
+// 1081 clientscript
+fun openurl_raw(url0: String, boolean0: Boolean, boolean1: Boolean) {
+
+	~openurl_raw(url0, boolean0, boolean1)
+	return 
+}

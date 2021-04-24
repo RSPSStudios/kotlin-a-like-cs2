@@ -1,0 +1,42 @@
+// 513 proc
+fun bank_gettabrange(int0: Int): Int, Int {
+
+	if (int0 = 1) {
+		return 0, VARBIT[4171]
+	}
+	val int1: Int = 0
+	if (int0 = 2) {
+		int1 = VARBIT[4171]
+		return int1, calc(int1 + VARBIT[4172])
+	}
+	if (int0 = 3) {
+		int1 = calc(VARBIT[4171] + VARBIT[4172])
+		return int1, calc(int1 + VARBIT[4173])
+	}
+	if (int0 = 4) {
+		int1 = calc(VARBIT[4171] + VARBIT[4172] + VARBIT[4173])
+		return int1, calc(int1 + VARBIT[4174])
+	}
+	if (int0 = 5) {
+		int1 = calc(VARBIT[4171] + VARBIT[4172] + VARBIT[4173] + VARBIT[4174])
+		return int1, calc(int1 + VARBIT[4175])
+	}
+	if (int0 = 6) {
+		int1 = calc(VARBIT[4171] + VARBIT[4172] + VARBIT[4173] + VARBIT[4174] + VARBIT[4175])
+		return int1, calc(int1 + VARBIT[4176])
+	}
+	if (int0 = 7) {
+		int1 = calc(VARBIT[4171] + VARBIT[4172] + VARBIT[4173] + VARBIT[4174] + VARBIT[4175] + VARBIT[4176])
+		return int1, calc(int1 + VARBIT[4177])
+	}
+	if (int0 = 8) {
+		int1 = calc(VARBIT[4171] + VARBIT[4172] + VARBIT[4173] + VARBIT[4174] + VARBIT[4175] + VARBIT[4176] + VARBIT[4177])
+		return int1, calc(int1 + VARBIT[4178])
+	}
+	if (int0 = 9) {
+		int1 = calc(VARBIT[4171] + VARBIT[4172] + VARBIT[4173] + VARBIT[4174] + VARBIT[4175] + VARBIT[4176] + VARBIT[4177] + VARBIT[4178])
+		return int1, calc(int1 + VARBIT[4179])
+	}
+	int1 = calc(VARBIT[4171] + VARBIT[4172] + VARBIT[4173] + VARBIT[4174] + VARBIT[4175] + VARBIT[4176] + VARBIT[4177] + VARBIT[4178] + VARBIT[4179])
+	return int1, 816
+}

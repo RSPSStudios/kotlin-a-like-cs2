@@ -1,0 +1,7 @@
+// 3259 clientscript
+fun magic_training_costs_transmit(component0: Component, component1: Component) {
+
+	~magic_training_costs(component0, VARBIT[10059])
+	~magic_training_highlight_selected(component1, VARBIT[10059])
+	return 
+}

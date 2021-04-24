@@ -1,0 +1,6 @@
+// 3523 clientscript
+fun script3523(component0: Component) {
+
+	~script3524(component0)
+	return 
+}

@@ -1,0 +1,24 @@
+// 769 proc
+fun trade_confirm_itemtext(obj0: Obj, num1: Int): String {
+
+	if (obj0 = null | num1 = 0) {
+		return ""
+	}
+	if (num1 = 1) {
+		return oc_name(obj0)
+	}
+	val string0: String = ""
+	if (num1 < 100000) {
+		string0 = ~tostring_spacer(num1, ",")
+		return "${oc_name(obj0)}<col=ffffff> x <col=ffff00>${string0}"
+	}
+	val string1: String = ""
+	if (num1 < 10000000) {
+		string0 = ~tostring_spacer(num1, ",")
+		string1 = ~tostring_spacer(calc(num1 / 1000), ",")
+		return "${oc_name(obj0)}<col=ffffff> x <col=ffffff>${string1}K (${string0})"
+	}
+	string0 = ~tostring_spacer(num1, ",")
+	string1 = ~tostring_spacer(calc(num1 / 1000000), ",")
+	return "${oc_name(obj0)}<col=ffffff> x <col=00ff80>${string1}M (${string0})"
+}

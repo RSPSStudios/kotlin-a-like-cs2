@@ -1,0 +1,9 @@
+// 2524 clientscript
+fun toplevel_mainmodal_open(colour0: Int, trans1: Int) {
+
+	~toplevel_mainmodal_background(colour0, trans1)
+	if (~on_mobile = true & ~in_league_tutorial = 0) {
+		~mobile_mainmodal_open
+	}
+	return 
+}

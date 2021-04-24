@@ -1,0 +1,6 @@
+// 904 clientscript
+fun toplevel_resize(component0: Component, enum1: Enum) {
+
+	~toplevel_resize(component0, enum1)
+	return 
+}

@@ -1,0 +1,6 @@
+// 2761 proc
+fun prayer_levelupdate() {
+
+	.cc_settext("${tostring(stat(prayer))} / ${tostring(stat_base(prayer))}")
+	return 
+}

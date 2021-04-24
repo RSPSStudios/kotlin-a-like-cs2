@@ -1,0 +1,10 @@
+// 468 proc
+fun quickprayer_icon_update(int0: Int) {
+
+	if (~prayer_isavailable(int0) = 1) {
+		.cc_setgraphic(enum(int, graphic, enum_865, int0))
+	} else {
+		.cc_setgraphic(enum(int, graphic, enum_864, int0))
+	}
+	return 
+}

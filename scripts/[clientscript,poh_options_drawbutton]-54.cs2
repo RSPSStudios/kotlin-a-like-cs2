@@ -1,0 +1,35 @@
+// 54 clientscript
+fun poh_options_drawbutton(component0: Component) {
+
+	cc_deleteall(component0)
+	val width1: Int = if_getwidth(component0)
+	val height2: Int = if_getheight(component0)
+	cc_create(component0, ^iftype_graphic, 0)
+	cc_setposition(10, 0, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setsize(calc(width1 - 20), height2, ^setsize_abs, ^setsize_abs)
+	cc_setgraphic("graphic_1048")
+	cc_settiling(true)
+	cc_create(component0, ^iftype_graphic, 1)
+	cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setsize(36, height2, ^setsize_abs, ^setsize_abs)
+	cc_setgraphic("miscgraphics,4")
+	cc_create(component0, ^iftype_graphic, 2)
+	cc_setposition(calc(width1 - 36), 0, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setsize(36, height2, ^setsize_abs, ^setsize_abs)
+	cc_setgraphic("miscgraphics,6")
+	cc_create(component0, ^iftype_text, 3)
+	cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setsize(width1, height2, ^setsize_abs, ^setsize_abs)
+	cc_settextfont(p12_full)
+	cc_setcolour(0xff981f)
+	cc_settextshadow(true)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_settext(if_getop(1, component0))
+	if_setonmouseover({
+		cc_colour_swapper(event_com, cc_getid, ^white)
+	}, component0)
+	if_setonmouseleave({
+		cc_colour_swapper(event_com, cc_getid, 0xff981f)
+	}, component0)
+	return 
+}

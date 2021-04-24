@@ -1,0 +1,26 @@
+// 3210 proc
+fun script3210(enum0: Enum): Int {
+
+	when (enum0): Enum {
+		enum_2676 -> {
+		
+			return VARBIT[10033]
+		}
+		enum_2677 -> {
+		
+			return VARBIT[10034]
+		}
+		enum_3413 -> {
+		
+			return VARBIT[11689]
+		}
+		enum_3414 -> {
+		
+			return VARBIT[11692]
+		}
+	else -> {
+	
+		return 0
+	}
+	}
+}

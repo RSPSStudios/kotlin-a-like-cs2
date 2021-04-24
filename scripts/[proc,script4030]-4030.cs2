@@ -1,0 +1,80 @@
+// 4030 proc
+fun script4030(struct0: Struct): Int {
+
+	when (struct0): Struct {
+		shield_of_arrav_316 -> {
+		
+			if (VARP[145] = 7 | VARP[146] = 4) {
+				return 2
+			}
+			if (VARP[145] > 0 | VARP[146] > 0) {
+				return 0
+			}
+			return 1
+		}
+		creature_of_fenkenstrain_340 -> {
+		
+			if (VARP[399] > 6) {
+				return 2
+			}
+			if (VARP[399] = 0 & VARBIT[203] = 0) {
+				return 1
+			}
+			return 0
+		}
+		elemental_workshop_i_354 -> {
+		
+			if (testbit(VARP[299], 20) = ^true) {
+				return 2
+			}
+			if (testbit(VARP[299], 1) = ^false) {
+				return 1
+			}
+			return 0
+		}
+		architectural_alliance_320 -> {
+		
+			if (VARBIT[4982] >= 3) {
+				return 2
+			}
+			if (VARBIT[4976] = 0) {
+				return 1
+			}
+			return 0
+		}
+		alfred_grimhands_barcrawl_322 -> {
+		
+			if (VARP[77] = 2 | VARP[76] >= 6) {
+				return 2
+			}
+			if (VARP[77] = 0) {
+				return 1
+			}
+			return 0
+		}
+		curse_of_the_empty_lord_323 -> {
+		
+			if (VARBIT[821] = 1) {
+				return 2
+			}
+			if (VARBIT[816] = 0) {
+				return 1
+			}
+			return 0
+		}
+		enchanted_key_324 -> {
+		
+			if (VARBIT[1391] = 2047) {
+				return 2
+			}
+			if (VARBIT[1383] < 4) {
+				return 1
+			}
+			return 0
+		}
+	else -> {
+	
+		return -1
+	}
+	}
+}

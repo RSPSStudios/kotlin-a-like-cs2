@@ -1,0 +1,14 @@
+// 1629 proc
+fun storage_getstored(enum0: Enum, obj1: Obj): Int, Namedobj {
+
+	when (enum0): Enum {
+		enum_2850 -> {
+		
+			return ~script2259(obj1)
+		}
+	else -> {
+	
+		return 0, null
+	}
+	}
+}

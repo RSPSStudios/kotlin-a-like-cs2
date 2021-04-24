@@ -1,0 +1,66 @@
+// 3963 proc
+fun settings_get_keybind(int0: Int): Int {
+
+	when (int0): Int {
+		16 -> {
+		
+			return enum(int, int, enum_1161, VARBIT[4675])
+		}
+		17 -> {
+		
+			return enum(int, int, enum_1161, VARBIT[4680])
+		}
+		18 -> {
+		
+			return enum(int, int, enum_1161, VARBIT[4686])
+		}
+		19 -> {
+		
+			return enum(int, int, enum_1161, VARBIT[4676])
+		}
+		20 -> {
+		
+			return enum(int, int, enum_1161, VARBIT[4682])
+		}
+		21 -> {
+		
+			return enum(int, int, enum_1161, VARBIT[4687])
+		}
+		22 -> {
+		
+			return enum(int, int, enum_1161, VARBIT[4677])
+		}
+		23 -> {
+		
+			return enum(int, int, enum_1161, VARBIT[4684])
+		}
+		24 -> {
+		
+			return enum(int, int, enum_1161, VARBIT[4683])
+		}
+		25 -> {
+		
+			return enum(int, int, enum_1161, VARBIT[4678])
+		}
+		26 -> {
+		
+			return enum(int, int, enum_1161, VARBIT[6517])
+		}
+		27 -> {
+		
+			return enum(int, int, enum_1161, VARBIT[4688])
+		}
+		28 -> {
+		
+			return enum(int, int, enum_1161, VARBIT[4679])
+		}
+		29 -> {
+		
+			return enum(int, int, enum_1161, VARBIT[4689])
+		}
+	else -> {
+	
+		return 0
+	}
+	}
+}

@@ -1,0 +1,67 @@
+// 74 proc
+fun add_to_inputstring(string0: String, int0: Int, key1: Int, keychar2: Char): String {
+
+	val length3: Int = string_length(string0)
+	if (key1 = ^key_backspace) {
+		if (length3 > 0) {
+			return substring(string0, 0, calc(length3 - 1))
+		}
+		return string0
+	}
+	val length4: Int = 80
+	if (int0 = 3) {
+		length4 = 10
+	} else if (int0 = 4) {
+		length4 = 25
+	} else if (int0 = 5) {
+		length4 = 500
+	}
+	if (char_isprintable(keychar2) = false) {
+		if (int0 = 5 & key1 = ^key_return) {
+			if (length3 >= length4) {
+				return string0
+			}
+			if (length3 < 15) {
+				return string0
+			}
+			if (string_indexof_string(substring(string0, calc(length3 - 15), length3), "|", 0) ! -1) {
+				return string0
+			}
+			return append(string0, "|")
+		}
+		return string0
+	}
+	if (int0 = 2) {
+		if ((char_isalphanumeric(keychar2) = true | string_indexof_char(" _-", keychar2) ! -1) & length3 < 12) {
+			return append_char(string0, keychar2)
+		}
+		return string0
+	}
+	val int5: Int = 0
+	val string1: String = ""
+	if (int0 = 1) {
+		if (length3 > 0) {
+			string1 = lowercase(substring(string0, calc(length3 - 1), length3))
+			if (compare(string1, "k") = 0 | compare(string1, "m") = 0 | compare(string1, "b") = 0) {
+				return string0
+			}
+		}
+		if (string_indexof_char("kKmMbB", keychar2) ! -1) {
+			int5 = 1
+		}
+		if ((int5 = 1 | char_isnumeric(keychar2) = true) & length3 < 10) {
+			if (int5 = 1 & length3 <= 0) {
+				return string0
+			}
+			return append_char(string0, keychar2)
+		}
+		return string0
+	}
+	if (int0 = 5 & string_indexof_char("|", keychar2) ! -1) {
+		return string0
+	}
+	if (length3 < length4) {
+		return append_char(string0, keychar2)
+	}
+	return string0
+}

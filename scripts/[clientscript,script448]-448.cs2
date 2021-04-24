@@ -1,0 +1,6 @@
+// 448 clientscript
+fun script448(component0: Component, component1: Component, component2: Component, component3: Component) {
+
+	~script527(component0, component1, component2, component3)
+	return 
+}

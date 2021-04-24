@@ -1,0 +1,10 @@
+// 2504 proc
+fun xp_drops_tooltip_setup(string0: String, string1: String, component0: Component, component1: Component, component2: Component) {
+
+	if (~on_mobile = true) {
+		~xp_drops_tooltip_mobile(string0, string1, component0, component1, component2)
+	} else {
+		~xp_drops_tooltip_desktop(string0, string1, component0, component1)
+	}
+	return 
+}

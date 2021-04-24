@@ -1,0 +1,30 @@
+// 2228 proc
+fun script2228(): String {
+
+	when (VARBIT[6348]): Int {
+		0 -> {
+		
+			return "Value"
+		}
+		1 -> {
+		
+			return "Buy 1"
+		}
+		2 -> {
+		
+			return "Buy 5"
+		}
+		3 -> {
+		
+			return "Buy 10"
+		}
+		4 -> {
+		
+			return "Buy 50"
+		}
+	else -> {
+	
+		return ""
+	}
+	}
+}

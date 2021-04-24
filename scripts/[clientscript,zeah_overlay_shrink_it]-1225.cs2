@@ -1,0 +1,11 @@
+// 1225 clientscript
+fun zeah_overlay_shrink_it(component0: Component) {
+
+	val width1: Int = ~max(calc(if_getwidth(component0) - 5), 120)
+	val height2: Int = ~max(calc(if_getheight(component0) - 2), 60)
+	if_setsize(width1, height2, ^setsize_abs, ^setsize_abs, component0)
+	if (width1 <= 120 & height2 <= 60) {
+		if_setontimer(null, component0)
+	}
+	return 
+}

@@ -1,0 +1,8 @@
+// 1519 clientscript
+fun raids_partydetails_entry_setup(component0: Component, comsubid1: Int, int2: Int, int3: Int, int4: Int, boolean5: Boolean) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		~raids_partydetails_entry_setup(int2, int3, int4, boolean5)
+	}
+	return 
+}

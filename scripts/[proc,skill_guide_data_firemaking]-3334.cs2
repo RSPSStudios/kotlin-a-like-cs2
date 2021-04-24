@@ -1,0 +1,279 @@
+// 3334 proc
+fun skill_guide_data_firemaking(int0: Int, int1: Int): Int, Namedobj, String {
+
+	when (int0): Int {
+		0 -> {
+		
+			when (int1): Int {
+				0 -> {
+				
+					return 1, logs_1511, "Normal logs"
+				}
+				1 -> {
+				
+					return 1, achey_tree_logs_2862, "Members: Achey logs"
+				}
+				2 -> {
+				
+					return 5, pyre_logs_3438, "Members: Pyre logs"
+				}
+				3 -> {
+				
+					return 15, oak_logs_1521, "Oak logs"
+				}
+				4 -> {
+				
+					return 20, oak_pyre_logs_3440, "Members: Oak pyre logs"
+				}
+				5 -> {
+				
+					return 30, willow_logs_1519, "Willow logs"
+				}
+				6 -> {
+				
+					return 35, teak_logs_6333, "Members: Teak logs"
+				}
+				7 -> {
+				
+					return 35, willow_pyre_logs_3442, "Members: Willow pyre logs"
+				}
+				8 -> {
+				
+					return 40, teak_pyre_logs_6211, "Members: Teak pyre logs"
+				}
+				9 -> {
+				
+					return 42, arctic_pine_logs_10810, "Members: Arctic pine logs"
+				}
+				10 -> {
+				
+					return 45, maple_logs_1517, "Maple logs"
+				}
+				11 -> {
+				
+					return 47, arctic_pyre_logs_10808, "Members: Arctic pine pyre logs"
+				}
+				12 -> {
+				
+					return 50, mahogany_logs_6332, "Members: Mahogany logs"
+				}
+				13 -> {
+				
+					return 50, maple_pyre_logs_3444, "Members: Maple pyre logs"
+				}
+				14 -> {
+				
+					return 55, mahogany_pyre_logs_6213, "Members: Mahogany pyre logs"
+				}
+				15 -> {
+				
+					return 60, yew_logs_1515, "Yew logs"
+				}
+				16 -> {
+				
+					return 62, blisterwood_logs_24691, "Members: Blisterwood logs"
+				}
+				17 -> {
+				
+					return 65, yew_pyre_logs_3446, "Members: Yew pyre logs"
+				}
+				18 -> {
+				
+					return 75, magic_logs_1513, "Members: Magic logs"
+				}
+				19 -> {
+				
+					return 80, magic_pyre_logs_3448, "Members: Magic pyre logs"
+				}
+				20 -> {
+				
+					return 90, redwood_logs_19669, "Members: Redwood logs"
+				}
+				21 -> {
+				
+					return 95, redwood_pyre_logs_19672, "Members: Redwood pyre logs"
+				}
+			}
+		}
+		1 -> {
+		
+			when (int1): Int {
+				0 -> {
+				
+					return 11, pyre_logs_3438, "Normal Pyre Ships<br>(with 11 Crafting)"
+				}
+				1 -> {
+				
+					return 11, achey_tree_logs_2862, "Achey Pyre Ships<br>(with 11 Crafting)"
+				}
+				2 -> {
+				
+					return 21, logs_1511, "Normal Logs"
+				}
+				3 -> {
+				
+					return 21, achey_tree_logs_2862, "Achey Logs"
+				}
+				4 -> {
+				
+					return 25, oak_pyre_logs_3440, "Oak Pyre Ships<br>(with 25 Crafting)"
+				}
+				5 -> {
+				
+					return 35, oak_logs_1521, "Oak Logs"
+				}
+				6 -> {
+				
+					return 40, willow_pyre_logs_3442, "Willow Pyre Ships<br>(with 40 Crafting)"
+				}
+				7 -> {
+				
+					return 45, teak_pyre_logs_6211, "Teak Pyre Ships<br>(with 45 Crafting)"
+				}
+				8 -> {
+				
+					return 50, willow_logs_1519, "Willow Logs"
+				}
+				9 -> {
+				
+					return 52, arctic_pyre_logs_10808, "Arctic Pine Pyre Ships<br>(with 52 Crafting)"
+				}
+				10 -> {
+				
+					return 55, teak_logs_6333, "Teak Logs"
+				}
+				11 -> {
+				
+					return 55, maple_pyre_logs_3444, "Maple Pyre Ships<br>(with 55 Crafting)"
+				}
+				12 -> {
+				
+					return 60, mahogany_pyre_logs_6213, "Mahogany Pyre Ships<br>(with 60 Crafting)"
+				}
+				13 -> {
+				
+					return 62, arctic_pine_logs_10810, "Arctic Pine Logs"
+				}
+				14 -> {
+				
+					return 65, maple_logs_1517, "Maple Logs"
+				}
+				15 -> {
+				
+					return 70, yew_pyre_logs_3446, "Yew Pyre Ships<br>(with 70 Crafting)"
+				}
+				16 -> {
+				
+					return 70, mahogany_logs_6332, "Mahogany Logs"
+				}
+				17 -> {
+				
+					return 80, yew_logs_1515, "Yew Logs"
+				}
+				18 -> {
+				
+					return 85, magic_pyre_logs_3448, "Magic Pyre Ships<br>(with 85 Crafting)"
+				}
+				19 -> {
+				
+					return 95, magic_logs_1513, "Magic Logs"
+				}
+				20 -> {
+				
+					return 95, redwood_pyre_logs_19672, "Redwood Pyre ships<br>(with 95 Crafting)"
+				}
+				21 -> {
+				
+					return 99, redwood_logs_19669, "Redwood logs"
+				}
+			}
+		}
+		2 -> {
+		
+			when (int1): Int {
+				0 -> {
+				
+					return 1, unlit_torch_596, "Torches"
+				}
+				1 -> {
+				
+					return 1, candle_36, "Candles"
+				}
+				2 -> {
+				
+					return 4, candle_lantern_4531, "Candle lanterns"
+				}
+				3 -> {
+				
+					return 12, oil_lamp_4524, "Oil lamps"
+				}
+				4 -> {
+				
+					return 20, iron_spit_7225, "Members: Iron spits"
+				}
+				5 -> {
+				
+					return 26, oil_lantern_4539, "Oil lanterns"
+				}
+				6 -> {
+				
+					return 33, lit_bug_lantern_7053, "Harpie bug lanterns (not a light source)"
+				}
+				7 -> {
+				
+					return 49, bullseye_lantern_4550, "Bullseye lanterns"
+				}
+				8 -> {
+				
+					return 49, sapphire_lantern_4702, "Sapphire lanterns"
+				}
+				9 -> {
+				
+					return 49, emerald_lantern_9065, "Emerald lanterns"
+				}
+				10 -> {
+				
+					return 50, bruma_torch_20720, "Bruma torches"
+				}
+				11 -> {
+				
+					return 52, light_orb_10973, "Replace Dorgeshuun light orbs"
+				}
+				12 -> {
+				
+					return 65, mining_helmet_5013, "Cave goblin mining helmets"
+				}
+				13 -> {
+				
+					return 85, infernal_axe_13241, "Create infernal axe<br>(with 61 Woodcutting)"
+				}
+			}
+		}
+		3 -> {
+		
+			when (int1): Int {
+				0 -> {
+				
+					return 50, bruma_kindling_20696, "Wintertodt"
+				}
+				1 -> {
+				
+					return 66, fire_of_eternal_light_22606, "Fire of Eternal Light<br>(with 35 Construction)"
+				}
+				2 -> {
+				
+					return 66, fire_of_nourishment_22608, "Fire of Nourishment<br>(with 35 Construction)"
+				}
+				3 -> {
+				
+					return 66, fire_of_dehumidification_22607, "Fire of Dehumidification<br>(with 50 Construction)"
+				}
+				4 -> {
+				
+					return 66, fire_of_unseasonal_warmth_22609, "Fire of Unseasonal Warmth<br>(with 60 Construction)"
+				}
+			}
+		}
+	}
+	return -1, null, ""
+}

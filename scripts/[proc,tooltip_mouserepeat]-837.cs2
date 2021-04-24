@@ -1,0 +1,16 @@
+// 837 proc
+fun tooltip_mouserepeat(component0: Component, comsubid1: Int, component2: Component, string0: String, int3: Int, width4: Int) {
+
+	if (VARCINT[1] < calc(clientclock + int3)) {
+		if (VARCINT[1] < clientclock) {
+			VARCINT[1] = clientclock
+		}
+		VARCINT[1] = calc(VARCINT[1] + 2)
+		return 
+	}
+	VARCINT[1] = calc(clientclock + int3 + 10)
+	if (VARCINT[2] = 0 & if_gethide(component2) = false) {
+		~tooltip_build(component0, comsubid1, component2, string0, width4)
+	}
+	return 
+}

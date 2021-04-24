@@ -1,0 +1,13 @@
+// 1683 proc
+fun script1683(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component) {
+
+	val int6: Int = calc(clientclock - int0)
+	if (int6 >= 20) {
+		~script1655(true, component1, component2, component3, component4, component5)
+		return 
+	}
+	val int7: Int = calc((if_getheight(component1) + if_getheight(component2)) / 2)
+	if_setposition(0, calc(0 - scale(pow(int6 + 1, 2), pow(21, 2), int7)), ^setpos_abs_centre, ^setpos_abs_centre, component2)
+	~oculus_flashers(component3, component4, component5)
+	return 
+}

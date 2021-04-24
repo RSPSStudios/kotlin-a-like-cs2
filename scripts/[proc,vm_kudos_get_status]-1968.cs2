@@ -1,0 +1,213 @@
+// 1968 proc
+fun vm_kudos_get_status(int0: Int): Int {
+
+	val int1: Int = enum(int, int, enum_1789, int0)
+	if (int0 = 0 & VARBIT[3648] = 1) {
+		return 1
+	}
+	if (int0 = 1 & VARBIT[3647] = 1) {
+		return 1
+	}
+	if (int0 = 2 & VARBIT[3645] = 1) {
+		return 1
+	}
+	if (int0 = 3 & VARBIT[3646] = 1) {
+		return 1
+	}
+	if (int0 = 4 & VARBIT[3649] = 1) {
+		return 1
+	}
+	if (int0 = 5 & VARBIT[3672] = 3) {
+		return 1
+	}
+	if (int0 = 6 & VARBIT[3681] = 3) {
+		return 1
+	}
+	if (int0 = 7 & VARBIT[3680] = 3) {
+		return 1
+	}
+	if (int0 = 8 & VARBIT[3675] = 3) {
+		return 1
+	}
+	if (int0 = 9 & VARBIT[3685] = 3) {
+		return 1
+	}
+	if (int0 = 10 & VARBIT[3679] = 3) {
+		return 1
+	}
+	if (int0 = 11 & VARBIT[3678] = 3) {
+		return 1
+	}
+	if (int0 = 12 & VARBIT[3673] = 3) {
+		return 1
+	}
+	if (int0 = 13 & VARBIT[3683] = 3) {
+		return 1
+	}
+	if (int0 = 14 & VARBIT[3684] = 3) {
+		return 1
+	}
+	if (int0 = 15 & VARBIT[3676] = 3) {
+		return 1
+	}
+	if (int0 = 16 & VARBIT[3682] = 3) {
+		return 1
+	}
+	if (int0 = 17 & VARBIT[3677] = 3) {
+		return 1
+	}
+	if (int0 = 18 & VARBIT[3674] = 3) {
+		return 1
+	}
+	if (int0 = 19 & VARBIT[3650] > 0) {
+		return 1
+	}
+	if (int0 = 20 & VARBIT[3650] = 2) {
+		return 1
+	}
+	if (int0 = 21 & VARBIT[3656] = 1) {
+		return 1
+	}
+	if (int0 = 22 & VARBIT[3652] = 1) {
+		return 1
+	}
+	if (int0 = 23 & VARBIT[3655] = 1) {
+		return 1
+	}
+	if (int0 = 24 & VARBIT[3653] = 1) {
+		return 1
+	}
+	if (int0 = 25 & VARBIT[3658] = 1) {
+		return 1
+	}
+	if (int0 = 26 & VARBIT[3657] = 1) {
+		return 1
+	}
+	if (int0 = 27 & VARBIT[3654] = 1) {
+		return 1
+	}
+	if (int0 = 28 & VARBIT[3651] > 0) {
+		return 1
+	}
+	if (int0 = 29 & VARBIT[3651] = 2) {
+		return 1
+	}
+	if (int0 = 30 & VARBIT[3659] = 1) {
+		return 1
+	}
+	if (int0 = 31 & VARBIT[3660] = 1) {
+		return 1
+	}
+	if (int0 = 32 & VARBIT[3661] = 1) {
+		return 1
+	}
+	if (int0 = 33 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 34 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 35 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 36 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 37 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 38 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 39 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 40 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 41 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 42 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 43 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 44 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 45 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 46 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 47 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 48 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 49 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 50 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 51 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 52 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 53 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 54 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 55 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 56 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 57 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 58 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 59 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 60 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 61 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 62 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 63 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 64 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 65 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 66 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 67 & ~script2030(int1) = 1) {
+		return 1
+	}
+	if (int0 = 68 & ~script2030(int1) = 1) {
+		return 1
+	}
+	return 0
+}

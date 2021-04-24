@@ -1,0 +1,34 @@
+// 388 clientscript
+fun pvp_icons_wildernesslevel(component0: Component) {
+
+	val int1: Int = ~wilderness_level
+	val int2: Int = ~deadman_world
+	if (int2 = 1) {
+		if (VARP[1676] > 4) {
+			if (int1 > 0 & VARBIT[5954] = 1) {
+				if_settext("Level: ${tostring(int1)}", component0)
+			} else {
+				if_settext("Deadman", component0)
+			}
+		} else if (VARBIT[4965] > 0) {
+			if_settext("Protection", component0)
+			if_setposition(0, 13, ^setpos_abs_centre, ^setpos_abs_bottom, component0)
+		} else if (int1 > 0 & VARBIT[5954] = 1) {
+			if_settext("Level: ${tostring(int1)}", component0)
+		} else if (VARCINT[78] = 1) {
+			if_settext("Guarded", component0)
+		} else if (VARCINT[78] = 2) {
+			if_settext("No PvP", component0)
+		} else {
+			if_settext("Deadman", component0)
+		}
+	} else if (VARBIT[10530] = 1) {
+		if_settext("Level: --", component0)
+	} else if (int1 > 0) {
+		if_settext("Level: ${tostring(int1)}", component0)
+	} else {
+		if_settext("", component0)
+	}
+	~pvp_icons_comlevelrange(int1)
+	return 
+}

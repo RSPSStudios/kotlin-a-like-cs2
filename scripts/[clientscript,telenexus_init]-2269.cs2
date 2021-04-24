@@ -1,0 +1,34 @@
+// 2269 clientscript
+fun telenexus_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component, component16: Component, component17: Component, component18: Component, component19: Component, component20: Component, component21: Component, component22: Component, int23: Int, int24: Int, component25: Component, component26: Component, component27: Component) {
+
+	~telenexus_left_click(component0, component1, component2, component26, component27)
+	if_setonvartransmit({
+		telenexus_left_click(component0, component1, component2, component26, component27){VARP[1806], VARP[1803], VARP[1804], VARP[1805], VARP[1810], VARP[2637], VARP[2638]}
+	}, component0)
+	if_setonvartransmit({
+		telenexus_done_text(component5){VARP[1806], VARP[1803], VARP[1804], VARP[1805], VARP[1810], VARP[2637], VARP[2638], VARP[1799], VARP[1800], VARP[1801], VARP[1802], VARP[1809], VARP[2635], VARP[2636]}
+	}, component5)
+	~script2271(component7, component8, component12, component9, component10, component11, component6, component21, component15, component19, component16, component17, component18, component13, true)
+	if_setonvartransmit({
+		script2270(component7, component8, component12, component9, component10, component11, component6, component21, component15, component19, component16, component17, component18, component13, false){VARP[1806], VARP[1803], VARP[1804], VARP[1805], VARP[1810], VARP[2637], VARP[2638]}
+	}, component7)
+	~script2273(component14, component15, component19, component16, component17, component18, component13, true)
+	if_setonvartransmit({
+		script2272(component14, component15, component19, component16, component17, component18, component13, false){VARP[1806], VARP[1803], VARP[1804], VARP[1805], VARP[1810], VARP[2637], VARP[2638]}
+	}, component14)
+	if_setonop({
+		telenexus_okbutton_click
+	}, component4)
+	if_setonop({
+		telenexus_cancel(component22)
+	}, component25)
+	~poh_nexus_model(component3)
+	if_setonvartransmit({
+		poh_nexus_model(component3){VARP[1806]}
+	}, component3)
+	~telenexus_hide_cost(component21, component11, 0)
+	if_setonclick({
+		telenexus_hide_cost(component21, component11, 0)
+	}, component20)
+	return 
+}

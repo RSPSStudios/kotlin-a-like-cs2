@@ -1,0 +1,8 @@
+// 2120 clientscript
+fun ironman_miscellaneous_redraw(component0: Component, component1: Component, comsubid2: Int, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component) {
+
+	if (.cc_find(component1, comsubid2) = ^true) {
+		~ironman_miscellaneous_redraw(component0, component1, component3, component4, component5, component6, component7, component8)
+	}
+	return 
+}

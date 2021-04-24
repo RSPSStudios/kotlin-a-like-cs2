@@ -1,0 +1,6 @@
+// 195 clientscript
+fun pattern_cards_confirm_update(component0: Component) {
+
+	~pattern_cards_confirm_update(component0)
+	return 
+}

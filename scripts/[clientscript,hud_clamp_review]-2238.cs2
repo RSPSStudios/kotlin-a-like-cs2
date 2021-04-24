@@ -1,0 +1,6 @@
+// 2238 clientscript
+fun hud_clamp_review(component0: Component, component1: Component, width2: Int, height3: Int) {
+
+	~hud_clamp_review(component0, component1, width2, height3)
+	return 
+}

@@ -1,0 +1,243 @@
+// 1004 clientscript
+fun xpdrops_stattransmit(boolean0: Boolean, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, int10: Int, xp11: Int, xp12: Int, xp13: Int, xp14: Int, xp15: Int, xp16: Int, xp17: Int, xp18: Int, xp19: Int, xp20: Int, xp21: Int, xp22: Int, xp23: Int, xp24: Int, xp25: Int, xp26: Int, xp27: Int, xp28: Int, xp29: Int, xp30: Int, xp31: Int, xp32: Int, xp33: Int) {
+
+	if (boolean0 = true & VARCINT[207] = null) {
+		return 
+	}
+	val length34: Int = calc(23 + 1)
+	stat0[length34]: Stat
+	int1[length34]: Int
+	val int35: Int = 0
+	val int36: Int = 0
+	if (boolean0 = true) {
+		while (VARCINT[207] ! null) {
+			if (VARCINT[207] = 1_1_1_1_1) {
+				~xpdrops_showpanel(component1, component3, component8, component9)
+			} else {
+				stat0[int35] = enum(int, stat, enum_681, coordx(VARCINT[207]))
+				int1[int35] = coordz(VARCINT[207])
+				if (stat0[int35] ! null & int1[int35] > 0) {
+					int35 = calc(int35 + 1)
+				}
+			}
+			VARCINT[207], VARCINT[208], VARCINT[209], VARCINT[210], VARCINT[211], VARCINT[212], VARCINT[213] = VARCINT[208], VARCINT[209], VARCINT[210], VARCINT[211], VARCINT[212], VARCINT[213], null
+		}
+	} else {
+		int36 = calc(stat_xp(fishing) - xp25)
+		if (int36 > 0) {
+			stat0[int35] = fishing
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(attack) - xp11)
+		if (int36 > 0) {
+			stat0[int35] = attack
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(strength) - xp12)
+		if (int36 > 0) {
+			stat0[int35] = strength
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(ranged) - xp13)
+		if (int36 > 0) {
+			stat0[int35] = ranged
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(magic) - xp14)
+		if (int36 > 0) {
+			stat0[int35] = magic
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(defence) - xp15)
+		if (int36 > 0) {
+			stat0[int35] = defence
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(hitpoints) - xp16)
+		if (int36 > 0) {
+			stat0[int35] = hitpoints
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(prayer) - xp17)
+		if (int36 > 0) {
+			stat0[int35] = prayer
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(agility) - xp18)
+		if (int36 > 0) {
+			stat0[int35] = agility
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(herblore) - xp19)
+		if (int36 > 0) {
+			stat0[int35] = herblore
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(thieving) - xp20)
+		if (int36 > 0) {
+			stat0[int35] = thieving
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(crafting) - xp21)
+		if (int36 > 0) {
+			stat0[int35] = crafting
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(runecraft) - xp22)
+		if (int36 > 0) {
+			stat0[int35] = runecraft
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(mining) - xp23)
+		if (int36 > 0) {
+			stat0[int35] = mining
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(smithing) - xp24)
+		if (int36 > 0) {
+			stat0[int35] = smithing
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(cooking) - xp26)
+		if (int36 > 0) {
+			stat0[int35] = cooking
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(firemaking) - xp27)
+		if (int36 > 0) {
+			stat0[int35] = firemaking
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(woodcutting) - xp28)
+		if (int36 > 0) {
+			stat0[int35] = woodcutting
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(fletching) - xp29)
+		if (int36 > 0) {
+			stat0[int35] = fletching
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(slayer) - xp30)
+		if (int36 > 0) {
+			stat0[int35] = slayer
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(farming) - xp31)
+		if (int36 > 0) {
+			stat0[int35] = farming
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(construction) - xp32)
+		if (int36 > 0) {
+			stat0[int35] = construction
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+		int36 = calc(stat_xp(hunter) - xp33)
+		if (int36 > 0) {
+			stat0[int35] = hunter
+			int1[int35] = int36
+			int35 = calc(int35 + 1)
+		}
+	}
+	val int37: Int = 0
+	val int38: Int = 0
+	val fontmetrics39: Fontmetrics = p11_full
+	val fontmetrics40: Fontmetrics = p11_full
+	val int41: Int = 16
+	val int42: Int = 0
+	val int43: Int = 0
+	val int44: Int = 0
+	val int45: Int = 0
+	val int46: Int = 0
+	val component47: Component = null
+	val string0: String = ""
+	if (int35 > 0 & xp16 > 0 & calc(clientclock - VARCINT[76]) > 10) {
+		if (VARBIT[4693] = 1 & ~on_mobile = false) {
+			fontmetrics39, fontmetrics40, int41 = p12_full, p12_full, 25
+		} else if (VARBIT[4693] = 2 & ~on_mobile = false) {
+			fontmetrics39, fontmetrics40, int41 = b12_full, b12_full, 25
+		}
+		int42 = if_getheight(component8)
+		if (int42 < 100) {
+			int42 = 100
+		}
+		int43 = calc(int41 * enum(int, int, enum_1171, VARBIT[4722]) / int42 + 1)
+		while (int37 < int35) {
+			if (int38 = 0 & boolean0 = false) {
+				VARCINT[72] = stat0[int37]
+				int38 = 1
+			}
+			if (VARCINT[71] > 0 & VARCINT[71] > calc(clientclock - int43)) {
+				int44 = calc(VARCINT[71] + int43)
+			} else {
+				int44 = clientclock
+			}
+			if (int44 < calc(clientclock + int43 * int10)) {
+				component47 = enum(int, component, enum_1163, VARCINT[70])
+				if_sethide(false, component47)
+				int46 = int1[int37]
+				cc_create(component47, ^iftype_graphic, 1)
+				cc_setgraphic(enum(stat, graphic, enum_255, stat0[int37]))
+				cc_setposition(0, 0, ^setpos_abs_left, ^setpos_5)
+				cc_sethide(true)
+				int45 = 1
+				int37 = calc(int37 + 1)
+				while (VARBIT[4696] = 1 & int37 < int35 & int45 < 5 & int46 < 1000000) {
+					int46 = calc(int46 + int1[int37])
+					int45 = calc(int45 + 1)
+					cc_create(component47, ^iftype_graphic, int45)
+					cc_setgraphic(enum(stat, graphic, enum_255, stat0[int37]))
+					cc_setposition(0, 0, ^setpos_abs_left, ^setpos_5)
+					cc_sethide(true)
+					int37 = calc(int37 + 1)
+				}
+				string0 = ~tostring_spacer(int46, ",")
+				if (boolean0 = true) {
+					string0 = "<img=11> ${string0}"
+				}
+				if (cc_find(component47, 0) = ^true) {
+					cc_settext(string0)
+					cc_setposition(0, 0, ^setpos_abs_left, ^setpos_5)
+					cc_sethide(true)
+					~xpdrops_setdropsize(component47, int41, fontmetrics39, fontmetrics40, string0)
+				}
+				if_setontimer({
+					xpdrops_dropletmove(component47, int44)
+				}, component47)
+				VARCINT[71] = int44
+				VARCINT[70] = calc((VARCINT[70] + 1) % int10)
+			} else {
+				int37 = int35
+			}
+		}
+		~xpdrops_showpanel(component1, component3, component8, component9)
+	}
+	if (boolean0 = false) {
+		~xpdrops_setbar(component3, component4, component5, component6, component7, component8, component9)
+		~script1003(component1, component2, component3, component4, component5, component6, component7, component8, component9, int10)
+	}
+	return 
+}

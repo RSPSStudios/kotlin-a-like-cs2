@@ -1,0 +1,15 @@
+// 1994 clientscript
+fun fossilquest_progress(component0: Component, component1: Component, component2: Component) {
+
+	val int3: Int = interpolate(0, if_getwidth(component2), 0, 100, VARBIT[5798])
+	if_setsize(int3, 0, ^setsize_abs, ^setsize_minus, component0)
+	if_setsize(calc(if_getwidth(component2) - int3), 0, ^setsize_abs, ^setsize_minus, component1)
+	if (int3 < calc(if_getwidth(component2) / 4)) {
+		if_setcolour(0xee1111, component0)
+	} else if (int3 < calc(if_getwidth(component2) / 2)) {
+		if_setcolour(0xeeee11, component0)
+	} else {
+		if_setcolour(0x11ee11, component0)
+	}
+	return 
+}

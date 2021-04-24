@@ -1,0 +1,6 @@
+// 1184 clientscript
+fun clancup_hud_update(component0: Component, component1: Component) {
+
+	~clancup_hud_update(component0, component1)
+	return 
+}

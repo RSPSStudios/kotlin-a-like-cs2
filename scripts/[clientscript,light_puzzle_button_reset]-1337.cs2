@@ -1,0 +1,10 @@
+// 1337 clientscript
+fun light_puzzle_button_reset(component0: Component, clock1: Int) {
+
+	if (clientclock < clock1) {
+		return 
+	}
+	if_setontimer(null, component0)
+	~v2_stone_button_filled(component0)
+	return 
+}

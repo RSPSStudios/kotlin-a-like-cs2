@@ -1,0 +1,7 @@
+// 311 proc
+fun nzone_rewards_setpoints() {
+
+	val string0: String = ","
+	cc_settext("Reward points: ${~tostring_spacer(VARP[1060], string0)}")
+	return 
+}

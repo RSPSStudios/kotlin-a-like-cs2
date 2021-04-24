@@ -1,0 +1,18 @@
+// 491 proc
+fun bankside_switchview(component0: Component, component1: Component, component2: Component) {
+
+	if (VARBIT[4139] = 1) {
+		if_sethide(true, component0)
+		if_sethide(false, component1)
+		if_sethide(true, component2)
+	} else if (VARBIT[9545] = 1 & ~script3688 = 1) {
+		if_sethide(true, component0)
+		if_sethide(true, component1)
+		if_sethide(false, component2)
+	} else {
+		if_sethide(false, component0)
+		if_sethide(true, component1)
+		if_sethide(true, component2)
+	}
+	return 
+}

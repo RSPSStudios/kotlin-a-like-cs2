@@ -1,0 +1,6 @@
+// 2097 clientscript
+fun autocast_setup(component0: Component, component1: Component) {
+
+	~autocast_setup(component0, component1)
+	return 
+}

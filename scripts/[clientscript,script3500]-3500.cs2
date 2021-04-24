@@ -1,0 +1,8 @@
+// 3500 clientscript
+fun script3500(clock0: Int, component1: Component) {
+
+	if (clientclock >= clock0) {
+		~script3501(component1)
+	}
+	return 
+}

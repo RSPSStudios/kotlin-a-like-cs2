@@ -1,0 +1,6 @@
+// 3698 clientscript
+fun script3698(component0: Component, int1: Int, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, int9: Int) {
+
+	~script858(component0, int1, component2, component3, component4, component5, component6, component7, component8, int9)
+	return 
+}

@@ -1,0 +1,19 @@
+// 632 proc
+fun script632(string0: String): String, String {
+
+	val length0: Int = string_length(string0)
+	if (length0 <= 0) {
+		return "", ""
+	}
+	val index1: Int = string_indexof_string(string0, "|", 0)
+	if (index1 = -1) {
+		return string0, ""
+	}
+	if (index1 = 0) {
+		return "", substring(string0, 1, length0)
+	}
+	if (calc(index1 + 1) >= length0) {
+		return substring(string0, 0, index1), ""
+	}
+	return substring(string0, 0, index1), substring(string0, calc(index1 + 1), length0)
+}

@@ -1,0 +1,6 @@
+// 66 clientscript
+fun spinner(int0: Int, int1: Int, int2: Int, component3: Component) {
+
+	if_setmodelangle(0, 0, calc(if_getmodelangle_x(component3) + int0 & 2047), calc(if_getmodelangle_y(component3) + int1 & 2047), calc(if_getmodelangle_z(component3) + int2 & 2047), if_getmodelzoom(component3), component3)
+	return 
+}

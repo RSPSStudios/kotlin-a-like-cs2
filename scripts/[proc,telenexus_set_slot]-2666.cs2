@@ -1,0 +1,217 @@
+// 2666 proc
+fun telenexus_set_slot(int0: Int, int1: Int) {
+
+	when (int0): Int {
+		1 -> {
+		
+			if (VARBIT[6669] = VARBIT[6672] | VARBIT[6669] = calc(VARBIT[6672] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[6672] = int1
+		}
+		2 -> {
+		
+			if (VARBIT[6669] = VARBIT[6673] | VARBIT[6669] = calc(VARBIT[6673] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[6673] = int1
+		}
+		3 -> {
+		
+			if (VARBIT[6669] = VARBIT[6674] | VARBIT[6669] = calc(VARBIT[6674] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[6674] = int1
+		}
+		4 -> {
+		
+			if (VARBIT[6669] = VARBIT[6675] | VARBIT[6669] = calc(VARBIT[6675] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[6675] = int1
+		}
+		5 -> {
+		
+			if (VARBIT[6669] = VARBIT[6676] | VARBIT[6669] = calc(VARBIT[6676] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[6676] = int1
+		}
+		6 -> {
+		
+			if (VARBIT[6669] = VARBIT[6677] | VARBIT[6669] = calc(VARBIT[6677] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[6677] = int1
+		}
+		7 -> {
+		
+			if (VARBIT[6669] = VARBIT[6678] | VARBIT[6669] = calc(VARBIT[6678] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[6678] = int1
+		}
+		8 -> {
+		
+			if (VARBIT[6669] = VARBIT[6679] | VARBIT[6669] = calc(VARBIT[6679] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[6679] = int1
+		}
+		9 -> {
+		
+			if (VARBIT[6669] = VARBIT[6680] | VARBIT[6669] = calc(VARBIT[6680] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[6680] = int1
+		}
+		10 -> {
+		
+			if (VARBIT[6669] = VARBIT[6681] | VARBIT[6669] = calc(VARBIT[6681] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[6681] = int1
+		}
+		11 -> {
+		
+			if (VARBIT[6669] = VARBIT[6682] | VARBIT[6669] = calc(VARBIT[6682] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[6682] = int1
+		}
+		12 -> {
+		
+			if (VARBIT[6669] = VARBIT[6683] | VARBIT[6669] = calc(VARBIT[6683] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[6683] = int1
+		}
+		13 -> {
+		
+			if (VARBIT[6669] = VARBIT[6684] | VARBIT[6669] = calc(VARBIT[6684] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[6684] = int1
+		}
+		14 -> {
+		
+			if (VARBIT[6669] = VARBIT[6685] | VARBIT[6669] = calc(VARBIT[6685] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[6685] = int1
+		}
+		15 -> {
+		
+			if (VARBIT[6669] = VARBIT[6686] | VARBIT[6669] = calc(VARBIT[6686] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[6686] = int1
+		}
+		16 -> {
+		
+			if (VARBIT[6669] = VARBIT[6568] | VARBIT[6669] = calc(VARBIT[6568] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[6568] = int1
+		}
+		17 -> {
+		
+			if (VARBIT[6669] = VARBIT[6569] | VARBIT[6669] = calc(VARBIT[6569] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[6569] = int1
+		}
+		18 -> {
+		
+			if (VARBIT[6669] = VARBIT[6582] | VARBIT[6669] = calc(VARBIT[6582] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[6582] = int1
+		}
+		19 -> {
+		
+			if (VARBIT[6669] = VARBIT[10092] | VARBIT[6669] = calc(VARBIT[10092] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[10092] = int1
+		}
+		20 -> {
+		
+			if (VARBIT[6669] = VARBIT[10093] | VARBIT[6669] = calc(VARBIT[10093] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[10093] = int1
+		}
+		21 -> {
+		
+			if (VARBIT[6669] = VARBIT[10094] | VARBIT[6669] = calc(VARBIT[10094] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[10094] = int1
+		}
+		22 -> {
+		
+			if (VARBIT[6669] = VARBIT[10095] | VARBIT[6669] = calc(VARBIT[10095] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[10095] = int1
+		}
+		23 -> {
+		
+			if (VARBIT[6669] = VARBIT[10096] | VARBIT[6669] = calc(VARBIT[10096] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[10096] = int1
+		}
+		24 -> {
+		
+			if (VARBIT[6669] = VARBIT[10097] | VARBIT[6669] = calc(VARBIT[10097] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[10097] = int1
+		}
+		25 -> {
+		
+			if (VARBIT[6669] = VARBIT[10098] | VARBIT[6669] = calc(VARBIT[10098] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[10098] = int1
+		}
+		26 -> {
+		
+			if (VARBIT[6669] = VARBIT[10099] | VARBIT[6669] = calc(VARBIT[10099] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[10099] = int1
+		}
+		27 -> {
+		
+			if (VARBIT[6669] = VARBIT[10100] | VARBIT[6669] = calc(VARBIT[10100] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[10100] = int1
+		}
+		28 -> {
+		
+			if (VARBIT[6669] = VARBIT[10101] | VARBIT[6669] = calc(VARBIT[10101] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[10101] = int1
+		}
+		29 -> {
+		
+			if (VARBIT[6669] = VARBIT[10102] | VARBIT[6669] = calc(VARBIT[10102] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[10102] = int1
+		}
+		30 -> {
+		
+			if (VARBIT[6669] = VARBIT[10103] | VARBIT[6669] = calc(VARBIT[10103] + 150)) {
+				VARBIT[6669] = int1
+			}
+			VARBIT[10103] = int1
+		}
+	}
+	return 
+}

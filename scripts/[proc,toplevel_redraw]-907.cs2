@@ -1,0 +1,196 @@
+// 907 proc
+fun toplevel_redraw(component0: Component, enum1: Enum) {
+
+	if (VARBIT[4611] = 1) {
+		if_setonkey({
+			toplevel_keypress(event_key, enum1, false)
+		}, component0)
+	} else {
+		if_setonkey({
+			toplevel_keypress(event_key, enum1, true)
+		}, component0)
+	}
+	~toplevel_resize(component0, enum1)
+	val component2: Component = enum(component, component, enum1, interface_161:20)
+	if (component2 ! null) {
+		if_sethide(~int_to_bool(VARBIT[542]), component2)
+	}
+	component2 = enum(component, component, enum1, interface_161:29)
+	if (component2 ! null) {
+		if (VARBIT[542] = ^true | VARBIT[4606] ! 0) {
+			if_sethide(true, component2)
+		} else {
+			if_sethide(false, component2)
+		}
+	}
+	val component3: Component = enum(component, component, enum1, interface_161:3)
+	val int4: Int = 0
+	val int5: Int = 0
+	int5, int4 = viewport_getfov
+	if (VARCINT[73] > 0 & VARCINT[74] > 0 & (int5 ! VARCINT[73] | int4 ! VARCINT[74])) {
+		~camera_do_zoom(VARCINT[73], VARCINT[74])
+	}
+	if_setonscrollwheel({
+		camera_zoom(event_mousey)
+	}, component3)
+	_2309(1, component3)
+	val int6: Int = calc(VARBIT[3756] - 1)
+	val component7: Component = enum(int, component, enum_1139, int6)
+	val component8: Component = enum(int, component, enum_1138, int6)
+	if (component7 ! null & component8 ! null) {
+		component7 = enum(component, component, enum1, component7)
+		component8 = enum(component, component, enum1, component8)
+		if (component7 ! null & component8 ! null) {
+			if_setontimer({
+				toplevel_timer(component7, component8)
+			}, component0)
+		} else {
+			if_setontimer(null, component0)
+		}
+	} else {
+		if_setontimer(null, component0)
+	}
+	~toplevel_sidebuttons_enable(enum1)
+	val component9: Component = enum(int, component, enum_1138, 2)
+	component7 = enum(int, component, enum_1139, 2)
+	component9, component7 = enum(component, component, enum1, component9), enum(component, component, enum1, component7)
+	if (component9 ! null & component7 ! null) {
+		when (VARBIT[8168]): Int {
+			1 -> {
+			
+				if_setop(1, "Achievement Diaries", component9)
+				if_setgraphic("sideicons_interface,16", component7)
+			}
+			2 -> {
+			
+				if (VARBIT[5432] = 1) {
+					if_setop(1, "Raiding Party", component9)
+					if_setgraphic("sideicons_interface,18", component7)
+				} else {
+					if_setop(1, "Minigames", component9)
+					if_setgraphic("sideicons_interface,15", component7)
+				}
+			}
+			3 -> {
+			
+				if_setop(1, "Kourend Tasks", component9)
+				if_setgraphic("sideicons_interface,17", component7)
+			}
+			4 -> {
+			
+				if_setop(1, "Adventure Paths", component9)
+				if_setgraphic("sideicons_interface,23", component7)
+			}
+			5 -> {
+			
+				if_setop(1, "Leagues", component9)
+				if_setgraphic("sideicons_interface,27", component7)
+			}
+		else -> {
+		
+			if_setop(1, "Quest List", component9)
+			if_setgraphic("sideicons_interface,2", component7)
+		}
+		}
+	}
+	component7 = enum(int, component, enum_1139, 6)
+	component7 = enum(component, component, enum1, component7)
+	if (component7 ! null) {
+		when (VARBIT[4070]): Int {
+			1 -> {
+			
+				if_setgraphic("sideicons_interface,19", component7)
+			}
+			2 -> {
+			
+				if_setgraphic("sideicons_interface,20", component7)
+			}
+			3 -> {
+			
+				if_setgraphic("sideicons_interface,21", component7)
+			}
+		else -> {
+		
+			if_setgraphic("sideicons_interface,6", component7)
+		}
+		}
+	}
+	component9 = enum(int, component, enum_1138, 6)
+	component9 = enum(component, component, enum1, component9)
+	if (component9 ! null) {
+		if (~on_mobile = true) {
+			if_setop(2, "", component9)
+		} else if (VARBIT[6718] = 1) {
+			if_setop(2, "Enable spell filtering", component9)
+		} else {
+			if_setop(2, "Disable spell filtering", component9)
+		}
+	}
+	component9 = enum(int, component, enum_1138, 9)
+	component7 = enum(int, component, enum_1139, 9)
+	component9, component7 = enum(component, component, enum1, component9), enum(component, component, enum1, component7)
+	if (component9 ! null & component7 ! null) {
+		if (VARBIT[6516] = 0) {
+			if_setop(1, "Friends List", component9)
+			if_setgraphic("sideicons_interface,8", component7)
+		} else {
+			if_setop(1, "Ignore List", component9)
+			if_setgraphic("sideicons_interface,9", component7)
+		}
+	}
+	component7 = enum(component, component, enum1, interface_161:33)
+	if (component7 ! null) {
+		if (VARBIT[4609] = 1) {
+			if_setgraphic("tradebacking_dark", component7)
+			if_settrans(0, component7)
+		} else {
+			if_setgraphic("tradebacking_light", component7)
+			if_settrans(150, component7)
+		}
+	}
+	component7 = enum(component, component, enum1, interface_161:18)
+	if (component7 ! null) {
+		if (enum1 = enum_1745) {
+			~script3506(component7)
+		} else if (enum1 = enum_1129) {
+			if (VARBIT[10465] > 0) {
+				if_setposition(15, 17, ^setpos_abs_right, ^setpos_abs_bottom, component7)
+			} else {
+				if_setposition(15, 13, ^setpos_abs_right, ^setpos_abs_bottom, component7)
+			}
+		}
+		if (VARBIT[4605] = 1 & VARBIT[542] = ^false) {
+			if_setgraphic("overlay_multiway", component7)
+			if_sethide(false, component7)
+		} else if (VARBIT[5961] = 1 & VARBIT[542] = ^false) {
+			if_setgraphic("graphic_2518", component7)
+			if_sethide(false, component7)
+		} else {
+			if_sethide(true, component7)
+		}
+	}
+	component2 = enum(component, component, enum1, interface_161:5)
+	if (VARBIT[9528] = 0 & VARBIT[542] = ^false) {
+		if_sethide(false, component2)
+	} else {
+		if_sethide(true, component2)
+	}
+	~script3175(component2, ^min_32bit_int)
+	if (VARBIT[4134] = 1) {
+		mousecam(false)
+	} else {
+		mousecam(true)
+	}
+	val boolean10: Boolean = false
+	if (VARBIT[5542] = 1) {
+		boolean10 = true
+	}
+	~shiftclick_toggle(boolean10)
+	if (VARBIT[5599] = 1) {
+		setfolloweropslowpriority(true)
+	} else {
+		setfolloweropslowpriority(false)
+	}
+	~options_setfps
+	return 
+}

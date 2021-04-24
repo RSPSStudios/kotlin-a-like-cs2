@@ -1,0 +1,19 @@
+// 3885 proc
+fun settings_slider_choose_onop(int0: Int, component1: Component, comsubid2: Int, int3: Int, y4: Int, int5: Int, component6: Component, int7: Int, string0: String) {
+
+	when (int0): Int {
+		14 -> {
+		
+			cc_setonclick({
+				settings_camera_zoom_slider_click(component1, comsubid2, int3, event_mousex, y4, int5, component6)
+			})
+		}
+		53 -> {
+		
+			cc_setonclick({
+				script3890(component1, comsubid2, event_mousex, int3, y4, int5, component6)
+			})
+		}
+	}
+	return 
+}

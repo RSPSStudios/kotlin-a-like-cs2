@@ -1,0 +1,115 @@
+// 752 proc
+fun meslayer_mode14_update(boolean0: Boolean, enum1: Enum, boolean2: Boolean) {
+
+	VARCINT[66] = 0
+	cc_deleteall(interface_162:53)
+	if_sethide(true, interface_162:55)
+	val width3: Int = if_getwidth(interface_162:53)
+	val height4: Int = if_getheight(interface_162:53)
+	if (string_length(VARCSTRING[359]) <= 0) {
+		if (VARBIT[10295] = 0 & boolean2 = true & VARP[2674] ! null & ~script3362(boolean0, enum1) = 1) {
+			return 
+		}
+		~script753(width3, height4, "Start typing the name of an item to search for it.", boolean2)
+		return 
+	}
+	val int5: Int = oc_find(VARCSTRING[359], boolean0)
+	if (int5 < 0) {
+		~script753(width3, height4, "Too many matches found. Please refine your search.", boolean2)
+		return 
+	}
+	if (int5 = 0) {
+		~script753(width3, height4, "No matches found.", boolean2)
+		return 
+	}
+	val int6: Int = calc(width3 / 3)
+	val int7: Int = 0
+	val int8: Int = calc(width3 - int6)
+	val int9: Int = calc(int8 - int6)
+	val int10: Int = calc(int9 - int6)
+	val width11: Int = calc(int6 - 40)
+	val x12: Int = calc(int8 + 40)
+	val x13: Int = calc(int9 + 40)
+	val x14: Int = calc(int10 + 40)
+	val int15: Int = 0
+	val x16: Int = 0
+	val x17: Int = 0
+	val height18: Int = 0
+	val int19: Int = 0
+	val obj20: Obj = oc_findnext
+	while (obj20 ! null) {
+		if ((enum1 = null | enum(obj, boolean, enum1, obj20) = true) & (boolean0 = false | ~deadman_restricted_item(obj20) = 0)) {
+			int15 = calc(int19 % 3)
+			if (int15 = 0) {
+				x16, x17 = int10, x14
+			} else if (int15 = 1) {
+				x16, x17 = int9, x13
+			} else {
+				x16, x17 = int8, x12
+			}
+			cc_create(interface_162:53, ^iftype_rectangle, int7)
+			if (int7 = 0) {
+				cc_setonkey({
+					meslayer_mode14_select(obj20, event_key)
+				})
+			}
+			int7 = calc(int7 + 1)
+			cc_setsize(int6, 32, ^setsize_abs, ^setsize_abs)
+			cc_setposition(x16, height18, ^setpos_abs_left, ^setpos_abs_top)
+			cc_setcolour(^white)
+			cc_setfill(true)
+			cc_settrans(255)
+			cc_setonmouseover({
+				cc_settrans(event_com, event_comsubid, 200, null)
+			})
+			cc_setonmouseleave({
+				cc_settrans(event_com, event_comsubid, 255, null)
+			})
+			cc_setopbase("<col=ff9040>${oc_name(obj20)}</col>")
+			cc_setop(1, "Select")
+			cc_setonop({
+				meslayer_mode14_select(obj20, ^key_return)
+			})
+			cc_create(interface_162:53, ^iftype_text, int7)
+			int7 = calc(int7 + 1)
+			cc_setsize(width11, 32, ^setsize_abs, ^setsize_abs)
+			cc_setposition(x17, height18, ^setpos_abs_left, ^setpos_abs_top)
+			cc_settextfont(p12_full)
+			cc_settextshadow(false)
+			cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
+			cc_setcolour(^black)
+			cc_settext(oc_name(obj20))
+			cc_create(interface_162:53, ^iftype_graphic, int7)
+			int7 = calc(int7 + 1)
+			cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+			cc_setposition(x16, height18, ^setpos_abs_left, ^setpos_abs_top)
+			cc_setoutline(1)
+			cc_setgraphicshadow(0x555555)
+			if (oc_stackable(obj20) = true) {
+				cc_setobject_nonum(obj20, 100)
+			} else {
+				cc_setobject_nonum(obj20, 1)
+			}
+			int19 = calc(int19 + 1)
+			if (int15 >= 2) {
+				height18 = calc(height18 + 32)
+			}
+		}
+		obj20 = oc_findnext
+	}
+	if (int19 <= 0) {
+		~script753(width3, height4, "No matches found.", boolean2)
+		return 
+	}
+	if (int15 < 2) {
+		height18 = calc(height18 + 32)
+	}
+	if (height18 > height4) {
+		if_setscrollsize(0, height18, interface_162:53)
+	} else {
+		if_setscrollpos(0, 0, interface_162:53)
+		if_setscrollsize(0, 0, interface_162:53)
+	}
+	~scrollbar_resize(interface_162:54, interface_162:53, if_getscrolly(interface_162:53))
+	return 
+}

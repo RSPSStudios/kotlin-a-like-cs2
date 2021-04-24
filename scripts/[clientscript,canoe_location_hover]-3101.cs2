@@ -1,0 +1,20 @@
+// 3101 clientscript
+fun canoe_location_hover(boolean0: Boolean, model1: Model, model2: Model, boolean3: Boolean, component4: Component) {
+
+	if (boolean3 = true) {
+		if (boolean0 = false & cc_find(component4, 2) = ^true) {
+			cc_setmodel(model2)
+		}
+		if (cc_find(component4, 1) = ^true) {
+			cc_setcolour(^red)
+		}
+	} else {
+		if (boolean0 = false & cc_find(component4, 2) = ^true) {
+			cc_setmodel(model1)
+		}
+		if (cc_find(component4, 1) = ^true) {
+			cc_setcolour(0x999999)
+		}
+	}
+	return 
+}

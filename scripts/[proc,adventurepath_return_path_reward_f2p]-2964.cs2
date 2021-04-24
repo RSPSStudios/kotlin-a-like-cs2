@@ -1,0 +1,8 @@
+// 2964 proc
+fun adventurepath_return_path_reward_f2p(index0: Int): Int {
+
+	if (index0 < 32) {
+		return testbit(VARP[2367], index0)
+	}
+	return ^false
+}

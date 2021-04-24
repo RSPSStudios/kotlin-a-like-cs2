@@ -1,0 +1,8 @@
+// 3712 clientscript
+fun league_tutorial_button_reset(component0: Component, string0: String, clock1: Int) {
+
+	if (clientclock >= clock1) {
+		~league_tutorial_button_draw(component0, string0)
+	}
+	return 
+}

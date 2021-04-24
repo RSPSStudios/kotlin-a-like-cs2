@@ -1,0 +1,56 @@
+// 278 proc
+fun bankmain_drawitem(obj0: Obj, num1: Int, component2: Component, component3: Component, drop4: Component, component5: Component, component6: Component) {
+
+	if (obj0 ! null) {
+		cc_clearops
+		if (obj0 = bank_filler_20594) {
+			cc_setobject(obj0, -1)
+			cc_setop(7, "Clear")
+			cc_setop(8, "Clear-All")
+			cc_settrans(0)
+			cc_setondragcomplete({
+				bankmain_reorder(event_com, event_comsubid, event_drop, event_dropsubid, 0, component3, drop4, component5, component6)
+			})
+		} else if (oc_unplaceholder(obj0) ! obj0) {
+			cc_setobject(obj0, 0)
+			cc_setop(8, "Release")
+			cc_settrans(120)
+			cc_setondragcomplete({
+				bankmain_reorder(event_com, event_comsubid, event_drop, event_dropsubid, 120, component3, drop4, component5, component6)
+			})
+		} else {
+			cc_setobject(obj0, num1)
+			cc_setop(1, "Withdraw-${~script2579}")
+			if (VARBIT[6590] ! 0) {
+				cc_setop(2, "Withdraw-1")
+			}
+			cc_setop(3, "Withdraw-5")
+			cc_setop(4, "Withdraw-10")
+			if (VARBIT[3960] > 0) {
+				cc_setop(5, "Withdraw-${tostring(VARBIT[3960])}")
+			}
+			cc_setop(6, "Withdraw-X")
+			cc_setop(7, "Withdraw-All")
+			cc_setop(8, "Withdraw-All-but-1")
+			if (VARBIT[3755] = 0) {
+				cc_setop(9, "Placeholder")
+			}
+			cc_settrans(0)
+			cc_setondragcomplete({
+				bankmain_reorder(event_com, event_comsubid, event_drop, event_dropsubid, 0, component3, drop4, component5, component6)
+			})
+		}
+		cc_setop(10, "Examine")
+		cc_setopbase("<col=ff9040>${oc_name(obj0)}</col>")
+		cc_setondrag({
+			bankmain_dragscroll(event_com, event_comsubid, event_mousex, event_mousey, component3, 0)
+		})
+	} else {
+		cc_settrans(255)
+		cc_setobject(obj_6512, 1)
+		cc_clearops
+		cc_setondrag(null)
+		cc_setondragcomplete(null)
+	}
+	return 
+}

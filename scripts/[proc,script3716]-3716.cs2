@@ -1,0 +1,18 @@
+// 3716 proc
+fun script3716(): String {
+
+	val struct0: Struct = enum(int, struct, enum_2670, VARBIT[10032])
+	if (struct0 = null) {
+		return ""
+	}
+	val struct1: Struct = struct_param(struct0, param_1033)
+	if (struct1 = null) {
+		return ""
+	}
+	val enum2: Enum = struct_param(struct1, param_1036)
+	if (enum2 = null) {
+		return ""
+	}
+	val string0: String = enum(int, string, enum2, VARBIT[10037])
+	return string0
+}

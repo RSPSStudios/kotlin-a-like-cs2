@@ -1,0 +1,8 @@
+// 961 proc
+fun script961(world0: Int, flags1: Int): Int {
+
+	if (world0 <= 0 | testbit(flags1, 21) = ^true) {
+		return 0
+	}
+	return 1
+}

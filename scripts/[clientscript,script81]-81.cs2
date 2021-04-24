@@ -1,0 +1,9 @@
+// 81 clientscript
+fun script81(component0: Component) {
+
+	if_setonop({
+		script1499(component0)
+	}, component0)
+	~script1501(component0, false)
+	return 
+}

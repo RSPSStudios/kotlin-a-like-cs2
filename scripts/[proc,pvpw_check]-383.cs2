@@ -1,0 +1,8 @@
+// 383 proc
+fun pvpw_check(): Int {
+
+	if (testbit(worldflags, 2) = ^true) {
+		return 1
+	}
+	return 0
+}

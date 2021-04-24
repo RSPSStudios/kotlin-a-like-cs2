@@ -1,0 +1,8 @@
+// 3188 clientscript
+fun league_relics_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component) {
+
+	~leagues_close_button(component13, false)
+	val comsubid14: Int = ~steelborder(interface_655:2, "Trailblazer Relics", 1)
+	~league_relics_draw_selections(component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, comsubid14)
+	return 
+}

@@ -1,0 +1,6 @@
+// 2708 clientscript
+fun 1v1arena_review_draw(component0: Component) {
+
+	~1v1arena_review_draw(component0)
+	return 
+}

@@ -1,0 +1,7 @@
+// 714 clientscript
+fun thinbox(component0: Component) {
+
+	cc_deleteall(component0)
+	~thinbox(component0, 0)
+	return 
+}

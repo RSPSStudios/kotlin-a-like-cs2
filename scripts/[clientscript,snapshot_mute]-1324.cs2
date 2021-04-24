@@ -1,0 +1,15 @@
+// 1324 clientscript
+fun snapshot_mute(component0: Component) {
+
+	if (playermod = true | staffmodlevel > 0) {
+		if (VARCINT[6] = 1) {
+			VARCINT[6] = 0
+		} else {
+			VARCINT[6] = 1
+		}
+		~snapshot_toggle(component0, VARCINT[6])
+	} else {
+		mes("Only moderators may do that.")
+	}
+	return 
+}

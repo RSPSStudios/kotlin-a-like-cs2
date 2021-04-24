@@ -1,0 +1,6 @@
+// 2354 clientscript
+fun castlewars_waitingroom_update(component0: Component) {
+
+	~castlewars_waitingroom_update(component0)
+	return 
+}

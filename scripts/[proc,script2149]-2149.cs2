@@ -1,0 +1,15 @@
+// 2149 proc
+fun script2149(namedobj0: Namedobj): Int {
+
+	val int1: Int = inv_total(inv, namedobj0)
+	int1 = calc(int1 + inv_total(worn, namedobj0))
+	val obj2: Obj = oc_cert(namedobj0)
+	if (obj2 = namedobj0) {
+		return int1
+	}
+	val total3: Int = inv_total(inv, obj2)
+	if (calc(^max_32bit_int - int1) < total3) {
+		return ^max_32bit_int
+	}
+	return calc(int1 + total3)
+}

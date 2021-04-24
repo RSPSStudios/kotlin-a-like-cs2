@@ -1,0 +1,8 @@
+// 3939 clientscript
+fun script3939(int0: Int, component1: Component, component2: Component, int3: Int, graphic4: Graphic, component5: Component, string0: String, string1: String, component6: Component) {
+
+	val int7: Int = ~settings_get_slider(int0)
+	~script3941(int7, component1, component2, int3)
+	~settings_update_icon(int7, component5, string0, string1, component6)
+	return 
+}

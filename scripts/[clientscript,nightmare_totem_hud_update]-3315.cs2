@@ -1,0 +1,6 @@
+// 3315 clientscript
+fun nightmare_totem_hud_update(component0: Component, component1: Component, int2: Int, int3: Int, component4: Component, component5: Component, int6: Int, int7: Int, component8: Component, component9: Component, int10: Int, int11: Int, component12: Component, component13: Component, int14: Int, int15: Int, int16: Int) {
+
+	~nightmare_totem_hud_update(component0, component1, int2, int3, component4, component5, int6, int7, component8, component9, int10, int11, component12, component13, int14, int15, int16)
+	return 
+}

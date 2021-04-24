@@ -1,0 +1,37 @@
+// 452 proc
+fun script452(string0: String, int0: Int): Int {
+
+	when (_5632): Int {
+		20 -> {
+		
+			when (int0): Int {
+				1 -> {
+				
+					_5633(string0, "store/oldschool/bonds")
+				}
+				3 -> {
+				
+					_5633(string0, "store/oldschool/membership")
+				}
+			else -> {
+			
+				_5633(string0, "store/oldschool")
+			}
+			}
+			if_setontimer(null, interface_229:1)
+			if_resume_pausebutton(interface_229:2)
+			return 1
+		}
+		21, 22, 23, 24, 25, 26 -> {
+		
+			if_setontimer(null, interface_229:1)
+			if_settext("Unable to open the ${string0} store.", interface_229:1)
+			if_settext("${~text_device("Click", "Tap")} here to continue", interface_229:2)
+			return 1
+		}
+	else -> {
+	
+		return 0
+	}
+	}
+}

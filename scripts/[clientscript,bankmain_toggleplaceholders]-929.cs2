@@ -1,0 +1,6 @@
+// 929 clientscript
+fun bankmain_toggleplaceholders(component0: Component) {
+
+	~bankmain_toggleplaceholders(component0)
+	return 
+}

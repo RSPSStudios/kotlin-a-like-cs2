@@ -1,0 +1,10 @@
+// 1945 clientscript
+fun wildwars_hud_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	if_settext("Torvesta", component0)
+	if_settext("B0aty", component1)
+	if_settext("Sick Nerd", component2)
+	if_settext("Knightenator", component3)
+	if_settext("Mmorpgrs", component4)
+	return 
+}

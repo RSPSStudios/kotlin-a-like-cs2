@@ -1,0 +1,23 @@
+// 3211 proc
+fun script3211(enum0: Enum, int1: Int) {
+
+	when (enum0): Enum {
+		enum_2676 -> {
+		
+			VARBIT[10033] = int1
+		}
+		enum_2677 -> {
+		
+			VARBIT[10034] = int1
+		}
+		enum_3413 -> {
+		
+			VARBIT[11689] = int1
+		}
+		enum_3414 -> {
+		
+			VARBIT[11692] = int1
+		}
+	}
+	return 
+}

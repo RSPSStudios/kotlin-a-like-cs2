@@ -1,0 +1,6 @@
+// 2250 clientscript
+fun script2250(component0: Component, int1: Int, clock2: Int) {
+
+	~script2372(component0, int1, clock2)
+	return 
+}

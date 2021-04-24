@@ -1,0 +1,10 @@
+// 169 clientscript
+fun kr_mouseleave_colour(int0: Int, component1: Component) {
+
+	if (VARBIT[3905] = int0) {
+		if_setcolour(0xdd5032, component1)
+	} else {
+		if_setcolour(0x64501e, component1)
+	}
+	return 
+}

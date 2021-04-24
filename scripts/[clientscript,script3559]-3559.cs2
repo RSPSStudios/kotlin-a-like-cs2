@@ -1,0 +1,12 @@
+// 3559 clientscript
+fun script3559(enum0: Enum) {
+
+	if (VARCINT[66] <= 0) {
+		return 
+	}
+	VARCINT[66] = calc(VARCINT[66] - 1)
+	if (VARCINT[66] <= 0) {
+		~script3560(enum0)
+	}
+	return 
+}

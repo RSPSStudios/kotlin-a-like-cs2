@@ -1,0 +1,34 @@
+// 2321 clientscript
+fun tob_partydetails_addapplicant(string0: String) {
+
+	if (if_hassub(enum(component, component, ~toplevel_getcomponents, interface_161:15)) = false) {
+		return 
+	}
+	val int0: Int = ~max(0, calc(VARCINT[178] - 5))
+	val int1: Int = calc(int0 * 20)
+	cc_create(interface_50:41, ^iftype_rectangle, int1)
+	cc_setsize(0, 13, ^setsize_minus, ^setsize_abs)
+	cc_setposition(0, -13, ^setpos_abs_centre, ^setpos_abs_top)
+	cc_setfill(true)
+	cc_setcolour(^black)
+	val string1: String = ""
+	val string2: String = ""
+	string1, string2 = ~script632(string0)
+	val colour2: Int = 0xff981f
+	if (compare(lowercase(string1), lowercase(removetags(chat_playername))) = 0) {
+		colour2 = ^white
+	}
+	val int3: Int = 0
+	string0, int3 = ~script2322(1, -1, interface_50:31, string0, int1, int3, colour2)
+	string0, int3 = ~script2322(2, 3, interface_50:32, string0, int1, int3, colour2)
+	string0, int3 = ~script2322(4, 5, interface_50:33, string0, int1, int3, colour2)
+	string0, int3 = ~script2322(6, 7, interface_50:34, string0, int1, int3, colour2)
+	string0, int3 = ~script2322(8, 9, interface_50:35, string0, int1, int3, colour2)
+	string0, int3 = ~script2322(10, 11, interface_50:36, string0, int1, int3, colour2)
+	string0, int3 = ~script2322(12, 13, interface_50:37, string0, int1, int3, colour2)
+	string0, int3 = ~script2322(14, 15, interface_50:38, string0, int1, int3, colour2)
+	string0, int3 = ~script2322(16, 17, interface_50:39, string0, int1, int3, colour2)
+	string0, int3 = ~script2322(18, 19, interface_50:40, string0, int1, int3, colour2)
+	VARCINT[178] = calc(VARCINT[178] + 1)
+	return 
+}

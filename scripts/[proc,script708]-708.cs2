@@ -1,0 +1,14 @@
+// 708 proc
+fun script708(): Int {
+
+	val int0: Int = 0
+	val inv1: Inv = enum(int, inv, enum_150, int0)
+	while (inv1 ! null) {
+		if (inv_getnum(inv1, 0) > 0 | inv_getnum(inv1, 1) > 0) {
+			return 1
+		}
+		int0 = calc(int0 + 1)
+		inv1 = enum(int, inv, enum_150, int0)
+	}
+	return 0
+}

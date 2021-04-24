@@ -1,0 +1,41 @@
+// 1491 proc
+fun quicksort_cctext(arrayint0: Int, component1: Component, int2: Int, int3: Int) {
+
+	val index4: Int = calc((int2 + int3) / 2)
+	val int5: Int = int0[index4]
+	int0[index4] = int0[int3]
+	int0[int3] = int5
+	val int6: Int = int2
+	val int7: Int = int2
+	val int8: Int = -1
+	val string0: String = ""
+	val string1: String = ""
+	while (int7 < int3) {
+		if (cc_find(component1, int0[int7]) = ^true) {
+			string0 = cc_gettext
+		} else {
+			string0 = ""
+		}
+		if (cc_find(component1, int5) = ^true) {
+			string1 = cc_gettext
+		} else {
+			string1 = ""
+		}
+		if (compare(lowercase(string0), lowercase(string1)) <= 0) {
+			int8 = int0[int7]
+			int0[int7] = int0[int6]
+			int0[int6] = int8
+			int6 = calc(int6 + 1)
+		}
+		int7 = calc(int7 + 1)
+	}
+	int0[int3] = int0[int6]
+	int0[int6] = int5
+	if (int2 < calc(int6 - 1)) {
+		~quicksort_cctext(int0, component1, int2, calc(int6 - 1))
+	}
+	if (calc(int6 + 1) < int3) {
+		~quicksort_cctext(int0, component1, calc(int6 + 1), int3)
+	}
+	return 
+}

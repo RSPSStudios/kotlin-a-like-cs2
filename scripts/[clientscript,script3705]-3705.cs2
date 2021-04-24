@@ -1,0 +1,6 @@
+// 3705 clientscript
+fun script3705(inv0: Inv) {
+
+	~script3706(inv0)
+	return 
+}

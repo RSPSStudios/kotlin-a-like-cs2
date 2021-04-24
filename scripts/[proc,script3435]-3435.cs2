@@ -1,0 +1,54 @@
+// 3435 proc
+fun script3435() {
+
+	val int0: Int = 1
+	val int1: Int = -1
+	val int2: Int = -1
+	int0[25]: Int
+	val int3: Int = 0
+	val int4: Int = 10
+	val colour5: Int = null
+	while (int3 < 25) {
+		int0[int3] = ~script3439(int3)
+		if (int0[int3] = 2) {
+			int0[int3] = 1
+		} else {
+			int0[int3] = 0
+		}
+		int3 = calc(int3 + 1)
+	}
+	int1[10]: Int
+	int1[0] = calc(int0[0] + int0[5] * 2 + int0[10] * 3 + int0[15] * 4 + int0[20] * 5)
+	int1[1] = calc(int0[1] + int0[6] * 2 + int0[11] * 3 + int0[16] * 4 + int0[21] * 5)
+	int1[2] = calc(int0[2] + int0[7] * 2 + int0[12] * 3 + int0[17] * 4 + int0[22] * 5)
+	int1[3] = calc(int0[3] + int0[8] * 2 + int0[13] * 3 + int0[18] * 4 + int0[23] * 5)
+	int1[4] = calc(int0[4] + int0[9] * 2 + int0[14] * 3 + int0[19] * 4 + int0[24] * 5)
+	int1[5] = calc(int0[0] + int0[1] * 2 + int0[2] * 3 + int0[3] * 4 + int0[4] * 5)
+	int1[6] = calc(int0[5] + int0[6] * 2 + int0[7] * 3 + int0[8] * 4 + int0[9] * 5)
+	int1[7] = calc(int0[10] + int0[11] * 2 + int0[12] * 3 + int0[13] * 4 + int0[14] * 5)
+	int1[8] = calc(int0[15] + int0[16] * 2 + int0[17] * 3 + int0[18] * 4 + int0[19] * 5)
+	int1[9] = calc(int0[20] + int0[21] * 2 + int0[22] * 3 + int0[23] * 4 + int0[24] * 5)
+	int3 = 0
+	while (int3 < int4) {
+		if_settext("(${tostring(int1[int3])})", enum(int, component, enum_2860, int3))
+		int1 = ~string_to_int(if_gettext(enum(int, component, enum_2644, int3)))
+		int2 = int1[int3]
+		if (int2 = int1) {
+			colour5 = 0x07d907
+		} else if (int2 > int1) {
+			int0 = 0
+			colour5 = 0xf83333
+		} else {
+			int0 = 0
+			colour5 = 0xe0e0e0
+		}
+		if_setcolour(colour5, enum(int, component, enum_2860, int3))
+		int3 = calc(int3 + 1)
+	}
+	if (int0 = 1) {
+		VARBIT[10365] = 1
+	} else {
+		VARBIT[10365] = 0
+	}
+	return 
+}

@@ -1,0 +1,6 @@
+// 2478 clientscript
+fun duel_stake_inv_details(obj0: Obj) {
+
+	mes("${~tostring_spacer(inv_total(inv, obj0), ",")} ${oc_name(obj0)}.")
+	return 
+}

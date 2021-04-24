@@ -1,0 +1,38 @@
+// 2917 clientscript
+fun gauntlet_recipes_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component, component16: Component, component17: Component, component18: Component, component19: Component, component20: Component, component21: Component, component22: Component, component23: Component) {
+
+	val height24: Int = if_getheight(component2)
+	if_setscrollsize(0, height24, component1)
+	~scrollbar_vertical(component3, component1, "scrollbar_parchment_dragger_v2,3", "scrollbar_parchment_dragger_v2,0", "scrollbar_parchment_dragger_v2,1", "scrollbar_parchment_dragger_v2,2", "scrollbar_parchment_v2,0", "scrollbar_parchment_v2,1")
+	if_setscrollpos(0, 0, component1)
+	if_settext("Crystal Singing Recipes", component0)
+	~script2918(component4, "Crystal Vial", "${tostring(10)} ${~script2920} Shards", ~gauntlet_select_item(vial_23879, VARBIT[9292]))
+	val text0: String = "Teleport Crystal"
+	if (VARBIT[9292] = 1) {
+		text0 = "Corrupted Teleport Crystal"
+	}
+	~script2918(component5, text0, "${tostring(40)} ${~script2920} Shards", ~gauntlet_select_item(teleport_crystal_23904, VARBIT[9292]))
+	~script2918(component6, "Basic ${~script2920} Halberd", "${tostring(20)} ${~script2920} Shards & 1 Weapon Frame", ~gauntlet_select_item(crystal_halberd_basic_23895, VARBIT[9292]))
+	~script2918(component7, "Basic ${~script2920} Bow", "${tostring(20)} ${~script2920} Shards & 1 Weapon Frame", ~gauntlet_select_item(crystal_bow_basic_23901, VARBIT[9292]))
+	~script2918(component8, "Basic ${~script2920} Staff", "${tostring(20)} ${~script2920} Shards & 1 Weapon Frame", ~gauntlet_select_item(crystal_staff_basic_23898, VARBIT[9292]))
+	~script2918(component9, "Basic ${~script2920} Helm", "${tostring(40)} ${~script2920} Shards, ${tostring(1)} ${~script2920} Ore, ${tostring(1)} Phren Bark & ${tostring(1)} Linum Tirinum", ~gauntlet_select_item(crystal_helm_basic_23886, VARBIT[9292]))
+	~script2918(component10, "Basic ${~script2920} Body", "${tostring(40)} ${~script2920} Shards, ${tostring(1)} ${~script2920} Ore, ${tostring(1)} Phren Bark & ${tostring(1)} Linum Tirinum", ~gauntlet_select_item(crystal_body_basic_23889, VARBIT[9292]))
+	~script2918(component11, "Basic ${~script2920} Legs", "${tostring(40)} ${~script2920} Shards, ${tostring(1)} ${~script2920} Ore, ${tostring(1)} Phren Bark & ${tostring(1)} Linum Tirinum", ~gauntlet_select_item(crystal_legs_basic_23892, VARBIT[9292]))
+	~script2918(component12, "Attuned ${~script2920} Halberd", "${tostring(60)} ${~script2920} Shards & 1 Basic ${~script2920} Halberd", ~gauntlet_select_item(crystal_halberd_attuned_23896, VARBIT[9292]))
+	~script2918(component13, "Attuned ${~script2920} Bow", "${tostring(60)} ${~script2920} Shards & 1 Basic ${~script2920} Bow", ~gauntlet_select_item(crystal_bow_attuned_23902, VARBIT[9292]))
+	~script2918(component14, "Attuned ${~script2920} Staff", "${tostring(60)} ${~script2920} Shards & 1 Basic ${~script2920} Staff", ~gauntlet_select_item(crystal_staff_attuned_23899, VARBIT[9292]))
+	~script2918(component15, "Attuned ${~script2920} Helm", "${tostring(60)} ${~script2920} Shards, 1 Basic ${~script2920} Helm, ${tostring(1)} ${~script2920} Ore, ${tostring(1)} Phren Bark & ${tostring(1)} Linum Tirinum", ~gauntlet_select_item(crystal_helm_attuned_23887, VARBIT[9292]))
+	~script2918(component16, "Attuned ${~script2920} Body", "${tostring(60)} ${~script2920} Shards, 1 Basic ${~script2920} Body, ${tostring(2)} ${~script2920} Ore, ${tostring(2)} Phren Bark & ${tostring(2)} Linum Tirinum", ~gauntlet_select_item(crystal_body_attuned_23890, VARBIT[9292]))
+	~script2918(component17, "Attuned ${~script2920} Legs", "${tostring(60)} ${~script2920} Shards, 1 Basic ${~script2920} Legs, ${tostring(1)} ${~script2920} Ore, ${tostring(1)} Phren Bark & ${tostring(1)} Linum Tirinum", ~gauntlet_select_item(crystal_legs_attuned_23893, VARBIT[9292]))
+	~script2918(component18, "Perfected ${~script2920} Halberd", "1 Attuned ${~script2920} Halberd & 1 ${~script2920} Spike", ~gauntlet_select_item(crystal_halberd_perfected_23897, VARBIT[9292]))
+	val string1: String = "Crystalline"
+	if (VARBIT[9292] = 1) {
+		string1 = "Corrupted"
+	}
+	~script2918(component19, "Perfected ${~script2920} Bow", "1 Attuned ${~script2920} Bow & 1 ${string1} Bowstring", ~gauntlet_select_item(crystal_bow_perfected_23903, VARBIT[9292]))
+	~script2918(component20, "Perfected ${~script2920} Staff", "1 Attuned ${~script2920} Staff & 1 ${~script2920} Orb", ~gauntlet_select_item(crystal_staff_perfected_23900, VARBIT[9292]))
+	~script2918(component21, "Perfected ${~script2920} Helm", "${tostring(80)} ${~script2920} Shards, 1 Attuned ${~script2920} Helm, ${tostring(2)} ${~script2920} Ore, ${tostring(2)} Phren Bark & ${tostring(2)} Linum Tirinum", ~gauntlet_select_item(crystal_helm_perfected_23888, VARBIT[9292]))
+	~script2918(component22, "Perfected ${~script2920} Body", "${tostring(80)} ${~script2920} Shards, 1 Attuned ${~script2920} Body, ${tostring(2)} ${~script2920} Ore, ${tostring(2)} Phren Bark & ${tostring(2)} Linum Tirinum", ~gauntlet_select_item(crystal_body_perfected_23891, VARBIT[9292]))
+	~script2918(component23, "Perfected ${~script2920} Legs", "${tostring(80)} ${~script2920} Shards, 1 Attuned ${~script2920} Legs, ${tostring(2)} ${~script2920} Ore, ${tostring(2)} Phren Bark & ${tostring(2)} Linum Tirinum", ~gauntlet_select_item(crystal_legs_perfected_23894, VARBIT[9292]))
+	return 
+}

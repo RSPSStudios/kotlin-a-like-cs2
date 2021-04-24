@@ -1,0 +1,11 @@
+// 754 clientscript
+fun meslayer_mode14_select(obj0: Obj, key1: Int) {
+
+	if (key1 ! ^key_return) {
+		return 
+	}
+	resume_objdialog(obj0)
+	sound_synth(synth_2266, 1, 0)
+	~meslayer_close(1, 1)
+	return 
+}

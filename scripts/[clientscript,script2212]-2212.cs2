@@ -1,0 +1,8 @@
+// 2212 clientscript
+fun script2212(opindex0: Int) {
+
+	if (opindex0 = 1) {
+		sound_synth(synth_2266, 1, 0)
+	}
+	return 
+}

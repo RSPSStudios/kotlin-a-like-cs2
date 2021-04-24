@@ -1,0 +1,6 @@
+// 2244 clientscript
+fun logout_button_text(component0: Component) {
+
+	if_settext(~text_device("Click here to logout", "Tap here to logout"), component0)
+	return 
+}

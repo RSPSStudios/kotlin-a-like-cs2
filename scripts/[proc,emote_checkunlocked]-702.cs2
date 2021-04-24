@@ -1,0 +1,160 @@
+// 702 proc
+fun emote_checkunlocked(int0: Int): Boolean {
+
+	val int1: Int = 1
+	val stat2: Stat = null
+	when (int0): Int {
+		22, 23 -> {
+		
+			if (VARBIT[532] >= 7) {
+				return true
+			}
+			return false
+		}
+		24 -> {
+		
+			return ~int_to_bool(VARBIT[1368])
+		}
+		25 -> {
+		
+			return ~int_to_bool(VARBIT[1369])
+		}
+		26 -> {
+		
+			return ~int_to_bool(VARBIT[1370])
+		}
+		27 -> {
+		
+			return ~int_to_bool(VARBIT[1367])
+		}
+		28 -> {
+		
+			return ~int_to_bool(VARBIT[2311])
+		}
+		29 -> {
+		
+			return ~int_to_bool(VARBIT[2312])
+		}
+		30 -> {
+		
+			return ~int_to_bool(VARBIT[2309])
+		}
+		31 -> {
+		
+			return ~int_to_bool(VARBIT[2310])
+		}
+		32 -> {
+		
+			return ~int_to_bool(VARBIT[1921])
+		}
+		33 -> {
+		
+			return ~int_to_bool(VARBIT[1920])
+		}
+		34 -> {
+		
+			return ~int_to_bool(VARBIT[1371])
+		}
+		35 -> {
+		
+			return ~int_to_bool(VARBIT[2055])
+		}
+		43 -> {
+		
+			if (VARP[101] >= VARBIT[1782] & VARBIT[1782] > 0) {
+				return true
+			}
+			if (VARBIT[4797] = 1) {
+				return true
+			}
+			if (VARBIT[11832] = 1) {
+				return true
+			}
+			stat2 = enum(int, stat, enum_681, int1)
+			while (stat2 ! null) {
+				if (stat_base(stat2) >= 99) {
+					return true
+				}
+				int1 = calc(int1 + 1)
+				stat2 = enum(int, stat, enum_681, int1)
+			}
+			return false
+		}
+		41 -> {
+		
+			return ~int_to_bool(VARBIT[1000])
+		}
+		44 -> {
+		
+			if (VARBIT[4673] = 1) {
+				return true
+			}
+			return false
+		}
+		36 -> {
+		
+			return ~int_to_bool(VARBIT[4732])
+		}
+		37 -> {
+		
+			return ~int_to_bool(VARBIT[4732])
+		}
+		38 -> {
+		
+			return ~int_to_bool(VARBIT[4732])
+		}
+		39 -> {
+		
+			return ~int_to_bool(VARBIT[4732])
+		}
+		40 -> {
+		
+			return ~int_to_bool(VARBIT[12062])
+		}
+		42 -> {
+		
+			return ~int_to_bool(VARBIT[4802])
+		}
+		45 -> {
+		
+			return ~int_to_bool(VARBIT[5104])
+		}
+		46 -> {
+		
+			return ~int_to_bool(VARBIT[5597])
+		}
+		47 -> {
+		
+			return ~int_to_bool(VARBIT[5598])
+		}
+		48 -> {
+		
+			return ~int_to_bool(VARBIT[6041])
+		}
+		49 -> {
+		
+			return ~int_to_bool(VARBIT[10115])
+		}
+		50 -> {
+		
+			when (VARBIT[11757]): Int {
+				3 -> {
+				
+					return true
+				}
+				6 -> {
+				
+					return true
+				}
+			else -> {
+			
+				return false
+			}
+			}
+		}
+	else -> {
+	
+		return true
+	}
+	}
+}

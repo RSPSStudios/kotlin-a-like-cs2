@@ -1,0 +1,28 @@
+// 258 clientscript
+fun nzone_game_points_tickup(component0: Component, comsubid1: Int, int2: Int, int3: Int, clock4: Int) {
+
+	val int5: Int = calc(int3 - int2)
+	if (int5 = 0) {
+		if (cc_find(component0, comsubid1) = ^true) {
+			cc_setontimer(null)
+		}
+		~nzone_game_points_set(component0, int3)
+		return 
+	}
+	if (clientclock < clock4) {
+		if (int5 <= -2) {
+			int5 = calc(int5 / 2)
+		} else if (int5 >= 2) {
+			int5 = calc(int5 / 2)
+		}
+	}
+	int2 = calc(int2 + int5)
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_setontimer({
+			nzone_game_points_tickup(component0, comsubid1, int2, int3, clock4)
+		})
+		~nzone_game_points_set(component0, int2)
+		sound_synth(synth_2304, 1, 0)
+	}
+	return 
+}

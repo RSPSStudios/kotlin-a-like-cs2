@@ -1,0 +1,6 @@
+// 2812 clientscript
+fun seed_vault_side_draw(component0: Component) {
+
+	~seed_vault_side_draw(component0)
+	return 
+}

@@ -1,0 +1,6 @@
+// 67 clientscript
+fun model_swapper(component0: Component, model1: Model) {
+
+	if_setmodel(model1, component0)
+	return 
+}

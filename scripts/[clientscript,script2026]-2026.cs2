@@ -1,0 +1,11 @@
+// 2026 clientscript
+fun script2026(component0: Component, component1: Component) {
+
+	if (VARBIT[5941] >= 2) {
+		if_settext("Time Remaining", component1)
+	} else {
+		if_settext("Starting in", component1)
+	}
+	~script2027(component0, VARBIT[5944], clientclock)
+	return 
+}

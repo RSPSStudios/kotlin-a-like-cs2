@@ -1,0 +1,5 @@
+// 4081 proc
+fun script4081(): Int {
+
+	return ~script4081
+}

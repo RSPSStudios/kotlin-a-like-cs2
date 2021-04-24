@@ -1,0 +1,6 @@
+// 4000 clientscript
+fun script4000(int0: Int) {
+
+	~script4003(int0)
+	return 
+}

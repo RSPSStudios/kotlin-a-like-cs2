@@ -1,0 +1,8 @@
+// 2304 clientscript
+fun tob_hud_updateprogress(int0: Int, component1: Component, comsubid2: Int) {
+
+	if (.cc_find(component1, comsubid2) = ^true) {
+		~tob_hud_updateprogress(int0, component1)
+	}
+	return 
+}

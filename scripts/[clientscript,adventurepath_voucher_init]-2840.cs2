@@ -1,0 +1,6 @@
+// 2840 clientscript
+fun adventurepath_voucher_init(int0: Int, text0: String) {
+
+	~adventurepath_voucher_init(int0, text0)
+	return 
+}

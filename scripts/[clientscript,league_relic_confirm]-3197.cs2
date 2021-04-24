@@ -1,0 +1,8 @@
+// 3197 clientscript
+fun league_relic_confirm(component0: Component, component1: Component, boolean2: Boolean, text0: String, colour3: Int) {
+
+	sound_synth(synth_2266, 1, 0)
+	if_sethide(false, component0)
+	~league_relic_button_hover(component1, boolean2, text0, colour3)
+	return 
+}

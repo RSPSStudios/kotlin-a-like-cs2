@@ -1,0 +1,154 @@
+// 2110 proc
+fun ds2_fossil_map_getslot(int0: Int): Int, Int {
+
+	when (int0): Int {
+		0 -> {
+		
+			return VARBIT[6157], VARBIT[6166]
+		}
+		1 -> {
+		
+			return VARBIT[6168], VARBIT[6172]
+		}
+		2 -> {
+		
+			return VARBIT[6159], VARBIT[6177]
+		}
+		3 -> {
+		
+			return VARBIT[6178], VARBIT[6181]
+		}
+		4 -> {
+		
+			return 0, 0
+		}
+		5 -> {
+		
+			return VARBIT[6203], VARBIT[6197]
+		}
+		6 -> {
+		
+			return VARBIT[6173], VARBIT[6201]
+		}
+		7 -> {
+		
+			return VARBIT[6167], VARBIT[6202]
+		}
+		8 -> {
+		
+			return VARBIT[6158], VARBIT[6160]
+		}
+		9 -> {
+		
+			return VARBIT[6169], VARBIT[6161]
+		}
+		10 -> {
+		
+			return VARBIT[6208], VARBIT[6163]
+		}
+		11 -> {
+		
+			return VARBIT[6199], VARBIT[6164]
+		}
+		12 -> {
+		
+			return VARBIT[6204], VARBIT[6165]
+		}
+		13 -> {
+		
+			return VARBIT[6174], VARBIT[6205]
+		}
+		14 -> {
+		
+			return VARBIT[6183], VARBIT[6206]
+		}
+		15 -> {
+		
+			return VARBIT[6176], VARBIT[6207]
+		}
+		16 -> {
+		
+			return VARBIT[6162], VARBIT[6185]
+		}
+		17 -> {
+		
+			return 0, 0
+		}
+		18 -> {
+		
+			return 0, 0
+		}
+		19 -> {
+		
+			return VARBIT[6179], VARBIT[6186]
+		}
+		20 -> {
+		
+			return 0, 0
+		}
+		21 -> {
+		
+			return VARBIT[6180], VARBIT[6187]
+		}
+		22 -> {
+		
+			return VARBIT[6182], VARBIT[6188]
+		}
+		23 -> {
+		
+			return VARBIT[6175], VARBIT[6189]
+		}
+		24 -> {
+		
+			return VARBIT[6184], VARBIT[6210]
+		}
+		25 -> {
+		
+			return VARBIT[6170], VARBIT[6212]
+		}
+		26 -> {
+		
+			return VARBIT[6209], VARBIT[6213]
+		}
+		27 -> {
+		
+			return VARBIT[6190], VARBIT[6214]
+		}
+		28 -> {
+		
+			return VARBIT[6191], VARBIT[6215]
+		}
+		29 -> {
+		
+			return VARBIT[6216], VARBIT[6192]
+		}
+		30 -> {
+		
+			return 0, 0
+		}
+		31 -> {
+		
+			return VARBIT[6217], VARBIT[6193]
+		}
+		32 -> {
+		
+			return VARBIT[6198], VARBIT[6194]
+		}
+		33 -> {
+		
+			return VARBIT[6171], VARBIT[6195]
+		}
+		34 -> {
+		
+			return VARBIT[6200], VARBIT[6196]
+		}
+		35 -> {
+		
+			return VARBIT[6211], VARBIT[6218]
+		}
+	else -> {
+	
+		return 0, 0
+	}
+	}
+}

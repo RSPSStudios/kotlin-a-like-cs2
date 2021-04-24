@@ -1,0 +1,6 @@
+// 2646 proc
+fun toplevel_sidebutton_highlight(component0: Component) {
+
+	if_setgraphic(enum(component, graphic, enum_1133, component0), component0)
+	return 
+}

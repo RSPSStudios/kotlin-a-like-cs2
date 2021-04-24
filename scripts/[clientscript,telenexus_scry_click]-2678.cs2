@@ -1,0 +1,11 @@
+// 2678 clientscript
+fun telenexus_scry_click(component0: Component, component1: Component, int2: Int) {
+
+	if (int2 = 2) {
+		VARBIT[6671] = 0
+	} else if (int2 = 3) {
+		VARBIT[6671] = 1
+	}
+	~telenexus_options(component0, component1)
+	return 
+}

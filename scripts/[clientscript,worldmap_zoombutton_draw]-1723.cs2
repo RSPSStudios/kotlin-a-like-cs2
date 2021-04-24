@@ -1,0 +1,6 @@
+// 1723 clientscript
+fun worldmap_zoombutton_draw(component0: Component, boolean1: Boolean, colour2: Int, text0: String) {
+
+	~worldmap_zoombutton_draw(component0, boolean1, colour2, text0)
+	return 
+}

@@ -1,0 +1,8 @@
+// 117 clientscript
+fun pattern_cards_select_update(component0: Component, comsubid1: Int, index2: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		~pattern_cards_select_update(index2)
+	}
+	return 
+}

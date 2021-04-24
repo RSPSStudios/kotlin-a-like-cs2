@@ -1,0 +1,6 @@
+// 3157 clientscript
+fun offer_button(graphic0: Graphic) {
+
+	~offer_button(interface_650:5, graphic0)
+	return 
+}

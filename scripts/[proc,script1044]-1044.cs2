@@ -1,0 +1,12 @@
+// 1044 proc
+fun script1044() {
+
+	val int0: Int = calc(896 - 128)
+	val int1: Int = calc(896 - 128)
+	val int2: Int = calc(if_getwidth(interface_116:59) - if_getwidth(interface_116:60))
+	val int3: Int = 0
+	val int4: Int = 0
+	int3, int4 = viewport_geteffectivesize
+	~zoom_position_slider
+	return 
+}

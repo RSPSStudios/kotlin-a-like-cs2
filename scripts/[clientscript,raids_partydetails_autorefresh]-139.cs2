@@ -1,0 +1,12 @@
+// 139 clientscript
+fun raids_partydetails_autorefresh(component0: Component, comsubid1: Int, clock2: Int) {
+
+	if (clientclock < clock2) {
+		return 
+	}
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_setontimer(null)
+	}
+	~script890(interface_507:35, "Refresh", interface_507:3, enum(component, int, enum_1539, interface_507:35))
+	return 
+}

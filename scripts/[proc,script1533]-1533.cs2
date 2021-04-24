@@ -1,0 +1,22 @@
+// 1533 proc
+fun script1533(component0: Component, text0: String) {
+
+	val int1: Int = 0
+	if (component0 = interface_507:13) {
+		int1 = VARBIT[5433]
+	} else if (component0 = interface_507:17) {
+		int1 = VARBIT[5426]
+	} else if (component0 = interface_507:21) {
+		int1 = VARBIT[5427]
+	}
+	if (int1 > 0) {
+		cc_settext("${text0}: <col=ffffff>${tostring(int1)}</col>")
+	} else if (component0 = interface_507:22) {
+		cc_settext(text0)
+	} else if (component0 = interface_507:23) {
+		cc_settext(text0)
+	} else {
+		cc_settext("${text0}: ---")
+	}
+	return 
+}

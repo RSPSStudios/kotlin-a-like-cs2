@@ -1,0 +1,6 @@
+// 1960 clientscript
+fun script1960(enum0: Enum, component1: Component, obj2: Obj, text0: String, boolean3: Boolean) {
+
+	~script1961(enum0, component1, obj2, text0, boolean3)
+	return 
+}

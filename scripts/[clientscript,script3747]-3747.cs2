@@ -1,0 +1,9 @@
+// 3747 clientscript
+fun script3747(component0: Component, boolean1: Boolean) {
+
+	if_setonvartransmit({
+		script3748(component0, boolean1){VARP[1797]}
+	}, component0)
+	~script3749(component0, boolean1)
+	return 
+}

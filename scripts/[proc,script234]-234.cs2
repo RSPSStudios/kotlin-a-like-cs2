@@ -1,0 +1,11 @@
+// 234 proc
+fun script234(): Int {
+
+	if (VARBIT[3923] = 1) {
+		return 1
+	}
+	if (VARBIT[5314] = 1) {
+		return 1
+	}
+	return 0
+}

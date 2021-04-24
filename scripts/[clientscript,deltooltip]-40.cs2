@@ -1,0 +1,6 @@
+// 40 clientscript
+fun deltooltip(component0: Component) {
+
+	~deltooltip_action(component0)
+	return 
+}

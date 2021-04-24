@@ -1,0 +1,10 @@
+// 559 clientscript
+fun clanwars_confirm_join_op(opindex0: Int, component1: Component) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	~clanwars_confirm_pressed(component1, "Okay")
+	return 
+}

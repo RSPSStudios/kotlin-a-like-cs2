@@ -1,0 +1,6 @@
+// 3388 clientscript
+fun tut2_progressbar_set(component0: Component) {
+
+	~tut2_progressbar_set(component0)
+	return 
+}

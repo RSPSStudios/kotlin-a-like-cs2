@@ -1,0 +1,6 @@
+// 145 clientscript
+fun bank_depositbox_update(component0: Component, component1: Component, component2: Component) {
+
+	~bank_depositbox_update(component0, component1, component2)
+	return 
+}

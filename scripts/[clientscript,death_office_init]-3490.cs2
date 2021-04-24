@@ -1,0 +1,42 @@
+// 3490 clientscript
+fun death_office_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component) {
+
+	val int10: Int = ~steelborder(component1, ~death_office_title, 0)
+	if (cc_find(component1, int10) = ^true) {
+		cc_setoninvtransmit({
+			death_office_title(event_com, event_comsubid){inv_636}
+		})
+	}
+	~scrollbar_vertical(component3, component2, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+	int10 = 0
+	while (int10 < 120) {
+		cc_create(component2, ^iftype_graphic, int10)
+		cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+		cc_sethide(true)
+		cc_setgraphicshadow(0x333333)
+		cc_setop(1, "Select")
+		cc_setop(10, "Examine")
+		cc_setonop({
+			cc_settrans_temporarily(event_com, event_comsubid, 100, 0)
+		})
+		int10 = calc(int10 + 1)
+	}
+	~death_office_redraw(component2, component3, component4, component5, component6, component7, component8, component9)
+	if_setoninvtransmit({
+		death_office_redraw(component2, component3, component4, component5, component6, component7, component8, component9){inv_636}
+	}, component0)
+	if_setonvartransmit({
+		death_office_redraw(component2, component3, component4, component5, component6, component7, component8, component9){VARP[261], VARP[262], VARP[263]}
+	}, component0)
+	if_setop(1, "1", component4)
+	~death_office_resetquantity("1", component4)
+	if_setop(1, "5", component5)
+	~death_office_resetquantity("5", component5)
+	if_setop(1, "X", component6)
+	~death_office_resetquantity("X", component6)
+	if_setop(1, "All", component7)
+	~death_office_resetquantity("All", component7)
+	if_setop(1, "Take-All", component8)
+	~script3501(component8)
+	return 
+}

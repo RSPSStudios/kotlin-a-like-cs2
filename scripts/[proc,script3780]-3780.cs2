@@ -1,0 +1,26 @@
+// 3780 proc
+fun script3780(): Enum {
+
+	when (VARBIT[698]): Int {
+		0 -> {
+		
+			return enum_2323
+		}
+		1 -> {
+		
+			return enum_1547
+		}
+		2 -> {
+		
+			return enum_1549
+		}
+		3 -> {
+		
+			return enum_1548
+		}
+	else -> {
+	
+		return null
+	}
+	}
+}

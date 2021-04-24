@@ -1,0 +1,55 @@
+// 538 proc
+fun soul_wars_rewards_statbuttondraw(stat0: Stat, y1: Int, x2: Int, width3: Int, int4: Int, component5: Component, component6: Component, component7: Component, int8: Int, int9: Int, component10: Component, component11: Component): Int {
+
+	val int12: Int = enum(int, int, enum_3538, int4)
+	val int13: Int = calc(~script575(stat0) * int12 / 10)
+	cc_create(component5, ^iftype_text, int8)
+	cc_setsize(width3, 32, ^setsize_abs, ^setsize_abs)
+	cc_setposition(x2, y1, ^setpos_abs_left, ^setpos_abs_top)
+	cc_settextalign(^settextalign_left, ^settextalign_bottom, 0)
+	cc_settextfont(p11_full)
+	cc_settextshadow(true)
+	cc_settext("${tostring(int12)} ${~script853(int12)}")
+	cc_setop(1, "Select")
+	val string0: String = ","
+	cc_setopbase("<col=ff9040>${~tostring_spacer(int13, string0)} ${enum(stat, string, enum_680, stat0)} XP</col>")
+	val string1: String = ""
+	if (stat_base(stat0) < 30) {
+		string1 = "You need to be at least level ${tostring(30)} in a skill to buy experience in it."
+		cc_setonop({
+			soul_wars_rewards_refuse(string1, component5, component6, component7, 0, event_opindex, component10, component11)
+		})
+	} else if (VARP[2876] < int12) {
+		cc_setcolour(0x9f9f9f)
+		cc_setonmouserepeat(null)
+		cc_setonmouseleave(null)
+		string1 = "You need ${~tostring_spacer(int12, string0)} ${~script853(int12)} to claim that reward."
+		cc_setonop({
+			soul_wars_rewards_refuse(string1, component5, component6, component7, 0, event_opindex, component10, component11)
+		})
+	} else {
+		cc_setonop({
+			soul_wars_rewards_select(int4, component5, component6, component7, 0, event_opindex, component10, component11)
+		})
+	}
+	if (int9 = int4) {
+		cc_setcolour(^white)
+		cc_setonmouserepeat(null)
+		cc_setonmouseleave(null)
+	} else if (string_length(string1) > 0) {
+		cc_setcolour(0x9f9f9f)
+		cc_setonmouserepeat(null)
+		cc_setonmouseleave(null)
+	} else {
+		cc_setcolour(0xff981f)
+		if (~on_mobile = false) {
+			cc_setonmouserepeat({
+				cc_colour_swapper(event_com, event_comsubid, 0xfffc00)
+			})
+			cc_setonmouseleave({
+				cc_colour_swapper(event_com, event_comsubid, 0xff981f)
+			})
+		}
+	}
+	return calc(int8 + 1)
+}

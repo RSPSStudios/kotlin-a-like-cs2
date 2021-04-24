@@ -1,0 +1,18 @@
+// 1333 clientscript
+fun light_puzzle_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component, component16: Component, component17: Component) {
+
+	~steelborder(component0, "Light box", 0)
+	if_setonvartransmit({
+		light_puzzle_update(component1){VARP[1356]}
+	}, component1)
+	~light_puzzle_update(component1)
+	~light_puzzle_button_setup(component2, component10, "A")
+	~light_puzzle_button_setup(component3, component11, "B")
+	~light_puzzle_button_setup(component4, component12, "C")
+	~light_puzzle_button_setup(component5, component13, "D")
+	~light_puzzle_button_setup(component6, component14, "E")
+	~light_puzzle_button_setup(component7, component15, "F")
+	~light_puzzle_button_setup(component8, component16, "G")
+	~light_puzzle_button_setup(component9, component17, "H")
+	return 
+}

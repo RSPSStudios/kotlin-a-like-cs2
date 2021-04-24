@@ -1,0 +1,6 @@
+// 100 clientscript
+fun duel_stake_vartrans() {
+
+	~duel_options_radio_buttons
+	return 
+}

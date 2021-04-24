@@ -1,0 +1,11 @@
+// 2648 clientscript
+fun script2648(component0: Component, comsubid1: Int, comsubid2: Int, graphic3: Graphic, component4: Component) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_setgraphic(graphic3)
+	}
+	if (cc_find(component0, comsubid2) = ^true) {
+		cc_setcolour(^white)
+	}
+	return 
+}

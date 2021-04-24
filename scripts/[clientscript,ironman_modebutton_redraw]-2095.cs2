@@ -1,0 +1,8 @@
+// 2095 clientscript
+fun ironman_modebutton_redraw(component0: Component, int1: Int, int2: Int, int3: Int, component4: Component, component5: Component, component6: Component, component7: Component) {
+
+	if (cc_find(component0, int2) = ^true & .cc_find(component0, int1) = ^true) {
+		~ironman_modebutton_redraw(component0, int1, int2, int3, component4, component5, component6, component7)
+	}
+	return 
+}

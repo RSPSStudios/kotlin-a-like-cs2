@@ -1,0 +1,10 @@
+// 98 proc
+fun create_graphic(component0: Component, comsubid1: Int, graphic2: Graphic, x3: Int, y4: Int, setposh5: Int, setposv6: Int, width7: Int, height8: Int, setsize9: Int, setsize10: Int) {
+
+	cc_create(component0, ^iftype_graphic, comsubid1)
+	cc_setposition(x3, y4, setposh5, setposv6)
+	cc_setsize(width7, height8, setsize9, setsize10)
+	cc_setgraphic(graphic2)
+	cc_settiling(true)
+	return 
+}

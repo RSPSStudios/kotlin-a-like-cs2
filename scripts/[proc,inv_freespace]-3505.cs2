@@ -1,0 +1,12 @@
+// 3505 proc
+fun inv_freespace(inv0: Inv, int1: Int): Int {
+
+	val int2: Int = 0
+	while (int1 > 0) {
+		int1 = calc(int1 - 1)
+		if (inv_getobj(inv0, int1) = null) {
+			int2 = calc(int2 + 1)
+		}
+	}
+	return int2
+}

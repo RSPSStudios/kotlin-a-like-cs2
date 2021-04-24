@@ -1,0 +1,6 @@
+// 1180 clientscript
+fun dream_monster_switch_tab(component0: Component) {
+
+	~dream_monster_switch_tab(component0)
+	return 
+}

@@ -1,0 +1,6 @@
+// 3366 clientscript
+fun pvp_store_side_draw(component0: Component) {
+
+	~pvp_store_side_draw(component0)
+	return 
+}

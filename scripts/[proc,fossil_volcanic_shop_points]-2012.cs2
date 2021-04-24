@@ -1,0 +1,9 @@
+// 2012 proc
+fun fossil_volcanic_shop_points(component0: Component, int1: Int) {
+
+	if_settext("Points: <col=ffa82f>${~tostring_spacer(VARP[261], ",")}</col>", component0)
+	if (int1 = 1) {
+		sound_synth(synth_73, 1, 0)
+	}
+	return 
+}

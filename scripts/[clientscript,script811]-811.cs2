@@ -1,0 +1,15 @@
+// 811 clientscript
+fun script811(component0: Component, comsubid1: Int, int2: Int, int3: Int, int4: Int) {
+
+	val int5: Int = calc((clientclock - int2) % 100)
+	if (int5 >= 50) {
+		int5 = calc(100 - int5)
+	}
+	val trans6: Int = calc(int3 + interpolate(0, int5, 0, 50, int4 - int3))
+	if (comsubid1 = -1) {
+		if_settrans(trans6, component0)
+	} else if (cc_find(component0, comsubid1) = ^true) {
+		cc_settrans(trans6)
+	}
+	return 
+}

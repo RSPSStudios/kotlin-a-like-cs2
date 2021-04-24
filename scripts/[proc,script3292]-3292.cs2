@@ -1,0 +1,18 @@
+// 3292 proc
+fun script3292(struct0: Struct): Int {
+
+	when (struct0): Struct {
+		leagues_i_twisted_723 -> {
+		
+			return 1
+		}
+		leagues_ii_trailblazer_1721 -> {
+		
+			return 1
+		}
+	else -> {
+	
+		return 0
+	}
+	}
+}

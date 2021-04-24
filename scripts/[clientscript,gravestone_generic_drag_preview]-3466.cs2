@@ -1,0 +1,83 @@
+// 3466 clientscript
+fun gravestone_generic_drag_preview(comsubid0: Int, mousex1: Int, mousey2: Int, x3: Int, y4: Int, component5: Component, component6: Component, component7: Component, int8: Int, int9: Int, int10: Int, component11: Component, int12: Int, component13: Component, int14: Int, component15: Component, component16: Component, component17: Component, component18: Component) {
+
+	val int19: Int = VARCINT[395]
+	val int20: Int = VARCINT[396]
+	val int21: Int = VARCINT[397]
+	val int22: Int = VARCINT[398]
+	val int23: Int = 0
+	val width24: Int = if_getwidth(component5)
+	val int25: Int = calc(if_getheight(component5) - int8)
+	if (cc_find(component5, comsubid0) = ^true) {
+		cc_setgraphic(null)
+		when (comsubid0): Int {
+			0 -> {
+			
+				int21, int22 = calc(int21 + (mousex1 - x3)), calc(int22 + (mousey2 - y4))
+			}
+			1 -> {
+			
+				int20 = calc(int20 + (mousey2 - y4))
+			}
+			2 -> {
+			
+				int23 = calc(mousex1 - x3)
+				int19, int21 = calc(int19 - int23), calc(int21 + int23)
+			}
+			3 -> {
+			
+				int19 = calc(int19 + (mousex1 - x3))
+			}
+			4 -> {
+			
+				int23 = calc(mousex1 - x3)
+				int19, int21 = calc(int19 - int23), calc(int21 + int23)
+				int23 = calc(mousey2 - y4)
+				int20, int22 = calc(int20 - int23), calc(int22 + int23)
+			}
+			5 -> {
+			
+				int19 = calc(int19 + (mousex1 - x3))
+				int23 = calc(mousey2 - y4)
+				int20, int22 = calc(int20 - int23), calc(int22 + int23)
+			}
+			6 -> {
+			
+				int23 = calc(mousex1 - x3)
+				int19, int21 = calc(int19 - int23), calc(int21 + int23)
+				int20 = calc(int20 + (mousey2 - y4))
+			}
+			7 -> {
+			
+				int19 = calc(int19 + (mousex1 - x3))
+				int20 = calc(int20 + (mousey2 - y4))
+			}
+		}
+		if (int21 < 10) {
+			int19, int21 = calc(int19 + int21), 0
+		}
+		int23 = calc(width24 - (int21 + int19))
+		if (int23 < 10) {
+			int19 = calc(int19 + int23)
+		}
+		if (int22 < calc(int8 + 10)) {
+			int20, int22 = calc(int20 + ~max(0, int22 - int8)), int8
+		}
+		int23 = calc(int25 + int8 - (int22 + int20))
+		if (int23 < 10) {
+			int20 = calc(int20 + int23)
+		}
+		int19 = ~max(int9, ~min(int19, width24))
+		int20 = ~max(int10, ~min(int20, int25))
+		int21 = ~max(0, ~min(int21, calc(width24 - int19)))
+		int22 = ~max(int8, ~min(int22, calc(int8 + int25 - int20)))
+		if_setposition(int21, int22, ^setpos_abs_left, ^setpos_abs_top, component7)
+		if_setsize(int19, int20, ^setsize_abs, ^setsize_abs, component7)
+		if_sethide(false, component7)
+		if_sethide(true, component6)
+		cc_setontimer({
+			gravestone_generic_drag_end(calc(clientclock + 3), int19, int20, int21, int22, component5, component6, component7, int8, int9, int10, component11, int12, component13, int14, component15, component16, component17, component18)
+		})
+	}
+	return 
+}

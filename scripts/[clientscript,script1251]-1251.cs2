@@ -1,0 +1,35 @@
+// 1251 clientscript
+fun script1251(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component) {
+
+	val string0: String = "Saradomin"
+	~script1253(component1, VARP[261], string0, damaged_book_3839, holy_book_3840)
+	if_setonvartransmit({
+		script1252(component1, string0, damaged_book_3839, holy_book_3840){VARP[261]}
+	}, component1)
+	string0 = "Guthix"
+	~script1253(component2, VARP[262], string0, damaged_book_3843, book_of_balance_3844)
+	if_setonvartransmit({
+		script1252(component2, string0, damaged_book_3843, book_of_balance_3844){VARP[262]}
+	}, component2)
+	string0 = "Zamorak"
+	~script1253(component3, VARP[263], string0, damaged_book_3841, unholy_book_3842)
+	if_setonvartransmit({
+		script1252(component3, string0, damaged_book_3841, unholy_book_3842){VARP[263]}
+	}, component3)
+	string0 = "Bandos"
+	~script1253(component4, VARP[264], string0, damaged_book_12607, book_of_war_12608)
+	if_setonvartransmit({
+		script1252(component4, string0, damaged_book_12607, book_of_war_12608){VARP[264]}
+	}, component4)
+	string0 = "Armadyl"
+	~script1253(component5, VARP[265], string0, damaged_book_12609, book_of_law_12610)
+	if_setonvartransmit({
+		script1252(component5, string0, damaged_book_12609, book_of_law_12610){VARP[265]}
+	}, component5)
+	string0 = "Ancient"
+	~script1253(component6, VARP[266], string0, damaged_book_12611, book_of_darkness_12612)
+	if_setonvartransmit({
+		script1252(component6, string0, damaged_book_12611, book_of_darkness_12612){VARP[266]}
+	}, component6)
+	return 
+}

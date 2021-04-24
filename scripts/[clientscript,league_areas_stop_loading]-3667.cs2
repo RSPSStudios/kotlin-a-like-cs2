@@ -1,0 +1,6 @@
+// 3667 clientscript
+fun league_areas_stop_loading(component0: Component) {
+
+	if_sethide(true, component0)
+	return 
+}

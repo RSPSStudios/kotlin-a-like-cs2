@@ -1,0 +1,41 @@
+// 3966 proc
+fun settings_set_slider(int0: Int, int1: Int) {
+
+	VARBIT[9657] = int0
+	when (int0): Int {
+		30 -> {
+		
+			if (int1 = 0 & VARP[168] < 4) {
+				VARBIT[9666] = VARP[168]
+			}
+			VARP[168] = ~min(4, calc(4 - int1))
+		}
+		31 -> {
+		
+			if (int1 = 0 & VARP[169] < 4) {
+				VARBIT[9674] = VARP[169]
+			}
+			VARP[169] = ~min(4, calc(4 - int1))
+		}
+		32 -> {
+		
+			if (int1 = 0 & VARP[872] < 4) {
+				VARBIT[9675] = VARP[872]
+			}
+			VARP[872] = ~min(4, calc(4 - int1))
+		}
+		15 -> {
+		
+			VARP[166] = ~min(4, calc(1 + int1))
+		}
+		45 -> {
+		
+			~script3970(int1)
+		}
+		79 -> {
+		
+			~script2363(int1)
+		}
+	}
+	return 
+}

@@ -1,0 +1,6 @@
+// 3626 clientscript
+fun imp_box_text_update(component0: Component) {
+
+	~imp_box_text_update(component0)
+	return 
+}

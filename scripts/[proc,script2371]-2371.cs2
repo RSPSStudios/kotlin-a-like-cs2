@@ -1,0 +1,50 @@
+// 2371 proc
+fun script2371(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component) {
+
+	if_sethide(true, component0)
+	if_sethide(true, component1)
+	if_sethide(true, component2)
+	if_sethide(true, component3)
+	if_sethide(true, component4)
+	if_sethide(true, component5)
+	if_sethide(true, component6)
+	if_sethide(true, component7)
+	when (VARP[261]): Int {
+		1 -> {
+		
+			if_sethide(false, component0)
+			if_sethide(false, component2)
+		}
+		2 -> {
+		
+			if_sethide(false, component0)
+			if_sethide(false, component1)
+			if_sethide(false, component3)
+		}
+		3 -> {
+		
+			if_sethide(false, component0)
+			if_sethide(false, component1)
+			if_sethide(false, component4)
+		}
+		4 -> {
+		
+			if_sethide(false, component0)
+			if_sethide(false, component1)
+			if_sethide(false, component5)
+		}
+		5 -> {
+		
+			if_sethide(false, component0)
+			if_sethide(false, component1)
+			if_sethide(false, component6)
+		}
+		6 -> {
+		
+			if_sethide(false, component0)
+			if_sethide(false, component1)
+			if_sethide(false, component7)
+		}
+	}
+	return 
+}

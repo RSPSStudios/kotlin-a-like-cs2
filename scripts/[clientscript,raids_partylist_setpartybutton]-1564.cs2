@@ -1,0 +1,6 @@
+// 1564 clientscript
+fun raids_partylist_setpartybutton() {
+
+	~raids_partylist_setpartybutton
+	return 
+}

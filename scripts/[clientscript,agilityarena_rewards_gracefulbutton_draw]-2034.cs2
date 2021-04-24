@@ -1,0 +1,6 @@
+// 2034 clientscript
+fun agilityarena_rewards_gracefulbutton_draw(component0: Component, obj1: Obj, obj2: Obj, string0: String, int3: Int, boolean4: Boolean) {
+
+	~agilityarena_rewards_gracefulbutton_draw(component0, obj1, obj2, string0, int3, boolean4)
+	return 
+}

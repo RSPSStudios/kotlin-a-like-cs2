@@ -1,0 +1,6 @@
+// 3226 clientscript
+fun league_side_panel_update_bar(component0: Component, int1: Int) {
+
+	~league_side_panel_update_bar(component0, int1)
+	return 
+}

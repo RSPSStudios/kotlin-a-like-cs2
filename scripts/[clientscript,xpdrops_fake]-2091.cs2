@@ -1,0 +1,36 @@
+// 2091 clientscript
+fun xpdrops_fake(stat0: Stat, z1: Int) {
+
+	if (enum(int, stat, enum_681, coordx(VARCINT[207])) = stat0) {
+		VARCINT[207] = movecoord(VARCINT[207], 0, 0, z1)
+	} else if (enum(int, stat, enum_681, coordx(VARCINT[208])) = stat0) {
+		VARCINT[208] = movecoord(VARCINT[208], 0, 0, z1)
+	} else if (enum(int, stat, enum_681, coordx(VARCINT[209])) = stat0) {
+		VARCINT[209] = movecoord(VARCINT[209], 0, 0, z1)
+	} else if (enum(int, stat, enum_681, coordx(VARCINT[210])) = stat0) {
+		VARCINT[210] = movecoord(VARCINT[210], 0, 0, z1)
+	} else if (enum(int, stat, enum_681, coordx(VARCINT[211])) = stat0) {
+		VARCINT[211] = movecoord(VARCINT[211], 0, 0, z1)
+	} else if (enum(int, stat, enum_681, coordx(VARCINT[212])) = stat0) {
+		VARCINT[212] = movecoord(VARCINT[212], 0, 0, z1)
+	} else if (enum(int, stat, enum_681, coordx(VARCINT[213])) = stat0) {
+		VARCINT[213] = movecoord(VARCINT[213], 0, 0, z1)
+	} else if (stat0 = hitpoints & z1 = 20000001) {
+		VARCINT[207] = 1_1_1_1_1
+	} else if (VARCINT[207] = null) {
+		VARCINT[207] = movecoord(0_0_0_0_0, enum(stat, int, enum_81, stat0), 0, z1)
+	} else if (VARCINT[208] = null) {
+		VARCINT[208] = movecoord(0_0_0_0_0, enum(stat, int, enum_81, stat0), 0, z1)
+	} else if (VARCINT[209] = null) {
+		VARCINT[209] = movecoord(0_0_0_0_0, enum(stat, int, enum_81, stat0), 0, z1)
+	} else if (VARCINT[210] = null) {
+		VARCINT[210] = movecoord(0_0_0_0_0, enum(stat, int, enum_81, stat0), 0, z1)
+	} else if (VARCINT[211] = null) {
+		VARCINT[211] = movecoord(0_0_0_0_0, enum(stat, int, enum_81, stat0), 0, z1)
+	} else if (VARCINT[212] = null) {
+		VARCINT[212] = movecoord(0_0_0_0_0, enum(stat, int, enum_81, stat0), 0, z1)
+	} else if (VARCINT[213] = null) {
+		VARCINT[213] = movecoord(0_0_0_0_0, enum(stat, int, enum_81, stat0), 0, z1)
+	}
+	return 
+}

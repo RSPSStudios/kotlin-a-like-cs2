@@ -1,0 +1,23 @@
+// 1233 clientscript
+fun script1233(component0: Component, comsubid1: Int, int2: Int, int3: Int) {
+
+	val colour4: Int = ^black
+	val int5: Int = 0
+	val int6: Int = 0
+	val int7: Int = 0
+	val int8: Int = 0
+	if (cc_find(component0, comsubid1) = ^true) {
+		colour4, int5 = enum(int, int, enum_1279, int2), calc(int3 - clientclock)
+		if (int5 <= 0) {
+			cc_setcolour(colour4)
+			cc_setontimer(null)
+			return 
+		}
+		if (int5 > 30) {
+			int5 = 30
+		}
+		int6, int7, int8 = ~hex_to_rgb(colour4)
+		cc_setcolour(~rgb_to_hex(calc(int6 + interpolate(0, int5, 0, 30, 255 - int6)), calc(int7 + interpolate(0, int5, 0, 30, 255 - int7)), calc(int8 + interpolate(0, int5, 0, 30, 255 - int8))))
+	}
+	return 
+}

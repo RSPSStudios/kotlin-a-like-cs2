@@ -1,0 +1,154 @@
+// 2741 proc
+fun lovaquest_power_grid_getslot(int0: Int): Int {
+
+	when (int0): Int {
+		0 -> {
+		
+			return VARBIT[7811]
+		}
+		1 -> {
+		
+			return VARBIT[7812]
+		}
+		2 -> {
+		
+			return VARBIT[7813]
+		}
+		3 -> {
+		
+			return VARBIT[7814]
+		}
+		4 -> {
+		
+			return VARBIT[7815]
+		}
+		5 -> {
+		
+			return VARBIT[7816]
+		}
+		6 -> {
+		
+			return VARBIT[7817]
+		}
+		7 -> {
+		
+			return VARBIT[7818]
+		}
+		8 -> {
+		
+			return VARBIT[7819]
+		}
+		9 -> {
+		
+			return VARBIT[7820]
+		}
+		10 -> {
+		
+			return VARBIT[7821]
+		}
+		11 -> {
+		
+			return VARBIT[7822]
+		}
+		12 -> {
+		
+			return VARBIT[7823]
+		}
+		13 -> {
+		
+			return VARBIT[7824]
+		}
+		14 -> {
+		
+			return VARBIT[7825]
+		}
+		15 -> {
+		
+			return VARBIT[7826]
+		}
+		16 -> {
+		
+			return VARBIT[7827]
+		}
+		17 -> {
+		
+			return VARBIT[7828]
+		}
+		18 -> {
+		
+			return VARBIT[7829]
+		}
+		19 -> {
+		
+			return VARBIT[7830]
+		}
+		20 -> {
+		
+			return VARBIT[7831]
+		}
+		21 -> {
+		
+			return VARBIT[7832]
+		}
+		22 -> {
+		
+			return VARBIT[7833]
+		}
+		23 -> {
+		
+			return VARBIT[7834]
+		}
+		24 -> {
+		
+			return VARBIT[7835]
+		}
+		25 -> {
+		
+			return VARBIT[7836]
+		}
+		26 -> {
+		
+			return VARBIT[7837]
+		}
+		27 -> {
+		
+			return VARBIT[7838]
+		}
+		28 -> {
+		
+			return VARBIT[7839]
+		}
+		29 -> {
+		
+			return VARBIT[7840]
+		}
+		30 -> {
+		
+			return VARBIT[7841]
+		}
+		31 -> {
+		
+			return VARBIT[7842]
+		}
+		32 -> {
+		
+			return VARBIT[7843]
+		}
+		33 -> {
+		
+			return VARBIT[7844]
+		}
+		34 -> {
+		
+			return VARBIT[7845]
+		}
+		35 -> {
+		
+			return VARBIT[7846]
+		}
+	else -> {
+	
+		return 0
+	}
+	}
+}

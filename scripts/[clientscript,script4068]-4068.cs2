@@ -1,0 +1,13 @@
+// 4068 clientscript
+fun script4068(int0: Int) {
+
+	if_sethide(false, interface_437:5)
+	if_setposition(0, 16384, ^setpos_abs_centre, ^setpos_5, interface_437:8)
+	if (on_mobile = true) {
+		if_sethide(true, interface_437:8)
+	}
+	if_setontimer({
+		script4070(clientclock, int0, true)
+	}, interface_437:5)
+	return 
+}

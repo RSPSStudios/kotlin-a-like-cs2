@@ -1,0 +1,6 @@
+// 4105 proc
+fun script4105(int0: Int) {
+
+	cc_setop(1, enum(int, string, enum_1000, int0))
+	return 
+}

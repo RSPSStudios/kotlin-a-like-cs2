@@ -1,0 +1,10 @@
+// 2390 proc
+fun welcome_screen_position(component0: Component) {
+
+	if (~on_mobile = true) {
+		if_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre, component0)
+	} else {
+		if_setposition(0, 10, ^setpos_abs_centre, ^setpos_abs_top, component0)
+	}
+	return 
+}

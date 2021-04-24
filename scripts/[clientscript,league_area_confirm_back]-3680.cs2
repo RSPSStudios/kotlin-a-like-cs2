@@ -1,0 +1,7 @@
+// 3680 clientscript
+fun league_area_confirm_back(component0: Component) {
+
+	if_sethide(true, component0)
+	sound_synth(synth_2266, 1, 0)
+	return 
+}

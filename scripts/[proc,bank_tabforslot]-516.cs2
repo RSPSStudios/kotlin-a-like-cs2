@@ -1,0 +1,41 @@
+// 516 proc
+fun bank_tabforslot(comsubid0: Int): Int {
+
+	val comsubid1: Int = VARBIT[4171]
+	if (comsubid0 < comsubid1) {
+		return 1
+	}
+	comsubid1 = calc(comsubid1 + VARBIT[4172])
+	if (comsubid0 < comsubid1) {
+		return 2
+	}
+	comsubid1 = calc(comsubid1 + VARBIT[4173])
+	if (comsubid0 < comsubid1) {
+		return 3
+	}
+	comsubid1 = calc(comsubid1 + VARBIT[4174])
+	if (comsubid0 < comsubid1) {
+		return 4
+	}
+	comsubid1 = calc(comsubid1 + VARBIT[4175])
+	if (comsubid0 < comsubid1) {
+		return 5
+	}
+	comsubid1 = calc(comsubid1 + VARBIT[4176])
+	if (comsubid0 < comsubid1) {
+		return 6
+	}
+	comsubid1 = calc(comsubid1 + VARBIT[4177])
+	if (comsubid0 < comsubid1) {
+		return 7
+	}
+	comsubid1 = calc(comsubid1 + VARBIT[4178])
+	if (comsubid0 < comsubid1) {
+		return 8
+	}
+	comsubid1 = calc(comsubid1 + VARBIT[4179])
+	if (comsubid0 < comsubid1) {
+		return 9
+	}
+	return 0
+}

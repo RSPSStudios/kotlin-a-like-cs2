@@ -1,0 +1,42 @@
+// 523 proc
+fun script523(component0: Component) {
+
+	if (VARBIT[4170] = 1) {
+		~script524(component0, 0)
+		~script525(component0, 1)
+		~script524(component0, 2)
+	} else if (VARBIT[4170] = 2) {
+		~script524(component0, 0)
+		~script524(component0, 1)
+		~script525(component0, 2)
+	} else if (VARBIT[4170] = 3) {
+		~script524(component0, 0)
+		~script524(component0, 1)
+		~script524(component0, 2)
+	} else {
+		~script525(component0, 0)
+		~script524(component0, 1)
+		~script524(component0, 2)
+	}
+	if (VARBIT[4171] > 0 | VARBIT[4172] > 0 | VARBIT[4173] > 0 | VARBIT[4174] > 0 | VARBIT[4175] > 0 | VARBIT[4176] > 0 | VARBIT[4177] > 0 | VARBIT[4178] > 0 | VARBIT[4179] > 0) {
+		if (cc_find(component0, 3) = ^true) {
+			cc_sethide(true)
+		}
+		if (cc_find(component0, 7) = ^true) {
+			cc_setgraphic("options_radio_buttons,1")
+		}
+		if (cc_find(component0, 11) = ^true) {
+			cc_settext("<str>Hide tab bar</str>")
+		}
+	} else {
+		if (cc_find(component0, 11) = ^true) {
+			cc_settext("Hide tab bar")
+		}
+		if (VARBIT[4170] = 3) {
+			~script525(component0, 3)
+		} else {
+			~script524(component0, 3)
+		}
+	}
+	return 
+}

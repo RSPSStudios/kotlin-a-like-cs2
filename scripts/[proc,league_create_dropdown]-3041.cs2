@@ -1,0 +1,177 @@
+// 3041 proc
+fun league_create_dropdown(component0: Component, component1: Component, component2: Component, int3: Int, int4: Int) {
+
+	val colour5: Int = 0xff981f
+	val struct6: Struct = enum(int, struct, enum_2670, VARBIT[10032])
+	if (struct6 = null) {
+		return 
+	}
+	colour5 = struct_param(struct6, param_1027)
+	val int7: Int = 92
+	val int8: Int = 81
+	if (~on_mobile = true) {
+		int7 = 112
+		int8 = 115
+	}
+	val int9: Int = calc(int7 / 4)
+	val int10: Int = 6
+	if_setsize(int8, calc(int7 + 12), ^setsize_abs, ^setsize_abs, component1)
+	cc_create(component1, ^iftype_graphic, int3)
+	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setgraphic("tradebacking_light")
+	int3 = calc(int3 + 1)
+	int3 = ~steelbox(component1, int3, 0)
+	if_sethide(true, component1)
+	cc_create(component1, ^iftype_rectangle, int3)
+	cc_setsize(calc(int8 - 12), int9, ^setsize_abs, ^setsize_abs)
+	cc_setposition(6, int10, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setcolour(^white)
+	cc_setfill(true)
+	if (int4 = 0) {
+		cc_settrans(235)
+	} else {
+		cc_settrans(255)
+	}
+	int3 = calc(int3 + 1)
+	cc_create(component1, ^iftype_text, int3)
+	cc_setsize(calc(int8 - 12), int9, ^setsize_abs, ^setsize_abs)
+	cc_setposition(6, int10, ^setpos_abs_left, ^setpos_abs_top)
+	cc_settext("Info")
+	cc_settextfont(p12_full)
+	cc_settextshadow(true)
+	if (int4 = 0) {
+		cc_setcolour(0xc8c8c8)
+		cc_settrans(200)
+	} else {
+		cc_setcolour(colour5)
+		if (~on_mobile = false) {
+			cc_setonmouseover({
+				league_info_mouseover(component1, int3)
+			})
+			cc_setonmouseleave({
+				league_info_mouseleave(component1, int3, colour5)
+			})
+		}
+	}
+	cc_setop(1, "View Information")
+	cc_setonop({
+		league_menu_frame_click(component0, component1, component2)
+	})
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	int3 = calc(int3 + 1)
+	int10 = calc(int10 + int9)
+	cc_create(component1, ^iftype_rectangle, int3)
+	cc_setsize(calc(int8 - 12), int9, ^setsize_abs, ^setsize_abs)
+	cc_setposition(6, int10, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setcolour(^white)
+	cc_setfill(true)
+	if (int4 = 1) {
+		cc_settrans(235)
+	} else {
+		cc_settrans(255)
+	}
+	int3 = calc(int3 + 1)
+	cc_create(component1, ^iftype_text, int3)
+	cc_setsize(calc(int8 - 12), int9, ^setsize_abs, ^setsize_abs)
+	cc_setposition(6, int10, ^setpos_abs_left, ^setpos_abs_top)
+	cc_settext("Tasks")
+	cc_settextfont(p12_full)
+	cc_settextshadow(true)
+	if (int4 = 1) {
+		cc_setcolour(0xc8c8c8)
+		cc_settrans(200)
+	} else {
+		cc_setcolour(colour5)
+		if (~on_mobile = false) {
+			cc_setonmouseover({
+				league_info_mouseover(component1, int3)
+			})
+			cc_setonmouseleave({
+				league_info_mouseleave(component1, int3, colour5)
+			})
+		}
+	}
+	cc_setop(1, "View Tasks")
+	cc_setonop({
+		league_menu_frame_click(component0, component1, component2)
+	})
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	int3 = calc(int3 + 1)
+	int10 = calc(int10 + int9)
+	cc_create(component1, ^iftype_rectangle, int3)
+	cc_setsize(calc(int8 - 12), int9, ^setsize_abs, ^setsize_abs)
+	cc_setposition(6, int10, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setcolour(^white)
+	cc_setfill(true)
+	if (int4 = 3) {
+		cc_settrans(235)
+	} else {
+		cc_settrans(255)
+	}
+	int3 = calc(int3 + 1)
+	cc_create(component1, ^iftype_text, int3)
+	cc_setsize(calc(int8 - 12), int9, ^setsize_abs, ^setsize_abs)
+	cc_setposition(6, int10, ^setpos_abs_left, ^setpos_abs_top)
+	cc_settext("Areas")
+	cc_settextfont(p12_full)
+	cc_settextshadow(true)
+	if (int4 = 3) {
+		cc_setcolour(0xc8c8c8)
+		cc_settrans(200)
+	} else {
+		cc_setcolour(colour5)
+		if (~on_mobile = false) {
+			cc_setonmouseover({
+				league_info_mouseover(component1, int3)
+			})
+			cc_setonmouseleave({
+				league_info_mouseleave(component1, int3, colour5)
+			})
+		}
+	}
+	cc_setop(1, "View Areas")
+	cc_setonop({
+		league_menu_frame_click(component0, component1, component2)
+	})
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	int3 = calc(int3 + 1)
+	int10 = calc(int10 + int9)
+	cc_create(component1, ^iftype_rectangle, int3)
+	cc_setsize(calc(int8 - 12), int9, ^setsize_abs, ^setsize_abs)
+	cc_setposition(6, int10, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setcolour(^white)
+	cc_setfill(true)
+	if (int4 = 2) {
+		cc_settrans(235)
+	} else {
+		cc_settrans(255)
+	}
+	int3 = calc(int3 + 1)
+	cc_create(component1, ^iftype_text, int3)
+	cc_setsize(calc(int8 - 12), int9, ^setsize_abs, ^setsize_abs)
+	cc_setposition(6, int10, ^setpos_abs_left, ^setpos_abs_top)
+	cc_settext("Relics")
+	cc_settextfont(p12_full)
+	cc_settextshadow(true)
+	if (int4 = 2) {
+		cc_setcolour(0xc8c8c8)
+		cc_settrans(200)
+	} else {
+		cc_setcolour(colour5)
+		if (~on_mobile = false) {
+			cc_setonmouseover({
+				league_info_mouseover(component1, int3)
+			})
+			cc_setonmouseleave({
+				league_info_mouseleave(component1, int3, colour5)
+			})
+		}
+	}
+	cc_setop(1, "View Relics")
+	cc_setonop({
+		league_menu_frame_click(component0, component1, component2)
+	})
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	return 
+}

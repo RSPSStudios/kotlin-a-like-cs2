@@ -1,0 +1,6 @@
+// 1345 clientscript
+fun br_fogcolour() {
+
+	~br_fogcolour
+	return 
+}

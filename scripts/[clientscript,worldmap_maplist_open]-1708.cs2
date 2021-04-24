@@ -1,0 +1,58 @@
+// 1708 clientscript
+fun worldmap_maplist_open(component0: Component, component1: Component, component2: Component, x3: Int, z4: Int) {
+
+	sound_synth(synth_2266, 1, 0)
+	~xpdrops_setup_display_hoverdisable(component0)
+	if_sethide(false, component1)
+	val y5: Int = ^min_32bit_int
+	val y6: Int = ^min_32bit_int
+	val int7: Int = 0
+	val maparea8: Maparea = null
+	while (int7 <= 39) {
+		maparea8 = enum(int, maparea, enum_1697, int7)
+		if (maparea8 ! null & cc_find(component2, calc(int7 + 1)) = ^true) {
+			if (~worldmap_findcoordinmap(maparea8, VARCINT[188]) ! null) {
+				if (~on_mobile = false) {
+					y5 = calc(cc_gety - 1)
+				} else {
+					y5 = calc(cc_gety + 3)
+				}
+			}
+			if (~worldmap_findcoordinmap(maparea8, VARCINT[401]) ! null) {
+				if (~on_mobile = false) {
+					y6 = calc(cc_gety - 1)
+				} else {
+					y6 = calc(cc_gety + 3)
+				}
+			}
+		}
+		int7 = calc(int7 + 1)
+	}
+	if (cc_find(component2, x3) = ^true & .cc_find(component2, z4) = ^true) {
+		if (y5 ! ^min_32bit_int) {
+			if (y6 ! ^min_32bit_int) {
+				cc_sethide(false)
+				.cc_sethide(false)
+				if (y5 = y6) {
+					cc_setposition(0, y5, ^setpos_abs_left, ^setpos_abs_top)
+					.cc_setposition(3, y6, ^setpos_abs_left, ^setpos_abs_top)
+				} else {
+					cc_setposition(1, y5, ^setpos_abs_left, ^setpos_abs_top)
+					.cc_setposition(1, y6, ^setpos_abs_left, ^setpos_abs_top)
+				}
+			} else {
+				cc_sethide(false)
+				.cc_sethide(true)
+				cc_setposition(1, y5, ^setpos_abs_left, ^setpos_abs_top)
+			}
+		} else if (y6 ! ^min_32bit_int) {
+			cc_sethide(true)
+			.cc_sethide(false)
+			.cc_setposition(1, y6, ^setpos_abs_left, ^setpos_abs_top)
+		} else {
+			cc_sethide(true)
+			.cc_sethide(true)
+		}
+	}
+	return 
+}

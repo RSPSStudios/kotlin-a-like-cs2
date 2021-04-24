@@ -1,0 +1,12 @@
+// 897 clientscript
+fun mole_go_splat_off(component0: Component, comsubid1: Int, clock2: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		if (clientclock >= clock2) {
+			cc_delete
+		} else {
+			~mole_splat_zoom(component0)
+		}
+	}
+	return 
+}

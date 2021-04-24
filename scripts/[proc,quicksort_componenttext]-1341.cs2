@@ -1,0 +1,29 @@
+// 1341 proc
+fun quicksort_componenttext(arraycomponent0: Component, int1: Int, int2: Int) {
+
+	val index3: Int = calc((int1 + int2) / 2)
+	val component4: Component = component0[index3]
+	component0[index3] = component0[int2]
+	component0[int2] = component4
+	val int5: Int = int1
+	val int6: Int = int1
+	val component7: Component = null
+	while (int6 < int2) {
+		if (compare(lowercase(if_gettext(component0[int6])), lowercase(if_gettext(component4))) <= 0) {
+			component7 = component0[int6]
+			component0[int6] = component0[int5]
+			component0[int5] = component7
+			int5 = calc(int5 + 1)
+		}
+		int6 = calc(int6 + 1)
+	}
+	component0[int2] = component0[int5]
+	component0[int5] = component4
+	if (int1 < calc(int5 - 1)) {
+		~quicksort_componenttext(component0, int1, calc(int5 - 1))
+	}
+	if (calc(int5 + 1) < int2) {
+		~quicksort_componenttext(component0, calc(int5 + 1), int2)
+	}
+	return 
+}

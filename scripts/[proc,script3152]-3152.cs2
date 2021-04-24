@@ -1,0 +1,8 @@
+// 3152 proc
+fun script3152() {
+
+	~script3272(VARBIT[50])
+	~script3274(VARBIT[49])
+	~script3294(VARBIT[68])
+	return 
+}

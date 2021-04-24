@@ -1,0 +1,6 @@
+// 1 proc
+fun script1() {
+
+	VARBIT[6285] = calc(1 - VARBIT[6285])
+	return 
+}

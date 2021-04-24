@@ -1,0 +1,6 @@
+// 1424 proc
+fun blast_furnace_hud_update(component0: Component) {
+
+	.cc_setobject(coins_995, VARBIT[5357])
+	return 
+}

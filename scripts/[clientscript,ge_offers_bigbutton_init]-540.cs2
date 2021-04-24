@@ -1,0 +1,6 @@
+// 540 clientscript
+fun ge_offers_bigbutton_init(component0: Component, string0: String) {
+
+	~ge_offers_bigbutton(component0, string0, 0)
+	return 
+}

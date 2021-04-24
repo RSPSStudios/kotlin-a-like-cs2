@@ -1,0 +1,16 @@
+// 1698 clientscript
+fun blast_mining_hud_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component) {
+
+	~script2249(component0, setbit(0, 3))
+	~script1486(component1, ^setpos_abs_centre, 1, 0)
+	if_setobject_nonum(coal_453, 0, component3)
+	if_setobject_nonum(gold_ore_444, 0, component4)
+	if_setobject_nonum(mithril_ore_447, 0, component5)
+	if_setobject_nonum(adamantite_ore_449, 0, component6)
+	if_setobject_nonum(runite_ore_451, 0, component7)
+	~blast_mining_hud_update(component8, component9, component10, component11, component12)
+	if_setonvartransmit({
+		blast_mining_hud_update(component8, component9, component10, component11, component12){VARP[694], VARP[203]}
+	}, component2)
+	return 
+}

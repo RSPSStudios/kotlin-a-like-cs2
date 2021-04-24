@@ -1,0 +1,14 @@
+// 456 proc
+fun orbs_update_prayer(component0: Component, component1: Component, component2: Component) {
+
+	if (VARBIT[4103] = 1) {
+		if_setgraphic("orb_filler,7", component0)
+		if_setgraphic("orb_icon,4", component1)
+		if_setop(1, "Deactivate", component2)
+	} else {
+		if_setgraphic("orb_filler,4", component0)
+		if_setgraphic("orb_icon,1", component1)
+		if_setop(1, "Activate", component2)
+	}
+	return 
+}

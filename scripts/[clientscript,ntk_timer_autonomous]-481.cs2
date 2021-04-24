@@ -1,0 +1,6 @@
+// 481 clientscript
+fun ntk_timer_autonomous(component0: Component, int1: Int, clock2: Int) {
+
+	~ntk_timer_update(component0, calc(int1 + (clientclock - clock2) / 30))
+	return 
+}

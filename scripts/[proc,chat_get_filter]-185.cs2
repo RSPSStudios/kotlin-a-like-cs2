@@ -1,0 +1,26 @@
+// 185 proc
+fun chat_get_filter(int0: Int): Int {
+
+	when (int0): Int {
+		2 -> {
+		
+			return chat_getfilter_public
+		}
+		3 -> {
+		
+			return chat_getfilter_private
+		}
+		4 -> {
+		
+			return VARP[1054]
+		}
+		5 -> {
+		
+			return chat_getfilter_trade
+		}
+	else -> {
+	
+		return ^chatfilter_on
+	}
+	}
+}

@@ -1,0 +1,7 @@
+// 1948 clientscript
+fun script1948() {
+
+	val int0: Int = VARP[1610]
+	if_settext("${tostring(int0)}/50", interface_599:25)
+	return 
+}

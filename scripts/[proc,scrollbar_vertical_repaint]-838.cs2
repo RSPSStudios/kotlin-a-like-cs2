@@ -1,0 +1,37 @@
+// 838 proc
+fun scrollbar_vertical_repaint(component0: Component, graphic1: Graphic, graphic2: Graphic, graphic3: Graphic, graphic4: Graphic, graphic5: Graphic, graphic6: Graphic, int7: Int) {
+
+	val trans8: Int = 0
+	val trans9: Int = 0
+	if (int7 = 1) {
+		trans8, trans9 = 235, 180
+	}
+	if (~on_mobile = true) {
+		trans8, trans9 = 200, 130
+	}
+	if (cc_find(component0, 0) = ^true) {
+		cc_setgraphic(graphic1)
+		cc_settrans(trans8)
+	}
+	if (cc_find(component0, 1) = ^true) {
+		cc_setgraphic(graphic3)
+		cc_settrans(trans8)
+	}
+	if (cc_find(component0, 2) = ^true) {
+		cc_setgraphic(graphic2)
+		cc_settrans(trans8)
+	}
+	if (cc_find(component0, 3) = ^true) {
+		cc_setgraphic(graphic4)
+		cc_settrans(trans8)
+	}
+	if (cc_find(component0, 4) = ^true) {
+		cc_setgraphic(graphic5)
+		cc_settrans(trans9)
+	}
+	if (cc_find(component0, 5) = ^true) {
+		cc_setgraphic(graphic6)
+		cc_settrans(trans9)
+	}
+	return 
+}

@@ -1,0 +1,98 @@
+// 3025 proc
+fun adventurepath_side_settings_content(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, int6: Int) {
+
+	cc_deleteall(component5)
+	cc_deleteall(component2)
+	cc_deleteall(component3)
+	val int7: Int = 0
+	int7 = ~v2_stone_button_filled(component5)
+	cc_create(component5, ^iftype_text, int7)
+	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	cc_settext("<lt><lt>   Back")
+	cc_settextfont(p12_full)
+	cc_settextshadow(true)
+	cc_setcolour(0xff981f)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 17)
+	if_setonmouserepeat({
+		adventurepath_side_settings_back_over(component5, 0, ^white)
+	}, component5)
+	if_setonmouseleave({
+		adventurepath_side_settings_back_leave(component5, 0, 0xff981f)
+	}, component5)
+	if_setop(1, "Back", component5)
+	if_setonop({
+		adventurepath_side_settings_back_op(component0, component1)
+	}, component5)
+	int7 = 0
+	cc_create(component2, ^iftype_text, int7)
+	cc_setsize(4, 4, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	cc_settext("Settings")
+	cc_settextfont(b12_full)
+	cc_settextshadow(true)
+	cc_setcolour(0xff981f)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 17)
+	val width8: Int = if_getwidth(component3)
+	val int9: Int = 0
+	val height10: Int = if_getheight(component3)
+	val height11: Int = 0
+	int7 = 0
+	int7, int9 = ~adventurepath_side_create_toggle(int7, int9, component3, width8, 40, 0, calc(15 * int9 + int9 * 34), "Task complete message", VARBIT[9329], 0)
+	cc_setonvartransmit({
+		script3026(component3, calc(int7 - 2)){VARP[2370]}
+	})
+	cc_setonop({
+		script3027(component3, calc(int7 - 2))
+	})
+	int7, int9 = ~adventurepath_side_create_toggle(int7, int9, component3, width8, 40, 0, calc(15 * int9 + int9 * 34), "Path complete message", VARBIT[9330], 0)
+	cc_setonvartransmit({
+		script3028(component3, calc(int7 - 2)){VARP[2370]}
+	})
+	cc_setonop({
+		script3029(component3, calc(int7 - 2))
+	})
+	int7, int9 = ~adventurepath_side_create_toggle(int7, int9, component3, width8, 40, 0, calc(15 * int9 + int9 * 34), "Task focus message", VARBIT[9331], 0)
+	cc_setonvartransmit({
+		script3030(component3, calc(int7 - 2)){VARP[2370]}
+	})
+	cc_setonop({
+		script3031(component3, calc(int7 - 2))
+	})
+	int7, int9 = ~adventurepath_side_create_toggle(int7, int9, component3, width8, 40, 0, calc(15 * int9 + int9 * 34), "Path focus message", VARBIT[9332], 0)
+	cc_setonvartransmit({
+		script3032(component3, calc(int7 - 2)){VARP[2370]}
+	})
+	cc_setonop({
+		script3033(component3, calc(int7 - 2))
+	})
+	int7, int9 = ~adventurepath_side_create_toggle(int7, int9, component3, width8, 40, 0, calc(15 * int9 + int9 * 34), "Notifications", VARBIT[10160], 0)
+	cc_setonvartransmit({
+		script3341(component3, calc(int7 - 2)){VARP[2370]}
+	})
+	cc_setonop({
+		script3342(component3, calc(int7 - 2))
+	})
+	int7 = 0
+	val int12: Int = 5
+	if (int6 = 1) {
+		height11 = calc(15 * (int9 - 1) + int9 * 34 + 5)
+		if (height11 > height10) {
+			if_setscrollsize(0, height11, component3)
+			if_sethide(false, component4)
+		} else {
+			if_setscrollsize(0, 0, component3)
+			if_sethide(true, component4)
+		}
+		if (int12 > 4) {
+			if_setsize(30, 14, ^setsize_minus, ^setsize_minus, component3)
+			if_setsize(16, 14, ^setsize_abs, ^setsize_minus, component4)
+			~scrollbar_vertical(component4, component3, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+			if_setscrollpos(0, 0, component3)
+		} else {
+			if_setsize(0, 0, ^setsize_abs, ^setsize_abs, component4)
+			if_setsize(15, 14, ^setsize_minus, ^setsize_minus, component3)
+		}
+	}
+	return 
+}

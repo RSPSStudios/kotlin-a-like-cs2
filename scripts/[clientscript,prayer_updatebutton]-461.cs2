@@ -1,0 +1,11 @@
+// 461 clientscript
+fun prayer_updatebutton(boolean0: Boolean, int1: Int, component2: Component, comsubid3: Int, comsubid4: Int, component5: Component, component6: Component) {
+
+	if (cc_find(component2, comsubid3) = ^true & .cc_find(component2, comsubid4) = ^true) {
+		~prayer_updatebutton(boolean0, int1, component2, component5, component6)
+	}
+	if (boolean0 = false & VARBIT[5711] = 1) {
+		~deltooltip_action(component6)
+	}
+	return 
+}

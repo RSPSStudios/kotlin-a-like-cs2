@@ -1,0 +1,30 @@
+// 179 proc
+fun chat_alert_get(int0: Int): Int {
+
+	when (int0): Int {
+		1 -> {
+		
+			return VARCINT[44]
+		}
+		2 -> {
+		
+			return VARCINT[45]
+		}
+		3 -> {
+		
+			return VARCINT[46]
+		}
+		4 -> {
+		
+			return VARCINT[47]
+		}
+		5 -> {
+		
+			return VARCINT[48]
+		}
+	else -> {
+	
+		return 0
+	}
+	}
+}

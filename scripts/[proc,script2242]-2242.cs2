@@ -1,0 +1,8 @@
+// 2242 proc
+fun script2242(int0: Int) {
+
+	if (~on_mobile = false) {
+		return 
+	}
+	return 
+}

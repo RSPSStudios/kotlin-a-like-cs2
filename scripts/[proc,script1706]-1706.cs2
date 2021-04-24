@@ -1,0 +1,7 @@
+// 1706 proc
+fun script1706(coord0: Coord) {
+
+	sound_synth(synth_2266, 1, 0)
+	VARCINT[189] = coord0
+	return 
+}

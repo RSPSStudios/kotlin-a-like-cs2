@@ -1,0 +1,42 @@
+// 3938 clientscript
+fun settings_icon_op(int0: Int, component1: Component, component2: Component, int3: Int, graphic4: Graphic, component5: Component, string0: String, string1: String, component6: Component) {
+
+	~settings_side_op_sound
+	val int7: Int = ~settings_get_slider(int0)
+	if (int7 > 0) {
+		when (int0): Int {
+			30 -> {
+			
+				VARBIT[9666] = calc(4 - int7)
+			}
+			31 -> {
+			
+				VARBIT[9674] = calc(4 - int7)
+			}
+			32 -> {
+			
+				VARBIT[9675] = calc(4 - int7)
+			}
+		}
+		~settings_set_slider(int0, 0)
+	} else {
+		when (int0): Int {
+			30 -> {
+			
+				~settings_set_slider(int0, calc(4 - VARBIT[9666]))
+			}
+			31 -> {
+			
+				~settings_set_slider(int0, calc(4 - VARBIT[9674]))
+			}
+			32 -> {
+			
+				~settings_set_slider(int0, calc(4 - VARBIT[9675]))
+			}
+		}
+	}
+	int7 = ~settings_get_slider(int0)
+	~script3941(int7, component1, component2, int3)
+	~settings_update_icon(int7, component5, string0, string1, component6)
+	return 
+}

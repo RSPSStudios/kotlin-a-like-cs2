@@ -1,0 +1,13 @@
+// 1420 clientscript
+fun br_tournament_submit(clock0: Int, string0: String, component1: Component, comsubid2: Int) {
+
+	if (clientclock < clock0) {
+		return 
+	}
+	resume_namedialog(string0)
+	if (cc_find(component1, comsubid2) = ^true) {
+		cc_setcolour(^white)
+		cc_setontimer(null)
+	}
+	return 
+}

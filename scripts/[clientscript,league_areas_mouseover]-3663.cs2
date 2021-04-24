@@ -1,0 +1,6 @@
+// 3663 clientscript
+fun league_areas_mouseover(int0: Int, component1: Component, component2: Component) {
+
+	~league_areas_mouseover(int0, component1, component2)
+	return 
+}

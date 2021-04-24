@@ -1,0 +1,25 @@
+// 3584 clientscript
+fun teletab_steelborder(component0: Component) {
+
+	val text0: String = ""
+	when (VARBIT[10599]): Int {
+		1 -> {
+		
+			text0 = "Ancient Teleport Tablets"
+		}
+		2 -> {
+		
+			text0 = "Lunar Teleport Tablets"
+		}
+		3 -> {
+		
+			text0 = "Arceuus Teleport Tablets"
+		}
+	else -> {
+	
+		text0 = "Teleport Tablets"
+	}
+	}
+	~steelborder(component0, text0, 0)
+	return 
+}

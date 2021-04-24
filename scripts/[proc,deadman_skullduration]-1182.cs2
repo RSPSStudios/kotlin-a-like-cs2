@@ -1,0 +1,14 @@
+// 1182 proc
+fun deadman_skullduration(): String {
+
+	if (VARBIT[4854] <= 0) {
+		return ""
+	}
+	if (VARBIT[4854] >= 255) {
+		return "${enum(int, string, enum_1245, VARBIT[4855])} Ages!"
+	}
+	if (calc(VARBIT[4854] % 2) = 1) {
+		return "${enum(int, string, enum_1245, VARBIT[4855])} ${tostring(calc(VARBIT[4854] / 2))}:30"
+	}
+	return "${enum(int, string, enum_1245, VARBIT[4855])} ${tostring(calc(VARBIT[4854] / 2))}:00"
+}

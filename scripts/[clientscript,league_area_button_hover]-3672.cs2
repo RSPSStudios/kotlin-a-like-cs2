@@ -1,0 +1,6 @@
+// 3672 clientscript
+fun league_area_button_hover(component0: Component, boolean1: Boolean, text0: String, colour2: Int) {
+
+	~league_area_button_hover(component0, boolean1, text0, colour2)
+	return 
+}

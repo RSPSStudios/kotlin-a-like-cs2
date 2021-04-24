@@ -1,0 +1,6 @@
+// 3402 clientscript
+fun worldmap_key_toggle_transmit(int0: Int, component1: Component, component2: Component, component3: Component) {
+
+	~worldmap_key_toggle(VARBIT[10294], int0, component1, component2, component3)
+	return 
+}

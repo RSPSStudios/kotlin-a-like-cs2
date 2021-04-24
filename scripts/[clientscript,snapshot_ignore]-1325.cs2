@@ -1,0 +1,11 @@
+// 1325 clientscript
+fun snapshot_ignore(component0: Component) {
+
+	if (VARCINT[140] = 1) {
+		VARCINT[140] = 0
+	} else {
+		VARCINT[140] = 1
+	}
+	~snapshot_toggle(component0, VARCINT[140])
+	return 
+}

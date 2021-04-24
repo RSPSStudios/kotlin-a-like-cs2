@@ -1,0 +1,22 @@
+// 2626 proc
+fun wom_get_tab(count0: Int): Component {
+
+	when (count0): Int {
+		0 -> {
+		
+			return interface_371:9
+		}
+		1 -> {
+		
+			return interface_371:10
+		}
+		2 -> {
+		
+			return interface_371:11
+		}
+	else -> {
+	
+		return null
+	}
+	}
+}

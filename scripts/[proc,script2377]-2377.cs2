@@ -1,0 +1,21 @@
+// 2377 proc
+fun script2377(component0: Component) {
+
+	val enum1: Enum = ~toplevel_getcomponents
+	if (enum1 = enum_1745) {
+		if (VARBIT[6254] = ^false) {
+			if_setposition(58, 172, ^setpos_abs_right, ^setpos_abs_top, component0)
+			if_settextalign(^settextalign_right, ^settextalign_top, 0, component0)
+		} else {
+			if_setposition(-18, 153, ^setpos_abs_right, ^setpos_abs_top, component0)
+			if_settextalign(^settextalign_centre, ^settextalign_top, 0, component0)
+		}
+	} else if (enum(enum, int, enum_1135, enum1) > 0) {
+		if_setposition(-7, 194, ^setpos_abs_right, ^setpos_abs_top, component0)
+		if_settextalign(^settextalign_centre, ^settextalign_top, 0, component0)
+	} else {
+		if_setposition(2, 2, ^setpos_abs_right, ^setpos_abs_bottom, component0)
+		if_settextalign(^settextalign_centre, ^settextalign_top, 0, component0)
+	}
+	return 
+}

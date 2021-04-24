@@ -1,0 +1,8 @@
+// 1282 proc
+fun script1282() {
+
+	if (VARCINT[381] < 0 | VARCINT[381] > 600) {
+		VARCINT[381] = 250
+	}
+	return 
+}

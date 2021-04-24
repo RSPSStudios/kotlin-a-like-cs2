@@ -1,0 +1,18 @@
+// 3149 clientscript
+fun script3149(clock0: Int, int1: Int, component2: Component, component3: Component, component4: Component) {
+
+	if (clientclock < clock0) {
+		return 
+	}
+	~script3150(int1, component3)
+	if (int1 > -2) {
+		if_setontimer({
+			script3149(calc(clock0 + 50), calc(int1 - 1), component2, component3, component4)
+		}, component2)
+	} else {
+		if_sethide(true, component4)
+		if_sethide(true, component3)
+		if_setontimer(null, component2)
+	}
+	return 
+}

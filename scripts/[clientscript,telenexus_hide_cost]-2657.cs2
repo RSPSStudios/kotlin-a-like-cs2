@@ -1,0 +1,6 @@
+// 2657 clientscript
+fun telenexus_hide_cost(component0: Component, component1: Component, comsubid2: Int) {
+
+	~telenexus_hide_cost(component0, component1, comsubid2)
+	return 
+}

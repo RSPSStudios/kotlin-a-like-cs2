@@ -1,0 +1,12 @@
+// 433 clientscript
+fun grouping_dropdown(boolean0: Boolean) {
+
+	sound_synth(synth_2266, 1, 0)
+	if (boolean0 = true) {
+		if_sethide(false, interface_76:14)
+	} else {
+		if_sethide(true, interface_76:14)
+	}
+	~grouping_rebuild
+	return 
+}

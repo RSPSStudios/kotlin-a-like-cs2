@@ -1,0 +1,7 @@
+// 3268 clientscript
+fun account_update_tabs() {
+
+	~account_update_display
+	~account_update_tabs(VARBIT[10060])
+	return 
+}

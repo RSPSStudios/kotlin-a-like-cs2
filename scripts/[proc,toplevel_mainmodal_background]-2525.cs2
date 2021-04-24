@@ -1,0 +1,6 @@
+// 2525 proc
+fun toplevel_mainmodal_background(colour0: Int, trans1: Int) {
+
+	VARCINT[172], VARCINT[173] = colour0, trans1
+	return 
+}

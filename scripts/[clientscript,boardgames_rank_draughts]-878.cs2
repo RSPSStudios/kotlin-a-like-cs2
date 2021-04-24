@@ -1,0 +1,6 @@
+// 878 clientscript
+fun boardgames_rank_draughts(component0: Component) {
+
+	if_settext("Rank: ${tostring(VARP[354])}", component0)
+	return 
+}

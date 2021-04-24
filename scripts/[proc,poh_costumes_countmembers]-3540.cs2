@@ -1,0 +1,16 @@
+// 3540 proc
+fun poh_costumes_countmembers(namedobj0: Namedobj): Int {
+
+	val enum1: Enum = enum(obj, enum, enum_3077, namedobj0)
+	if (enum1 = null) {
+		return ~poh_costumes_countalternates(namedobj0)
+	}
+	val count2: Int = enum_getoutputcount(enum1)
+	val int3: Int = 0
+	val count4: Int = 0
+	while (count4 < count2) {
+		int3 = calc(int3 + ~poh_costumes_countalternates(enum(int, namedobj, enum1, count4)))
+		count4 = calc(count4 + 1)
+	}
+	return int3
+}

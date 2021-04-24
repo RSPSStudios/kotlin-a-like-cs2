@@ -1,0 +1,15 @@
+// 646 clientscript
+fun poh_menagerie_toggleroaming(opindex0: Int, component1: Component, comsubid2: Int) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	if (cc_find(component1, comsubid2) = ^true) {
+		cc_setgraphic("options_radio_buttons,0")
+	}
+	if_setontimer({
+		poh_menagerie_setroaming(event_com, comsubid2, calc(clientclock + 35))
+	}, component1)
+	return 
+}

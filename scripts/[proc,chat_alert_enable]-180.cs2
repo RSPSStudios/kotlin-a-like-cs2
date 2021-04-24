@@ -1,0 +1,18 @@
+// 180 proc
+fun chat_alert_enable(int0: Int) {
+
+	if (int0 = VARCINT[41]) {
+		return 
+	}
+	if (int0 = 3 & VARP[287] = 1 & (VARCINT[41] ! 1337 | VARBIT[4089] = 0)) {
+		return 
+	}
+	if (~chat_alert_get(int0) > 24) {
+		return 
+	}
+	~chat_alert_set(int0, 249)
+	if_setontimer({
+		chat_alert_flash(int0)
+	}, enum(int, component, enum_683, int0))
+	return 
+}

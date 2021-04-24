@@ -1,0 +1,6 @@
+// 1963 clientscript
+fun script1963(component0: Component, op0: String, boolean1: Boolean, boolean2: Boolean) {
+
+	~script1964(component0, op0, boolean1, boolean2)
+	return 
+}

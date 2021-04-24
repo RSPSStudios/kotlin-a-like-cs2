@@ -1,0 +1,17 @@
+// 583 clientscript
+fun clanwars_setup_togglebox_op(opindex0: Int, component1: Component, comsubid2: Int, index3: Int) {
+
+	if (opindex0 ! 1 | index3 < 0 | index3 >= 32) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	if (testbit(VARP[92], index3) = ^true) {
+		VARP[92] = clearbit(VARP[92], index3)
+	} else {
+		VARP[92] = setbit(VARP[92], index3)
+	}
+	if (cc_find(component1, calc(comsubid2 + 1)) = ^true & .cc_find(component1, calc(comsubid2 + 2)) = ^true) {
+		~clanwars_setup_togglebox_update(component1, index3)
+	}
+	return 
+}

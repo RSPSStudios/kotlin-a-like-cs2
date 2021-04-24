@@ -1,0 +1,6 @@
+// 338 clientscript
+fun godwars_killcount_bandos(component0: Component) {
+
+	~godwars_killcount(component0, VARBIT[3975])
+	return 
+}

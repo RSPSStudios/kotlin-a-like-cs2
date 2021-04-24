@@ -1,0 +1,8 @@
+// 3325 proc
+fun bonds_hide(): Int {
+
+	if ((clienttype = ^clienttype_ios | clienttype = ^clienttype_android) & VARBIT[10247] = 1) {
+		return 1
+	}
+	return 0
+}

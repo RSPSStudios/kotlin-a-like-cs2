@@ -1,0 +1,9 @@
+// 2363 proc
+fun script2363(int0: Int) {
+
+	if (getwindowmode = ^windowmode_fixed) {
+		return 
+	}
+	VARBIT[11864] = int0
+	return 
+}

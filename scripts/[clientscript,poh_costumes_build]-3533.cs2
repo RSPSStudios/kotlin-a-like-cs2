@@ -1,0 +1,6 @@
+// 3533 clientscript
+fun poh_costumes_build(enum0: Enum, count1: Int, int2: Int, int3: Int, boolean4: Boolean, component5: Component, component6: Component, int7: Int, graphic8: Graphic, component9: Component, comsubid10: Int) {
+
+	~poh_costumes_build(enum0, count1, int2, int3, boolean4, component5, component6, int7, graphic8, component9, comsubid10)
+	return 
+}

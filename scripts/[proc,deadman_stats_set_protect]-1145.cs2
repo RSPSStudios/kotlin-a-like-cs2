@@ -1,0 +1,13 @@
+// 1145 proc
+fun deadman_stats_set_protect(component0: Component, int1: Int) {
+
+	~deadmanprotect_stats_refresh(int1)
+	if (cc_find(component0, 4) = ^true) {
+		cc_sethide(true)
+	}
+	if (cc_find(component0, 5) = ^true) {
+		cc_sethide(true)
+	}
+	if_setop(1, "Unprotect", component0)
+	return 
+}

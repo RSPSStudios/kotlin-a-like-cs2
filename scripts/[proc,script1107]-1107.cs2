@@ -1,0 +1,16 @@
+// 1107 proc
+fun script1107(int0: Int, int1: Int, component2: Component, int3: Int, component4: Component, colour5: Int) {
+
+	if (int0 = 1) {
+		sound_synth(synth_2266, 1, 0)
+		if_sethide(true, interface_676:22)
+		cc_deleteall(interface_676:22)
+		if_sethide(true, component4)
+		~league_setup_display_hoveroff(component2, colour5)
+		if (int1 ! -1) {
+			~script858(interface_676:1, 44302345, interface_676:10, interface_676:11, interface_676:16, interface_676:17, interface_676:18, interface_676:12, interface_676:7, int1)
+			~script1109(component2, int1)
+		}
+	}
+	return 
+}

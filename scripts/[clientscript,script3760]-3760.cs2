@@ -1,0 +1,8 @@
+// 3760 clientscript
+fun script3760(component0: Component, comsubid1: Int, int2: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_setcolour(~script3761(int2))
+	}
+	return 
+}

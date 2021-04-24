@@ -1,0 +1,8 @@
+// 3487 clientscript
+fun death_coffer_resetbutton(clock0: Int, component1: Component, string0: String, component2: Component) {
+
+	if (clientclock >= clock0) {
+		~death_coffer_activebutton(component1, string0, component2)
+	}
+	return 
+}

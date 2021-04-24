@@ -1,0 +1,17 @@
+// 968 clientscript
+fun duel_options_changed(component0: Component, int1: Int) {
+
+	val comsubid2: Int = enum(int, int, enum_1504, int1)
+	val component3: Component = interface_482:116
+	if (int1 >= 14 & int1 <= 27) {
+		component3 = interface_482:91
+	}
+	if (comsubid2 ! -1 & cc_find(component3, comsubid2) = ^true) {
+		cc_sethide(false)
+		cc_setontimer({
+			cc_flasher(component3, comsubid2, clientclock)
+		})
+	}
+	~duel_wait_button(component0, 5)
+	return 
+}

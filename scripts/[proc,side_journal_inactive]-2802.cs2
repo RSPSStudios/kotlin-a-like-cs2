@@ -1,0 +1,8 @@
+// 2802 proc
+fun side_journal_inactive(component0: Component, component1: Component, component2: Component) {
+
+	if_setgraphic("tabs_short,2", component0)
+	if_setgraphic("tabs_short,3", component1)
+	if_setgraphic("tabs_short,2", component2)
+	return 
+}

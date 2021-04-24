@@ -1,0 +1,25 @@
+// 1701 proc
+fun keypress_permit(int0: Int, int1: Int): Int {
+
+	if (VARCINT[187] > clientclock) {
+		return 0
+	}
+	val enum2: Enum = ~toplevel_getcomponents
+	if (if_hassub(enum(component, component, enum2, interface_161:16)) = true) {
+		if (VARCINT[190] = 1 & int1 ! 595) {
+			return 0
+		} else if (VARBIT[9639] = 1 & VARBIT[9638] = 1 & int1 ! 134) {
+			return 0
+		}
+	}
+	if (enum2 = enum_1132 & if_hassub(interface_165:29) = true) {
+		if (int0 = 16) {
+			enum2 = enum2
+		} else if (int1 = 595 & VARCINT[190] = 1) {
+			enum2 = enum2
+		} else {
+			return 0
+		}
+	}
+	return 1
+}

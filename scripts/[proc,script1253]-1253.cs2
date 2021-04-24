@@ -1,0 +1,31 @@
+// 1253 proc
+fun script1253(component0: Component, int1: Int, string0: String, obj2: Obj, obj3: Obj) {
+
+	if_setontimer(null, component0)
+	val obj4: Obj = obj2
+	val text1: String = "<col=ff0000>Not owned</col>"
+	if (int1 >= 3) {
+		if_setop(1, "Take", component0)
+		obj4, text1 = obj3, "<col=00ff00>Complete</col>"
+	} else if (int1 = 2) {
+		if_setop(1, "Take", component0)
+		text1 = "Incomplete"
+	} else if (int1 = 1) {
+		if_setop(1, "Retrieve", component0)
+		text1 = "Missing"
+	} else {
+		if_setop(1, "Unlock", component0)
+	}
+	if_setopbase("<col=ff9040>${oc_name(obj4)}</col>", component0)
+	~script1255(false, component0, string0, text1, obj4)
+	if_setonmouserepeat({
+		script1254(true, component0, string0, text1, obj4)
+	}, component0)
+	if_setonmouseleave({
+		script1254(false, component0, string0, text1, obj4)
+	}, component0)
+	if_setonop({
+		script1256(event_opindex, component0, int1, string0, obj2, obj3, obj4)
+	}, component0)
+	return 
+}

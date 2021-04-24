@@ -1,0 +1,26 @@
+// 2067 proc
+fun v2_stone_button_in(component0: Component): Int {
+
+	cc_deleteall(component0)
+	val width1: Int = if_getwidth(component0)
+	val height2: Int = if_getheight(component0)
+	val x3: Int = calc(width1 - 9)
+	val y4: Int = calc(height2 - 9)
+	val width5: Int = calc(width1 - 18)
+	val height6: Int = calc(height2 - 18)
+	cc_create(component0, ^iftype_rectangle, 0)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	cc_setsize(2, 2, ^setsize_minus, ^setsize_minus)
+	cc_setfill(true)
+	cc_setcolour(0x30201c)
+	cc_settrans(200)
+	~create_graphic(component0, 1, "v2_stone_button_in,0", 0, 0, ^setpos_abs_left, ^setpos_abs_top, 9, 9, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, 2, "v2_stone_button_in,1", x3, 0, ^setpos_abs_left, ^setpos_abs_top, 9, 9, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, 3, "v2_stone_button_in,2", 0, y4, ^setpos_abs_left, ^setpos_abs_top, 9, 9, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, 4, "v2_stone_button_in,3", x3, y4, ^setpos_abs_left, ^setpos_abs_top, 9, 9, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, 5, "v2_stone_button_in,4", 0, 9, ^setpos_abs_left, ^setpos_abs_top, 9, height6, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, 6, "v2_stone_button_in,5", 9, 0, ^setpos_abs_left, ^setpos_abs_top, width5, 9, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, 7, "v2_stone_button_in,6", x3, 9, ^setpos_abs_left, ^setpos_abs_top, 9, height6, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, 8, "v2_stone_button_in,7", 9, y4, ^setpos_abs_left, ^setpos_abs_top, width5, 9, ^setsize_abs, ^setsize_abs)
+	return 9
+}

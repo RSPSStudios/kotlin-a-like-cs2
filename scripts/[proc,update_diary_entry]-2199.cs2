@@ -1,0 +1,98 @@
+// 2199 proc
+fun update_diary_entry(component0: Component, comsubid1: Int, int2: Int) {
+
+	val int3: Int = -1
+	val colour4: Int = ^red
+	int3 = ~area_task_complete(int2)
+	if (~update_diary_entry_grey(int2) = 1) {
+		colour4 = 0x9f9f9f
+	} else if (int3 = 2) {
+		colour4 = 0x0dc10d
+	} else if (int3 = 1) {
+		colour4 = ^yellow
+	} else {
+		colour4 = ^red
+	}
+	val int5: Int = 0
+	val int6: Int = 0
+	val int7: Int = 0
+	val int8: Int = 0
+	val int9: Int = 0
+	val int10: Int = 0
+	val int11: Int = 0
+	val int12: Int = 0
+	val int13: Int = 0
+	val int14: Int = 0
+	val int15: Int = 0
+	val int16: Int = 0
+	val int17: Int = 0
+	val int18: Int = 0
+	int5, int10, int15, int6, int11, int16, int7, int12, int17, int8, int13, int18 = ~diary_completion_info(int2)
+	val int19: Int = 0
+	if (cc_find(component0, calc(comsubid1 + 1)) = ^true) {
+		cc_setcolour(colour4)
+	}
+	if (cc_find(component0, calc(comsubid1 + 2)) = ^true) {
+		int9 = calc(int5 + int6 + int7 + int8)
+		int14 = calc(int10 + int11 + int12 + int13)
+		cc_settext("${tostring(int9)}/${tostring(int14)}")
+		cc_setcolour(colour4)
+	}
+	if (cc_find(component0, calc(comsubid1 + 8)) = ^true) {
+		if (int5 = 0) {
+			int19 = 0
+		} else {
+			int19 = calc(1 + scale(int5, int10, 35 - 1))
+		}
+		int19 = ~min(35, int19)
+		cc_setsize(int19, 5, ^setsize_abs, ^setsize_abs)
+		if (int15 = 1) {
+			cc_setcolour(0x37b514)
+		} else {
+			cc_setcolour(~scale_colour(0xd42e00, 0xd0b000, int19, 35))
+		}
+	}
+	if (cc_find(component0, calc(comsubid1 + 9)) = ^true) {
+		if (int6 = 0) {
+			int19 = 0
+		} else {
+			int19 = calc(1 + scale(int6, int11, 35 - 1))
+		}
+		int19 = ~min(35, int19)
+		cc_setsize(int19, 5, ^setsize_abs, ^setsize_abs)
+		if (int16 = 1) {
+			cc_setcolour(0x37b514)
+		} else {
+			cc_setcolour(~scale_colour(0xd42e00, 0xd0b000, int19, 35))
+		}
+	}
+	if (cc_find(component0, calc(comsubid1 + 10)) = ^true) {
+		if (int7 = 0) {
+			int19 = 0
+		} else {
+			int19 = calc(1 + scale(int7, int12, 35 - 1))
+		}
+		int19 = ~min(35, int19)
+		cc_setsize(int19, 5, ^setsize_abs, ^setsize_abs)
+		if (int17 = 1) {
+			cc_setcolour(0x37b514)
+		} else {
+			cc_setcolour(~scale_colour(0xd42e00, 0xd0b000, int19, 35))
+		}
+	}
+	if (cc_find(component0, calc(comsubid1 + 11)) = ^true) {
+		if (int8 = 0) {
+			int19 = 0
+		} else {
+			int19 = calc(1 + scale(int8, int13, 35 - 1))
+		}
+		int19 = ~min(35, int19)
+		cc_setsize(int19, 5, ^setsize_abs, ^setsize_abs)
+		if (int18 = 1) {
+			cc_setcolour(0x37b514)
+		} else {
+			cc_setcolour(~scale_colour(0xd42e00, 0xd0b000, int19, 35))
+		}
+	}
+	return 
+}

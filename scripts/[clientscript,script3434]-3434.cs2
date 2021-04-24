@@ -1,0 +1,34 @@
+// 3434 clientscript
+fun script3434(index0: Int, component1: Component) {
+
+	val int2: Int = 0
+	val graphic3: Graphic = null
+	val trans4: Int = 0
+	if (cc_find(component1, index0) = ^true) {
+		int2 = ~script3439(index0)
+		trans4 = cc_gettrans
+		if (int2 = 0) {
+			if (trans4 = 1) {
+				graphic3 = "graphic_2543"
+			} else {
+				graphic3 = "graphic_2540"
+			}
+		} else if (int2 = 1) {
+			if (trans4 = 1) {
+				graphic3 = "graphic_2544"
+			} else {
+				graphic3 = "graphic_2541"
+			}
+		} else if (int2 = 2) {
+			if (trans4 = 1) {
+				graphic3 = "graphic_2545"
+			} else {
+				graphic3 = "graphic_2542"
+			}
+		}
+		cc_setgraphic(graphic3)
+		cc_settrans(trans4)
+		~script3435
+	}
+	return 
+}

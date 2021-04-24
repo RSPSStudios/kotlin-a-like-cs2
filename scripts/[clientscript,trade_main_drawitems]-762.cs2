@@ -1,0 +1,6 @@
+// 762 clientscript
+fun trade_main_drawitems(size0: Int, int1: Int, component2: Component, component3: Component, component4: Component, component5: Component) {
+
+	~trade_main_drawitems(size0, int1, component2, component3, component4, component5)
+	return 
+}

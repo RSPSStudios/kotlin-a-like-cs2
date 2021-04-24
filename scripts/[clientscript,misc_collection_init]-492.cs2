@@ -1,0 +1,13 @@
+// 492 clientscript
+fun misc_collection_init(component0: Component, component1: Component, component2: Component) {
+
+	~scrollbar_vertical(component2, component1, "scrollbar_parchment_dragger_v2,3", "scrollbar_parchment_dragger_v2,0", "scrollbar_parchment_dragger_v2,1", "scrollbar_parchment_dragger_v2,2", "scrollbar_parchment_v2,0", "scrollbar_parchment_v2,1")
+	val size3: Int = inv_size(inv_390)
+	val int4: Int = calc(if_getwidth(component1) / 9 - 36)
+	val int5: Int = calc(int4 / 2)
+	~misc_collection_draw(size3, int4, int5, component1, component2)
+	if_setoninvtransmit({
+		misc_collection_draw(size3, int4, int5, component1, component2){inv_390}
+	}, component0)
+	return 
+}

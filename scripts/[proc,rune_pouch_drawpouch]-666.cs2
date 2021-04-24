@@ -1,0 +1,14 @@
+// 666 proc
+fun rune_pouch_drawpouch(component0: Component) {
+
+	if (cc_find(component0, 0) = ^true) {
+		~rune_pouch_drawpouch_slot(enum(int, namedobj, enum_982, VARBIT[29]), VARBIT[1624])
+	}
+	if (cc_find(component0, 1) = ^true) {
+		~rune_pouch_drawpouch_slot(enum(int, namedobj, enum_982, VARBIT[1622]), VARBIT[1625])
+	}
+	if (cc_find(component0, 2) = ^true) {
+		~rune_pouch_drawpouch_slot(enum(int, namedobj, enum_982, VARBIT[1623]), VARBIT[1626])
+	}
+	return 
+}

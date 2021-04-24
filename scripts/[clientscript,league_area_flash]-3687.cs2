@@ -1,0 +1,22 @@
+// 3687 clientscript
+fun league_area_flash(component0: Component, component1: Component, boolean2: Boolean, int3: Int) {
+
+	val int4: Int = 30
+	if_settrans(interpolate(0, 255, 0, int4, int3), component0)
+	if_settrans(interpolate(0, 255, 0, int4, int3), component1)
+	if (boolean2 = true) {
+		if (int3 >= int4) {
+			int3, boolean2 = calc(int3 - 1), false
+		} else {
+			int3 = calc(int3 + 1)
+		}
+	} else if (int3 <= 0) {
+		int3, boolean2 = calc(int3 + 1), true
+	} else {
+		int3 = calc(int3 - 1)
+	}
+	if_setontimer({
+		league_area_flash(component0, component1, boolean2, int3)
+	}, component0)
+	return 
+}

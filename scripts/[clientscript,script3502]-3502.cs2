@@ -1,0 +1,6 @@
+// 3502 clientscript
+fun script3502(component0: Component, boolean1: Boolean, boolean2: Boolean) {
+
+	~script3503(component0, boolean1, boolean2)
+	return 
+}

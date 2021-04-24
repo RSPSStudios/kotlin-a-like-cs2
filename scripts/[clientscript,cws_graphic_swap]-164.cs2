@@ -1,0 +1,10 @@
+// 164 clientscript
+fun cws_graphic_swap(component0: Component, int1: Int) {
+
+	if (~cws_cc_getvar(int1) = 7) {
+		if_setgraphic("warning_icons,2", component0)
+	} else {
+		if_setgraphic("warning_icons,1", component0)
+	}
+	return 
+}

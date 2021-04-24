@@ -1,0 +1,17 @@
+// 952 clientscript
+fun fade_overlay_legacy_update(clock0: Int) {
+
+	if_setcolour(^black, interface_174:1)
+	val int1: Int = calc(clientclock - clock0)
+	if (int1 < 50) {
+		if_settrans(calc(255 - interpolate(0, int1, 0, 50, 255)), interface_174:1)
+	} else if (int1 < 800) {
+		if_settrans(0, interface_174:1)
+	} else if (int1 < 850) {
+		int1 = calc(int1 - 800)
+		if_settrans(interpolate(0, int1, 0, 50, 255), interface_174:1)
+	} else {
+		if_setontimer(null, interface_174:0)
+	}
+	return 
+}

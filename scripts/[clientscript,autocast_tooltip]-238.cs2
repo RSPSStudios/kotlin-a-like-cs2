@@ -1,0 +1,6 @@
+// 238 clientscript
+fun autocast_tooltip(component0: Component, obj1: Obj) {
+
+	~autocast_tooltip(component0, obj1)
+	return 
+}

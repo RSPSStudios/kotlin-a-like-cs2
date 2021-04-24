@@ -1,0 +1,9 @@
+// 2129 clientscript
+fun script2129(clock0: Int, component1: Component, string0: String, component2: Component, component3: Component, component4: Component) {
+
+	if (clientclock < clock0) {
+		return 
+	}
+	~script2125(component1, string0, component2, component3, component4)
+	return 
+}

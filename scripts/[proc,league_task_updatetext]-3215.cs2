@@ -1,0 +1,6 @@
+// 3215 proc
+fun league_task_updatetext(enum0: Enum) {
+
+	cc_settext(enum(int, string, enum0, ~script3210(enum0)))
+	return 
+}

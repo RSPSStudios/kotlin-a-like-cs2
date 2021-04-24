@@ -1,0 +1,6 @@
+// 2880 proc
+fun clanwars_setup_smallbox_updatetext(enum0: Enum) {
+
+	cc_settext(enum(int, string, enum0, ~script572(enum0)))
+	return 
+}

@@ -1,0 +1,24 @@
+// 2331 clientscript
+fun script2331(clock0: Int, int1: Int, component2: Component, comsubid3: Int, string0: String, int4: Int) {
+
+	if (clientclock < clock0) {
+		return 
+	}
+	if (cc_find(component2, comsubid3) = ^true) {
+		cc_setontimer(null)
+		cc_settrans(int4)
+		cc_setonmouserepeat({
+			cc_settrans(event_com, event_comsubid, int4, null)
+		})
+		cc_setonmouseleave({
+			cc_settrans(event_com, event_comsubid, 255, null)
+		})
+		cc_setop(1, "Accept")
+		cc_setop(10, "Reject")
+		cc_setopbase("<col=ff9040>${string0}</col>")
+		cc_setonop({
+			script2330(event_opindex, int1, event_com, event_comsubid, string0, int4)
+		})
+	}
+	return 
+}

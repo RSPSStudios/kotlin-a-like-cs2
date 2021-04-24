@@ -1,0 +1,24 @@
+// 3376 clientscript
+fun tut2_overlay_hint(int0: Int) {
+
+	if_sethide(false, interface_649:6)
+	when (int0): Int {
+		1 -> {
+		
+			~tut2_hint_chatbox
+		}
+		2 -> {
+		
+			~tut2_hint_camera
+		}
+		3 -> {
+		
+			~tut2_hint_move
+		}
+		4 -> {
+		
+			~tut2_hint_interact
+		}
+	}
+	return 
+}

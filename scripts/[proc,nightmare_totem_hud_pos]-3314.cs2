@@ -1,0 +1,10 @@
+// 3314 proc
+fun nightmare_totem_hud_pos(int0: Int, int1: Int, component2: Component, component3: Component, component4: Component, int5: Int, component6: Component, int7: Int, component8: Component, component9: Component, component10: Component, int11: Int, component12: Component, int13: Int, component14: Component, component15: Component, component16: Component, int17: Int, component18: Component, int19: Int, component20: Component, component21: Component, component22: Component, int23: Int, component24: Component, int25: Int, component26: Component, component27: Component, component28: Component) {
+
+	val int29: Int = 0
+	if (~on_mobile = true) {
+		int29 = calc(int29 + 45)
+	}
+	if_setposition(if_getx(component2), int29, ^setpos_abs_left, ^setpos_abs_top, component2)
+	return 
+}

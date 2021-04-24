@@ -1,0 +1,8 @@
+// 2025 clientscript
+fun volcanic_mine_setup_timer() {
+
+	if_setonvartransmit({
+		script2026(interface_611:9, interface_611:8){VARP[1655]}
+	}, interface_611:9)
+	return 
+}

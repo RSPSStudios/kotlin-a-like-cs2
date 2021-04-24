@@ -1,0 +1,32 @@
+// 2601 proc
+fun depositbox_mobile_button_update() {
+
+	~options_button_off(interface_192:11, 0)
+	~options_button_off(interface_192:13, 0)
+	~options_button_off(interface_192:15, 0)
+	~options_button_off(interface_192:17, 0)
+	~options_button_off(interface_192:19, 0)
+	when (VARBIT[4430]): Int {
+		1 -> {
+		
+			~options_button_on(interface_192:13, 0)
+		}
+		2 -> {
+		
+			~options_button_on(interface_192:15, 0)
+		}
+		3 -> {
+		
+			~options_button_on(interface_192:17, 0)
+		}
+		4 -> {
+		
+			~options_button_on(interface_192:19, 0)
+		}
+	else -> {
+	
+		~options_button_on(interface_192:11, 0)
+	}
+	}
+	return 
+}

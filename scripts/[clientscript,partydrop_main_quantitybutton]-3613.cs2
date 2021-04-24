@@ -1,0 +1,6 @@
+// 3613 clientscript
+fun partydrop_main_quantitybutton(boolean0: Boolean, boolean1: Boolean, component2: Component, string0: String) {
+
+	~partydrop_main_quantitybutton(boolean0, boolean1, component2, string0)
+	return 
+}

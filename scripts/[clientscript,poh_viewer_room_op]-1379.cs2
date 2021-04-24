@@ -1,0 +1,13 @@
+// 1379 clientscript
+fun poh_viewer_room_op(opindex0: Int, component1: Component, int2: Int) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	VARBIT[5329] = int2
+	if (cc_find(component1, 2) = ^true) {
+		~poh_viewer_room_indicator(int2)
+	}
+	return 
+}

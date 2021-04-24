@@ -1,0 +1,26 @@
+// 1023 clientscript
+fun script1023(opindex0: Int, int1: Int, stat2: Stat, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component, component16: Component, component17: Component, component18: Component, component19: Component, component20: Component, component21: Component, component22: Component, component23: Component, component24: Component) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	val int25: Int = 0
+	val int26: Int = 0
+	if (int1 = -1) {
+		VARBIT[4703] = 0
+	} else {
+		VARBIT[4703] = calc(int1 + 1)
+		int25, int26 = ~xpdrops_data_get(stat2)
+		if (int26 = -1) {
+			VARBIT[4704] = 1
+		} else if (int26 > int25) {
+			VARBIT[4704] = 2
+		} else {
+			VARBIT[4704] = 0
+		}
+		VARP[261], VARP[262] = int25, int26
+	}
+	~script1026(component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24)
+	return 
+}

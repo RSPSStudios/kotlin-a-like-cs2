@@ -1,0 +1,18 @@
+// 1049 proc
+fun zoom_position_slider() {
+
+	val int0: Int = calc(896 - 128)
+	val int1: Int = calc(896 - 128)
+	val int2: Int = calc(if_getwidth(interface_116:59) - if_getwidth(interface_116:60))
+	val int3: Int = 0
+	val int4: Int = 0
+	int3, int4 = viewport_geteffectivesize
+	val x5: Int = 0
+	if (int3 > 334) {
+		x5 = calc((VARCINT[74] - 128) * int2 / int0)
+	} else {
+		x5 = calc((VARCINT[73] - 128) * int2 / int1)
+	}
+	if_setposition(x5, 0, ^setpos_abs_left, ^setpos_abs_top, interface_116:60)
+	return 
+}

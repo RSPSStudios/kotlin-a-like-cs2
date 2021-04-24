@@ -1,0 +1,11 @@
+// 2689 clientscript
+fun script2689(opindex0: Int, int1: Int, int2: Int) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	VARP[261] = calc(int1 + 1)
+	~script2690(int2)
+	return 
+}

@@ -1,0 +1,9 @@
+// 2607 clientscript
+fun script2607(opindex0: Int, component1: Component, comsubid2: Int) {
+
+	if (opindex0 = 1 & cc_find(component1, comsubid2) = ^true) {
+		sound_synth(synth_2266, 1, 0)
+		~script2608(1)
+	}
+	return 
+}

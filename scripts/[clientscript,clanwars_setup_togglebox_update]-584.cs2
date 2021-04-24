@@ -1,0 +1,8 @@
+// 584 clientscript
+fun clanwars_setup_togglebox_update(component0: Component, comsubid1: Int, index2: Int) {
+
+	if (cc_find(component0, calc(comsubid1 + 1)) = ^true & .cc_find(component0, calc(comsubid1 + 2)) = ^true) {
+		~clanwars_setup_togglebox_update(component0, index2)
+	}
+	return 
+}

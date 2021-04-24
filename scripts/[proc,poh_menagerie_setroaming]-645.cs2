@@ -1,0 +1,11 @@
+// 645 proc
+fun poh_menagerie_setroaming(component0: Component) {
+
+	if (VARBIT[2013] = 1) {
+		cc_setgraphic("options_radio_buttons,1")
+	} else {
+		cc_setgraphic("options_radio_buttons,2")
+	}
+	if_setontimer(null, component0)
+	return 
+}

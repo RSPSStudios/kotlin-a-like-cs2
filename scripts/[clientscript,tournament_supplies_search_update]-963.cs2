@@ -1,0 +1,10 @@
+// 963 clientscript
+fun tournament_supplies_search_update(component0: Component, component1: Component, component2: Component, string0: String, int3: Int, int4: Int) {
+
+	if (~bankmain_searching = 0) {
+		~tournament_supplies_search_off(component0, component1, component2, int3, int4)
+	} else if (compare(VARCSTRING[359], string0) ! 0) {
+		~tournament_supplies_search_on(component0, component1, component2, int3, int4)
+	}
+	return 
+}

@@ -1,0 +1,13 @@
+// 292 clientscript
+fun bankmain_depositall(component0: Component, graphic1: Graphic, graphic2: Graphic, opindex3: Int) {
+
+	if (opindex3 ! 1) {
+		return 
+	}
+	if_setgraphic(graphic1, component0)
+	sound_synth(synth_2266, 1, 0)
+	if_setontimer({
+		bankmain_depositall_end(event_com, graphic2, calc(clientclock + 20))
+	}, component0)
+	return 
+}

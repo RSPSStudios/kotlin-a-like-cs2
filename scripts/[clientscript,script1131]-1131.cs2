@@ -1,0 +1,81 @@
+// 1131 clientscript
+fun script1131(int0: Int) {
+
+	val component1: Component = ship_journey:6
+	val component2: Component = ship_journey:19
+	if_setmodel(war_ship_3065, component1)
+	val text0: String = "You Journey on the ship...."
+	if_setmodelorthog(false, component1)
+	when (int0): Int {
+		1 -> {
+		
+			if_setmodelanim(seq_632, component1)
+			text0 = "You sail to Entrana."
+		}
+		2 -> {
+		
+			if_setmodelanim(seq_633, component1)
+			text0 = "You sail to Port Sarim."
+		}
+		3 -> {
+		
+			if_setmodelanim(seq_630, component1)
+			text0 = "You sail to Crandor."
+		}
+		4 -> {
+		
+			if_setmodelanim(seq_634, component1)
+			text0 = "You sail to Karamja."
+		}
+		5 -> {
+		
+			if_setmodelanim(seq_635, component1)
+			text0 = "You sail to Port Sarim."
+		}
+		6 -> {
+		
+			if_setmodelorthog(true, component1)
+			if_setmodelanim(seq_638, component1)
+			text0 = "You sail to Port Khazard."
+		}
+		7 -> {
+		
+			if_setmodelanim(seq_639, component1)
+			text0 = "You sail out to Sea."
+		}
+		8 -> {
+		
+			if_setmodelanim(seq_640, component1)
+			text0 = "You sail back to Port Khazard."
+		}
+		9 -> {
+		
+			if_setmodelanim(seq_641, component1)
+			text0 = "You sail to Port Sarim."
+		}
+		10 -> {
+		
+			if_setmodelanim(seq_3545, component1)
+			text0 = "You sail to the Void Knight outpost."
+		}
+		11 -> {
+		
+			if_setmodelanim(seq_3546, component1)
+			text0 = "You sail to Port Sarim."
+		}
+		12 -> {
+		
+			if_setmodel(model_13370, component1)
+			if_setmodelanim(seq_3476, component1)
+			text0 = "You're ogre propelled to the beach of Karamja!"
+		}
+		13 -> {
+		
+			if_setmodel(model_13371, component1)
+			if_setmodelanim(seq_3477, component1)
+			text0 = "You're ogre propelled to the Feldip Hills!"
+		}
+	}
+	if_settext(text0, component2)
+	return 
+}

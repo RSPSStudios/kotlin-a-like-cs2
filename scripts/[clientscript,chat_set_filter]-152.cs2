@@ -1,0 +1,7 @@
+// 152 clientscript
+fun chat_set_filter(int0: Int, chatfilter1: Int) {
+
+	~chat_set_filter(int0, chatfilter1)
+	~script113
+	return 
+}

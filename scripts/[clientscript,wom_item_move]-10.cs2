@@ -1,0 +1,8 @@
+// 10 clientscript
+fun wom_item_move(comsubid0: Int, component1: Component, drop2: Component) {
+
+	if (drop2 = interface_371:22 & cc_find(component1, comsubid0) = ^true) {
+		~chatdefault_opt_item
+	}
+	return 
+}

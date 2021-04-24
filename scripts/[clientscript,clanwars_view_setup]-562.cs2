@@ -1,0 +1,6 @@
+// 562 clientscript
+fun clanwars_view_setup(int0: Int, model1: Model) {
+
+	~clanwars_view_setup(int0, model1)
+	return 
+}

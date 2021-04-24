@@ -1,0 +1,68 @@
+// 1203 clientscript
+fun zeah_favour_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component) {
+
+	int0[48]: Int
+	val int13: Int = 0
+	val int14: Int = 0
+	while (int14 < 48) {
+		int13 = calc(int14 + 1)
+		int0[int14] = int13
+		int14 = calc(int14 + 1)
+	}
+	~zeah_favour_sort(int0, 0, calc(48 - 1))
+	if (VARCINT[79] ! 3 & VARCINT[79] ! 2 & VARCINT[79] ! 4 & VARCINT[79] ! 5 & VARCINT[79] ! 1) {
+		VARCINT[79] = 3
+	}
+	val int15: Int = calc(parawidth("Favour", 512, b12_full) + 15)
+	cc_deleteall(component8)
+	cc_deleteall(component9)
+	cc_deleteall(component10)
+	cc_deleteall(component11)
+	cc_deleteall(component12)
+	val int16: Int = 0
+	val int17: Int = 0
+	val int18: Int = 0
+	val int19: Int = 0
+	val int20: Int = 0
+	val int21: Int = 0
+	val int22: Int = 0
+	val int23: Int = 0
+	val int24: Int = 0
+	val int25: Int = 0
+	int16, int21 = ~zeah_favour_init_list(int15, int16, int21, 3, VARBIT[4896], component8)
+	int17, int22 = ~zeah_favour_init_list(int15, int17, int22, 2, VARBIT[4895], component9)
+	int18, int23 = ~zeah_favour_init_list(int15, int18, int23, 4, VARBIT[4898], component10)
+	int19, int24 = ~zeah_favour_init_list(int15, int19, int24, 5, VARBIT[4899], component11)
+	int20, int25 = ~zeah_favour_init_list(int15, int20, int25, 1, VARBIT[4894], component12)
+	val int26: Int = 0
+	int14 = 0
+	while (int14 < 48) {
+		int13 = int0[int14]
+		int26 = enum(int, int, enum_1269, int13)
+		if (int26 = 3) {
+			int16, int21 = ~zeah_favour_add_list(int15, int16, int21, VARBIT[4896], int13, int26, component8)
+		} else if (int26 = 2) {
+			int17, int22 = ~zeah_favour_add_list(int15, int17, int22, VARBIT[4895], int13, int26, component9)
+		} else if (int26 = 4) {
+			int18, int23 = ~zeah_favour_add_list(int15, int18, int23, VARBIT[4898], int13, int26, component10)
+		} else if (int26 = 5) {
+			int19, int24 = ~zeah_favour_add_list(int15, int19, int24, VARBIT[4899], int13, int26, component11)
+		} else if (int26 = 1) {
+			int20, int25 = ~zeah_favour_add_list(int15, int20, int25, VARBIT[4894], int13, int26, component12)
+		}
+		int14 = calc(int14 + 1)
+	}
+	if_setsize(0, int21, ^setsize_minus, ^setsize_abs, component8)
+	if_setsize(0, int22, ^setsize_minus, ^setsize_abs, component9)
+	if_setsize(0, int23, ^setsize_minus, ^setsize_abs, component10)
+	if_setsize(0, int24, ^setsize_minus, ^setsize_abs, component11)
+	if_setsize(0, int25, ^setsize_minus, ^setsize_abs, component12)
+	~scrollbar_vertical(component1, component0, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+	~zeah_favour_init_tab(3, component3, component2)
+	~zeah_favour_init_tab(2, component4, component2)
+	~zeah_favour_init_tab(4, component5, component2)
+	~zeah_favour_init_tab(5, component6, component2)
+	~zeah_favour_init_tab(1, component7, component2)
+	~zeah_favour_set_tab(component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12)
+	return 
+}

@@ -1,0 +1,7 @@
+// 390 clientscript
+fun combat_wilderness_transmit(int0: Int) {
+
+	VARCINT[53] = int0
+	~pvp_icons_layout
+	return 
+}

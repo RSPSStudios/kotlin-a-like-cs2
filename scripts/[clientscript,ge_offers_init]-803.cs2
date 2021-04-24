@@ -1,0 +1,28 @@
+// 803 clientscript
+fun ge_offers_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component) {
+
+	val comsubid14: Int = ~steelborder(component1, "", 0)
+	~ge_offers_index_inittop(component5)
+	val int15: Int = 0
+	val component16: Component = enum(int, component, enum_245, int15)
+	while (component16 ! null) {
+		~ge_offers_index_initslot(component1, comsubid14, component3, component4, component6, component10, component16, int15, component13)
+		int15 = calc(int15 + 1)
+		component16 = enum(int, component, enum_245, int15)
+	}
+	~script819(component6, component7, component8)
+	~script816(component9)
+	~ge_offers_setup_init(component10, component11, component12)
+	~ge_offers_switchpanel(component1, comsubid14, component3, component4, component6, component10, component13)
+	if_setonvartransmit({
+		ge_offers_switchpanel(component1, comsubid14, component3, component4, component6, component10, component13){VARP[375]}
+	}, component0)
+	if_setonstocktransmit({
+		ge_offers_switchpanel(component1, comsubid14, component3, component4, component6, component10, component13)
+	}, component0)
+	if_setonop({
+		script805(event_opindex, -1, -1, component1, comsubid14, component3, component4, component6, component10, component13)
+	}, component3)
+	~ge_offers_bigbutton(component2, "History", 0)
+	return 
+}

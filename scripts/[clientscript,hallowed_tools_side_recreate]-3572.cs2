@@ -1,0 +1,6 @@
+// 3572 clientscript
+fun hallowed_tools_side_recreate(component0: Component, obj1: Obj, text0: String, boolean2: Boolean) {
+
+	~hallowed_tools_side_recreate(component0, obj1, text0, boolean2)
+	return 
+}

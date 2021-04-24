@@ -1,0 +1,6 @@
+// 2572 clientscript
+fun tutorial_displayname_border(component0: Component, text0: String) {
+
+	~steelborder(component0, text0, 1)
+	return 
+}

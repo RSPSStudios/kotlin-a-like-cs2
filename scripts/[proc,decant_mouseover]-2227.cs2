@@ -1,0 +1,7 @@
+// 2227 proc
+fun decant_mouseover(component0: Component, boolean1: Boolean, obj2: Obj, string0: String, string1: String) {
+
+	cc_deleteall(component0)
+	~decant_button(component0, boolean1, obj2, string0, string1)
+	return 
+}

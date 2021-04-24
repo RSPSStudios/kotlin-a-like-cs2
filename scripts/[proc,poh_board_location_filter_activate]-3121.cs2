@@ -1,0 +1,20 @@
+// 3121 proc
+fun poh_board_location_filter_activate(component0: Component, component1: Component, component2: Component) {
+
+	val int3: Int = 25
+	if (~on_mobile = true) {
+		int3 = 35
+	}
+	~poh_board_location_filter_build(component0, component1)
+	~poh_board_redraw
+	val height4: Int = calc(VARCINT[377] * int3)
+	if (height4 > if_getheight(interface_52:7)) {
+		if_setscrollsize(0, height4, interface_52:7)
+		~scrollbar_resize(interface_52:20, interface_52:7, VARCINT[378])
+	} else {
+		if_setscrollsize(0, 0, interface_52:7)
+		~scrollbar_resize(interface_52:20, interface_52:7, 0)
+		VARCINT[378] = 0
+	}
+	return 
+}

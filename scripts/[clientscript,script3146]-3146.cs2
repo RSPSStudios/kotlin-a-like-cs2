@@ -1,0 +1,17 @@
+// 3146 clientscript
+fun script3146(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component) {
+
+	~script3524(component1)
+	if_setonvartransmit({
+		script3523(component1){VARP[261]}
+	}, component1)
+	val height6: Int = ~script3527(-1, component0, component2, component4, component5)
+	if_setscrollpos(0, 0, component2)
+	if (height6 >= if_getheight(component2)) {
+		if_setscrollsize(0, height6, component2)
+	} else {
+		if_setscrollsize(0, 0, component2)
+	}
+	~scrollbar_vertical(component3, component2, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
+	return 
+}

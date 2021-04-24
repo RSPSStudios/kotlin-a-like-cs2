@@ -1,0 +1,9 @@
+// 695 clientscript
+fun makeovermage_colour_init(component0: Component) {
+
+	~makeovermage_colour_update(component0)
+	if_setonvartransmit({
+		makeovermage_colour_update(component0){VARP[262], VARP[429], VARP[1664]}
+	}, component0)
+	return 
+}

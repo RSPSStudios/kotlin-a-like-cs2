@@ -1,0 +1,6 @@
+// 3083 clientscript
+fun br_reward_shop_showpoints(component0: Component) {
+
+	~br_reward_shop_showpoints(component0)
+	return 
+}

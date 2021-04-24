@@ -1,0 +1,81 @@
+// 37 proc
+fun scrollbar_vertical_doscroll(component0: Component, component1: Component, int2: Int, boolean3: Boolean) {
+
+	val int4: Int = ~max(calc(if_getscrollheight(component1) - if_getheight(component1)), 1)
+	int2 = ~max(~min(int2, int4), 0)
+	if_setscrollpos(0, int2, component1)
+	when (component1): Component {
+		interface_162:59 -> {
+		
+			VARCINT[7] = if_getscrolly(component1)
+		}
+		interface_399:5 -> {
+		
+			VARCINT[10] = if_getscrolly(component1)
+		}
+		interface_239:3 -> {
+		
+			VARCINT[75] = if_getscrolly(component1)
+		}
+		interface_429:11 -> {
+		
+			VARCINT[9] = if_getscrolly(component1)
+		}
+		interface_12:12 -> {
+		
+			VARCINT[51] = if_getscrolly(component1)
+		}
+		interface_381:7 -> {
+		
+			VARCINT[0] = if_getscrolly(component1)
+		}
+		interface_69:15 -> {
+		
+			VARCINT[69] = if_getscrolly(component1)
+		}
+		interface_675:4, interface_458:3 -> {
+		
+			VARCINT[58] = if_getscrolly(component1)
+		}
+		poll_results:11, interface_400:10 -> {
+		
+			VARCINT[63] = if_getscrolly(component1)
+		}
+		interface_92:4 -> {
+		
+			VARCINT[203] = if_getscrolly(component1)
+		}
+		interface_179:5 -> {
+		
+			VARCINT[77] = if_getscrolly(component1)
+		}
+		interface_75:2 -> {
+		
+			VARCINT[80] = if_getscrolly(component1)
+		}
+		interface_129:13 -> {
+		
+			VARCINT[138] = if_getscrolly(component1)
+		}
+		interface_499:14, interface_507:11, interface_500:10 -> {
+		
+			VARCINT[179] = if_getscrolly(component1)
+		}
+		interface_595:19 -> {
+		
+			VARCINT[182] = if_getscrolly(component1)
+		}
+		interface_631:11 -> {
+		
+			VARCINT[376] = if_getscrolly(component1)
+		}
+		interface_52:20 -> {
+		
+			VARCINT[378] = if_getscrolly(component1)
+		}
+	}
+	if (boolean3 = true) {
+		~scrollbar_vertical_setdragger(component0, component1)
+	}
+	return 
+}

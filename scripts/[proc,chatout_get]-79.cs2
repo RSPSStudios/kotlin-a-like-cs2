@@ -1,0 +1,90 @@
+// 79 proc
+fun chatout_get(int0: Int): String {
+
+	when (int0): Int {
+		0 -> {
+		
+			return VARCSTRING[336]
+		}
+		1 -> {
+		
+			return VARCSTRING[337]
+		}
+		2 -> {
+		
+			return VARCSTRING[338]
+		}
+		3 -> {
+		
+			return VARCSTRING[339]
+		}
+		4 -> {
+		
+			return VARCSTRING[340]
+		}
+		5 -> {
+		
+			return VARCSTRING[341]
+		}
+		6 -> {
+		
+			return VARCSTRING[342]
+		}
+		7 -> {
+		
+			return VARCSTRING[343]
+		}
+		8 -> {
+		
+			return VARCSTRING[344]
+		}
+		9 -> {
+		
+			return VARCSTRING[345]
+		}
+		10 -> {
+		
+			return VARCSTRING[346]
+		}
+		11 -> {
+		
+			return VARCSTRING[347]
+		}
+		12 -> {
+		
+			return VARCSTRING[348]
+		}
+		13 -> {
+		
+			return VARCSTRING[349]
+		}
+		14 -> {
+		
+			return VARCSTRING[350]
+		}
+		15 -> {
+		
+			return VARCSTRING[351]
+		}
+		16 -> {
+		
+			return VARCSTRING[352]
+		}
+		17 -> {
+		
+			return VARCSTRING[353]
+		}
+		18 -> {
+		
+			return VARCSTRING[354]
+		}
+		19 -> {
+		
+			return VARCSTRING[355]
+		}
+	else -> {
+	
+		return ""
+	}
+	}
+}

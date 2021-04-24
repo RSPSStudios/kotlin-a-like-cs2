@@ -1,0 +1,77 @@
+// 2104 clientscript
+fun ds2_fossil_map_init(component0: Component, component1: Component) {
+
+	cc_deleteall(component1)
+	val int2: Int = 0
+	while (int2 < 36) {
+		cc_create(component1, ^iftype_model, int2)
+		cc_setposition(calc(50 * (int2 % 6)), calc(50 * (int2 / 6)), ^setpos_abs_left, ^setpos_abs_top)
+		cc_setsize(50, 50, ^setsize_abs, ^setsize_abs)
+		when (int2): Int {
+			4 -> {
+			
+				cc_setmodel(model_35079)
+				cc_setmodelangle(0, 0, 512, 0, 0, 625)
+				cc_setop(10, "Check")
+				cc_setonop({
+					ds2_fossil_map_stuck(event_opindex, 1024)
+				})
+			}
+			17 -> {
+			
+				cc_setmodel(model_35075)
+				cc_setmodelangle(0, 0, 512, 0, 0, 625)
+				cc_setop(10, "Check")
+				cc_setonop({
+					ds2_fossil_map_stuck(event_opindex, 1024)
+				})
+			}
+			18 -> {
+			
+				cc_setmodel(model_35067)
+				cc_setmodelangle(0, 0, 512, 0, 0, 625)
+				cc_setop(10, "Check")
+				cc_setonop({
+					ds2_fossil_map_stuck(event_opindex, 1024)
+				})
+			}
+			20 -> {
+			
+				cc_setmodel(model_35082)
+				cc_setmodelangle(0, 0, 512, 0, 0, 625)
+				cc_setop(10, "Check")
+				cc_setonop({
+					ds2_fossil_map_stuck(event_opindex, 1024)
+				})
+			}
+			30 -> {
+			
+				cc_setmodel(model_35079)
+				cc_setmodelangle(0, 0, 512, 0, 0, 625)
+				cc_setop(10, "Check")
+				cc_setonop({
+					ds2_fossil_map_stuck(event_opindex, 1024)
+				})
+			}
+		else -> {
+		
+			cc_setop(1, "Rotate-right")
+			cc_setop(2, "Rotate-left")
+			cc_setonop({
+				ds2_fossil_map_rotate(event_opindex, event_com, event_comsubid)
+			})
+			cc_setdragdeadzone(5)
+			cc_setdragdeadtime(5)
+			cc_setondragcomplete({
+				ds2_fossil_map_swap(event_com, event_comsubid, event_drop, event_dropsubid)
+			})
+		}
+		}
+		int2 = calc(int2 + 1)
+	}
+	~ds2_fossil_map_redraw(component1)
+	if_setonvartransmit({
+		ds2_fossil_map_redraw(component1){VARP[831], VARP[832], VARP[833], VARP[858], VARP[859], VARP[860], VARP[861]}
+	}, component0)
+	return 
+}

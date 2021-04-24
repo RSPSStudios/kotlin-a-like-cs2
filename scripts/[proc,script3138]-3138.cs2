@@ -1,0 +1,13 @@
+// 3138 proc
+fun script3138(component0: Component, int1: Int, int2: Int) {
+
+	cc_create(component0, ^iftype_graphic, int1)
+	cc_setposition(calc(1 + 28 * int1), 1, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setsize(27, 27, ^setsize_abs, ^setsize_abs)
+	val graphic3: Graphic = enum(int, graphic, enum_1386, int2)
+	if (graphic3 ! null) {
+		cc_setgraphic(graphic3)
+	}
+	cc_setfill(true)
+	return 
+}

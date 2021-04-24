@@ -1,0 +1,8 @@
+// 1573 clientscript
+fun raids_partylist_clicksort(int0: Int) {
+
+	sound_synth(synth_2266, 1, 0)
+	VARCINT[180] = int0
+	~raids_partylist_setsort
+	return 
+}

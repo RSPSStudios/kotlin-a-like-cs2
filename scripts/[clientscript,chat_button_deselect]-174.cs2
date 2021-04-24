@@ -1,0 +1,9 @@
+// 174 clientscript
+fun chat_button_deselect(int0: Int) {
+
+	if (VARCINT[42] = int0) {
+		VARCINT[42] = -1
+		~redraw_chat_buttons
+	}
+	return 
+}

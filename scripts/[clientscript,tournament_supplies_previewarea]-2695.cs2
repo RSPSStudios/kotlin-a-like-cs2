@@ -1,0 +1,6 @@
+// 2695 clientscript
+fun tournament_supplies_previewarea(component0: Component) {
+
+	~tournament_supplies_previewarea(component0)
+	return 
+}

@@ -1,0 +1,8 @@
+// 2809 clientscript
+fun script2809(component0: Component, graphic1: Graphic) {
+
+	if (~on_mobile = false) {
+		if_setgraphic(graphic1, component0)
+	}
+	return 
+}

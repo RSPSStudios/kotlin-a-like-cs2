@@ -1,0 +1,6 @@
+// 1514 clientscript
+fun raids_fader_update(int0: Int, int1: Int, int2: Int, component3: Component) {
+
+	~raids_fader_update(int0, int1, int2, component3)
+	return 
+}

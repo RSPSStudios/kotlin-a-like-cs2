@@ -1,0 +1,31 @@
+// 2970 proc
+fun adventurepath_set_task_focus(int0: Int, int1: Int) {
+
+	val int2: Int = enum(int, int, enum_2837, int1)
+	if (int0 ! 0) {
+		int0 = calc(int0 - int2)
+	}
+	when (int1): Int {
+		0 -> {
+		
+			VARBIT[9325] = int0
+		}
+		1 -> {
+		
+			VARBIT[10158] = int0
+		}
+		2 -> {
+		
+			VARBIT[10509] = int0
+		}
+		3 -> {
+		
+			VARBIT[10511] = int0
+		}
+		4 -> {
+		
+			VARBIT[10513] = int0
+		}
+	}
+	return 
+}

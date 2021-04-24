@@ -1,0 +1,8 @@
+// 1532 clientscript
+fun script1532(component0: Component, comsubid1: Int, text0: String) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		~script1533(component0, text0)
+	}
+	return 
+}

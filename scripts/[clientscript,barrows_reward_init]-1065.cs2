@@ -1,0 +1,10 @@
+// 1065 clientscript
+fun barrows_reward_init(component0: Component) {
+
+	val size1: Int = inv_size(inv_141)
+	~barrows_reward_draw(component0, size1)
+	if_setoninvtransmit({
+		barrows_reward_draw(component0, size1){inv_141}
+	}, component0)
+	return 
+}

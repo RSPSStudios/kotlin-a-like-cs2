@@ -1,0 +1,6 @@
+// 1500 clientscript
+fun script1500(component0: Component, boolean1: Boolean) {
+
+	~script1501(component0, boolean1)
+	return 
+}

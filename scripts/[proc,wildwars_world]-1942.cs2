@@ -1,0 +1,5 @@
+// 1942 proc
+fun wildwars_world(): Int {
+
+	return 0
+}

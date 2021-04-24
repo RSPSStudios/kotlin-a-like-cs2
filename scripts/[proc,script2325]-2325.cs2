@@ -1,0 +1,10 @@
+// 2325 proc
+fun script2325(string0: String, int0: Int) {
+
+	if (int0 > 0) {
+		cc_settext("${string0}: <col=ffffff>${tostring(int0)}</col>")
+	} else {
+		cc_settext("${string0}: ---")
+	}
+	return 
+}

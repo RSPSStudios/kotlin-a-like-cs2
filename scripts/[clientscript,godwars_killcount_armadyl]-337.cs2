@@ -1,0 +1,6 @@
+// 337 clientscript
+fun godwars_killcount_armadyl(component0: Component) {
+
+	~godwars_killcount(component0, VARBIT[3973])
+	return 
+}

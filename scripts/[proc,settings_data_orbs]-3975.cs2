@@ -1,0 +1,9 @@
+// 3975 proc
+fun settings_data_orbs() {
+
+	if (~on_mobile = true) {
+		return 
+	}
+	VARBIT[4084] = calc(1 - VARBIT[4084])
+	return 
+}

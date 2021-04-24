@@ -1,0 +1,15 @@
+// 1486 proc
+fun script1486(component0: Component, setposh1: Int, int2: Int, int3: Int) {
+
+	if (component0 = null) {
+		return 
+	}
+	~script2510(component0, setposh1, int2, int3)
+	if_setonvartransmit({
+		script2509(component0, setposh1, int2, int3){VARP[1055], VARP[1227]}
+	}, component0)
+	if_setonsubchange({
+		script2509(component0, setposh1, int2, int3)
+	}, component0)
+	return 
+}

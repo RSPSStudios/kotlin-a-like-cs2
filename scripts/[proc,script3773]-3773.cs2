@@ -1,0 +1,14 @@
+// 3773 proc
+fun script3773(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component) {
+
+	if_setmodel(enum(int, model, enum_1546, VARBIT[9585]), component1)
+	if_setmodel(enum(int, model, enum_1546, calc((VARBIT[9585] + 1) % 4)), component2)
+	if_setmodel(enum(int, model, enum_1546, calc((VARBIT[9585] + 3) % 4)), component0)
+	if_setmodel(enum(int, model, enum_1546, VARBIT[9593]), component4)
+	if_setmodel(enum(int, model, enum_1546, calc((VARBIT[9593] + 1) % 4)), component5)
+	if_setmodel(enum(int, model, enum_1546, calc((VARBIT[9593] + 3) % 4)), component3)
+	if_setmodel(enum(int, model, enum_1546, VARBIT[9594]), component7)
+	if_setmodel(enum(int, model, enum_1546, calc((VARBIT[9594] + 1) % 4)), component8)
+	if_setmodel(enum(int, model, enum_1546, calc((VARBIT[9594] + 3) % 4)), component6)
+	return 
+}

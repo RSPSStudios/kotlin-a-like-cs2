@@ -1,0 +1,8 @@
+// 1045 proc
+fun max(int0: Int, int1: Int): Int {
+
+	if (int0 > int1) {
+		return int0
+	}
+	return int1
+}

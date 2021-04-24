@@ -1,0 +1,14 @@
+// 845 clientscript
+fun soul_wars_rewards_select(int0: Int, component1: Component, component2: Component, component3: Component, int4: Int, opindex5: Int, component6: Component, component7: Component) {
+
+	if (opindex5 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	val y8: Int = 0
+	if (int4 = 1 | int4 = 2) {
+		y8 = if_getscrolly(component1)
+	}
+	~soul_wars_rewards_select(int0, component1, component2, component3, int4, y8, component6, component7)
+	return 
+}

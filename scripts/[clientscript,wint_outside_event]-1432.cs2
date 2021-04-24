@@ -1,0 +1,7 @@
+// 1432 clientscript
+fun wint_outside_event() {
+
+	if_sethide(true, interface_396:4)
+	if_sethide(true, interface_396:16)
+	return 
+}

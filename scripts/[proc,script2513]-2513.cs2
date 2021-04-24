@@ -1,0 +1,26 @@
+// 2513 proc
+fun script2513(component0: Component, clock1: Int) {
+
+	val enum2: Enum = null
+	val width3: Int = 0
+	if (clock1 ! VARCINT[222]) {
+		enum2 = ~toplevel_getcomponents
+		if (enum2 = enum_1745) {
+			if (~script2519 = 1) {
+				if (VARBIT[6254] = ^false) {
+					width3 = calc(if_getwidth(enum(component, component, enum2, interface_164:67)) - 182)
+				} else {
+					width3 = calc(if_getwidth(enum(component, component, enum2, interface_164:67)) - 120)
+				}
+			} else {
+				width3 = 2
+			}
+			if_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_top, component0)
+			if_setsize(width3, 0, ^setsize_minus, ^setsize_minus, component0)
+		}
+		if_setontimer({
+			script2512(component0, VARCINT[222])
+		}, component0)
+	}
+	return 
+}

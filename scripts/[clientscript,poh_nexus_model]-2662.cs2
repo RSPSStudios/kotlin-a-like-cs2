@@ -1,0 +1,6 @@
+// 2662 clientscript
+fun poh_nexus_model(component0: Component) {
+
+	~poh_nexus_model(component0)
+	return 
+}

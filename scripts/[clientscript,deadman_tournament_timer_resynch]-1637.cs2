@@ -1,0 +1,10 @@
+// 1637 clientscript
+fun deadman_tournament_timer_resynch(component0: Component) {
+
+	if (~wildwars_world = 1) {
+		~deadman_tournament_timer_resynch(component0, VARBIT[5710])
+	} else {
+		~deadman_tournament_timer_resynch(component0, VARBIT[4164])
+	}
+	return 
+}

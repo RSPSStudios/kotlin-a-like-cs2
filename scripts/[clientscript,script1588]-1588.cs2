@@ -1,0 +1,8 @@
+// 1588 clientscript
+fun script1588(comsubid0: Int) {
+
+	if (cc_find(interface_549:15, comsubid0) = ^true) {
+		cc_settext("0")
+	}
+	return 
+}

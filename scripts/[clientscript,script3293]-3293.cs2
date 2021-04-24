@@ -1,0 +1,7 @@
+// 3293 clientscript
+fun script3293() {
+
+	VARBIT[68] = calc(1 - VARBIT[68])
+	~script3294(VARBIT[68])
+	return 
+}

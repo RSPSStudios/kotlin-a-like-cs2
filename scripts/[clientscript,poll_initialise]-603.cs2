@@ -1,0 +1,15 @@
+// 603 clientscript
+fun poll_initialise(component0: Component, component1: Component, component2: Component, component3: Component, text0: String, text1: String) {
+
+	if (if_hassub(enum(component, component, ~toplevel_getcomponents, interface_161:15)) = false) {
+		return 
+	}
+	~steelborder(component0, text0, 0)
+	cc_deleteall(component2)
+	VARCINT[43], VARCINT[49] = 0, 0
+	if_sethide(true, component2)
+	if_sethide(false, component3)
+	if_settext(text1, component3)
+	cc_deleteall(component1)
+	return 
+}

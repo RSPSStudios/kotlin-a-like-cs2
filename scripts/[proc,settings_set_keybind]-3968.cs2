@@ -1,0 +1,11 @@
+// 3968 proc
+fun settings_set_keybind(int0: Int, count1: Int) {
+
+	VARBIT[9657] = int0
+	when (int0): Int {
+	else -> {
+	
+		return 
+	}
+	}
+}

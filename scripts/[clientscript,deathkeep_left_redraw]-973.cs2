@@ -1,0 +1,6 @@
+// 973 clientscript
+fun deathkeep_left_redraw(int0: Int, int1: Int, int2: Int, int3: Int, int4: Int, obj5: Obj, obj6: Obj, obj7: Obj, obj8: Obj) {
+
+	~deathkeep_left_redraw(int0, int1, int2, int3, int4, obj5, obj6, obj7, obj8)
+	return 
+}

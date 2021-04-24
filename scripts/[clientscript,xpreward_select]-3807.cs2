@@ -1,0 +1,12 @@
+// 3807 clientscript
+fun xpreward_select(lvl0: Int, int1: Int, component2: Component, component3: Component) {
+
+	val stat4: Stat = enum(int, stat, enum_681, int1)
+	if (stat4 ! null & ~script3809(lvl0, stat4, 1) = 1) {
+		sound_synth(synth_2266, 1, 0)
+		~xpreward_update(int1, component2, component3)
+		return 
+	}
+	~xpreward_update(0, component2, component3)
+	return 
+}

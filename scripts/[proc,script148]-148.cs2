@@ -1,0 +1,89 @@
+// 148 proc
+fun script148(size0: Int): Int {
+
+	if (size0 = 0) {
+		return VARCINT[12]
+	}
+	if (size0 = 1) {
+		return VARCINT[13]
+	}
+	if (size0 = 2) {
+		return VARCINT[14]
+	}
+	if (size0 = 3) {
+		return VARCINT[15]
+	}
+	if (size0 = 4) {
+		return VARCINT[16]
+	}
+	if (size0 = 5) {
+		return VARCINT[17]
+	}
+	if (size0 = 6) {
+		return VARCINT[18]
+	}
+	if (size0 = 7) {
+		return VARCINT[19]
+	}
+	if (size0 = 8) {
+		return VARCINT[20]
+	}
+	if (size0 = 9) {
+		return VARCINT[21]
+	}
+	if (size0 = 10) {
+		return VARCINT[22]
+	}
+	if (size0 = 11) {
+		return VARCINT[23]
+	}
+	if (size0 = 12) {
+		return VARCINT[24]
+	}
+	if (size0 = 13) {
+		return VARCINT[25]
+	}
+	if (size0 = 14) {
+		return VARCINT[26]
+	}
+	if (size0 = 15) {
+		return VARCINT[27]
+	}
+	if (size0 = 16) {
+		return VARCINT[28]
+	}
+	if (size0 = 17) {
+		return VARCINT[29]
+	}
+	if (size0 = 18) {
+		return VARCINT[30]
+	}
+	if (size0 = 19) {
+		return VARCINT[31]
+	}
+	if (size0 = 20) {
+		return VARCINT[32]
+	}
+	if (size0 = 21) {
+		return VARCINT[33]
+	}
+	if (size0 = 22) {
+		return VARCINT[34]
+	}
+	if (size0 = 23) {
+		return VARCINT[35]
+	}
+	if (size0 = 24) {
+		return VARCINT[36]
+	}
+	if (size0 = 25) {
+		return VARCINT[37]
+	}
+	if (size0 = 26) {
+		return VARCINT[38]
+	}
+	if (size0 = 27) {
+		return VARCINT[39]
+	}
+	return 0
+}

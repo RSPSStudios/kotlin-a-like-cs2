@@ -1,0 +1,6 @@
+// 3653 clientscript
+fun script3653(component0: Component, graphic1: Graphic) {
+
+	~script3654(component0, graphic1)
+	return 
+}

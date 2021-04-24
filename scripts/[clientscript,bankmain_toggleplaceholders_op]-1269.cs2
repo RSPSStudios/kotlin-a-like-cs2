@@ -1,0 +1,15 @@
+// 1269 clientscript
+fun bankmain_toggleplaceholders_op(opindex0: Int, component1: Component, int2: Int) {
+
+	if (opindex0 = 10) {
+		sound_synth(synth_2266, 1, 0)
+		return 
+	}
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	VARBIT[3755] = int2
+	~bankmain_toggleplaceholders(component1)
+	return 
+}

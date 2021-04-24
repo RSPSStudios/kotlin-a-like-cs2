@@ -1,0 +1,8 @@
+// 2493 clientscript
+fun script2493(component0: Component, comsubid1: Int, obj2: Obj) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_settext(~tostring_spacer(inv_total(inv_134, obj2), ","))
+	}
+	return 
+}

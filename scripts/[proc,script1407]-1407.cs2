@@ -1,0 +1,41 @@
+// 1407 proc
+fun script1407(arrayint0: Int, int1: Int, int2: Int) {
+
+	val index3: Int = calc((int1 + int2) / 2)
+	val int4: Int = int0[index3]
+	int0[index3] = int0[int2]
+	int0[int2] = int4
+	val int5: Int = int1
+	val int6: Int = int1
+	val int7: Int = -1
+	val string0: String = ""
+	val string1: String = ""
+	while (int6 < int2) {
+		if (cc_find(enum(int, component, enum_1461, int0[int6]), 0) = ^true) {
+			string0 = cc_gettext
+		} else {
+			string0 = ""
+		}
+		if (cc_find(enum(int, component, enum_1461, int4), 0) = ^true) {
+			string1 = cc_gettext
+		} else {
+			string1 = ""
+		}
+		if (compare(string0, string1) <= 0) {
+			int7 = int0[int6]
+			int0[int6] = int0[int5]
+			int0[int5] = int7
+			int5 = calc(int5 + 1)
+		}
+		int6 = calc(int6 + 1)
+	}
+	int0[int2] = int0[int5]
+	int0[int5] = int4
+	if (int1 < calc(int5 - 1)) {
+		~script1407(int0, int1, calc(int5 - 1))
+	}
+	if (calc(int5 + 1) < int2) {
+		~script1407(int0, calc(int5 + 1), int2)
+	}
+	return 
+}

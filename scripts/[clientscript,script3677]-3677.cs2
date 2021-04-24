@@ -1,0 +1,7 @@
+// 3677 clientscript
+fun script3677() {
+
+	sound_synth(pillory_wrong, 1, 0)
+	mes("You need to complete the tutorial before you can teleport.")
+	return 
+}

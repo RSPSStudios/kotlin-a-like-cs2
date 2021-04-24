@@ -1,0 +1,6 @@
+// 3618 clientscript
+fun partydrop_side_build(component0: Component, size1: Int) {
+
+	~partydrop_side_build(component0, size1)
+	return 
+}

@@ -1,0 +1,8 @@
+// 2724 proc
+fun script2724() {
+
+	~script2726(VARBIT[50])
+	~script2745(VARBIT[49])
+	~script2747(VARBIT[68])
+	return 
+}

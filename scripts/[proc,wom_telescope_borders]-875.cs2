@@ -1,0 +1,48 @@
+// 875 proc
+fun wom_telescope_borders(component0: Component, width1: Int, height2: Int, component3: Component, component4: Component) {
+
+	val int5: Int = height2
+	if (int5 < 334) {
+		int5 = 334
+	} else if (int5 > 1000) {
+		int5 = 1000
+	}
+	val int6: Int = invpow(calc(int5 - 334), 2)
+	val int7: Int = invpow(calc(1000 - 334), 2)
+	val int8: Int = calc(150 - interpolate(0, int6, 0, int7, 100))
+	if_setmodelangle(0, 0, 0, 0, 0, int8, component3)
+	if_setmodelangle(0, 0, 0, 0, 0, int8, component4)
+	val int9: Int = 0
+	val int10: Int = 334
+	if (int5 > int10) {
+		int10 = int5
+	}
+	if (cc_find(component0, 0) = ^true & .cc_find(component0, 1) = ^true) {
+		if (height2 < int10) {
+			cc_sethide(true)
+			.cc_sethide(true)
+		} else {
+			cc_sethide(false)
+			.cc_sethide(false)
+			int9 = calc((height2 - int10) / 2)
+			cc_setsize(0, int9, ^setsize_minus, ^setsize_abs)
+			.cc_setsize(0, int9, ^setsize_minus, ^setsize_abs)
+		}
+	}
+	if (cc_find(component0, 2) = ^true & .cc_find(component0, 3) = ^true) {
+		if (width1 < int10) {
+			cc_sethide(true)
+			.cc_sethide(true)
+		} else {
+			cc_sethide(false)
+			.cc_sethide(false)
+			int9 = calc((width1 - int10) / 2)
+			cc_setsize(int9, 0, ^setsize_abs, ^setsize_minus)
+			.cc_setsize(int9, 0, ^setsize_abs, ^setsize_minus)
+		}
+	}
+	if_setontimer({
+		wom_telescope_borders(component0, width1, height2, component3, component4)
+	}, component0)
+	return 
+}

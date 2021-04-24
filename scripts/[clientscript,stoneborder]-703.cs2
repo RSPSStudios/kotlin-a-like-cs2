@@ -1,0 +1,6 @@
+// 703 clientscript
+fun stoneborder(component0: Component, flags1: Int, text0: String) {
+
+	~stoneborder(component0, text0, flags1)
+	return 
+}

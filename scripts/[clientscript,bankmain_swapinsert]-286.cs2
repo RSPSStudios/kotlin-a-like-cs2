@@ -1,0 +1,6 @@
+// 286 clientscript
+fun bankmain_swapinsert(component0: Component, component1: Component) {
+
+	~bankmain_swapinsert(component0, component1)
+	return 
+}

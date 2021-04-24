@@ -1,0 +1,14 @@
+// 248 clientscript
+fun nzone_rewards_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	~nzone_rewards_tabs(component1, component2, component3, component4, component2)
+	~nzone_rewards_lists(component2, component4)
+	if_setoninvtransmit({
+		nzone_rewards_lists(component2, component4){inv_464, inv_108}
+	}, component0)
+	~nzone_rewards_upgrades(component3)
+	if_setoninvtransmit({
+		nzone_rewards_upgrades(component3){inv, inv_464, inv_108}
+	}, component3)
+	return 
+}

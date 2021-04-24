@@ -1,0 +1,30 @@
+// 3105 proc
+fun canoe_paddle_log(int0: Int): Int, Int, Int, Int, Int, Int {
+
+	when (int0): Int {
+		1 -> {
+		
+			return 1, 0, 1, 1, 1, 1
+		}
+		2 -> {
+		
+			return 0, 1, 0, 1, 1, 1
+		}
+		3 -> {
+		
+			return 1, 0, 1, 0, 1, 1
+		}
+		4 -> {
+		
+			return 1, 1, 0, 1, 1, 1
+		}
+		5 -> {
+		
+			return 1, 1, 1, 0, 1, 1
+		}
+	else -> {
+	
+		return 0, 0, 0, 0, 0, 0
+	}
+	}
+}

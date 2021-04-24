@@ -1,0 +1,6 @@
+// 903 clientscript
+fun toplevel_subchange(component0: Component, enum1: Enum) {
+
+	~toplevel_subchange(component0, enum1)
+	return 
+}

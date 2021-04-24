@@ -1,0 +1,6 @@
+// 2037 clientscript
+fun agilityarena_rewards_gracefulcancel(component0: Component, text0: String, boolean1: Boolean) {
+
+	~agilityarena_rewards_gracefulcancel(component0, text0, boolean1)
+	return 
+}

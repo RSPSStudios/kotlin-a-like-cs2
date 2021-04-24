@@ -1,0 +1,30 @@
+// 3517 clientscript
+fun script3517(component0: Component, component1: Component, component2: Component, boolean3: Boolean, component4: Component, component5: Component) {
+
+	if (map_members = ^false) {
+		return 
+	}
+	val op0: String = "null"
+	if (boolean3 = true) {
+		op0 = "Set Bonus"
+	} else if (boolean3 = false) {
+		op0 = "Stat Bonus"
+	}
+	~script3519(component0, component1, component2, boolean3, op0, false, component4, component5)
+	if (~on_mobile = false) {
+		if_setonmouseover({
+			script3518(component0, component1, component2, boolean3, op0, true, component4, component5)
+		}, component0)
+		if_setonmouseleave({
+			script3518(component0, component1, component2, boolean3, op0, false, component4, component5)
+		}, component0)
+	}
+	if_setop(1, op0, component0)
+	if_setonop({
+		script3520(component0, component1, component2, boolean3)
+	}, component0)
+	if_setoninvtransmit({
+		script3518(component0, component1, component2, boolean3, op0, false, component4, component5){worn}
+	}, component0)
+	return 
+}

@@ -1,0 +1,6 @@
+// 3261 clientscript
+fun magic_training_confirm_transmit(component0: Component) {
+
+	~magic_training_confirm(component0, VARBIT[10059])
+	return 
+}

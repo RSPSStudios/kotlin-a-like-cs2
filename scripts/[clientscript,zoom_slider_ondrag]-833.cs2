@@ -1,0 +1,13 @@
+// 833 clientscript
+fun zoom_slider_ondrag(component0: Component, component1: Component, mousex2: Int) {
+
+	if (component0 ! interface_116:60) {
+		return 
+	}
+	~zoom_slider_specific_pos(component0, component1, mousex2)
+	if_setontimer(null, interface_116:60)
+	if_setontimer({
+		script3901(0)
+	}, interface_134:3)
+	return 
+}

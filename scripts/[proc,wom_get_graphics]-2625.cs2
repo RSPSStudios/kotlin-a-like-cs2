@@ -1,0 +1,22 @@
+// 2625 proc
+fun wom_get_graphics(component0: Component): Component, Component, Component {
+
+	when (component0): Component {
+		interface_371:9 -> {
+		
+			return interface_371:29, interface_371:30, interface_371:31
+		}
+		interface_371:10 -> {
+		
+			return interface_371:7, interface_371:6, interface_371:5
+		}
+		interface_371:11 -> {
+		
+			return interface_371:3, interface_371:2, interface_371:1
+		}
+	else -> {
+	
+		return null, null, null
+	}
+	}
+}

@@ -1,0 +1,9 @@
+// 1236 clientscript
+fun script1236(int0: Int, int1: Int) {
+
+	if (int1 ! 1) {
+		return 
+	}
+	~script1237
+	return 
+}

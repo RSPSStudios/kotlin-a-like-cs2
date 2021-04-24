@@ -1,0 +1,6 @@
+// 2105 clientscript
+fun ds2_fossil_map_redraw(component0: Component) {
+
+	~ds2_fossil_map_redraw(component0)
+	return 
+}

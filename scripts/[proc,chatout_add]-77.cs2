@@ -1,0 +1,11 @@
+// 77 proc
+fun chatout_add(string0: String) {
+
+	~chatout_set(VARCINT[4], string0)
+	VARCINT[4] = calc(VARCINT[4] + 1)
+	if (VARCINT[4] >= 20) {
+		VARCINT[4] = 0
+	}
+	VARCINT[3] = -1
+	return 
+}

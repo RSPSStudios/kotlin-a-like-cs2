@@ -1,0 +1,21 @@
+// 3137 clientscript
+fun script3137() {
+
+	if (VARCINT[380] = VARBIT[9481] | VARBIT[9481] = 0) {
+		return 
+	}
+	VARCINT[380] = VARBIT[9481]
+	val component0: Component = enum(int, component, enum_2638, VARBIT[9481])
+	if (component0 = null) {
+		return 
+	}
+	~script3138(component0, 0, VARBIT[9477])
+	~script3138(component0, 1, VARBIT[9478])
+	~script3138(component0, 2, VARBIT[9479])
+	~script3138(component0, 3, VARBIT[9480])
+	~script3139(component0, 4, VARBIT[9482])
+	~script3139(component0, 5, VARBIT[9483])
+	~script3139(component0, 6, VARBIT[9484])
+	~script3139(component0, 7, VARBIT[9485])
+	return 
+}

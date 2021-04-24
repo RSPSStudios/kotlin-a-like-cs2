@@ -1,0 +1,34 @@
+// 2090 proc
+fun trail_rewardscreen_draw(component0: Component, size1: Int) {
+
+	cc_deleteall(component0)
+	val int2: Int = calc(32 + (if_getwidth(component0) - 36 * 3) / 2)
+	val int3: Int = 0
+	val obj4: Obj = null
+	val size5: Int = 0
+	while (size5 < size1) {
+		cc_create(component0, ^iftype_graphic, size5)
+		obj4 = inv_getobj(inv_141, size5)
+		if (obj4 ! null) {
+			cc_sethide(false)
+			cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+			int3 = calc(size5 % 3)
+			if (int3 = 0) {
+				cc_setposition(0, calc(size5 / 3 * int2), ^setpos_abs_left, ^setpos_abs_top)
+			} else if (int3 = 1) {
+				cc_setposition(0, calc(size5 / 3 * int2), ^setpos_abs_centre, ^setpos_abs_top)
+			} else {
+				cc_setposition(0, calc(size5 / 3 * int2), ^setpos_abs_right, ^setpos_abs_top)
+			}
+			cc_setgraphicshadow(0x333333)
+			cc_setoutline(1)
+			cc_setobject(obj4, inv_getnum(inv_141, size5))
+			cc_setop(10, "Examine")
+			cc_setopbase("<col=ff9040>${oc_name(obj4)}</col>")
+		} else {
+			cc_sethide(true)
+		}
+		size5 = calc(size5 + 1)
+	}
+	return 
+}

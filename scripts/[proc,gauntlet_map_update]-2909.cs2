@@ -1,0 +1,66 @@
+// 2909 proc
+fun gauntlet_map_update() {
+
+	if (VARBIT[9292] = 1) {
+		if_setgraphic("gauntlet_map_icons,7", interface_638:54)
+	} else {
+		if_setgraphic("gauntlet_map_icons,4", interface_638:54)
+	}
+	if (VARBIT[9292] = 1) {
+		if_setgraphic("gauntlet_map_icons,9", interface_638:29)
+	} else {
+		if_setgraphic("gauntlet_map_icons,6", interface_638:29)
+	}
+	~gauntlet_map_start_update
+	~gauntlet_map_player_update
+	~gauntlet_map_room_update(interface_638:5, VARBIT[9240])
+	~gauntlet_map_room_update(interface_638:6, VARBIT[9241])
+	~gauntlet_map_room_update(interface_638:7, VARBIT[9242])
+	~gauntlet_map_room_update(interface_638:8, VARBIT[9243])
+	~gauntlet_map_room_update(interface_638:9, VARBIT[9244])
+	~gauntlet_map_room_update(interface_638:10, VARBIT[9245])
+	~gauntlet_map_room_update(interface_638:11, VARBIT[9246])
+	~gauntlet_map_room_update(interface_638:12, VARBIT[9247])
+	~gauntlet_map_room_update(interface_638:13, VARBIT[9248])
+	~gauntlet_map_room_update(interface_638:14, VARBIT[9249])
+	~gauntlet_map_room_update(interface_638:15, VARBIT[9250])
+	~gauntlet_map_room_update(interface_638:16, VARBIT[9251])
+	~gauntlet_map_room_update(interface_638:17, VARBIT[9252])
+	~gauntlet_map_room_update(interface_638:18, VARBIT[9253])
+	~gauntlet_map_room_update(interface_638:19, VARBIT[9254])
+	~gauntlet_map_room_update(interface_638:20, VARBIT[9255])
+	~gauntlet_map_room_update(interface_638:21, VARBIT[9256])
+	~gauntlet_map_room_update(interface_638:22, VARBIT[9257])
+	~gauntlet_map_room_update(interface_638:23, VARBIT[9258])
+	~gauntlet_map_room_update(interface_638:24, VARBIT[9259])
+	~gauntlet_map_room_update(interface_638:25, VARBIT[9260])
+	~gauntlet_map_room_update(interface_638:26, VARBIT[9261])
+	~gauntlet_map_room_update(interface_638:27, VARBIT[9262])
+	~gauntlet_map_room_update(interface_638:28, VARBIT[9263])
+	~gauntlet_map_room_update(interface_638:29, VARBIT[9264])
+	~gauntlet_map_room_update(interface_638:30, VARBIT[9265])
+	~gauntlet_map_room_update(interface_638:31, VARBIT[9266])
+	~gauntlet_map_room_update(interface_638:32, VARBIT[9267])
+	~gauntlet_map_room_update(interface_638:33, VARBIT[9268])
+	~gauntlet_map_room_update(interface_638:34, VARBIT[9269])
+	~gauntlet_map_room_update(interface_638:35, VARBIT[9270])
+	~gauntlet_map_room_update(interface_638:36, VARBIT[9271])
+	~gauntlet_map_room_update(interface_638:37, VARBIT[9272])
+	~gauntlet_map_room_update(interface_638:38, VARBIT[9273])
+	~gauntlet_map_room_update(interface_638:39, VARBIT[9274])
+	~gauntlet_map_room_update(interface_638:40, VARBIT[9275])
+	~gauntlet_map_room_update(interface_638:41, VARBIT[9276])
+	~gauntlet_map_room_update(interface_638:42, VARBIT[9277])
+	~gauntlet_map_room_update(interface_638:43, VARBIT[9278])
+	~gauntlet_map_room_update(interface_638:44, VARBIT[9279])
+	~gauntlet_map_room_update(interface_638:45, VARBIT[9280])
+	~gauntlet_map_room_update(interface_638:46, VARBIT[9281])
+	~gauntlet_map_room_update(interface_638:47, VARBIT[9282])
+	~gauntlet_map_room_update(interface_638:48, VARBIT[9283])
+	~gauntlet_map_room_update(interface_638:49, VARBIT[9284])
+	~gauntlet_map_room_update(interface_638:50, VARBIT[9285])
+	~gauntlet_map_room_update(interface_638:51, VARBIT[9286])
+	~gauntlet_map_room_update(interface_638:52, VARBIT[9287])
+	~gauntlet_map_room_update(interface_638:53, VARBIT[9288])
+	return 
+}

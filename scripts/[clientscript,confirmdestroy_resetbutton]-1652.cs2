@@ -1,0 +1,8 @@
+// 1652 clientscript
+fun confirmdestroy_resetbutton(component0: Component, string0: String, int1: Int, string1: String, clock2: Int) {
+
+	if (clientclock >= clock2) {
+		~confirmdestroy_setupbutton(component0, string0, int1, string1)
+	}
+	return 
+}

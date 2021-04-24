@@ -1,0 +1,11 @@
+// 3224 clientscript
+fun league_menu_frame_click(component0: Component, component1: Component, component2: Component) {
+
+	sound_synth(synth_2266, 1, 0)
+	if_sethide(true, component1)
+	if_sethide(true, component2)
+	if (cc_find(component0, 0) = ^true) {
+		cc_setgraphic("menu_buttons,0")
+	}
+	return 
+}

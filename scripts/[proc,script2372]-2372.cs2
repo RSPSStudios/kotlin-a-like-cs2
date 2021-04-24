@@ -1,0 +1,66 @@
+// 2372 proc
+fun script2372(component0: Component, int1: Int, clock2: Int) {
+
+	val enum3: Enum = null
+	val int4: Int = 0
+	val int5: Int = 0
+	val int6: Int = 0
+	val int7: Int = 0
+	val y8: Int = 0
+	val int9: Int = 0
+	val int10: Int = 0
+	if (clock2 ! VARCINT[222]) {
+		enum3 = ~toplevel_getcomponents
+		if (enum3 = enum_1745) {
+			if (testbit(int1, 0) = ^true | testbit(int1, 4) = ^true) {
+				int4 = 1
+			}
+			if (testbit(int1, 1) = ^true) {
+				int5 = 1
+			}
+			if (testbit(int1, 2) = ^true) {
+				int6 = 1
+			}
+			if (testbit(int1, 3) = ^true) {
+				int7 = 1
+			}
+			if (int4 = 1 & ~script2518 = 1) {
+				int4 = 1
+			} else {
+				int4 = 0
+			}
+			if (int5 = 1 & ~script2519 = 1) {
+				int5 = 1
+			} else {
+				int5 = 0
+			}
+			if (int7 = 1 & ~chatbox_open = 1) {
+				int7 = 1
+			} else {
+				int7 = 0
+			}
+			if (int4 = 1 & (testbit(int1, 4) = ^false | ~chatbox_open = 1)) {
+				int9 = if_getwidth(enum(component, component, enum3, interface_164:67))
+			}
+			if (int5 = 1) {
+				int10 = if_getwidth(enum(component, component, enum3, interface_164:67))
+			}
+			if (int6 = 1) {
+				if (VARBIT[6254] = ^false) {
+					int10 = ~max(int10, 182)
+				} else {
+					int10 = ~max(int10, 120)
+				}
+			}
+			if (int7 = 1) {
+				y8 = calc(165 - 23 - enum(enum, int, enum_1961, enum3) + 2)
+			}
+			if_setposition(int9, y8, ^setpos_abs_left, ^setpos_abs_top, component0)
+			if_setsize(calc(int9 + int10), y8, ^setsize_minus, ^setsize_minus, component0)
+		}
+		if_setontimer({
+			script2250(component0, int1, VARCINT[222])
+		}, component0)
+	}
+	return 
+}

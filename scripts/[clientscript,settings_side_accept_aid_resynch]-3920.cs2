@@ -1,0 +1,7 @@
+// 3920 clientscript
+fun settings_side_accept_aid_resynch(component0: Component, component1: Component) {
+
+	VARCINT[2] = 0
+	~settings_side_accept_aid_create(component0, component1)
+	return 
+}

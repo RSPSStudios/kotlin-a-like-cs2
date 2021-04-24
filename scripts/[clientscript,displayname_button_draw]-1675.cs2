@@ -1,0 +1,6 @@
+// 1675 clientscript
+fun displayname_button_draw(component0: Component, text0: String, boolean1: Boolean) {
+
+	~displayname_button_draw(component0, text0, boolean1)
+	return 
+}

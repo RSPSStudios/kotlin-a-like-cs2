@@ -1,0 +1,9 @@
+// 310 clientscript
+fun nzone_rewards_setpoints(component0: Component, comsubid1: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		~nzone_rewards_setpoints
+		sound_synth(synth_73, 1, 0)
+	}
+	return 
+}

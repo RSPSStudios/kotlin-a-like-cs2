@@ -1,0 +1,13 @@
+// 2359 proc
+fun shiftclick_toggle(boolean0: Boolean) {
+
+	if (~on_mobile = true) {
+		settaptodrop(boolean0)
+		setshiftclickdrop(true)
+	} else {
+		setshiftclickdrop(boolean0)
+		settaptodrop(false)
+	}
+	~script2386
+	return 
+}

@@ -1,0 +1,13 @@
+// 2881 proc
+fun script2881() {
+
+	val int0: Int = 0
+	val component1: Component = enum(int, component, enum_2343, int0)
+	while (component1 ! null) {
+		if_sethide(true, component1)
+		cc_deleteall(component1)
+		int0 = calc(int0 + 1)
+		component1 = enum(int, component, enum_2343, int0)
+	}
+	return 
+}

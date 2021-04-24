@@ -1,0 +1,34 @@
+// 1607 proc
+fun raids_storage_private_items(component0: Component, component1: Component, component2: Component) {
+
+	cc_deleteall(component0)
+	val size3: Int = 0
+	val size4: Int = inv_size(inv_583)
+	val height5: Int = 0
+	val obj6: Obj = null
+	val int7: Int = 0
+	while (size3 < size4) {
+		obj6 = inv_getobj(inv_583, size3)
+		cc_create(component0, ^iftype_graphic, size3)
+		cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+		height5 = calc(size3 / 8 * (32 + 8))
+		cc_setposition(calc(size3 % 8 * (36 + 8)), height5, ^setpos_abs_left, ^setpos_abs_top)
+		cc_setoutline(1)
+		cc_setgraphicshadow(0x333333)
+		int7 = ~raids_storage_private_drawitem(obj6, inv_getnum(inv_583, size3), int7, component1)
+		cc_setdragdeadzone(5)
+		cc_setdragdeadtime(5)
+		size3 = calc(size3 + 1)
+	}
+	val int8: Int = 0
+	height5 = calc(height5 + 32)
+	if (height5 > if_getheight(component0)) {
+		int8 = if_getscrolly(component0)
+		if_setscrollsize(0, height5, component0)
+	} else {
+		if_setscrollsize(0, 0, component0)
+	}
+	~scrollbar_resize(component1, component0, int8)
+	if_settext(tostring(int7), component2)
+	return 
+}

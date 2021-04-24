@@ -1,0 +1,25 @@
+// 4104 proc
+fun script4104(int0: Int) {
+
+	val graphic1: Graphic = null
+	if (int0 = 50) {
+		when (VARBIT[11757]): Int {
+			3 -> {
+			
+				graphic1 = "emotes,49"
+			}
+			6 -> {
+			
+				graphic1 = "emotes,50"
+			}
+		else -> {
+		
+			graphic1 = "emotes_locked,29"
+		}
+		}
+	} else {
+		graphic1 = enum(int, graphic, enum_1001, int0)
+	}
+	cc_setgraphic(graphic1)
+	return 
+}

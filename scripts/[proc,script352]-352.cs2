@@ -1,0 +1,17 @@
+// 352 proc
+fun script352(component0: Component, int1: Int): Int {
+
+	val width2: Int = if_getwidth(component0)
+	val height3: Int = if_getheight(component0)
+	val x4: Int = calc(width2 - 5)
+	val y5: Int = calc(height3 - 5)
+	~create_graphic(component0, int1, "graphic_2897", 0, 0, ^setpos_abs_left, ^setpos_abs_top, 5, 5, ^setsize_abs, ^setsize_abs)
+	int1 = calc(int1 + 1)
+	~create_graphic(component0, int1, "graphic_2898", x4, 0, ^setpos_abs_left, ^setpos_abs_top, 5, 5, ^setsize_abs, ^setsize_abs)
+	int1 = calc(int1 + 1)
+	~create_graphic(component0, int1, "graphic_2899", 0, y5, ^setpos_abs_left, ^setpos_abs_top, 5, 5, ^setsize_abs, ^setsize_abs)
+	int1 = calc(int1 + 1)
+	~create_graphic(component0, int1, "graphic_2900", x4, y5, ^setpos_abs_left, ^setpos_abs_top, 5, 5, ^setsize_abs, ^setsize_abs)
+	int1 = calc(int1 + 1)
+	return int1
+}

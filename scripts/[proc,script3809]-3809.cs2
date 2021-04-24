@@ -1,0 +1,46 @@
+// 3809 proc
+fun script3809(lvl0: Int, stat1: Stat, int2: Int): Int {
+
+	if (map_members = ^false & enum(stat, boolean, enum_1497, stat1) = true) {
+		if (int2 = 1) {
+			mes("You need to be on a members' world to gain experience in ${enum(stat, string, enum_680, stat1)}.")
+		}
+		return 0
+	}
+	if (stat_base(stat1) < lvl0) {
+		if (int2 = 1) {
+			mes("You need an ${enum(stat, string, enum_680, stat1)} level of ${tostring(lvl0)} to choose that option.")
+		}
+		return 0
+	}
+	when (stat1): Stat {
+		herblore -> {
+		
+			if (VARP[80] < 4) {
+				if (int2 = 1) {
+					mes("You need to complete the Druidic Ritual quest to choose that option.")
+				}
+				return 0
+			}
+		}
+		runecraft -> {
+		
+			if (VARP[63] < 6) {
+				if (int2 = 1) {
+					mes("You need to complete the Rune Mysteries quest to choose that option.")
+				}
+				return 0
+			}
+		}
+		construction -> {
+		
+			if (VARBIT[2187] = 0) {
+				if (int2 = 1) {
+					mes("You must own a house to choose that option.")
+				}
+				return 0
+			}
+		}
+	}
+	return 1
+}

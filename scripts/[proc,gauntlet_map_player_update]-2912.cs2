@@ -1,0 +1,8 @@
+// 2912 proc
+fun gauntlet_map_player_update() {
+
+	val x0: Int = calc(VARBIT[9289] * 35 + 1)
+	val y1: Int = calc(VARBIT[9290] * 35 + 1)
+	if_setposition(x0, y1, ^setpos_abs_left, ^setpos_abs_bottom, interface_638:54)
+	return 
+}

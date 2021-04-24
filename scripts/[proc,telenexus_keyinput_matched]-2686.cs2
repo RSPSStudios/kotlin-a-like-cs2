@@ -1,0 +1,11 @@
+// 2686 proc
+fun telenexus_keyinput_matched(component0: Component, comsubid1: Int, key2: Int, string0: String, string1: String, int3: Int, clock4: Int) {
+
+	if (comsubid1 ! -1 & cc_find(component0, comsubid1) = ^true) {
+		cc_resume_pausebutton
+		cc_setonkey({
+			telenexus_keyinput_listener(event_key, event_keychar, event_com, event_comsubid, key2, string0, string1, int3, calc(clientclock + 20))
+		})
+	}
+	return 
+}

@@ -1,0 +1,8 @@
+// 1415 clientscript
+fun nightmare_portal_remove(component0: Component) {
+
+	if_setontimer({
+		overlay_portal_adjust(clientclock, false, component0)
+	}, component0)
+	return 
+}

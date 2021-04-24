@@ -1,0 +1,24 @@
+// 2315 clientscript
+fun tob_hud_cleartext(comsubid0: Int, int1: Int) {
+
+	val int2: Int = 0
+	if (cc_find(interface_28:1, comsubid0) = ^true) {
+		int2 = calc(clientclock - int1)
+		if (int2 <= 0) {
+			cc_setposition(0, scale(18, 50, 16384), ^setpos_abs_centre, ^setpos_3)
+			return 
+		}
+		if (int2 <= 18) {
+			cc_setposition(0, scale(calc(18 - int2), 50, 16384), ^setpos_abs_centre, ^setpos_3)
+			return 
+		}
+		if (int2 <= 22) {
+			cc_setposition(0, calc((18 - int2) * (cc_getheight / 4)), ^setpos_abs_centre, ^setpos_abs_top)
+			return 
+		}
+		cc_sethide(true)
+		cc_settext("")
+		cc_setontimer(null)
+	}
+	return 
+}

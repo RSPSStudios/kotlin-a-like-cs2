@@ -1,0 +1,6 @@
+// 2530 clientscript
+fun poh_ranging_init(component0: Component) {
+
+	~script2249(component0, setbit(setbit(0, 0), 1))
+	return 
+}

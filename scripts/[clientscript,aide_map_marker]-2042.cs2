@@ -1,0 +1,8 @@
+// 2042 clientscript
+fun aide_map_marker(component0: Component, comsubid1: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		~aide_map_marker(component0)
+	}
+	return 
+}

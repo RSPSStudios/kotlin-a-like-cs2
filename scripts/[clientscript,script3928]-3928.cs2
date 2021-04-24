@@ -1,0 +1,13 @@
+// 3928 clientscript
+fun script3928(component0: Component, component1: Component) {
+
+	val string0: String = "Music unlock message (currently on)"
+	if (VARBIT[10078] = 1) {
+		string0 = "Music unlock message (currently off)"
+	}
+	if (~on_mobile = false & cc_find(component0, 0) = ^true) {
+		cc_setcolour(^white)
+	}
+	~tooltip_mouserepeat(component0, -1, component1, string0, 25, 190)
+	return 
+}

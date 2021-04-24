@@ -1,0 +1,11 @@
+// 2280 clientscript
+fun bondif_redeem_package_op_permitted(opindex0: Int, int1: Int, component2: Component, text0: String, num3: Int, graphic4: Graphic, int5: Int, height6: Int, text1: String) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	VARP[1204] = int1
+	~bondif_redeem_package_draw(int1, component2, text0, num3, graphic4, int5, height6, text1)
+	return 
+}

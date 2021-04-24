@@ -1,0 +1,17 @@
+// 1443 clientscript
+fun duel_accept_button(component0: Component, clock1: Int) {
+
+	if (clientclock < clock1) {
+		return 
+	}
+	if_settext("Accept", component0)
+	if_setcolour(~duel_colour_variation(0x33cc00), component0)
+	if_setonmouseover({
+		text_colour_swapper(event_com, ~duel_colour_variation(0x99ee00))
+	}, component0)
+	if_setonmouseleave({
+		text_colour_swapper(event_com, ~duel_colour_variation(0x33cc00))
+	}, component0)
+	if_setontimer(null, component0)
+	return 
+}

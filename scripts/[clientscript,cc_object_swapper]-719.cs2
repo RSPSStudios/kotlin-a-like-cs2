@@ -1,0 +1,8 @@
+// 719 clientscript
+fun cc_object_swapper(component0: Component, comsubid1: Int, obj2: Obj, num3: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_setobject(obj2, num3)
+	}
+	return 
+}

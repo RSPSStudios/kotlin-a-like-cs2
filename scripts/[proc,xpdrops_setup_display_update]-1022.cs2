@@ -1,0 +1,48 @@
+// 1022 proc
+fun xpdrops_setup_display_update(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component) {
+
+	if (cc_find(component0, 4) = ^true) {
+		cc_settext(enum(int, string, enum_1164, VARBIT[4692]))
+	}
+	if (cc_find(component1, 4) = ^true) {
+		cc_settext(enum(int, string, enum_1165, VARBIT[4693]))
+	}
+	if (cc_find(component2, 4) = ^true) {
+		cc_settext(enum(int, string, enum_1166, VARBIT[4694]))
+	}
+	if (cc_find(component3, 4) = ^true) {
+		if (VARBIT[4697] = 31) {
+			cc_settext("Most recent")
+		} else if (VARBIT[4697] = 30) {
+			cc_settext("Off")
+		} else if (enum(int, stat, enum_681, VARBIT[4697]) ! null) {
+			cc_settext(enum(int, string, enum_108, VARBIT[4697]))
+		} else {
+			cc_settext("Total XP")
+		}
+	}
+	if (cc_find(component4, 4) = ^true) {
+		if (VARBIT[4698] = 31) {
+			cc_settext("Most recent")
+		} else if (VARBIT[4698] = 30) {
+			cc_settext("Total XP goal")
+		} else if (enum(int, stat, enum_681, VARBIT[4698]) ! null) {
+			cc_settext(enum(int, string, enum_108, VARBIT[4698]))
+		} else {
+			cc_settext("Off")
+		}
+	}
+	if (cc_find(component5, 4) = ^true) {
+		cc_settext(enum(int, string, enum_1168, VARBIT[4695]))
+	}
+	if (cc_find(component6, 4) = ^true) {
+		cc_settext(enum(int, string, enum_1170, VARBIT[4696]))
+	}
+	if (cc_find(component7, 4) = ^true) {
+		cc_settext(enum(int, string, enum_1140, VARBIT[4722]))
+	}
+	if (cc_find(component8, 4) = ^true) {
+		cc_settext(enum(int, string, enum_1625, VARBIT[8120]))
+	}
+	return 
+}

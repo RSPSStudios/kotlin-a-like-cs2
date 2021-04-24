@@ -1,0 +1,6 @@
+// 3548 clientscript
+fun poh_costumes_buttons_dynamicsetup(component0: Component) {
+
+	~poh_costumes_buttons_dynamicsetup(component0)
+	return 
+}

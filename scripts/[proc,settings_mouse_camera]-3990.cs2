@@ -1,0 +1,9 @@
+// 3990 proc
+fun settings_mouse_camera() {
+
+	if (~on_mobile = true) {
+		return 
+	}
+	VARBIT[4134] = calc(1 - VARBIT[4134])
+	return 
+}

@@ -1,0 +1,31 @@
+// 2184 proc
+fun deadman_spectator_inventory_dummy(int0: Int, int1: Int) {
+
+	val enum2: Enum = enum_140
+	if (int0 = 1) {
+		enum2 = enum_142
+	}
+	val obj3: Obj = null
+	val num4: Int = 0
+	val int5: Int = 0
+	val int6: Int = 14
+	val int7: Int = 6
+	while (int5 < 28) {
+		obj3 = inv_getobj(inv_611, int1)
+		cc_create(enum(component, component, enum2, interface_154:58), ^iftype_graphic, int5)
+		cc_setposition(int6, int7, ^setpos_abs_left, ^setpos_abs_top)
+		cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+		cc_setgraphicshadow(0x333333)
+		cc_setoutline(1)
+		num4 = inv_getnum(inv_611, int1)
+		cc_setobject(obj3, num4)
+		int5 = calc(int5 + 1)
+		int1 = calc(int1 + 1)
+		if (calc(int5 % 4) = 0) {
+			int6, int7 = 14, calc(int7 + 36)
+		} else {
+			int6 = calc(int6 + 43)
+		}
+	}
+	return 
+}

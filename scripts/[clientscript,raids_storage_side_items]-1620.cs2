@@ -1,0 +1,6 @@
+// 1620 clientscript
+fun raids_storage_side_items(component0: Component, size1: Int) {
+
+	~raids_storage_side_items(component0, size1)
+	return 
+}

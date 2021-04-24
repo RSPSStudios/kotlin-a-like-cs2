@@ -1,0 +1,83 @@
+// 1354 proc
+fun questlist_showprogress(component0: Component, component1: Component, component2: Component) {
+
+	val int3: Int = 0
+	val colour4: Int = ^black
+	val count5: Int = 0
+	val count6: Int = ~quest_f2p_count
+	while (count5 < count6) {
+		if (cc_find(component0, count5) = ^true) {
+			int3 = ~script4025(count5)
+			if (~questlist_f2p_progress_grey(count5) = 1) {
+				colour4 = 0x9f9f9f
+			} else if (int3 = 2) {
+				colour4 = 0x0dc10d
+			} else if (int3 = 0) {
+				colour4 = ^yellow
+			} else {
+				colour4 = ^red
+			}
+			cc_setcolour(colour4)
+			if (~on_mobile = false) {
+				cc_setonmouseover({
+					cc_colour_swapper(event_com, event_comsubid, ^white)
+				})
+				cc_setonmouseleave({
+					cc_colour_swapper(event_com, event_comsubid, colour4)
+				})
+			}
+		}
+		count5 = calc(count5 + 1)
+	}
+	count5, count6 = 0, ~quest_members_count
+	while (count5 < count6) {
+		if (cc_find(component1, count5) = ^true) {
+			int3 = ~script4026(count5)
+			if (~questlist_members_progress_grey(count5) = 1) {
+				colour4 = 0x9f9f9f
+			} else if (int3 = 2) {
+				colour4 = 0x0dc10d
+			} else if (int3 = 0) {
+				colour4 = ^yellow
+			} else {
+				colour4 = ^red
+			}
+			cc_setcolour(colour4)
+			if (~on_mobile = false) {
+				cc_setonmouseover({
+					cc_colour_swapper(event_com, event_comsubid, ^white)
+				})
+				cc_setonmouseleave({
+					cc_colour_swapper(event_com, event_comsubid, colour4)
+				})
+			}
+		}
+		count5 = calc(count5 + 1)
+	}
+	count5, count6 = 0, ~miniquest_count
+	while (count5 < count6) {
+		if (cc_find(component2, count5) = ^true) {
+			int3 = ~script4027(count5)
+			if (~questlist_miniquests_progress_grey(count5) = 1) {
+				colour4 = 0x9f9f9f
+			} else if (int3 = 2) {
+				colour4 = 0x0dc10d
+			} else if (int3 = 0) {
+				colour4 = ^yellow
+			} else {
+				colour4 = ^red
+			}
+			cc_setcolour(colour4)
+			if (~on_mobile = false) {
+				cc_setonmouseover({
+					cc_colour_swapper(event_com, event_comsubid, ^white)
+				})
+				cc_setonmouseleave({
+					cc_colour_swapper(event_com, event_comsubid, colour4)
+				})
+			}
+		}
+		count5 = calc(count5 + 1)
+	}
+	return 
+}

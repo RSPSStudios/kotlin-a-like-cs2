@@ -1,0 +1,6 @@
+// 826 clientscript
+fun itemsets_side_draw(component0: Component) {
+
+	~itemsets_side_draw(component0)
+	return 
+}

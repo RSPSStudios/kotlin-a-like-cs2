@@ -1,0 +1,8 @@
+// 855 clientscript
+fun script855(component0: Component, component1: Component, component2: Component, component3: Component) {
+
+	~leagues_close_button(component3, false)
+	if_setposition(50, 5, ^setpos_abs_right, ^setpos_abs_top, component3)
+	~script856(component0, component1, component2)
+	return 
+}

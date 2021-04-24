@@ -1,0 +1,12 @@
+// 2723 clientscript
+fun 1v1arena_spectator_endhint(component0: Component, comsubid1: Int, clock2: Int) {
+
+	if (clientclock < clock2) {
+		return 
+	}
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_setontimer(null)
+		cc_delete
+	}
+	return 
+}

@@ -1,0 +1,8 @@
+// 2734 proc
+fun script2734(int0: Int): String {
+
+	if (int0 >= ^max_32bit_int) {
+		return "Lots! (${tostring(int0)}+)"
+	}
+	return ~tostring_spacer(int0, ",")
+}

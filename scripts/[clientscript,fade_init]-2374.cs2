@@ -1,0 +1,7 @@
+// 2374 clientscript
+fun fade_init(component0: Component, component1: Component) {
+
+	~script1490(component0)
+	~hud_clamp_init(component1)
+	return 
+}

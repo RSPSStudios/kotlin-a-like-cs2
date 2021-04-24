@@ -1,0 +1,6 @@
+// 2057 clientscript
+fun skillmulti_quantitybutton_draw(boolean0: Boolean, text0: String, component1: Component) {
+
+	~skillmulti_quantitybutton_draw(boolean0, text0, component1)
+	return 
+}

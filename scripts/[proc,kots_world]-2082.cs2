@@ -1,0 +1,5 @@
+// 2082 proc
+fun kots_world(): Int {
+
+	return 0
+}

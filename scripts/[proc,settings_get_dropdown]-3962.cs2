@@ -1,0 +1,46 @@
+// 3962 proc
+fun settings_get_dropdown(int0: Int): Int {
+
+	val windowmode1: Int = 0
+	when (int0): Int {
+		1 -> {
+		
+			return VARBIT[6374]
+		}
+		55 -> {
+		
+			return VARP[1107]
+		}
+		56 -> {
+		
+			return VARP[1306]
+		}
+		78 -> {
+		
+			return VARBIT[6255]
+		}
+		12 -> {
+		
+			windowmode1 = getwindowmode
+			if (windowmode1 = ^windowmode_fixed) {
+				return 0
+			}
+			if (VARBIT[4607] = 0) {
+				return 1
+			}
+			return 2
+		}
+		81 -> {
+		
+			return VARBIT[11865]
+		}
+		85 -> {
+		
+			return VARBIT[11959]
+		}
+	else -> {
+	
+		return 0
+	}
+	}
+}

@@ -1,0 +1,18 @@
+// 1258 clientscript
+fun script1258(opindex0: Int, comsubid1: Int, component2: Component, comsubid3: Int, text0: String) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	if (cc_find(component2, comsubid1) = ^true) {
+		if (.cc_find(component2, comsubid3) = ^true) {
+			.cc_settext("---")
+			.cc_setontimer({
+				script1259(calc(clientclock + 60), component2, comsubid3, text0)
+			})
+		}
+		cc_resume_pausebutton
+	}
+	return 
+}

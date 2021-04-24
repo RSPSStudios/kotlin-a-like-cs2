@@ -1,0 +1,6 @@
+// 2661 clientscript
+fun telenexus_cancel(component0: Component) {
+
+	if_sethide(true, component0)
+	return 
+}

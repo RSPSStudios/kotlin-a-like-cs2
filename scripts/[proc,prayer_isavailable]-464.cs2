@@ -1,0 +1,52 @@
+// 464 proc
+fun prayer_isavailable(int0: Int): Int {
+
+	if (stat_base(prayer) < enum(int, int, enum_861, int0) & VARBIT[5314] = 0) {
+		return 0
+	}
+	when (int0): Int {
+		25 -> {
+		
+			if ((map_members = ^false | stat_base(defence) < 65 | VARBIT[3909] < 8) & VARBIT[5314] = 0) {
+				return 0
+			}
+		}
+		26 -> {
+		
+			if ((map_members = ^false | stat_base(defence) < 70 | VARBIT[3909] < 8) & VARBIT[5314] = 0) {
+				return 0
+			}
+		}
+		15, 16, 17 -> {
+		
+			if (map_members = ^false & VARBIT[5314] = 0) {
+				return 0
+			}
+		}
+		24 -> {
+		
+			if ((map_members = ^false | stat_base(defence) < 70 | VARBIT[5451] = 0) & VARBIT[5314] = 0) {
+				return 0
+			}
+		}
+		27 -> {
+		
+			if ((map_members = ^false | stat_base(defence) < 70 | VARBIT[5452] = 0) & VARBIT[5314] = 0) {
+				return 0
+			}
+		}
+		28 -> {
+		
+			if (map_members = ^false | VARBIT[5453] = 0 | VARBIT[5314] = 1) {
+				return 0
+			}
+		}
+		8 -> {
+		
+			if (~high_risk_world = 1 | ~deadman_world = 1 | VARBIT[5314] = 1) {
+				return 0
+			}
+		}
+	}
+	return 1
+}

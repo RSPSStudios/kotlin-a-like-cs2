@@ -1,0 +1,11 @@
+// 4041 clientscript
+fun script4041(int0: Int, component1: Component, component2: Component, component3: Component) {
+
+	if (inv_total(inv, bolt_pouch_9433) <= 0) {
+		if_close
+		return 
+	}
+	if_setontimer(null, component2)
+	~script4042(int0, component1, component2, component3)
+	return 
+}

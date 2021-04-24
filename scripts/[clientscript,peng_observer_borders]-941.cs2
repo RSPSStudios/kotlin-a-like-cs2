@@ -1,0 +1,10 @@
+// 941 clientscript
+fun peng_observer_borders(component0: Component, width1: Int, height2: Int, component3: Component) {
+
+	val width4: Int = if_getwidth(component0)
+	val height5: Int = if_getheight(component0)
+	if (width1 ! width4 | height2 ! height5) {
+		~peng_observer_borders(component0, width4, height5, component3)
+	}
+	return 
+}

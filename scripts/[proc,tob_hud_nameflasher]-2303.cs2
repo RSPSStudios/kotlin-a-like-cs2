@@ -1,0 +1,10 @@
+// 2303 proc
+fun tob_hud_nameflasher(): Int {
+
+	val int0: Int = calc(clientclock % 90)
+	if (int0 > 45) {
+		int0 = calc(90 - int0)
+	}
+	val int1: Int = scale(invpow(calc(int0 * 255), 2), invpow(11475, 2), 255)
+	return ~rgb_to_hex(255, int1, int1)
+}

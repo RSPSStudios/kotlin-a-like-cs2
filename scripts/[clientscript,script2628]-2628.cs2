@@ -1,0 +1,6 @@
+// 2628 clientscript
+fun script2628(component0: Component, component1: Component, int2: Int) {
+
+	~script2629(component1, int2)
+	return 
+}

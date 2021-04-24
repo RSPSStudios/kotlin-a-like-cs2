@@ -1,0 +1,6 @@
+// 832 clientscript
+fun zoom_outline(int0: Int, component1: Component) {
+
+	if_setoutline(int0, component1)
+	return 
+}

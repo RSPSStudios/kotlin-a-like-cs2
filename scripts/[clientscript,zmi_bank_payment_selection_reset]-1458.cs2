@@ -1,0 +1,15 @@
+// 1458 clientscript
+fun zmi_bank_payment_selection_reset(clock0: Int, clock1: Int, component2: Component, component3: Component, comsubid4: Int, boolean5: Boolean) {
+
+	if (clientclock < clock1) {
+		return 
+	}
+	if (.cc_find(component3, comsubid4) = ^true & .cc_gethide = true) {
+		.cc_sethide(false)
+	}
+	if (clientclock < clock0) {
+		return 
+	}
+	~bank_payment_draw(component2, -1, boolean5)
+	return 
+}

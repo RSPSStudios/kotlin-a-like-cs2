@@ -1,0 +1,21 @@
+// 1308 clientscript
+fun ge_history_mouseeffect(component0: Component, comsubid1: Int, trans2: Int, comsubid3: Int, boolean4: Boolean, obj5: Obj, int6: Int) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_settrans(trans2)
+	}
+	if (.cc_find(component0, comsubid3) = ^true) {
+		if (int6 >= 2) {
+			if (boolean4 = true) {
+				.cc_settext("<col=ffffff>${oc_name(obj5)}</col><br>x ${~tostring_spacer(int6, ",")}")
+			} else {
+				.cc_settext("<col=ffb83f>${oc_name(obj5)}</col><br>x ${~tostring_spacer(int6, ",")}")
+			}
+		} else if (boolean4 = true) {
+			.cc_settext("<col=ffffff>${oc_name(obj5)}</col>")
+		} else {
+			.cc_settext("<col=ffb83f>${oc_name(obj5)}</col>")
+		}
+	}
+	return 
+}

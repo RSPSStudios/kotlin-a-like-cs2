@@ -1,0 +1,20 @@
+// 7 proc
+fun tt_reward_highlight_selected(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
+
+	val comsubid5: Int = 0
+	if_sethide(true, component3)
+	if_sethide(true, component4)
+	while (cc_find(component0, comsubid5) = ^true) {
+		if (comsubid5 = VARBIT[2459]) {
+			cc_setoutline(2)
+			if_settext(enum(int, string, enum_1383, VARBIT[2459]), component3)
+			if_sethide(false, component3)
+			if_sethide(false, component4)
+		} else {
+			cc_setoutline(0)
+		}
+		if_settext(~tt_reward_set_desc, component2)
+		comsubid5 = calc(comsubid5 + 1)
+	}
+	return 
+}

@@ -1,0 +1,11 @@
+// 3229 clientscript
+fun league_side_panel_button_hover(component0: Component, int1: Int) {
+
+	cc_deleteall(component0)
+	if (int1 = 1) {
+		~v2_stone_button_in_filled(component0)
+	} else {
+		~v2_stone_button_filled(component0)
+	}
+	return 
+}

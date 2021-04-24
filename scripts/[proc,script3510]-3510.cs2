@@ -1,0 +1,8 @@
+// 3510 proc
+fun script3510(): Int {
+
+	if (VARP[261] = 0 | VARP[261] = 1) {
+		return 1
+	}
+	return 0
+}

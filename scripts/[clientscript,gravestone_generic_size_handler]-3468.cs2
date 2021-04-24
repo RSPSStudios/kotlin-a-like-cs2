@@ -1,0 +1,6 @@
+// 3468 clientscript
+fun gravestone_generic_size_handler(component0: Component, component1: Component, component2: Component, int3: Int, int4: Int, int5: Int, component6: Component, int7: Int, component8: Component, int9: Int, component10: Component, component11: Component, component12: Component, component13: Component, width14: Int, int15: Int) {
+
+	~gravestone_generic_size_handler(component0, component1, component2, int3, int4, int5, component6, int7, component8, int9, component10, component11, component12, component13, width14, int15)
+	return 
+}

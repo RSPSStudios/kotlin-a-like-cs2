@@ -1,0 +1,7 @@
+// 3905 clientscript
+fun settings_button_leave(component0: Component, component1: Component) {
+
+	~deltooltip_action(component1)
+	~v2_stone_button_change_out(component0, 0)
+	return 
+}

@@ -1,0 +1,8 @@
+// 2727 clientscript
+fun meslayer_keyboard_show() {
+
+	if (~on_mobile = true) {
+		~keyboard_show_string(VARCINT[215], VARCINT[216], VARCSTRING[359])
+	}
+	return 
+}

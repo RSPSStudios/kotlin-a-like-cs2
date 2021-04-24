@@ -1,0 +1,10 @@
+// 2501 proc
+fun account_update_display() {
+
+	~account_update_layout
+	~account_billing_update
+	~account_inbox_update
+	~account_name_update
+	~account_polls_update
+	return 
+}

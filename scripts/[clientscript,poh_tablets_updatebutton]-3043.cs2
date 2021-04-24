@@ -1,0 +1,19 @@
+// 3043 clientscript
+fun poh_tablets_updatebutton(component0: Component, comsubid1: Int, comsubid2: Int, int3: Int, int4: Int, model5: Model, model6: Model) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		if (VARP[261] >= int3 & VARP[262] >= int4) {
+			cc_setmodel(model6)
+		} else {
+			cc_setmodel(model5)
+		}
+	}
+	if (comsubid2 ! -1 & .cc_find(component0, comsubid2) = ^true) {
+		if (VARP[261] >= int3 & VARP[262] >= int4) {
+			.cc_setcolour(0xff981f)
+		} else {
+			.cc_setcolour(0x9f9f9f)
+		}
+	}
+	return 
+}

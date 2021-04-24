@@ -1,0 +1,35 @@
+// 806 proc
+fun ge_offers_switchpanel(component0: Component, comsubid1: Int, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component) {
+
+	~deltooltip_action(component6)
+	val int7: Int = calc(VARBIT[4439] - 1)
+	val inv8: Inv = enum(int, inv, enum_150, int7)
+	if (inv8 = null) {
+		if_sethide(true, component2)
+		if_sethide(false, component3)
+		if_sethide(true, component4)
+		if_sethide(true, component5)
+		if (cc_find(component0, comsubid1) = ^true) {
+			cc_settext("Grand Exchange")
+		}
+		return 
+	}
+	if_sethide(false, component2)
+	if_settrans(0, component2)
+	if (stockmarket_isofferempty(int7) = true) {
+		if_sethide(true, component3)
+		if_sethide(true, component4)
+		if_sethide(false, component5)
+		if (cc_find(component0, comsubid1) = ^true) {
+			cc_settext("Grand Exchange: Set up offer")
+		}
+		return 
+	}
+	if_sethide(true, component3)
+	if_sethide(false, component4)
+	if_sethide(true, component5)
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_settext("Grand Exchange: Offer status")
+	}
+	return 
+}

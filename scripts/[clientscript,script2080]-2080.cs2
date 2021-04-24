@@ -1,0 +1,8 @@
+// 2080 clientscript
+fun script2080(obj0: Obj) {
+
+	if (obj0 = VARCINT[393]) {
+		~magic_stop_flash(obj0)
+	}
+	return 
+}

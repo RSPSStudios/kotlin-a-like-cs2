@@ -1,0 +1,13 @@
+// 283 clientscript
+fun bankmain_search_refresh(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component, component16: Component) {
+
+	if (VARCINT[5] ! 11) {
+		~bankmain_build(component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16)
+		~bankmain_search_setbutton(component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16)
+		return 
+	}
+	if (if_gethide(component10) = true & calc(clientclock % 40) = 0) {
+		~bankmain_build(component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16)
+	}
+	return 
+}

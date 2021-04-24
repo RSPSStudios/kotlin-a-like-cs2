@@ -1,0 +1,14 @@
+// 170 clientscript
+fun kr_tumbler_height() {
+
+	if (VARBIT[3905] = 1) {
+		if_settext("${tostring(VARBIT[3901])}/5", kr_picklock:7)
+	} else if (VARBIT[3905] = 2) {
+		if_settext("${tostring(VARBIT[3902])}/5", kr_picklock:7)
+	} else if (VARBIT[3905] = 3) {
+		if_settext("${tostring(VARBIT[3903])}/5", kr_picklock:7)
+	} else if (VARBIT[3905] = 4) {
+		if_settext("${tostring(VARBIT[3904])}/5", kr_picklock:7)
+	}
+	return 
+}

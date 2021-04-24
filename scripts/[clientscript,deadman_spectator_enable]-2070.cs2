@@ -1,0 +1,8 @@
+// 2070 clientscript
+fun deadman_spectator_enable(int0: Int) {
+
+	renderself(false)
+	~deadman_spectator_names(int0)
+	~deadman_spectator_chat(int0)
+	return 
+}

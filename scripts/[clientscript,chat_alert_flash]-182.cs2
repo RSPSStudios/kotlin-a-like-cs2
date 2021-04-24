@@ -1,0 +1,18 @@
+// 182 clientscript
+fun chat_alert_flash(int0: Int) {
+
+	val int1: Int = ~chat_alert_get(int0)
+	val int2: Int = 0
+	if (calc(int1 % 25) = 0) {
+		~redraw_chat_buttons
+		int2 = calc(int1 / 25)
+		if (int2 <= 1) {
+			if_setontimer(null, enum(int, component, enum_683, int0))
+		} else {
+			~chat_alert_set(int0, calc(int1 - 1))
+		}
+	} else {
+		~chat_alert_set(int0, calc(int1 - 1))
+	}
+	return 
+}

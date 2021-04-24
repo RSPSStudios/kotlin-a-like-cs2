@@ -1,0 +1,15 @@
+// 1377 proc
+fun poh_viewer_roomtooltip(string0: String, int0: Int, enum1: Enum, enum2: Enum, int3: Int): String, Int {
+
+	val coord4: Coord = enum(int, coord, enum1, int0)
+	val obj5: Obj = enum(coord, obj, enum2, coord4)
+	if (obj5 ! obj_8245) {
+		if (int3 > 0) {
+			string0 = append(string0, ", ${~script1299(oc_name(obj5), " ", " ")}")
+		} else {
+			string0 = append(string0, "<br><col=4f4f4f>${~script1299(oc_name(obj5), " ", " ")}")
+		}
+		int3 = calc(int3 + 1)
+	}
+	return string0, int3
+}

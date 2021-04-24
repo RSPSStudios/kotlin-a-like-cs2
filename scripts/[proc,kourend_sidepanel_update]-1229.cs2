@@ -1,0 +1,30 @@
+// 1229 proc
+fun kourend_sidepanel_update(int0: Int) {
+
+	val int1: Int = 0
+	if (int0 = 3) {
+		int1 = VARBIT[4896]
+	} else if (int0 = 2) {
+		int1 = VARBIT[4895]
+	} else if (int0 = 4) {
+		int1 = VARBIT[4898]
+	} else if (int0 = 5) {
+		int1 = VARBIT[4899]
+	} else if (int0 = 1) {
+		int1 = VARBIT[4894]
+	} else {
+		return 
+	}
+	cc_setsize(interpolate(0, int1, 0, 1000, 16384), 0, ^setsize_2, ^setsize_minus)
+	if (int1 > 0 & cc_getwidth < 1) {
+		cc_setsize(1, 0, ^setsize_abs, ^setsize_minus)
+	}
+	val int2: Int = interpolate(0, int1, 0, 1000, 1000)
+	.cc_settext("${tostring(calc(int2 / 10))}.${tostring(calc(int2 % 10))}%")
+	val int3: Int = 0
+	val int4: Int = 0
+	val int5: Int = 0
+	int3, int4, int5 = ~hex_to_rgb(0xff981f)
+	.cc_setcolour(~rgb_to_hex(calc(int3 + interpolate(0, int1, 0, 1000, 255 - int3)), calc(int4 + interpolate(0, int1, 0, 1000, 255 - int4)), calc(int5 + interpolate(0, int1, 0, 1000, 255 - int5))))
+	return 
+}

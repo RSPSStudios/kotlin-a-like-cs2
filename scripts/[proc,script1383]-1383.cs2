@@ -1,0 +1,20 @@
+// 1383 proc
+fun script1383(int0: Int, int1: Int, int2: Int, int3: Int, int4: Int, int5: Int) {
+
+	if (int0 > int2) {
+		~script1385(int0, 0, 3, 0)
+		return 
+	}
+	val component6: Component = enum(int, component, enum_1424, int0)
+	if (component6 = null) {
+		return 
+	}
+	if_sethide(true, component6)
+	val int7: Int = 0
+	val int8: Int = 0
+	val int9: Int = 0
+	int7, int8, int9 = ~script1387(int1)
+	if_setsize(int3, int3, ^setsize_abs, ^setsize_abs, component6)
+	if_setposition(calc(int7 * int3 - int4), calc(int9 * int3 - int5), ^setpos_abs_left, ^setpos_abs_bottom, component6)
+	return 
+}

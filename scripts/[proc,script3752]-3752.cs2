@@ -1,0 +1,10 @@
+// 3752 proc
+fun script3752(component0: Component) {
+
+	if (VARBIT[11697] = 1) {
+		if_setcolour(0xaaaaaa, component0)
+	} else {
+		if_setcolour(0xff981f, component0)
+	}
+	return 
+}

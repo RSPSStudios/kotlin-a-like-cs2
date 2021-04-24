@@ -1,0 +1,87 @@
+// 78 proc
+fun chatout_set(int0: Int, string0: String) {
+
+	when (int0): Int {
+		0 -> {
+		
+			VARCSTRING[336] = string0
+		}
+		1 -> {
+		
+			VARCSTRING[337] = string0
+		}
+		2 -> {
+		
+			VARCSTRING[338] = string0
+		}
+		3 -> {
+		
+			VARCSTRING[339] = string0
+		}
+		4 -> {
+		
+			VARCSTRING[340] = string0
+		}
+		5 -> {
+		
+			VARCSTRING[341] = string0
+		}
+		6 -> {
+		
+			VARCSTRING[342] = string0
+		}
+		7 -> {
+		
+			VARCSTRING[343] = string0
+		}
+		8 -> {
+		
+			VARCSTRING[344] = string0
+		}
+		9 -> {
+		
+			VARCSTRING[345] = string0
+		}
+		10 -> {
+		
+			VARCSTRING[346] = string0
+		}
+		11 -> {
+		
+			VARCSTRING[347] = string0
+		}
+		12 -> {
+		
+			VARCSTRING[348] = string0
+		}
+		13 -> {
+		
+			VARCSTRING[349] = string0
+		}
+		14 -> {
+		
+			VARCSTRING[350] = string0
+		}
+		15 -> {
+		
+			VARCSTRING[351] = string0
+		}
+		16 -> {
+		
+			VARCSTRING[352] = string0
+		}
+		17 -> {
+		
+			VARCSTRING[353] = string0
+		}
+		18 -> {
+		
+			VARCSTRING[354] = string0
+		}
+		19 -> {
+		
+			VARCSTRING[355] = string0
+		}
+	}
+	return 
+}

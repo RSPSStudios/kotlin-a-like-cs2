@@ -1,0 +1,6 @@
+// 2700 proc
+fun script2700(int0: Int) {
+
+	VARCINT[228] = int0
+	return 
+}

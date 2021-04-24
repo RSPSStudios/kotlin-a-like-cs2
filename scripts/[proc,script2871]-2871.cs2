@@ -1,0 +1,8 @@
+// 2871 proc
+fun script2871(): Int {
+
+	if (~pvpw_check = 1 | ~deadman_mode ! 0) {
+		return 1
+	}
+	return 0
+}

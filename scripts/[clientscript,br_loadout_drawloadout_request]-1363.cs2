@@ -1,0 +1,13 @@
+// 1363 clientscript
+fun br_loadout_drawloadout_request(component0: Component, component1: Component, component2: Component, drop3: Component, component4: Component) {
+
+	if (clientclock > VARCINT[110]) {
+		~br_loadout_drawloadout(component1, component2, drop3, component4)
+		if_setontimer(null, component0)
+	} else {
+		if_setontimer({
+			br_loadout_drawloadout_request(component0, component1, component2, drop3, component4)
+		}, component0)
+	}
+	return 
+}

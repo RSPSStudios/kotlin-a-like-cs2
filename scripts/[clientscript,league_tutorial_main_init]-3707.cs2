@@ -1,0 +1,9 @@
+// 3707 clientscript
+fun league_tutorial_main_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component) {
+
+	if_setonvartransmit({
+		league_tutorial_interface_update(component1, component2, component3, component4, component5, component6){VARP[2606]}
+	}, component0)
+	~league_tutorial_interface_update(component1, component2, component3, component4, component5, component6)
+	return 
+}

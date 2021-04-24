@@ -1,0 +1,123 @@
+// 892 proc
+fun worldswitcher_draw(component0: Component, component1: Component, component2: Component, component3: Component, int4: Int, int5: Int, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component) {
+
+	if_setsize(0, int5, ^setsize_minus, ^setsize_abs, component6)
+	if_setsize(16, int5, ^setsize_minus, ^setsize_minus, component0)
+	if_setsize(16, int5, ^setsize_abs, ^setsize_minus, component1)
+	~worldswitcher_sortbutton_draw(component7, 2, 3, component0, component1, component2, component3, int4, int5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15)
+	~worldswitcher_sortbutton_draw(component8, 0, 1, component0, component1, component2, component3, int4, int5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15)
+	~worldswitcher_sortbutton_draw(component9, 4, 5, component0, component1, component2, component3, int4, int5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15)
+	~worldswitcher_sortbutton_draw(component10, 8, 9, component0, component1, component2, component3, int4, int5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15)
+	~worldswitcher_sortbutton_draw(component11, 6, 7, component0, component1, component2, component3, int4, int5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15)
+	when (VARBIT[4596]): Int {
+		2 -> {
+		
+			worldlist_sort(7, false, 0, false)
+		}
+		3 -> {
+		
+			worldlist_sort(7, true, 0, false)
+		}
+		4 -> {
+		
+			worldlist_sort(2, false, 0, false)
+		}
+		5 -> {
+		
+			worldlist_sort(2, true, 0, false)
+		}
+		8 -> {
+		
+			worldlist_sort(1, false, 0, false)
+		}
+		9 -> {
+		
+			worldlist_sort(1, true, 0, false)
+		}
+		6 -> {
+		
+			worldlist_sort(3, false, 0, false)
+		}
+		7 -> {
+		
+			worldlist_sort(3, true, 0, false)
+		}
+		1 -> {
+		
+			worldlist_sort(0, true, 7, false)
+		}
+	else -> {
+	
+		worldlist_sort(0, false, 7, false)
+	}
+	}
+	val height16: Int = 0
+	val width17: Int = if_getwidth(component7)
+	val width18: Int = if_getwidth(component8)
+	val width19: Int = if_getwidth(component9)
+	val width20: Int = if_getwidth(component10)
+	val width21: Int = if_getwidth(component11)
+	cc_deleteall(component2)
+	val int22: Int = ~stat_totallevel
+	val int23: Int = ~stat_f2plevel
+	val int24: Int = 0
+	val world25: Int = 0
+	val flags26: Int = 0
+	val string0: String = ""
+	val int27: Int = -1
+	val int28: Int = 0
+	val string1: String = ""
+	world25, flags26, string0, int27, int28, string1 = worldlist_start
+	while (world25 > 0) {
+		if (~script961(world25, flags26) = 1) {
+			int24 = ~worldswitcher_entry_draw(component2, int24, height16, component3, world25, world25, flags26, string0, int27, int28, int4, width17, width18, width19, width20, width21, int22, int23, component15)
+			height16 = calc(height16 + int4)
+		}
+		world25, flags26, string0, int27, int28, string1 = worldlist_next
+	}
+	if (height16 > if_getheight(component0)) {
+		if_setscrollsize(0, height16, component0)
+	} else {
+		if_setscrollsize(0, 0, component0)
+	}
+	if_setsize(0, height16, ^setsize_minus, ^setsize_abs, component3)
+	if_setsize(0, height16, ^setsize_minus, ^setsize_abs, component2)
+	if (VARCINT[69] < 0) {
+		VARCINT[69] = 0
+	}
+	~scrollbar_resize(component1, component0, VARCINT[69])
+	cc_deleteall(component12)
+	cc_deleteall(component13)
+	val x29: Int = calc(if_getwidth(component12) - (width17 + width18 + width19 + width20))
+	if (VARBIT[4597] > 0) {
+		if_sethide(true, component14)
+		world25, flags26, string0, int27, int28, string1 = worldlist_specific(VARBIT[4597])
+		if (~script961(world25, flags26) = 0) {
+			world25, string0, int27, int28 = 0, "Unavailable", -1, 0
+		}
+		~worldswitcher_entry_draw(component12, 0, 0, component12, -1, world25, flags26, string0, int27, int28, int4, width17, width18, width19, width20, x29, int22, int23, component15)
+		if (VARBIT[4598] > 0) {
+			world25, flags26, string0, int27, int28, string1 = worldlist_specific(VARBIT[4598])
+			if (~script961(world25, flags26) = 0) {
+				world25, string0, int27, int28 = 0, "Unavailable", -1, 0
+			}
+			~worldswitcher_entry_draw(component13, 0, 0, component13, -1, world25, flags26, string0, int27, int28, int4, width17, width18, width19, width20, x29, int22, int23, component15)
+		} else {
+			~worldswitcher_wipe_favourite(component13)
+		}
+	} else {
+		~worldswitcher_wipe_favourite(component12)
+		if (VARBIT[4598] > 0) {
+			if_sethide(true, component14)
+			world25, flags26, string0, int27, int28, string1 = worldlist_specific(VARBIT[4598])
+			if (~script961(world25, flags26) = 0) {
+				world25, string0, int27, int28 = 0, "Unavailable", -1, 0
+			}
+			~worldswitcher_entry_draw(component13, 0, 0, component13, -1, world25, flags26, string0, int27, int28, int4, width17, width18, width19, width20, x29, int22, int23, component15)
+		} else {
+			if_sethide(false, component14)
+			~worldswitcher_wipe_favourite(component13)
+		}
+	}
+	return 
+}

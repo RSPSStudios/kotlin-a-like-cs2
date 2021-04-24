@@ -1,0 +1,303 @@
+// 478 proc
+fun skill_guide_data_thieving(int0: Int, int1: Int): Int, Namedobj, String {
+
+	when (int0): Int {
+		0 -> {
+		
+			when (int1): Int {
+				0 -> {
+				
+					return 1, man_3241, "Citizen"
+				}
+				1 -> {
+				
+					return 10, farmer_3243, "Farmer"
+				}
+				2 -> {
+				
+					return 15, female_h_a_m_4295, "Female H.A.M. follower"
+				}
+				3 -> {
+				
+					return 20, male_h_a_m_4297, "Male H.A.M. follower"
+				}
+				4 -> {
+				
+					return 25, warrior_woman_3245, "Warrior"
+				}
+				5 -> {
+				
+					return 32, rogue_3247, "Rogue"
+				}
+				6 -> {
+				
+					return 36, cave_goblin_10998, "Cave goblin"
+				}
+				7 -> {
+				
+					return 38, master_farmer_5068, "Master farmer"
+				}
+				8 -> {
+				
+					return 40, guard_3249, "Guard"
+				}
+				9 -> {
+				
+					return 45, fremennik_3686, "Fremennik"
+				}
+				10 -> {
+				
+					return 45, bandit_6782, "Bearded Pollnivnian bandit"
+				}
+				11 -> {
+				
+					return 53, bandit_4625, "Desert bandit"
+				}
+				12 -> {
+				
+					return 55, knight_of_ardougne_3251, "Knight"
+				}
+				13 -> {
+				
+					return 55, bandit_6781, "Pollnivnian bandit"
+				}
+				14 -> {
+				
+					return 65, watchman_3253, "Watchman"
+				}
+				15 -> {
+				
+					return 65, menaphite_thug_6780, "Menaphite thug"
+				}
+				16 -> {
+				
+					return 70, paladin_3255, "Paladin"
+				}
+				17 -> {
+				
+					return 75, gnome_3257, "Gnome"
+				}
+				18 -> {
+				
+					return 80, hero_3259, "Hero"
+				}
+				19 -> {
+				
+					return 82, vyre_24702, "Vyre"
+				}
+				20 -> {
+				
+					return 85, elf_6105, "Elf"
+				}
+				21 -> {
+				
+					return 90, tzhaar_hur_21278, "TzHaar"
+				}
+			}
+		}
+		1 -> {
+		
+			when (int1): Int {
+				0 -> {
+				
+					return 2, cabbage_1965, "Vegetable stall"
+				}
+				1 -> {
+				
+					return 5, cake_1891, "Cake stall"
+				}
+				2 -> {
+				
+					return 5, cup_of_tea_1978, "Tea stall"
+				}
+				3 -> {
+				
+					return 5, chisel_1755, "Crafting stall"
+				}
+				4 -> {
+				
+					return 5, banana_1963, "Monkey food stall"
+				}
+				5 -> {
+				
+					return 20, silk_950, "Silk stall"
+				}
+				6 -> {
+				
+					return 22, bottle_of_wine_7919, "Wine stall"
+				}
+				7 -> {
+				
+					return 25, golovanova_fruit_top_19653, "Fruit stall"
+				}
+				8 -> {
+				
+					return 27, seeds_5171, "Seed stall"
+				}
+				9 -> {
+				
+					return 35, bear_fur_948, "Fur stall"
+				}
+				10 -> {
+				
+					return 42, raw_salmon_331, "Fish stall"
+				}
+				11 -> {
+				
+					return 49, bronze_crossbow_9174, "Crossbow stall"
+				}
+				12 -> {
+				
+					return 50, silver_ore_442, "Silver stall"
+				}
+				13 -> {
+				
+					return 65, air_rune_556, "Magic stall"
+				}
+				14 -> {
+				
+					return 65, iron_scimitar_1323, "Scimitar stall"
+				}
+				15 -> {
+				
+					return 65, spice_2007, "Spices stall"
+				}
+				16 -> {
+				
+					return 75, sapphire_1607, "Gems stall"
+				}
+				17 -> {
+				
+					return 82, runite_ore_451, "Ore stall"
+				}
+			}
+		}
+		2 -> {
+		
+			when (int1): Int {
+				0 -> {
+				
+					return 13, coins_995, "Ardougne, Rellekka and the Wilderness"
+				}
+				1 -> {
+				
+					return 28, nature_rune_561, "Upstairs in Ardougne and Rellekka"
+				}
+				2 -> {
+				
+					return 28, dark_key_25244, "The Isle of Souls"
+				}
+				3 -> {
+				
+					return 43, coins_995, "Upstairs in Ardougne"
+				}
+				4 -> {
+				
+					return 47, steel_arrowtips_41, "Hemenster and Rellekka"
+				}
+				5 -> {
+				
+					return 52, oil_lamp_4522, "Dorgesh-Kaan (average chests)"
+				}
+				6 -> {
+				
+					return 59, blood_rune_565, "Chaos druid tower north of Ardougne"
+				}
+				7 -> {
+				
+					return 64, xerician_fabric_13383, "Lizardman Temple beneath Molch"
+				}
+				8 -> {
+				
+					return 72, raw_shark_383, "Ardougne Castle"
+				}
+				9 -> {
+				
+					return 78, uncut_sapphire_1623, "Dorgesh-Kaan (rich chests)"
+				}
+				10 -> {
+				
+					return 84, dragonstone_1615, "Wilderness Rogues' Castle"
+				}
+			}
+		}
+		3 -> {
+		
+			when (int1): Int {
+				0 -> {
+				
+					return 1, winter_garden_10855, "Sorceress's Garden minigame - Winter<br>Al Kharid region"
+				}
+				1 -> {
+				
+					return 15, cowbells_10593, "Can steal cowbells from dairy cows"
+				}
+				2 -> {
+				
+					return 21, ivory_comb_9026, "Pyramid Plunder minigame - Room 1<br>In the Jalsavrah Pyramid in Sophanem"
+				}
+				3 -> {
+				
+					return 25, spring_garden_10853, "Sorceress's Garden minigame - Spring<br>Al Kharid region"
+				}
+				4 -> {
+				
+					return 31, pottery_scarab_9032, "Pyramid Plunder - Room 2"
+				}
+				5 -> {
+				
+					return 41, pottery_statuette_9036, "Pyramid Plunder - Room 3"
+				}
+				6 -> {
+				
+					return 44, cave_goblin_wire_10981, "Can steal wire from the Dorgeshuun wire machine"
+				}
+				7 -> {
+				
+					return 45, autumn_garden_10854, "Sorceress's Garden minigame - Autumn<br>Al Kharid region"
+				}
+				8 -> {
+				
+					return 49, stolen_pendant_13434, "Can pick locks in Port Piscarilius."
+				}
+				9 -> {
+				
+					return 50, uncut_sapphire_1623, "Can crack the wall safes in Rogues' Den"
+				}
+				10 -> {
+				
+					return 51, stone_seal_9042, "Pyramid Plunder - Room 4"
+				}
+				11 -> {
+				
+					return 57, grubby_key_23499, "Can pick-lock the door to the Grubby Chest in the Forthos Dungeon."
+				}
+				12 -> {
+				
+					return 61, stone_statuette_9038, "Pyramid Plunder - Room 5"
+				}
+				13 -> {
+				
+					return 65, summer_garden_10852, "Sorceress's Garden minigame - Summer<br>Al Kharid region"
+				}
+				14 -> {
+				
+					return 66, hallowed_token_24719, "Hallowed Sepulchre - Can pick-lock the coffins found on each floor."
+				}
+				15 -> {
+				
+					return 71, gold_seal_9040, "Pyramid Plunder - Room 6"
+				}
+				16 -> {
+				
+					return 81, golden_scarab_9028, "Pyramid Plunder - Room 7"
+				}
+				17 -> {
+				
+					return 91, golden_statuette_9034, "Pyramid Plunder - Room 8"
+				}
+			}
+		}
+	}
+	return -1, null, ""
+}

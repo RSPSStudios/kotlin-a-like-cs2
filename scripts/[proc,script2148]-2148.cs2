@@ -1,0 +1,59 @@
+// 2148 proc
+fun script2148(enum0: Enum, component1: Component, obj2: Obj, text0: String, int3: Int) {
+
+	val int4: Int = 0
+	val namedobj5: Namedobj = null
+	int4, namedobj5 = ~storage_getcarried(enum0, obj2)
+	val colour6: Int = 0xbb0000
+	if (int4 > 0) {
+		colour6 = 0x20df20
+	}
+	if (cc_find(component1, int3) = ^true & .cc_find(component1, calc(int3 + 1)) = ^true) {
+		cc_settext(text0)
+		cc_setcolour(colour6)
+		.cc_setcolour(colour6)
+		.cc_settext(~magic_tostring(int4))
+	}
+	if (cc_find(component1, calc(int3 + 2)) = ^true) {
+		cc_setobject_nonum(namedobj5, int4)
+	}
+	if_setopbase("<col=ff9040>${oc_name(namedobj5)}</col>", component1)
+	if_clearops(component1)
+	if_setop(10, "Examine", component1)
+	val int7: Int = enum(obj, int, enum0, obj2)
+	if (int7 <= 1) {
+		if_setop(1, "Store", component1)
+	} else {
+		when (~script376(enum0)): Int {
+			0 -> {
+			
+				if_setop(1, "Store-1", component1)
+				if_setop(2, "Store-5", component1)
+				if_setop(3, "Store-X", component1)
+				if_setop(4, "Store-All", component1)
+			}
+			1 -> {
+			
+				if_setop(1, "Store-5", component1)
+				if_setop(2, "Store-1", component1)
+				if_setop(3, "Store-X", component1)
+				if_setop(4, "Store-All", component1)
+			}
+			3 -> {
+			
+				if_setop(1, "Store-X", component1)
+				if_setop(2, "Store-1", component1)
+				if_setop(3, "Store-5", component1)
+				if_setop(4, "Store-All", component1)
+			}
+			2 -> {
+			
+				if_setop(1, "Store-All", component1)
+				if_setop(2, "Store-1", component1)
+				if_setop(3, "Store-5", component1)
+				if_setop(4, "Store-X", component1)
+			}
+		}
+	}
+	return 
+}

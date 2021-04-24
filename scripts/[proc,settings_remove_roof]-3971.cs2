@@ -1,0 +1,10 @@
+// 3971 proc
+fun settings_remove_roof() {
+
+	if (getremoveroofs = true) {
+		setremoveroofs(false)
+	} else {
+		setremoveroofs(true)
+	}
+	return 
+}

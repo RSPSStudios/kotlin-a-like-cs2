@@ -1,0 +1,6 @@
+// 2392 clientscript
+fun trawler_overlay_init(component0: Component) {
+
+	~script2249(component0, setbit(setbit(0, 3), 2))
+	return 
+}

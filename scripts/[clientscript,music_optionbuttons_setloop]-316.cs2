@@ -1,0 +1,15 @@
+// 316 clientscript
+fun music_optionbuttons_setloop(opindex0: Int, component1: Component, component2: Component, component3: Component) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	if (VARBIT[4137] <= 0) {
+		VARBIT[4137] = 1
+	} else {
+		VARBIT[4137] = 0
+	}
+	~music_optionbuttons(component1, component2, component3)
+	return 
+}

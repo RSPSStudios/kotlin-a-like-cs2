@@ -1,0 +1,45 @@
+// 1279 proc
+fun script1279(int0: Int): Int, Int, Int {
+
+	val stat1: Stat = enum(int, stat, enum_681, int0)
+	val lvl2: Int = stat_base(stat1)
+	val bool3: Int = testbit(VARP[1295], calc(int0 - 1))
+	val int4: Int = 50
+	if (bool3 = ^true) {
+		if (VARCINT[139] < 3) {
+			return lvl2, lvl2, 0
+		}
+		int4 = 90
+	} else if (VARCINT[139] < 2) {
+		return lvl2, lvl2, 0
+	} else if (VARBIT[5667] = 1) {
+		if (VARCINT[139] <= 1) {
+			return lvl2, lvl2, 0
+		}
+	} else if (VARCINT[139] <= 0) {
+		return lvl2, lvl2, 0
+	} else if (VARCINT[139] <= 1) {
+		int4 = 75
+	}
+	val xp5: Int = stat_xp(stat1)
+	val int6: Int = scale(int4, 100, xp5)
+	val int7: Int = lvl2
+	while (enum(int, int, enum_256, int7) > int6) {
+		int7 = calc(int7 - 1)
+	}
+	val int8: Int = enum(int, int, enum_1240, int0)
+	if (lvl2 < int8) {
+		int8 = lvl2
+	}
+	if (int8 > int7) {
+		int7 = int8
+	}
+	val int9: Int = enum(int, int, enum_256, int8)
+	if (xp5 < int9) {
+		int9 = xp5
+	}
+	if (int9 > int6) {
+		int6 = int9
+	}
+	return lvl2, int7, calc(xp5 - int6)
+}

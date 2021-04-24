@@ -1,0 +1,29 @@
+// 1342 proc
+fun quicksort_componentenum(arraycomponent0: Component, int1: Int, int2: Int, enum3: Enum) {
+
+	val index4: Int = calc((int1 + int2) / 2)
+	val component5: Component = component0[index4]
+	component0[index4] = component0[int2]
+	component0[int2] = component5
+	val int6: Int = int1
+	val int7: Int = int1
+	val component8: Component = null
+	while (int7 < int2) {
+		if (compare(lowercase(enum(component, string, enum3, component0[int7])), lowercase(enum(component, string, enum3, component5))) <= 0) {
+			component8 = component0[int7]
+			component0[int7] = component0[int6]
+			component0[int6] = component8
+			int6 = calc(int6 + 1)
+		}
+		int7 = calc(int7 + 1)
+	}
+	component0[int2] = component0[int6]
+	component0[int6] = component5
+	if (int1 < calc(int6 - 1)) {
+		~quicksort_componentenum(component0, int1, calc(int6 - 1), enum3)
+	}
+	if (calc(int6 + 1) < int2) {
+		~quicksort_componentenum(component0, calc(int6 + 1), int2, enum3)
+	}
+	return 
+}

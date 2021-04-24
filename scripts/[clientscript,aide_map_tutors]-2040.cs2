@@ -1,0 +1,9 @@
+// 2040 clientscript
+fun aide_map_tutors(boolean0: Boolean, component1: Component, comsubid2: Int, component3: Component) {
+
+	if (cc_find(component1, comsubid2) = ^true) {
+		sound_synth(synth_2266, 1, 0)
+		~aide_map_tutors(boolean0, component3, component1)
+	}
+	return 
+}

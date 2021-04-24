@@ -1,0 +1,21 @@
+// 3955 proc
+fun script3955(struct0: Struct): Int {
+
+	val int1: Int = 0
+	if (~on_mobile = true & struct_param(struct0, param_739) = true) {
+		int1 = 1
+	}
+	if (~on_mobile = false & struct_param(struct0, param_740) = true) {
+		int1 = 1
+	}
+	if (~script2357 = 0 & struct_param(struct0, param_1157) = true) {
+		int1 = 1
+	}
+	if (struct_param(struct0, param_741) = true & VARBIT[1777] ! 0) {
+		int1 = 1
+	}
+	if (struct_param(struct0, param_742) = true & VARBIT[1777] = 0) {
+		int1 = 1
+	}
+	return int1
+}

@@ -1,0 +1,24 @@
+// 3519 proc
+fun script3519(component0: Component, component1: Component, component2: Component, boolean3: Boolean, text0: String, boolean4: Boolean, component5: Component, component6: Component) {
+
+	val comsubid7: Int = 0
+	if (boolean4 = false) {
+		comsubid7 = ~v2_stone_button_out_filled(component0)
+	} else {
+		comsubid7 = ~v2_stone_button_in_filled(component0)
+	}
+	cc_create(component0, ^iftype_text, comsubid7)
+	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	cc_settextfont(p11_full)
+	cc_settextshadow(true)
+	cc_settextshadow(true)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_settext(text0)
+	if (boolean4 = false) {
+		cc_setcolour(0xff981f)
+	} else {
+		cc_setcolour(^white)
+	}
+	return 
+}

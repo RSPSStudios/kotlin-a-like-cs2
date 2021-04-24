@@ -1,0 +1,16 @@
+// 3956 proc
+fun settings_op_checker(struct0: Struct): Int {
+
+	val int1: Int = ~script3957(struct0)
+	~settings_op_sound(int1)
+	val mes0: String = ""
+	if (int1 = 0) {
+		if (~on_mobile = true & string_length(struct_param(struct0, param_1117)) > 0) {
+			mes0 = struct_param(struct0, param_1117)
+		} else {
+			mes0 = struct_param(struct0, param_1116)
+		}
+		mes(mes0)
+	}
+	return int1
+}

@@ -1,0 +1,14 @@
+// 3266 proc
+fun account_tab_highlight_reset(component0: Component, component1: Component, component2: Component, int3: Int) {
+
+	if (VARBIT[10060] = int3) {
+		if_setgraphic("tabs_tall,0", component0)
+		if_setgraphic("tabs_tall,1", component1)
+		if_setgraphic("tabs_tall,0", component2)
+	} else {
+		if_setgraphic("tabs_tall,2", component0)
+		if_setgraphic("tabs_tall,3", component1)
+		if_setgraphic("tabs_tall,2", component2)
+	}
+	return 
+}

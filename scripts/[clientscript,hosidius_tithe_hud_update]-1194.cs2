@@ -1,0 +1,6 @@
+// 1194 clientscript
+fun hosidius_tithe_hud_update(component0: Component, component1: Component, component2: Component) {
+
+	~hosidius_tithe_hud_update(component0, component1, component2)
+	return 
+}

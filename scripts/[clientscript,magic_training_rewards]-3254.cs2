@@ -1,0 +1,6 @@
+// 3254 clientscript
+fun magic_training_rewards(component0: Component, component1: Component, component2: Component) {
+
+	~magic_training_rewards(component0, component1, component2)
+	return 
+}

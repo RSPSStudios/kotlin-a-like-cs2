@@ -1,0 +1,9 @@
+// 1298 proc
+fun slayer_rewards_unlock_desc(int0: Int): String {
+
+	val string0: String = enum(int, string, enum_835, int0)
+	if (VARBIT[5037] = 1) {
+		string0 = ~script1299(string0, "Nieve", "Steve")
+	}
+	return string0
+}

@@ -1,0 +1,23 @@
+// 1655 proc
+fun script1655(boolean0: Boolean, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component) {
+
+	if_sethide(boolean0, component2)
+	if (boolean0 = true) {
+		VARCINT[214] = true
+		cc_setontimer(null)
+		cc_setonkey({
+			script1684(event_key, event_com, event_comsubid, component2, component3, component4, component5)
+		})
+		return 
+	}
+	VARCINT[214] = false
+	if_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre, component2)
+	~oculus_flashers(component3, component4, component5)
+	cc_setontimer({
+		oculus_flashers(component3, component4, component5)
+	})
+	cc_setonkey({
+		script1668(event_key, event_com, event_comsubid, component2, component3, component4, component5)
+	})
+	return 
+}

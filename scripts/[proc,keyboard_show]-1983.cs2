@@ -1,0 +1,6 @@
+// 1983 proc
+fun keyboard_show(int0: Int, int1: Int) {
+
+	~keyboard_show_string(int0, int1, "")
+	return 
+}

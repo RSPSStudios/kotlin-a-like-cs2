@@ -1,0 +1,6 @@
+// 1041 clientscript
+fun orbs_xpdrops_update(component0: Component) {
+
+	~orbs_xpdrops_update(component0)
+	return 
+}

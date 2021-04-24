@@ -1,0 +1,18 @@
+// 3148 proc
+fun script3148(component0: Component, component1: Component, component2: Component) {
+
+	val int3: Int = scale(60, 100, calc((VARBIT[10543] - 2) * 2))
+	~script3150(int3, component1)
+	if (int3 > -2) {
+		if_sethide(false, component2)
+		if_sethide(false, component1)
+		if_setontimer({
+			script3149(calc(clientclock + 50), calc(int3 - 1), component0, component1, component2)
+		}, component0)
+	} else {
+		if_sethide(true, component2)
+		if_sethide(true, component1)
+		if_setontimer(null, component0)
+	}
+	return 
+}

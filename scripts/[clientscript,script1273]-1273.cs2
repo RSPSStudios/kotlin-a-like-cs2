@@ -1,0 +1,9 @@
+// 1273 clientscript
+fun script1273(opindex0: Int, component1: Component) {
+
+	if (opindex0 = 6) {
+		sound_synth(synth_2266, 1, 0)
+		~script1272(component1, 1)
+	}
+	return 
+}

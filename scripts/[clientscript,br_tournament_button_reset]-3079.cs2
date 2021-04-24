@@ -1,0 +1,8 @@
+// 3079 clientscript
+fun br_tournament_button_reset(clock0: Int, component1: Component, string0: String) {
+
+	if (clientclock >= clock0) {
+		~br_tournament_button_reset(component1, string0)
+	}
+	return 
+}

@@ -1,0 +1,6 @@
+// 425 clientscript
+fun slayer_rewards_tasks_blocked_draw(component0: Component, int1: Int, int2: Int, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component) {
+
+	~slayer_rewards_tasks_blocked_draw(component0, int1, int2, component3, component4, component5, component6, component7)
+	return 
+}

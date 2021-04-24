@@ -1,0 +1,10 @@
+// 3163 clientscript
+fun league_flash_timer(component0: Component) {
+
+	~league_flashicon(component0)
+	if (VARBIT[10037] > 4) {
+		if_sethide(false, interface_629:32)
+		if_setontimer(null, interface_629:28)
+	}
+	return 
+}

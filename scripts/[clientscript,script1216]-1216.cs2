@@ -1,0 +1,70 @@
+// 1216 clientscript
+fun script1216(int0: Int, int1: Int, int2: Int, int3: Int, int4: Int, int5: Int, int6: Int, int7: Int, int8: Int, int9: Int, int10: Int, int11: Int, int12: Int, int13: Int, int14: Int, int15: Int, int16: Int, int17: Int, int18: Int, int19: Int, int20: Int, int21: Int, int22: Int, int23: Int, int24: Int, int25: Int, int26: Int, int27: Int) {
+
+	VARCINT[81] = int0
+	VARCINT[82] = int1
+	VARCINT[83] = int2
+	VARCINT[84] = int3
+	VARCINT[85] = int4
+	VARCINT[86] = int5
+	VARCINT[87] = int6
+	VARCINT[88] = int7
+	VARCINT[89] = int8
+	VARCINT[90] = int9
+	VARCINT[91] = int10
+	VARCINT[92] = int11
+	VARCINT[93] = int12
+	VARCINT[94] = int13
+	VARCINT[95] = int14
+	VARCINT[96] = int15
+	VARCINT[97] = int16
+	VARCINT[98] = int17
+	VARCINT[99] = int18
+	VARCINT[100] = int19
+	VARCINT[101] = int20
+	VARCINT[102] = int21
+	VARCINT[104] = int22
+	VARCINT[105] = int23
+	VARCINT[106] = int24
+	VARCINT[107] = int25
+	VARCINT[108] = int26
+	VARCINT[109] = int27
+	val int28: Int = inv_size(inv_90)
+	int0[int28]: Int
+	int0[0] = int0
+	int0[1] = int1
+	int0[2] = int2
+	int0[3] = int3
+	int0[4] = int4
+	int0[5] = int5
+	int0[6] = int6
+	int0[7] = int7
+	int0[8] = int8
+	int0[9] = int9
+	int0[10] = int10
+	int0[11] = int11
+	int0[12] = int12
+	int0[13] = int13
+	int0[14] = int14
+	int0[15] = int15
+	int0[16] = int16
+	int0[17] = int17
+	int0[18] = int18
+	int0[19] = int19
+	int0[20] = int20
+	int0[21] = int21
+	int0[22] = int22
+	int0[23] = int23
+	int0[24] = int24
+	int0[25] = int25
+	int0[26] = int26
+	int0[27] = int27
+	while (int28 > 0) {
+		int28 = calc(int28 - 1)
+		if (cc_find(trademain:25, int28) = ^true) {
+			~trade_tooltip(inv_getnum(inv_90, int28), int0[int28], trademain:32)
+		}
+	}
+	~deltooltip_action(trademain:32)
+	return 
+}

@@ -1,0 +1,22 @@
+// 2277 clientscript
+fun bondif_redeem_subtitle(string0: String) {
+
+	if (if_hassub(enum(component, component, ~toplevel_getcomponents, interface_161:15)) = false) {
+		return 
+	}
+	if (VARCINT[179] > 0) {
+		VARCINT[179] = calc(VARCINT[179] + 10)
+	}
+	val int0: Int = calc(paraheight(string0, if_getwidth(interface_66:6), b12_full) * 12 + 5)
+	cc_create(interface_66:6, ^iftype_text, VARCINT[178])
+	VARCINT[178] = calc(VARCINT[178] + 1)
+	cc_setsize(0, int0, ^setsize_minus, ^setsize_abs)
+	cc_setposition(0, VARCINT[179], ^setpos_abs_centre, ^setpos_abs_top)
+	cc_setcolour(0xff981f)
+	cc_settextfont(b12_full)
+	cc_settextshadow(true)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	cc_settext(string0)
+	VARCINT[179] = calc(VARCINT[179] + int0)
+	return 
+}

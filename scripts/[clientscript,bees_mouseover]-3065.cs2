@@ -1,0 +1,7 @@
+// 3065 clientscript
+fun bees_mouseover(component0: Component) {
+
+	if_setmodelanim(seq_1, component0)
+	sound_synth(synth_819, 1, 0)
+	return 
+}

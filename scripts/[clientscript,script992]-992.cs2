@@ -1,0 +1,16 @@
+// 992 clientscript
+fun script992(component0: Component, comsubid1: Int, component2: Component, string0: String, string1: String, fontmetrics3: Fontmetrics, int4: Int) {
+
+	if (VARCINT[1] < calc(clientclock + int4)) {
+		if (VARCINT[1] < clientclock) {
+			VARCINT[1] = clientclock
+		}
+		VARCINT[1] = calc(VARCINT[1] + 2)
+		return 
+	}
+	VARCINT[1] = calc(clientclock + int4 + 10)
+	if (VARCINT[2] = 0 & if_gethide(component2) = false) {
+		~script2344(component0, comsubid1, component2, string0, string1, fontmetrics3)
+	}
+	return 
+}

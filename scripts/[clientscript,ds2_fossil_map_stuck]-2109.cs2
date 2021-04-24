@@ -1,0 +1,9 @@
+// 2109 clientscript
+fun ds2_fossil_map_stuck(opindex0: Int, flags1: Int) {
+
+	if (testbit(flags1, opindex0) = ^true) {
+		sound_synth(synth_2268, 1, 0)
+		mes("That piece is stuck.")
+	}
+	return 
+}

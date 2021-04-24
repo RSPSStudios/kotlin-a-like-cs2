@@ -1,0 +1,16 @@
+// 3413 clientscript
+fun highlight_textbox(colour0: Int, boolean1: Boolean, boolean2: Boolean, component3: Component, string0: String) {
+
+	~highlight_textbox(string0, colour0, boolean1, boolean2, component3, 0)
+	if (VARBIT[10308] >= calc(VARBIT[10309] - 1)) {
+		~highlight_button(interface_664:31, 0, "Finish", boolean1)
+	} else {
+		~highlight_button(interface_664:31, 0, "Continue", boolean1)
+	}
+	if (VARBIT[10308] > 0) {
+		~highlight_button(interface_664:32, 0, "Previous", false)
+	} else {
+		~highlight_button(interface_664:32, 1, "Previous", false)
+	}
+	return 
+}

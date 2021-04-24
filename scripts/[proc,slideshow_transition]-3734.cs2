@@ -1,0 +1,27 @@
+// 3734 proc
+fun slideshow_transition(component0: Component, enum1: Enum, int2: Int, int3: Int) {
+
+	val int4: Int = 0
+	val count5: Int = 0
+	if (cc_find(component0, 0) = ^true) {
+		int4 = calc(255 - cc_gettrans)
+		count5 = calc(int4 + 1)
+		if (count5 = enum_getoutputcount(enum1)) {
+			count5 = 0
+		}
+		cc_settrans(calc(255 - count5))
+	}
+	val graphic6: Graphic = enum(int, graphic, enum1, int4)
+	val graphic7: Graphic = enum(int, graphic, enum1, count5)
+	if (cc_find(component0, 1) = ^true) {
+		cc_setgraphic(graphic7)
+	}
+	if (cc_find(component0, 2) = ^true) {
+		cc_setgraphic(graphic6)
+		cc_settrans(0)
+		cc_setontimer({
+			slideshow_fadeout(component0, 2, int3)
+		})
+	}
+	return 
+}

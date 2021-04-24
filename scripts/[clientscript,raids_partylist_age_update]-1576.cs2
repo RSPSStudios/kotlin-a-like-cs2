@@ -1,0 +1,12 @@
+// 1576 clientscript
+fun raids_partylist_age_update(component0: Component, comsubid1: Int, int2: Int, int3: Int) {
+
+	if (calc(clientclock % 50) = 0) {
+		return 
+	}
+	val int4: Int = calc((clientclock - int3) / 50)
+	if (cc_find(component0, comsubid1) = ^true) {
+		~raids_partylist_age_write(calc(int2 + int4), int2, int3)
+	}
+	return 
+}

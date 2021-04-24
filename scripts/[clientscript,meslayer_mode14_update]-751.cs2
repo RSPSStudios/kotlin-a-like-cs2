@@ -1,0 +1,12 @@
+// 751 clientscript
+fun meslayer_mode14_update(boolean0: Boolean, enum1: Enum, boolean2: Boolean) {
+
+	if (VARCINT[66] <= 0) {
+		return 
+	}
+	VARCINT[66] = calc(VARCINT[66] - 1)
+	if (VARCINT[66] <= 0) {
+		~meslayer_mode14_update(boolean0, enum1, boolean2)
+	}
+	return 
+}

@@ -1,0 +1,43 @@
+// 553 proc
+fun script553(): Int {
+
+	val mesuid0: Int = -1
+	val int1: Int = -1
+	val string0: String = ""
+	val string1: String = ""
+	val string2: String = ""
+	val mesuid2: Int = -1
+	val int3: Int = ^min_32bit_int
+	val int4: Int = ^min_32bit_int
+	val chattype5: Int = ^chattype_gamemessage
+	val int6: Int = 0
+	while (chattype5 <= ^chattype_108) {
+		if (chat_gethistorylength(chattype5) > 0) {
+			mesuid0, int1, string0, string1, string2, int6 = chat_gethistory_bytypeandline(chattype5, 0)
+			if (int1 > int3 | mesuid0 > mesuid2) {
+				int3 = int1
+				mesuid2 = mesuid0
+			}
+			when (chattype5): Int {
+				^chattype_privatechat, ^chattype_privatechatout, ^chattype_modprivatechat -> {
+				
+					if (int1 > int4) {
+						int4 = int1
+						VARCSTRING[356] = removetags(string0)
+					}
+				}
+				^chattype_broadcast -> {
+				
+					if (mesuid0 ! -1 & int1 >= VARCINT[202] & int1 > calc(clientclock - 3000)) {
+						VARCINT[55] = int1
+						if_setontimer({
+							script664(false)
+						}, interface_162:0)
+					}
+				}
+			}
+		}
+		chattype5 = calc(chattype5 + 1)
+	}
+	return mesuid2
+}

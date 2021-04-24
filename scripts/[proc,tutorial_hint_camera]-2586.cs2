@@ -1,0 +1,10 @@
+// 2586 proc
+fun tutorial_hint_camera() {
+
+	if (~on_mobile = true) {
+		~tutorial_hint_camera_mobile
+	} else {
+		~tutorial_hint_camera_desktop
+	}
+	return 
+}

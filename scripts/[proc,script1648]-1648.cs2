@@ -1,0 +1,17 @@
+// 1648 proc
+fun script1648(enum0: Enum, component1: Component, component2: Component, component3: Component, component4: Component, int5: Int, int6: Int, int7: Int, int8: Int) {
+
+	if (int5 = 1) {
+		~script2004(enum0, component1, component2, component3, component4, component1, "1", false, 0)
+	}
+	if (int6 = 1) {
+		~script2004(enum0, component1, component2, component3, component4, component2, "5", false, 1)
+	}
+	if (int7 = 1) {
+		~script2004(enum0, component1, component2, component3, component4, component3, "All", false, 2)
+	}
+	if (int8 = 1) {
+		~script2004(enum0, component1, component2, component3, component4, component4, "X", false, 3)
+	}
+	return 
+}

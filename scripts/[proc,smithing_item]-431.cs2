@@ -1,0 +1,63 @@
+// 431 proc
+fun smithing_item(component0: Component, text0: String, namedobj1: Namedobj, int2: Int, obj3: Obj) {
+
+	cc_deleteall(component0)
+	if (namedobj1 = null) {
+		if_sethide(true, component0)
+		return 
+	}
+	if_sethide(false, component0)
+	if (~inzone(0_48_148_0_0, 0_48_148_63_63, coord) = 1 & namedobj1 ! bronze_dagger_1205) {
+		int2 = 1
+	}
+	val width4: Int = if_getwidth(component0)
+	cc_create(component0, ^iftype_text, 0)
+	cc_setsize(width4, 13, ^setsize_abs, ^setsize_abs)
+	cc_setposition(0, calc(32 - 1), ^setpos_abs_left, ^setpos_abs_top)
+	cc_settextfont(p11_full)
+	cc_settextalign(^settextalign_left, ^settextalign_top, 0)
+	if (int2 = 1 | stat(smithing) < enum(obj, int, enum_846, namedobj1)) {
+		cc_setcolour(^black)
+		cc_settextshadow(false)
+	} else {
+		cc_setcolour(^white)
+		cc_settextshadow(true)
+	}
+	cc_settext(text0)
+	val int5: Int = enum(obj, int, enum_845, namedobj1)
+	cc_create(component0, ^iftype_text, 1)
+	cc_setsize(width4, 13, ^setsize_abs, ^setsize_abs)
+	cc_setposition(0, calc(32 + 11), ^setpos_abs_left, ^setpos_abs_top)
+	cc_settextfont(p11_full)
+	cc_settextalign(^settextalign_left, ^settextalign_top, 0)
+	cc_settextshadow(true)
+	if (inv_total(inv, obj3) < int5) {
+		cc_setcolour(0xff981f)
+	} else {
+		cc_setcolour(^green)
+	}
+	if (int5 = 1) {
+		cc_settext("1 bar")
+	} else {
+		cc_settext("${tostring(int5)} bars")
+	}
+	cc_create(component0, ^iftype_graphic, 2)
+	cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+	cc_setposition(6, 0, ^setpos_abs_left, ^setpos_abs_top)
+	cc_setgraphicshadow(0x333333)
+	cc_setoutline(1)
+	if (~inzone(0_26_195_0_0, 0_26_195_63_63, coord) = 1 & namedobj1 = bronze_dagger_1205 & VARP[2686] < 350) {
+		cc_setontimer({
+			cc_flash_component_timer(event_com, event_comsubid, 0, 1)
+		})
+	}
+	val num6: Int = enum(obj, int, enum_844, namedobj1)
+	cc_setobject(namedobj1, num6)
+	if (num6 > 1) {
+		if_setop(1, "Smith set", component0)
+	} else {
+		if_setop(1, "Smith", component0)
+	}
+	if_setopbase("<col=ff9040>${oc_name(namedobj1)}</col>", component0)
+	return 
+}

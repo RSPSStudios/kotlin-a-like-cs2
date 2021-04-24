@@ -1,0 +1,6 @@
+// 2409 clientscript
+fun soulbane_angerbar_init(component0: Component) {
+
+	~script2249(component0, setbit(setbit(0, 3), 2))
+	return 
+}

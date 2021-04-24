@@ -1,0 +1,6 @@
+// 956 clientscript
+fun macro_maze_timer(component0: Component) {
+
+	if_settext("${tostring(VARP[531])}%", component0)
+	return 
+}

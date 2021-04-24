@@ -1,0 +1,34 @@
+// 1995 clientscript
+fun script1995(component0: Component, int1: Int, int2: Int) {
+
+	val int3: Int = VARCINT[197]
+	val int4: Int = 0
+	val int5: Int = 0
+	if (if_find(component0) = true) {
+		if (int3 < 10120 | int3 > 49220) {
+			VARCINT[197] = 33189
+			cc_set2dangle(33189)
+			return 
+		}
+		if (int1 = int3) {
+			if_setontimer(null, component0)
+			return 
+		}
+		if (int2 = 0) {
+			VARBIT[5799] = 45
+		} else if (int2 = 1) {
+			VARBIT[5799] = 45
+		} else if (int2 = 2) {
+			VARBIT[5799] = 45
+		}
+		if (int3 < int1) {
+			int4 = VARBIT[5799]
+		} else {
+			int4 = calc(0 - VARBIT[5799])
+		}
+		int5 = ~minmax(10120, 49220, calc(int3 + int4))
+		cc_set2dangle(int5)
+		VARCINT[197] = int5
+	}
+	return 
+}

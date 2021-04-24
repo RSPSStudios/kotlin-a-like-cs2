@@ -1,0 +1,8 @@
+// 2155 clientscript
+fun toplevel_chatbox_resetbackground_soon(clock0: Int) {
+
+	if (clientclock >= clock0) {
+		~toplevel_chatbox_background
+	}
+	return 
+}

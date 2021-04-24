@@ -1,0 +1,95 @@
+// 2671 proc
+fun script2671(int0: Int): Int {
+
+	if (VARBIT[6654] = int0) {
+		return 1
+	}
+	if (VARBIT[6655] = int0) {
+		return 1
+	}
+	if (VARBIT[6656] = int0) {
+		return 1
+	}
+	if (VARBIT[6657] = int0) {
+		return 1
+	}
+	if (VARBIT[6658] = int0) {
+		return 1
+	}
+	if (VARBIT[6659] = int0) {
+		return 1
+	}
+	if (VARBIT[6660] = int0) {
+		return 1
+	}
+	if (VARBIT[6661] = int0) {
+		return 1
+	}
+	if (VARBIT[6662] = int0) {
+		return 1
+	}
+	if (VARBIT[6663] = int0) {
+		return 1
+	}
+	if (VARBIT[6664] = int0) {
+		return 1
+	}
+	if (VARBIT[6665] = int0) {
+		return 1
+	}
+	if (VARBIT[6666] = int0) {
+		return 1
+	}
+	if (VARBIT[6667] = int0) {
+		return 1
+	}
+	if (VARBIT[6668] = int0) {
+		return 1
+	}
+	if (VARBIT[6554] = int0) {
+		return 1
+	}
+	if (VARBIT[6555] = int0) {
+		return 1
+	}
+	if (VARBIT[6556] = int0) {
+		return 1
+	}
+	if (VARBIT[10080] = int0) {
+		return 1
+	}
+	if (VARBIT[10081] = int0) {
+		return 1
+	}
+	if (VARBIT[10082] = int0) {
+		return 1
+	}
+	if (VARBIT[10083] = int0) {
+		return 1
+	}
+	if (VARBIT[10084] = int0) {
+		return 1
+	}
+	if (VARBIT[10085] = int0) {
+		return 1
+	}
+	if (VARBIT[10086] = int0) {
+		return 1
+	}
+	if (VARBIT[10087] = int0) {
+		return 1
+	}
+	if (VARBIT[10088] = int0) {
+		return 1
+	}
+	if (VARBIT[10089] = int0) {
+		return 1
+	}
+	if (VARBIT[10090] = int0) {
+		return 1
+	}
+	if (VARBIT[10091] = int0) {
+		return 1
+	}
+	return 0
+}

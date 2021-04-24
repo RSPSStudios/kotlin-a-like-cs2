@@ -1,0 +1,8 @@
+// 1545 clientscript
+fun raids_sidepanel_refresh(opindex0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component) {
+
+	if (opindex0 = 1) {
+		~raids_sidepanel_refresheffect(1, component1, component2, component3, component4, component5, component6)
+	}
+	return 
+}

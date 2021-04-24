@@ -1,0 +1,12 @@
+// 2165 proc
+fun xpdrops_setposition(component0: Component) {
+
+	if (~on_mobile = true | VARBIT[4692] = 0) {
+		if_setposition(2, 2, ^setpos_abs_right, ^setpos_abs_top, component0)
+	} else if (VARBIT[4692] = 2) {
+		if_setposition(2, 24, ^setpos_abs_left, ^setpos_abs_top, component0)
+	} else {
+		if_setposition(0, 2, ^setpos_abs_centre, ^setpos_abs_top, component0)
+	}
+	return 
+}

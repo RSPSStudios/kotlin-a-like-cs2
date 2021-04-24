@@ -1,0 +1,9 @@
+// 1270 clientscript
+fun script1270(component0: Component) {
+
+	~script1272(component0, 0)
+	if_setoninvtransmit({
+		script1271(component0){bank}
+	}, component0)
+	return 
+}

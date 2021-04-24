@@ -1,0 +1,113 @@
+// 56 proc
+fun area_task_complete(int0: Int): Int {
+
+	if (int0 = 0) {
+		if (VARBIT[3578] = 2 & VARBIT[3599] = 2 & VARBIT[3611] = 2 & VARBIT[4566] = 1) {
+			return 2
+		}
+		if (VARBIT[3576] = 0) {
+			return 0
+		}
+		return 1
+	}
+	if (int0 = 1) {
+		if (calc(VARBIT[4458] + VARBIT[4459] + VARBIT[4460] + VARBIT[4461]) = 4) {
+			return 2
+		}
+		if (VARBIT[4448] = 0) {
+			return 0
+		}
+		return 1
+	}
+	if (int0 = 2) {
+		if (calc(VARBIT[4462] + VARBIT[4463] + VARBIT[4464] + VARBIT[4465]) = 4) {
+			return 2
+		}
+		if (VARBIT[4449] = 0) {
+			return 0
+		}
+		return 1
+	}
+	if (int0 = 9) {
+		if (calc(VARBIT[4466] + VARBIT[4467] + VARBIT[4468] + VARBIT[4469]) = 4) {
+			return 2
+		}
+		if (VARBIT[4457] = 0) {
+			return 0
+		}
+		return 1
+	}
+	if (int0 = 10) {
+		if (calc(VARBIT[4471] + VARBIT[4472] + VARBIT[4473] + VARBIT[4474]) = 4) {
+			return 2
+		}
+		if (VARBIT[4456] = 0) {
+			return 0
+		}
+		return 1
+	}
+	if (int0 = 4) {
+		if (calc(VARBIT[4475] + VARBIT[4476] + VARBIT[4477] + VARBIT[4478]) = 4) {
+			return 2
+		}
+		if (VARBIT[4451] = 0) {
+			return 0
+		}
+		return 1
+	}
+	if (int0 = 5) {
+		if (calc(VARBIT[4483] + VARBIT[4484] + VARBIT[4485] + VARBIT[4486]) = 4) {
+			return 2
+		}
+		if (VARBIT[4452] = 0) {
+			return 0
+		}
+		return 1
+	}
+	if (int0 = 7) {
+		if (calc(VARBIT[4487] + VARBIT[4488] + VARBIT[4489] + VARBIT[4490]) = 4) {
+			return 2
+		}
+		if (VARBIT[4454] = 0) {
+			return 0
+		}
+		return 1
+	}
+	if (int0 = 3) {
+		if (calc(VARBIT[4491] + VARBIT[4492] + VARBIT[4493] + VARBIT[4494]) = 4) {
+			return 2
+		}
+		if (VARBIT[4450] = 0) {
+			return 0
+		}
+		return 1
+	}
+	if (int0 = 6) {
+		if (calc(VARBIT[4495] + VARBIT[4496] + VARBIT[4497] + VARBIT[4498]) = 4) {
+			return 2
+		}
+		if (VARBIT[4453] = 0) {
+			return 0
+		}
+		return 1
+	}
+	if (int0 = 8) {
+		if (calc(VARBIT[4479] + VARBIT[4480] + VARBIT[4481] + VARBIT[4482]) = 4) {
+			return 2
+		}
+		if (VARBIT[4455] = 0) {
+			return 0
+		}
+		return 1
+	}
+	if (int0 = 11) {
+		if (calc(VARBIT[7925] + VARBIT[7926] + VARBIT[7927] + VARBIT[7928]) = 4) {
+			return 2
+		}
+		if (VARBIT[7924] = 0) {
+			return 0
+		}
+		return 1
+	}
+	return 0
+}

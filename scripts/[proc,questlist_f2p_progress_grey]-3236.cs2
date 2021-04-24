@@ -1,0 +1,6 @@
+// 3236 proc
+fun questlist_f2p_progress_grey(count0: Int): Int {
+
+	val struct1: Struct = enum(int, struct, enum_2098, count0)
+	return ~questlist_showprogress_grey(struct1)
+}

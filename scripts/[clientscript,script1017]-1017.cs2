@@ -1,0 +1,6 @@
+// 1017 clientscript
+fun script1017(boolean0: Boolean, colour1: Int, op0: String, component2: Component) {
+
+	~script1018(boolean0, colour1, op0, component2)
+	return 
+}

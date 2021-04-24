@@ -1,0 +1,12 @@
+// 221 clientscript
+fun cc_colour_temporarily_end(component0: Component, comsubid1: Int, colour2: Int, clock3: Int) {
+
+	if (clientclock < clock3) {
+		return 
+	}
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_setcolour(colour2)
+		cc_setontimer(null)
+	}
+	return 
+}

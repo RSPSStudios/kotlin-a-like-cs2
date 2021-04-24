@@ -1,0 +1,6 @@
+// 1726 clientscript
+fun worldmap_zoom_adjust(boolean0: Boolean, component1: Component, component2: Component) {
+
+	~worldmap_zoom_adjust(boolean0, component1, component2)
+	return 
+}

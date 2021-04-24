@@ -1,0 +1,6 @@
+// 3238 proc
+fun questlist_miniquests_progress_grey(count0: Int): Int {
+
+	val struct1: Struct = enum(int, struct, enum_2100, count0)
+	return ~questlist_showprogress_grey(struct1)
+}

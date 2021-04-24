@@ -1,0 +1,17 @@
+// 2894 clientscript
+fun overlay_portal_remove(component0: Component, component1: Component, colour2: Int, trans3: Int) {
+
+	cc_deleteall(component0)
+	if (colour2 ! null & trans3 ! -1) {
+		cc_create(component0, ^iftype_rectangle, 0)
+		cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+		cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+		cc_setfill(true)
+		cc_setcolour(colour2)
+		cc_settrans(trans3)
+	}
+	if_setontimer({
+		overlay_portal_adjust(clientclock, false, component1)
+	}, component1)
+	return 
+}

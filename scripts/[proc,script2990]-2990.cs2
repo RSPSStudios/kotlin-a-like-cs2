@@ -1,0 +1,56 @@
+// 2990 proc
+fun script2990(component0: Component, int1: Int, int2: Int, int3: Int, int4: Int, int5: Int, int6: Int, int7: Int, int8: Int, string0: String): Int {
+
+	val int9: Int = 0
+	val x10: Int = calc(int2 - 9 + int4)
+	val y11: Int = calc(int3 - 9 + int5)
+	val width12: Int = calc(int2 - 18)
+	val height13: Int = calc(int3 - 18)
+	val int14: Int = 5
+	cc_create(component0, ^iftype_rectangle, int1)
+	val width15: Int = 0
+	if (int6 >= int7) {
+		width15 = calc(int2 - 4)
+	} else {
+		width15 = scale(int6, int7, calc(int2 - 4))
+	}
+	cc_setsize(width15, int3, ^setsize_abs, ^setsize_abs)
+	cc_setposition(calc(2 + int4), int5, ^setpos_abs_left, ^setpos_abs_top)
+	val int16: Int = calc(int7 / 2)
+	val int17: Int = 0
+	val int18: Int = 0
+	if (int7 > 0) {
+		if (int6 <= int16) {
+			int17, int18 = 150, interpolate(0, int6, 0, int16, 150)
+		} else {
+			int17, int18 = calc(150 - interpolate(0, int6 - int16, 0, int16, 150)), 150
+		}
+	}
+	cc_setcolour(~rgb_to_hex(int17, int18, 0))
+	cc_setfill(true)
+	int1 = calc(int1 + 1)
+	~create_graphic(component0, calc(int1 + 0), "ap_border,0", int4, int5, ^setpos_abs_left, ^setpos_abs_top, 9, 9, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, calc(int1 + 1), "ap_border,1", x10, int5, ^setpos_abs_left, ^setpos_abs_top, 9, 9, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, calc(int1 + 2), "ap_border,2", int4, y11, ^setpos_abs_left, ^setpos_abs_top, 9, 9, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, calc(int1 + 3), "ap_border,3", x10, y11, ^setpos_abs_left, ^setpos_abs_top, 9, 9, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, calc(int1 + 4), "ap_border,4", int4, calc(9 + int5), ^setpos_abs_left, ^setpos_abs_top, 9, height13, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, calc(int1 + 5), "ap_border,5", calc(int4 + 9), int5, ^setpos_abs_left, ^setpos_abs_top, width12, 9, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, calc(int1 + 6), "ap_border,6", x10, calc(9 + int5), ^setpos_abs_left, ^setpos_abs_top, 9, height13, ^setsize_abs, ^setsize_abs)
+	~create_graphic(component0, calc(int1 + 7), "ap_border,7", calc(int4 + 9), y11, ^setpos_abs_left, ^setpos_abs_top, width12, 9, ^setsize_abs, ^setsize_abs)
+	cc_create(component0, ^iftype_text, calc(int1 + 8))
+	cc_setsize(int2, calc(int3 - 3), ^setsize_abs, ^setsize_abs)
+	cc_setposition(int4, calc(int5 + 3), ^setpos_abs_left, ^setpos_abs_top)
+	val string1: String = ","
+	if (int6 = 0 & int7 = 0 | (int6 = -1 | int7 = -1)) {
+		cc_settext("N/A")
+	} else if (int8 = 0) {
+		cc_settext("${~tostring_spacer(int6, string1)}/${~tostring_spacer(int7, string1)}${string0}")
+	} else {
+		cc_settext("${tostring(calc(int6 / 10))}.${tostring(calc(int6 % 10))}/${tostring(100)}${string0}")
+	}
+	cc_setcolour(0xff981f)
+	cc_settextfont(b12_full)
+	cc_settextshadow(true)
+	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+	return calc(int1 + 9)
+}

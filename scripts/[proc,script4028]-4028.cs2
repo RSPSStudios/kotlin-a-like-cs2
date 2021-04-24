@@ -1,0 +1,6 @@
+// 4028 proc
+fun script4028(count0: Int, enum1: Enum): Int {
+
+	val struct2: Struct = enum(int, struct, enum1, count0)
+	return ~script4029(struct2)
+}

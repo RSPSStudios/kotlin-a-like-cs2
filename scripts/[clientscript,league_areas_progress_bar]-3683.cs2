@@ -1,0 +1,6 @@
+// 3683 clientscript
+fun league_areas_progress_bar(component0: Component, component1: Component, int2: Int, int3: Int) {
+
+	~league_areas_progress_bar(component0, component1, int2, int3)
+	return 
+}

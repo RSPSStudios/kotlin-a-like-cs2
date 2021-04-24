@@ -1,0 +1,6 @@
+// 867 clientscript
+fun tutorial_progressbar_set(component0: Component) {
+
+	~tutorial_progressbar_set(component0)
+	return 
+}

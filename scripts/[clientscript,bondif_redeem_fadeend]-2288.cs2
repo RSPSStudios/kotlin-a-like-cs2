@@ -1,0 +1,13 @@
+// 2288 clientscript
+fun bondif_redeem_fadeend(component0: Component, comsubid1: Int) {
+
+	val trans2: Int = 0
+	if (cc_find(component0, comsubid1) = ^true) {
+		trans2 = ~min(255, calc(cc_gettrans + 40))
+		cc_settrans(trans2)
+		if (trans2 >= 255) {
+			cc_setontimer(null)
+		}
+	}
+	return 
+}

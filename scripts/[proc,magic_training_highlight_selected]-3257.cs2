@@ -1,0 +1,17 @@
+// 3257 proc
+fun magic_training_highlight_selected(component0: Component, int1: Int) {
+
+	val int2: Int = 0
+	val count3: Int = enum_getoutputcount(enum_2753)
+	while (int2 < count3) {
+		if (cc_find(component0, int2) = ^true) {
+			if (int2 = int1) {
+				cc_setoutline(2)
+			} else {
+				cc_setoutline(1)
+			}
+		}
+		int2 = calc(int2 + 1)
+	}
+	return 
+}

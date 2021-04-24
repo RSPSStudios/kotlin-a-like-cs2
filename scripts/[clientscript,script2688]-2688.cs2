@@ -1,0 +1,6 @@
+// 2688 clientscript
+fun script2688(int0: Int) {
+
+	~script2690(int0)
+	return 
+}

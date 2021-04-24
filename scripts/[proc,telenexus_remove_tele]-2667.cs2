@@ -1,0 +1,98 @@
+// 2667 proc
+fun telenexus_remove_tele(int0: Int) {
+
+	if (VARBIT[6672] = int0) {
+		VARBIT[6672] = 0
+	}
+	if (VARBIT[6673] = int0) {
+		VARBIT[6673] = 0
+	}
+	if (VARBIT[6674] = int0) {
+		VARBIT[6674] = 0
+	}
+	if (VARBIT[6675] = int0) {
+		VARBIT[6675] = 0
+	}
+	if (VARBIT[6676] = int0) {
+		VARBIT[6676] = 0
+	}
+	if (VARBIT[6677] = int0) {
+		VARBIT[6677] = 0
+	}
+	if (VARBIT[6678] = int0) {
+		VARBIT[6678] = 0
+	}
+	if (VARBIT[6679] = int0) {
+		VARBIT[6679] = 0
+	}
+	if (VARBIT[6680] = int0) {
+		VARBIT[6680] = 0
+	}
+	if (VARBIT[6681] = int0) {
+		VARBIT[6681] = 0
+	}
+	if (VARBIT[6682] = int0) {
+		VARBIT[6682] = 0
+	}
+	if (VARBIT[6683] = int0) {
+		VARBIT[6683] = 0
+	}
+	if (VARBIT[6684] = int0) {
+		VARBIT[6684] = 0
+	}
+	if (VARBIT[6685] = int0) {
+		VARBIT[6685] = 0
+	}
+	if (VARBIT[6686] = int0) {
+		VARBIT[6686] = 0
+	}
+	if (VARBIT[6568] = int0) {
+		VARBIT[6568] = 0
+	}
+	if (VARBIT[6569] = int0) {
+		VARBIT[6569] = 0
+	}
+	if (VARBIT[6582] = int0) {
+		VARBIT[6582] = 0
+	}
+	if (VARBIT[10092] = int0) {
+		VARBIT[10092] = 0
+	}
+	if (VARBIT[10093] = int0) {
+		VARBIT[10093] = 0
+	}
+	if (VARBIT[10094] = int0) {
+		VARBIT[10094] = 0
+	}
+	if (VARBIT[10095] = int0) {
+		VARBIT[10095] = 0
+	}
+	if (VARBIT[10096] = int0) {
+		VARBIT[10096] = 0
+	}
+	if (VARBIT[10097] = int0) {
+		VARBIT[10097] = 0
+	}
+	if (VARBIT[10098] = int0) {
+		VARBIT[10098] = 0
+	}
+	if (VARBIT[10099] = int0) {
+		VARBIT[10099] = 0
+	}
+	if (VARBIT[10100] = int0) {
+		VARBIT[10100] = 0
+	}
+	if (VARBIT[10101] = int0) {
+		VARBIT[10101] = 0
+	}
+	if (VARBIT[10102] = int0) {
+		VARBIT[10102] = 0
+	}
+	if (VARBIT[10103] = int0) {
+		VARBIT[10103] = 0
+	}
+	if (VARBIT[6669] = int0) {
+		VARBIT[6669] = 0
+	}
+	return 
+}

@@ -1,0 +1,6 @@
+// 2272 clientscript
+fun script2272(drop0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, boolean7: Boolean) {
+
+	~script2273(drop0, component1, component2, component3, component4, component5, component6, boolean7)
+	return 
+}

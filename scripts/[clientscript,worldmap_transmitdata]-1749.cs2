@@ -1,0 +1,6 @@
+// 1749 clientscript
+fun worldmap_transmitdata(coord0: Coord, coord1: Coord) {
+
+	VARCINT[188], VARCINT[401] = coord0, coord1
+	return 
+}

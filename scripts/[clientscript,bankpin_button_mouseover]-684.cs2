@@ -1,0 +1,14 @@
+// 684 clientscript
+fun bankpin_button_mouseover(boolean0: Boolean, component1: Component, comsubid2: Int, comsubid3: Int) {
+
+	if (cc_find(component1, comsubid2) = ^true & .cc_find(component1, comsubid3) = ^true) {
+		if (boolean0 = true) {
+			cc_settrans(255)
+			.cc_sethide(false)
+		} else {
+			cc_settrans(245)
+			.cc_sethide(true)
+		}
+	}
+	return 
+}

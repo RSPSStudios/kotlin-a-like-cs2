@@ -1,0 +1,18 @@
+// 3130 clientscript
+fun screen_glow_fadein(clock0: Int, clock1: Int, int2: Int, int3: Int, colour4: Int, component5: Component) {
+
+	if (cc_find(component5, 0) = ^true) {
+		if (clientclock < clock0) {
+			return 
+		}
+		if (clientclock >= clock1) {
+			cc_setontimer(null)
+			return 
+		}
+		cc_setcolour(colour4)
+		cc_setfillcolour(colour4)
+		cc_settrans(interpolate(int2, int3, clock0, clock1, clientclock))
+		_1124(255)
+	}
+	return 
+}

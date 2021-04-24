@@ -1,0 +1,12 @@
+// 3337 clientscript
+fun adventurepath_side_hint_mouseover(component0: Component, int1: Int) {
+
+	if (cc_find(component0, int1) = ^true) {
+		cc_setcolour(0xbebebe)
+	}
+	if (cc_find(component0, calc(int1 - 1)) = ^true) {
+		cc_settrans(80)
+	}
+	~v2_stone_button_change_in(component0, 0)
+	return 
+}

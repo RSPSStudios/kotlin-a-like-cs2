@@ -1,0 +1,49 @@
+// 91 proc
+fun pm_filtertest(chattype0: Int, string0: String, clock1: Int, int2: Int): Int {
+
+	when (chattype0): Int {
+		^chattype_modprivatechat -> {
+		
+			if (clock1 < VARCINT[175]) {
+				return 0
+			}
+			if (int2 = 2) {
+				return 0
+			}
+			return 1
+		}
+		^chattype_privatechat -> {
+		
+			if (clock1 < VARCINT[175]) {
+				return 0
+			}
+			if (int2 = 2) {
+				return 0
+			}
+			if (chat_getfilter_private = ^chatfilter_on) {
+				return 1
+			}
+			if (chat_getfilter_private = ^chatfilter_friends & int2 = 1) {
+				return 1
+			}
+			return 0
+		}
+		^chattype_loginlogoutnotification, ^chattype_privatechatout -> {
+		
+			if (clock1 < VARCINT[175]) {
+				return 0
+			}
+			if (chattype0 = ^chattype_loginlogoutnotification & VARBIT[1627] = 0 & calc(clientclock - clock1) >= 500) {
+				return 0
+			}
+			if (chat_getfilter_private ! ^chatfilter_off) {
+				return 1
+			}
+			return 0
+		}
+	else -> {
+	
+		return 0
+	}
+	}
+}

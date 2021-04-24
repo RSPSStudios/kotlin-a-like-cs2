@@ -1,0 +1,6 @@
+// 1291 clientscript
+fun script1291(op0: String) {
+
+	if_setop(1, op0, interface_75:31)
+	return 
+}

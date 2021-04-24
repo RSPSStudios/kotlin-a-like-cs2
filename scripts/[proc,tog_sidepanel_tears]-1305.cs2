@@ -1,0 +1,56 @@
+// 1305 proc
+fun tog_sidepanel_tears(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component) {
+
+	if_settext(tostring(VARBIT[455]), component0)
+	if (VARBIT[455] >= 1) {
+		if_sethide(false, component1)
+	} else {
+		if_sethide(true, component1)
+	}
+	if (VARBIT[455] >= 2) {
+		if_sethide(false, component2)
+	} else {
+		if_sethide(true, component2)
+	}
+	if (VARBIT[455] >= 4) {
+		if_sethide(false, component3)
+	} else {
+		if_sethide(true, component3)
+	}
+	if (VARBIT[455] >= 7) {
+		if_sethide(false, component4)
+	} else {
+		if_sethide(true, component4)
+	}
+	if (VARBIT[455] >= 11) {
+		if_sethide(false, component5)
+	} else {
+		if_sethide(true, component5)
+	}
+	if (VARBIT[455] >= 16) {
+		if_sethide(false, component6)
+	} else {
+		if_sethide(true, component6)
+	}
+	if (VARBIT[455] >= 22) {
+		if_sethide(false, component7)
+	} else {
+		if_sethide(true, component7)
+	}
+	if (VARBIT[455] >= 29) {
+		if_sethide(false, component8)
+	} else {
+		if_sethide(true, component8)
+	}
+	if (VARBIT[455] >= 37) {
+		if_sethide(false, component9)
+	} else {
+		if_sethide(true, component9)
+	}
+	if (VARBIT[455] >= 46) {
+		if_sethide(false, component10)
+	} else {
+		if_sethide(true, component10)
+	}
+	return 
+}

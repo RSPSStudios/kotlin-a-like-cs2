@@ -1,0 +1,14 @@
+// 3281 clientscript
+fun wear_initslots(enum0: Enum, boolean1: Boolean) {
+
+	val component2: Component = null
+	val int3: Int = inv_size(worn)
+	while (int3 > 0) {
+		int3 = calc(int3 - 1)
+		component2 = enum(int, component, enum0, int3)
+		if (component2 ! null) {
+			~wear_initslot(component2, int3, boolean1)
+		}
+	}
+	return 
+}

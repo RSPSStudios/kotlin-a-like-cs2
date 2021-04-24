@@ -1,0 +1,20 @@
+// 1838 proc
+fun keyboard_show_string(int0: Int, int1: Int, string0: String) {
+
+	if (~on_mobile = false) {
+		return 
+	}
+	VARCINT[215] = int0
+	VARCINT[216] = int1
+	when (int0): Int {
+		0 -> {
+		
+			_6522(string0, int1)
+		}
+		1 -> {
+		
+			_6523(string0, int1)
+		}
+	}
+	return 
+}

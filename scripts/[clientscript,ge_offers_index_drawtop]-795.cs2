@@ -1,0 +1,6 @@
+// 795 clientscript
+fun ge_offers_index_drawtop(width0: Int, height1: Int, component2: Component, comsubid3: Int, comsubid4: Int, comsubid5: Int) {
+
+	~ge_offers_index_drawtop(width0, height1, component2, comsubid3, comsubid4, comsubid5)
+	return 
+}

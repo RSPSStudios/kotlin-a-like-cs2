@@ -1,0 +1,31 @@
+// 222 proc
+fun script222(string0: String) {
+
+	val string1: String = escape(VARCSTRING[359])
+	val length0: Int = 12
+	when (VARCINT[5]): Int {
+		6, 9, 11, 13 -> {
+		
+			length0 = 80
+		}
+		7, 12 -> {
+		
+			length0 = 10
+		}
+		14, 17 -> {
+		
+			length0 = 25
+			string1, VARCINT[66] = append("<col=000000>${string0}</col> ", string1), 20
+		}
+	}
+	if (string_length(VARCSTRING[359]) < length0) {
+		string1 = append(string1, "*")
+	}
+	if (parawidth(string1, ^max_32bit_int, b12_full) > if_getwidth(interface_162:45)) {
+		if_settextalign(^settextalign_right, ^settextalign_centre, 0, interface_162:45)
+	} else {
+		if_settextalign(^settextalign_centre, ^settextalign_centre, 0, interface_162:45)
+	}
+	if_settext(string1, interface_162:45)
+	return 
+}

@@ -1,0 +1,6 @@
+// 3641 clientscript
+fun script3641(boolean0: Boolean, boolean1: Boolean, component2: Component, int3: Int, int4: Int, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component) {
+
+	~script3642(boolean0, boolean1, component2, int3, int4, component5, component6, component7, component8, component9)
+	return 
+}

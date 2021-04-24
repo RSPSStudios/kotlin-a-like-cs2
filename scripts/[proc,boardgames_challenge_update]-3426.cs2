@@ -1,0 +1,58 @@
+// 3426 proc
+fun boardgames_challenge_update(int0: Int) {
+
+	val graphic1: Graphic = "options_radio_buttons,0"
+	val graphic2: Graphic = "options_radio_buttons,1"
+	if_setgraphic(graphic1, boardgames_challenge:5)
+	if_setgraphic(graphic1, boardgames_challenge:9)
+	if_setgraphic(graphic1, boardgames_challenge:13)
+	if_setgraphic(graphic1, boardgames_challenge:17)
+	if (~on_mobile = false) {
+		if_setonmouserepeat({
+			settrans(boardgames_challenge:5, 127)
+		}, boardgames_challenge:4)
+		if_setonmouseleave({
+			settrans(boardgames_challenge:5, 0)
+		}, boardgames_challenge:4)
+		if_setonmouserepeat({
+			settrans(boardgames_challenge:9, 127)
+		}, boardgames_challenge:8)
+		if_setonmouseleave({
+			settrans(boardgames_challenge:9, 0)
+		}, boardgames_challenge:8)
+		if_setonmouserepeat({
+			settrans(boardgames_challenge:13, 127)
+		}, boardgames_challenge:12)
+		if_setonmouseleave({
+			settrans(boardgames_challenge:13, 0)
+		}, boardgames_challenge:12)
+		if_setonmouserepeat({
+			settrans(boardgames_challenge:17, 127)
+		}, boardgames_challenge:16)
+		if_setonmouseleave({
+			settrans(boardgames_challenge:17, 0)
+		}, boardgames_challenge:16)
+	}
+	if (int0 = -1) {
+		int0 = VARBIT[61]
+	}
+	when (int0): Int {
+		0 -> {
+		
+			if_setgraphic(graphic2, boardgames_challenge:5)
+		}
+		1 -> {
+		
+			if_setgraphic(graphic2, boardgames_challenge:9)
+		}
+		2 -> {
+		
+			if_setgraphic(graphic2, boardgames_challenge:13)
+		}
+		3 -> {
+		
+			if_setgraphic(graphic2, boardgames_challenge:17)
+		}
+	}
+	return 
+}

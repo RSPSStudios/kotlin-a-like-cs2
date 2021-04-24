@@ -1,0 +1,9 @@
+// 594 clientscript
+fun clanwars_hud_update(component0: Component, component1: Component, int2: Int, component3: Component, comsubid4: Int) {
+
+	~clanwars_hud_info_update(component0, component1, int2)
+	if (cc_find(component3, comsubid4) = ^true) {
+		~clanwars_hud_countdown_update(component0, component3)
+	}
+	return 
+}

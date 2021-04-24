@@ -1,0 +1,11 @@
+// 3995 proc
+fun script3995() {
+
+	if (~on_mobile = true) {
+		return 
+	}
+	if (VARBIT[4607] = 1) {
+		VARBIT[4611] = calc(1 - VARBIT[4611])
+	}
+	return 
+}

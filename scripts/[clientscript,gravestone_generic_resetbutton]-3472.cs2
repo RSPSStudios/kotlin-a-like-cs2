@@ -1,0 +1,8 @@
+// 3472 clientscript
+fun gravestone_generic_resetbutton(clock0: Int, component1: Component, component2: Component) {
+
+	if (clientclock >= clock0) {
+		~gravestone_generic_resetbutton(component1, component2)
+	}
+	return 
+}

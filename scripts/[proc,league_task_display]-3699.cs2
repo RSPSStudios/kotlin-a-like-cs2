@@ -1,0 +1,23 @@
+// 3699 proc
+fun league_task_display(int0: Int, bool1: Int, int2: Int, int3: Int): Int {
+
+	if (VARBIT[10033] ! 0 & VARBIT[10033] ! int0) {
+		return 0
+	}
+	if (VARBIT[11689] ! 0 & VARBIT[11689] ! int2) {
+		return 0
+	}
+	if (VARBIT[11692] ! 0) {
+		if (VARBIT[11692] = 11) {
+			if (~script3681(int3) = 0) {
+				return 0
+			}
+		} else if (enum(int, int, enum_3415, VARBIT[11692]) ! int3) {
+			return 0
+		}
+	}
+	if (VARBIT[10034] ! 0 & calc(VARBIT[10034] - 1) ! bool1) {
+		return 0
+	}
+	return 1
+}

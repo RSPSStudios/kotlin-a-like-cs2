@@ -1,0 +1,23 @@
+// 1027 proc
+fun script1027(stat0: Stat) {
+
+	val int1: Int = 0
+	val int2: Int = 0
+	int1, int2 = ~xpdrops_data_get(stat0)
+	if (int2 = -1) {
+		if (stat0 ! null) {
+			cc_settext("Tracking XP since <col=ffffff>${~xpdrops_tostring(int1, 0)}</col>.")
+		} else {
+			cc_settext("Tracking XP since <col=ffffff>${~xpdrops_tostring_thousands(int1)}</col>.")
+		}
+	} else if (int2 > int1) {
+		if (stat0 ! null) {
+			cc_settext("Goal is <col=ffffff>${~xpdrops_tostring(int2, 0)}</col>, starting from <col=ffffff>${~xpdrops_tostring(int1, 0)}</col>.")
+		} else {
+			cc_settext("Goal is <col=ffffff>${~xpdrops_tostring_thousands(int2)}</col>, starting from <col=ffffff>${~xpdrops_tostring_thousands(int1)}</col>.")
+		}
+	} else {
+		cc_settext("No tracker or goal set.")
+	}
+	return 
+}

@@ -1,0 +1,6 @@
+// 2226 clientscript
+fun decant_mouseover(component0: Component, boolean1: Boolean, obj2: Obj, string0: String, string1: String) {
+
+	~decant_mouseover(component0, boolean1, obj2, string0, string1)
+	return 
+}

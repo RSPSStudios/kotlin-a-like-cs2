@@ -1,0 +1,46 @@
+// 4094 clientscript
+fun script4094(key0: Int, keychar1: Char, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component) {
+
+	if (~keypress_permit(621, -1) = 0) {
+		return 
+	}
+	if (VARBIT[9639] = 0) {
+		return 
+	}
+	if (VARBIT[9638] = 0) {
+		return 
+	}
+	if (key0 = ^key_del) {
+		VARCSTRING[417] = ""
+		~script4095(component2)
+		~script4096(1)
+		return 
+	}
+	if (key0 = ^key_return) {
+		if (~on_mobile = true) {
+			~keyboard_hide
+		}
+		~script4096(1)
+		return 
+	}
+	val string0: String = VARCSTRING[417]
+	val length8: Int = string_length(string0)
+	if (key0 = ^key_backspace) {
+		if (length8 > 0) {
+			VARCSTRING[417] = substring(string0, 0, calc(length8 - 1))
+		}
+		~script4095(component2)
+		~script4096(0)
+		return 
+	}
+	if (char_isprintable(keychar1) = false & string_indexof_char(" -/,", keychar1) = -1) {
+		return 
+	}
+	if (string_length(append_char(string0, keychar1)) > 50) {
+		return 
+	}
+	VARCSTRING[417] = append_char(string0, keychar1)
+	~script4095(component2)
+	~script4096(0)
+	return 
+}

@@ -1,0 +1,6 @@
+// 2192 proc
+fun script2192() {
+
+	docheat("~dmm_area_2")
+	return 
+}

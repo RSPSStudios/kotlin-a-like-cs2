@@ -1,0 +1,6 @@
+// 3066 clientscript
+fun bees_mouseleave(component0: Component) {
+
+	if_setmodelanim(swarm_ready_0, component0)
+	return 
+}

@@ -1,0 +1,8 @@
+// 1072 clientscript
+fun script1072(component0: Component, int1: Int) {
+
+	if (.cc_find(component0, calc(int1 * 2 + 1)) = ^true) {
+		~script1073(int1)
+	}
+	return 
+}

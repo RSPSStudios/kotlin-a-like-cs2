@@ -1,0 +1,9 @@
+// 605 clientscript
+fun poll_resetbutton(component0: Component, component1: Component, string0: String, clock2: Int) {
+
+	if (clientclock < clock2) {
+		return 
+	}
+	~poll_setbutton(component0, component1, string0)
+	return 
+}

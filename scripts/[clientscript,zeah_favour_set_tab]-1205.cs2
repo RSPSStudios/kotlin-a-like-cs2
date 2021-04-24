@@ -1,0 +1,8 @@
+// 1205 clientscript
+fun zeah_favour_set_tab(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component) {
+
+	sound_synth(synth_2266, 1, 0)
+	VARCINT[79] = int0
+	~zeah_favour_set_tab(component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13)
+	return 
+}

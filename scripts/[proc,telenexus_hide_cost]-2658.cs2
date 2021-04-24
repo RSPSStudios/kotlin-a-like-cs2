@@ -1,0 +1,10 @@
+// 2658 proc
+fun telenexus_hide_cost(component0: Component, component1: Component, comsubid2: Int) {
+
+	if_sethide(true, component0)
+	VARCINT[227] = -1
+	if (cc_find(component1, comsubid2) = ^true) {
+		cc_sethide(true)
+	}
+	return 
+}

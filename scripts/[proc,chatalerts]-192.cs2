@@ -1,0 +1,60 @@
+// 192 proc
+fun chatalerts(mesuid0: Int) {
+
+	val clock1: Int = VARCINT[57]
+	VARCINT[57] = clientclock
+	if (VARCINT[41] = 0) {
+		return 
+	}
+	val int2: Int = 0
+	if (VARCINT[41] = 1337) {
+		int2 = 1
+	}
+	val chattype3: Int = ^chattype_gamemessage
+	val clock4: Int = -1
+	val string0: String = ""
+	val string1: String = ""
+	val string2: String = ""
+	val int5: Int = 0
+	val boolean6: Boolean = ~on_mobile
+	while (mesuid0 ! -1) {
+		chattype3, clock4, string0, string1, string2, int5 = chat_gethistory_byuid(mesuid0)
+		if (clock4 <= clock1) {
+			return 
+		}
+		if (~filtertest(chattype3, string0, string2, clock4, int2, removetags(chat_playername), int5) = 1 & ~trade_partner_check(chattype3, string0, int5) = 0) {
+			when (chattype3): Int {
+				^chattype_modchat, ^chattype_publicchat -> {
+				
+					~chat_alert_enable(2)
+				}
+				^chattype_privatechat, ^chattype_privatechatout, ^chattype_modprivatechat -> {
+				
+					~chat_alert_enable(3)
+				}
+				^chattype_loginlogoutnotification -> {
+				
+					if (boolean6 = false) {
+						~chat_alert_enable(3)
+					}
+				}
+				^chattype_tradereq, ^chattype_trade, ^chattype_chalreq_trade -> {
+				
+					~chat_alert_enable(5)
+				}
+				^chattype_friendschat, ^chattype_friendschatnotification, ^chattype_chalreq_friendschat -> {
+				
+					~chat_alert_enable(4)
+				}
+			else -> {
+			
+				if (enum(int, boolean, enum_892, chattype3) = true & chattype3 ! ^chattype_108) {
+					~chat_alert_enable(1)
+				}
+			}
+			}
+		}
+		mesuid0 = chat_getprevuid(mesuid0)
+	}
+	return 
+}

@@ -1,0 +1,10 @@
+// 1495 clientscript
+fun script1495(component0: Component, component1: Component, string0: String) {
+
+	if (~on_mobile = true) {
+		~script2703(string0, component0, component1)
+	} else {
+		~script2702(string0, component0, component1)
+	}
+	return 
+}

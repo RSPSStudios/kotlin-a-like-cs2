@@ -1,0 +1,67 @@
+// 3180 proc
+fun script3180(int0: Int, int1: Int): Struct {
+
+	val struct2: Struct = enum(int, struct, enum_2670, VARBIT[10032])
+	val enum3: Enum = null
+	val struct4: Struct = null
+	val struct5: Struct = null
+	val int6: Int = 0
+	val int7: Int = -1
+	val int8: Int = 0
+	val int9: Int = 0
+	if (struct2 ! null) {
+		enum3 = struct_param(struct2, param_870)
+		if (enum3 ! null) {
+			int6 = enum_getoutputcount(enum3)
+			if (int0 = 1) {
+				return enum(int, struct, enum3, calc(int6 - 1))
+			}
+			while (int8 < int6) {
+				struct4 = enum(int, struct, enum3, int8)
+				int7 = struct_param(struct4, param_877)
+				if (VARP[2615] < int7) {
+					if (int1 = 0) {
+						return struct4
+					}
+					return struct5
+				}
+				struct5 = enum(int, struct, enum3, int8)
+				when (int8): Int {
+					0 -> {
+					
+						int9 = VARBIT[10049]
+					}
+					1 -> {
+					
+						int9 = VARBIT[10050]
+					}
+					2 -> {
+					
+						int9 = VARBIT[10051]
+					}
+					3 -> {
+					
+						int9 = VARBIT[10052]
+					}
+					4 -> {
+					
+						int9 = VARBIT[10053]
+					}
+					5 -> {
+					
+						int9 = VARBIT[11696]
+					}
+				else -> {
+				
+					int9 = 0
+				}
+				}
+				if (int9 = 0) {
+					return struct4
+				}
+				int8 = calc(int8 + 1)
+			}
+		}
+	}
+	return null
+}

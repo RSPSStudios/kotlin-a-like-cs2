@@ -1,0 +1,45 @@
+// 263 clientscript
+fun nzone_game_subtitle(component0: Component, comsubid1: Int, comsubid2: Int, clock3: Int) {
+
+	val int4: Int = pow(50, 2)
+	val int5: Int = calc(50 * 2)
+	val int6: Int = calc(clientclock - clock3)
+	if (int6 < 50) {
+		if (int6 < 0) {
+			int6 = 0
+		} else if (int6 = 1) {
+			sound_synth(synth_2201, 1, 0)
+		}
+		int6 = calc(50 - int6)
+		if (cc_find(component0, comsubid1) = ^true) {
+			cc_settrans(interpolate(0, int6, 0, 50, 255))
+		}
+		if (cc_find(component0, comsubid2) = ^true) {
+			cc_setposition(interpolate(0, pow(int6, 2), 0, int4, 16384), cc_gety, ^setpos_3, ^setpos_abs_top)
+		}
+		return 
+	}
+	if (int6 < int5) {
+		return 
+	}
+	if (int6 < calc(50 * 3)) {
+		if (int6 = int5) {
+			sound_synth(synth_2201, 1, 0)
+		}
+		int6 = calc(int6 - int5)
+		if (cc_find(component0, comsubid1) = ^true) {
+			cc_settrans(interpolate(0, int6, 0, 50, 255))
+		}
+		if (cc_find(component0, comsubid2) = ^true) {
+			cc_setposition(interpolate(0, pow(int6, 2), 0, int4, 16384), cc_gety, ^setpos_5, ^setpos_abs_top)
+		}
+		return 
+	}
+	if (cc_find(component0, comsubid1) = ^true) {
+		cc_delete
+	}
+	if (cc_find(component0, comsubid2) = ^true) {
+		cc_delete
+	}
+	return 
+}

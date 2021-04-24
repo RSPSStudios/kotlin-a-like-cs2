@@ -1,0 +1,9 @@
+// 343 clientscript
+fun godwars_fader_init(int0: Int, int1: Int, int2: Int, component3: Component) {
+
+	int0, int2 = ~max(1, int0), ~max(1, int2)
+	if_setontimer({
+		godwars_fader(component3, clientclock, calc(30 * int0), calc(30 * int1), calc(30 * int2))
+	}, component3)
+	return 
+}

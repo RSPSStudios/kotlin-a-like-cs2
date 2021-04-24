@@ -1,0 +1,7 @@
+// 3267 clientscript
+fun account_switch_tab(int0: Int) {
+
+	VARBIT[10060] = int0
+	~account_update_tabs(VARBIT[10060])
+	return 
+}

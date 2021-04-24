@@ -1,0 +1,30 @@
+// 1185 proc
+fun clancup_hud_update(component0: Component, component1: Component) {
+
+	val string0: String = ""
+	if (VARBIT[4820] > VARBIT[4821]) {
+		string0 = "<col=ffffff>${~tostring_spacer(VARBIT[4820], ",")}</col><br>${~tostring_spacer(VARBIT[4821], ",")}"
+	} else if (VARBIT[4820] < VARBIT[4821]) {
+		string0 = "${~tostring_spacer(VARBIT[4820], ",")}<br><col=ffffff>${~tostring_spacer(VARBIT[4821], ",")}</col>"
+	} else {
+		string0 = "${~tostring_spacer(VARBIT[4820], ",")}<br>${~tostring_spacer(VARBIT[4821], ",")}"
+	}
+	if (VARBIT[4822] >= ^max_32bit_int) {
+		if_settext("Your team:<br>Opponents:<br>Starting soon...", component0)
+		string0 = append(string0, "<br>")
+	} else if (VARBIT[4822] > 1) {
+		if_settext("Your team:<br>Opponents:<br>Time:", component0)
+		string0 = append(string0, "<br>${tostring(VARBIT[4822])} mins")
+	} else if (VARBIT[4822] = 1) {
+		if_settext("Your team:<br>Opponents:<br>Time:", component0)
+		string0 = append(string0, "<br>1 min")
+	} else if (VARBIT[4820] = VARBIT[4821]) {
+		if_settext("Your team:<br>Opponents:<br>", component0)
+		string0 = append(string0, "<br>Next kill wins!")
+	} else {
+		if_settext("Your team:<br>Opponents:<br>Ending...", component0)
+		string0 = append(string0, "<br>")
+	}
+	if_settext(string0, component1)
+	return 
+}

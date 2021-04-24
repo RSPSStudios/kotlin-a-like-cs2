@@ -1,0 +1,8 @@
+// 853 proc
+fun script853(int0: Int): String {
+
+	if (int0 > 1) {
+		return "Tokens"
+	}
+	return "Token"
+}

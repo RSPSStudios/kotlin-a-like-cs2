@@ -1,0 +1,10 @@
+// 3158 proc
+fun offer_button(component0: Component, graphic1: Graphic) {
+
+	cc_create(component0, ^iftype_graphic, 0)
+	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
+	cc_setgraphic(graphic1)
+	cc_setop(1, "Open offer")
+	return 
+}

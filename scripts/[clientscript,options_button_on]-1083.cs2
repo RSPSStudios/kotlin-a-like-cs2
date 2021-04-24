@@ -1,0 +1,6 @@
+// 1083 clientscript
+fun options_button_on(component0: Component, int1: Int) {
+
+	~options_button_on(component0, int1)
+	return 
+}

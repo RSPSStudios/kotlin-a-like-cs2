@@ -1,0 +1,8 @@
+// 101 clientscript
+fun meslayer_close(int0: Int) {
+
+	if (VARCINT[5] = int0 | VARCINT[5] <= 0 | int0 <= 0) {
+		~meslayer_close(1, 1)
+	}
+	return 
+}

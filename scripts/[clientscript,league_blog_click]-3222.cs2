@@ -1,0 +1,6 @@
+// 3222 clientscript
+fun league_blog_click(url0: String) {
+
+	~openurl_raw(url0, true, true)
+	return 
+}

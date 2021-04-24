@@ -1,0 +1,13 @@
+// 3405 clientscript
+fun prayer_stop_flash(int0: Int) {
+
+	val component1: Component = enum(int, component, enum_859, int0)
+	if (component1 = null) {
+		return 
+	}
+	if (cc_find(component1, 1) = ^true) {
+		if_setontimer(null, component1)
+		cc_sethide(false)
+	}
+	return 
+}

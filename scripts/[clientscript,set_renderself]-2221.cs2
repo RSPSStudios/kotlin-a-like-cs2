@@ -1,0 +1,6 @@
+// 2221 clientscript
+fun set_renderself(boolean0: Boolean) {
+
+	renderself(boolean0)
+	return 
+}

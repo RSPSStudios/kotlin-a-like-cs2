@@ -1,0 +1,106 @@
+// 1002 proc
+fun xpdrops_data_get(stat0: Stat): Int, Int {
+
+	when (stat0): Stat {
+		attack -> {
+		
+			return VARP[1229], VARP[1253]
+		}
+		strength -> {
+		
+			return VARP[1230], VARP[1254]
+		}
+		ranged -> {
+		
+			return VARP[1231], VARP[1255]
+		}
+		magic -> {
+		
+			return VARP[1232], VARP[1256]
+		}
+		defence -> {
+		
+			return VARP[1233], VARP[1257]
+		}
+		hitpoints -> {
+		
+			return VARP[1234], VARP[1258]
+		}
+		prayer -> {
+		
+			return VARP[1235], VARP[1259]
+		}
+		agility -> {
+		
+			return VARP[1236], VARP[1260]
+		}
+		herblore -> {
+		
+			return VARP[1237], VARP[1261]
+		}
+		thieving -> {
+		
+			return VARP[1238], VARP[1262]
+		}
+		crafting -> {
+		
+			return VARP[1239], VARP[1263]
+		}
+		runecraft -> {
+		
+			return VARP[1240], VARP[1264]
+		}
+		mining -> {
+		
+			return VARP[1241], VARP[1265]
+		}
+		smithing -> {
+		
+			return VARP[1242], VARP[1266]
+		}
+		fishing -> {
+		
+			return VARP[1243], VARP[1267]
+		}
+		cooking -> {
+		
+			return VARP[1244], VARP[1268]
+		}
+		firemaking -> {
+		
+			return VARP[1245], VARP[1269]
+		}
+		woodcutting -> {
+		
+			return VARP[1246], VARP[1270]
+		}
+		fletching -> {
+		
+			return VARP[1247], VARP[1271]
+		}
+		slayer -> {
+		
+			return VARP[1248], VARP[1272]
+		}
+		farming -> {
+		
+			return VARP[1249], VARP[1273]
+		}
+		construction -> {
+		
+			return VARP[1250], VARP[1274]
+		}
+		hunter -> {
+		
+			return VARP[1251], VARP[1275]
+		}
+		null -> {
+		
+			return VARP[1228], VARP[1252]
+		}
+	else -> {
+	
+		return 0, 0
+	}
+	}
+}

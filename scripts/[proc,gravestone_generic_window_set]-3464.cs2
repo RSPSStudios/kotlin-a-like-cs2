@@ -1,0 +1,170 @@
+// 3464 proc
+fun gravestone_generic_window_set(component0: Component, component1: Component, component2: Component, int3: Int, int4: Int, int5: Int, component6: Component, int7: Int, component8: Component, int9: Int, component10: Component, component11: Component, component12: Component, component13: Component) {
+
+	val width14: Int = if_getwidth(component0)
+	val int15: Int = calc(if_getheight(component0) - int3)
+	VARCINT[395] = ~max(int4, ~min(VARCINT[395], width14))
+	VARCINT[396] = ~max(int5, ~min(VARCINT[396], int15))
+	VARCINT[397] = ~max(0, ~min(VARCINT[397], calc(width14 - VARCINT[395])))
+	VARCINT[398] = ~max(int3, ~min(VARCINT[398], calc(int3 + int15 - VARCINT[396])))
+	if_setsize(VARCINT[395], VARCINT[396], ^setsize_abs, ^setsize_abs, component1)
+	if_setposition(VARCINT[397], VARCINT[398], ^setpos_abs_left, ^setpos_abs_top, component1)
+	val int16: Int = calc(VARCINT[396] - int5)
+	val int17: Int = calc(int16 / 2)
+	if_setsize(20, calc(int7 + int17 + 1), ^setsize_minus, ^setsize_abs, component6)
+	if_setsize(20, calc(int9 + (int16 - int17)), ^setsize_minus, ^setsize_abs, component8)
+	val width18: Int = if_getwidth(component10)
+	val int19: Int = ~max(1, calc(width18 / (36 + 3)))
+	val int20: Int = 0
+	if (int19 > 1) {
+		int20 = calc((width18 - int19 * 36) / (int19 - 1))
+	}
+	val int21: Int = calc(width18 - (int19 * 36 + (int19 - 1) * int20))
+	val int22: Int = calc((int21 + 1) / 2)
+	val obj23: Obj = null
+	val int24: Int = 0
+	val int25: Int = -1
+	val int26: Int = 0
+	val int27: Int = -1
+	val int28: Int = calc(VARBIT[10472] - 1)
+	if (int28 = -1) {
+		int28 = ^max_32bit_int
+	}
+	val int29: Int = calc(VARBIT[10473] - 1)
+	if (int29 = -1) {
+		int29 = ^max_32bit_int
+	}
+	val int30: Int = calc(VARBIT[10474] - 1)
+	if (int30 = -1) {
+		int30 = ^max_32bit_int
+	}
+	val int31: Int = 0
+	val int32: Int = 500000
+	if (VARBIT[1777] ! 0) {
+		int32 = calc(int32 / 2)
+	}
+	val int33: Int = 0
+	while (int33 < 120) {
+		if (cc_find(component10, int33) = ^true) {
+			if (int33 >= int28) {
+				obj23 = inv_getobj(inv_525, int33)
+				if (obj23 ! null) {
+					cc_sethide(false)
+					cc_setobject(obj23, inv_getnum(inv_525, int33))
+					cc_setopbase("<col=ff9040>${oc_name(obj23)}</col>")
+					int25 = calc(int24 / int19 * (32 + 4))
+					cc_setposition(calc(int22 + int24 % int19 * (36 + int20)), int25, ^setpos_abs_left, ^setpos_abs_top)
+					int24 = calc(int24 + 1)
+				} else {
+					cc_sethide(true)
+				}
+			} else {
+				cc_sethide(true)
+			}
+		}
+		if (cc_find(component12, int33) = ^true & .cc_find(component12, calc(int33 + 120)) = ^true) {
+			if (int33 < int28) {
+				obj23 = inv_getobj(inv_525, int33)
+				if (obj23 ! null) {
+					cc_sethide(false)
+					.cc_sethide(false)
+					cc_setobject(obj23, inv_getnum(inv_525, int33))
+					cc_setopbase("<col=ff9040>${oc_name(obj23)}</col>")
+					if (int33 >= int29) {
+						if (calc(^max_32bit_int / 1000) < inv_getnum(inv_525, int33)) {
+							int31 = ^max_32bit_int
+						} else {
+							int31 = calc(1000 * inv_getnum(inv_525, int33))
+						}
+					} else if (int33 >= int30) {
+						if (calc(^max_32bit_int / 10000) < inv_getnum(inv_525, int33)) {
+							int31 = ^max_32bit_int
+						} else {
+							int31 = calc(10000 * inv_getnum(inv_525, int33))
+						}
+					} else if (calc(^max_32bit_int / 100000) < inv_getnum(inv_525, int33)) {
+						int31 = ^max_32bit_int
+					} else {
+						int31 = calc(100000 * inv_getnum(inv_525, int33))
+					}
+					if (VARBIT[1777] ! 0) {
+						int31 = calc(int31 / 2)
+					}
+					int31 = ~min(int32, int31)
+					if (int31 >= 1000) {
+						.cc_settext("${tostring(calc(int31 / 1000))}k")
+					} else {
+						.cc_settext(tostring(int31))
+					}
+					int27 = calc(int26 / int19 * (32 + 16))
+					cc_setposition(calc(int22 + int26 % int19 * (36 + int20)), int27, ^setpos_abs_left, ^setpos_abs_top)
+					.cc_setposition(cc_getx, calc(int27 + 32), ^setpos_abs_left, ^setpos_abs_top)
+					int26 = calc(int26 + 1)
+				} else {
+					cc_sethide(true)
+					.cc_sethide(true)
+				}
+			} else {
+				cc_sethide(true)
+				.cc_sethide(true)
+			}
+		}
+		int33 = calc(int33 + 1)
+	}
+	if (int25 >= 0) {
+		int25 = calc(int25 + 32)
+		if_setscrollpos(0, ~min(if_getscrolly(component10), calc(int25 - if_getheight(component10))), component10)
+		if_setscrollsize(0, int25, component10)
+	} else {
+		if_setscrollpos(0, 0, component10)
+		if_setscrollsize(0, 0, component10)
+	}
+	~scrollbar_vertical_rebuild(component11, component10)
+	if (int27 >= 0) {
+		int27 = calc(int27 + 32 + 12)
+		if_setscrollpos(0, ~min(if_getscrolly(component12), calc(int27 - if_getheight(component12))), component12)
+		if_setscrollsize(0, int27, component12)
+	} else {
+		if_setscrollpos(0, 0, component12)
+		if_setscrollsize(0, 0, component12)
+	}
+	~scrollbar_vertical_rebuild(component13, component12)
+	if_sethide(false, component1)
+	if_sethide(true, component2)
+	val width34: Int = calc(VARCINT[395] - 6 * 2)
+	val height35: Int = calc(VARCINT[396] - 6 * 2)
+	val x36: Int = calc(VARCINT[397] + VARCINT[395] - 6)
+	val y37: Int = calc(VARCINT[398] + VARCINT[396] - 6)
+	val int38: Int = 0
+	if (cc_find(component0, 0) = ^true & .cc_find(component0, 1) = ^true) {
+		cc_setsize(width34, 29, ^setsize_abs, ^setsize_abs)
+		.cc_setsize(width34, 6, ^setsize_abs, ^setsize_abs)
+		int38 = calc(VARCINT[397] + 6)
+		cc_setposition(int38, VARCINT[398], ^setpos_abs_left, ^setpos_abs_top)
+		.cc_setposition(int38, y37, ^setpos_abs_left, ^setpos_abs_top)
+		~script3465(component0, component1, component2, int3, int4, int5, component6, int7, component8, int9, component10, component11, component12, component13)
+	}
+	if (cc_find(component0, 2) = ^true & .cc_find(component0, 3) = ^true) {
+		cc_setsize(6, height35, ^setsize_abs, ^setsize_abs)
+		.cc_setsize(6, height35, ^setsize_abs, ^setsize_abs)
+		int38 = calc(VARCINT[398] + 6)
+		cc_setposition(VARCINT[397], int38, ^setpos_abs_left, ^setpos_abs_top)
+		.cc_setposition(x36, int38, ^setpos_abs_left, ^setpos_abs_top)
+		~script3465(component0, component1, component2, int3, int4, int5, component6, int7, component8, int9, component10, component11, component12, component13)
+	}
+	if (cc_find(component0, 4) = ^true & .cc_find(component0, 5) = ^true) {
+		cc_setsize(6, 6, ^setsize_abs, ^setsize_abs)
+		.cc_setsize(6, 6, ^setsize_abs, ^setsize_abs)
+		cc_setposition(VARCINT[397], VARCINT[398], ^setpos_abs_left, ^setpos_abs_top)
+		.cc_setposition(x36, VARCINT[398], ^setpos_abs_left, ^setpos_abs_top)
+		~script3465(component0, component1, component2, int3, int4, int5, component6, int7, component8, int9, component10, component11, component12, component13)
+	}
+	if (cc_find(component0, 6) = ^true & .cc_find(component0, 7) = ^true) {
+		cc_setsize(6, 6, ^setsize_abs, ^setsize_abs)
+		.cc_setsize(6, 6, ^setsize_abs, ^setsize_abs)
+		cc_setposition(VARCINT[397], y37, ^setpos_abs_left, ^setpos_abs_top)
+		.cc_setposition(x36, y37, ^setpos_abs_left, ^setpos_abs_top)
+		~script3465(component0, component1, component2, int3, int4, int5, component6, int7, component8, int9, component10, component11, component12, component13)
+	}
+	return 
+}

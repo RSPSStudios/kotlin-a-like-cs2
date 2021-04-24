@@ -1,0 +1,11 @@
+// 2414 proc
+fun show_storebutton(): Int {
+
+	if (~on_mobile = false) {
+		return 0
+	}
+	if (VARBIT[6506] = 1) {
+		return 1
+	}
+	return 0
+}

@@ -1,0 +1,14 @@
+// 3741 proc
+fun in_tutorial(): Int {
+
+	if (VARP[281] < 1000) {
+		return 1
+	}
+	if (VARP[2686] < 1000) {
+		return 1
+	}
+	if (~in_league_tutorial = 1) {
+		return 1
+	}
+	return 0
+}

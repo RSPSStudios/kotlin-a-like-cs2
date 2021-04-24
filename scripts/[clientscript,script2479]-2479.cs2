@@ -1,0 +1,11 @@
+// 2479 clientscript
+fun script2479(component0: Component, component1: Component) {
+
+	if_setonmouseover({
+		duel_stake_load_highlight(component0)
+	}, component0)
+	if_setonmouseleave({
+		duel_stake_load_mouseout(component0, component1)
+	}, component0)
+	return 
+}

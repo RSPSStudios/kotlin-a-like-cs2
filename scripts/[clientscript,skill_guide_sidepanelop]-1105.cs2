@@ -1,0 +1,10 @@
+// 1105 clientscript
+fun skill_guide_sidepanelop(opindex0: Int, int1: Int, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	VARBIT[4372] = int1
+	~skill_guide_build(component2, component3, component4, component5, component6, component7, component8, component9)
+	return 
+}

@@ -1,0 +1,14 @@
+// 607 clientscript
+fun poll_buttonhover(boolean0: Boolean, component1: Component, comsubid2: Int, comsubid3: Int) {
+
+	if (cc_find(component1, comsubid2) = ^true & .cc_find(component1, comsubid3) = ^true) {
+		if (boolean0 = true) {
+			cc_setgraphic("combatboxesmed,1")
+			.cc_setcolour(^white)
+		} else {
+			cc_setgraphic("combatboxesmed,0")
+			.cc_setcolour(0xff981f)
+		}
+	}
+	return 
+}

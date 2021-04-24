@@ -1,0 +1,24 @@
+// 107 proc
+fun meslayer_mode6(username0: String) {
+
+	if (VARBIT[8119] = 0) {
+		mes("You must set a name before you can chat.")
+		return 
+	}
+	if (VARCINT[11] = 1) {
+		mes("You can't do that right now.")
+		return 
+	}
+	VARCSTRING[360] = username0
+	~meslayer_open(6)
+	if_settext("Enter message to send to ${VARCSTRING[360]}", interface_162:44)
+	~script222("")
+	val string1: String = ""
+	if_setonkey({
+		meslayer_onkey(event_key, event_keychar, string1)
+	}, interface_162:45)
+	if (~on_mobile = true) {
+		~keyboard_show(0, 80)
+	}
+	return 
+}

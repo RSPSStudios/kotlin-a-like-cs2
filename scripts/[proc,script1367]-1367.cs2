@@ -1,0 +1,184 @@
+// 1367 proc
+fun script1367(component0: Component, component1: Component) {
+
+	cc_deleteall(component0)
+	cc_deleteall(component1)
+	val int2: Int = 0
+	val int3: Int = 0
+	val int4: Int = 1
+	val text0: String = ""
+	val text1: String = ""
+	val text2: String = ""
+	val text3: String = ""
+	val int5: Int = ~script1370
+	val int6: Int = 0
+	val boolean7: Boolean = false
+	if (int5 > 0) {
+		text3 = "<col=00ff00>Kill Queen (${tostring(int5)})</col>"
+	} else {
+		text3 = "<col=cc0000>Kill Queen (${tostring(int5)})</col>"
+	}
+	val flags8: Int = ~script1369
+	val int9: Int = 0
+	val model10: Model = enum(int, model, enum_1403, int4)
+	val int11: Int = 6
+	while (model10 ! null) {
+		if (int4 = 1) {
+			if (VARBIT[3251] < 5) {
+				int9 = enum(int, int, enum_1408, VARBIT[3251])
+				text2 = "${tostring(int9)} Attacker points"
+			} else {
+				text2 = " - Mastered - "
+			}
+			text1 = enum(int, string, enum_1413, VARBIT[3251])
+			if (VARBIT[3251] < 5) {
+				text0 = "Attacker level up to ${tostring(calc(VARBIT[3251] + 1))}"
+			} else {
+				text0 = "Attacker level up complete"
+			}
+			model10 = enum(int, model, enum_1409, VARBIT[3251])
+		} else if (int4 = 2) {
+			if (VARBIT[3254] < 5) {
+				int9 = enum(int, int, enum_1408, VARBIT[3254])
+				text2 = "${tostring(int9)} Collector points"
+			} else {
+				text2 = " - Mastered - "
+			}
+			text1 = enum(int, string, enum_1414, VARBIT[3254])
+			if (VARBIT[3254] < 5) {
+				text0 = "Collector level up to ${tostring(calc(VARBIT[3254] + 1))}"
+			} else {
+				text0 = "Collector level up complete"
+			}
+			model10 = enum(int, model, enum_1410, VARBIT[3254])
+		} else if (int4 = 3) {
+			if (VARBIT[3253] < 5) {
+				int9 = enum(int, int, enum_1408, VARBIT[3253])
+				text2 = "${tostring(int9)} Defender points"
+			} else {
+				text2 = " - Mastered - "
+			}
+			text1 = enum(int, string, enum_1415, VARBIT[3253])
+			if (VARBIT[3253] < 5) {
+				text0 = "Defender level up to ${tostring(calc(VARBIT[3253] + 1))}"
+			} else {
+				text0 = "Defender level up complete"
+			}
+			model10 = enum(int, model, enum_1411, VARBIT[3253])
+		} else if (int4 = 4) {
+			if (VARBIT[3255] < 5) {
+				int9 = enum(int, int, enum_1408, VARBIT[3255])
+				text2 = "${tostring(int9)} Healer points"
+			} else {
+				text2 = " - Mastered - "
+			}
+			text1 = enum(int, string, enum_1416, VARBIT[3255])
+			if (VARBIT[3255] < 5) {
+				text0 = "Healer level up to ${tostring(calc(VARBIT[3255] + 1))}"
+			} else {
+				text0 = "Healer level up complete"
+			}
+			model10 = enum(int, model, enum_1412, VARBIT[3255])
+		} else {
+			text0 = ~script1299(enum(int, string, enum_1405, int4), "XXXX", ~text_device("Gamble points", "Lucky Dip"))
+			text1 = enum(int, string, enum_1406, int4)
+			text2 = enum(int, string, enum_1407, int4)
+		}
+		cc_create(component0, ^iftype_text, int2)
+		cc_setcolour(0xccccff)
+		cc_setposition(248, calc(6 + 50 * (int4 - 1)), ^setpos_abs_left, ^setpos_abs_top)
+		cc_setsize(83, 40, ^setsize_abs, ^setsize_abs)
+		cc_settextfont(p12_full)
+		cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+		cc_settextshadow(true)
+		cc_settext(text1)
+		int2 = calc(int2 + 1)
+		cc_create(component0, ^iftype_rectangle, int2)
+		cc_setposition(244, calc(3 + 50 * (int4 - 1)), ^setpos_abs_left, ^setpos_abs_top)
+		cc_setsize(90, 46, ^setsize_abs, ^setsize_abs)
+		cc_setcolour(0x333300)
+		int2 = calc(int2 + 1)
+		boolean7 = enum(int, boolean, enum_1404, int4)
+		if (boolean7 = true) {
+			int6 = calc(6 + 50 * (int4 - 2) + 49)
+		} else {
+			int6 = calc(6 + 50 * (int4 - 1))
+		}
+		cc_create(component0, ^iftype_text, int2)
+		cc_setcolour(0xcc0000)
+		if (testbit(flags8, calc(int4 - 1)) = ^true) {
+			text2 = "<col=00ff00>${text2}</col>"
+		}
+		cc_setposition(341, int6, ^setpos_abs_left, ^setpos_abs_top)
+		if (boolean7 = true) {
+			cc_setsize(84, 42, ^setsize_abs, ^setsize_abs)
+		} else {
+			cc_setsize(84, 40, ^setsize_abs, ^setsize_abs)
+		}
+		cc_settextfont(p12_full)
+		if (boolean7 = true) {
+			cc_settextalign(^settextalign_centre, ^settextalign_top, 0)
+		} else {
+			cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
+		}
+		cc_settextshadow(true)
+		cc_settext(text2)
+		int2 = calc(int2 + 1)
+		if (boolean7 = true) {
+			int6 = calc(int6 + 28)
+			cc_create(component0, ^iftype_text, int2)
+			cc_setposition(341, int6, ^setpos_abs_left, ^setpos_abs_top)
+			cc_setsize(84, 15, ^setsize_abs, ^setsize_abs)
+			cc_settextfont(p12_full)
+			cc_settextalign(^settextalign_centre, ^settextalign_top, 0)
+			cc_settextshadow(true)
+			cc_settext(text3)
+			int2 = calc(int2 + 1)
+		}
+		cc_create(component0, ^iftype_rectangle, int2)
+		cc_setposition(338, calc(3 + 50 * (int4 - 1)), ^setpos_abs_left, ^setpos_abs_top)
+		cc_setsize(90, 46, ^setsize_abs, ^setsize_abs)
+		cc_setcolour(0x333300)
+		int2 = calc(int2 + 1)
+		cc_create(component0, ^iftype_model, int2)
+		cc_setmodel(model10)
+		cc_setposition(11, calc(9 + 50 * (int4 - 1)), ^setpos_abs_left, ^setpos_abs_top)
+		cc_setsize(49, 34, ^setsize_abs, ^setsize_abs)
+		cc_setmodelangle(0, 0, 0, 0, 0, 2372)
+		int2 = calc(int2 + 1)
+		cc_create(component0, ^iftype_text, int2)
+		cc_setcolour(0xccccff)
+		cc_setposition(70, calc(18 + 50 * (int4 - 1)), ^setpos_abs_left, ^setpos_abs_top)
+		cc_setsize(162, 15, ^setsize_abs, ^setsize_abs)
+		cc_settextfont(p12_full)
+		cc_settextalign(^settextalign_left, ^settextalign_top, 0)
+		cc_settextshadow(true)
+		cc_settext(text0)
+		int2 = calc(int2 + 1)
+		.cc_create(component1, ^iftype_rectangle, int3)
+		.cc_setposition(2, calc(3 + 50 * (int4 - 1)), ^setpos_abs_left, ^setpos_abs_top)
+		.cc_setsize(238, 46, ^setsize_abs, ^setsize_abs)
+		if (VARP[261] = int4) {
+			.cc_setcolour(^blue)
+		} else {
+			.cc_setcolour(0x333300)
+			.cc_setonmouseover({
+				cc_colour_swapper(component1, int3, ^white)
+			})
+			.cc_setonmouseleave({
+				cc_colour_swapper(component1, int3, 0x333300)
+			})
+		}
+		.cc_setop(1, "Select")
+		.cc_setopbase("<col=ff9040>${text0}</col>")
+		.cc_setonop({
+			script1368(event_com, event_comsubid, int4, testbit(flags8, calc(int4 - 1)), boolean7, int5)
+		})
+		int3 = calc(int3 + 1)
+		int4 = calc(int4 + 1)
+		model10 = enum(int, model, enum_1403, int4)
+		int11 = calc(int11 + 50)
+	}
+	if_setscrollsize(0, int11, component0)
+	return 
+}

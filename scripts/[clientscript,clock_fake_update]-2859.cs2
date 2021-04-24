@@ -1,0 +1,10 @@
+// 2859 clientscript
+fun clock_fake_update(component0: Component) {
+
+	if (clientclock < VARCINT[375] | calc(clientclock % 50) ! 0) {
+		return 
+	}
+	VARBIT[8354] = calc(VARBIT[8354] + 1)
+	~clock_set(component0)
+	return 
+}

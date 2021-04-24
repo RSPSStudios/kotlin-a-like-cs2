@@ -1,0 +1,22 @@
+// 757 clientscript
+fun if_flasher(component0: Component, int1: Int) {
+
+	val int2: Int = 0
+	val int3: Int = 0
+	val int4: Int = 0
+	if (if_find(component0) = true) {
+		int3 = clientclock
+		int4 = calc(int3 - int1)
+		if (int4 >= 750) {
+			cc_settrans(255)
+			cc_setontimer(null)
+			return 
+		}
+		if (calc(int3 % 40) >= 20) {
+			cc_settrans(255)
+			return 
+		}
+		cc_settrans(interpolate(0, int4, 0, 750, 255))
+	}
+	return 
+}

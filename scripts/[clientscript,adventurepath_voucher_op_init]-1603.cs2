@@ -1,0 +1,7 @@
+// 1603 clientscript
+fun adventurepath_voucher_op_init(int0: Int, text0: String) {
+
+	sound_synth(synth_2266, 1, 0)
+	~adventurepath_voucher_init(int0, text0)
+	return 
+}

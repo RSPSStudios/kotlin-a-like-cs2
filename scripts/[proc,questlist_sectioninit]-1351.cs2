@@ -1,0 +1,53 @@
+// 1351 proc
+fun questlist_sectioninit(text0: String, component0: Component, enum1: Enum, count2: Int, component3: Component, component4: Component, component5: Component): Int {
+
+	cc_deleteall(component0)
+	if (count2 <= 0) {
+		return 0
+	}
+	val text1: String = ""
+	val int6: Int = 0
+	val int7: Int = pow(2, 16)
+	val int8: Int = 15
+	if (~on_mobile = true) {
+		int8 = scale(4, 3, int8)
+	}
+	int0[count2]: Int
+	val count9: Int = 0
+	while (count9 < count2) {
+		cc_create(component0, ^iftype_text, count9)
+		cc_setsize(0, int8, ^setsize_minus, ^setsize_abs)
+		cc_settextfont(p11_full)
+		cc_settextshadow(true)
+		cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
+		text1 = ~get_quest_name(enum(int, struct, enum1, count9))
+		cc_settext(text1)
+		cc_setopbase("<col=ff9040>${text1}</col>")
+		int0[count9] = calc(int6 * int7 + count9)
+		cc_setop(1, "Read Journal:")
+		cc_setop(2, "Guide:")
+		cc_setop(3, "Quick-guide:")
+		count9 = calc(count9 + 1)
+	}
+	if (count2 > 1) {
+		~questlist_sort(int0, 0, calc(count2 - 1), enum1, int7)
+	}
+	val int10: Int = 20
+	count9 = 0
+	while (count9 < count2) {
+		if (cc_find(component0, calc(int0[count9] % int7)) = ^true) {
+			cc_setposition(0, int10, ^setpos_abs_centre, ^setpos_abs_top)
+		}
+		count9, int10 = calc(count9 + 1), calc(int10 + int8)
+	}
+	cc_create(component0, ^iftype_text, count9)
+	cc_setsize(0, 20, ^setsize_minus, ^setsize_abs)
+	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_top)
+	cc_setcolour(0xff981f)
+	cc_settextfont(b12_full)
+	cc_settextshadow(true)
+	cc_settextalign(^settextalign_left, ^settextalign_top, 0)
+	cc_settext(text0)
+	if_setsize(0, int10, ^setsize_minus, ^setsize_abs, component0)
+	return int10
+}

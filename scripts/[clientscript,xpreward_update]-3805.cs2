@@ -1,0 +1,8 @@
+// 3805 clientscript
+fun xpreward_update(clock0: Int, int1: Int, component2: Component, component3: Component) {
+
+	if (clientclock >= clock0) {
+		~xpreward_update(int1, component2, component3)
+	}
+	return 
+}

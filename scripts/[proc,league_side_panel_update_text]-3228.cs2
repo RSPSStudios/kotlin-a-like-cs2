@@ -1,0 +1,41 @@
+// 3228 proc
+fun league_side_panel_update_text(component0: Component, component1: Component, component2: Component, component3: Component, int4: Int, int5: Int) {
+
+	val int6: Int = -1
+	if (int5 ! -1 & int4 ! -1) {
+		int6 = calc(int5 - int4)
+	}
+	if (int6 <= 0 & if_find(component1) = true) {
+		if (VARBIT[11696] = 0) {
+			cc_settext("<col=ffffff>You can unlock a new Relic!</col>")
+		} else {
+			cc_settext("<col=ffffff>You have unlocked all Relics!</col>")
+		}
+	} else if (if_find(component1) = true) {
+		cc_settext("<col=ffffff>${tostring(int6)}</col> points until next Relic.")
+	}
+	val int7: Int = -1
+	val struct8: Struct = ~script3682(0)
+	if (struct8 ! null) {
+		int7 = struct_param(struct8, param_1010)
+	} else {
+		int7 = 1
+	}
+	int6 = calc(int7 - VARBIT[10046])
+	if (int6 <= 0 & if_find(component0) = true) {
+		if (VARBIT[10666] = 0) {
+			cc_settext("<col=ffffff>You can unlock a new Area!</col>")
+		} else {
+			cc_settext("<col=ffffff>You have unlocked all Areas!</col>")
+		}
+	} else if (if_find(component0) = true) {
+		cc_settext("<col=ffffff>${tostring(int6)}</col> tasks until next Area.")
+	}
+	if (if_find(component2) = true) {
+		cc_settext(tostring(int4))
+	}
+	if (if_find(component3) = true) {
+		cc_settext(tostring(VARBIT[10046]))
+	}
+	return 
+}

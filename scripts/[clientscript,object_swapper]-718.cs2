@@ -1,0 +1,6 @@
+// 718 clientscript
+fun object_swapper(component0: Component, obj1: Obj, num2: Int) {
+
+	if_setobject(obj1, num2, component0)
+	return 
+}

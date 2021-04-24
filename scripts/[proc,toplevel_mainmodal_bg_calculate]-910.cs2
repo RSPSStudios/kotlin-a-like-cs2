@@ -1,0 +1,26 @@
+// 910 proc
+fun toplevel_mainmodal_bg_calculate(enum0: Enum, component1: Component, component2: Component, int3: Int, int4: Int) {
+
+	if (component1 = null) {
+		return 
+	}
+	if (~on_mobile = true) {
+		~toplevel_mainmodal_bg_calculate_mobile(enum0, component1)
+		return 
+	}
+	if (VARCINT[172] <= null | VARCINT[173] <= -1 | if_hassub(enum(component, component, enum0, interface_161:15)) = false) {
+		cc_deleteall(component1)
+		return 
+	}
+	val width5: Int = if_getwidth(component2)
+	val height6: Int = if_getheight(component2)
+	val int7: Int = calc((width5 - 512) / 2)
+	val int8: Int = calc((height6 - 334) / 2)
+	val int9: Int = calc(width5 - (int7 + 512))
+	val int10: Int = calc(height6 - (int8 + 334))
+	~toplevel_mainmodal_bg_build(component1, 0, VARCINT[172], VARCINT[173], 0, 0, ^setpos_abs_left, ^setpos_abs_top, 0, int8, ^setsize_minus, ^setsize_abs)
+	~toplevel_mainmodal_bg_build(component1, 1, VARCINT[172], VARCINT[173], 0, 0, ^setpos_abs_left, ^setpos_abs_bottom, 0, calc(int10 + int4), ^setsize_minus, ^setsize_abs)
+	~toplevel_mainmodal_bg_build(component1, 2, VARCINT[172], VARCINT[173], 0, int8, ^setpos_abs_left, ^setpos_abs_top, int7, 334, ^setsize_abs, ^setsize_abs)
+	~toplevel_mainmodal_bg_build(component1, 3, VARCINT[172], VARCINT[173], 0, int8, ^setpos_abs_right, ^setpos_abs_top, calc(int9 + int3), 334, ^setsize_abs, ^setsize_abs)
+	return 
+}

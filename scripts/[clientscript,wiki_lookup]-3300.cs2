@@ -1,0 +1,6 @@
+// 3300 clientscript
+fun wiki_lookup(string0: String, string1: String, string2: String, string3: String, string4: String) {
+
+	~wiki_lookup(string0, string1, string2, string3, string4)
+	return 
+}

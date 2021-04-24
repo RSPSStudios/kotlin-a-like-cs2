@@ -1,0 +1,8 @@
+// 34 clientscript
+fun scrollbar_vertical_jump(component0: Component, component1: Component, mousey2: Int) {
+
+	if (cc_find(component0, 1) = ^true) {
+		cc_dragpickup(0, calc(cc_getheight / 2))
+	}
+	return 
+}

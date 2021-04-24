@@ -1,0 +1,6 @@
+// 3916 clientscript
+fun settings_side_update_tabs() {
+
+	~settings_side_update_tabs(VARBIT[9683])
+	return 
+}

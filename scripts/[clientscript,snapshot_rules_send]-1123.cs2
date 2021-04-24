@@ -1,0 +1,24 @@
+// 1123 clientscript
+fun snapshot_rules_send(int0: Int) {
+
+	if (string_length(VARCSTRING[370]) > 0 | VARCINT[224] = 0) {
+		sound_synth(synth_2266, 1, 0)
+		if (VARCINT[224] = 0 | int0 = 7 & compare(VARCSTRING[370], VARCSTRING[371]) = 0) {
+			mes("Thank-you, your abuse report has been received.")
+		} else {
+			chat_sendabusereport(VARCSTRING[370], int0, VARCINT[6])
+		}
+		if (VARCINT[140] = 1) {
+			ignore_add(VARCSTRING[370])
+		}
+		if (int0 = 7) {
+			VARCSTRING[371] = VARCSTRING[370]
+		}
+		if_close
+		VARCINT[11], VARCSTRING[370] = 0, ""
+		return 
+	}
+	sound_synth(pillory_wrong, 1, 0)
+	mes("Please enter the name of the player you wish to report.")
+	return 
+}

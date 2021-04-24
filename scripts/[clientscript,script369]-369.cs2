@@ -1,0 +1,7 @@
+// 369 clientscript
+fun script369() {
+
+	if_settext("---", interface_375:24)
+	if_setontimer(null, interface_375:24)
+	return 
+}

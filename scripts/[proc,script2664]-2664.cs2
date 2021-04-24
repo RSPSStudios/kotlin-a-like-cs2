@@ -1,0 +1,250 @@
+// 2664 proc
+fun script2664(struct0: Struct): Int, String {
+
+	val namedobj1: Namedobj = struct_param(struct0, param_664)
+	val int2: Int = struct_param(struct0, param_668)
+	val namedobj3: Namedobj = struct_param(struct0, param_665)
+	val int4: Int = struct_param(struct0, param_669)
+	val namedobj5: Namedobj = struct_param(struct0, param_666)
+	val int6: Int = struct_param(struct0, param_670)
+	val namedobj7: Namedobj = struct_param(struct0, param_667)
+	val int8: Int = struct_param(struct0, param_671)
+	val stat9: Stat = struct_param(struct0, param_672)
+	val lvl10: Int = struct_param(struct0, param_673)
+	val int11: Int = struct_param(struct0, param_674)
+	val string0: String = ""
+	val int12: Int = 1
+	val int13: Int = 1
+	if (VARBIT[4896] < 600) {
+		int13 = 0
+	}
+	if (stat9 ! null) {
+		if (stat_base(stat9) >= lvl10) {
+			string0 = "${string0}<col=0dc10d>"
+		} else {
+			string0 = "${string0}<col=ff0000>"
+			int12 = 0
+		}
+		string0 = "${string0}Level ${tostring(lvl10)} ${enum(stat, string, enum_680, stat9)}.</col>"
+	}
+	if (int11 = 1) {
+		if (stat9 ! null) {
+			string0 = "${string0}<br>"
+		}
+		when (struct0): Struct {
+			lunar_isle_462, waterbirth_island_464, fishing_guild_465, catherby_468 -> {
+			
+				if (VARBIT[2448] >= 190) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0}Completed Lunar Diplomacy.</col>"
+			}
+			ardougne_456 -> {
+			
+				if (VARP[165] >= 30) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0}Learned Ardougne Teleport spell.</col>"
+			}
+			watchtower_457 -> {
+			
+				if (VARP[212] >= 14) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0}Learned Watchtower Teleport spell.</col>"
+			}
+			marim_460 -> {
+			
+				if (VARBIT[1914] >= 50) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0}Saved Awowogei in Recipe for Disaster.</col>"
+			}
+			senntisten_459, annakarl_466, kharyrll_461, ghorrock_469, carrallangar_470 -> {
+			
+				if (VARBIT[358] >= 15) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0}Completed Desert Treasure.</col>"
+			}
+			kourend_castle_463 -> {
+			
+				if (VARP[261] = 1) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0}Recited the incantation.</col>"
+			}
+			troll_stronghold_467, weiss_592 -> {
+			
+				if (VARBIT[6528] >= 200) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0}Complete Making Friends with My Arm.  </col>"
+			}
+			grand_exchange_451 -> {
+			
+				if (VARBIT[4520] = 1 | VARBIT[4521] = 1 | VARBIT[4522] = 1) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0}Complete the medium, hard or elite tier of the Varrock achievement diary.</col>"
+			}
+			seers_village_455 -> {
+			
+				if (VARBIT[4517] = 1 | VARBIT[4518] = 1) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0}Complete the hard or elite tier of the Kandarin achievement diary.</col>"
+			}
+			yanille_458 -> {
+			
+				if (VARBIT[4501] = 1 | VARBIT[4502] = 1) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0}Complete the hard or elite tier of the Ardougne achievement diary.</col>"
+			}
+			battlefront_1247 -> {
+			
+				if (VARBIT[4897] = 1) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0}Visited Kourend.</col>"
+				if (int13 = 1) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0} 60% Arceuus favour.</col>"
+			}
+			salve_graveyard_1249, fenken_castle_1250, barrows_1254 -> {
+			
+				if (VARP[302] >= 61) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0}Complete Priest in Peril.</col>"
+				if (int13 = 1) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0} 60% Arceuus favour.</col>"
+			}
+			west_ardougne_1251 -> {
+			
+				if (VARP[68] >= 16) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0}Completed Biohazard.</col>"
+				if (int13 = 1) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0} 60% Arceuus favour.</col>"
+			}
+			harmony_island_1252 -> {
+			
+				if (VARP[980] >= 130) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0}Completed The Great Brain Robbery.</col>"
+				if (int13 = 1) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0} 60% Arceuus favour.</col>"
+			}
+			ape_atoll_dungeon_1255 -> {
+			
+				if (VARP[365] >= 10) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0}Completed Monkey Madness.</col>"
+				if (int13 = 1) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0} 60% Arceuus favour.</col>"
+			}
+			lumbridge_grave_1245, draynor_manor_1246, mind_altar_1248, cemetery_1253 -> {
+			
+				if (int13 = 1) {
+					string0 = "${string0}<col=0dc10d>"
+				} else {
+					string0 = "${string0}<col=ff0000>"
+					int12 = 0
+				}
+				string0 = "${string0}60% Arceuus favour.</col>"
+			}
+		}
+	}
+	val string1: String = ""
+	if (namedobj1 ! null & calc(inv_total(inv, namedobj1) - inv_total(inv_619, namedobj1)) < int2) {
+		int12 = 0
+		string1 = "<br><col=ff0000>Can not afford cost."
+	}
+	if (namedobj3 ! null & calc(inv_total(inv, namedobj3) - inv_total(inv_619, namedobj3)) < int4) {
+		int12 = 0
+		string1 = "<br><col=ff0000>Can not afford cost."
+	}
+	if (namedobj5 ! null & calc(inv_total(inv, namedobj5) - inv_total(inv_619, namedobj5)) < int6) {
+		int12 = 0
+		string1 = "<br><col=ff0000>Can not afford cost."
+	}
+	if (namedobj7 ! null & calc(inv_total(inv, namedobj7) - inv_total(inv_619, namedobj7)) < int8) {
+		int12 = 0
+		string1 = "<br><col=ff0000>Can not afford cost."
+	}
+	return int12, "${string0}${string1}"
+}

@@ -1,0 +1,16 @@
+// 1155 proc
+fun script1155(component0: Component) {
+
+	val int1: Int = inv_size(inv_563)
+	val int2: Int = 0
+	while (int1 > 0) {
+		int1 = calc(int1 - 1)
+		if (cc_find(component0, int1) = ^true) {
+			~script1156(inv_getobj(inv_563, int1), inv_getnum(inv_563, int1), component0)
+		}
+		int2 = calc(int2 + inv_getnum(inv_563, int1))
+	}
+	if_settext(tostring(int2), interface_230:13)
+	if_settext(tostring(inv_size(inv_563)), interface_230:16)
+	return 
+}

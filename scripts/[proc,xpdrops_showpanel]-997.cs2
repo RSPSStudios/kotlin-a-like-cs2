@@ -1,0 +1,22 @@
+// 997 proc
+fun xpdrops_showpanel(component0: Component, component1: Component, component2: Component, component3: Component) {
+
+	if_sethide(false, component1)
+	if_sethide(false, component2)
+	if_sethide(false, component3)
+	val clock4: Int = 0
+	val int5: Int = 0
+	val int6: Int = enum(int, int, enum_1167, VARBIT[4694])
+	if (int6 > 0) {
+		clock4 = calc(VARCINT[71] + enum(int, int, enum_1171, VARBIT[4722]))
+		if (clock4 > clientclock) {
+			int5 = calc(clock4 - clientclock)
+		}
+		if_setontimer({
+			xpdrops_hidepanel(component0, component1, component2, component3, calc(clientclock + int5 + int6))
+		}, component0)
+	} else {
+		if_setontimer(null, component0)
+	}
+	return 
+}

@@ -1,0 +1,11 @@
+// 852 proc
+fun script852(component0: Component) {
+
+	val string0: String = ","
+	if (component0 = interface_442:26) {
+		if_settext("Lifetime Zeal:<br> <col=ffffff>${~tostring_spacer(VARP[2871], string0)}</col>", component0)
+	} else if (component0 = interface_442:27) {
+		if_settext("Zeal Tokens:<br> <col=ffffff>${~tostring_spacer(VARP[2876], string0)}</col>", component0)
+	}
+	return 
+}

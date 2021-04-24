@@ -1,0 +1,8 @@
+// 1550 clientscript
+fun raids_sidepanel_entry_setup(component0: Component, comsubid1: Int, int2: Int, boolean3: Boolean) {
+
+	if (cc_find(component0, comsubid1) = ^true) {
+		~raids_sidepanel_entry_setup(int2, boolean3)
+	}
+	return 
+}

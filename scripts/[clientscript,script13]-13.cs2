@@ -1,0 +1,16 @@
+// 13 clientscript
+fun script13(component0: Component) {
+
+	if (~target_world = 0) {
+		if_settext("", component0)
+		if_setontimer(null, component0)
+		return 
+	}
+	val int1: Int = interpolate(0, 60, 0, 100, VARBIT[877])
+	val clock2: Int = clientclock
+	if_setontimer({
+		script14(component0, int1, clock2)
+	}, component0)
+	~script15(component0, int1, clock2)
+	return 
+}

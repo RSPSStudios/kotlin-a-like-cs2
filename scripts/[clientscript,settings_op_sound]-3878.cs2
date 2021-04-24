@@ -1,0 +1,6 @@
+// 3878 clientscript
+fun settings_op_sound(int0: Int) {
+
+	~settings_op_sound(int0)
+	return 
+}

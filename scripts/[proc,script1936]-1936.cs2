@@ -1,0 +1,102 @@
+// 1936 proc
+fun script1936(stat0: Stat): Int {
+
+	when (stat0): Stat {
+		ranged -> {
+		
+			return VARP[1437]
+		}
+		magic -> {
+		
+			return VARP[1438]
+		}
+		defence -> {
+		
+			return VARP[1439]
+		}
+		strength -> {
+		
+			return VARP[1436]
+		}
+		attack -> {
+		
+			return VARP[1435]
+		}
+		hitpoints -> {
+		
+			return VARP[1440]
+		}
+		fletching -> {
+		
+			return VARP[1453]
+		}
+		mining -> {
+		
+			return VARP[1447]
+		}
+		woodcutting -> {
+		
+			return VARP[1452]
+		}
+		herblore -> {
+		
+			return VARP[1443]
+		}
+		fishing -> {
+		
+			return VARP[1449]
+		}
+		prayer -> {
+		
+			return VARP[1441]
+		}
+		agility -> {
+		
+			return VARP[1442]
+		}
+		thieving -> {
+		
+			return VARP[1444]
+		}
+		cooking -> {
+		
+			return VARP[1450]
+		}
+		hunter -> {
+		
+			return VARP[1457]
+		}
+		crafting -> {
+		
+			return VARP[1445]
+		}
+		runecraft -> {
+		
+			return VARP[1446]
+		}
+		slayer -> {
+		
+			return VARP[1454]
+		}
+		farming -> {
+		
+			return VARP[1455]
+		}
+		construction -> {
+		
+			return VARP[1456]
+		}
+		firemaking -> {
+		
+			return VARP[1451]
+		}
+		smithing -> {
+		
+			return VARP[1448]
+		}
+	else -> {
+	
+		return -1
+	}
+	}
+}

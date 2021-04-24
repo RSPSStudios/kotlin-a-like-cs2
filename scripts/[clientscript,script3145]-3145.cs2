@@ -1,0 +1,11 @@
+// 3145 clientscript
+fun script3145(boolean0: Boolean) {
+
+	if (boolean0 = null) {
+		setremoveroofs(VARCINT[402])
+		return 
+	}
+	VARCINT[402] = getremoveroofs
+	setremoveroofs(boolean0)
+	return 
+}

@@ -1,0 +1,6 @@
+// 476 clientscript
+fun br_hud_writetimer(component0: Component) {
+
+	~br_hud_writetimer(component0)
+	return 
+}

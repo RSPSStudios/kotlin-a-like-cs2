@@ -1,0 +1,22 @@
+// 1151 clientscript
+fun script1151(component0: Component) {
+
+	cc_deleteall(component0)
+	val size1: Int = inv_size(inv_563)
+	val size2: Int = 0
+	while (size2 < size1) {
+		cc_create(component0, ^iftype_graphic, size2)
+		cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+		cc_setposition(calc(size2 % 5 * 39), calc(size2 / 5 * 38), ^setpos_abs_left, ^setpos_abs_top)
+		cc_setgraphicshadow(0x111111)
+		cc_setoutline(1)
+		cc_setdragdeadzone(5)
+		cc_setdragdeadtime(5)
+		size2 = calc(size2 + 1)
+	}
+	if_setoninvtransmit({
+		script1154(component0){inv_563}
+	}, component0)
+	~script1155(component0)
+	return 
+}

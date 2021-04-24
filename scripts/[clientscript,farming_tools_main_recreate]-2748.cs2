@@ -1,0 +1,6 @@
+// 2748 clientscript
+fun farming_tools_main_recreate(component0: Component, obj1: Obj, text0: String, int2: Int, boolean3: Boolean) {
+
+	~farming_tools_main_recreate(component0, obj1, text0, int2, boolean3)
+	return 
+}

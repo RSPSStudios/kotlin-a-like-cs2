@@ -1,0 +1,6 @@
+// 3595 clientscript
+fun teletab_confirm_draw(boolean0: Boolean, text0: String, component1: Component) {
+
+	~teletab_confirm_draw(boolean0, text0, component1)
+	return 
+}

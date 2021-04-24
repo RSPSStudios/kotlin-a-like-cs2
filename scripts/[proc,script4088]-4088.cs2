@@ -1,0 +1,47 @@
+// 4088 proc
+fun script4088(int0: Int, component1: Component, component2: Component) {
+
+	val component3: Component = interface_621:71
+	val component4: Component = interface_621:72
+	val component5: Component = interface_621:76
+	val component6: Component = interface_621:75
+	val component7: Component = interface_621:77
+	val int8: Int = 0
+	if (VARBIT[9638] = 0) {
+		if_setop(1, "Search", component3)
+		if_setonop({
+			script4090(component1, component2)
+		}, component3)
+		if_setonmouseover({
+			script4092(component4)
+		}, component4)
+		if_setonmouseleave({
+			script4093(component4)
+		}, component4)
+		if_settext("*", component4)
+		if_setcolour(0xff981f, component4)
+		if (int0 = 1) {
+			VARCSTRING[417] = ""
+		}
+		if_setonkey(null, component4)
+	} else {
+		if (~on_mobile = false) {
+			if_setop(1, "", component3)
+			if_setonop(null, component3)
+		} else {
+			if_setop(1, "Show keyboard", component3)
+			if_setonop({
+				settings_show_keyboard
+			}, component3)
+		}
+		if_setonmouseover(null, component4)
+		if_setonmouseleave(null, component4)
+		if_settext(append(VARCSTRING[417], "<col=f4f4f4>*</col>"), component4)
+		if_setonkey({
+			script4094(event_key, event_keychar, component4, component7, component5, component6, component1, component2)
+		}, component4)
+		~script4101
+	}
+	~script4096(1)
+	return 
+}

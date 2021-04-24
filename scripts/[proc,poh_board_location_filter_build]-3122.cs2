@@ -1,0 +1,26 @@
+// 3122 proc
+fun poh_board_location_filter_build(component0: Component, component1: Component) {
+
+	val graphic2: Graphic = "checkbox,2"
+	val graphic3: Graphic = "checkbox,5"
+	val graphic4: Graphic = "checkbox,0"
+	val graphic5: Graphic = "checkbox,3"
+	if (VARBIT[9448] = 1) {
+		if_setgraphic(graphic2, component1)
+		if_setonmouserepeat({
+			graphic_swapper(component1, graphic3)
+		}, component0)
+		if_setonmouseleave({
+			graphic_swapper(component1, graphic2)
+		}, component0)
+	} else {
+		if_setgraphic(graphic4, component1)
+		if_setonmouserepeat({
+			graphic_swapper(component1, graphic5)
+		}, component0)
+		if_setonmouseleave({
+			graphic_swapper(component1, graphic4)
+		}, component0)
+	}
+	return 
+}

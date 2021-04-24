@@ -1,0 +1,20 @@
+// 1212 clientscript
+fun zeah_favour_recolour_list(component0: Component, comsubid1: Int, comsubid2: Int, int3: Int, int4: Int) {
+
+	val int5: Int = 0
+	if (cc_find(component0, comsubid1) = ^true & .cc_find(component0, comsubid2) = ^true) {
+		if (int3 = 3) {
+			int5 = VARBIT[4896]
+		} else if (int3 = 2) {
+			int5 = VARBIT[4895]
+		} else if (int3 = 4) {
+			int5 = VARBIT[4898]
+		} else if (int3 = 5) {
+			int5 = VARBIT[4899]
+		} else if (int3 = 1) {
+			int5 = VARBIT[4894]
+		}
+		~zeah_favour_recolour_list(int4, int5)
+	}
+	return 
+}

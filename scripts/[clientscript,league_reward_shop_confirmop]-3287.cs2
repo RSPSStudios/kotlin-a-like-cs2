@@ -1,0 +1,13 @@
+// 3287 clientscript
+fun league_reward_shop_confirmop(opindex0: Int, component1: Component, struct2: Struct) {
+
+	if (opindex0 ! 1) {
+		return 
+	}
+	if (~script3292(struct2) = 0) {
+		return 
+	}
+	sound_synth(synth_2266, 1, 0)
+	if_sethide(false, component1)
+	return 
+}

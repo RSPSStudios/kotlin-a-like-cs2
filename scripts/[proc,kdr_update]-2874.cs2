@@ -1,0 +1,24 @@
+// 2874 proc
+fun kdr_update() {
+
+	val string0: String = ","
+	val int0: Int = 0
+	val int1: Int = 0
+	val int2: Int = 0
+	if (VARBIT[4143] = 0 | VARBIT[5963] = 0 & ~script2871 = 0) {
+		cc_settext("")
+	} else if (~deadman_world = 1 & VARBIT[4965] > 0) {
+		cc_settext("")
+	} else if (VARBIT[8375] = 0) {
+		cc_settext("Kills: ${~tostring_spacer(VARBIT[8376], string0)}<br>Deaths: 0<br>K/D Ratio: 0.0")
+	} else {
+		if (VARBIT[8376] < calc(^max_32bit_int / 10)) {
+			int0 = scale(VARBIT[8376], VARBIT[8375], 10)
+			int1, int2 = calc(int0 / 10), calc(int0 % 10)
+		} else {
+			int1, int2 = calc(VARBIT[8376] / VARBIT[8375]), 0
+		}
+		cc_settext("Kills: ${~tostring_spacer(VARBIT[8376], string0)}<br>Deaths: ${~tostring_spacer(VARBIT[8375], string0)}<br>K/D Ratio: ${~tostring_spacer(int1, string0)}.${tostring(int2)}")
+	}
+	return 
+}

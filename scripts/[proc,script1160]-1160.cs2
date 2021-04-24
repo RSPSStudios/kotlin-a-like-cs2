@@ -1,0 +1,12 @@
+// 1160 proc
+fun script1160(component0: Component) {
+
+	val int1: Int = inv_size(inv)
+	while (int1 > 0) {
+		int1 = calc(int1 - 1)
+		if (cc_find(component0, int1) = ^true) {
+			~script1161(inv_getobj(inv, int1), inv_getnum(inv, int1), component0)
+		}
+	}
+	return 
+}

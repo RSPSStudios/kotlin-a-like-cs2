@@ -1,0 +1,7 @@
+// 1710 proc
+fun worldmap_maplist_close(component0: Component, component1: Component) {
+
+	if_sethide(true, component1)
+	~xpdrops_setup_display_hoveroff(component0)
+	return 
+}

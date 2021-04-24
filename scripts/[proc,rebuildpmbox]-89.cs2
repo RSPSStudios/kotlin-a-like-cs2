@@ -1,0 +1,148 @@
+// 89 proc
+fun rebuildpmbox(mesuid0: Int) {
+
+	val int1: Int = 0
+	val setposv2: Int = ^setpos_abs_bottom
+	val int3: Int = 103
+	val int4: Int = 4
+	val int5: Int = 23
+	val enum6: Enum = ~toplevel_getcomponents
+	if (enum(enum, int, enum_1136, enum6) > 0) {
+		if (enum6 = enum_1745) {
+			setposv2, int3, int1, int5 = ^setpos_abs_top, 102, enum(enum, int, enum_1960, enum6), 30
+		}
+		if (VARCINT[41] = 1337 & ~toplevel_chatbox_permittransparent = 1) {
+			int4 = calc(int4 + int5)
+		} else {
+			int4 = calc(int4 + if_getheight(enum(component, component, enum6, interface_161:32)))
+		}
+	}
+	val int7: Int = int4
+	val width8: Int = if_getwidth(interface_163:0)
+	val int9: Int = 0
+	val component10: Component = enum(int, component, enum_580, int9)
+	val int11: Int = 0
+	val string0: String = ""
+	if (reboottimer > 0) {
+		int11 = calc(reboottimer / 50 % 60)
+		if (int11 < 10) {
+			string0 = "System update in: ${tostring(calc(reboottimer / 3000))}:0${tostring(int11)}"
+		} else {
+			string0 = "System update in: ${tostring(calc(reboottimer / 3000))}:${tostring(int11)}"
+		}
+		int7 = calc(int7 + ~script199(string0, int9, component10, interface_163:0, width8, int1, 13, int7, setposv2, int3, ^yellow, true))
+		if_clearops(component10)
+		if_setonop(null, component10)
+		if_setonmouserepeat(null, component10)
+		if_setonmouseleave(null, component10)
+		if_setsize(0, 0, ^setsize_abs, ^setsize_abs, component10)
+		int9 = calc(int9 + 1)
+		component10 = enum(int, component, enum_580, int9)
+	}
+	val mesuid12: Int = -1
+	val int13: Int = -1
+	val string1: String = ""
+	val int14: Int = 0
+	val string2: String = ""
+	val string3: String = ""
+	val int15: Int = -1
+	val int16: Int = 0
+	if (VARCINT[55] >= VARCINT[202] & VARCINT[55] > calc(clientclock - 3000) & chat_gethistorylength(^chattype_broadcast) > 0) {
+		mesuid12, int13, string1, string2, string0, int14 = chat_gethistory_bytypeandline(^chattype_broadcast, 0)
+		if (mesuid12 ! -1) {
+			string0, string3, int15 = ~chat_broadcast_parseurl(string0)
+			if (int15 ! 4 | reboottimer <= 0) {
+				int7 = calc(int7 + ~script199(string0, int9, component10, interface_163:0, width8, int1, 13, int7, setposv2, int3, ^yellow, true))
+				if_clearops(component10)
+				if (string_length(string3) > 0 & int15 ! -1) {
+					if_setop(6, "Open", component10)
+					if_setop(7, "Check", component10)
+					if_setonmouserepeat({
+						chat_recol(if_getlayer(component10), int9, ^white)
+					}, component10)
+					if_setonmouseleave({
+						chat_recol(if_getlayer(component10), int9, ^yellow)
+					}, component10)
+				} else {
+					if_setonmouserepeat(null, component10)
+					if_setonmouseleave(null, component10)
+				}
+				if_setop(9, "Clear history", component10)
+				if_setopbase("<col=ff9040>Notification</col>", component10)
+				if_setonop({
+					chat_broadcast_op(event_opindex, string3, int15)
+				}, component10)
+				int9 = calc(int9 + 1)
+				component10 = enum(int, component, enum_580, int9)
+			}
+		}
+	}
+	mesuid12 = mesuid0
+	val chattype17: Int = ^chattype_gamemessage
+	if (VARP[287] = 1 & (VARCINT[41] ! 1337 | VARBIT[4089] = 0)) {
+		while (mesuid12 ! -1 & component10 ! null & calc(int7 - int4) < 57) {
+			chattype17, int13, string1, string2, string0, int14 = chat_gethistory_byuid(mesuid12)
+			if (~pm_filtertest(chattype17, string1, int13, int14) = 1) {
+				when (chattype17): Int {
+					^chattype_privatechat, ^chattype_modprivatechat -> {
+					
+						int7 = calc(int7 + ~script203("From ${string1}:", string0, int9, component10, interface_163:0, width8, int1, 13, int7, setposv2, int3, ^cyan, true))
+					}
+					^chattype_privatechatout -> {
+					
+						int7 = calc(int7 + ~script203("To ${string1}:", string0, int9, component10, interface_163:0, width8, int1, 13, int7, setposv2, int3, ^cyan, true))
+					}
+				else -> {
+				
+					int7 = calc(int7 + ~script199(string0, int9, component10, interface_163:0, width8, int1, 13, int7, setposv2, int3, ^cyan, true))
+					if (chattype17 = ^chattype_loginlogoutnotification & VARBIT[1627] = 0) {
+						VARCINT[65] = calc(int13 + 500 + 1)
+						if_setontimer({
+							script664(false)
+						}, interface_162:0)
+					}
+				}
+				}
+				if_clearops(component10)
+				if (chattype17 = ^chattype_privatechat | chattype17 = ^chattype_privatechatout | chattype17 = ^chattype_modprivatechat) {
+					if (int14 = 1) {
+						if_setop(8, "Message", component10)
+					} else {
+						if_setop(8, "Add friend", component10)
+						if_setop(9, "Add ignore", component10)
+					}
+					if_setop(10, "Report", component10)
+					if_setopbase("<col=ffffff>${string1}</col>", component10)
+					if_setonop({
+						private_op(event_opindex, event_opbase)
+					}, component10)
+				} else {
+					if_setonop(null, component10)
+				}
+				if_setonmouserepeat(null, component10)
+				if_setonmouseleave(null, component10)
+				int9 = calc(int9 + 1)
+				component10 = enum(int, component, enum_580, int9)
+			}
+			mesuid12 = chat_getprevuid(mesuid12)
+		}
+	}
+	while (component10 ! null) {
+		if_clearops(component10)
+		if_setonop(null, component10)
+		if_setonmouserepeat(null, component10)
+		if_setonmouseleave(null, component10)
+		if_setsize(0, 0, ^setsize_abs, ^setsize_abs, component10)
+		if (cc_find(interface_163:0, calc(int9 * 2)) = ^true) {
+			cc_settext("")
+			cc_sethide(true)
+		}
+		if (cc_find(interface_163:0, calc(int9 * 2 + 1)) = ^true) {
+			cc_settext("")
+			cc_sethide(true)
+		}
+		int9 = calc(int9 + 1)
+		component10 = enum(int, component, enum_580, int9)
+	}
+	return 
+}

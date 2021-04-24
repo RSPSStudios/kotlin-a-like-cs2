@@ -1,0 +1,7 @@
+// 2773 proc
+fun pest_rewards_showpoints(component0: Component) {
+
+	val string0: String = ","
+	if_settext("Points: <col=ffffff>${~tostring_spacer(VARP[261], string0)}</col>", component0)
+	return 
+}

@@ -1,0 +1,8 @@
+// 1674 clientscript
+fun displayname_button_reset(component0: Component, string0: String, clock1: Int) {
+
+	if (clientclock >= clock1 & VARCINT[5] ! 15) {
+		~displayname_button_init(component0, string0)
+	}
+	return 
+}

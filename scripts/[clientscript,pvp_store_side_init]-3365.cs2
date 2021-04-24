@@ -1,0 +1,22 @@
+// 3365 clientscript
+fun pvp_store_side_init(component0: Component) {
+
+	cc_deleteall(component0)
+	val int1: Int = calc((42 - 36) * 3 - 2)
+	val int2: Int = calc((36 - 32) * 2)
+	val size3: Int = 0
+	val size4: Int = inv_size(inv)
+	while (size3 < size4) {
+		cc_create(component0, ^iftype_graphic, size3)
+		cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
+		cc_setposition(calc(int1 + size3 % 4 * 42), calc(int2 + size3 / 4 * 36), ^setpos_abs_left, ^setpos_abs_top)
+		cc_setgraphicshadow(0x333333)
+		cc_setoutline(1)
+		size3 = calc(size3 + 1)
+	}
+	~pvp_store_side_draw(component0)
+	if_setoninvtransmit({
+		pvp_store_side_draw(component0){inv}
+	}, component0)
+	return 
+}

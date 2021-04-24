@@ -1,0 +1,50 @@
+// 3453 proc
+fun deathkeep_right_initbutton(int0: Int, width1: Int, int2: Int, int3: Int, int4: Int, int5: Int, int6: Int): Int {
+
+	val boolean7: Boolean = false
+	when (int0): Int {
+		0 -> {
+		
+			if (int3 = 1) {
+				boolean7 = true
+			}
+		}
+		1 -> {
+		
+			if (int4 > 0) {
+				boolean7 = true
+			}
+		}
+		2 -> {
+		
+			if (int5 = 1) {
+				boolean7 = true
+			}
+		}
+		3 -> {
+		
+			if (int6 >= 21) {
+				boolean7 = true
+			}
+		}
+	}
+	val component8: Component = enum(int, component, enum_2902, int0)
+	if_setposition(0, int2, ^setpos_abs_centre, ^setpos_abs_top, component8)
+	val string0: String = enum(int, string, enum_2910, int0)
+	val int9: Int = calc(5 + ~max(17, paraheight(string0, width1, p11_full) * 12 + 2) + 5)
+	if_setsize(20, int9, ^setsize_minus, ^setsize_abs, component8)
+	val comsubid10: Int = ~deathkeep_right_drawbutton(component8, int0, string0, boolean7, 0)
+	if_setonmouserepeat({
+		cc_colour_swapper(event_com, comsubid10, ^white)
+	}, component8)
+	if_setonmouseleave({
+		cc_colour_swapper(event_com, comsubid10, 0xff981f)
+	}, component8)
+	if_setop(1, "Toggle", component8)
+	.cc_create(interface_4:12, ^iftype_rectangle, int0)
+	.cc_sethide(true)
+	if_setonop({
+		deathkeep_right_opbutton(event_com, int0, string0, boolean7)
+	}, component8)
+	return calc(int2 + int9)
+}
