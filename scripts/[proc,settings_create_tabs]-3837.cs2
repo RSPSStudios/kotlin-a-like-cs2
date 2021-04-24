@@ -3,7 +3,7 @@ fun settings_create_tabs(component0: Component, component1: Component, int2: Int
 
 	cc_deleteall(component1)
 	cc_deleteall(component0)
-	if_setonop(null, component8)
+	if_setonopnull
 	if_sethide(true, component11)
 	cc_deleteall(component10)
 	cc_deleteall(component9)
@@ -36,8 +36,8 @@ fun settings_create_tabs(component0: Component, component1: Component, int2: Int
 		}
 		count18 = calc(count18 + 1)
 	}
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		settings_tab_transmit(component0, component1, VARBIT[9638], int2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16){VARP[2855]}
-	}, component0)
+	}
 	return 
 }

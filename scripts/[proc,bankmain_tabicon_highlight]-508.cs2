@@ -7,12 +7,12 @@ fun bankmain_tabicon_highlight(int0: Int) {
 	}
 	.cc_setgraphic("banktabs,0")
 	val graphic1: Graphic = "banktabs,1"
-	cc_setonmouserepeat({
+	cc_setonmouserepeat {
 		cc_graphic_swapper(event_com, .cc_getid, graphic1, null)
-	})
+	}
 	graphic1 = "banktabs,0"
-	cc_setonmouseleave({
+	cc_setonmouseleave {
 		cc_graphic_swapper(event_com, .cc_getid, graphic1, null)
-	})
+	}
 	return 
 }

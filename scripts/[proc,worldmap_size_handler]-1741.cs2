@@ -14,8 +14,8 @@ fun worldmap_size_handler(component0: Component, component1: Component, componen
 	if (.cc_find(component10, int11) = ^true) {
 		~script1739(int14)
 	}
-	if_setontimer({
+	if_setontimer {
 		worldmap_size_handler(component0, component1, component2, component3, width12, height13, component6, component7, int8, int9, component10, int11)
-	}, component0)
+	}
 	return 
 }

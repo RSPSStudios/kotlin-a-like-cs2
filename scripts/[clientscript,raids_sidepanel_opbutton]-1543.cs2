@@ -6,11 +6,11 @@ fun raids_sidepanel_opbutton(opindex0: Int, string0: String, component1: Compone
 	}
 	sound_synth(synth_2266, 1, 0)
 	~raids_sidepanel_drawbutton(true, "<col=ffffff>---</col>", component1)
-	if_setonmouserepeat(null, component1)
-	if_setonmouseleave(null, component1)
-	if_setonop(null, component1)
-	if_setontimer({
+	if_setonmouserepeatnull
+	if_setonmouseleavenull
+	if_setonopnull
+	if_setontimer {
 		raids_sidepanel_resetbutton(calc(clientclock + 50), string0, component1)
-	}, component1)
+	}
 	return 
 }

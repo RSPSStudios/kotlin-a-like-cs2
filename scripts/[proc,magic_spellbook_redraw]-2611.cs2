@@ -185,16 +185,16 @@ fun magic_spellbook_redraw(component0: Component, component1: Component, compone
 			cc_setposition(x28, y29, ^setpos_abs_left, ^setpos_abs_top)
 			cc_setobject(obj17, 1)
 			cc_settrans(255)
-			cc_setonclick({
+			cc_setonclick {
 				script2612(obj17, component1, component2, int12)
-			})
+			}
 		} else {
-			if_setonmouserepeat({
+			if_setonmouserepeat {
 				magic_spellbook_settooltip(true, obj17, event_com, -1, component2, int12)
-			}, component25)
-			if_setonmouseleave({
+			}
+			if_setonmouseleave {
 				magic_spellbook_settooltip(false, obj17, event_com, -1, component2, int12)
-			}, component25)
+			}
 		}
 		int18 = calc(int18 + 1)
 	}

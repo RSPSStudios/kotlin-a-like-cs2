@@ -53,12 +53,12 @@ fun slayer_rewards_unlock_confirm(boolean0: Boolean, int1: Int, string0: String,
 	cc_settrans(255)
 	cc_setop(1, op2)
 	cc_setopbase("<col=ff9040>${string1}")
-	cc_setonop({
+	cc_setonop {
 		slayer_rewards_confirm_back(true, event_opindex, component2, component3, component4, component5, component6)
-	})
+	}
 	if_setop(1, "Back", component6)
-	if_setonop({
+	if_setonop {
 		slayer_rewards_confirm_back(false, event_opindex, component2, component3, component4, component5, component6)
-	}, component6)
+	}
 	return 
 }

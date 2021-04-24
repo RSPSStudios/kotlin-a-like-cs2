@@ -1,9 +1,9 @@
 // 1389 proc
 fun poh_viewer_setlevel(int0: Int, int1: Int, int2: Int) {
 
-	if_setonvartransmit({
+	if_setonvartransmit(interface_422:44)  {
 		poh_viewer_setlevel(false, int0, int1, int2){VARP[780]}
-	}, interface_422:44)
+	}
 	if (int0 < int1) {
 		int0 = int1
 	} else if (int0 > int2) {
@@ -55,9 +55,9 @@ fun poh_viewer_setlevel(int0: Int, int1: Int, int2: Int) {
 	if (int0 = int8) {
 		if_sethide(false, component10)
 		if ((cc_find(component10, 1) = ^true | cc_find(component10, 2) = ^true | cc_find(component10, 3) = ^true) & cc_gettrans >= 255) {
-			if_setontimer({
+			if_setontimer {
 				poh_viewer_preview_pulse(event_com, clientclock)
-			}, component10)
+			}
 			~poh_viewer_preview_pulse(component10, clientclock)
 		}
 	} else {

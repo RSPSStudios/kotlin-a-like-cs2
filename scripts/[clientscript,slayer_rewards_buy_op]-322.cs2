@@ -31,9 +31,9 @@ fun slayer_rewards_buy_op(opindex0: Int, component1: Component, comsubid2: Int, 
 		}
 		if_settext(string0, component5)
 		if_setop(1, "Back", component7)
-		if_setonop({
+		if_setonop {
 			slayer_rewards_confirm_back(false, event_opindex, component3, component4, component5, component6, component7)
-		}, component7)
+		}
 		return 
 	}
 	if (opindex0 >= 10) {
@@ -42,9 +42,9 @@ fun slayer_rewards_buy_op(opindex0: Int, component1: Component, comsubid2: Int, 
 	if (cc_find(component1, comsubid2) = ^true) {
 		cc_settrans(75)
 		sound_synth(synth_2266, 1, 0)
-		cc_setontimer({
+		cc_setontimer {
 			slayer_rewards_buy_release(component1, comsubid2, calc(clientclock + 10))
-		})
+		}
 	}
 	return 
 }

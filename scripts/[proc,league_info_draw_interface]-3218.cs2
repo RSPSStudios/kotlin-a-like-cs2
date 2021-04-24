@@ -91,17 +91,17 @@ fun league_info_draw_interface(component0: Component, component1: Component, com
 			cc_setcolour(colour14)
 			cc_setsize(calc(width29 - 10), int33, ^setsize_abs, ^setsize_abs)
 			if (~on_mobile = false) {
-				cc_setonmouseover({
+				cc_setonmouseover {
 					league_info_mouseover(component2, int24)
-				})
-				cc_setonmouseleave({
+				}
+				cc_setonmouseleave {
 					league_info_mouseleave(component2, int24, colour14)
-				})
+				}
 			}
 			cc_setop(1, "Open Link")
-			cc_setonop({
+			cc_setonop {
 				league_blog_click(url3)
-			})
+			}
 			height26 = calc(height26 + int33)
 			int24 = calc(int24 + 1)
 		}
@@ -166,17 +166,17 @@ fun league_info_draw_interface(component0: Component, component1: Component, com
 			cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 			cc_setsize(calc(width30 - 10), int33, ^setsize_abs, ^setsize_abs)
 			if (~on_mobile = false) {
-				cc_setonmouseover({
+				cc_setonmouseover {
 					league_info_mouseover(component3, int24)
-				})
-				cc_setonmouseleave({
+				}
+				cc_setonmouseleave {
 					league_info_mouseleave(component3, int24, colour14)
-				})
+				}
 			}
 			cc_setop(1, "Open Link")
-			cc_setonop({
+			cc_setonop {
 				league_blog_click(url4)
-			})
+			}
 			height27 = calc(height27 + int33)
 			int24 = calc(int24 + 1)
 		}

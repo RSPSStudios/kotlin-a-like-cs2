@@ -3,19 +3,19 @@ fun ironman_miscellaneous_redraw(component0: Component, component1: Component, c
 
 	.cc_settrans(255)
 	if (VARBIT[1777] ! 0) {
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			cc_settrans(event_com, .cc_getid, 225, null)
-		}, component1)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			cc_settrans(event_com, .cc_getid, 255, null)
-		}, component1)
+		}
 		if_setop(1, "Settings", component1)
-		if_setonop({
+		if_setonop {
 			script2122(false, component3)
-		}, component1)
-		if_setonclick({
+		}
+		if_setonclick {
 			script2122(true, component3)
-		}, component4)
+		}
 		if (VARBIT[1776] = 1) {
 			if_settext("<col=ffffff>Selected</col> - PIN.", component2)
 		} else {
@@ -30,11 +30,11 @@ fun ironman_miscellaneous_redraw(component0: Component, component1: Component, c
 		}
 	} else {
 		if_sethide(true, component3)
-		if_setonmouserepeat(null, component1)
-		if_setonmouseleave(null, component1)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
 		if_clearops(component1)
-		if_setonop(null, component1)
-		if_setonclick(null, component4)
+		if_setonopnull
+		if_setonclicknull
 		if_settext("<col=8f8f8f>Not applicable</col>", component2)
 		if_sethide(true, component7)
 		if_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre, component0)

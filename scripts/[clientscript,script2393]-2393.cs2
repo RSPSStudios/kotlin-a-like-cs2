@@ -18,8 +18,8 @@ fun script2393() {
 	cc_setcolour(^black)
 	cc_setfill(true)
 	cc_settrans(255)
-	cc_setontimer({
+	cc_setontimer {
 		script2394(event_com, event_comsubid, clientclock, component2)
-	})
+	}
 	return 
 }

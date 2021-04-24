@@ -3,13 +3,13 @@ fun wint_timer_resynch(component0: Component) {
 
 	if (VARBIT[7980] <= 0) {
 		if_settext("", component0)
-		if_setontimer(null, component0)
+		if_setontimernull
 		return 
 	}
 	val int1: Int = calc(clientclock + VARBIT[7980] * 30)
 	~wint_timer_countdown(component0, int1)
-	if_setontimer({
+	if_setontimer {
 		wint_timer_countdown(component0, int1)
-	}, component0)
+	}
 	return 
 }

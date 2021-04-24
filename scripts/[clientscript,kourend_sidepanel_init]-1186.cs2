@@ -27,21 +27,21 @@ fun kourend_sidepanel_init(component0: Component, component1: Component, compone
 	.cc_settextshadow(true)
 	.cc_settextalign(^settextalign_right, ^settextalign_centre, 0)
 	.cc_settext(string0)
-	.cc_setonmouseleave({
+	.cc_setonmouseleave {
 		deltooltip(component13)
-	})
-	if_setonmouseover({
+	}
+	if_setonmouseover {
 		cc_colour_swapper(event_com, .cc_getid, ^white)
-	}, component12)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		cc_colour_swapper(event_com, .cc_getid, 0xff981f)
-	}, component12)
+	}
 	~kourend_sidepanel_hudtoggle(component12, component13)
-	if_setonvartransmit({
+	if_setonvartransmit(component12)  {
 		kourend_sidepanel_hudtoggle(component12, cc_getid, .cc_getid, component13){VARP[1055]}
-	}, component12)
-	if_setonop({
+	}
+	if_setonop {
 		kourend_sidepanel_hudop(event_opindex, component12, cc_getid, .cc_getid, component13)
-	}, component12)
+	}
 	return 
 }

@@ -6,20 +6,20 @@ fun ge_collect_all_draw(component0: Component) {
 	cc_setgraphic(graphic1)
 	if (~script708 = 1) {
 		.cc_setcolour(0xff981f)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			cc_graphic_swapper(event_com, cc_getid, graphic2, null)
-		}, component0)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			cc_graphic_swapper(event_com, cc_getid, graphic1, null)
-		}, component0)
-		if_setonop({
+		}
+		if_setonop {
 			opsound(event_opindex, 2)
-		}, component0)
+		}
 	} else {
 		.cc_setcolour(0x7f7f7f)
-		if_setonmouserepeat(null, component0)
-		if_setonmouseleave(null, component0)
-		if_setonop(null, component0)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
+		if_setonopnull
 	}
 	return 
 }

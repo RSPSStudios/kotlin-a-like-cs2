@@ -57,18 +57,18 @@ fun raids_partydetails_entry_op(opindex0: Int, int1: Int, string0: String, strin
 			.cc_settextshadow(true)
 			.cc_settext(text2)
 			string3 = "${string0}:<br>Level <col=7f0000>${text2}</col> ${enum(stat, string, enum_680, stat8)}"
-			.cc_setonmouserepeat({
+			.cc_setonmouserepeat {
 				tooltip_mouserepeat(event_com, event_comsubid, interface_507:36, string3, 25, 200)
-			})
-			.cc_setonmouseleave({
+			}
+			.cc_setonmouseleave {
 				deltooltip(interface_507:36)
-			})
+			}
 			int7, int4 = calc(int7 + 1), calc(int4 + 1)
 			stat8 = enum(int, stat, enum_681, int7)
 		}
-		if_setonclick({
+		if_setonclick {
 			raids_partydetails_closestats
-		}, interface_507:29)
+		}
 		~raids_partydetails_setsort(int1)
 	}
 	return 

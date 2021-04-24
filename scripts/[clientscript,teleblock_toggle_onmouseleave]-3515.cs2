@@ -1,7 +1,7 @@
 // 3515 clientscript
 fun teleblock_toggle_onmouseleave(component0: Component) {
 
-	if_setontimer(null, interface_90:49)
+	if_setontimernull
 	~deltooltip_action(component0)
 	VARBIT[10531] = 0
 	return 

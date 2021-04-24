@@ -46,18 +46,18 @@ fun league_create_dropdown(component0: Component, component1: Component, compone
 	} else {
 		cc_setcolour(colour5)
 		if (~on_mobile = false) {
-			cc_setonmouseover({
+			cc_setonmouseover {
 				league_info_mouseover(component1, int3)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				league_info_mouseleave(component1, int3, colour5)
-			})
+			}
 		}
 	}
 	cc_setop(1, "View Information")
-	cc_setonop({
+	cc_setonop {
 		league_menu_frame_click(component0, component1, component2)
-	})
+	}
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	int3 = calc(int3 + 1)
 	int10 = calc(int10 + int9)
@@ -84,18 +84,18 @@ fun league_create_dropdown(component0: Component, component1: Component, compone
 	} else {
 		cc_setcolour(colour5)
 		if (~on_mobile = false) {
-			cc_setonmouseover({
+			cc_setonmouseover {
 				league_info_mouseover(component1, int3)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				league_info_mouseleave(component1, int3, colour5)
-			})
+			}
 		}
 	}
 	cc_setop(1, "View Tasks")
-	cc_setonop({
+	cc_setonop {
 		league_menu_frame_click(component0, component1, component2)
-	})
+	}
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	int3 = calc(int3 + 1)
 	int10 = calc(int10 + int9)
@@ -122,18 +122,18 @@ fun league_create_dropdown(component0: Component, component1: Component, compone
 	} else {
 		cc_setcolour(colour5)
 		if (~on_mobile = false) {
-			cc_setonmouseover({
+			cc_setonmouseover {
 				league_info_mouseover(component1, int3)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				league_info_mouseleave(component1, int3, colour5)
-			})
+			}
 		}
 	}
 	cc_setop(1, "View Areas")
-	cc_setonop({
+	cc_setonop {
 		league_menu_frame_click(component0, component1, component2)
-	})
+	}
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	int3 = calc(int3 + 1)
 	int10 = calc(int10 + int9)
@@ -160,18 +160,18 @@ fun league_create_dropdown(component0: Component, component1: Component, compone
 	} else {
 		cc_setcolour(colour5)
 		if (~on_mobile = false) {
-			cc_setonmouseover({
+			cc_setonmouseover {
 				league_info_mouseover(component1, int3)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				league_info_mouseleave(component1, int3, colour5)
-			})
+			}
 		}
 	}
 	cc_setop(1, "View Relics")
-	cc_setonop({
+	cc_setonop {
 		league_menu_frame_click(component0, component1, component2)
-	})
+	}
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	return 
 }

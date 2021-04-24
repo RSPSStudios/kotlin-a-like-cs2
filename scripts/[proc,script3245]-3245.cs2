@@ -54,28 +54,28 @@ fun script3245(component0: Component, component1: Component, component2: Compone
 		if (int10 = 1) {
 			cc_settrans(240)
 			if (~on_mobile = false) {
-				cc_setonmouseleave({
+				cc_setonmouseleave {
 					cc_settrans(event_com, cc_getid, 240, null)
-				})
-				cc_setonmouserepeat({
+				}
+				cc_setonmouserepeat {
 					cc_settrans(event_com, cc_getid, 180, null)
-				})
+				}
 			}
 		} else {
 			cc_settrans(220)
 			if (~on_mobile = false) {
-				cc_setonmouseleave({
+				cc_setonmouseleave {
 					cc_settrans(event_com, cc_getid, 220, null)
-				})
-				cc_setonmouserepeat({
+				}
+				cc_setonmouserepeat {
 					cc_settrans(event_com, cc_getid, 180, null)
-				})
+				}
 			}
 		}
 		cc_setop(1, "Select <col=ff981f>${oc_name(namedobj13)}")
-		cc_setonop({
+		cc_setonop {
 			script3246(int6, component1)
-		})
+		}
 		int9 = calc(int9 + 1)
 		if (int5 < calc(count7 - 1)) {
 			int9 = ~script3250(component2, calc(int12 * (int5 + 1)), int9)

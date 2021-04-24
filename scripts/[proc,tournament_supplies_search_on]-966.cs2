@@ -25,15 +25,15 @@ fun tournament_supplies_search_on(component0: Component, component1: Component, 
 		cc_settext("<lt>Search term<gt>")
 	}
 	cc_setcolour(^white)
-	if_setonmouseover(null, component2)
-	if_setonmouseleave(null, component2)
+	if_setonmouseovernull
+	if_setonmouseleavenull
 	if_setop(1, "Clear", component2)
-	if_setonop({
+	if_setonop {
 		tournament_supplies_search_toggle(false, component0, component1, component2, int3, int4)
-	}, component2)
-	if_setontimer({
+	}
+	if_setontimer {
 		tournament_supplies_search_update(component0, component1, component2, VARCSTRING[359], int3, int4)
-	}, component2)
+	}
 	~tournament_supplies_drawlist(component0, component1, string0, int3, int4)
 	return 
 }

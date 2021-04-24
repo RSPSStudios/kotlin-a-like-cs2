@@ -5,18 +5,18 @@ fun bondif_redeem_init(component0: Component, component1: Component, component2:
 	cc_deleteall(component2)
 	VARCINT[179], VARCINT[178] = 0, 0
 	~bondif_redeem_rightcolumn(component3, component4)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		bondif_redeem_rightcolumn(component3, component4){VARP[1204]}
-	}, component0)
+	}
 	val comsubid6: Int = 0
 	val int7: Int = 0
 	comsubid6, int7 = ~v2_stone_button_fadable(component5, int7)
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		bondif_redeem_hover(true, component5, comsubid6)
-	}, component5)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		bondif_redeem_hover(false, component5, comsubid6)
-	}, component5)
+	}
 	cc_create(component5, ^iftype_text, int7)
 	int7 = calc(int7 + 1)
 	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)

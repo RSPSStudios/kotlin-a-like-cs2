@@ -21,18 +21,18 @@ fun script3927(component0: Component, component1: Component) {
 	} else {
 		cc_setgraphic("options_radio_buttons,5")
 	}
-	if_setonop({
+	if_setonop {
 		script3930(component0, VARBIT[10078], component1)
-	}, component0)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component0)  {
 		script3931(component0, component1){VARP[19]}
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		script3929(component0, component1)
-	}, component0)
-	if_setonmouserepeat({
+	}
+	if_setonmouserepeat {
 		script3928(component0, component1)
-	}, component0)
+	}
 	VARCINT[2] = 0
 	return 
 }

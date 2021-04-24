@@ -4,19 +4,19 @@ fun tob_hud_updateprogress(int0: Int, component1: Component) {
 	val int2: Int = VARCINT[220]
 	if (int2 = -1) {
 		int2 = int0
-		if_setontimer(null, component1)
+		if_setontimernull
 	} else if (int2 < int0) {
 		int2 = calc(int2 + ~max(1, scale(3, 7, int0 - int2)))
-		if_setontimer({
+		if_setontimer {
 			tob_hud_updateprogress(int0, component1, .cc_getid)
-		}, component1)
+		}
 	} else if (int2 > int0) {
 		int2 = calc(int2 - ~max(1, scale(3, 7, int2 - int0)))
-		if_setontimer({
+		if_setontimer {
 			tob_hud_updateprogress(int0, component1, .cc_getid)
-		}, component1)
+		}
 	} else {
-		if_setontimer(null, component1)
+		if_setontimernull
 	}
 	.cc_setsize(int2, 0, ^setsize_2, ^setsize_minus)
 	VARCINT[220] = int2

@@ -8,12 +8,12 @@ fun settings_button_on_transmit(struct0: Struct, component1: Component, comsubid
 		}
 		~v2_stone_button_change_out(component1, int3)
 		if (~on_mobile = false & cc_find(component1, comsubid4) = ^true) {
-			cc_setonmouseover({
+			cc_setonmouseover {
 				v2_stone_button_change_in(component1, int3)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				v2_stone_button_change_out(component1, int3)
-			})
+			}
 		}
 	} else {
 		if (cc_find(component1, comsubid2) = ^true) {
@@ -21,8 +21,8 @@ fun settings_button_on_transmit(struct0: Struct, component1: Component, comsubid
 		}
 		~v2_stone_button_change_in(component1, int3)
 		if (cc_find(component1, comsubid4) = ^true) {
-			cc_setonmouseover(null)
-			cc_setonmouseleave(null)
+			cc_setonmouseovernull
+			cc_setonmouseleavenull
 		}
 	}
 	return 

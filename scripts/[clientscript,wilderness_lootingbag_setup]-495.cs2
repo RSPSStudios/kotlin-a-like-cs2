@@ -7,8 +7,8 @@ fun wilderness_lootingbag_setup(int0: Int, text0: String) {
 		inv1 = inv
 	}
 	~wilderness_lootingbag_draw(inv1)
-	if_setoninvtransmit({
+	if_setoninvtransmit(interface_81:1)  {
 		wilderness_lootingbag_draw(inv1){inv1}
-	}, interface_81:1)
+	}
 	return 
 }

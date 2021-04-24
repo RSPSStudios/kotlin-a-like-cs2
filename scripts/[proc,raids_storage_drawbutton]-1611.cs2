@@ -11,16 +11,16 @@ fun raids_storage_drawbutton(string0: String, component0: Component, graphic1: G
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	cc_settextshadow(true)
 	cc_settext(string0)
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		cc_colour_swapper(event_com, comsubid2, ^white)
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		cc_colour_swapper(event_com, comsubid2, 0xff981f)
-	}, component0)
+	}
 	if_setop(1, string0, component0)
-	if_setonop({
+	if_setonop {
 		raids_storage_opbutton(event_opindex, component0, string0, graphic1)
-	}, component0)
-	if_setontimer(null, component0)
+	}
+	if_setontimernull
 	return comsubid2
 }

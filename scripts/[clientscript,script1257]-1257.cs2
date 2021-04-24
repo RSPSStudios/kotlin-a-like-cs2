@@ -4,7 +4,7 @@ fun script1257(clock0: Int, component1: Component, int2: Int, string0: String, o
 	if (clientclock < clock0) {
 		return 
 	}
-	if_setontimer(null, component1)
+	if_setontimernull
 	~script1253(component1, int2, string0, obj3, obj4)
 	return 
 }

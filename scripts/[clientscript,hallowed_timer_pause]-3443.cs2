@@ -2,9 +2,9 @@
 fun hallowed_timer_pause(int0: Int) {
 
 	if (int0 > 1) {
-		if_setontimer({
+		if_setontimer {
 			hallowed_timer(int0)
-		}, interface_668:3)
+		}
 	}
 	return 
 }

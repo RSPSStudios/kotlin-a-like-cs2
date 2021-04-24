@@ -2,16 +2,16 @@
 fun script1246(component0: Component, string0: String) {
 
 	if_sethide(false, component0)
-	if_setontimer(null, component0)
+	if_setontimernull
 	~script1248(false, component0, string0)
-	if_setonmouseover({
+	if_setonmouseover {
 		script1247(true, component0, string0)
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		script1247(false, component0, string0)
-	}, component0)
-	if_setonclick({
+	}
+	if_setonclick {
 		script1249(component0, string0)
-	}, component0)
+	}
 	return 
 }

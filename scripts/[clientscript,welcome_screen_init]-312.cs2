@@ -5,28 +5,28 @@ fun welcome_screen_init(component0: Component, component1: Component, component2
 	~welcome_screen_position(component0)
 	~script3310(component11)
 	~welcome_type_setup(VARBIT[10116], component3, component4, component5, component6, component12)
-	if_setonvartransmit({
+	if_setonvartransmit(component11)  {
 		welcome_type_setup_transmit(component3, component4, component5, component6, component12){VARP[1226]}
-	}, component11)
-	if_setonop({
+	}
+	if_setonop {
 		welcome_type_setup_op(component3, component4, component5, component6, component12, component7, component8, component9, component10)
-	}, component11)
+	}
 	~welcome_screen_lastlogin(component2)
-	if_setonvartransmit({
+	if_setonvartransmit(component2)  {
 		welcome_screen_lastlogin(component2){VARP[261]}
-	}, component2)
+	}
 	~welcome_screen_messages(component6, component7, component8, VARBIT[10116])
-	if_setonvartransmit({
+	if_setonvartransmit(component7)  {
 		welcome_screen_messages(component6, component7, component8){VARP[1781], VARP[1226]}
-	}, component7)
+	}
 	~welcome_screen_credit(component5, component9, component10, VARBIT[10116])
-	if_setonvartransmit({
+	if_setonvartransmit(component9)  {
 		welcome_screen_credit(component5, component9, component10){VARP[1780], VARP[1226]}
-	}, component9)
+	}
 	~script2218
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		script2217{VARP[264]}
-	}, component0)
+	}
 	~welcome_screen_continue_text(welcome_screen:87)
 	~welcome_screen_banner
 	if_setopkey(1, 13, 0, welcome_screen:3)

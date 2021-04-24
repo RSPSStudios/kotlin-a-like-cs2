@@ -2,15 +2,15 @@
 fun chat_autotyper(component0: Component, boolean1: Boolean) {
 
 	if (string_length(VARCSTRING[358]) <= 0) {
-		if_setontimer(null, component0)
+		if_setontimernull
 		VARCINT[62] = 0
 		~chat_autotyper_updateop
 		return 
 	}
 	if (boolean1 = true) {
-		if_setontimer({
+		if_setontimer {
 			chat_autotyper(event_com, false)
-		}, component0)
+		}
 	}
 	if (VARCINT[62] = 1) {
 		return 

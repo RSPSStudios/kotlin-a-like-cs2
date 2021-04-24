@@ -4,9 +4,9 @@ fun poh_costumes_buttons_search_reset(enum0: Enum, component1: Component, graphi
 	if_clearops(component1)
 	if_setop(1, "Search", component1)
 	~poh_costumes_buttons_draw(component1, graphic2, null, false)
-	if_setontimer(null, component1)
-	if_setonop({
+	if_setontimernull
+	if_setonop {
 		poh_costumes_buttons_searchop(event_opindex, enum0, component1, graphic2)
-	}, component1)
+	}
 	return 
 }

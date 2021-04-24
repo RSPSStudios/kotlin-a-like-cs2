@@ -2,9 +2,9 @@
 fun tol_pressure_init(component0: Component) {
 
 	~tol_pressure_draw
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		tol_pressure_draw{VARP[977], VARP[978]}
-	}, component0)
+	}
 	~tol_pressure_valveinit("Turn-left", tol_pressure_machine:128, 1, ^false)
 	~tol_pressure_valveinit("Turn-right", tol_pressure_machine:129, 1, ^false)
 	~tol_pressure_valveinit("Turn-left", tol_pressure_machine:130, 1, ^true)

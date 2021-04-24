@@ -4,7 +4,7 @@ fun ap_flash_timer(component0: Component) {
 	~adventurepath_flashicon(component0)
 	if (VARBIT[9334] = 3) {
 		if_sethide(false, interface_629:27)
-		if_setontimer(null, interface_629:23)
+		if_setontimernull
 	}
 	return 
 }

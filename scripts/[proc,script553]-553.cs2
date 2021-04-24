@@ -30,9 +30,9 @@ fun script553(): Int {
 				
 					if (mesuid0 ! -1 & int1 >= VARCINT[202] & int1 > calc(clientclock - 3000)) {
 						VARCINT[55] = int1
-						if_setontimer({
+						if_setontimer {
 							script664(false)
-						}, interface_162:0)
+						}
 					}
 				}
 			}

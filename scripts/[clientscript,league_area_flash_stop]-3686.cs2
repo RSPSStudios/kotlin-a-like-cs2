@@ -1,7 +1,7 @@
 // 3686 clientscript
 fun league_area_flash_stop(component0: Component, component1: Component) {
 
-	if_setontimer(null, component0)
+	if_setontimernull
 	if_settrans(255, component0)
 	if_settrans(255, component1)
 	return 

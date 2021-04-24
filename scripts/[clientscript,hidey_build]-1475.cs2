@@ -2,12 +2,12 @@
 fun hidey_build(flags0: Int, flags1: Int, flags2: Int) {
 
 	~hidey_buildlists(flags0, flags1, flags2)
-	if_setonvartransmit({
+	if_setonvartransmit(interface_493:0)  {
 		hidey_buildlists(flags0, flags1, flags2){VARP[1365], VARP[1366], VARP[1367], VARP[1368], VARP[1369], VARP[2202]}
-	}, interface_493:0)
-	if_setoninvtransmit({
+	}
+	if_setoninvtransmit(interface_493:0)  {
 		hidey_buildlists(flags0, flags1, flags2){inv_576}
-	}, interface_493:0)
+	}
 	~hidey_tabbuttons(null, interface_493:30, interface_493:31, interface_493:32, interface_493:33, interface_493:34, interface_493:29)
 	return 
 }

@@ -13,19 +13,19 @@ fun tob_hud_statusrefresh(int0: Int, int1: Int, string0: String, component2: Com
 		} else {
 			cc_settext(substring(string0, 0, 1))
 		}
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			tooltip_mouserepeat(component2, -1, component4, string0, 25, 512)
-		}, component2)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			deltooltip(component4)
-		}, component2)
+		}
 		if (int1 = 31) {
 			if (.cc_find(component3, 0) = ^true) {
 				.cc_setgraphic("orb_filler,3")
 			}
 			cc_setcolour(0x7f0000)
 			if_setsize(26, 26, ^setsize_abs, ^setsize_abs, component3)
-			if_setonstattransmit(null, component2)
+			if_setonstattransmitnull
 		} else {
 			if (.cc_find(component3, 0) = ^true) {
 				.cc_setgraphic("orb_filler,1")
@@ -33,25 +33,25 @@ fun tob_hud_statusrefresh(int0: Int, int1: Int, string0: String, component2: Com
 			if (int1 = 30) {
 				cc_setcolour(^red)
 				if_setsize(26, 0, ^setsize_abs, ^setsize_abs, component3)
-				if_setonstattransmit(null, component2)
+				if_setonstattransmitnull
 			} else {
 				cc_setcolour(^white)
 				if (int5 = 1) {
 					~script2300(component3)
-					if_setonstattransmit({
+					if_setonstattransmit(component2)  {
 						script2299(component3){hitpoints}
-					}, component2)
+					}
 				} else {
 					if_setsize(26, ~min(26, calc(int1 - 1)), ^setsize_abs, ^setsize_abs, component3)
-					if_setonstattransmit(null, component2)
+					if_setonstattransmitnull
 				}
 			}
 		}
 	} else {
 		if_sethide(true, component2)
-		if_setonstattransmit(null, component2)
-		if_setonmouserepeat(null, component2)
-		if_setonmouseleave(null, component2)
+		if_setonstattransmitnull
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
 		~deltooltip_action(component4)
 	}
 	return 

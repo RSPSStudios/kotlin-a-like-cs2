@@ -34,27 +34,27 @@ fun script2984(component0: Component, int1: Int, int2: Int, int3: Int, int4: Int
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 20)
 	if (int10 = 0) {
 		if (int11 = 1) {
-			cc_setonop({
+			cc_setonop {
 				script2985(component0, int1, graphic7)
-			})
+			}
 		} else {
-			cc_setonop({
+			cc_setonop {
 				button_select_sound
-			})
+			}
 		}
 		cc_setop(4, op0)
 		if (~on_mobile = true & int12 = 0) {
-			cc_setonmouseover({
+			cc_setonmouseover {
 				script2988(component0, int1, graphic6)
-			})
+			}
 		} else {
-			cc_setonmouseover({
+			cc_setonmouseover {
 				script2988(component0, int1, graphic7)
-			})
+			}
 		}
-		cc_setonmouseleave({
+		cc_setonmouseleave {
 			script2986(component0, int1, graphic6)
-		})
+		}
 	}
 	return calc(int1 + 10)
 }

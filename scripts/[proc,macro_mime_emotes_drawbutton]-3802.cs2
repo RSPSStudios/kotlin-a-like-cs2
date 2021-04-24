@@ -10,12 +10,12 @@ fun macro_mime_emotes_drawbutton(component0: Component, string0: String, boolean
 	}
 	~macro_mime_emotes_buttontext(component0, string0, comsubid2)
 	if (~on_mobile = false) {
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			macro_mime_emotes_drawbutton(event_com, string0, true)
-		}, component0)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			macro_mime_emotes_drawbutton(event_com, string0, false)
-		}, component0)
+		}
 	}
 	if_setop(1, "Perform", component0)
 	if_setopbase("<col=ff9040>${string0}</col>", component0)

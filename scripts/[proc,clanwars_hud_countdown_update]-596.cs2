@@ -3,7 +3,7 @@ fun clanwars_hud_countdown_update(component0: Component, component1: Component) 
 
 	if (VARBIT[4286] <= 0) {
 		if_sethide(true, component1)
-		if_setontimer(null, component0)
+		if_setontimernull
 		return 
 	}
 	if_sethide(false, component1)

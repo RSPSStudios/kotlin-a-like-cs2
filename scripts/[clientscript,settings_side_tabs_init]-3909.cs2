@@ -3,8 +3,8 @@ fun settings_side_tabs_init(component0: Component) {
 
 	~settings_side_tabs
 	~settings_side_update_tabs(VARBIT[9683])
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		settings_side_update_tabs{VARP[1795]}
-	}, component0)
+	}
 	return 
 }

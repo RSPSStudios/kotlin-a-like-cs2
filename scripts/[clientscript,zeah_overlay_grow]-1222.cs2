@@ -1,8 +1,8 @@
 // 1222 clientscript
 fun zeah_overlay_grow(component0: Component, component1: Component, component2: Component, boolean3: Boolean) {
 
-	if_setontimer({
+	if_setontimer {
 		zeah_overlay_grow_it(component0, component1, component2, boolean3)
-	}, component0)
+	}
 	return 
 }

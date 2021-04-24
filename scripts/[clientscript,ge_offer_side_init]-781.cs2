@@ -26,14 +26,14 @@ fun ge_offer_side_init(component0: Component, component1: Component) {
 		int2 = calc(int2 + 1)
 	}
 	~ge_offer_side_draw(component0, component1)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		ge_offer_side_draw(component0, component1){inv}
-	}, component0)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component0)  {
 		ge_offer_side_draw(component0, component1){VARP[563], VARP[375]}
-	}, component0)
-	if_setonstocktransmit({
+	}
+	if_setonstocktransmit {
 		ge_offer_side_draw(component0, component1)
-	}, component0)
+	}
 	return 
 }

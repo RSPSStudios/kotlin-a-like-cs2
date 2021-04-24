@@ -10,29 +10,29 @@ fun deadmanloot_inv_tabs_redraw() {
 			if (cc_find(interface_234:14, int0) = ^true) {
 				cc_setgraphic("banktabs,2")
 				cc_setop(1, "View tab")
-				cc_setonop(null)
-				cc_setonmouserepeat(null)
-				cc_setonmouseleave(null)
+				cc_setonopnull
+				cc_setonmouserepeatnull
+				cc_setonmouseleavenull
 			}
 		} else if (cc_find(interface_234:14, int0) = ^true) {
 			if (inv_total(inv, enum(int, namedobj, enum_1244, int0)) <= 0) {
 				cc_setgraphic("banktabs,3")
 				cc_setop(1, "")
-				cc_setonop(null)
-				cc_setonmouserepeat(null)
-				cc_setonmouseleave(null)
+				cc_setonopnull
+				cc_setonmouserepeatnull
+				cc_setonmouseleavenull
 			} else {
 				cc_setgraphic("banktabs,0")
 				cc_setop(1, "View tab")
-				cc_setonop({
+				cc_setonop {
 					deadmanloot_inv_switch(int0)
-				})
-				cc_setonmouserepeat({
+				}
+				cc_setonmouserepeat {
 					cc_graphic_swapper(interface_234:14, int0, graphic3, null)
-				})
-				cc_setonmouseleave({
+				}
+				cc_setonmouseleave {
 					cc_graphic_swapper(interface_234:14, int0, graphic2, null)
-				})
+				}
 			}
 		}
 		if (cc_find(interface_234:14, calc(5 + int0)) = ^true) {

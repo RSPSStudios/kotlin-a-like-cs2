@@ -130,10 +130,10 @@ fun tob_partylist_addline(int0: Int, string0: String) {
 	} else {
 		if_setsize(0, 0, ^setsize_minus, ^setsize_abs, component1)
 		if_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_top, component1)
-		if_setonop(null, component1)
+		if_setonopnull
 		if_clearops(component1)
 	}
-	if_setontimer(null, component1)
+	if_setontimernull
 	val component4: Component = null
 	val height5: Int = 0
 	val count6: Int = enum_getoutputcount(enum_1937)

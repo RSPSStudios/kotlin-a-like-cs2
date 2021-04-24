@@ -5,8 +5,8 @@ fun script1368(component0: Component, comsubid1: Int, int2: Int, bool3: Int, boo
 	if (cc_find(component0, comsubid1) = ^true) {
 		if (bool3 = ^true & (boolean4 = false | int5 > 0)) {
 			cc_setcolour(^blue)
-			cc_setonmouseover(null)
-			cc_setonmouseleave(null)
+			cc_setonmouseovernull
+			cc_setonmouseleavenull
 			VARP[261] = int2
 			while (int6 <= 16) {
 				if (int6 ! comsubid1 & .cc_find(component0, int6) = ^true) {

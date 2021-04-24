@@ -39,9 +39,9 @@ fun ge_offers_initboxes(int0: Int, component1: Component, component2: Component,
 	cc_setsize(20, 18, ^setsize_abs, ^setsize_abs)
 	cc_setgraphic("ge_smallicons,0")
 	~ge_offers_priceicon(component2)
-	cc_setontimer({
+	cc_setontimer {
 		ge_offers_priceicon(event_com, event_comsubid, component2)
-	})
+	}
 	int0 = ~script771(component1, int0, 164, 0, calc(int6 - 149), 91)
 	cc_create(component1, ^iftype_text, int0)
 	val comsubid11: Int = int0

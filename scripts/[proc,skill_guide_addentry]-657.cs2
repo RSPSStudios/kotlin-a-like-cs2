@@ -44,9 +44,9 @@ fun skill_guide_addentry(int0: Int, namedobj1: Namedobj, string0: String, compon
 		
 			if (int5 >= 0 & int5 <= 3) {
 				cc_setop(1, "Check runes")
-				cc_setonop({
+				cc_setonop {
 					skill_guide_magic_op(namedobj1)
-				})
+				}
 			}
 		}
 		22 -> {

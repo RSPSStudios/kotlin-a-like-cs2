@@ -7,7 +7,7 @@ fun settings_populate_settings(int0: Int, int1: Int, int2: Int, int3: Int, compo
 	if_setsize(0, 0, ^setsize_abs, ^setsize_abs, component15)
 	if_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_top, component15)
 	if (int3 = 1) {
-		if_setonop(null, component10)
+		if_setonopnull
 		if_sethide(true, component13)
 		cc_deleteall(component12)
 		cc_deleteall(component11)

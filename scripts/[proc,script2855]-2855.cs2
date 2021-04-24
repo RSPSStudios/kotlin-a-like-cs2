@@ -12,16 +12,16 @@ fun script2855(component0: Component, obj1: Obj, int2: Int, num3: Int) {
 		cc_setop(5, "Pack-All")
 		cc_setop(6, "Pack-X")
 		cc_setop(7, "Examine")
-		cc_setonop({
+		cc_setonop {
 			cc_settrans_temporarily(event_com, event_comsubid, 100, 0)
-		})
-		cc_setondragcomplete({
+		}
+		cc_setondragcomplete {
 			script2856(event_com, event_comsubid, event_dropsubid)
-		})
+		}
 	} else {
 		cc_settrans(255)
 		cc_setobject(obj_6512, 1)
-		cc_setondragcomplete(null)
+		cc_setondragcompletenull
 	}
 	return 
 }

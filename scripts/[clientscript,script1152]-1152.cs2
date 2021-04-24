@@ -6,8 +6,8 @@ fun script1152(component0: Component, graphic1: Graphic, graphic2: Graphic, int3
 	}
 	if_setgraphic(graphic1, component0)
 	sound_synth(synth_2266, 1, 0)
-	if_setontimer({
+	if_setontimer {
 		script1153(event_com, graphic2, calc(clientclock + 20))
-	}, component0)
+	}
 	return 
 }

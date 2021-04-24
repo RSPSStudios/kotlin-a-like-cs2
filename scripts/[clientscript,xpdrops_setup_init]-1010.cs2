@@ -13,13 +13,13 @@ fun xpdrops_setup_init(component0: Component, layer1: Component, component2: Com
 	~xpdrops_setup_init_display(component22, component23, enum(int, string, enum_1140, -1), "Droplet speed.", 200, layer1, component4, component6, component7, component47, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25)
 	~xpdrops_setup_init_display(component24, component25, enum(int, string, enum_1625, -1), "Enables fake XP drops in certain situations where XP is blocked.", 250, layer1, component4, component6, component7, component47, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25)
 	if_setnoclickthrough(true, component5)
-	if_setonclick({
+	if_setonclick {
 		xpdrops_setup_display_dropdown_close(component4, component47, component8, component10, component12, component14, component16, component18, component20, component22, component24)
-	}, component5)
+	}
 	~xpdrops_setup_display_update(component8, component10, component12, component14, component16, component18, component20, component22, component24)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		xpdrops_setup_display_update(component8, component10, component12, component14, component16, component18, component20, component22, component24){VARP[1227], VARP[1141]}
-	}, component0)
+	}
 	cc_deleteall(component27)
 	stat0[23]: Stat
 	val int48: Int = 0
@@ -29,39 +29,39 @@ fun xpdrops_setup_init(component0: Component, layer1: Component, component2: Com
 		cc_setposition(0, calc(int48 * 25), ^setpos_abs_centre, ^setpos_abs_top)
 		cc_setfill(true)
 		if (~on_mobile = false) {
-			cc_setonmouseover({
+			cc_setonmouseover {
 				script1015(event_com, event_comsubid, ^white, 225)
-			})
+			}
 		}
 		if (calc(int48 % 2) = 0) {
 			cc_setcolour(^white)
 			cc_settrans(255)
 			if (~on_mobile = false) {
-				cc_setonmouseleave({
+				cc_setonmouseleave {
 					script1015(event_com, event_comsubid, ^white, 255)
-				})
+				}
 			}
 		} else {
 			cc_setcolour(^black)
 			cc_settrans(225)
 			if (~on_mobile = false) {
-				cc_setonmouseleave({
+				cc_setonmouseleave {
 					script1015(event_com, event_comsubid, ^black, 225)
-				})
+				}
 			}
 		}
 		cc_setop(1, "Configure")
 		if (int48 < 23) {
 			stat0[int48] = enum(int, stat, enum_681, calc(int48 + 1))
 			cc_setopbase("<col=ff9040>${enum(stat, string, enum_680, stat0[int48])}</col>")
-			cc_setonop({
+			cc_setonop {
 				script1023(event_opindex, event_comsubid, stat0[int48], component3, component26, component27, component28, component29, component30, component31, component32, component33, component34, component35, component36, component37, component38, component39, component40, component41, component42, component43, component44, component45, component46)
-			})
+			}
 		} else {
 			cc_setopbase("<col=ff9040>Total XP</col>")
-			cc_setonop({
+			cc_setonop {
 				script1023(event_opindex, event_comsubid, null, component3, component26, component27, component28, component29, component30, component31, component32, component33, component34, component35, component36, component37, component38, component39, component40, component41, component42, component43, component44, component45, component46)
-			})
+			}
 		}
 		int48 = calc(int48 + 1)
 	}
@@ -128,32 +128,32 @@ fun xpdrops_setup_init(component0: Component, layer1: Component, component2: Com
 	val op0: String = "Discard"
 	~script1018(false, 0xff2020, op0, component45)
 	if (~on_mobile = false) {
-		if_setonmouseover({
+		if_setonmouseover {
 			script1017(true, 0xff2020, op0, event_com)
-		}, component45)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			script1017(false, 0xff2020, op0, event_com)
-		}, component45)
+		}
 	}
-	if_setonop({
+	if_setonop {
 		script1023(event_opindex, -1, null, component3, component26, component27, component28, component29, component30, component31, component32, component33, component34, component35, component36, component37, component38, component39, component40, component41, component42, component43, component44, component45, component46)
-	}, component45)
+	}
 	op0 = "Save"
 	int48 = ~script1018(false, ^green, op0, component46)
 	if (~on_mobile = false) {
-		if_setonmouseover({
+		if_setonmouseover {
 			script1017(true, ^green, op0, event_com)
-		}, component46)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			script1017(false, ^green, op0, event_com)
-		}, component46)
+		}
 	}
-	if_setonop({
+	if_setonop {
 		script1019(event_opindex, event_com, int48, ^green)
-	}, component46)
+	}
 	~script1026(component3, component26, component27, component28, component29, component30, component31, component32, component33, component34, component35, component36, component37, component38, component39, component40, component41, component42, component43, component44, component45, component46)
-	if_setonvartransmit({
+	if_setonvartransmit(component2)  {
 		script1025(component3, component26, component27, component28, component29, component30, component31, component32, component33, component34, component35, component36, component37, component38, component39, component40, component41, component42, component43, component44, component45, component46){VARP[638], VARP[261], VARP[262], VARP[1228], VARP[1229], VARP[1230], VARP[1231], VARP[1232], VARP[1233], VARP[1234], VARP[1235], VARP[1236], VARP[1237], VARP[1238], VARP[1239], VARP[1240], VARP[1241], VARP[1242], VARP[1243], VARP[1244], VARP[1245], VARP[1246], VARP[1247], VARP[1248], VARP[1249], VARP[1250], VARP[1251], VARP[1252], VARP[1253], VARP[1254], VARP[1255], VARP[1256], VARP[1257], VARP[1258], VARP[1259], VARP[1260], VARP[1261], VARP[1262], VARP[1263], VARP[1264], VARP[1265], VARP[1266], VARP[1267], VARP[1268], VARP[1269], VARP[1270], VARP[1271], VARP[1272], VARP[1273], VARP[1274], VARP[1275]}
-	}, component2)
+	}
 	return 
 }

@@ -11,33 +11,33 @@ fun xpreward_update(int0: Int, component1: Component, component2: Component) {
 			cc_setcolour(0x999999)
 			cc_settext("Confirm: ${enum(stat, string, enum_680, stat3)}")
 		}
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			cc_colour_swapper(component2, 0, 0xcccccc)
-		}, component2)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			cc_colour_swapper(component2, 0, 0x999999)
-		}, component2)
-		if_setonop({
+		}
+		if_setonop {
 			xpreward_confirm(int0, component1, component2)
-		}, component2)
+		}
 	} else {
 		if (cc_find(component2, 0) = ^true) {
 			cc_setcolour(0x666666)
 			cc_settext("Confirm")
 		}
-		if_setonmouserepeat(null, component2)
-		if_setonmouseleave(null, component2)
-		if_setonop({
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
+		if_setonop {
 			mes(mes0)
-		}, component2)
+		}
 	}
-	if_setonvartransmit({
+	if_setonvartransmit(component1)  {
 		xpreward_update(0, int0, component1, component2){VARP[261], VARP[80], VARP[63], VARP[738]}
-	}, component1)
-	if_setonstattransmit({
+	}
+	if_setonstattransmit {
 		xpreward_update(0, int0, component1, component2)
-	}, component1)
-	if_setontimer(null, component1)
+	}
+	if_setontimernull
 	val comsubid4: Int = 0
 	val component5: Component = null
 	val stat6: Stat = null
@@ -61,9 +61,9 @@ fun xpreward_update(int0: Int, component1: Component, component2: Component) {
 				cc_settrans(150)
 			}
 			if_setop(1, enum(stat, string, enum_680, stat6), component5)
-			if_setonop({
+			if_setonop {
 				xpreward_select(VARP[261], int7, component1, component2)
-			}, component5)
+			}
 		}
 		int7 = calc(int7 + 1)
 	}

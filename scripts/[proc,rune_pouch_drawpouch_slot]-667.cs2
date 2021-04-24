@@ -2,7 +2,7 @@
 fun rune_pouch_drawpouch_slot(namedobj0: Namedobj, num1: Int) {
 
 	cc_clearops
-	cc_setontimer(null)
+	cc_setontimernull
 	if (namedobj0 ! null & num1 > 0) {
 		cc_settrans(0)
 		cc_setobject(namedobj0, num1)
@@ -12,17 +12,17 @@ fun rune_pouch_drawpouch_slot(namedobj0: Namedobj, num1: Int) {
 		cc_setop(3, "Withdraw-All")
 		cc_setop(4, "Withdraw-X")
 		cc_setop(10, "Examine")
-		cc_setonop({
+		cc_setonop {
 			cc_settrans_temporarily(event_com, event_comsubid, 100, 0)
-		})
-		cc_setondragcomplete({
+		}
+		cc_setondragcomplete {
 			rune_pouch_pouchreorder(event_com, event_drop, event_comsubid, event_dropsubid)
-		})
+		}
 	} else {
 		cc_settrans(0)
 		cc_setobject(obj_6512, 1)
-		cc_setonop(null)
-		cc_setondragcomplete(null)
+		cc_setonopnull
+		cc_setondragcompletenull
 	}
 	return 
 }

@@ -5,9 +5,9 @@ fun deathkeep_opitem(component0: Component, comsubid1: Int, mes0: String) {
 		sound_synth(synth_2266, 1, 0)
 		mes(mes0)
 		cc_settrans(100)
-		cc_setontimer({
+		cc_setontimer {
 			cc_settrans_temporarily_end(event_com, event_comsubid, 0, calc(clientclock + 10))
-		})
+		}
 	}
 	return 
 }

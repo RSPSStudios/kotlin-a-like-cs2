@@ -5,20 +5,20 @@ fun script3646(obj0: Obj, num1: Int, component2: Component, comsubid3: Int) {
 	if (obj0 ! null) {
 		cc_settrans(0)
 		cc_setobject(obj0, num1)
-		cc_setonop({
+		cc_setonop {
 			cc_settrans_temporarily(event_com, event_comsubid, 100, 0)
-		})
+		}
 		cc_setop(1, "Examine")
 		cc_setopbase("<col=ff9040>${oc_name(obj0)}</col>")
-		cc_setondragcomplete({
+		cc_setondragcomplete {
 			script3647(event_com, event_drop, event_comsubid, event_dropsubid, comsubid3)
-		})
+		}
 	} else {
 		cc_settrans(255)
 		cc_setobject(obj_6512, 1)
-		cc_setonop(null)
-		cc_setondragcomplete(null)
+		cc_setonopnull
+		cc_setondragcompletenull
 	}
-	cc_setontimer(null)
+	cc_setontimernull
 	return 
 }

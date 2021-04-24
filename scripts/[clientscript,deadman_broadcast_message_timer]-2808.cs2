@@ -9,7 +9,7 @@ fun deadman_broadcast_message_timer(clock0: Int) {
 	} else {
 		if_sethide(true, interface_90:22)
 		if_settext("", interface_90:25)
-		if_setontimer(null, interface_90:21)
+		if_setontimernull
 		return 
 	}
 	return 

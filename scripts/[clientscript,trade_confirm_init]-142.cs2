@@ -11,11 +11,11 @@ fun trade_confirm_init(component0: Component, component1: Component, component2:
 	if_setposition(calc(x8 - (width5 + 6) - int7), if_gety(component1), ^setpos_abs_left, ^setpos_abs_top, component1)
 	val size9: Int = inv_size(inv_90)
 	~trade_confirm_redraw(size9, width5, int7, component1, component2, component3, component4)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		trade_confirm_redraw(size9, width5, int7, component1, component2, component3, component4){inv_90}
-	}, component0)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component0)  {
 		trade_confirm_redraw(size9, width5, int7, component1, component2, component3, component4){VARP[1042]}
-	}, component0)
+	}
 	return 
 }

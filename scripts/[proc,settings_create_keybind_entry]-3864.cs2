@@ -112,9 +112,9 @@ fun settings_create_keybind_entry(int0: Int, int1: Int, int2: Int, int3: Int, tr
 	cc_setfill(true)
 	cc_setcolour(^black)
 	cc_settrans(255)
-	cc_setonop({
+	cc_setonop {
 		setting_show_dropdown(3, struct5, component7, calc(int2 - 1), enum16, int25, 20, cc_getx, cc_gety, component8, component9, component10, component11, component12, component13, comsubid31, boolean29)
-	})
+	}
 	cc_setop(1, "Select")
 	if (int30 = 1) {
 		cc_sethide(false)
@@ -131,12 +131,12 @@ fun settings_create_keybind_entry(int0: Int, int1: Int, int2: Int, int3: Int, tr
 		~settings_dropdown_choose_transmit(3, struct5, calc(int2 - 1), calc(int2 - 6), int2, component7, enum16, int32, component8, component9, component10, component11, component13)
 	}
 	if (int30 = 1 & boolean17 = false) {
-		cc_setonmouseover({
+		cc_setonmouseover {
 			cc_settrans(component7, int2, 220, null)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			cc_settrans(component7, int2, 255, null)
-		})
+		}
 	}
 	int2 = calc(int2 + 1)
 	int1 = calc(int1 + int26)

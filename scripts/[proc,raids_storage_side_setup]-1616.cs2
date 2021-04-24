@@ -5,8 +5,8 @@ fun raids_storage_side_setup(component0: Component, component1: Component, compo
 	cc_deleteall(component2)
 	if (VARBIT[5509] = 1 | VARBIT[3459] = 1) {
 		if_sethide(true, component0)
-		if_setonop(null, component2)
-		if_setontimer(null, component2)
+		if_setonopnull
+		if_setontimernull
 		return 
 	}
 	if_sethide(false, component0)

@@ -4,7 +4,7 @@ fun script4066(component0: Component, graphic1: Graphic, clock2: Int) {
 	if (clientclock < clock2) {
 		return 
 	}
-	if_setontimer(null, component0)
+	if_setontimernull
 	~script4064(component0, graphic1, 0)
 	return 
 }

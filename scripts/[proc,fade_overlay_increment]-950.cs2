@@ -4,7 +4,7 @@ fun fade_overlay_increment(colour0: Int, int1: Int, colour2: Int, int3: Int, int
 	if (int5 <= 0) {
 		if_setcolour(colour2, interface_174:1)
 		if_settrans(int3, interface_174:1)
-		if_setontimer(null, interface_174:0)
+		if_setontimernull
 		return 
 	}
 	val int6: Int = 0

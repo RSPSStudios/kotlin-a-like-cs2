@@ -38,19 +38,19 @@ fun steelborder(component0: Component, text0: String, flags1: Int): Int {
 	val comsubid9: Int = 11
 	if (testbit(flags1, 0) = ^false) {
 		~create_graphic(component0, comsubid9, graphic3, x5, y6, ^setpos_abs_right, ^setpos_abs_top, width7, height8, ^setsize_abs, ^setsize_abs)
-		cc_setonmouseleave({
+		cc_setonmouseleave {
 			cc_graphic_swapper(event_com, event_comsubid, graphic3, null)
-		})
-		cc_setonmouseover({
+		}
+		cc_setonmouseover {
 			cc_graphic_swapper(event_com, event_comsubid, graphic4, null)
-		})
+		}
 		cc_setop(1, "Close")
-		cc_setonop({
+		cc_setonop {
 			closebutton_click
-		})
-		cc_setonkey({
+		}
+		cc_setonkey {
 			closebutton_key(event_key)
-		})
+		}
 		comsubid9 = 12
 	}
 	if (testbit(flags1, 1) = ^true) {

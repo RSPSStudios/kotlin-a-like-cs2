@@ -27,9 +27,9 @@ fun abyssalsire_overseer() {
 	cc_setmodel(abyssal_rift_7428)
 	cc_setmodelangle(0, 120, 0, 0, 0, 2000)
 	cc_setmodelanim(abyssal_rift_2260)
-	cc_setontimer({
+	cc_setontimer {
 		abyssalsire_overseer_update(event_com, clientclock)
-	})
+	}
 	~abyssalsire_overseer_update(component1, 0)
 	return 
 }

@@ -17,8 +17,8 @@ fun ge_collect_all_init(component0: Component, text0: String, op1: String) {
 	.cc_settext(text0)
 	if_setop(1, op1, component0)
 	~ge_collect_all_draw(component0)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		ge_collect_all_draw(component0, cc_getid, .cc_getid){inv_518, inv_519, inv_520, inv_521, inv_522, inv_523, inv_539, inv_540}
-	}, component0)
+	}
 	return 
 }

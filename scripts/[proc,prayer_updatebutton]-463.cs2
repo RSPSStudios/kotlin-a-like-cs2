@@ -4,35 +4,35 @@ fun prayer_updatebutton(boolean0: Boolean, int1: Int, component2: Component, com
 	when (int1): Int {
 		25, 26 -> {
 		
-			if_setonstattransmit({
+			if_setonstattransmit(component2)  {
 				prayer_updatebutton(boolean0, int1, component2, cc_getid, .cc_getid, component3, component4){prayer, defence}
-			}, component2)
-			if_setonvartransmit({
+			}
+			if_setonvartransmit(component2)  {
 				prayer_updatebutton(boolean0, int1, component2, cc_getid, .cc_getid, component3, component4){VARP[83], VARP[1377], VARP[1050], VARP[284]}
-			}, component2)
+			}
 		}
 		24, 27, 28 -> {
 		
-			if_setonstattransmit({
+			if_setonstattransmit(component2)  {
 				prayer_updatebutton(boolean0, int1, component2, cc_getid, .cc_getid, component3, component4){prayer, defence}
-			}, component2)
-			if_setonvartransmit({
+			}
+			if_setonvartransmit(component2)  {
 				prayer_updatebutton(boolean0, int1, component2, cc_getid, .cc_getid, component3, component4){VARP[83], VARP[1377], VARP[1429], VARP[284]}
-			}, component2)
+			}
 		}
 	else -> {
 	
-		if_setonstattransmit({
+		if_setonstattransmit(component2)  {
 			prayer_updatebutton(boolean0, int1, component2, cc_getid, .cc_getid, component3, component4){prayer}
-		}, component2)
-		if_setonvartransmit({
+		}
+		if_setonvartransmit(component2)  {
 			prayer_updatebutton(boolean0, int1, component2, cc_getid, .cc_getid, component3, component4){VARP[83], VARP[1377], VARP[284]}
-		}, component2)
+		}
 	}
 	}
-	if_setonop({
+	if_setonop {
 		prayer_op(event_opindex, boolean0, int1, component2, cc_getid, .cc_getid, component3, component4)
-	}, component2)
+	}
 	if_clearops(component2)
 	if (boolean0 = true) {
 		if_setop(2, "Info", component2)
@@ -54,15 +54,15 @@ fun prayer_updatebutton(boolean0: Boolean, int1: Int, component2: Component, com
 		.cc_setgraphic(enum(int, graphic, enum_864, int1))
 	}
 	if (boolean0 = false & VARBIT[5711] = 0) {
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			tooltip_mouserepeat(event_com, -1, component4, ~prayer_gettooltiptext(int1), 25, if_getwidth(component3))
-		}, component2)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			deltooltip(component4)
-		}, component2)
+		}
 	} else {
-		if_setonmouserepeat(null, component2)
-		if_setonmouseleave(null, component2)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
 	}
 	if (int1 = 8 & (~high_risk_world = 1 | ~deadman_world = 1 | VARBIT[5314] = 1)) {
 		.cc_settrans(100)

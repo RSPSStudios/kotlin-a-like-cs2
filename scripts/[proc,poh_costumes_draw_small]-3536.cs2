@@ -49,7 +49,7 @@ fun poh_costumes_draw_small(int0: Int, int1: Int, int2: Int, int3: Int, namedobj
 		if (cc_find(component11, int14) = ^true) {
 			cc_sethide(true)
 			cc_clearops
-			cc_setontimer(null)
+			cc_setontimernull
 		}
 		int14 = calc(int14 + 1)
 	}
@@ -79,15 +79,15 @@ fun poh_costumes_draw_small(int0: Int, int1: Int, int2: Int, int3: Int, namedobj
 			cc_settrans(120)
 			if (boolean10 = true) {
 				cc_setop(1, "Set")
-				cc_setonop({
+				cc_setonop {
 					poh_costumes_opgraphic(event_opindex, event_com, event_comsubid, 0, 120)
-				})
-				cc_setonmouserepeat({
+				}
+				cc_setonmouserepeat {
 					cc_settrans(event_com, event_comsubid, 40, null)
-				})
-				cc_setonmouseleave({
+				}
+				cc_setonmouseleave {
 					cc_settrans(event_com, event_comsubid, 120, null)
-				})
+				}
 				if (.cc_find(component11, calc(int13 + 1)) = ^true) {
 					.cc_sethide(false)
 					if (int2 = 1) {
@@ -98,9 +98,9 @@ fun poh_costumes_draw_small(int0: Int, int1: Int, int2: Int, int3: Int, namedobj
 				}
 			} else {
 				cc_clearops
-				cc_setonop(null)
-				cc_setonmouserepeat(null)
-				cc_setonmouseleave(null)
+				cc_setonopnull
+				cc_setonmouserepeatnull
+				cc_setonmouseleavenull
 				if (.cc_find(component11, calc(int13 + 1)) = ^true) {
 					.cc_sethide(true)
 				}
@@ -110,15 +110,15 @@ fun poh_costumes_draw_small(int0: Int, int1: Int, int2: Int, int3: Int, namedobj
 			cc_settrans(0)
 			if (boolean10 = true & int21 = 0) {
 				cc_setop(1, "Set")
-				cc_setonop({
+				cc_setonop {
 					poh_costumes_opgraphic(event_opindex, event_com, event_comsubid, 120, 0)
-				})
-				cc_setonmouserepeat({
+				}
+				cc_setonmouserepeat {
 					cc_settrans(event_com, event_comsubid, 80, null)
-				})
-				cc_setonmouseleave({
+				}
+				cc_setonmouseleave {
 					cc_settrans(event_com, event_comsubid, 0, null)
-				})
+				}
 				if (.cc_find(component11, calc(int13 + 1)) = ^true) {
 					.cc_sethide(false)
 					if (int2 = 1) {
@@ -129,15 +129,15 @@ fun poh_costumes_draw_small(int0: Int, int1: Int, int2: Int, int3: Int, namedobj
 				}
 			} else {
 				cc_clearops
-				cc_setonop(null)
-				cc_setonmouserepeat(null)
-				cc_setonmouseleave(null)
+				cc_setonopnull
+				cc_setonmouserepeatnull
+				cc_setonmouseleavenull
 				if (.cc_find(component11, calc(int13 + 1)) = ^true) {
 					.cc_sethide(true)
 				}
 			}
 		}
-		cc_setontimer(null)
+		cc_setontimernull
 	}
 	if (cc_find(component11, calc(int13 + 2)) = ^true) {
 		if (int2 = 1) {

@@ -6,6 +6,6 @@ fun poh_menagerie_setroaming(component0: Component) {
 	} else {
 		cc_setgraphic("options_radio_buttons,2")
 	}
-	if_setontimer(null, component0)
+	if_setontimernull
 	return 
 }

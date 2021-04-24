@@ -30,12 +30,12 @@ fun farming_tools_side_recreate(component0: Component, obj1: Obj, text0: String,
 	cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
 	cc_setgraphicshadow(0x333333)
 	cc_setoutline(1)
-	if_setonop({
+	if_setonop {
 		cc_settrans_temporarily(event_com, cc_getid, 125, 0)
-	}, component0)
+	}
 	~farming_tools_side_update(component0, obj1, text0, int4)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		farming_tools_side_update(component0, obj1, text0, int4){inv}
-	}, component0)
+	}
 	return 
 }

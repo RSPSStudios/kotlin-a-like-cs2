@@ -7,12 +7,12 @@ fun thormac_highlight(component0: Component, obj1: Obj) {
 	}
 	if (int2 > 0) {
 		cc_setcolour(^white)
-		if_setonop({
+		if_setonop {
 			opsound(event_opindex, 2)
-		}, component0)
+		}
 	} else {
 		cc_setcolour(0xaaaaaa)
-		if_setonop(null, component0)
+		if_setonopnull
 	}
 	return 
 }

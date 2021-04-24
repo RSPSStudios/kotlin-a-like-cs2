@@ -4,12 +4,12 @@ fun poll_clicklink(component0: Component, int1: Int, int2: Int, string0: String,
 	if (cc_find(component0, int1) = ^true & .cc_find(component0, int2) = ^true) {
 		.cc_setcolour(^white)
 		.cc_settext("<u=ffffff>${string0}</u>")
-		cc_setontimer({
+		cc_setontimer {
 			poll_resetlink(component0, int1, int2, string0, string1, calc(clientclock + 25))
-		})
-		cc_setonmouseover(null)
-		cc_setonmouseleave(null)
-		cc_setonclick(null)
+		}
+		cc_setonmouseovernull
+		cc_setonmouseleavenull
+		cc_setonclicknull
 	}
 	~openurl_raw(string1, true, true)
 	return 

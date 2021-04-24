@@ -25,9 +25,9 @@ fun raids_storage_shared_items(component0: Component, component1: Component, com
 			cc_setop(5, "Withdraw-X")
 			cc_setop(10, "Examine")
 			cc_setopbase("<col=ff9040>${oc_name(obj7)}</col>")
-			cc_setonop({
+			cc_setonop {
 				raids_storage_items_op(event_opindex, event_com, event_comsubid)
-			})
+			}
 			int3 = calc(int3 + 1)
 		} else {
 			cc_sethide(true)

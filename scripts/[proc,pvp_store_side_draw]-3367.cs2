@@ -9,13 +9,13 @@ fun pvp_store_side_draw(component0: Component) {
 		int4 = calc(int4 - 1)
 		if (cc_find(component0, int4) = ^true) {
 			cc_clearops
-			cc_setontimer(null)
+			cc_setontimernull
 			obj2 = inv_getobj(inv, int4)
 			if (obj2 ! null) {
 				cc_sethide(false)
 				cc_setobject(obj2, inv_getnum(inv, int4))
 				cc_settrans(130)
-				cc_setonop(null)
+				cc_setonopnull
 				cc_setop(10, "Examine")
 				cc_setopbase("<col=ff9040>${oc_name(obj2)}</col>")
 			} else {

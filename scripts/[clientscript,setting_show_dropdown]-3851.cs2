@@ -9,9 +9,9 @@ fun setting_show_dropdown(int0: Int, struct1: Struct, component2: Component, com
 	cc_deleteall(component11)
 	cc_deleteall(component12)
 	cc_deleteall(component14)
-	if_setonop({
+	if_setonop {
 		setting_dropdown_entry_close(component9, component10, component11, component12, component14, component2, comsubid15)
-	}, component10)
+	}
 	val count17: Int = 0
 	val count18: Int = enum_getoutputcount(enum4)
 	val int19: Int = 0
@@ -31,12 +31,12 @@ fun setting_show_dropdown(int0: Int, struct1: Struct, component2: Component, com
 		cc_setcolour(^black)
 		cc_settrans(trans22)
 		if (~on_mobile = false) {
-			cc_setonmouseover({
+			cc_setonmouseover {
 				cc_settrans(component11, int19, 240, null)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				cc_settrans(component11, int19, trans22, null)
-			})
+			}
 		}
 		int19 = calc(int19 + 1)
 		cc_create(component11, ^iftype_text, int19)
@@ -56,9 +56,9 @@ fun setting_show_dropdown(int0: Int, struct1: Struct, component2: Component, com
 		cc_setcolour(^black)
 		cc_settrans(255)
 		cc_setop(1, "Select")
-		cc_setonop({
+		cc_setonop {
 			setting_dropdown_entry_op(int0, text0, comsubid3, count17, component2, component9, component10, component11, component12, component14, enum4, int23, comsubid15, boolean16)
-		})
+		}
 		int19 = calc(int19 + 1)
 		int21 = calc(int21 + int20)
 		count17 = calc(count17 + 1)

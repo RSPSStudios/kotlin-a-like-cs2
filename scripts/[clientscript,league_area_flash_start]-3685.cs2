@@ -3,8 +3,8 @@ fun league_area_flash_start(component0: Component, component1: Component) {
 
 	if_settrans(255, component0)
 	if_settrans(255, component1)
-	if_setontimer({
+	if_setontimer {
 		league_area_flash(component0, component1, true, 0)
-	}, component0)
+	}
 	return 
 }

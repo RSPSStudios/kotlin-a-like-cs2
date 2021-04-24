@@ -15,12 +15,12 @@ fun raids_storage_opbutton(opindex0: Int, component1: Component, string0: String
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	cc_settextshadow(true)
 	cc_settext("---")
-	if_setonmouserepeat(null, component1)
-	if_setonmouseleave(null, component1)
+	if_setonmouserepeatnull
+	if_setonmouseleavenull
 	if_clearops(component1)
-	if_setonop(null, component1)
-	if_setontimer({
+	if_setonopnull
+	if_setontimer {
 		raids_storage_resetbutton(component1, string0, graphic2, calc(clientclock + 20))
-	}, component1)
+	}
 	return 
 }

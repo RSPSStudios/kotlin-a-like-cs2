@@ -11,17 +11,17 @@ fun raids_storage_side_private_drawitem(obj0: Obj, num1: Int) {
 		cc_setop(5, "Store-X")
 		cc_setop(10, "Examine")
 		cc_settrans(0)
-		cc_setonop({
+		cc_setonop {
 			raids_storage_items_op(event_opindex, event_com, event_comsubid)
-		})
-		cc_setondragcomplete({
+		}
+		cc_setondragcomplete {
 			raids_storage_side_reorder(event_com, event_comsubid, event_dropsubid)
-		})
+		}
 	} else {
 		cc_clearops
 		cc_settrans(255)
 		cc_setobject_nonum(obj_6512, 1)
-		cc_setondragcomplete(null)
+		cc_setondragcompletenull
 	}
 	return 
 }

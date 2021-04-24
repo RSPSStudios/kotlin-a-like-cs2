@@ -18,11 +18,11 @@ fun notification_end(int0: Int, int1: Int, int2: Int) {
 	}
 	if_setsize(int1, int2, ^setsize_abs, ^setsize_abs, interface_660:1)
 	if (int0 < 6) {
-		if_setontimer({
+		if_setontimer {
 			notification_end(int0, int1, int2)
-		}, interface_660:2)
+		}
 	} else {
-		if_setontimer(null, interface_660:2)
+		if_setontimernull
 	}
 	return 
 }

@@ -7,22 +7,22 @@ fun farming_view_updatetabs(component0: Component, component1: Component, compon
 			.cc_setcolour(0xff981f)
 			if (VARBIT[4776] = int3) {
 				cc_setgraphic("combatboxes,3")
-				cc_setonmouserepeat(null)
-				cc_setonmouseleave(null)
-				cc_setonop({
+				cc_setonmouserepeatnull
+				cc_setonmouseleavenull
+				cc_setonop {
 					opsound(0, 0)
-				})
+				}
 			} else {
 				cc_setgraphic("combatboxes,2")
-				cc_setonmouserepeat({
+				cc_setonmouserepeat {
 					cc_colour_swapper(event_com, .cc_getid, ^white)
-				})
-				cc_setonmouseleave({
+				}
+				cc_setonmouseleave {
 					cc_colour_swapper(event_com, .cc_getid, 0xff981f)
-				})
-				cc_setonop({
+				}
+				cc_setonop {
 					farming_view_optab(event_opindex, int3, component0, component1, component2)
-				})
+				}
 			}
 		}
 		int3 = calc(int3 + 1)

@@ -56,9 +56,9 @@ fun poh_costumes_init(enum0: Enum, boolean1: Boolean, int2: Int) {
 		int5, count13 = 0, calc(count13 + 1)
 	}
 	~poh_costumes_build(enum0, count12, int4, int6, boolean1, interface_675:4, interface_675:5, int8, graphic10, interface_675:2, comsubid3)
-	if_setoninvtransmit({
+	if_setoninvtransmit(interface_675:4)  {
 		poh_costumes_build(enum0, count12, int4, int6, boolean1, event_com, interface_675:5, int8, graphic10, interface_675:2, comsubid3){inv_637}
-	}, interface_675:4)
+	}
 	~poh_costumes_buttons_search_reset(enum0, interface_675:9, "bankbuttons,2")
 	if (boolean1 = true & int11 = 1) {
 		if_sethide(false, interface_675:8)
@@ -74,8 +74,8 @@ fun poh_costumes_init(enum0: Enum, boolean1: Boolean, int2: Int) {
 	if_setop(1, "Deposit inventory", interface_675:10)
 	~poh_costumes_buttons_1off_reset(interface_675:10, "bankbuttons,0", null)
 	~poh_costumes_buttons_dynamicsetup(interface_675:7)
-	if_setonvartransmit({
+	if_setonvartransmit(interface_675:4)  {
 		poh_costumes_buttons_dynamicsetup(interface_675:7){VARP[262]}
-	}, interface_675:4)
+	}
 	return 
 }

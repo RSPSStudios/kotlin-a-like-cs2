@@ -57,17 +57,17 @@ fun skillmulti_quantitybuttons_set(int0: Int, int1: Int) {
 			if_setposition(int3, 0, ^setpos_abs_left, ^setpos_abs_centre, interface_270:11)
 			int3 = calc(int3 + if_getwidth(interface_270:11) + 5)
 			~skillmulti_quantitybutton_draw(false, text0, interface_270:11)
-			if_setonmouseover({
+			if_setonmouseover {
 				skillmulti_quantitybutton_draw(true, text0, event_com)
-			}, interface_270:11)
-			if_setonmouseleave({
+			}
+			if_setonmouseleave {
 				skillmulti_quantitybutton_draw(false, text0, event_com)
-			}, interface_270:11)
+			}
 			if_setop(1, "Other quantity", interface_270:11)
-			if_setonop({
+			if_setonop {
 				skillmulti_quantitybutton_x_start(event_opindex, int0, int1)
-			}, interface_270:11)
-			if_setontimer(null, interface_270:11)
+			}
+			if_setontimernull
 		} else {
 			~skillmulti_wipebutton(interface_270:11)
 		}

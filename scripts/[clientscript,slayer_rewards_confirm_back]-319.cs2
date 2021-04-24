@@ -6,12 +6,12 @@ fun slayer_rewards_confirm_back(boolean0: Boolean, opindex1: Int, component2: Co
 	}
 	sound_synth(synth_2266, 1, 0)
 	cc_deleteall(component5)
-	if_setonop(null, component6)
+	if_setonopnull
 	if (boolean0 = true) {
 		if_settext("Requesting...", component4)
-		if_setontimer({
+		if_setontimer {
 			slayer_rewards_confirm_backlater(calc(clientclock + 45), component2, component3, component5, component6)
-		}, component5)
+		}
 		return 
 	}
 	if_settext("", component4)

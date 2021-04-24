@@ -9,7 +9,7 @@ fun prif_adjust_portal(clock0: Int, boolean1: Boolean) {
 		} else if (cc_find(interface_641:1, 1) = ^true) {
 			cc_settrans(0)
 		}
-		if_setontimer(null, interface_641:1)
+		if_setontimernull
 		return 
 	}
 	if (cc_find(interface_641:1, 0) = ^true) {

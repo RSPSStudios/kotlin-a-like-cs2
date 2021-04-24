@@ -9,13 +9,13 @@ fun script1534(opindex0: Int, component1: Component, int2: Int, string0: String)
 		cc_setcolour(0x7f7f7f)
 		cc_settext("...")
 	}
-	if_setonmouserepeat(null, component1)
-	if_setonmouseleave(null, component1)
-	if_setonop(null, component1)
+	if_setonmouserepeatnull
+	if_setonmouseleavenull
+	if_setonopnull
 	if_clearops(component1)
-	if_setontimer({
+	if_setontimer {
 		script1535(component1, int2, string0, calc(clientclock + 80))
-	}, component1)
+	}
 	if (cc_find(interface_507:3, enum(component, int, enum_1539, component1)) = ^true) {
 		cc_resume_pausebutton
 	}

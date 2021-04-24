@@ -64,12 +64,12 @@ fun script1235(inv0: Inv, int1: Int, int2: Int, int3: Int, int4: Int, int5: Int,
 		int29 = calc(int29 - 1)
 		if (cc_find(interface_81:5, int29) = ^true) {
 			if (inv0 = inv & int0[int29] <= -1 & inv_getobj(inv, int29) ! null) {
-				cc_setonmouserepeat({
+				cc_setonmouserepeat {
 					tooltip_mouserepeat(event_com, event_comsubid, interface_81:7, string0, 25, 512)
-				})
-				cc_setonmouseleave({
+				}
+				cc_setonmouseleave {
 					deltooltip(interface_81:7)
-				})
+				}
 			} else {
 				~trade_tooltip(inv_getnum(inv0, int29), int0[int29], interface_81:7)
 			}

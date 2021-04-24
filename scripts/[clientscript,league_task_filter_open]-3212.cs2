@@ -4,9 +4,9 @@ fun league_task_filter_open(enum0: Enum, component1: Component, component2: Comp
 	sound_synth(synth_2266, 1, 0)
 	~league_setup_display_hoverdisable(component2, colour6)
 	if_sethide(false, component4)
-	if_setonclick({
+	if_setonclick {
 		league_task_filter_close(1, -1, enum0, component2, comsubid3, component4, colour6)
-	}, component4)
+	}
 	val int7: Int = if_getx(component2)
 	val int8: Int = if_gety(component2)
 	val layer9: Component = if_getlayer(component2)
@@ -49,16 +49,16 @@ fun league_task_filter_open(enum0: Enum, component1: Component, component2: Comp
 		cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 		cc_setop(1, "Select")
 		if (~on_mobile = false) {
-			cc_setonmouserepeat({
+			cc_setonmouserepeat {
 				league_setup_display_dropdown_hover(true, event_com, event_comsubid, .cc_getid, colour6)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				league_setup_display_dropdown_hover(false, event_com, event_comsubid, .cc_getid, colour6)
-			})
+			}
 		}
-		cc_setonop({
+		cc_setonop {
 			league_task_filter_close(event_opindex, int15, enum0, component2, comsubid3, component4, colour6)
-		})
+		}
 		cc_settext(enum(int, string, enum0, int15))
 		int15, int14 = calc(int15 + 1), calc(int14 + 1)
 	}

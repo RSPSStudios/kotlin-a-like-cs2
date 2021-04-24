@@ -21,8 +21,8 @@ fun zeah_favour_add_list(int0: Int, int1: Int, int2: Int, int3: Int, int4: Int, 
 	cc_settext("${tostring(calc(int8 / 10))}.${tostring(calc(int8 % 10))}%")
 	.cc_settext(enum(int, string, enum_1266, int4))
 	~zeah_favour_recolour_list(int7, int3)
-	cc_setonvartransmit({
+	cc_setonvartransmit {
 		zeah_favour_recolour_list(event_com, event_comsubid, .cc_getid, int5, int7){VARP[1317], VARP[1318]}
-	})
+	}
 	return int1, int2
 }

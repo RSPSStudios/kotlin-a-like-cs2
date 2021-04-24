@@ -34,12 +34,12 @@ fun clanwars_setup_smallbox_init(enum0: Enum, component1: Component, component2:
 	cc_settextshadow(true)
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	~clanwars_setup_smallbox_updatetext(enum0)
-	if_setonvartransmit({
+	if_setonvartransmit(component2)  {
 		clanwars_setup_smallbox_updatetext(event_com, comsubid7, enum0){VARP[92]}
-	}, component2)
-	.cc_setonclick({
+	}
+	.cc_setonclick {
 		clanwars_setup_smallbox_open(enum0, component1, component2, comsubid7, component3, component4, component5)
-	})
+	}
 	cc_create(component2, ^iftype_graphic, int6)
 	int6 = calc(int6 + 1)
 	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_top)
@@ -62,11 +62,11 @@ fun clanwars_setup_smallbox_init(enum0: Enum, component1: Component, component2:
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	cc_settext(enum(int, string, enum0, -1))
 	~xpdrops_setup_display_hoveroff(component2)
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		tooltip_mouserepeat(event_com, -1, component5, enum(enum, string, enum_687, enum0), 25, 512)
-	}, component2)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		deltooltip(component5)
-	}, component2)
+	}
 	return 
 }

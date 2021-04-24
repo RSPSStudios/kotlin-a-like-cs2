@@ -1,17 +1,17 @@
 // 3063 clientscript
 fun bees_init(component0: Component, component1: Component) {
 
-	if_setontimer({
+	if_setontimer {
 		bees(component0, calc(random(6) - 3), calc(random(6) - 3), component1, 0)
-	}, component0)
-	if_setonmouseover({
+	}
+	if_setonmouseover {
 		bees_mouseover(component0)
-	}, component0)
-	if_setonmouserepeat({
+	}
+	if_setonmouserepeat {
 		bees_mouserepeat(component0, event_mousex, event_mousey)
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		bees_mouseleave(component0)
-	}, component0)
+	}
 	return 
 }

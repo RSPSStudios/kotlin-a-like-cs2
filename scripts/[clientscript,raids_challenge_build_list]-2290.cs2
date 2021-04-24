@@ -30,9 +30,9 @@ fun raids_challenge_build_list(component0: Component, component1: Component, com
 		cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 		cc_settext(enum(int, string, enum_1914, int6))
 		cc_setop(1, "Select")
-		cc_setonop({
+		cc_setonop {
 			raids_challenge_move_highlight(component0, 0, cc_gety)
-		})
+		}
 		count5 = calc(count5 + 1)
 	}
 	if_setscrollsize(0, calc(count5 * int4 - int4), component2)

@@ -8,7 +8,7 @@ fun music_init_component(component0: Component, comsubid1: Int, count2: Int, int
 	val flags8: Int = 0
 	val text0: String = ""
 	if (cc_find(component0, comsubid1) = ^true) {
-		cc_setontimer(null)
+		cc_setontimernull
 		int4 = enum(int, int, enum_818, comsubid1)
 		if (int4 ! 0) {
 			cc_setsize(0, int3, ^setsize_minus, ^setsize_abs)
@@ -120,9 +120,9 @@ fun music_init_component(component0: Component, comsubid1: Int, count2: Int, int
 			} else {
 				~music_setcolour(0x0dc10d)
 			}
-			cc_setonmouseover({
+			cc_setonmouseover {
 				cc_colour_swapper(event_com, event_comsubid, ^white)
-			})
+			}
 		} else {
 			cc_sethide(true)
 		}

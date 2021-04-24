@@ -15,12 +15,12 @@ fun hp_hud_fade_in(component0: Component, component1: Component, component2: Com
 	if (int11 <= 0) {
 		if_sethide(false, component2)
 		if_sethide(false, component6)
-		if_setontimer(null, component0)
+		if_setontimernull
 		VARCINT[394] = 0
 		return 
 	}
-	if_setontimer({
+	if_setontimer {
 		hp_hud_fade_in(component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, int11)
-	}, component0)
+	}
 	return 
 }

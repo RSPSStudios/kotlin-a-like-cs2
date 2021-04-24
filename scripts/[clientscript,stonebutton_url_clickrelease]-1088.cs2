@@ -4,7 +4,7 @@ fun stonebutton_url_clickrelease(clock0: Int, component1: Component, string0: St
 	if (clientclock < clock0) {
 		return 
 	}
-	if_setontimer(null, component1)
+	if_setontimernull
 	~stonebutton_url_draw(false, true, component1, string0, string1)
 	return 
 }

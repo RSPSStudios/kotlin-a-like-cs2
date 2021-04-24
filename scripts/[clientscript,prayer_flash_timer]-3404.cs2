@@ -11,8 +11,8 @@ fun prayer_flash_timer(component0: Component, int1: Int, int2: Int) {
 		}
 		int2 = calc(1 - int2)
 	}
-	if_setontimer({
+	if_setontimer {
 		prayer_flash_timer(component0, int1, int2)
-	}, component0)
+	}
 	return 
 }

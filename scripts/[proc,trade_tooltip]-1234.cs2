@@ -16,24 +16,24 @@ fun trade_tooltip(int0: Int, int1: Int, component2: Component) {
 			} else {
 				string0 = "${~tostring_spacer(int0, string1)} x ${~tostring_spacer(int1, string1)}"
 			}
-			cc_setonmouserepeat({
+			cc_setonmouserepeat {
 				tooltip_mouserepeat(event_com, event_comsubid, component2, string0, 25, 512)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				deltooltip(component2)
-			})
+			}
 		} else {
 			string0 = ~tostring_spacer(int1, string1)
-			cc_setonmouserepeat({
+			cc_setonmouserepeat {
 				tooltip_mouserepeat(event_com, event_comsubid, component2, string0, 25, 512)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				deltooltip(component2)
-			})
+			}
 		}
 	} else {
-		cc_setonmouserepeat(null)
-		cc_setonmouseleave(null)
+		cc_setonmouserepeatnull
+		cc_setonmouseleavenull
 	}
 	return 
 }

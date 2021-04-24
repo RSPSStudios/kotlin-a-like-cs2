@@ -13,60 +13,60 @@ fun script3060(int0: Int, component1: Component, component2: Component, componen
 		return 
 	}
 	if (VARBIT[10601] > 0) {
-		if_setondragcomplete({
+		if_setondragcomplete {
 			script3062(event_com, event_drop, component1, component2, component3, component4, component5, component6, component7, component8, component9)
-		}, component2)
+		}
 	} else {
-		if_setondragcomplete(null, component2)
+		if_setondragcompletenull
 	}
 	if (VARBIT[10602] > 0) {
-		if_setondragcomplete({
+		if_setondragcomplete {
 			script3062(event_com, event_drop, component1, component2, component3, component4, component5, component6, component7, component8, component9)
-		}, component3)
+		}
 	} else {
-		if_setondragcomplete(null, component3)
+		if_setondragcompletenull
 	}
 	if (VARBIT[10603] > 0) {
-		if_setondragcomplete({
+		if_setondragcomplete {
 			script3062(event_com, event_drop, component1, component2, component3, component4, component5, component6, component7, component8, component9)
-		}, component4)
+		}
 	} else {
-		if_setondragcomplete(null, component4)
+		if_setondragcompletenull
 	}
 	if (VARBIT[10604] > 0) {
-		if_setondragcomplete({
+		if_setondragcomplete {
 			script3062(event_com, event_drop, component1, component2, component3, component4, component5, component6, component7, component8, component9)
-		}, component5)
+		}
 	} else {
-		if_setondragcomplete(null, component5)
+		if_setondragcompletenull
 	}
 	if (VARBIT[10605] > 0) {
-		if_setondragcomplete({
+		if_setondragcomplete {
 			script3062(event_com, event_drop, component1, component2, component3, component4, component5, component6, component7, component8, component9)
-		}, component6)
+		}
 	} else {
-		if_setondragcomplete(null, component6)
+		if_setondragcompletenull
 	}
 	if (VARBIT[10606] > 0) {
-		if_setondragcomplete({
+		if_setondragcomplete {
 			script3062(event_com, event_drop, component1, component2, component3, component4, component5, component6, component7, component8, component9)
-		}, component7)
+		}
 	} else {
-		if_setondragcomplete(null, component7)
+		if_setondragcompletenull
 	}
 	if (VARBIT[10607] > 0) {
-		if_setondragcomplete({
+		if_setondragcomplete {
 			script3062(event_com, event_drop, component1, component2, component3, component4, component5, component6, component7, component8, component9)
-		}, component8)
+		}
 	} else {
-		if_setondragcomplete(null, component8)
+		if_setondragcompletenull
 	}
 	if (VARBIT[10608] > 0) {
-		if_setondragcomplete({
+		if_setondragcomplete {
 			script3062(event_com, event_drop, component1, component2, component3, component4, component5, component6, component7, component8, component9)
-		}, component9)
+		}
 	} else {
-		if_setondragcomplete(null, component9)
+		if_setondragcompletenull
 	}
 	return 
 }

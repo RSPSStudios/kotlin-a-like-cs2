@@ -2,9 +2,9 @@
 fun script4113(int0: Int) {
 
 	if (int0 > 1) {
-		if_setontimer({
+		if_setontimer {
 			script4114(int0)
-		}, interface_686:3)
+		}
 	}
 	return 
 }

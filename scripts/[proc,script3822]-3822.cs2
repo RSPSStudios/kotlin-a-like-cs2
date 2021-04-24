@@ -7,21 +7,21 @@ fun script3822(boolean0: Boolean, boolean1: Boolean, component2: Component) {
 	if (boolean0 = true) {
 		comsubid3, text0 = ~options_button_on(component2, 0), "---"
 		if_clearops(component2)
-		if_setonmouserepeat(null, component2)
-		if_setonmouseleave(null, component2)
-		if_setonop(null, component2)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
+		if_setonopnull
 	} else {
 		comsubid3 = ~options_button_off(component2, 0)
 		if_setop(1, "Start", component2)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			script3821(false, true, component2)
-		}, component2)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			script3821(false, false, component2)
-		}, component2)
-		if_setonop({
+		}
+		if_setonop {
 			script3823(event_opindex, component2)
-		}, component2)
+		}
 	}
 	cc_create(component2, ^iftype_text, comsubid3)
 	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)

@@ -8,15 +8,15 @@ fun script2145(component0: Component) {
 		if (cc_find(component0, int2) = ^true) {
 			obj1 = inv_getobj(inv, int2)
 			cc_clearops
-			cc_setontimer(null)
+			cc_setontimernull
 			if (obj1 = null) {
 				cc_sethide(true)
 			} else if (oc_uncert(obj1) = drift_net_21652) {
 				cc_sethide(false)
 				cc_settrans(0)
-				cc_setonop({
+				cc_setonop {
 					cc_settrans_temporarily(event_com, event_comsubid, 100, 0)
-				})
+				}
 				cc_setobject(obj1, inv_getnum(inv, int2))
 				cc_setop(1, "Store-1")
 				cc_setop(2, "Store-5")
@@ -27,9 +27,9 @@ fun script2145(component0: Component) {
 			} else {
 				cc_sethide(false)
 				cc_settrans(130)
-				cc_setonop({
+				cc_setonop {
 					cc_settrans_temporarily(event_com, event_comsubid, 170, 130)
-				})
+				}
 				cc_setobject(obj1, inv_getnum(inv, int2))
 				cc_setop(1, "Store")
 				cc_setop(10, "Examine")

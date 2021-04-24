@@ -7,7 +7,7 @@ fun poh_costumes_hideitem(int0: Int, component1: Component, int2: Int): Int {
 	if (cc_find(component1, int0) = ^true) {
 		cc_sethide(true)
 		cc_clearops
-		cc_setontimer(null)
+		cc_setontimernull
 	}
 	return calc(int0 + 1)
 }

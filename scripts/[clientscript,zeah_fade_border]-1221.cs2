@@ -6,7 +6,7 @@ fun zeah_fade_border(component0: Component, int1: Int) {
 		return 
 	}
 	if_setcolour(enum(int, int, enum_1279, int1), component0)
-	if_setontimer(null, component0)
+	if_setontimernull
 	if_settrans(0, component0)
 	return 
 }

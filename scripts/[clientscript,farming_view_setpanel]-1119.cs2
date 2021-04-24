@@ -174,11 +174,11 @@ fun farming_view_setpanel(int0: Int, obj1: Obj, coord2: Coord, flags3: Int) {
 		cc_settext(tostring(int9))
 		string0 = append(string0, "<br>Minimum yield: ${tostring(int9)}")
 	}
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		tooltip_mouserepeat(event_com, -1, interface_179:280, string0, 25, 512)
-	}, component6)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		deltooltip(interface_179:280)
-	}, component6)
+	}
 	return 
 }

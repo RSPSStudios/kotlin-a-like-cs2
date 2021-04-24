@@ -37,7 +37,7 @@ fun xpdrops_dropletmove(component0: Component, int1: Int) {
 		~script1006(component0, int3)
 		int3 = calc(int3 + 1)
 	}
-	if_setontimer(null, component0)
+	if_setontimernull
 	if_sethide(true, component0)
 	return 
 }

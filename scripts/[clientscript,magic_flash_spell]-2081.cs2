@@ -8,9 +8,9 @@ fun magic_flash_spell(int0: Int, obj1: Obj) {
 	if (component2 = null) {
 		return 
 	}
-	if_setontimer({
+	if_setontimer {
 		magic_flash(component2, 1, 0)
-	}, magic_spellbook:3)
+	}
 	if (VARCINT[393] ! null) {
 		~magic_stop_flash(VARCINT[393])
 	}

@@ -21,9 +21,9 @@ fun script2236(component0: Component, component1: Component, width2: Int, height
 		} else {
 			.cc_create(interface_601:2, ^iftype_text, 0)
 			.cc_setnoclickthrough(true)
-			.cc_setonclick({
+			.cc_setonclick {
 				opsound(0, 0)
-			})
+			}
 			.cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_top)
 			.cc_setsize(0, int9, ^setsize_minus, ^setsize_abs)
 		}
@@ -33,9 +33,9 @@ fun script2236(component0: Component, component1: Component, width2: Int, height
 		} else {
 			.cc_create(interface_601:2, ^iftype_text, 1)
 			.cc_setnoclickthrough(true)
-			.cc_setonclick({
+			.cc_setonclick {
 				opsound(0, 0)
-			})
+			}
 			.cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_bottom)
 			.cc_setsize(0, int11, ^setsize_minus, ^setsize_minus)
 		}
@@ -45,9 +45,9 @@ fun script2236(component0: Component, component1: Component, width2: Int, height
 		} else {
 			.cc_create(interface_601:2, ^iftype_text, 2)
 			.cc_setnoclickthrough(true)
-			.cc_setonclick({
+			.cc_setonclick {
 				opsound(0, 0)
-			})
+			}
 			.cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_centre)
 			.cc_setsize(int8, 0, ^setsize_abs, ^setsize_minus)
 		}
@@ -57,9 +57,9 @@ fun script2236(component0: Component, component1: Component, width2: Int, height
 		} else {
 			.cc_create(interface_601:2, ^iftype_text, 3)
 			.cc_setnoclickthrough(true)
-			.cc_setonclick({
+			.cc_setonclick {
 				opsound(0, 0)
-			})
+			}
 			.cc_setposition(0, 0, ^setpos_abs_right, ^setpos_abs_centre)
 			.cc_setsize(int10, 0, ^setsize_minus, ^setsize_minus)
 		}
@@ -68,14 +68,14 @@ fun script2236(component0: Component, component1: Component, width2: Int, height
 			~script3506(component12)
 		}
 	}
-	if_setonresize({
+	if_setonresize {
 		script2235(component0, component1, width5, height6, VARCINT[381])
-	}, component0)
-	if_setonsubchange({
+	}
+	if_setonsubchange {
 		script2235(component0, component1, width5, height6, VARCINT[381])
-	}, component0)
-	if_setontimer({
+	}
+	if_setontimer {
 		script2235(component0, component1, width5, height6, VARCINT[381])
-	}, component0)
+	}
 	return 
 }

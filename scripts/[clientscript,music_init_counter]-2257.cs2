@@ -1,7 +1,7 @@
 // 2257 clientscript
 fun music_init_counter(component0: Component, count1: Int) {
 
-	if_setontimer(null, component0)
+	if_setontimernull
 	flags0[calc(21 + 1)]: Int
 	flags0[1] = VARP[20]
 	flags0[2] = VARP[21]

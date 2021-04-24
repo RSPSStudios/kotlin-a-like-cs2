@@ -18,7 +18,7 @@ fun tob_hud_cleartext(comsubid0: Int, int1: Int) {
 		}
 		cc_sethide(true)
 		cc_settext("")
-		cc_setontimer(null)
+		cc_setontimernull
 	}
 	return 
 }

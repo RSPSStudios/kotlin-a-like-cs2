@@ -22,12 +22,12 @@ fun script3746(component0: Component, boolean1: Boolean, string0: String) {
 		if_setop(1, "Select", component0)
 	}
 	if (~on_mobile = false) {
-		if_setonmouseleave({
+		if_setonmouseleave {
 			script3756(component0, 0, string0, boolean1)
-		}, component0)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			script3756(component0, 1, string0, boolean1)
-		}, component0)
+		}
 	}
 	return 
 }

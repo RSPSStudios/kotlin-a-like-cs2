@@ -3,21 +3,21 @@ fun gravestone_retrieval_init(component0: Component, component1: Component, comp
 
 	val comsubid10: Int = ~steelborder(component1, "", 0)
 	~gravestone_retrieval_unlockstatus(component1, comsubid10, component4, component5, component8, component9)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		gravestone_retrieval_unlockstatus(component1, comsubid10, component4, component5, component8, component9){VARP[261], VARP[262]}
-	}, component0)
+	}
 	if_setgraphic("miscgraphics,0", component6)
 	if_setop(1, "Discard-All", component6)
-	if_setontimer(null, component6)
-	if_setonmouserepeat({
+	if_setontimernull
+	if_setonmouserepeat {
 		gravestone_retrieval_buttonhover(true, component7, null, null)
-	}, component6)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		gravestone_retrieval_buttonhover(false, component7, null, null)
-	}, component6)
-	if_setonop({
+	}
+	if_setonop {
 		gravestone_retrieval_buttonop(event_opindex, component6, component7, null, null)
-	}, component6)
+	}
 	val int11: Int = calc(36 + 10)
 	val int12: Int = calc(32 + 8)
 	cc_deleteall(component2)
@@ -36,8 +36,8 @@ fun gravestone_retrieval_init(component0: Component, component1: Component, comp
 	}
 	~scrollbar_vertical(component3, component2, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
 	~gravestone_retrieval_items(component2, component3)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		gravestone_retrieval_items(component2, component3){inv_525}
-	}, component0)
+	}
 	return 
 }

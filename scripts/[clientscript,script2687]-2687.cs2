@@ -40,8 +40,8 @@ fun script2687(string0: String) {
 		string1, string2 = ~script632(string2)
 	}
 	~script2690(int0)
-	if_setonvartransmit({
+	if_setonvartransmit(interface_100:29)  {
 		script2688(int0){VARP[261]}
-	}, interface_100:29)
+	}
 	return 
 }

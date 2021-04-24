@@ -6,10 +6,10 @@ fun mirror_interface_keypress(key0: Int, keychar1: Char, component2: Component, 
 	}
 	if (string_indexof_char(string0, keychar1) ! -1 | (key0 = ^key_return | key0 = ^key_space) & component2 = component3) {
 		~mirror_interface_button_draw(component2, text1, true)
-		if_setonkey(null, component2)
-		if_setontimer({
+		if_setonkeynull
+		if_setontimer {
 			mirror_interface_button_reset(component2, string0, calc(clientclock + 40), text1)
-		}, component2)
+		}
 		if_resume_pausebutton(component2)
 	}
 	return 

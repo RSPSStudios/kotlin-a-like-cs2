@@ -4,7 +4,7 @@ fun script2123(clock0: Int, component1: Component, int2: Int, int3: Int, int4: I
 	if (clientclock < clock0) {
 		return 
 	}
-	if_setontimer(null, component1)
+	if_setontimernull
 	~trail_slidepuzzle_synch(component1, int2, int3, int4, int5, component6, component7)
 	return 
 }

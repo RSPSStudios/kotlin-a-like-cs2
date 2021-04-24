@@ -7,13 +7,13 @@ fun cws_init(component0: Component, component1: Component, component2: Component
 	cc_sethide(true)
 	.cc_sethide(true)
 	~cws_init_button(component1, op0)
-	if_setonop({
+	if_setonop {
 		script1437(component0, 1)
-	}, component1)
+	}
 	~cws_init_button(component2, op1)
-	if_setonop({
+	if_setonop {
 		script1437(component0, 0)
-	}, component2)
+	}
 	cc_deleteall(component3)
 	cc_create(component3, ^iftype_rectangle, 0)
 	val comsubid5: Int = cc_getid
@@ -30,16 +30,16 @@ fun cws_init(component0: Component, component1: Component, component2: Component
 	.cc_settextshadow(true)
 	.cc_settextalign(^settextalign_right, ^settextalign_centre, 0)
 	.cc_settext(string2)
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		cc_colour_swapper(event_com, .cc_getid, ^white)
-	}, component3)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		cc_colour_swapper(event_com, .cc_getid, 0xff981f)
-	}, component3)
+	}
 	if_setsize(calc(parawidth(string2, if_getwidth(component0), p12_full) + 26), if_getheight(component3), ^setsize_abs, ^setsize_abs, component3)
 	~cws_set_toggle(component3, int4, comsubid5, ~cws_cc_getvar(int4))
-	if_setonvartransmit({
+	if_setonvartransmit(component3)  {
 		cws_set_toggle(component3, cc_getid, int4, comsubid5){VARP[1045], VARP[1046], VARP[1047]}
-	}, component3)
+	}
 	return 
 }

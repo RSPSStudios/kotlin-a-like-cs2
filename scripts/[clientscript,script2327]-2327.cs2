@@ -8,13 +8,13 @@ fun script2327(opindex0: Int, component1: Component, int2: Int, string0: String,
 		sound_synth(synth_2266, 1, 0)
 		cc_setcolour(0x7f7f7f)
 		cc_settext("...")
-		if_setonmouserepeat(null, component1)
-		if_setonmouseleave(null, component1)
-		if_setonop(null, component1)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
+		if_setonopnull
 		if_clearops(component1)
-		if_setontimer({
+		if_setontimer {
 			script2328(component1, int2, string0, int3, calc(clientclock + 80))
-		}, component1)
+		}
 		.cc_resume_pausebutton
 	}
 	return 

@@ -2,8 +2,8 @@
 fun script3521(component0: Component, component1: Component) {
 
 	~script3522(component0, component1)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		script3521(component0, component1){VARP[2743]}
-	}, component0)
+	}
 	return 
 }

@@ -15,8 +15,8 @@ fun script2143(component0: Component) {
 		size3 = calc(size3 + 1)
 	}
 	~script2145(component0)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		script2144(component0){inv}
-	}, component0)
+	}
 	return 
 }

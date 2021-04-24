@@ -4,23 +4,23 @@ fun questscroll_init(component0: Component, component1: Component, component2: C
 	val graphic3: Graphic = "close_buttons,2"
 	val graphic4: Graphic = "close_buttons,3"
 	if (~on_mobile = false) {
-		if_setonmouseover({
+		if_setonmouseover {
 			graphic_swapper(component2, graphic4)
-		}, component1)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			graphic_swapper(component2, graphic3)
-		}, component1)
+		}
 		if_setposition(67, 59, ^setpos_abs_right, ^setpos_abs_top, component1)
 		if_setsize(26, 23, ^setsize_abs, ^setsize_abs, component1)
 	} else {
-		if_setonmouseover(null, component1)
-		if_setonmouseleave(null, component1)
+		if_setonmouseovernull
+		if_setonmouseleavenull
 		if_setposition(64, 55, ^setpos_abs_right, ^setpos_abs_top, component1)
 		if_setsize(32, 32, ^setsize_abs, ^setsize_abs, component1)
 	}
-	if_setonop({
+	if_setonop {
 		closebutton_click
-	}, component1)
+	}
 	val string0: String = ~tostring_spacer(VARP[101], ",")
 	if_settext("Total Quest Points: ${string0}", component0)
 	return 

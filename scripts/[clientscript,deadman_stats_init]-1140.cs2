@@ -5,12 +5,12 @@ fun deadman_stats_init(component0: Component, int1: Int, int2: Int) {
 	val stat3: Stat = enum(int, stat, enum_681, int1)
 	if_setop(1, "Protect", component0)
 	if_setopbase(opbase0, component0)
-	if_setonop({
+	if_setonop {
 		deadman_stats_click(event_opindex, component0, int1)
-	}, component0)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component0)  {
 		deadman_stats_vartransmit(component0, int1){VARP[1295]}
-	}, component0)
+	}
 	cc_deleteall(component0)
 	cc_create(component0, ^iftype_graphic, 0)
 	cc_setposition(-2, -2, ^setpos_abs_left, ^setpos_abs_top)

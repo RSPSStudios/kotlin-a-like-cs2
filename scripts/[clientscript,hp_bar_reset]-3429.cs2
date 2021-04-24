@@ -14,7 +14,7 @@ fun hp_bar_reset(int0: Int, int1: Int, int2: Int, int3: Int, int4: Int, int5: In
 		if_settrans(trans21, component20)
 		if_sethide(false, component13)
 		if_sethide(false, component10)
-		if_setontimer(null, component14)
+		if_setontimernull
 	}
 	return 
 }

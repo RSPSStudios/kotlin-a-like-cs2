@@ -28,10 +28,10 @@ fun script842(int0: Int, component1: Component, component2: Component, component
 	if_setscrollpos(0, y5, component1)
 	~scrollbar_vertical_rebuild(component4, component1)
 	~soul_wars_rewards_drawconfirm(int0, component1, component2, component3, enum_3553, 2, component6, component7)
-	if_setonvartransmit({
+	if_setonvartransmit(component1)  {
 		script676(-1, component1, component2, component3, component4, component6, component7){VARP[2876]}
-	}, component1)
-	if_setonvartransmit(null, component6)
-	if_setonvartransmit(null, component7)
+	}
+	if_setonvartransmitnull
+	if_setonvartransmitnull
 	return 
 }

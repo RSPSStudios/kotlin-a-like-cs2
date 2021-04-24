@@ -40,8 +40,8 @@ fun peng_observer_borders(component0: Component, width1: Int, height2: Int, comp
 			.cc_setsize(int7, 0, ^setsize_abs, ^setsize_minus)
 		}
 	}
-	if_setontimer({
+	if_setontimer {
 		peng_observer_borders(component0, width1, height2, component3)
-	}, component0)
+	}
 	return 
 }

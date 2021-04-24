@@ -2,9 +2,9 @@
 fun league_rewards_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component) {
 
 	~league_reward_shop_showpoints(component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11)
-	if_setonvartransmit({
+	if_setonvartransmit(component1)  {
 		league_reward_shop_showpoints(component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11){VARP[2613]}
-	}, component1)
+	}
 	~league_rewards_draw(-1, component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, 0)
 	return 
 }

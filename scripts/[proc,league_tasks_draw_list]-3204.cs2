@@ -85,27 +85,27 @@ fun league_tasks_draw_list(int0: Int, component1: Component, component2: Compone
 				cc_settrans(trans27)
 			}
 			if (~on_mobile = false) {
-				cc_setonmouserepeat({
+				cc_setonmouserepeat {
 					league_task_hover(event_comsubid, component2, component8, 210, graphic28)
-				})
-				cc_setonmouseleave({
+				}
+				cc_setonmouseleave {
 					league_task_hover(event_comsubid, component2, component8, trans27, graphic29)
-				})
+				}
 			} else {
-				cc_setonmouserepeat(null)
-				cc_setonmouseleave(null)
+				cc_setonmouserepeatnull
+				cc_setonmouseleavenull
 			}
 			cc_setopbase("<col=ff981f>${text0}</col>")
 			if (int22 = int0) {
 				cc_setop(1, "Collapse")
-				cc_setonop({
+				cc_setonop {
 					league_tasks_draw_list(-1, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, -1, int16)
-				})
+				}
 			} else {
 				cc_setop(1, "Expand")
-				cc_setonop({
+				cc_setonop {
 					league_tasks_draw_list(int22, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, -1, int16)
-				})
+				}
 			}
 			cc_create(component8, ^iftype_graphic, int17)
 			cc_setsize(18, 18, ^setsize_abs, ^setsize_abs)

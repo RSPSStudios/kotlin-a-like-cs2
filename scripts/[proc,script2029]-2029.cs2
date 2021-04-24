@@ -12,8 +12,8 @@ fun script2029(component0: Component, int1: Int) {
 	} else {
 		if_settext("${tostring(int3)}:${tostring(int2)}", component0)
 	}
-	if_setontimer({
+	if_setontimer {
 		script2028(component0, calc(int1 - 1))
-	}, component0)
+	}
 	return 
 }

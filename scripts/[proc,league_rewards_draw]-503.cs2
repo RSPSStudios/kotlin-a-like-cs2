@@ -80,16 +80,16 @@ fun league_rewards_draw(int0: Int, component1: Component, component2: Component,
 			cc_setop(1, "Confirm")
 			cc_setopbase("<col=ff981f>${text0}</col>")
 			if (~on_mobile = false) {
-				cc_setonmouserepeat({
+				cc_setonmouserepeat {
 					pest_rewards_confirmdraw(true, text0, component6)
-				})
-				cc_setonmouseleave({
+				}
+				cc_setonmouseleave {
 					pest_rewards_confirmdraw(false, text0, component6)
-				})
+				}
 			}
-			cc_setonop({
+			cc_setonop {
 				league_reward_shop_confirmop(event_opindex, component7, struct27)
-			})
+			}
 			~steelborder(component8, text0, 1)
 			if_settext("<col=ffffff>${text0}</col><br>${string1}<br><br>Are you sure that you wish to buy this item for <col=ffffff>${~tostring_spacer(int26, string3)}</col> points?<br><col=ffffff>You cannot sell this item back</col> if you change your mind.", component9)
 			int25 = ~v2_stone_button(component10)
@@ -104,16 +104,16 @@ fun league_rewards_draw(int0: Int, component1: Component, component2: Component,
 			cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 			if_setop(1, op2, component10)
 			if (~on_mobile = false) {
-				if_setonmouseleave({
+				if_setonmouseleave {
 					league_relic_button_hover(component10, false, op2, ^white)
-				}, component10)
-				if_setonmouseover({
+				}
+				if_setonmouseover {
 					league_relic_button_hover(component10, true, op2, 0xaaaaaa)
-				}, component10)
+				}
 			}
-			if_setonop({
+			if_setonop {
 				league_reward_shop_buy(event_opindex, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12)
-			}, component10)
+			}
 			int25 = ~v2_stone_button(component11)
 			cc_create(component11, ^iftype_text, int25)
 			cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
@@ -126,16 +126,16 @@ fun league_rewards_draw(int0: Int, component1: Component, component2: Component,
 			cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 			if_setop(1, op2, component11)
 			if (~on_mobile = false) {
-				if_setonmouseleave({
+				if_setonmouseleave {
 					league_relic_button_hover(component11, false, op2, ^white)
-				}, component11)
-				if_setonmouseover({
+				}
+				if_setonmouseover {
 					league_relic_button_hover(component11, true, op2, 0xaaaaaa)
-				}, component11)
+				}
 			}
-			if_setonop({
+			if_setonop {
 				league_reward_confirm_back(int0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12)
-			}, component11)
+			}
 		}
 	} else {
 		int25 = ~v2_stone_button_in_filled(component6)

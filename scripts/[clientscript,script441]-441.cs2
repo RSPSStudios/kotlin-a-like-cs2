@@ -31,15 +31,15 @@ fun script441(component0: Component, component1: Component, component2: Componen
 		cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 		cc_settext(text0)
 		cc_setop(1, "Select")
-		cc_setonmouseover({
+		cc_setonmouseover {
 			script3949(true, event_com, event_comsubid, .cc_getid)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			script3949(false, event_com, event_comsubid, .cc_getid)
-		})
-		cc_setonop({
+		}
+		cc_setonop {
 			script442(event_opindex, event_com, event_comsubid, component2, component5, component0)
-		})
+		}
 		int8 = calc(int8 + 1)
 		count9 = calc(count9 + 1)
 		text0 = enum(int, string, enum_3509, int8)
@@ -76,8 +76,8 @@ fun script441(component0: Component, component1: Component, component2: Componen
 	}
 	cc_deleteall(component4)
 	~scrollbar_vertical(component4, component1, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
-	if_setonclick({
+	if_setonclick {
 		script448(component2, component5, component0, component1)
-	}, component2)
+	}
 	return 
 }

@@ -21,9 +21,9 @@ fun itemsets_init(component0: Component, component1: Component) {
 			cc_setgraphicshadow(0x333333)
 			cc_setoutline(1)
 			~itemsets_redraw(enum6)
-			cc_setoninvtransmit({
+			cc_setoninvtransmit {
 				itemsets_redraw(event_com, event_comsubid, enum6){inv}
-			})
+			}
 		} else {
 			cc_sethide(true)
 		}

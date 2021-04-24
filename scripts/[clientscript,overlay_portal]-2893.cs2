@@ -24,8 +24,8 @@ fun overlay_portal(component0: Component, component1: Component, model2: Model, 
 	cc_setfill(true)
 	cc_setcolour(colour3)
 	cc_settrans(255)
-	if_setontimer({
+	if_setontimer {
 		overlay_portal_adjust(clientclock, true, component1)
-	}, component1)
+	}
 	return 
 }

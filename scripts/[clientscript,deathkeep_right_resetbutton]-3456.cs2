@@ -5,14 +5,14 @@ fun deathkeep_right_resetbutton(clock0: Int, component1: Component, int2: Int, s
 		return 
 	}
 	val comsubid4: Int = ~deathkeep_right_drawbutton(component1, int2, string0, boolean3, 0)
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		cc_colour_swapper(event_com, comsubid4, ^white)
-	}, component1)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		cc_colour_swapper(event_com, comsubid4, 0xff981f)
-	}, component1)
-	if_setonop({
+	}
+	if_setonop {
 		deathkeep_right_opbutton(event_com, int2, string0, boolean3)
-	}, component1)
+	}
 	return 
 }

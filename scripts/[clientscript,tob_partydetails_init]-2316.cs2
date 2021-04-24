@@ -63,6 +63,6 @@ fun tob_partydetails_init(component0: Component, component1: Component, componen
 		int15, int14 = calc(int15 - 1), calc(int14 + 1)
 	}
 	if_setsize(0, 0, ^setsize_minus, ^setsize_minus, component3)
-	if_setontimer(null, component0)
+	if_setontimernull
 	return 
 }

@@ -67,11 +67,11 @@ fun script819(component0: Component, component1: Component, component2: Componen
 	cc_deleteall(component0)
 	int3, comsubid11, comsubid12, int13, comsubid14, comsubid15, comsubid16, comsubid17, comsubid18 = ~ge_offers_initboxes(0, component0, component1, b12_full)
 	~script821(component0, comsubid11, comsubid12, comsubid14, comsubid15, comsubid16, comsubid17, comsubid18, component2, comsubid7, comsubid8, comsubid10, int9)
-	if_setonstocktransmit({
+	if_setonstocktransmit {
 		script820(component0, comsubid11, comsubid12, comsubid14, comsubid15, comsubid16, comsubid17, comsubid18, component2, comsubid7, comsubid8, comsubid10, int9)
-	}, component2)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component2)  {
 		script820(component0, comsubid11, comsubid12, comsubid14, comsubid15, comsubid16, comsubid17, comsubid18, component2, comsubid7, comsubid8, comsubid10, int9){VARP[375]}
-	}, component2)
+	}
 	return 
 }

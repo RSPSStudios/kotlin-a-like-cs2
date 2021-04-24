@@ -17,18 +17,18 @@ fun script1201(component0: Component, component1: Component, component2: Compone
 	cc_setcolour(colour8)
 	.cc_setcolour(colour8)
 	val string0: String = "${oc_name(obj4)}: ${tostring(calc(int5 / 10))}.${tostring(calc(int5 % 10))}% appreciation"
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		tooltip_mouserepeat(event_com, -1, component3, string0, 25, 512)
-	}, component0)
-	if_setonmouserepeat({
+	}
+	if_setonmouserepeat {
 		tooltip_mouserepeat(event_com, -1, component3, string0, 25, 512)
-	}, component1)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		deltooltip(component3)
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		deltooltip(component3)
-	}, component1)
+	}
 	VARCINT[2] = 0
 	return 
 }

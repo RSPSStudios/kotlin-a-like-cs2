@@ -7,9 +7,9 @@ fun settings_zoom_slider_dragcomplete(component0: Component, comsubid1: Int, int
 	}
 	~settings_zoom_position_slider(component0, comsubid1, int2, y3, int4)
 	if (cc_find(component0, comsubid1) = ^true) {
-		cc_setontimer({
+		cc_setontimer {
 			settings_zoom_position_timer(VARCINT[73], VARCINT[74], component0, comsubid1, int2, y3, int4)
-		})
+		}
 	}
 	return 
 }

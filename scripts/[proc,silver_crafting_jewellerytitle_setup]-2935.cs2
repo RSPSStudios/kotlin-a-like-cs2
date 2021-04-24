@@ -3,8 +3,8 @@ fun silver_crafting_jewellerytitle_setup(component0: Component, namedobj1: Named
 
 	if_sethide(false, component0)
 	~silver_crafting_jewellerytitle_draw(component0, namedobj1, text0, text1)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		silver_crafting_jewellerytitle_draw(component0, namedobj1, text0, text1){inv}
-	}, component0)
+	}
 	return 
 }

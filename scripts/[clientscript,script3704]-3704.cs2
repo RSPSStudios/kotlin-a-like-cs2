@@ -7,8 +7,8 @@ fun script3704(int0: Int, text0: String) {
 		inv1 = inv
 	}
 	~script3706(inv1)
-	if_setoninvtransmit({
+	if_setoninvtransmit(interface_678:1)  {
 		script3705(inv1){inv1}
-	}, interface_678:1)
+	}
 	return 
 }

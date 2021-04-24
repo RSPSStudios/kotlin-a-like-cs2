@@ -6,9 +6,9 @@ fun prayer_flash_prayer(int0: Int) {
 		return 
 	}
 	if (cc_find(component1, 1) = ^true) {
-		if_setontimer({
+		if_setontimer {
 			prayer_flash_timer(component1, 0, 0)
-		}, component1)
+		}
 	}
 	return 
 }

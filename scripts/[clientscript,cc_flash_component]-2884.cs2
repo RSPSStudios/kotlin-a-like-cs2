@@ -3,9 +3,9 @@ fun cc_flash_component(component0: Component, comsubid1: Int) {
 
 	if (cc_find(component0, comsubid1) = ^true) {
 		cc_settrans(255)
-		cc_setontimer({
+		cc_setontimer {
 			cc_flash_component_timer(component0, comsubid1, 0, 1)
-		})
+		}
 	}
 	return 
 }

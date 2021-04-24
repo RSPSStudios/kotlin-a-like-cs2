@@ -8,35 +8,35 @@ fun lumbridge_alchemy_vartransmit(component0: Component, component1: Component, 
 		op0 = "High-Alchemy"
 		if_settext("High Alchemy", component2)
 		if_setgraphic("magicoff,10", component0)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			settrans(event_com, 120)
-		}, component0)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(event_com, 0)
-		}, component0)
-		if_setonop({
+		}
+		if_setonop {
 			opsound(event_opindex, 2)
-		}, component0)
+		}
 		if_setgraphic("magicon,26", component1)
-		if_setonmouserepeat(null, component1)
-		if_setonmouseleave(null, component1)
-		if_setonop(null, component1)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
+		if_setonopnull
 	} else {
 		if_settext("Low Alchemy", component2)
 		if_setgraphic("magicon,10", component0)
-		if_setonmouserepeat(null, component0)
-		if_setonmouseleave(null, component0)
-		if_setonop(null, component0)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
+		if_setonopnull
 		if_setgraphic("magicoff,26", component1)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			settrans(event_com, 120)
-		}, component1)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(event_com, 0)
-		}, component1)
-		if_setonop({
+		}
+		if_setonop {
 			opsound(event_opindex, 2)
-		}, component1)
+		}
 	}
 	if_settext("Charges: ${tostring(calc(30 - VARBIT[4554]))}", component4)
 	if (VARBIT[4554] < 30) {

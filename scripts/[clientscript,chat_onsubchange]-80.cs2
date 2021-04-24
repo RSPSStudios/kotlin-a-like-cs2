@@ -28,9 +28,9 @@ fun chat_onsubchange(component0: Component, windowmode1: Int, boolean2: Boolean,
 	}
 	if (int5 = 1) {
 		~script113
-		if_setonsubchange({
+		if_setonsubchange {
 			chat_onsubchange(event_com, windowmode6, boolean7, boolean8, enum9)
-		}, interface_162:0)
+		}
 	}
 	return 
 }

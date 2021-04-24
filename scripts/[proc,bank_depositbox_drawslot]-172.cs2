@@ -30,13 +30,13 @@ fun bank_depositbox_drawslot(component0: Component, obj1: Obj, num2: Int, index3
 		cc_setop(9, ~bankside_extraop(obj1, index3))
 		cc_setop(10, "Examine")
 		cc_setopbase("<col=ff9040>${oc_name(obj1)}</col>")
-		cc_setondragcomplete({
+		cc_setondragcomplete {
 			bank_depositbox_drag(event_com, event_comsubid, event_dropsubid)
-		})
+		}
 	} else {
 		cc_settrans(255)
 		cc_setobject(obj_6512, 1)
-		cc_setondragcomplete(null)
+		cc_setondragcompletenull
 	}
 	return 
 }

@@ -23,16 +23,16 @@ fun soul_wars_rewards_drawconfirm(int0: Int, component1: Component, component2: 
 		cc_setop(1, "Confirm")
 		cc_setopbase("<col=ff9040>${text0}</col>")
 		if (~on_mobile = false) {
-			cc_setonmouserepeat({
+			cc_setonmouserepeat {
 				script848(true, text0, component3)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				script848(false, text0, component3)
-			})
+			}
 		}
-		cc_setonop({
+		cc_setonop {
 			soul_wars_rewards_confirmop(event_opindex, component1, component2, component3, int5, component6, component7)
-		})
+		}
 	} else {
 		int8 = ~v2_stone_button_in_filled(component3)
 		cc_create(component3, ^iftype_text, int8)

@@ -52,8 +52,8 @@ fun clanwars_hud_init(component0: Component, component1: Component, component2: 
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	cc_settextshadow(true)
 	~clanwars_hud_countdown_update(component0, component6)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		clanwars_hud_update(component0, component5, int7, component6, int8){VARP[92], VARP[93], VARP[94], VARP[95], VARP[98]}
-	}, component0)
+	}
 	return 
 }

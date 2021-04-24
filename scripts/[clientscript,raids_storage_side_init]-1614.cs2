@@ -2,9 +2,9 @@
 fun raids_storage_side_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
 
 	~raids_storage_side_setup(component1, component2, component3)
-	if_setonvartransmit({
+	if_setonvartransmit(component4)  {
 		raids_storage_side_setup(component1, component2, component3){VARP[499], VARP[1429], VARP[115]}
-	}, component4)
+	}
 	cc_deleteall(component4)
 	val int5: Int = calc((42 - 36) * 3 - 2)
 	val int6: Int = calc((36 - 32) * 2)
@@ -19,11 +19,11 @@ fun raids_storage_side_init(component0: Component, component1: Component, compon
 		size7 = calc(size7 + 1)
 	}
 	~raids_storage_side_items(component4, size7)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		raids_storage_side_items(component4, size7){inv}
-	}, component0)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component0)  {
 		raids_storage_side_items(component4, size7){VARP[115]}
-	}, component0)
+	}
 	return 
 }

@@ -2,9 +2,9 @@
 fun ap_icon_flash(int0: Int) {
 
 	if (int0 = 41222171) {
-		if_setontimer({
+		if_setontimer {
 			ap_flash_timer(interface_629:27)
-		}, interface_629:23)
+		}
 	}
 	return 
 }

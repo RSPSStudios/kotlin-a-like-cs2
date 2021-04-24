@@ -4,12 +4,12 @@ fun music_init(component0: Component, component1: Component, component2: Compone
 	cc_deleteall(component1)
 	if_setscrollpos(0, 0, component1)
 	val count7: Int = enum_getoutputcount(enum_818)
-	if_setontimer({
+	if_setontimer {
 		music_init_counter(event_com, count7)
-	}, component3)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component1)  {
 		music_vartransmit(event_com, component3, count7){VARP[568], VARP[20], VARP[21], VARP[22], VARP[23], VARP[24], VARP[25], VARP[298], VARP[311], VARP[346], VARP[414], VARP[464], VARP[598], VARP[662], VARP[721], VARP[906], VARP[1009], VARP[1338], VARP[1681], VARP[2065], VARP[2237], VARP[2950]}
-	}, component1)
+	}
 	count0[count7]: Int
 	val count8: Int = 0
 	while (count8 < count7) {
@@ -33,25 +33,25 @@ fun music_init(component0: Component, component1: Component, component2: Compone
 			cc_sethide(false)
 			cc_setsize(0, int10, ^setsize_minus, ^setsize_abs)
 			cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_top)
-			cc_setontimer({
+			cc_setontimer {
 				music_init_component(event_com, event_comsubid, count8, int9)
-			})
+			}
 		}
 		count8 = calc(count8 + 1)
 	}
 	~music_optionbuttons(component4, component5, component6)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		music_optionbuttons_resynch(component4, component5, component6){VARP[18], VARP[19]}
-	}, component0)
-	if_setonop({
+	}
+	if_setonop {
 		music_optionbuttons_setmode(event_opindex, 1, component4, component5, component6)
-	}, component4)
-	if_setonop({
+	}
+	if_setonop {
 		music_optionbuttons_setmode(event_opindex, 0, component4, component5, component6)
-	}, component5)
-	if_setonop({
+	}
+	if_setonop {
 		music_optionbuttons_setloop(event_opindex, component4, component5, component6)
-	}, component6)
+	}
 	cc_deleteall(component2)
 	VARCINT[75] = ~max(0, ~min(calc(int10 - if_getheight(component1)), VARCINT[75]))
 	~scrollbar_vertical(component2, component1, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")

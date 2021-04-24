@@ -5,8 +5,8 @@ fun zoom_timer(int0: Int, int1: Int) {
 		return 
 	}
 	~zoom_position_slider
-	if_setontimer({
+	if_setontimer {
 		zoom_timer(VARCINT[73], VARCINT[74])
-	}, interface_116:60)
+	}
 	return 
 }

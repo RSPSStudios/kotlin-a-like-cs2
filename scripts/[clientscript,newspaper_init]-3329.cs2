@@ -17,28 +17,28 @@ fun newspaper_init(component0: Component, component1: Component) {
 	val graphic2: Graphic = "close_buttons,7"
 	val graphic3: Graphic = "close_buttons,6"
 	cc_setop(1, "Close")
-	cc_setonmouserepeat({
+	cc_setonmouserepeat {
 		cc_graphic_swapper(event_com, event_comsubid, graphic2, null)
-	})
-	cc_setonmouseleave({
+	}
+	cc_setonmouseleave {
 		cc_graphic_swapper(event_com, event_comsubid, graphic3, null)
-	})
-	cc_setonop({
+	}
+	cc_setonop {
 		closebutton_click
-	})
+	}
 	val url0: String = "https://osrs.game/Gazette"
 	if (clienttype ! ^clienttype_ios) {
 		~gazette_button(interface_659:3, false)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			gazette_button(interface_659:3, true)
-		}, interface_659:3)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			gazette_button(interface_659:3, false)
-		}, interface_659:3)
+		}
 		if_setop(1, "Link", interface_659:3)
-		if_setonop({
+		if_setonop {
 			openurl_raw(url0, true, true)
-		}, interface_659:3)
+		}
 	}
 	return 
 }

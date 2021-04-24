@@ -6,9 +6,9 @@ fun displayname_draw(component0: Component, component1: Component, component2: C
 		~displayname_button_init(component1, "Look up name")
 		~displayname_disablebutton(component2, "---")
 	} else if (VARBIT[5605] = 2) {
-		if_setontimer({
+		if_setontimer {
 			displayname_statusflash(component0)
-		}, component0)
+		}
 		~displayname_disablebutton(component1, "Look up name")
 		~displayname_disablebutton(component2, "---")
 	} else if (VARBIT[5605] = 4) {
@@ -23,15 +23,15 @@ fun displayname_draw(component0: Component, component1: Component, component2: C
 			~displayname_disablebutton(component2, "---")
 		}
 	} else if (VARBIT[5605] = 5) {
-		if_setontimer({
+		if_setontimer {
 			displayname_statusflash(component0)
-		}, component0)
+		}
 		~displayname_disablebutton(component1, "Another name")
 		~displayname_disablebutton(component2, "---")
 	} else {
-		if_setontimer({
+		if_setontimer {
 			displayname_statusflash(component0)
-		}, component0)
+		}
 		~displayname_disablebutton(component1, "Look up name")
 		~displayname_disablebutton(component2, "---")
 	}

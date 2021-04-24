@@ -13,9 +13,9 @@ fun script440(component0: Component, component1: Component, component2: Componen
 	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_bottom)
 	cc_setgraphic("tradebacking")
 	cc_settiling(true)
-	cc_setonclick({
+	cc_setonclick {
 		script441(component0, component1, component2, component3, component4, component5, layer6)
-	})
+	}
 	cc_create(component0, ^iftype_rectangle, int7)
 	int7 = calc(int7 + 1)
 	cc_setsize(0, 20, ^setsize_minus, ^setsize_abs)
@@ -50,8 +50,8 @@ fun script440(component0: Component, component1: Component, component2: Componen
 	cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
 	cc_settext("Game client layout:")
 	~xpdrops_setup_display_hoveroff(component0)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		script529(component0){VARP[1055]}
-	}, component0)
+	}
 	return 
 }

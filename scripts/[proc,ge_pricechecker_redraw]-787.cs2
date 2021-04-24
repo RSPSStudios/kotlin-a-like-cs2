@@ -61,9 +61,9 @@ fun ge_pricechecker_redraw() {
 			cc_setop(5, "Remove-X")
 			cc_setop(10, "Examine")
 			cc_setopbase("<col=ff9040>${oc_name(obj8)}</col>")
-			cc_setonop({
+			cc_setonop {
 				cc_settrans_temporarily(event_com, event_comsubid, 100, 0)
-			})
+			}
 		} else {
 			cc_sethide(true)
 		}

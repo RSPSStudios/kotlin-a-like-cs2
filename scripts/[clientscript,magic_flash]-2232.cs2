@@ -11,8 +11,8 @@ fun magic_flash(component0: Component, int1: Int, int2: Int) {
 		}
 		int1 = calc(1 - int1)
 	}
-	if_setontimer({
+	if_setontimer {
 		magic_flash(component0, int1, int2)
-	}, magic_spellbook:3)
+	}
 	return 
 }

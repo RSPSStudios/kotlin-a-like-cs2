@@ -10,7 +10,7 @@ fun script1233(component0: Component, comsubid1: Int, int2: Int, int3: Int) {
 		colour4, int5 = enum(int, int, enum_1279, int2), calc(int3 - clientclock)
 		if (int5 <= 0) {
 			cc_setcolour(colour4)
-			cc_setontimer(null)
+			cc_setontimernull
 			return 
 		}
 		if (int5 > 30) {

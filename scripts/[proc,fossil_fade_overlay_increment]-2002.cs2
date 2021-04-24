@@ -4,7 +4,7 @@ fun fossil_fade_overlay_increment(component0: Component, component1: Component, 
 	if (int7 <= 0) {
 		if_setcolour(colour4, component1)
 		if_settrans(int5, component1)
-		if_setontimer(null, component0)
+		if_setontimernull
 		return 
 	}
 	val int8: Int = 0

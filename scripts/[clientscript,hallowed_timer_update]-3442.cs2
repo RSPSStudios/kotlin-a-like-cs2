@@ -2,8 +2,8 @@
 fun hallowed_timer_update(int0: Int) {
 
 	int0 = calc(clientclock + int0 * 30)
-	if_setontimer({
+	if_setontimer {
 		hallowed_timer(int0)
-	}, interface_668:3)
+	}
 	return 
 }

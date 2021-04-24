@@ -4,7 +4,7 @@ fun gravestone_hud_resynch(component0: Component) {
 	if (VARBIT[10465] <= 0) {
 		cc_sethide(true)
 		.cc_sethide(true)
-		if_setontimer(null, component0)
+		if_setontimernull
 		if_clearops(component0)
 		return 
 	}
@@ -13,15 +13,15 @@ fun gravestone_hud_resynch(component0: Component) {
 	if (VARBIT[10465] > 1500) {
 		cc_setcolour(0x9f9f9f)
 		cc_settext("---")
-		if_setontimer(null, component0)
+		if_setontimernull
 		if_clearops(component0)
 		return 
 	}
 	val int1: Int = calc(VARBIT[10465] * 30)
 	~gravestone_hud_write(int1)
-	if_setontimer({
+	if_setontimer {
 		gravestone_hud_tickdown(event_com, cc_getid, int1, clientclock)
-	}, component0)
+	}
 	if_setop(1, "Grave info", component0)
 	return 
 }

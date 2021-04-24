@@ -3,11 +3,11 @@ fun raids_rewards_init(component0: Component, component1: Component) {
 
 	val size2: Int = inv_size(inv_581)
 	~raids_rewards_build(component1, size2)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		raids_rewards_build(component1, size2){inv_581}
-	}, component0)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component0)  {
 		raids_rewards_build(component1, size2){VARP[1432]}
-	}, component0)
+	}
 	return 
 }

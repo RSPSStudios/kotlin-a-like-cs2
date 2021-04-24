@@ -8,13 +8,13 @@ fun quiz_init(component0: Component, model1: Model, int2: Int, model3: Model, in
 	cc_setmodel(model1)
 	cc_setmodelangle(0, 0, random(2048), 0, random(2048), int2)
 	if (random(2) = 0) {
-		cc_setontimer({
+		cc_setontimer {
 			spinmodel(0, 0, calc(randominc(25) + 10), calc(randominc(25) + 20), 0, component0, 0)
-		})
+		}
 	} else {
-		cc_setontimer({
+		cc_setontimer {
 			spinmodel(0, 0, calc(randominc(25) + 20), calc(randominc(25) + 10), 0, component0, 0)
-		})
+		}
 	}
 	cc_setop(1, "Select")
 	cc_create(component0, ^iftype_model, 1)
@@ -23,13 +23,13 @@ fun quiz_init(component0: Component, model1: Model, int2: Int, model3: Model, in
 	cc_setmodel(model3)
 	cc_setmodelangle(0, 0, random(2048), 0, random(2048), int4)
 	if (random(2) = 0) {
-		cc_setontimer({
+		cc_setontimer {
 			spinmodel(0, 0, calc(randominc(25) + 10), calc(randominc(25) + 20), 0, component0, 1)
-		})
+		}
 	} else {
-		cc_setontimer({
+		cc_setontimer {
 			spinmodel(0, 0, calc(randominc(25) + 20), calc(randominc(25) + 10), 0, component0, 1)
-		})
+		}
 	}
 	cc_setop(1, "Select")
 	cc_create(component0, ^iftype_model, 2)
@@ -38,13 +38,13 @@ fun quiz_init(component0: Component, model1: Model, int2: Int, model3: Model, in
 	cc_setmodel(model5)
 	cc_setmodelangle(0, 0, random(2048), 0, random(2048), int6)
 	if (random(2) = 0) {
-		cc_setontimer({
+		cc_setontimer {
 			spinmodel(0, 0, calc(randominc(25) + 10), calc(randominc(25) + 20), 0, component0, 2)
-		})
+		}
 	} else {
-		cc_setontimer({
+		cc_setontimer {
 			spinmodel(0, 0, calc(randominc(25) + 20), calc(randominc(25) + 10), 0, component0, 2)
-		})
+		}
 	}
 	cc_setop(1, "Select")
 	return 

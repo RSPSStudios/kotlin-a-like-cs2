@@ -10,25 +10,25 @@ fun script3362(boolean0: Boolean, enum1: Enum): Int {
 	if ((enum1 = null | enum(obj, boolean, enum1, VARP[2674]) = true) & (boolean0 = false | ~deadman_restricted_item(obj7) = 0)) {
 		cc_create(interface_162:53, ^iftype_rectangle, int6)
 		int6 = calc(int6 + 1)
-		cc_setonkey({
+		cc_setonkey {
 			meslayer_mode14_select(obj7, event_key)
-		})
+		}
 		cc_setsize(int4, 32, ^setsize_abs, ^setsize_abs)
 		cc_setposition(int5, 0, ^setpos_abs_left, ^setpos_abs_top)
 		cc_setcolour(^white)
 		cc_setfill(true)
 		cc_settrans(255)
-		cc_setonmouseover({
+		cc_setonmouseover {
 			cc_settrans(event_com, event_comsubid, 200, null)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			cc_settrans(event_com, event_comsubid, 255, null)
-		})
+		}
 		cc_setopbase("<col=ff9040>${oc_name(obj7)}</col>")
 		cc_setop(1, "Select")
-		cc_setonop({
+		cc_setonop {
 			meslayer_mode14_select(obj7, ^key_return)
-		})
+		}
 		cc_create(interface_162:53, ^iftype_text, int6)
 		int6 = calc(int6 + 1)
 		cc_setsize(95, 32, ^setsize_abs, ^setsize_abs)

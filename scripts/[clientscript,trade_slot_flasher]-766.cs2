@@ -9,7 +9,7 @@ fun trade_slot_flasher(component0: Component, comsubid1: Int, int2: Int) {
 		int5 = calc(int4 - int2)
 		if (int5 >= 750) {
 			cc_settrans(255)
-			cc_setontimer(null)
+			cc_setontimernull
 			return 
 		}
 		if (calc(int4 % 40) >= 20) {

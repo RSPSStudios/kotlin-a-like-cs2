@@ -12,11 +12,11 @@ fun castlewars_catapult_init(int0: Int, component1: Component, component2: Compo
 	if_setop(1, "Move Left", component6)
 	if_setop(1, "Move Right", component7)
 	~castlewars_catapult_hover(component3, false)
-	if_setonmouseover({
+	if_setonmouseover {
 		castlewars_catapult_hover(component3, true)
-	}, component3)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		castlewars_catapult_hover(component3, false)
-	}, component3)
+	}
 	return 
 }

@@ -41,13 +41,13 @@ fun script3483(component0: Component, component1: Component, component2: Compone
 		} else {
 			.cc_settext("Select a quantity...")
 			~death_coffer_inactivebutton(component5, "", 0, component5)
-			if_setontimer(null, component5)
+			if_setontimernull
 		}
 		when (VARP[263]): Int {
 			1 -> {
 			
 				~death_coffer_inactivebutton(component1, "1", 1, component5)
-				if_setontimer(null, component1)
+				if_setontimernull
 				~death_coffer_activebutton(component2, "5", component5)
 				~death_coffer_activebutton(component3, "X", component5)
 				~death_coffer_activebutton(component4, "All", component5)
@@ -56,7 +56,7 @@ fun script3483(component0: Component, component1: Component, component2: Compone
 			
 				~death_coffer_activebutton(component1, "1", component5)
 				~death_coffer_inactivebutton(component2, "5", 1, component5)
-				if_setontimer(null, component2)
+				if_setontimernull
 				~death_coffer_activebutton(component3, "X", component5)
 				~death_coffer_activebutton(component4, "All", component5)
 			}
@@ -66,14 +66,14 @@ fun script3483(component0: Component, component1: Component, component2: Compone
 				~death_coffer_activebutton(component2, "5", component5)
 				~death_coffer_activebutton(component3, "X", component5)
 				~death_coffer_inactivebutton(component4, "All", 1, component5)
-				if_setontimer(null, component4)
+				if_setontimernull
 			}
 		else -> {
 		
 			~death_coffer_activebutton(component1, "1", component5)
 			~death_coffer_activebutton(component2, "5", component5)
 			~death_coffer_inactivebutton(component3, "X", 1, component5)
-			if_setontimer(null, component3)
+			if_setontimernull
 			~death_coffer_activebutton(component4, "All", component5)
 		}
 		}
@@ -81,15 +81,15 @@ fun script3483(component0: Component, component1: Component, component2: Compone
 		cc_settext("Select an item...")
 		.cc_settext("---")
 		~death_coffer_inactivebutton(component1, "1", 0, component5)
-		if_setontimer(null, component1)
+		if_setontimernull
 		~death_coffer_inactivebutton(component2, "5", 0, component5)
-		if_setontimer(null, component2)
+		if_setontimernull
 		~death_coffer_inactivebutton(component3, "X", 0, component5)
-		if_setontimer(null, component3)
+		if_setontimernull
 		~death_coffer_inactivebutton(component4, "All", 0, component5)
-		if_setontimer(null, component4)
+		if_setontimernull
 		~death_coffer_inactivebutton(component5, "", 0, component5)
-		if_setontimer(null, component5)
+		if_setontimernull
 	}
 	return 
 }

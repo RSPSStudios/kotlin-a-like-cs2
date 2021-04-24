@@ -15,12 +15,12 @@ fun br_tournament_button_op(opindex0: Int, component1: Component, string0: Strin
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	cc_settextshadow(true)
 	cc_settext(string0)
-	if_setonmouseover(null, component1)
-	if_setonmouseleave(null, component1)
+	if_setonmouseovernull
+	if_setonmouseleavenull
 	if_clearops(component1)
-	if_setonop(null, component1)
-	if_setontimer({
+	if_setonopnull
+	if_setontimer {
 		br_tournament_button_reset(calc(clientclock + 10), event_com, string0)
-	}, component1)
+	}
 	return 
 }

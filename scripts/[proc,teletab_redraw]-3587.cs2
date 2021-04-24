@@ -36,22 +36,22 @@ fun teletab_redraw(component0: Component, component1: Component, component2: Com
 	}
 	if (obj22 = null) {
 		~teletab_confirm_draw(true, "<col=9f9f9f>---</col>", component13)
-		if_setonmouserepeat(null, component13)
-		if_setonmouseleave(null, component13)
-		if_setonop(null, component13)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
+		if_setonopnull
 		if_clearops(component13)
 		if_settext("Select a tablet", component12)
 	} else {
 		~teletab_confirm_draw(false, string0, component13)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			teletab_confirm_draw(true, string0, component13)
-		}, component13)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			teletab_confirm_draw(false, string0, component13)
-		}, component13)
-		if_setonop({
+		}
+		if_setonop {
 			teletab_confirm_op(event_opindex, event_com, string0)
-		}, component13)
+		}
 		if_setop(1, string0, component13)
 		lvl18 = oc_param(obj22, spell_levelreq)
 		if (stat(magic) >= lvl18) {
@@ -109,7 +109,7 @@ fun teletab_redraw(component0: Component, component1: Component, component2: Com
 		}
 		}
 	}
-	if_setontimer(null, component13)
+	if_setontimernull
 	int14 = ~thinbox(component11, int14)
 	return 
 }

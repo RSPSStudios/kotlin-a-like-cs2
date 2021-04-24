@@ -10,16 +10,16 @@ fun script2133(component0: Component, string0: String, graphic1: Graphic, string
 	.cc_setsize(29, 22, ^setsize_abs, ^setsize_abs)
 	cc_setgraphic("miscgraphics,0")
 	.cc_setgraphic(graphic1)
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		cc_settrans(component0, .cc_getid, 100, null)
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		cc_settrans(component0, .cc_getid, 0, null)
-	}, component0)
+	}
 	if_setop(1, string0, component0)
-	if_setonop({
+	if_setonop {
 		script2134(event_opindex, cc_getid, .cc_getid, component0, string0, graphic1, string1, component2, component3, component4, component5)
-	}, component0)
-	if_setontimer(null, component0)
+	}
+	if_setontimernull
 	return 
 }

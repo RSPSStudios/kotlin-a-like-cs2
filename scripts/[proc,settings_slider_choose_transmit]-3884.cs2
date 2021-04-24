@@ -4,39 +4,39 @@ fun settings_slider_choose_transmit(struct0: Struct, int1: Int, int2: Int, int3:
 	when (int1): Int {
 		30 -> {
 		
-			.cc_setonvartransmit({
+			.cc_setonvartransmit {
 				settings_slider_on_transmit(struct0, int1, int2, int3, int4, component5, comsubid6, y7, int8, int9, component10, comsubid11, string0, int12, enum13, boolean14){VARP[168]}
-			})
+			}
 		}
 		31 -> {
 		
-			.cc_setonvartransmit({
+			.cc_setonvartransmit {
 				settings_slider_on_transmit(struct0, int1, int2, int3, int4, component5, comsubid6, y7, int8, int9, component10, comsubid11, string0, int12, enum13, boolean14){VARP[169]}
-			})
+			}
 		}
 		32 -> {
 		
-			.cc_setonvartransmit({
+			.cc_setonvartransmit {
 				settings_slider_on_transmit(struct0, int1, int2, int3, int4, component5, comsubid6, y7, int8, int9, component10, comsubid11, string0, int12, enum13, boolean14){VARP[872]}
-			})
+			}
 		}
 		15 -> {
 		
-			.cc_setonvartransmit({
+			.cc_setonvartransmit {
 				settings_slider_on_transmit(struct0, int1, int2, int3, int4, component5, comsubid6, y7, int8, int9, component10, comsubid11, string0, int12, enum13, boolean14){VARP[166]}
-			})
+			}
 		}
 		79 -> {
 		
-			.cc_setonvartransmit({
+			.cc_setonvartransmit {
 				settings_slider_on_transmit(struct0, int1, int2, int3, int4, component5, comsubid6, y7, int8, int9, component10, comsubid11, string0, int12, enum13, boolean14){VARP[2856]}
-			})
+			}
 		}
 	else -> {
 	
-		.cc_setonvartransmit({
+		.cc_setonvartransmit {
 			settings_slider_on_transmit(struct0, int1, int2, int3, int4, component5, comsubid6, y7, int8, int9, component10, comsubid11, string0, int12, enum13, boolean14){VARP[2855]}
-		})
+		}
 	}
 	}
 	return 

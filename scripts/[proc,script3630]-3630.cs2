@@ -4,117 +4,117 @@ fun script3630(int0: Int, component1: Component) {
 	when (int0): Int {
 		0 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				script3631(int0, component1){VARP[984]}
-			})
+			}
 		}
 		1 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				script3631(int0, component1){VARP[984]}
-			})
+			}
 		}
 		2 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				script3631(int0, component1){VARP[984]}
-			})
+			}
 		}
 		3 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				script3631(int0, component1){VARP[984]}
-			})
+			}
 		}
 		4 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				script3631(int0, component1){VARP[984]}
-			})
+			}
 		}
 		5 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				script3631(int0, component1){VARP[984]}
-			})
+			}
 		}
 		6 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				script3631(int0, component1){VARP[984]}
-			})
+			}
 		}
 		7 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				script3631(int0, component1){VARP[984]}
-			})
+			}
 		}
 		8 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				script3631(int0, component1){VARP[985]}
-			})
+			}
 		}
 		9 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				script3631(int0, component1){VARP[985]}
-			})
+			}
 		}
 		10 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				script3631(int0, component1){VARP[985]}
-			})
+			}
 		}
 		11 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				script3631(int0, component1){VARP[985]}
-			})
+			}
 		}
 		12 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				script3631(int0, component1){VARP[985]}
-			})
+			}
 		}
 		13 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				script3631(int0, component1){VARP[985]}
-			})
+			}
 		}
 		14 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				script3631(int0, component1){VARP[985]}
-			})
+			}
 		}
 		15 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				script3631(int0, component1){VARP[985]}
-			})
+			}
 		}
 		16 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				script3631(int0, component1){VARP[986]}
-			})
+			}
 		}
 		17 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				script3631(int0, component1){VARP[986]}
-			})
+			}
 		}
 		18 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				script3631(int0, component1){VARP[986]}
-			})
+			}
 		}
 	}
 	return 

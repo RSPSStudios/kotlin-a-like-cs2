@@ -19,9 +19,9 @@ fun slideshow_transition(component0: Component, enum1: Enum, int2: Int, int3: In
 	if (cc_find(component0, 2) = ^true) {
 		cc_setgraphic(graphic6)
 		cc_settrans(0)
-		cc_setontimer({
+		cc_setontimer {
 			slideshow_fadeout(component0, 2, int3)
-		})
+		}
 	}
 	return 
 }

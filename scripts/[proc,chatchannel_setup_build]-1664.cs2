@@ -81,18 +81,18 @@ fun chatchannel_setup_build(component0: Component, component1: Component, compon
 			cc_setopbase("<col=ff9040>${string0}</col>")
 			if (calc(count14 % 2) = 0) {
 				cc_settrans(255)
-				cc_setonmouseleave({
+				cc_setonmouseleave {
 					cc_settrans(event_com, event_comsubid, 255, null)
-				})
+				}
 			} else {
 				cc_settrans(245)
-				cc_setonmouseleave({
+				cc_setonmouseleave {
 					cc_settrans(event_com, event_comsubid, 245, null)
-				})
+				}
 			}
-			cc_setonmouserepeat({
+			cc_setonmouserepeat {
 				cc_settrans(event_com, event_comsubid, 230, null)
-			})
+			}
 			rank13 = enum(int, int, enum_1544, 1)
 			cc_setop(1, enum(int, string, enum_1541, rank13))
 			rank13 = enum(int, int, enum_1544, 2)
@@ -117,9 +117,9 @@ fun chatchannel_setup_build(component0: Component, component1: Component, compon
 			.cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
 			.cc_settextfont(b12_full)
 			.cc_settext(enum(int, string, enum_1541, rank13))
-			cc_setonop({
+			cc_setonop {
 				chatchannel_setup_setrank(component3, .cc_getid, event_opbase, event_opindex)
-			})
+			}
 			cc_create(component3, ^iftype_text, int10)
 			int10 = calc(int10 + 1)
 			cc_setsize(width7, int12, ^setsize_abs, ^setsize_abs)
@@ -139,23 +139,23 @@ fun chatchannel_setup_build(component0: Component, component1: Component, compon
 				if (boolean15 = true) {
 					cc_setop(1, "Reveal previous name")
 					cc_setopbase("<col=ff9040>${string0}</col>")
-					cc_setonop({
+					cc_setonop {
 						script1926(event_com, cc_getid, .cc_getid, string1, string0)
-					})
+					}
 				} else {
 					string1 = "Previous name:<br>${string1}"
-					cc_setonmouserepeat({
+					cc_setonmouserepeat {
 						tooltip_mouserepeat(event_com, event_comsubid, component5, string1, 25, width9)
-					})
-					cc_setonmouseleave({
+					}
+					cc_setonmouseleave {
 						deltooltip(component5)
-					})
+					}
 				}
 				.cc_sethide(false)
 			} else {
-				cc_setonmouseover({
+				cc_setonmouseover {
 					deltooltip(component5)
-				})
+				}
 				.cc_sethide(true)
 			}
 			count14, height11 = calc(count14 + 1), calc(height11 + int12)

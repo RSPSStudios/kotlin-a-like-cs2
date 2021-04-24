@@ -14,12 +14,12 @@ fun lumbridge_alchemy_init(component0: Component, component1: Component, compone
 		size7 = calc(size7 + 1)
 	}
 	~lumbridge_alchemy_invtransmit(component4, size6)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		lumbridge_alchemy_invtransmit(component4, size6){inv}
-	}, component0)
+	}
 	~lumbridge_alchemy_vartransmit(component1, component2, component3, component4, component5, size6)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		lumbridge_alchemy_vartransmit(component1, component2, component3, component4, component5, size6){VARP[318], VARP[925]}
-	}, component0)
+	}
 	return 
 }

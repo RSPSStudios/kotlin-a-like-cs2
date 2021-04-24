@@ -98,16 +98,16 @@ fun stats_setlevels(stat0: Stat, component1: Component, string0: String, compone
 		string3 = "<col=ff0000>Members Only</col>"
 	}
 	if (~on_mobile = true) {
-		if_setonop({
+		if_setonop {
 			stats_op(event_opindex, event_com, -1, component2, string2, string3, p12_full)
-		}, component1)
+		}
 		if (VARCINT[218] = component1 & VARCINT[217] = -1) {
 			~script2344(component1, -1, component2, string2, string3, p12_full)
 		}
 	} else {
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			script992(event_com, -1, component2, string2, string3, p12_full, calc(25 / 5))
-		}, component1)
+		}
 		VARCINT[2] = 0
 	}
 	return 

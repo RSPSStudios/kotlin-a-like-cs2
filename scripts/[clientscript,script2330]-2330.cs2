@@ -12,13 +12,13 @@ fun script2330(opindex0: Int, int1: Int, component2: Component, comsubid3: Int, 
 	if (cc_find(component2, comsubid3) = ^true & .cc_find(interface_50:0, comsubid5) = ^true) {
 		sound_synth(synth_2266, 1, 0)
 		cc_settrans(200)
-		cc_setonmouserepeat(null)
-		cc_setonmouseleave(null)
+		cc_setonmouserepeatnull
+		cc_setonmouseleavenull
 		cc_clearops
-		cc_setonop(null)
-		cc_setontimer({
+		cc_setonopnull
+		cc_setontimer {
 			script2331(calc(clientclock + 80), int1, event_com, event_comsubid, string0, int4)
-		})
+		}
 		.cc_resume_pausebutton
 	}
 	return 

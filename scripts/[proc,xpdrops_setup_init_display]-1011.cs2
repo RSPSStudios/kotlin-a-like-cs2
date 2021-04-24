@@ -9,21 +9,21 @@ fun xpdrops_setup_init_display(component0: Component, component1: Component, tex
 	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_bottom)
 	cc_setgraphic("tradebacking")
 	cc_settiling(true)
-	cc_setonclick({
+	cc_setonclick {
 		xpdrops_setup_display_open(component0, component1, layer3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25)
-	})
+	}
 	cc_create(component0, ^iftype_rectangle, int26)
 	int26 = calc(int26 + 1)
 	cc_setsize(0, 20, ^setsize_minus, ^setsize_abs)
 	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_bottom)
 	cc_setfill(false)
 	cc_setcolour(0x0e0e0c)
-	cc_setonmouserepeat({
+	cc_setonmouserepeat {
 		tooltip_mouserepeat(event_com, event_comsubid, component7, string1, 25, width2)
-	})
-	cc_setonmouseleave({
+	}
+	cc_setonmouseleave {
 		deltooltip(component7)
-	})
+	}
 	cc_create(component0, ^iftype_rectangle, int26)
 	int26 = calc(int26 + 1)
 	cc_setsize(2, 18, ^setsize_minus, ^setsize_abs)

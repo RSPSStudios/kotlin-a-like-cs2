@@ -2,7 +2,7 @@
 fun script3759(component0: Component, comsubid1: Int, clock2: Int, seq3: Seq) {
 
 	if (clientclock >= clock2 & cc_find(component0, comsubid1) = ^true) {
-		cc_setontimer(null)
+		cc_setontimernull
 		cc_setmodelanim(seq3)
 	}
 	return 

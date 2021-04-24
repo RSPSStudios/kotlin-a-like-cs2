@@ -12,15 +12,15 @@ fun script1156(obj0: Obj, num1: Int, component2: Component) {
 		cc_setop(5, "Withdraw-All")
 		cc_setop(10, "Examine")
 		cc_setopbase("<col=ff981f>${oc_name(obj0)}")
-		cc_setondragcomplete({
+		cc_setondragcomplete {
 			script1157(event_com, event_comsubid, event_dropsubid)
-		})
+		}
 	} else {
 		cc_settrans(255)
 		cc_setobject_nonum(obj_6512, 1)
 		cc_clearops
-		cc_setondrag(null)
-		cc_setondragcomplete(null)
+		cc_setondragnull
+		cc_setondragcompletenull
 	}
 	return 
 }

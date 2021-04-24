@@ -48,12 +48,12 @@ fun fairyrings_sort_update(component0: Component, component1: Component, int2: I
 				if_setposition(2, int10, ^setpos_abs_left, ^setpos_abs_top, component6)
 				if_setposition(20, int10, ^setpos_abs_left, ^setpos_abs_top, component7)
 				if_setopbase("<col=ff981f>${if_gettext(component7)}</col>", component5)
-				if_setonmouseover({
+				if_setonmouseover {
 					text_colour_swapper(component7, 0xff7f7f)
-				}, component5)
-				if_setonmouseleave({
+				}
+				if_setonmouseleave {
 					text_colour_swapper(component7, 0xff3f3f)
-				}, component5)
+				}
 				boolean12 = false
 				int10 = calc(int10 + int9 + 3)
 			} else {
@@ -121,12 +121,12 @@ fun fairyrings_sort_update(component0: Component, component1: Component, int2: I
 		cc_settextalign(^settextalign_left, ^settextalign_top, 0)
 		cc_settext(string0)
 		if_setopbase("<col=ff981f>${string0}</col>", component0[int13])
-		if_setonmouseover({
+		if_setonmouseover {
 			cc_colour_swapper(component0, cc_getid, 0xff7f7f)
-		}, component0[int13])
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			cc_colour_swapper(component0, cc_getid, 0xff3f3f)
-		}, component0[int13])
+		}
 		int10 = calc(int10 + int9 + 3)
 		int13 = calc(int13 + 1)
 	}
@@ -137,12 +137,12 @@ fun fairyrings_sort_update(component0: Component, component1: Component, int2: I
 		if_setsize(width8, int9, ^setsize_abs, ^setsize_abs, interface_381:139)
 		if_setposition(20, int10, ^setpos_abs_left, ^setpos_abs_top, interface_381:139)
 		if_setcolour(0xff3f3f, interface_381:139)
-		if_setonmouseover({
+		if_setonmouseover {
 			text_colour_swapper(event_com, 0xff7f7f)
-		}, interface_381:139)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			text_colour_swapper(event_com, 0xff3f3f)
-		}, interface_381:139)
+		}
 		int10 = calc(int10 + int9 + 3)
 	} else {
 		if_sethide(true, interface_381:139)

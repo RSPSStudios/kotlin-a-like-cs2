@@ -30,12 +30,12 @@ fun hallowed_tools_main_recreate(component0: Component, obj1: Obj, text0: String
 	cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
 	cc_setgraphicshadow(0x333333)
 	cc_setoutline(1)
-	if_setonop({
+	if_setonop {
 		cc_settrans_temporarily(event_com, cc_getid, 125, 0)
-	}, component0)
+	}
 	~hallowed_tools_main_update(component0, obj1, text0, int2, int5)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		hallowed_tools_main_update(component0, obj1, text0, int2, int5){VARP[2767]}
-	}, component0)
+	}
 	return 
 }

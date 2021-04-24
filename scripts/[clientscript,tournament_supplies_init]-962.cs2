@@ -26,9 +26,9 @@ fun tournament_supplies_init(int0: Int, component1: Component, component2: Compo
 		cc_setop(4, "Take-X")
 		cc_setop(10, "Examine")
 		cc_setopbase("<col=ff9040>${oc_name(namedobj13)}</col>")
-		cc_setonop({
+		cc_setonop {
 			cc_settrans_temporarily(event_com, event_comsubid, 100, 0)
-		})
+		}
 		cc_sethide(true)
 		int10 = calc(int10 + 1)
 		namedobj13 = enum(int, namedobj, enum11, int10)
@@ -51,9 +51,9 @@ fun tournament_supplies_init(int0: Int, component1: Component, component2: Compo
 			cc_setop(4, "Take-X")
 			cc_setop(10, "Examine")
 			cc_setopbase("<col=ff9040>${oc_name(namedobj13)}</col>")
-			cc_setonop({
+			cc_setonop {
 				cc_settrans_temporarily(event_com, event_comsubid, 100, 0)
-			})
+			}
 			cc_sethide(true)
 			int14 = calc(int14 + 1)
 			int10 = calc(int10 + 1)
@@ -80,8 +80,8 @@ fun tournament_supplies_init(int0: Int, component1: Component, component2: Compo
 		~tournament_supplies_switchlayer(component2, component1, component2, "Items", component6, "Load-outs", component3, component4, component5, int8, int9)
 	}
 	~tournament_supplies_previewarea(component7)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component7)  {
 		tournament_supplies_previewarea(component7){inv_207}
-	}, component7)
+	}
 	return 
 }

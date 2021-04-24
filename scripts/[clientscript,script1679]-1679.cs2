@@ -6,11 +6,11 @@ fun script1679(opindex0: Int, component1: Component, component2: Component) {
 	}
 	sound_synth(synth_2266, 1, 0)
 	~script1682(component1, true)
-	if_setonmouserepeat(null, component1)
-	if_setonmouseleave(null, component1)
-	if_setonop(null, component1)
-	if_setontimer({
+	if_setonmouserepeatnull
+	if_setonmouseleavenull
+	if_setonopnull
+	if_setontimer {
 		script1680(event_com, component2, calc(clientclock + 40))
-	}, component1)
+	}
 	return 
 }

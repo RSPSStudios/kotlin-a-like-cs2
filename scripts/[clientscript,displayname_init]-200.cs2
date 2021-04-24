@@ -3,8 +3,8 @@ fun displayname_init(component0: Component, component1: Component, component2: C
 
 	~script1678(component4, component5)
 	~displayname_draw(component1, component2, component3)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		displayname_draw(component1, component2, component3){VARP[1042]}
-	}, component0)
+	}
 	return 
 }

@@ -1,12 +1,12 @@
 // 2208 clientscript
 fun script2208(component0: Component, string0: String) {
 
-	if_setonop({
+	if_setonop {
 		script2210(event_opindex, component0)
-	}, component0)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component0)  {
 		script2209{VARP[967]}
-	}, component0)
+	}
 	~script2213
 	return 
 }

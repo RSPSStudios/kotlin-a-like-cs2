@@ -17,8 +17,8 @@ fun notification_display_init(colour0: Int, text0: String, text1: String) {
 	VARCINT[415] = colour0
 	VARCINT[391] = 1
 	VARCINT[392] = 0
-	if_setontimer({
+	if_setontimer {
 		notification_start(1, 0, 2)
-	}, interface_660:2)
+	}
 	return 
 }

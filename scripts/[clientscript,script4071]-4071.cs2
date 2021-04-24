@@ -6,9 +6,9 @@ fun script4071(component0: Component, component1: Component, component2: Compone
 	~script1486(component3, ^setpos_abs_left, 1, 0)
 	~script1490(component1)
 	~script4073(component4)
-	if_setonsubchange({
+	if_setonsubchange {
 		script4072(component4)
-	}, component0)
+	}
 	if_sethide(true, interface_437:9)
 	if_sethide(true, interface_437:11)
 	if_sethide(true, interface_437:10)

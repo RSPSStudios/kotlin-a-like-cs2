@@ -2,37 +2,37 @@
 fun tol_pipe_setbuttons(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
 
 	if (VARBIT[3341] = 1 | VARBIT[3342] = 1 | VARBIT[3343] = 1 | VARBIT[3344] = 1 | VARBIT[3345] = 1) {
-		if_setonop({
+		if_setonop {
 			tol_pressure_valveop(event_opindex, synth_3429)
-		}, component0)
-		if_setonop({
+		}
+		if_setonop {
 			tol_pressure_valveop(event_opindex, synth_3429)
-		}, component1)
-		if_setonop({
+		}
+		if_setonop {
 			tol_pressure_valveop(event_opindex, synth_3429)
-		}, component2)
-		if_setonop({
+		}
+		if_setonop {
 			tol_pressure_valveop(event_opindex, synth_3429)
-		}, component3)
-		if_setonop({
+		}
+		if_setonop {
 			tol_pressure_valveop(event_opindex, synth_3429)
-		}, component4)
+		}
 	} else {
-		if_setonop({
+		if_setonop {
 			tol_pressure_valveop(event_opindex, synth_2402)
-		}, component0)
-		if_setonop({
+		}
+		if_setonop {
 			tol_pressure_valveop(event_opindex, synth_2402)
-		}, component1)
-		if_setonop({
+		}
+		if_setonop {
 			tol_pressure_valveop(event_opindex, synth_2402)
-		}, component2)
-		if_setonop({
+		}
+		if_setonop {
 			tol_pressure_valveop(event_opindex, synth_2402)
-		}, component3)
-		if_setonop({
+		}
+		if_setonop {
 			tol_pressure_valveop(event_opindex, synth_2402)
-		}, component4)
+		}
 	}
 	return 
 }

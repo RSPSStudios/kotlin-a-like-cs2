@@ -8,9 +8,9 @@ fun rune_pouch_inventoryreorder(drop0: Component, drop1: Component, comsubid2: I
 	if (drop1 ! drop0) {
 		if (cc_find(drop0, comsubid2) = ^true) {
 			cc_settrans(trans4)
-			cc_setontimer({
+			cc_setontimer {
 				cc_settrans_temporarily_end(event_com, event_comsubid, trans5, calc(clientclock + 30))
-			})
+			}
 		}
 		return 
 	}

@@ -11,21 +11,21 @@ fun notification_tli_update() {
 	when (int0): Int {
 		1, 2 -> {
 		
-			if_setontimer({
+			if_setontimer {
 				notification_start(int0, VARCINT[390], VARCINT[389])
-			}, interface_660:2)
+			}
 		}
 		3 -> {
 		
-			if_setontimer({
+			if_setontimer {
 				notification_delay(int1)
-			}, interface_660:2)
+			}
 		}
 		4, 5 -> {
 		
-			if_setontimer({
+			if_setontimer {
 				notification_end(int0, VARCINT[390], VARCINT[389])
-			}, interface_660:2)
+			}
 		}
 	}
 	return 

@@ -9,7 +9,7 @@ fun overlay_portal_adjust(clock0: Int, boolean1: Boolean, component2: Component)
 		} else if (cc_find(component2, 1) = ^true) {
 			cc_settrans(0)
 		}
-		if_setontimer(null, component2)
+		if_setontimernull
 		return 
 	}
 	if (cc_find(component2, 0) = ^true) {

@@ -41,12 +41,12 @@ fun league_task_filter_init(enum0: Enum, component1: Component, component2: Comp
 	cc_settextshadow(true)
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	~league_task_updatetext(enum0)
-	if_setonvartransmit({
+	if_setonvartransmit(component2)  {
 		league_task_updatetext(event_com, comsubid8, enum0){VARP[2606], VARP[2805]}
-	}, component2)
-	.cc_setonclick({
+	}
+	.cc_setonclick {
 		league_task_filter_open(enum0, component1, component2, comsubid8, component3, component4, colour6)
-	})
+	}
 	cc_create(component2, ^iftype_text, int7)
 	int7 = calc(int7 + 1)
 	cc_setposition(2, 0, ^setpos_abs_left, ^setpos_abs_top)

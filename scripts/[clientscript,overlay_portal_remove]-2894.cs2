@@ -10,8 +10,8 @@ fun overlay_portal_remove(component0: Component, component1: Component, colour2:
 		cc_setcolour(colour2)
 		cc_settrans(trans3)
 	}
-	if_setontimer({
+	if_setontimer {
 		overlay_portal_adjust(clientclock, false, component1)
-	}, component1)
+	}
 	return 
 }

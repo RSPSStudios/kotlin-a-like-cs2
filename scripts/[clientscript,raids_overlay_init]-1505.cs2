@@ -43,8 +43,8 @@ fun raids_overlay_init(int0: Int, component1: Component, component2: Component, 
 	cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
 	.cc_settextalign(^settextalign_right, ^settextalign_centre, 0)
 	~raids_overlay_databox(component5)
-	if_setonvartransmit({
+	if_setonvartransmit(component5)  {
 		raids_overlay_databox(component5, cc_getid, .cc_getid){VARP[1431], VARP[1432], VARP[1429]}
-	}, component5)
+	}
 	return 
 }

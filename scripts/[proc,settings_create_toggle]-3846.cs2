@@ -34,9 +34,9 @@ fun settings_create_toggle(int0: Int, int1: Int, int2: Int, int3: Int, trans4: I
 	cc_setposition(0, int0, ^setpos_abs_centre, ^setpos_abs_top)
 	cc_setfill(true)
 	cc_setop(1, "Toggle")
-	cc_setonop({
+	cc_setonop {
 		settings_toggle_op(struct5, int13, component7, calc(int2 + 2), boolean16, boolean14)
-	})
+	}
 	cc_setcolour(^white)
 	cc_settrans(255)
 	int3 = calc(int3 + 1)
@@ -50,12 +50,12 @@ fun settings_create_toggle(int0: Int, int1: Int, int2: Int, int3: Int, trans4: I
 		~settings_toggle_choose_transmit(component7, calc(int2 + 2), boolean16, int13, struct5, trans4)
 	}
 	if (boolean9 = false & int15 = 1) {
-		cc_setonmouseover({
+		cc_setonmouseover {
 			cc_settrans(component7, int2, 240, null)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			cc_settrans(component7, int2, trans4, null)
-		})
+		}
 	}
 	int2 = calc(int2 + 1)
 	cc_create(component7, ^iftype_text, int2)
@@ -71,12 +71,12 @@ fun settings_create_toggle(int0: Int, int1: Int, int2: Int, int3: Int, trans4: I
 	}
 	cc_settextalign(^settextalign_left, ^settextalign_centre, 14)
 	if (boolean9 = false & int11 = 1 & string_length(string1) > 0) {
-		cc_setonmouserepeat({
+		cc_setonmouserepeat {
 			tooltip_mouserepeat(component7, int2, component8, string1, 25, 190)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			deltooltip(component8)
-		})
+		}
 	}
 	int2 = calc(int2 + 1)
 	cc_create(component7, ^iftype_graphic, int2)

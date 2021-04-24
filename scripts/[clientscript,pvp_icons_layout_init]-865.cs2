@@ -10,21 +10,21 @@ fun pvp_icons_layout_init(component0: Component, component1: Component, componen
 	~script2249(component5, setbit(0, 3))
 	~script1486(component6, ^setpos_abs_left, 1, 0)
 	~script2249(component7, setbit(0, 1))
-	if_setontimer({
+	if_setontimer {
 		pvp_icons_layout(false)
-	}, component0)
-	if_setonresize({
+	}
+	if_setonresize {
 		pvp_icons_layout(true)
-	}, component0)
-	if_setonsubchange({
+	}
+	if_setonsubchange {
 		pvp_icons_layout(true)
-	}, component0)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component0)  {
 		pvp_icons_layout(true){VARP[1293], VARP[1434], VARP[1542], VARP[1676], VARP[1327], VARP[1377], VARP[1378], VARP[1601], VARP[1602], VARP[2741]}
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		deltooltip(interface_90:56)
-	}, interface_90:49)
+	}
 	cc_deleteall(component11)
 	cc_create(component11, ^iftype_text, 0)
 	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
@@ -34,9 +34,9 @@ fun pvp_icons_layout_init(component0: Component, component1: Component, componen
 	cc_settextfont(p11_full)
 	cc_settextalign(^settextalign_left, ^settextalign_top, 0)
 	cc_settextshadow(true)
-	cc_setonvartransmit({
+	cc_setonvartransmit {
 		kdr_update(event_com, event_comsubid){VARP[1105], VARP[1320], VARP[718], VARP[1327]}
-	})
+	}
 	~kdr_update
 	~pvp_icons_layout
 	return 

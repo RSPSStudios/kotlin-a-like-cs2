@@ -9,7 +9,7 @@ fun setting_dropdown_entry_close(component0: Component, component1: Component, c
 	cc_deleteall(component2)
 	cc_deleteall(component3)
 	cc_deleteall(component4)
-	if_setonop(null, component1)
+	if_setonopnull
 	if_sethide(true, component4)
 	return 
 }

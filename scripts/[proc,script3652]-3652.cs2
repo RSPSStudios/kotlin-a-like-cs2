@@ -9,12 +9,12 @@ fun script3652(component0: Component) {
 	cc_setsize(26, 23, ^setsize_abs, ^setsize_abs)
 	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
 	if (~on_mobile = false) {
-		cc_setonmouserepeat({
+		cc_setonmouserepeat {
 			script3440(event_com, event_comsubid, graphic1, null)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			script3440(event_com, event_comsubid, graphic2, null)
-		})
+		}
 	}
 	val width3: Int = 26
 	val height4: Int = 23
@@ -26,8 +26,8 @@ fun script3652(component0: Component) {
 	if_setsize(width3, height4, ^setsize_abs, ^setsize_abs, component0)
 	if_setposition(x5, y6, ^setpos_abs_right, ^setpos_abs_top, component0)
 	if_setop(1, "Close", component0)
-	if_setonop({
+	if_setonop {
 		closebutton_click
-	}, component0)
+	}
 	return 
 }

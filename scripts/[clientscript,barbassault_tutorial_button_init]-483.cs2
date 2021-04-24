@@ -2,8 +2,8 @@
 fun barbassault_tutorial_button_init(component0: Component, int1: Int) {
 
 	~barbassault_tutorial_button_setup(component0, int1)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		barbassault_tutorial_button_setup(component0, int1){VARP[948]}
-	}, component0)
+	}
 	return 
 }

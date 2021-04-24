@@ -94,9 +94,9 @@ fun makeover_drawmodels(component0: Component, enum1: Enum, enum2: Enum, enum3: 
 		}
 		cc_setgraphic("overlay_multiway")
 		~makeover_indicator(int20, int8)
-		cc_setonvartransmit({
+		cc_setonvartransmit {
 			makeover_indicator(event_com, event_comsubid, int20, int8){VARP[261], VARP[262]}
-		})
+		}
 		int20 = calc(int20 + 1)
 	}
 	return 

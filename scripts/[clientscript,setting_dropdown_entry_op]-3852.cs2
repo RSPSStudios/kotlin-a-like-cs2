@@ -10,9 +10,9 @@ fun setting_dropdown_entry_op(int0: Int, text0: String, comsubid1: Int, count2: 
 			} else {
 				~settings_set_keybind(int10, count2)
 			}
-			cc_setontimer({
+			cc_setontimer {
 				setting_dropdown_synch(0, comsubid1, component3, enum9, int10, int0)
-			})
+			}
 		}
 	}
 	if (cc_find(component3, comsubid11) = ^true) {
@@ -23,7 +23,7 @@ fun setting_dropdown_entry_op(int0: Int, text0: String, comsubid1: Int, count2: 
 	cc_deleteall(component6)
 	cc_deleteall(component7)
 	cc_deleteall(component8)
-	if_setonop(null, component5)
+	if_setonopnull
 	if_sethide(true, component8)
 	return 
 }

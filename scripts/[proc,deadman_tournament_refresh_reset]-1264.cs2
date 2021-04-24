@@ -11,16 +11,16 @@ fun deadman_tournament_refresh_reset(component0: Component) {
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	cc_settextshadow(true)
 	cc_settext("Refresh")
-	if_setonmouseover({
+	if_setonmouseover {
 		cc_colour_swapper(event_com, comsubid1, ^white)
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		cc_colour_swapper(event_com, comsubid1, 0xff981f)
-	}, component0)
+	}
 	if_setop(1, "Refresh", component0)
-	if_setonop({
+	if_setonop {
 		deadman_tournament_refresh_op(event_opindex, event_com)
-	}, component0)
-	if_setontimer(null, component0)
+	}
+	if_setontimernull
 	return 
 }

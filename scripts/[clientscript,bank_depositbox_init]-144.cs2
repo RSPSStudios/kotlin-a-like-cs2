@@ -16,31 +16,31 @@ fun bank_depositbox_init(component0: Component, component1: Component, component
 		size10 = calc(size10 + 1)
 	}
 	~bank_depositbox_update(component1, component8, component9)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component1)  {
 		bank_depositbox_update(component1, component8, component9){inv}
-	}, component1)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component1)  {
 		bank_depositbox_update(component1, component8, component9){VARP[261], VARP[262], VARP[263], VARP[1793], VARP[1794], VARP[1141]}
-	}, component1)
-	if_setonmouseover({
+	}
+	if_setonmouseover {
 		settrans(component5, 75)
-	}, component4)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		settrans(component5, 0)
-	}, component4)
-	if_setonmouseover({
+	}
+	if_setonmouseover {
 		settrans(component7, 75)
-	}, component6)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		settrans(component7, 0)
-	}, component6)
+	}
 	val graphic12: Graphic = "miscgraphics,0"
 	val graphic13: Graphic = "miscgraphics,9"
-	if_setonop({
+	if_setonop {
 		bankmain_depositall(event_com, graphic13, graphic12, event_opindex)
-	}, component4)
-	if_setonop({
+	}
+	if_setonop {
 		bankmain_depositall(event_com, graphic13, graphic12, event_opindex)
-	}, component6)
+	}
 	return 
 }

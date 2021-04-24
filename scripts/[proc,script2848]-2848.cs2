@@ -31,9 +31,9 @@ fun script2848(component0: Component, int1: Int, int2: Int, y3: Int, int4: Int, 
 				cc_setop(3, "Buy-5")
 				cc_setop(4, "Buy-10")
 				cc_setop(5, "Examine")
-				cc_setonop({
+				cc_setonop {
 					cc_settrans_temporarily(event_com, event_comsubid, 100, 0)
-				})
+				}
 				int10 = calc(int10 + 36 + 5)
 				int6 = calc(int6 + 1)
 			}

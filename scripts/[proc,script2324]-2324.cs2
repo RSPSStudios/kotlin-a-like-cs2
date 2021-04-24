@@ -14,10 +14,10 @@ fun script2324(component0: Component, string0: String, int1: Int, int2: Int) {
 	if (int2 = 2) {
 		~script2326(component0, cc_getid, string0, int1)
 	} else {
-		if_setonmouserepeat(null, component0)
-		if_setonmouseleave(null, component0)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
 		if_clearops(component0)
-		if_setonop(null, component0)
+		if_setonopnull
 	}
 	return 
 }

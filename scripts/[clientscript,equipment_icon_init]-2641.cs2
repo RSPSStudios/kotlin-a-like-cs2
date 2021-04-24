@@ -1,8 +1,8 @@
 // 2641 clientscript
 fun equipment_icon_init(component0: Component) {
 
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		equipment_icon_check(component0){VARP[281], VARP[2686]}
-	}, component0)
+	}
 	return 
 }

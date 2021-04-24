@@ -4,11 +4,11 @@ fun poh_menagerie_initlist(component0: Component, component1: Component) {
 	cc_deleteall(component1)
 	~scrollbar_vertical(component1, component0, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
 	~poh_menagerie_drawlist(component0, component1, 0)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		poh_menagerie_drawlist(component0, component1){inv_517}
-	}, component0)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component0)  {
 		poh_menagerie_drawlist(component0, component1){VARP[864], VARP[1416], VARP[783]}
-	}, component0)
+	}
 	return 
 }

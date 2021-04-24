@@ -10,9 +10,9 @@ fun farming_view_init(component0: Component, component1: Component, component2: 
 	~farming_view_createtab(5, "Special", component0)
 	if_setsize(calc((5 + 1) * 72), if_getheight(component0), ^setsize_abs, ^setsize_abs, component0)
 	~farming_view_updatetabs(component0, component1, component2)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		farming_view_updatetabs(component0, component1, component2){VARP[19]}
-	}, component0)
+	}
 	~scrollbar_vertical(component2, component1, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
 	return 
 }

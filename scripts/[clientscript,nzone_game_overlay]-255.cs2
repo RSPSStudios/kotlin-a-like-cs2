@@ -2,9 +2,9 @@
 fun nzone_game_overlay(coord0: Coord, string0: String) {
 
 	if_sethide(false, interface_202:0)
-	if_setontimer({
+	if_setontimer {
 		nzone_game_hide(interface_202:0, coord0)
-	}, interface_202:9)
+	}
 	cc_deleteall(interface_202:8)
 	cc_create(interface_202:8, ^iftype_rectangle, 0)
 	cc_setcolour(0x7f460f)
@@ -76,8 +76,8 @@ fun nzone_game_overlay(coord0: Coord, string0: String) {
 	.cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	.cc_settextfont(quill_oblique_large)
 	.cc_settext(string0)
-	cc_setontimer({
+	cc_setontimer {
 		nzone_game_subtitle(event_com, cc_getid, .cc_getid, clientclock)
-	})
+	}
 	return 
 }

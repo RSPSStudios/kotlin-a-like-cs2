@@ -30,12 +30,12 @@ fun script1961(enum0: Enum, component1: Component, obj2: Obj, text0: String, boo
 	cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
 	cc_setgraphicshadow(0x333333)
 	cc_setoutline(1)
-	if_setonop({
+	if_setonop {
 		cc_settrans_temporarily(event_com, cc_getid, 125, 0)
-	}, component1)
+	}
 	~script2148(enum0, component1, obj2, text0, int5)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component1)  {
 		script2147(enum0, component1, obj2, text0, int5){inv, worn}
-	}, component1)
+	}
 	return 
 }

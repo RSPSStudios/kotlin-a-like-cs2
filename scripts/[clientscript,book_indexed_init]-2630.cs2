@@ -8,38 +8,38 @@ fun book_indexed_init(component0: Component, component1: Component, component2: 
 	val graphic11: Graphic = "rightarrow"
 	val graphic12: Graphic = "rightarrow_highlight"
 	if (~on_mobile = false) {
-		if_setonmouseover({
+		if_setonmouseover {
 			graphic_swapper(component1, graphic8)
-		}, component0)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			graphic_swapper(component1, graphic7)
-		}, component0)
-		if_setonmouseover({
+		}
+		if_setonmouseover {
 			graphic_swapper(component3, graphic10)
-		}, component2)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			graphic_swapper(component3, graphic9)
-		}, component2)
-		if_setonmouseover({
+		}
+		if_setonmouseover {
 			graphic_swapper(component5, graphic12)
-		}, component4)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			graphic_swapper(component5, graphic11)
-		}, component4)
-		if_setonmouseover({
+		}
+		if_setonmouseover {
 			text_colour_swapper(component6, 0xffbd70)
-		}, component6)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			text_colour_swapper(component6, 0xff981f)
-		}, component6)
+		}
 		if_setposition(2, 2, ^setpos_abs_right, ^setpos_abs_top, component0)
 		if_setsize(26, 23, ^setsize_abs, ^setsize_abs, component0)
 	} else {
 		if_setposition(0, 0, ^setpos_abs_right, ^setpos_abs_top, component0)
 		if_setsize(30, 27, ^setsize_abs, ^setsize_abs, component0)
 	}
-	if_setonop({
+	if_setonop {
 		closebutton_click
-	}, component0)
+	}
 	return 
 }

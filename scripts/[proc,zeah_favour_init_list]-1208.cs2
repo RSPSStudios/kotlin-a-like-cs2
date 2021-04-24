@@ -11,9 +11,9 @@ fun zeah_favour_init_list(int0: Int, int1: Int, int2: Int, int3: Int, int4: Int,
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	cc_settextshadow(true)
 	~zeah_favour_settitle(int3, int4)
-	cc_setonvartransmit({
+	cc_setonvartransmit {
 		zeah_favour_settitle(event_com, event_comsubid, int3){VARP[1317], VARP[1318]}
-	})
+	}
 	cc_create(component5, ^iftype_text, int1)
 	int1 = calc(int1 + 1)
 	.cc_create(component5, ^iftype_text, int1)

@@ -50,25 +50,25 @@ fun script3446(string0: String) {
 		if (cc_find(interface_120:5, int0[int0]) = ^true & .cc_find(interface_120:5, calc(int0[int0] - 50)) = ^true) {
 			cc_setposition(0, height2, ^setpos_abs_centre, ^setpos_abs_top)
 			.cc_setposition(0, height2, ^setpos_abs_centre, ^setpos_abs_top)
-			.cc_setonmouserepeat({
+			.cc_setonmouserepeat {
 				cc_settrans(event_com, event_comsubid, 200, null)
-			})
+			}
 			if (calc(int0 % 2) = 0) {
 				.cc_settrans(230)
-				.cc_setonmouseleave({
+				.cc_setonmouseleave {
 					cc_settrans(event_com, event_comsubid, 230, null)
-				})
-				.cc_setonop({
+				}
+				.cc_setonop {
 					script3447(event_opindex, event_com, event_comsubid, 230)
-				})
+				}
 			} else {
 				.cc_settrans(245)
-				.cc_setonmouseleave({
+				.cc_setonmouseleave {
 					cc_settrans(event_com, event_comsubid, 245, null)
-				})
-				.cc_setonop({
+				}
+				.cc_setonop {
 					script3447(event_opindex, event_com, event_comsubid, 245)
-				})
+				}
 			}
 		}
 		int0, height2 = calc(int0 + 1), calc(height2 + 22)

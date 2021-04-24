@@ -2,8 +2,8 @@
 fun autocast_init(component0: Component, component1: Component, component2: Component) {
 
 	~autocast_setup(component1, component2)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		autocast_setup(component1, component2){VARP[664]}
-	}, component0)
+	}
 	return 
 }

@@ -17,12 +17,12 @@ fun welcome_screen_messages(component0: Component, component1: Component, compon
 		if_settext("You have no unread messages<br>in your message centre.", component1)
 	}
 	if (~on_mobile = false) {
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			comp_sethide(false, component2)
-		}, component0)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			comp_sethide(true, component2)
-		}, component0)
+		}
 	}
 	if (clienttype ! ^clienttype_ios) {
 		if_setop(1, "View Inbox", component0)

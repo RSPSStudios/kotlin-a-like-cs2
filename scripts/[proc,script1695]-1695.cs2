@@ -16,8 +16,8 @@ fun script1695(obj0: Obj, num1: Int, int2: Int, int3: Int, int4: Int, int5: Int)
 	} else {
 		mes0 = "${oc_name(obj0)}: This item will be lost to the player who kills you."
 	}
-	cc_setonop({
+	cc_setonop {
 		deathkeep_opitem(event_com, event_comsubid, mes0)
-	})
+	}
 	return calc(int5 + 1), int6
 }

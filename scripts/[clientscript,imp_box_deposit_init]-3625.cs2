@@ -2,8 +2,8 @@
 fun imp_box_deposit_init(component0: Component) {
 
 	~imp_box_text_update(component0)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		imp_box_text_update(component0){inv}
-	}, component0)
+	}
 	return 
 }

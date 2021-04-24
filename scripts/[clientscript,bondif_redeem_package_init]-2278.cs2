@@ -19,12 +19,12 @@ fun bondif_redeem_package_init(int0: Int, num1: Int, graphic2: Graphic, int3: In
 	val int6: Int = 0
 	if (string_length(string2) > 0) {
 		if_setop(2, ~script1299(string0, "<br>", " "), component5)
-		if_setonop({
+		if_setonop {
 			bondif_redeem_package_op_disabled(removetags(string2))
-		}, component5)
-		if_setonvartransmit(null, component5)
-		if_setonmouserepeat(null, component5)
-		if_setonmouseleave(null, component5)
+		}
+		if_setonvartransmitnull
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
 		int6 = ~v2_stone_button_in_filled(component5)
 		int6 = ~bondif_redeem_package_details(component5, int6, string0, num1, graphic2, int3, height4, text1)
 		cc_create(component5, ^iftype_graphic, int6)
@@ -46,12 +46,12 @@ fun bondif_redeem_package_init(int0: Int, num1: Int, graphic2: Graphic, int3: In
 	} else {
 		if_setop(1, ~script1299(string0, "<br>", " "), component5)
 		~bondif_redeem_package_draw(int0, component5, string0, num1, graphic2, int3, height4, text1)
-		if_setonvartransmit({
+		if_setonvartransmit(component5)  {
 			bondif_redeem_package_draw(int0, component5, string0, num1, graphic2, int3, height4, text1){VARP[1204]}
-		}, component5)
-		if_setonop({
+		}
+		if_setonop {
 			bondif_redeem_package_op_permitted(event_opindex, int0, component5, string0, num1, graphic2, int3, height4, text1)
-		}, component5)
+		}
 	}
 	if_setposition(0, VARCINT[179], ^setpos_abs_centre, ^setpos_abs_top, component5)
 	VARCINT[179] = calc(VARCINT[179] + if_getheight(component5))

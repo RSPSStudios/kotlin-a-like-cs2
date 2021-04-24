@@ -77,19 +77,19 @@ fun nzone_listbosses(flags0: Int, flags1: Int, flags2: Int, flags3: Int, flags4:
 						}
 						cc_setop(1, "Toggle")
 						cc_setopbase("<col=ff9040>${enum(int, string, enum_804, int11)}</col> bosses")
-						cc_setonop({
+						cc_setonop {
 							script1258(event_opindex, int15, event_com, .cc_getid, string2)
-						})
-						cc_setonmouseover({
+						}
+						cc_setonmouseover {
 							cc_settrans(event_com, event_comsubid, 255, null)
-						})
-						cc_setonmouseleave({
+						}
+						cc_setonmouseleave {
 							cc_settrans(event_com, event_comsubid, 0, interface_129:15)
-						})
+						}
 						string2 = "${string2}:<br>Unlocked from <col=7f0000>${enum(int, string, enum_804, int11)}</col>"
-						cc_setonmouserepeat({
+						cc_setonmouserepeat {
 							tooltip_mouserepeat(event_com, event_comsubid, interface_129:15, string2, 25, 512)
-						})
+						}
 						.cc_create(interface_129:13, ^iftype_graphic, int8)
 						int8 = calc(int8 + 1)
 						.cc_setsize(17, 17, ^setsize_abs, ^setsize_abs)

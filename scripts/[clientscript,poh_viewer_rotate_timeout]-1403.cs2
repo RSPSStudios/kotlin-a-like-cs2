@@ -6,7 +6,7 @@ fun poh_viewer_rotate_timeout(component0: Component, comsubid1: Int, clock2: Int
 	}
 	if (cc_find(component0, comsubid1) = ^true) {
 		cc_setgraphic("miscgraphics3,0")
-		cc_setontimer(null)
+		cc_setontimernull
 	}
 	return 
 }

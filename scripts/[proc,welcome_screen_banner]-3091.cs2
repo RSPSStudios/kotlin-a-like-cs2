@@ -2,12 +2,12 @@
 fun welcome_screen_banner() {
 
 	if (~on_mobile = false) {
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			comp_sethide(false, welcome_screen:90)
-		}, welcome_screen:86)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			comp_sethide(true, welcome_screen:90)
-		}, welcome_screen:86)
+		}
 	}
 	if_sethide(true, welcome_screen:90)
 	return 

@@ -10,16 +10,16 @@ fun script3758(int0: Int, y1: Int, int2: Int, npc3: Npc, int4: Int, int5: Int, c
 	cc_setcolour(^white)
 	cc_setfill(true)
 	cc_settrans(255)
-	cc_setonmouserepeat({
+	cc_setonmouserepeat {
 		cc_settrans(event_com, event_comsubid, 220, null)
-	})
-	cc_setonmouseleave({
+	}
+	cc_setonmouseleave {
 		cc_settrans(event_com, event_comsubid, 255, null)
-	})
+	}
 	cc_setop(1, op0)
-	cc_setonop({
+	cc_setonop {
 		script3762(event_com, event_comsubid, int2)
-	})
+	}
 	cc_create(component6, ^iftype_model, int5)
 	int5 = calc(int5 + 1)
 	cc_sethide(false)
@@ -28,26 +28,26 @@ fun script3758(int0: Int, y1: Int, int2: Int, npc3: Npc, int4: Int, int5: Int, c
 		cc_setposition(int0, y1, ^setpos_abs_left, ^setpos_abs_top)
 		cc_setnpchead(npc3)
 		cc_setmodelangle(0, 10, 80, 0, 0, 2500)
-		cc_setontimer({
+		cc_setontimer {
 			script3759(event_com, event_comsubid, calc(clientclock + random(5)), seq_579)
-		})
+		}
 		cc_create(component6, ^iftype_model, int5)
 		int5 = calc(int5 + 1)
 		cc_setsize(30, 50, ^setsize_abs, ^setsize_abs)
 		cc_setposition(calc(int0 + 20), y1, ^setpos_abs_left, ^setpos_abs_top)
 		cc_setnpchead(general_bentnoze_3392)
 		cc_setmodelangle(0, 10, 80, 0, 0, 2500)
-		cc_setontimer({
+		cc_setontimer {
 			script3759(event_com, event_comsubid, calc(clientclock + random(5)), seq_579)
-		})
+		}
 	} else {
 		cc_setsize(50, 50, ^setsize_abs, ^setsize_abs)
 		cc_setposition(int0, y1, ^setpos_abs_left, ^setpos_abs_top)
 		cc_setnpchead(npc3)
 		cc_setmodelangle(0, 20, 80, 0, 0, 2100)
-		cc_setontimer({
+		cc_setontimer {
 			script3759(event_com, event_comsubid, calc(clientclock + random(20)), seq_579)
-		})
+		}
 	}
 	cc_create(component6, ^iftype_text, int5)
 	int5 = calc(int5 + 1)
@@ -55,9 +55,9 @@ fun script3758(int0: Int, y1: Int, int2: Int, npc3: Npc, int4: Int, int5: Int, c
 	cc_setsize(calc(int4 - 60), 50, ^setsize_abs, ^setsize_abs)
 	cc_setposition(calc(int0 + 55), y1, ^setpos_abs_left, ^setpos_abs_top)
 	cc_setcolour(~script3761(int2))
-	cc_setonvartransmit({
+	cc_setonvartransmit {
 		script3760(event_com, event_comsubid, int2){VARP[681], VARP[679], VARP[683], VARP[680], VARP[684], VARP[685]}
-	})
+	}
 	cc_settextfont(p12_full)
 	cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
 	cc_settextshadow(true)

@@ -20,12 +20,12 @@ fun slayer_rewards_tasks_unblocktask(int0: Int, comsubid1: Int, component2: Comp
 	cc_setfill(true)
 	cc_settrans(255)
 	cc_setop(1, "Unblock")
-	cc_setonop({
+	cc_setonop {
 		slayer_rewards_confirm_back(true, event_opindex, component2, component3, component4, component5, component6)
-	})
+	}
 	if_setop(1, "Back", component6)
-	if_setonop({
+	if_setonop {
 		slayer_rewards_confirm_back(false, event_opindex, component2, component3, component4, component5, component6)
-	}, component6)
+	}
 	return 
 }

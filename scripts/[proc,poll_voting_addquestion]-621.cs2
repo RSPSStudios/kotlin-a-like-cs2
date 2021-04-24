@@ -77,12 +77,12 @@ fun poll_voting_addquestion(int0: Int, boolean1: Boolean, string0: String, int2:
 		.cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
 		.cc_settextshadow(true)
 		.cc_setcolour(0xff981f)
-		cc_setonmouserepeat({
+		cc_setonmouserepeat {
 			cc_colour_swapper(event_com, .cc_getid, ^white)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			cc_colour_swapper(event_com, .cc_getid, 0xff981f)
-		})
+		}
 		.cc_settext(string1)
 		.cc_create(interface_400:10, ^iftype_graphic, VARCINT[43])
 		VARCINT[43] = calc(VARCINT[43] + 1)
@@ -101,9 +101,9 @@ fun poll_voting_addquestion(int0: Int, boolean1: Boolean, string0: String, int2:
 		} else {
 			cc_setop(1, "Select")
 		}
-		cc_setonop({
+		cc_setonop {
 			script623(event_com, event_comsubid, int0, int11)
-		})
+		}
 		int11, VARCINT[49] = calc(int11 + 1), calc(VARCINT[49] + int8)
 	}
 	VARCINT[49] = calc(VARCINT[49] + 4)

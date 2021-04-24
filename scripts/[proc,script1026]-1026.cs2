@@ -55,27 +55,27 @@ fun script1026(component0: Component, component1: Component, component2: Compone
 		if_settrans(255, component8)
 		if_settrans(240, component9)
 		if_settrans(255, component10)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			settrans(component8, 225)
-		}, component5)
-		if_setonmouserepeat(null, component6)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeatnull
+		if_setonmouserepeat {
 			settrans(component10, 225)
-		}, component7)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(component8, 255)
-		}, component5)
-		if_setonmouseleave(null, component6)
-		if_setonmouseleave({
+		}
+		if_setonmouseleavenull
+		if_setonmouseleave {
 			settrans(component10, 255)
-		}, component7)
-		if_setonop({
+		}
+		if_setonop {
 			script1024(event_opindex, 0, component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21)
-		}, component5)
-		if_setonop(null, component6)
-		if_setonop({
+		}
+		if_setonopnull
+		if_setonop {
 			script1024(event_opindex, 2, component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21)
-		}, component7)
+		}
 		if (stat23 ! null) {
 			if_settext(~xpdrops_tostring(VARP[261], 1), component14)
 		} else {
@@ -86,21 +86,21 @@ fun script1026(component0: Component, component1: Component, component2: Compone
 		if_setcolour(0xff981f, component17)
 		if_setcolour(0x808080, component18)
 		if_setcolour(0x808080, component19)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			text_colour_swapper(component17, ^white)
-		}, component11)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			text_colour_swapper(component17, 0xff981f)
-		}, component11)
-		if_setonmouserepeat(null, component12)
-		if_setonmouseleave(null, component12)
-		if_setonmouserepeat(null, component13)
-		if_setonmouseleave(null, component13)
-		if_setonop({
+		}
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
+		if_setonop {
 			opsound(event_opindex, 1216)
-		}, component11)
-		if_setonop(null, component12)
-		if_setonop(null, component13)
+		}
+		if_setonopnull
+		if_setonopnull
 	} else if (VARBIT[4704] = 2) {
 		if (cc_find(component5, 0) = ^true) {
 			cc_setgraphic("options_radio_buttons,0")
@@ -114,27 +114,27 @@ fun script1026(component0: Component, component1: Component, component2: Compone
 		if_settrans(255, component8)
 		if_settrans(255, component9)
 		if_settrans(240, component10)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			settrans(component8, 225)
-		}, component5)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			settrans(component9, 225)
-		}, component6)
-		if_setonmouserepeat(null, component7)
-		if_setonmouseleave({
+		}
+		if_setonmouserepeatnull
+		if_setonmouseleave {
 			settrans(component8, 255)
-		}, component5)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(component9, 255)
-		}, component6)
-		if_setonmouseleave(null, component7)
-		if_setonop({
+		}
+		if_setonmouseleavenull
+		if_setonop {
 			script1024(event_opindex, 0, component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21)
-		}, component5)
-		if_setonop({
+		}
+		if_setonop {
 			script1024(event_opindex, 1, component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21)
-		}, component6)
-		if_setonop(null, component7)
+		}
+		if_setonopnull
 		if_settext("", component14)
 		if (stat23 ! null) {
 			if_settext(~xpdrops_tostring(VARP[261], 1), component15)
@@ -146,27 +146,27 @@ fun script1026(component0: Component, component1: Component, component2: Compone
 		if_setcolour(0x808080, component17)
 		if_setcolour(0xff981f, component18)
 		if_setcolour(0xff981f, component19)
-		if_setonmouserepeat(null, component11)
-		if_setonmouseleave(null, component11)
-		if_setonmouserepeat({
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
+		if_setonmouserepeat {
 			text_colour_swapper(component18, ^white)
-		}, component12)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			text_colour_swapper(component18, 0xff981f)
-		}, component12)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			text_colour_swapper(component19, ^white)
-		}, component13)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			text_colour_swapper(component19, 0xff981f)
-		}, component13)
-		if_setonop(null, component11)
-		if_setonop({
+		}
+		if_setonopnull
+		if_setonop {
 			opsound(event_opindex, 1216)
-		}, component12)
-		if_setonop({
+		}
+		if_setonop {
 			opsound(event_opindex, 192)
-		}, component13)
+		}
 	} else {
 		if (cc_find(component5, 0) = ^true) {
 			cc_setgraphic("options_radio_buttons,2")
@@ -180,42 +180,42 @@ fun script1026(component0: Component, component1: Component, component2: Compone
 		if_settrans(240, component8)
 		if_settrans(255, component9)
 		if_settrans(255, component10)
-		if_setonmouserepeat(null, component5)
-		if_setonmouserepeat({
+		if_setonmouserepeatnull
+		if_setonmouserepeat {
 			settrans(component9, 225)
-		}, component6)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			settrans(component10, 225)
-		}, component7)
-		if_setonmouseleave(null, component5)
-		if_setonmouseleave({
+		}
+		if_setonmouseleavenull
+		if_setonmouseleave {
 			settrans(component9, 255)
-		}, component6)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(component10, 255)
-		}, component7)
-		if_setonop(null, component5)
-		if_setonop({
+		}
+		if_setonopnull
+		if_setonop {
 			script1024(event_opindex, 1, component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21)
-		}, component6)
-		if_setonop({
+		}
+		if_setonop {
 			script1024(event_opindex, 2, component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21)
-		}, component7)
+		}
 		if_settext("", component14)
 		if_settext("", component15)
 		if_settext("", component16)
 		if_setcolour(0x808080, component17)
 		if_setcolour(0x808080, component18)
 		if_setcolour(0x808080, component19)
-		if_setonmouserepeat(null, component11)
-		if_setonmouseleave(null, component11)
-		if_setonmouserepeat(null, component12)
-		if_setonmouseleave(null, component12)
-		if_setonmouserepeat(null, component13)
-		if_setonmouseleave(null, component13)
-		if_setonop(null, component11)
-		if_setonop(null, component12)
-		if_setonop(null, component13)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
+		if_setonopnull
+		if_setonopnull
+		if_setonopnull
 	}
 	return 
 }

@@ -51,37 +51,37 @@ fun worldmap_elements_marker(coord0: Coord, struct1: Struct, component2: Compone
 		cc_sethide(false)
 		cc_setop(1, "Focus on")
 		cc_setopbase("<col=ff9040>${struct_param(struct1, param_985)}</col>")
-		cc_setonop({
+		cc_setonop {
 			script1756(event_opindex, coord0, false)
-		})
+		}
 		cc_setposition(x9, y10, ^setpos_abs_centre, ^setpos_abs_centre)
 		cc_setgraphic(graphic11)
 		cc_set2dangle(angle13)
 		if (int14 = 1 & testbit(VARBIT[5640], 4) = ^false & struct_param(struct1, param_986) = true) {
-			cc_setontimer({
+			cc_setontimer {
 				script1758(event_com, event_comsubid, struct1)
-			})
+			}
 		} else {
-			cc_setontimer(null)
+			cc_setontimernull
 		}
 	} else {
 		cc_create(component2, ^iftype_graphic, int7)
 		cc_sethide(false)
 		cc_setop(1, "Focus on")
 		cc_setopbase("<col=ff9040>${struct_param(struct1, param_985)}</col>")
-		cc_setonop({
+		cc_setonop {
 			script1756(event_opindex, coord0, false)
-		})
+		}
 		cc_setsize(int8, int8, ^setsize_abs, ^setsize_abs)
 		cc_setposition(x9, y10, ^setpos_abs_centre, ^setpos_abs_centre)
 		cc_setgraphic(graphic11)
 		cc_set2dangle(angle13)
 		if (int14 = 1 & testbit(VARBIT[5640], 4) = ^false & struct_param(struct1, param_986) = true) {
-			cc_setontimer({
+			cc_setontimer {
 				script1758(event_com, event_comsubid, struct1)
-			})
+			}
 		} else {
-			cc_setontimer(null)
+			cc_setontimernull
 		}
 	}
 	int7 = calc(int7 + 1)

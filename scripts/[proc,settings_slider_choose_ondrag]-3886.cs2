@@ -4,18 +4,18 @@ fun settings_slider_choose_ondrag(int0: Int, component1: Component, comsubid2: I
 	when (int0): Int {
 		14 -> {
 		
-			cc_setondrag({
+			cc_setondrag {
 				settings_zoom_slider_ondrag(component1, comsubid2, int3, event_mousex, y4, int5)
-			})
-			cc_setontimer({
+			}
+			cc_setontimer {
 				settings_zoom_position_timer(VARCINT[73], VARCINT[74], component1, comsubid2, int3, y4, int5)
-			})
+			}
 		}
 		53 -> {
 		
-			cc_setondrag({
+			cc_setondrag {
 				script3891(component1, comsubid2, event_mousex, int3, y4, int5)
-			})
+			}
 		}
 	}
 	return 

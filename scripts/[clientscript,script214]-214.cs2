@@ -5,8 +5,8 @@ fun script214(int0: Int, string0: String) {
 	if_settextalign(^settextalign_centre, ^settextalign_centre, 16, interface_229:1)
 	if_settext("Opening the ${string0} store, please wait.", interface_229:1)
 	if_settext("${~text_device("Click", "Tap")} here to cancel", interface_229:2)
-	if_setontimer({
+	if_setontimer {
 		script215(string0, int0, 0, 2)
-	}, interface_229:1)
+	}
 	return 
 }

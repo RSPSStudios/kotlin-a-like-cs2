@@ -197,23 +197,23 @@ fun league_relics_draw_selections(component0: Component, component1: Component, 
 			if (int37 = 1) {
 				cc_setop(1, "View")
 				cc_setopbase("<col=ff981f>${text1}</col>")
-				cc_setonop({
+				cc_setonop {
 					league_relics_loading(component9, int44, component3, int29, component2, graphic39, component4, colour32)
-				})
+				}
 			}
 			if (int30 = 1 & ~on_mobile = false) {
 				if (int31 = 1) {
-					cc_setonmouserepeat({
+					cc_setonmouserepeat {
 						league_relic_hover(component3, trans36, component2, struct_param(struct38, param_881), component4, colour34, int44)
-					})
+					}
 				} else {
-					cc_setonmouserepeat({
+					cc_setonmouserepeat {
 						league_relic_hover(component3, trans36, component2, graphic39, component4, colour34, int44)
-					})
+					}
 				}
-				cc_setonmouseleave({
+				cc_setonmouseleave {
 					league_relic_hover(component3, int29, component2, graphic39, component4, colour32, int44)
-				})
+				}
 			}
 			int44 = calc(int44 + 1)
 			int26 = calc(int26 + int25)

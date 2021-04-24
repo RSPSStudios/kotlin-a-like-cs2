@@ -27,9 +27,9 @@ fun pvp_store_init(component0: Component, component1: Component, component2: Com
 		cc_setop(10, "Examine")
 		cc_setgraphicshadow(0x333333)
 		cc_setoutline(1)
-		cc_setonop({
+		cc_setonop {
 			cc_settrans_temporarily(event_com, event_comsubid, 100, 0)
-		})
+		}
 		count10 = calc(count10 + 1)
 		namedobj11 = enum(int, namedobj, enum5, count10)
 	}
@@ -58,9 +58,9 @@ fun pvp_store_init(component0: Component, component1: Component, component2: Com
 		cc_setop(10, "Examine")
 		cc_setgraphicshadow(0x333333)
 		cc_setoutline(1)
-		cc_setonop({
+		cc_setonop {
 			cc_settrans_temporarily(event_com, event_comsubid, 100, 0)
-		})
+		}
 		count10 = calc(count10 + 1)
 	}
 	val int15: Int = count10
@@ -80,9 +80,9 @@ fun pvp_store_init(component0: Component, component1: Component, component2: Com
 		cc_setsize(36, 12, ^setsize_abs, ^setsize_abs)
 		cc_setposition(calc(count10 % 9 * 50), calc(int13 + (count10 / 9 + 1) * int8 - 12), ^setpos_abs_left, ^setpos_abs_top)
 		~script24(int0[count10])
-		cc_setonvartransmit({
+		cc_setonvartransmit {
 			script12(event_com, event_comsubid, int0[count10]){VARP[263]}
-		})
+		}
 		cc_settextfont(p11_full)
 		cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 		cc_settextshadow(true)
@@ -106,9 +106,9 @@ fun pvp_store_init(component0: Component, component1: Component, component2: Com
 	int15 = ~steelborder(component4, "Bounty Hunter Shop", 0)
 	if (cc_find(component4, int15) = ^true) {
 		~script3364(enum5)
-		cc_setonvartransmit({
+		cc_setonvartransmit {
 			script3363(enum5, event_com, event_comsubid){VARP[262]}
-		})
+		}
 	}
 	return 
 }

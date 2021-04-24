@@ -2,8 +2,8 @@
 fun orbs_worldmap_init(component0: Component, component1: Component, component2: Component) {
 
 	~orbs_worldmap_setup(component0, component1, component2)
-	if_setonsubchange({
+	if_setonsubchange {
 		orbs_worldmap_setup(component0, component1, component2)
-	}, component0)
+	}
 	return 
 }

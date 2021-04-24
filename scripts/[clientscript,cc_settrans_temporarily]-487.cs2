@@ -3,9 +3,9 @@ fun cc_settrans_temporarily(component0: Component, comsubid1: Int, trans2: Int, 
 
 	if (cc_find(component0, comsubid1) = ^true) {
 		cc_settrans(trans2)
-		cc_setontimer({
+		cc_setontimer {
 			cc_settrans_temporarily_end(event_com, event_comsubid, trans3, calc(clientclock + 10))
-		})
+		}
 	}
 	return 
 }

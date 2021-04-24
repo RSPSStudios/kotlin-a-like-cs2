@@ -17,9 +17,9 @@ fun settings_seemore(struct0: Struct, trans1: Int, int2: Int, int3: Int, int4: I
 	cc_setcolour(^white)
 	cc_settrans(255)
 	cc_setop(1, op0)
-	cc_setonop({
+	cc_setonop {
 		settings_seemore_op(int19, int5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17)
-	})
+	}
 	int2 = calc(int2 + 1)
 	cc_create(component7, ^iftype_rectangle, int3)
 	cc_setsize(10, int18, ^setsize_minus, ^setsize_abs)
@@ -28,12 +28,12 @@ fun settings_seemore(struct0: Struct, trans1: Int, int2: Int, int3: Int, int4: I
 	cc_setcolour(^black)
 	cc_settrans(trans1)
 	if (~on_mobile = false) {
-		cc_setonmouseover({
+		cc_setonmouseover {
 			cc_settrans(component7, int3, 240, null)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			cc_settrans(component7, int3, trans1, null)
-		})
+		}
 	}
 	int3 = calc(int3 + 1)
 	cc_create(component7, ^iftype_text, int3)

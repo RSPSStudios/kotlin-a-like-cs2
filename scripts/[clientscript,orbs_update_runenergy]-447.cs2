@@ -3,43 +3,43 @@ fun orbs_update_runenergy(component0: Component, component1: Component, componen
 
 	if (component0 ! null) {
 		if_setnoclickthrough(true, component5)
-		if_setonmisctransmit({
+		if_setonmisctransmit {
 			orbs_update_runenergy(null, component1, component2, component3, component4, component5, component6)
-		}, component0)
-		if_setonvartransmit({
+		}
+		if_setonvartransmit(component0)  {
 			orbs_update_runenergy(null, component1, component2, component3, component4, component5, component6){VARP[173], VARP[1575], VARP[281], VARP[2686]}
-		}, component0)
-		if_setonsubchange({
+		}
+		if_setonsubchange {
 			orbs_update_runenergy(null, component1, component2, component3, component4, component5, component6)
-		}, component0)
-		if_setonop({
+		}
+		if_setonop {
 			orbs_toggle_runmode(event_opindex, component3, component4)
-		}, component6)
+		}
 	}
 	val graphic7: Graphic = "orb_frame,1"
 	val graphic8: Graphic = "orb_frame,0"
 	if (~toplevel_check_sidepanel(11) = false) {
 		if_setgraphic(graphic8, component5)
-		if_setonmouserepeat(null, component6)
-		if_setonmouseleave(null, component6)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
 		if_sethide(true, component6)
 	} else {
 		if_sethide(false, component6)
 		if (VARP[281] = 200 | VARP[2686] = 200) {
-			if_setontimer({
+			if_setontimer {
 				script2647(component5)
-			}, component5)
-			if_setonmouserepeat(null, component6)
-			if_setonmouseleave(null, component6)
+			}
+			if_setonmouserepeatnull
+			if_setonmouseleavenull
 		} else {
 			if_setgraphic(graphic8, component5)
-			if_setontimer(null, component5)
-			if_setonmouserepeat({
+			if_setontimernull
+			if_setonmouserepeat {
 				graphic_swapper(component5, graphic7)
-			}, component6)
-			if_setonmouseleave({
+			}
+			if_setonmouseleave {
 				graphic_swapper(component5, graphic8)
-			}, component6)
+			}
 		}
 	}
 	~orbs_update(component1, component2, runenergy_visible, 100)

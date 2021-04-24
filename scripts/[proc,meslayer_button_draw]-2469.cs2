@@ -18,17 +18,17 @@ fun meslayer_button_draw(component0: Component, text0: String, int1: Int) {
 	cc_settext(text0)
 	if (int1 = 1) {
 		cc_setcolour(0x8f8f8f)
-		if_setonmouserepeat(null, component0)
-		if_setonmouseleave(null, component0)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
 	} else {
 		cc_setcolour(0x4f2f1f)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			cc_colour_swapper(event_com, int2, 0x8f8f8f)
-		}, component0)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			cc_colour_swapper(event_com, int2, 0x4f2f1f)
-		}, component0)
-		if_setontimer(null, component0)
+		}
+		if_setontimernull
 	}
 	return 
 }

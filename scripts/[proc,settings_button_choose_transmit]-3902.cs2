@@ -4,9 +4,9 @@ fun settings_button_choose_transmit(int0: Int, struct1: Struct, component2: Comp
 	when (int0): Int {
 	else -> {
 	
-		cc_setonvartransmit({
+		cc_setonvartransmit {
 			settings_button_on_transmit(struct1, component2, comsubid3, int4, comsubid5){VARP[2855]}
-		})
+		}
 		return 
 	}
 	}

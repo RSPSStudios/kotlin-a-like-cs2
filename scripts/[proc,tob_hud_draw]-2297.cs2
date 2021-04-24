@@ -10,17 +10,17 @@ fun tob_hud_draw(component0: Component, component1: Component, component2: Compo
 			if (VARBIT[6440] = 2) {
 				if_settext("Step inside now!", component3)
 				if_setcolour(~tob_hud_nameflasher, component3)
-				if_setontimer({
+				if_setontimer {
 					tob_hud_nameflasher(component3)
-				}, component3)
+				}
 			} else if (VARBIT[6440] = 0) {
 				if_settext("No party", component3)
 				if_setcolour(0xff981f, component3)
-				if_setontimer(null, component3)
+				if_setontimernull
 			} else {
 				if_settext("Party", component3)
 				if_setcolour(0xff981f, component3)
-				if_setontimer(null, component3)
+				if_setontimernull
 			}
 		} else {
 			if_sethide(true, component2)
@@ -74,7 +74,7 @@ fun tob_hud_draw(component0: Component, component1: Component, component2: Compo
 				}
 			} else {
 				VARCINT[220] = -1
-				if_setontimer(null, component5)
+				if_setontimernull
 				if_settext("", component6)
 			}
 			~tob_hud_statusrefresh(0, VARBIT[6442], VARCSTRING[330], component8, component9, component19)
@@ -91,7 +91,7 @@ fun tob_hud_draw(component0: Component, component1: Component, component2: Compo
 			}
 		} else {
 			VARCINT[220] = -1
-			if_setontimer(null, component5)
+			if_setontimernull
 			if_sethide(true, component4)
 			if_sethide(true, component7)
 			if_sethide(true, component18)
@@ -99,7 +99,7 @@ fun tob_hud_draw(component0: Component, component1: Component, component2: Compo
 		}
 	} else {
 		VARCINT[220] = -1
-		if_setontimer(null, component5)
+		if_setontimernull
 		if_sethide(true, component4)
 		if_sethide(true, component7)
 		if_sethide(true, component18)

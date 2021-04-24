@@ -36,8 +36,8 @@ fun kourend_sidepanel_build(component0: Component, component1: Component, compon
 	cc_setfill(true)
 	cc_setcolour(colour6)
 	~kourend_sidepanel_update(int3)
-	if_setonvartransmit({
+	if_setonvartransmit(component1)  {
 		kourend_sidepanel_update(component0, .cc_getid, component2, cc_getid, int3){VARP[1317], VARP[1318]}
-	}, component1)
+	}
 	return int4, calc(int5 + 35)
 }

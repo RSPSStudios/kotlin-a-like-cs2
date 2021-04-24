@@ -7,7 +7,7 @@ fun ge_offers_setup_draw(component0: Component, comsubid1: Int, comsubid2: Int, 
 		}
 		if (cc_find(component0, comsubid6) = ^true) {
 			cc_settrans(0)
-			cc_setontimer(null)
+			cc_setontimernull
 		}
 		if (cc_find(component0, comsubid12) = ^true) {
 			cc_sethide(true)
@@ -30,9 +30,9 @@ fun ge_offers_setup_draw(component0: Component, comsubid1: Int, comsubid2: Int, 
 		}
 		if (cc_find(component0, comsubid6) = ^true) {
 			cc_settrans(100)
-			cc_setontimer({
+			cc_setontimer {
 				script811(event_com, event_comsubid, clientclock, 100, 250)
-			})
+			}
 		}
 		if (cc_find(component0, comsubid12) = ^true) {
 			cc_sethide(false)
@@ -85,15 +85,15 @@ fun ge_offers_setup_draw(component0: Component, comsubid1: Int, comsubid2: Int, 
 			}
 			if (int15 > 0) {
 				~v2_stone_button_out_filled(component13)
-				if_setonmouserepeat({
+				if_setonmouserepeat {
 					v2_stone_button_in_filled(event_com)
-				}, component13)
-				if_setonmouseleave({
+				}
+				if_setonmouseleave {
 					v2_stone_button_out_filled(event_com)
-				}, component13)
-				if_setonop({
+				}
+				if_setonop {
 					opsound(event_opindex, 2)
-				}, component13)
+				}
 				if (cc_find(component0, comsubid14) = ^true) {
 					cc_settext("<col=ffffff>Confirm</col>")
 				}

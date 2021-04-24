@@ -53,16 +53,16 @@ fun membership_benefits_view(int0: Int) {
 	cc_setsize(24, 23, ^setsize_abs, ^setsize_abs)
 	cc_setposition(5, 5, ^setpos_abs_right, ^setpos_abs_top)
 	cc_setgraphic("open_buttons,2")
-	cc_setonmouserepeat({
+	cc_setonmouserepeat {
 		membership_benefits_close_benefit_hover(event_com, event_comsubid, true)
-	})
-	cc_setonmouseleave({
+	}
+	cc_setonmouseleave {
 		membership_benefits_close_benefit_hover(event_com, event_comsubid, false)
-	})
+	}
 	cc_setop(1, "Close")
-	cc_setonop({
+	cc_setonop {
 		membership_benefits_close_benefit
-	})
+	}
 	cc_create(component1, ^iftype_text, 2)
 	cc_setsize(0, 33, ^setsize_minus, ^setsize_abs)
 	cc_setposition(52, 5, ^setpos_abs_centre, ^setpos_abs_top)

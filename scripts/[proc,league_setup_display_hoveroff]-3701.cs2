@@ -4,12 +4,12 @@ fun league_setup_display_hoveroff(component0: Component, colour1: Int) {
 	if (cc_find(component0, 0) = ^true) {
 		cc_settrans(0)
 		if (~on_mobile = false) {
-			cc_setonmouseover({
+			cc_setonmouseover {
 				league_setup_display_hover(true, component0, colour1)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				league_setup_display_hover(false, component0, colour1)
-			})
+			}
 		}
 	}
 	if (cc_find(component0, 3) = ^true) {

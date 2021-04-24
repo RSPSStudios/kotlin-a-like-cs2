@@ -24,12 +24,12 @@ fun script3252(component0: Component) {
 		} else {
 			cc_settext("Confirm")
 		}
-		cc_setonmouseleave({
+		cc_setonmouseleave {
 			v2_stone_button_change_out(component0, 0)
-		})
-		cc_setonmouserepeat({
+		}
+		cc_setonmouserepeat {
 			v2_stone_button_change_in(component0, 0)
-		})
+		}
 		cc_setop(1, "Confirm")
 	}
 	return 

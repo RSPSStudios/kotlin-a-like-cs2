@@ -3,7 +3,7 @@ fun settings_init(component0: Component, component1: Component, component2: Comp
 
 	~script1282
 	VARCINT[190] = 0
-	if_setontimer(null, interface_134:3)
+	if_setontimernull
 	~settings_init(component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21)
 	return 
 }

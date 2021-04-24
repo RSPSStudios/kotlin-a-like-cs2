@@ -8,39 +8,39 @@ fun raids_partylist_sortbutton_draw(component0: Component, int1: Int, int2: Int,
 	if (VARCINT[180] = int2) {
 		cc_setgraphic("sortarrows,1")
 		cc_settrans(0)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			script1528(event_com, cc_getid, 120, interface_499:57, string0)
-		}, component0)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			cc_settrans(event_com, cc_getid, 0, interface_499:57)
-		}, component0)
-		if_setonclick({
+		}
+		if_setonclick {
 			raids_partylist_clicksort(int1)
-		}, component0)
+		}
 	} else if (VARCINT[180] = int1) {
 		cc_setgraphic("sortarrows,0")
 		cc_settrans(0)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			script1528(event_com, cc_getid, 120, interface_499:57, string0)
-		}, component0)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			cc_settrans(event_com, cc_getid, 0, interface_499:57)
-		}, component0)
-		if_setonclick({
+		}
+		if_setonclick {
 			raids_partylist_clicksort(int2)
-		}, component0)
+		}
 	} else {
 		cc_setgraphic("sortarrows,0")
 		cc_settrans(100)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			script1528(event_com, cc_getid, 200, interface_499:57, string0)
-		}, component0)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			cc_settrans(event_com, cc_getid, 100, interface_499:57)
-		}, component0)
-		if_setonclick({
+		}
+		if_setonclick {
 			raids_partylist_clicksort(int1)
-		}, component0)
+		}
 	}
 	if_sethide(false, component0)
 	return 

@@ -1,12 +1,12 @@
 // 3568 proc
 fun hallowed_tools_main_create(component0: Component, namedobj1: Namedobj, text0: String, int2: Int) {
 
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		hallowed_tools_main_recreate(component0, namedobj1, text0, int2, true)
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		hallowed_tools_main_recreate(component0, namedobj1, text0, int2, false)
-	}, component0)
+	}
 	~hallowed_tools_main_recreate(component0, namedobj1, text0, int2, false)
 	return 
 }

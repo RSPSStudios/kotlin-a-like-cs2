@@ -22,11 +22,11 @@ fun script1627(component0: Component, op0: String, int1: Int) {
 	if (~on_mobile = true) {
 		return 
 	}
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		script1500(component0, true)
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		script1500(component0, false)
-	}, component0)
+	}
 	return 
 }

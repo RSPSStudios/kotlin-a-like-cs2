@@ -16,18 +16,18 @@ fun bankpin_button_setup(component0: Component, int1: Int, int2: Int, int3: Int,
 	.cc_setcolour(0xff7f00)
 	.cc_settextshadow(false)
 	.cc_settext("")
-	.cc_setontimer({
+	.cc_setontimer {
 		bankpin_button_addtextlater(event_com, event_comsubid, int1, calc(clientclock + 5))
-	})
-	cc_setonmouserepeat({
+	}
+	cc_setonmouserepeat {
 		bankpin_button_mouseover(false, event_com, event_comsubid, .cc_getid)
-	})
-	cc_setonmouseleave({
+	}
+	cc_setonmouseleave {
 		bankpin_button_mouseover(true, event_com, event_comsubid, .cc_getid)
-	})
+	}
 	cc_setop(1, "Select")
-	cc_setonop({
+	cc_setonop {
 		bankpin_button_op(int1, int2, int3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20)
-	})
+	}
 	return 
 }

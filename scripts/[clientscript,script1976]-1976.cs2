@@ -3,7 +3,7 @@ fun script1976(component0: Component, enum1: Enum) {
 
 	if (if_hassub(enum(component, component, enum1, interface_161:15)) = false) {
 		~script1978
-		if_setontimer(null, component0)
+		if_setontimernull
 	}
 	return 
 }

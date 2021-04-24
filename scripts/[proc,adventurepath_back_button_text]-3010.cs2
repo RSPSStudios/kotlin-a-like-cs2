@@ -6,9 +6,9 @@ fun adventurepath_back_button_text(component0: Component, int1: Int, component2:
 	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
 	cc_settext("<lt><lt>   Back")
 	cc_setop(1, "Back")
-	cc_setonop({
+	cc_setonop {
 		adventurepath_back_to_paths(component2, component3, component4, component5, component6)
-	})
+	}
 	cc_settextfont(p12_full)
 	cc_settextshadow(true)
 	cc_setcolour(0xff981f)

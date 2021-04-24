@@ -28,8 +28,8 @@ fun raids_partylist_init(component0: Component, component1: Component) {
 	cc_sethide(true)
 	~script1558(interface_499:56, "Refresh", interface_499:3, enum_1538, -1)
 	~raids_partylist_setpartybutton
-	if_setonvartransmit({
+	if_setonvartransmit(interface_499:58)  {
 		raids_partylist_setpartybutton{VARP[1427]}
-	}, interface_499:58)
+	}
 	return 
 }

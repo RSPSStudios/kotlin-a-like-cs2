@@ -7,22 +7,22 @@ fun raids_storage_private_dragscroll(component0: Component, comsubid1: Int, mous
 	if (calc(mousey3 - int8) < 15) {
 		if (clock5 <= clientclock) {
 			if (cc_find(component0, comsubid1) = ^true) {
-				cc_setondrag({
+				cc_setondrag {
 					raids_storage_private_dragscroll(event_com, event_comsubid, event_mousex, event_mousey, component4, calc(clientclock + 2))
-				})
+				}
 				return 
 			}
 		} else if (calc(clock5 - clientclock) < 5) {
 			if (cc_find(component0, comsubid1) = ^true) {
-				cc_setondrag({
+				cc_setondrag {
 					raids_storage_private_dragscroll(event_com, event_comsubid, event_mousex, event_mousey, component4, calc(clock5 + 2))
-				})
+				}
 				return 
 			}
 		} else if (cc_find(component0, comsubid1) = ^true) {
-			cc_setondrag({
+			cc_setondrag {
 				raids_storage_private_dragscroll(event_com, event_comsubid, event_mousex, event_mousey, component4, calc(clock5 + 1))
-			})
+			}
 		}
 		if (mousey3 < 5) {
 			int6 = 8

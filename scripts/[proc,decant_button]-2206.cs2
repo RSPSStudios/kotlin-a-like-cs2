@@ -7,12 +7,12 @@ fun decant_button(component0: Component, boolean1: Boolean, obj2: Obj, string0: 
 	} else {
 		int3 = ~beige_stone_button_out(component0, int3)
 	}
-	if_setonmouseover({
+	if_setonmouseover {
 		decant_mouseover(component0, true, obj2, string0, string1)
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		decant_mouseover(component0, false, obj2, string0, string1)
-	}, component0)
+	}
 	cc_create(component0, ^iftype_model, int3)
 	cc_setposition(0, -2, ^setpos_abs_centre, ^setpos_abs_centre)
 	cc_setsize(50, 44, ^setsize_abs, ^setsize_abs)
@@ -26,8 +26,8 @@ fun decant_button(component0: Component, boolean1: Boolean, obj2: Obj, string0: 
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	cc_settextshadow(false)
 	cc_settext(string0)
-	if_setonkey({
+	if_setonkey {
 		decant_itembutton_key(component0, event_keychar, event_key, string1, obj2, string0)
-	}, component0)
+	}
 	return 
 }

@@ -15,11 +15,11 @@ fun raids_storage_side_dismiss(opindex0: Int, component1: Component) {
 	cc_settextshadow(true)
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	cc_settext("---")
-	if_setonmouserepeat(null, component1)
-	if_setonmouseleave(null, component1)
-	if_setonop(null, component1)
-	if_setontimer({
+	if_setonmouserepeatnull
+	if_setonmouseleavenull
+	if_setonopnull
+	if_setontimer {
 		raids_storage_side_dismiss_reset(component1, calc(clientclock + 20))
-	}, component1)
+	}
 	return 
 }

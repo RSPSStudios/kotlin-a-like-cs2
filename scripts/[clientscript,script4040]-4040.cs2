@@ -2,25 +2,25 @@
 fun script4040(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component) {
 
 	~script4042(0, component0, component5, component10)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component5)  {
 		script4041(0, component0, component5, component10){worn}
-	}, component5)
+	}
 	~script4042(1, component1, component6, component10)
-	if_setonvartransmit({
+	if_setonvartransmit(component6)  {
 		script4041(1, component1, component6, component10){VARP[834], VARP[1598]}
-	}, component6)
+	}
 	~script4042(2, component2, component7, component10)
-	if_setonvartransmit({
+	if_setonvartransmit(component7)  {
 		script4041(2, component2, component7, component10){VARP[834], VARP[1598]}
-	}, component7)
+	}
 	~script4042(3, component3, component8, component10)
-	if_setonvartransmit({
+	if_setonvartransmit(component8)  {
 		script4041(3, component3, component8, component10){VARP[835], VARP[1599]}
-	}, component8)
+	}
 	~script4042(4, component4, component9, component10)
-	if_setonvartransmit({
+	if_setonvartransmit(component9)  {
 		script4041(4, component4, component9, component10){VARP[835], VARP[1599]}
-	}, component9)
+	}
 	if_setopkey(1, 13, 0, component11)
 	return 
 }

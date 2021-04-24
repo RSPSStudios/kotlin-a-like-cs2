@@ -11,9 +11,9 @@ fun gravestone_generic_resynchdata(int0: Int, component1: Component, int2: Int, 
 			if_setop(1, "Take-All", component4)
 			if_setgraphic("bankbuttons,4", component5)
 		}
-		if_setontimer({
+		if_setontimer {
 			gravestone_generic_resynchdata(VARCINT[399], component1, VARCINT[400], component3, component4, component5)
-		}, component3)
+		}
 	}
 	return 
 }

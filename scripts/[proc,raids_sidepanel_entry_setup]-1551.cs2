@@ -10,19 +10,19 @@ fun raids_sidepanel_entry_setup(int0: Int, boolean1: Boolean) {
 	if (boolean1 = true) {
 		if (clan_getchatcount > 0 & clan_getchatrank >= clan_getchatminkick) {
 			cc_setop(6, "Kick")
-			cc_setonmouserepeat({
+			cc_setonmouserepeat {
 				cc_settrans(event_com, event_comsubid, 220, null)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				cc_settrans(event_com, event_comsubid, trans2, null)
-			})
+			}
 		} else {
-			cc_setonmouserepeat(null)
-			cc_setonmouseleave(null)
+			cc_setonmouserepeatnull
+			cc_setonmouseleavenull
 		}
 	} else {
-		cc_setonmouserepeat(null)
-		cc_setonmouseleave(null)
+		cc_setonmouserepeatnull
+		cc_setonmouseleavenull
 	}
 	return 
 }

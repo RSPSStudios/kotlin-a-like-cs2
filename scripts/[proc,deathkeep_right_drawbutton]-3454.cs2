@@ -1,7 +1,7 @@
 // 3454 proc
 fun deathkeep_right_drawbutton(component0: Component, int1: Int, text0: String, boolean2: Boolean, int3: Int): Int {
 
-	if_setontimer(null, component0)
+	if_setontimernull
 	val int4: Int = 0
 	if (boolean2 = true) {
 		int4 = ~v2_stone_button_in_filled(component0)

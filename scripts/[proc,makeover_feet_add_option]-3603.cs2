@@ -8,9 +8,9 @@ fun makeover_feet_add_option(int0: Int, comsubid1: Int, y2: Int, x3: Int, compon
 	cc_setposition(x3, y2, ^setpos_abs_left, ^setpos_abs_top)
 	cc_setobject(obj6, -1)
 	cc_setop(1, "Choose-${string0}")
-	cc_setonop({
+	cc_setonop {
 		makeover_feet_select(int0, component4, component5)
-	})
+	}
 	cc_create(component5, ^iftype_text, int0)
 	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
 	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
@@ -22,12 +22,12 @@ fun makeover_feet_add_option(int0: Int, comsubid1: Int, y2: Int, x3: Int, compon
 	cc_setop(1, "Confirm")
 	cc_sethide(true)
 	if (~on_mobile = false) {
-		cc_setonmouserepeat({
+		cc_setonmouserepeat {
 			cc_colour_swapper(component5, cc_getid, 0xbebebe)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			cc_colour_swapper(component5, cc_getid, 0x00d34c)
-		})
+		}
 	}
 	return 
 }

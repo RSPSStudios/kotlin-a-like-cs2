@@ -4,18 +4,18 @@ fun script3779(component0: Component, component1: Component, component2: Compone
 	cc_deleteall(component1)
 	val enum6: Enum = ~script3780
 	~steelborder(component0, ~script3781, 0)
-	if_setonmouseover({
+	if_setonmouseover {
 		script3782(component1)
-	}, component1)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		script3783(component1)
-	}, component1)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component5)  {
 		script3784(component2, component3, component4, component5, enum6){VARP[675], VARP[841]}
-	}, component5)
-	if_setoninvtransmit({
+	}
+	if_setoninvtransmit(component5)  {
 		script3784(component2, component3, component4, component5, enum6){inv}
-	}, component5)
+	}
 	val comsubid7: Int = ~v2_stone_button_filled(component1)
 	cc_create(component1, ^iftype_text, comsubid7)
 	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)

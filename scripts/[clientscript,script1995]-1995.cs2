@@ -11,7 +11,7 @@ fun script1995(component0: Component, int1: Int, int2: Int) {
 			return 
 		}
 		if (int1 = int3) {
-			if_setontimer(null, component0)
+			if_setontimernull
 			return 
 		}
 		if (int2 = 0) {

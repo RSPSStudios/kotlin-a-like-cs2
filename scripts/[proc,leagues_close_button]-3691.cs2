@@ -18,21 +18,21 @@ fun leagues_close_button(component0: Component, boolean1: Boolean) {
 	if_setposition(x4, y5, ^setpos_abs_right, ^setpos_abs_top, component0)
 	if_setsize(width6, height7, ^setsize_abs, ^setsize_abs, component0)
 	~create_graphic(component0, 0, graphic2, 0, 0, ^setpos_abs_centre, ^setpos_abs_centre, width6, height7, ^setsize_abs, ^setsize_abs)
-	cc_setonmouseleave({
+	cc_setonmouseleave {
 		cc_graphic_swapper(event_com, event_comsubid, graphic2, null)
-	})
-	cc_setonmouseover({
+	}
+	cc_setonmouseover {
 		cc_graphic_swapper(event_com, event_comsubid, graphic3, null)
-	})
+	}
 	if_setop(1, "Close", component0)
-	if_setonop({
+	if_setonop {
 		leagues_closebutton_click(boolean1)
-	}, component0)
+	}
 	if (~in_league_tutorial = 1) {
 		return 
 	}
-	if_setonkey({
+	if_setonkey {
 		closebutton_key(event_key)
-	}, component0)
+	}
 	return 
 }

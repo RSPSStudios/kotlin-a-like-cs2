@@ -4,9 +4,9 @@ fun slayer_rewards_confirm_backlater(clock0: Int, component1: Component, compone
 	if (clientclock < clock0) {
 		return 
 	}
-	if_setontimer(null, component3)
+	if_setontimernull
 	cc_deleteall(component3)
-	if_setonop(null, component4)
+	if_setonopnull
 	if_sethide(false, component1)
 	if_sethide(true, component2)
 	return 

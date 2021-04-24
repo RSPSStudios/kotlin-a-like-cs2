@@ -32,8 +32,8 @@ fun script1964(component0: Component, op0: String, boolean1: Boolean, boolean2: 
 	if_setopbase("<col=ff9040>All equipment</col>", component0)
 	if_clearops(component0)
 	if_setop(1, op0, component0)
-	if_setonop({
+	if_setonop {
 		cc_settrans_temporarily(event_com, cc_getid, 125, 0)
-	}, component0)
+	}
 	return 
 }

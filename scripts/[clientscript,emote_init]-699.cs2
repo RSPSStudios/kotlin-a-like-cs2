@@ -15,12 +15,12 @@ fun emote_init(component0: Component, component1: Component, component2: Compone
 			height5 = calc(int4 / 4 * 49 + 6)
 			cc_setposition(calc(int4 % 4 * 43), height5, ^setpos_abs_left, ^setpos_abs_top)
 			string0 = enum(int, string, enum_1000, int6)
-			cc_setonmouserepeat({
+			cc_setonmouserepeat {
 				tooltip_mouserepeat(event_com, event_comsubid, component3, string0, 25, 120)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				deltooltip(component3)
-			})
+			}
 			int4 = calc(int4 + 1)
 		} else {
 			cc_sethide(true)
@@ -38,11 +38,11 @@ fun emote_init(component0: Component, component1: Component, component2: Compone
 	}
 	~scrollbar_vertical(component2, component1, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
 	~emote_update(component1)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		emote_update(component1){VARP[313], VARP[802], VARP[465], VARP[101], VARP[904], VARP[1336], VARP[2886]}
-	}, component0)
-	if_setonstattransmit({
+	}
+	if_setonstattransmit {
 		emote_update(component1)
-	}, component0)
+	}
 	return 
 }

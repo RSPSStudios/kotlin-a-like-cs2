@@ -6,7 +6,7 @@ fun prayer_stop_flash(int0: Int) {
 		return 
 	}
 	if (cc_find(component1, 1) = ^true) {
-		if_setontimer(null, component1)
+		if_setontimernull
 		cc_sethide(false)
 	}
 	return 

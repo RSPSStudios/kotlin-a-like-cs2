@@ -3,10 +3,10 @@ fun meslayer_mode7_button(component0: Component, string0: String, string1: Strin
 
 	sound_synth(synth_2266, 1, 0)
 	~meslayer_button_draw(component0, string0, 1)
-	if_setonclick(null, component0)
-	if_setontimer({
+	if_setonclicknull
+	if_setontimer {
 		meslayer_mode7_resetbutton(component0, string0, string1, calc(clientclock + 30))
-	}, component0)
+	}
 	VARCSTRING[359] = ~script2472(VARCSTRING[359], 1, lowercase(string0))
 	~script222(string1)
 	~meslayer_enter

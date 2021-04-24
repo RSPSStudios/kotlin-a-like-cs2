@@ -6,18 +6,18 @@ fun script2134(opindex0: Int, comsubid1: Int, comsubid2: Int, component3: Compon
 		cc_setgraphic("miscgraphics,9")
 		.cc_settrans(0)
 		if_clearops(component3)
-		if_setonmouserepeat(null, component3)
-		if_setonmouseleave(null, component3)
-		if_setonop(null, component3)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
+		if_setonopnull
 		if (component5 ! null & component6 ! null & component7 ! null & component8 ! null) {
 			if_sethide(false, component5)
 			if_settext(string1, component6)
 			if_sethide(false, component7)
 			if_sethide(true, component8)
 		}
-		if_setontimer({
+		if_setontimer {
 			script2135(calc(clientclock + 20), component3, string0, graphic4, string1, component5, component6, component7, component8)
-		}, component3)
+		}
 	}
 	return 
 }

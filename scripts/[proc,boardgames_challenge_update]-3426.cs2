@@ -8,30 +8,30 @@ fun boardgames_challenge_update(int0: Int) {
 	if_setgraphic(graphic1, boardgames_challenge:13)
 	if_setgraphic(graphic1, boardgames_challenge:17)
 	if (~on_mobile = false) {
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			settrans(boardgames_challenge:5, 127)
-		}, boardgames_challenge:4)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(boardgames_challenge:5, 0)
-		}, boardgames_challenge:4)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			settrans(boardgames_challenge:9, 127)
-		}, boardgames_challenge:8)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(boardgames_challenge:9, 0)
-		}, boardgames_challenge:8)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			settrans(boardgames_challenge:13, 127)
-		}, boardgames_challenge:12)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(boardgames_challenge:13, 0)
-		}, boardgames_challenge:12)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			settrans(boardgames_challenge:17, 127)
-		}, boardgames_challenge:16)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(boardgames_challenge:17, 0)
-		}, boardgames_challenge:16)
+		}
 	}
 	if (int0 = -1) {
 		int0 = VARBIT[61]

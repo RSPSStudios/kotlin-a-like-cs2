@@ -1,8 +1,8 @@
 // 2703 proc
 fun script2703(string0: String, component0: Component, component1: Component) {
 
-	if_setonclick({
+	if_setonclick {
 		script2704(string0, component0, component1)
-	}, component0)
+	}
 	return 
 }

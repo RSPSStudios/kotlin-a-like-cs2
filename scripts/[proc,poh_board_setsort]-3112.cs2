@@ -17,20 +17,20 @@ fun poh_board_setsort(component0: Component, component1: Component, component2: 
 	cc_settextshadow(true)
 	cc_setcolour(0xff981f)
 	val string0: String = "Sort by name"
-	cc_setonmouserepeat({
+	cc_setonmouserepeat {
 		poh_board_hoversort(event_com, event_comsubid, 120, component1, string0)
-	})
-	cc_setonmouseleave({
+	}
+	cc_setonmouseleave {
 		cc_settrans(event_com, event_comsubid, 0, component1)
-	})
+	}
 	if (VARCINT[379] = 0) {
-		cc_setonclick({
+		cc_setonclick {
 			poh_board_clicksort(1)
-		})
+		}
 	} else {
-		cc_setonclick({
+		cc_setonclick {
 			poh_board_clicksort(0)
-		})
+		}
 	}
 	int3 = calc(int3 + 1)
 	int6 = calc(int6 + int5)

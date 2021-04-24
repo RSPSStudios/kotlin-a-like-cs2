@@ -35,12 +35,12 @@ fun fossil_volcanic_shop_init(int0: Int, component1: Component, component2: Comp
 			int6 = calc(int6 + 1)
 		}
 		cc_settrans(trans8)
-		cc_setonmouseover({
+		cc_setonmouseover {
 			cc_settrans(event_com, event_comsubid, 225, null)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			cc_settrans(event_com, event_comsubid, trans8, null)
-		})
+		}
 		cc_setop(1, "Value")
 		cc_setop(10, "Examine")
 		if (namedobj10 = heat_proof_vessel_21539) {
@@ -60,9 +60,9 @@ fun fossil_volcanic_shop_init(int0: Int, component1: Component, component2: Comp
 			cc_setopbase("<col=ff9040>Large water container</col>")
 		}
 		cc_setopbase("<col=ff9040>${oc_name(namedobj10)}</col>")
-		cc_setonop({
+		cc_setonop {
 			opsound(event_opindex, 1086)
-		})
+		}
 		int9 = calc(int9 + 1)
 		namedobj10 = enum(int, namedobj, enum_1779, int9)
 	}
@@ -153,8 +153,8 @@ fun fossil_volcanic_shop_init(int0: Int, component1: Component, component2: Comp
 		}
 	}
 	~fossil_volcanic_shop_points(component3, 0)
-	if_setonvartransmit({
+	if_setonvartransmit(component3)  {
 		fossil_volcanic_shop_points(component3){VARP[261]}
-	}, component3)
+	}
 	return 
 }

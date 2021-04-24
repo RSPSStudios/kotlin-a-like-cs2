@@ -30,9 +30,9 @@ fun script1958(enum0: Enum, component1: Component, obj2: Obj, text0: String, int
 	cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
 	cc_setgraphicshadow(0x333333)
 	cc_setoutline(1)
-	if_setonop({
+	if_setonop {
 		cc_settrans_temporarily(event_com, cc_getid, 125, 0)
-	}, component1)
+	}
 	~script2146(enum0, component1, obj2, text0, int3, int6)
 	~script1628(enum0, component1, obj2, text0, int3, int6)
 	return 

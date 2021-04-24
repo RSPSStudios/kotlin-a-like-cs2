@@ -12,8 +12,8 @@ fun script442(opindex0: Int, component1: Component, int2: Int, component3: Compo
 		cc_settext(enum(int, string, enum_3509, int2))
 	}
 	~script527(component3, component4, component5, component1)
-	if_setontimer({
+	if_setontimer {
 		script528(component5, 0)
-	}, component5)
+	}
 	return 
 }

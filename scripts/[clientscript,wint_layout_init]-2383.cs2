@@ -3,8 +3,8 @@ fun wint_layout_init(component0: Component, component1: Component, component2: C
 
 	~script2249(component1, setbit(setbit(0, 3), 4))
 	~wint_layout_update(component2)
-	if_setonsubchange({
+	if_setonsubchange {
 		wint_layout_update(component2)
-	}, component0)
+	}
 	return 
 }

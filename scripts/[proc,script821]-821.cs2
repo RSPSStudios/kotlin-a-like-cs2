@@ -124,21 +124,21 @@ fun script821(component0: Component, comsubid1: Int, comsubid2: Int, comsubid3: 
 				if (stockmarket_isofferstable(int13) = true) {
 					cc_settrans(0)
 					cc_setgraphic(graphic23)
-					cc_setonmouserepeat({
+					cc_setonmouserepeat {
 						cc_graphic_swapper(event_com, event_comsubid, graphic24, null)
-					})
-					cc_setonmouseleave({
+					}
+					cc_setonmouseleave {
 						cc_graphic_swapper(event_com, event_comsubid, graphic23, null)
-					})
-					cc_setonop({
+					}
+					cc_setonop {
 						opsound(event_opindex, 2)
-					})
+					}
 				} else {
 					cc_settrans(120)
 					cc_setgraphic(graphic24)
-					cc_setonmouserepeat(null)
-					cc_setonmouseleave(null)
-					cc_setonop(null)
+					cc_setonmouserepeatnull
+					cc_setonmouseleavenull
+					cc_setonopnull
 				}
 			}
 		}

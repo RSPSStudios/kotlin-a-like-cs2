@@ -7,9 +7,9 @@ fun script3932(component0: Component, int1: Int, component2: Component) {
 		} else {
 			cc_setgraphic("options_radio_buttons,5")
 		}
-		if_setonop({
+		if_setonop {
 			script3930(component0, int1, component2)
-		}, component0)
+		}
 	}
 	return 
 }

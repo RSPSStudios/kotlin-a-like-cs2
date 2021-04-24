@@ -21,8 +21,8 @@ fun clanwars_ffa_init(component0: Component, component1: Component, component2: 
 	cc_settextshadow(true)
 	cc_setcolour(0xffffa0)
 	cc_settext(string0)
-	if_setontimer({
+	if_setontimer {
 		clanwars_ffa_hint(component3)
-	}, component0)
+	}
 	return 
 }

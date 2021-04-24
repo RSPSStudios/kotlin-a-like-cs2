@@ -18,13 +18,13 @@ fun script452(string0: String, int0: Int): Int {
 				_5633(string0, "store/oldschool")
 			}
 			}
-			if_setontimer(null, interface_229:1)
+			if_setontimernull
 			if_resume_pausebutton(interface_229:2)
 			return 1
 		}
 		21, 22, 23, 24, 25, 26 -> {
 		
-			if_setontimer(null, interface_229:1)
+			if_setontimernull
 			if_settext("Unable to open the ${string0} store.", interface_229:1)
 			if_settext("${~text_device("Click", "Tap")} here to continue", interface_229:2)
 			return 1

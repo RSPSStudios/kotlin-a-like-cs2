@@ -102,17 +102,17 @@ fun league_points_progress_bar(component0: Component, component1: Component, int
 						}
 						if (~on_mobile = true) {
 							cc_setop(1, "Show Threshold")
-							cc_setonop({
+							cc_setonop {
 								league_progress_bar_mobile_tooltip(event_com, event_comsubid, component1, string0, 512)
-							})
+							}
 						} else {
 							cc_setop(1, "")
-							cc_setonmouserepeat({
+							cc_setonmouserepeat {
 								tooltip_mouserepeat(event_com, event_comsubid, component1, string0, 25, 512)
-							})
-							cc_setonmouseleave({
+							}
+							cc_setonmouseleave {
 								deltooltip(component1)
-							})
+							}
 						}
 						int8 = calc(int8 + 1)
 						int9 = calc(int9 + 1)
@@ -159,9 +159,9 @@ fun league_points_progress_bar(component0: Component, component1: Component, int
 			if (cc_getwidth > width19) {
 				cc_setsize(0, cc_getheight, ^setsize_abs, ^setsize_abs)
 			}
-			if_setontimer({
+			if_setontimer {
 				league_points_progress_bar_expand(component0, width19)
-			}, component0)
+			}
 		} else {
 			cc_setsize(width19, cc_getheight, ^setsize_abs, ^setsize_abs)
 		}

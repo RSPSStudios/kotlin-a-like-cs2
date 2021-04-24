@@ -25,15 +25,15 @@ fun setting_dropdown_transmit(int0: Int, struct1: Struct, comsubid2: Int, comsub
 	}
 	if (~on_mobile = false & cc_find(component5, comsubid4) = ^true) {
 		if (int14 = 1) {
-			cc_setonmouseover({
+			cc_setonmouseover {
 				cc_settrans(component5, comsubid4, 220, null)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				cc_settrans(component5, comsubid4, 255, null)
-			})
+			}
 		} else {
-			cc_setonmouseover(null)
-			cc_setonmouseleave(null)
+			cc_setonmouseovernull
+			cc_setonmouseleavenull
 		}
 	}
 	if (VARBIT[9657] = int7 & int14 = 0) {
@@ -42,7 +42,7 @@ fun setting_dropdown_transmit(int0: Int, struct1: Struct, comsubid2: Int, comsub
 		cc_deleteall(component10)
 		cc_deleteall(component11)
 		cc_deleteall(component12)
-		if_setonop(null, component9)
+		if_setonopnull
 		if_sethide(true, component12)
 	}
 	return 

@@ -2,11 +2,11 @@
 fun combat_interface_sp(component0: Component) {
 
 	~combat_interface_sp_redraw(component0)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		combat_interface_sp_redraw(component0){VARP[301], VARP[300], VARP[284]}
-	}, component0)
-	if_setoninvtransmit({
+	}
+	if_setoninvtransmit(component0)  {
 		combat_interface_sp_redraw(component0){worn}
-	}, component0)
+	}
 	return 
 }

@@ -15,42 +15,42 @@ fun telenexus_left_click(component0: Component, component1: Component, component
 	if (struct_param(struct14, param_680) ! null) {
 		struct14 = struct_param(struct14, param_680)
 	}
-	if_setonop({
+	if_setonop {
 		telenexus_tick_op(component0, component1, component2, component3, component4)
-	}, component4)
+	}
 	if (VARBIT[6669] = 0 | struct14 = null) {
 		if_sethide(true, component2)
 		if_sethide(false, component1)
 		if_settext("None set", component1)
 		if_setgraphic(graphic9, component3)
-		if_setonmouseover({
+		if_setonmouseover {
 			telenexus_tick_mouseover(component3, component4, graphic10)
-		}, component4)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			telenexus_tick_mouseleave(component3, component4, graphic9)
-		}, component4)
+		}
 	} else if (VARBIT[6669] < 150 & VARBIT[6669] ! 1 & VARBIT[6669] ! 4 & VARBIT[6669] ! 6) {
 		if_sethide(true, component2)
 		if_sethide(false, component1)
 		if_settext(struct_param(struct14, param_660), component1)
 		if_setgraphic(graphic11, component3)
-		if_setonmouseover({
+		if_setonmouseover {
 			telenexus_tick_mouseover(component3, component4, graphic12)
-		}, component4)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			telenexus_tick_mouseleave(component3, component4, graphic11)
-		}, component4)
+		}
 	} else {
 		int13, string0 = ~script2664(struct14)
 		if_sethide(false, component2)
 		if_sethide(true, component1)
 		if_setgraphic(graphic11, component3)
-		if_setonmouseover({
+		if_setonmouseover {
 			telenexus_tick_mouseover(component3, component4, graphic12)
-		}, component4)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			telenexus_tick_mouseleave(component3, component4, graphic11)
-		}, component4)
+		}
 		cc_create(component2, ^iftype_graphic, 0)
 		cc_setsize(17, 17, ^setsize_abs, ^setsize_abs)
 		cc_setposition(0, 3, ^setpos_abs_left, ^setpos_abs_top)
@@ -78,29 +78,29 @@ fun telenexus_left_click(component0: Component, component1: Component, component
 		cc_setop(1, "Select")
 		if (int13 = 1) {
 			cc_setcolour(0xff981f)
-			cc_setonop({
+			cc_setonop {
 				telenexus_radio_click(component0, component1, component2, event_com, event_comsubid, component3, component4)
-			})
+			}
 			if (VARBIT[6669] < 150 & VARBIT[6669] > 0) {
-				cc_setonmouseover({
+				cc_setonmouseover {
 					script2648(component2, 0, 2, graphic8, null)
-				})
-				cc_setonmouseleave({
+				}
+				cc_setonmouseleave {
 					script2649(component2, 0, 2, graphic7, null)
-				})
+				}
 			} else {
-				cc_setonmouseover({
+				cc_setonmouseover {
 					script2648(component2, 0, 2, graphic6, null)
-				})
-				cc_setonmouseleave({
+				}
+				cc_setonmouseleave {
 					script2649(component2, 0, 2, graphic5, null)
-				})
+				}
 			}
 		} else {
 			cc_setcolour(0xbbbbbb)
-			cc_setonop(null)
-			cc_setonmouseover(null)
-			cc_setonmouseleave(null)
+			cc_setonopnull
+			cc_setonmouseovernull
+			cc_setonmouseleavenull
 		}
 		int13, string0 = ~script2664(struct_param(struct14, param_679))
 		cc_create(component2, ^iftype_text, 3)
@@ -114,29 +114,29 @@ fun telenexus_left_click(component0: Component, component1: Component, component
 		cc_setop(1, "Select")
 		if (int13 = 1) {
 			cc_setcolour(0xff981f)
-			cc_setonop({
+			cc_setonop {
 				telenexus_radio_click(component0, component1, component2, event_com, event_comsubid, component3, component4)
-			})
+			}
 			if (VARBIT[6669] > 150) {
-				cc_setonmouseover({
+				cc_setonmouseover {
 					script2648(component2, 1, 3, graphic8, null)
-				})
-				cc_setonmouseleave({
+				}
+				cc_setonmouseleave {
 					script2649(component2, 1, 3, graphic7, null)
-				})
+				}
 			} else {
-				cc_setonmouseover({
+				cc_setonmouseover {
 					script2648(component2, 1, 3, graphic6, null)
-				})
-				cc_setonmouseleave({
+				}
+				cc_setonmouseleave {
 					script2649(component2, 1, 3, graphic5, null)
-				})
+				}
 			}
 		} else {
 			cc_setcolour(0xbbbbbb)
-			cc_setonop(null)
-			cc_setonmouseover(null)
-			cc_setonmouseleave(null)
+			cc_setonopnull
+			cc_setonmouseovernull
+			cc_setonmouseleavenull
 		}
 	}
 	return 

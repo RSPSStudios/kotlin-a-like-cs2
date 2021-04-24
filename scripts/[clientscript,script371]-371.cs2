@@ -6,7 +6,7 @@ fun script371(int0: Int) {
 	if (int0 <= 0) {
 		if_settext("0:00", component1)
 		if_setcolour(0xffa53d, component1)
-		if_setontimer(null, interface_375:24)
+		if_setontimernull
 		return 
 	}
 	val int2: Int = calc(int0 / 50)

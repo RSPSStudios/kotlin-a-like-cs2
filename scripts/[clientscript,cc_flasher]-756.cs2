@@ -9,7 +9,7 @@ fun cc_flasher(component0: Component, comsubid1: Int, clock2: Int) {
 		int5 = calc(int4 - clock2)
 		if (int5 >= 750) {
 			cc_settrans(255)
-			cc_setontimer(null)
+			cc_setontimernull
 			return 
 		}
 		if (calc(int4 % 40) >= 20) {

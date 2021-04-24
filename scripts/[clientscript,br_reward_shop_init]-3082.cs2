@@ -2,9 +2,9 @@
 fun br_reward_shop_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component) {
 
 	~br_reward_shop_showpoints(component1)
-	if_setonvartransmit({
+	if_setonvartransmit(component1)  {
 		br_reward_shop_showpoints(component1){VARP[261], VARP[262], VARP[1141]}
-	}, component1)
+	}
 	val height6: Int = ~br_reward_shop_draw(-1, component0, component2, component4, component5)
 	if_setscrollpos(0, 0, component2)
 	if (height6 >= if_getheight(component2)) {

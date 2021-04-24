@@ -5,6 +5,6 @@ fun quickprayer_close_timeout(component0: Component, clock1: Int) {
 		return 
 	}
 	if_setgraphic("combatboxesmed,0", component0)
-	if_setontimer(null, component0)
+	if_setontimernull
 	return 
 }

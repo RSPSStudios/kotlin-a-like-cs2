@@ -30,8 +30,8 @@ fun tob_partylist_init(component0: Component, component1: Component) {
 	cc_sethide(true)
 	~script1558(interface_364:63, "Refresh", interface_364:3, enum_1938, -1)
 	~tob_partylist_setpartybutton
-	if_setonvartransmit({
+	if_setonvartransmit(interface_364:65)  {
 		tob_partylist_setpartybutton{VARP[1740]}
-	}, interface_364:65)
+	}
 	return 
 }

@@ -1,8 +1,8 @@
 // 2922 clientscript
 fun prif_remove_portal() {
 
-	if_setontimer({
+	if_setontimer {
 		prif_adjust_portal(clientclock, false)
-	}, interface_641:1)
+	}
 	return 
 }

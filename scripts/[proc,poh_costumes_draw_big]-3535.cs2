@@ -45,7 +45,7 @@ fun poh_costumes_draw_big(int0: Int, namedobj1: Namedobj, int2: Int, int3: Int, 
 		if (cc_find(component8, int10) = ^true) {
 			cc_sethide(true)
 			cc_clearops
-			cc_setontimer(null)
+			cc_setontimernull
 		}
 		int10 = calc(int10 + 1)
 	}
@@ -63,24 +63,24 @@ fun poh_costumes_draw_big(int0: Int, namedobj1: Namedobj, int2: Int, int3: Int, 
 			cc_settrans(120)
 			if (boolean7 = true) {
 				cc_setop(1, "Set")
-				cc_setonop({
+				cc_setonop {
 					poh_costumes_opgraphic(event_opindex, event_com, event_comsubid, 0, 120)
-				})
-				cc_setonmouserepeat({
+				}
+				cc_setonmouserepeat {
 					cc_settrans(event_com, event_comsubid, 40, null)
-				})
-				cc_setonmouseleave({
+				}
+				cc_setonmouseleave {
 					cc_settrans(event_com, event_comsubid, 120, null)
-				})
+				}
 				if (.cc_find(component8, calc(int9 + 1)) = ^true) {
 					.cc_sethide(false)
 					.cc_setposition(3, calc(int0 + 5), ^setpos_abs_right, ^setpos_abs_top)
 				}
 			} else {
 				cc_clearops
-				cc_setonop(null)
-				cc_setonmouserepeat(null)
-				cc_setonmouseleave(null)
+				cc_setonopnull
+				cc_setonmouserepeatnull
+				cc_setonmouseleavenull
 				if (.cc_find(component8, calc(int9 + 1)) = ^true) {
 					.cc_sethide(true)
 				}
@@ -90,30 +90,30 @@ fun poh_costumes_draw_big(int0: Int, namedobj1: Namedobj, int2: Int, int3: Int, 
 			cc_settrans(0)
 			if (boolean7 = true & int17 = 0) {
 				cc_setop(1, "Set")
-				cc_setonop({
+				cc_setonop {
 					poh_costumes_opgraphic(event_opindex, event_com, event_comsubid, 120, 0)
-				})
-				cc_setonmouserepeat({
+				}
+				cc_setonmouserepeat {
 					cc_settrans(event_com, event_comsubid, 80, null)
-				})
-				cc_setonmouseleave({
+				}
+				cc_setonmouseleave {
 					cc_settrans(event_com, event_comsubid, 0, null)
-				})
+				}
 				if (.cc_find(component8, calc(int9 + 1)) = ^true) {
 					.cc_sethide(false)
 					.cc_setposition(3, calc(int0 + 5), ^setpos_abs_right, ^setpos_abs_top)
 				}
 			} else {
 				cc_clearops
-				cc_setonop(null)
-				cc_setonmouserepeat(null)
-				cc_setonmouseleave(null)
+				cc_setonopnull
+				cc_setonmouserepeatnull
+				cc_setonmouseleavenull
 				if (.cc_find(component8, calc(int9 + 1)) = ^true) {
 					.cc_sethide(true)
 				}
 			}
 		}
-		cc_setontimer(null)
+		cc_setontimernull
 	}
 	int0 = calc(int0 + int20)
 	if (cc_find(component8, calc(int9 + 2)) = ^true) {

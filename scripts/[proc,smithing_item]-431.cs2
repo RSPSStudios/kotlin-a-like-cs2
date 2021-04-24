@@ -47,9 +47,9 @@ fun smithing_item(component0: Component, text0: String, namedobj1: Namedobj, int
 	cc_setgraphicshadow(0x333333)
 	cc_setoutline(1)
 	if (~inzone(0_26_195_0_0, 0_26_195_63_63, coord) = 1 & namedobj1 = bronze_dagger_1205 & VARP[2686] < 350) {
-		cc_setontimer({
+		cc_setontimer {
 			cc_flash_component_timer(event_com, event_comsubid, 0, 1)
-		})
+		}
 	}
 	val num6: Int = enum(obj, int, enum_844, namedobj1)
 	cc_setobject(namedobj1, num6)

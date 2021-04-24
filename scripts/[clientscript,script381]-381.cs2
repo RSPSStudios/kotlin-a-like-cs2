@@ -11,13 +11,13 @@ fun script381(component0: Component, component1: Component, component2: Componen
 	cc_setsize(32, 32, ^setsize_abs, ^setsize_abs)
 	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
 	cc_setgraphic("options_icons,0")
-	if_setonvartransmit({
+	if_setonvartransmit(component2)  {
 		script382(15, component2, component1, int4, component3){VARP[166]}
-	}, component2)
+	}
 	if_setnoclickthrough(true, component2)
-	if_setonclick({
+	if_setonclick {
 		opsound(0, 0)
-	}, component2)
+	}
 	while (int5 <= int4) {
 		cc_create(component1, ^iftype_rectangle, int5)
 		cc_setop(1, "Adjust Brightness")
@@ -26,9 +26,9 @@ fun script381(component0: Component, component1: Component, component2: Componen
 		cc_setfill(true)
 		cc_setcolour(^white)
 		cc_settrans(255)
-		cc_setonop({
+		cc_setonop {
 			script439(15, int5, component2, component1, int4, component3)
-		})
+		}
 		int5 = calc(int5 + 1)
 	}
 	~script3941(int7, component2, component1, int4)

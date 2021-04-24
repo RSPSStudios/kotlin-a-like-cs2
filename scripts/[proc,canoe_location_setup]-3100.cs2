@@ -14,12 +14,12 @@ fun canoe_location_setup(component0: Component, text0: String, boolean1: Boolean
 	cc_setfill(false)
 	cc_settrans(255)
 	if (~on_mobile = false) {
-		cc_setonmouserepeat({
+		cc_setonmouserepeat {
 			canoe_location_hover(boolean1, model2, model3, true, component0)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			canoe_location_hover(boolean1, model2, model3, false, component0)
-		})
+		}
 	}
 	cc_setop(1, op1)
 	int6 = calc(int6 + 1)

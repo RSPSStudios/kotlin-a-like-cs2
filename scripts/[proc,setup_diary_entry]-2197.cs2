@@ -9,15 +9,15 @@ fun setup_diary_entry(component0: Component, int1: Int, int2: Int, height3: Int)
 	cc_settrans(255)
 	cc_setsize(16, 27, ^setsize_minus, ^setsize_abs)
 	cc_setposition(0, calc(height3 + 1), ^setpos_abs_centre, ^setpos_abs_top)
-	cc_setonmouseover({
+	cc_setonmouseover {
 		diary_mouseover(event_com, event_comsubid, int1, true)
-	})
-	cc_setonmouseleave({
+	}
+	cc_setonmouseleave {
 		diary_mouseover(event_com, event_comsubid, int1, false)
-	})
-	cc_setonvartransmit({
+	}
+	cc_setonvartransmit {
 		update_diary_entry(event_com, event_comsubid, int1){VARP[1719], VARP[1720], VARP[1721], VARP[1722], VARP[1723], VARP[1724], VARP[1188], VARP[1189], VARP[1000], VARP[1001], VARP[1002], VARP[1200], VARP[1190], VARP[1191]}
-	})
+	}
 	cc_create(component0, ^iftype_text, int2)
 	int2 = calc(int2 + 1)
 	cc_settext(enum(int, string, enum_595, int1))

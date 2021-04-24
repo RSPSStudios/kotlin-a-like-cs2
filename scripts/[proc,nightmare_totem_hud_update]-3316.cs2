@@ -17,9 +17,9 @@ fun nightmare_totem_hud_update(component0: Component, component1: Component, int
 				if_setcolour(^white, component1)
 			}
 		} else {
-			if_setontimer({
+			if_setontimer {
 				nightmare_totem_hud_update_bar(component1, int18, component0)
-			}, component0)
+			}
 		}
 	}
 	val width19: Int = if_getwidth(component5)
@@ -38,9 +38,9 @@ fun nightmare_totem_hud_update(component0: Component, component1: Component, int
 				if_setcolour(^white, component5)
 			}
 		} else {
-			if_setontimer({
+			if_setontimer {
 				nightmare_totem_hud_update_bar(component5, int20, component4)
-			}, component4)
+			}
 		}
 	}
 	val width21: Int = if_getwidth(component9)
@@ -59,9 +59,9 @@ fun nightmare_totem_hud_update(component0: Component, component1: Component, int
 				if_setcolour(^white, component9)
 			}
 		} else {
-			if_setontimer({
+			if_setontimer {
 				nightmare_totem_hud_update_bar(component9, int22, component8)
-			}, component8)
+			}
 		}
 	}
 	val width23: Int = if_getwidth(component13)
@@ -80,9 +80,9 @@ fun nightmare_totem_hud_update(component0: Component, component1: Component, int
 				if_setcolour(^white, component13)
 			}
 		} else {
-			if_setontimer({
+			if_setontimer {
 				nightmare_totem_hud_update_bar(component13, int24, component12)
-			}, component12)
+			}
 		}
 	}
 	return 

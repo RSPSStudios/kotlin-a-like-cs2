@@ -58,12 +58,12 @@ fun settings_create_drop_down(int0: Int, int1: Int, int2: Int, int3: Int, trans4
 		cc_setcolour(0x9f9f9f)
 	}
 	if (boolean16 = false & int20 = 1 & string_length(string1) > 0) {
-		cc_setonmouserepeat({
+		cc_setonmouserepeat {
 			tooltip_mouserepeat(component7, int2, component14, string1, 25, 190)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			deltooltip(component14)
-		})
+		}
 	}
 	cc_settextalign(^settextalign_left, ^settextalign_centre, 14)
 	int2 = calc(int2 + 1)
@@ -113,9 +113,9 @@ fun settings_create_drop_down(int0: Int, int1: Int, int2: Int, int3: Int, trans4
 	cc_setcolour(^black)
 	cc_settrans(255)
 	cc_setop(1, "Select")
-	cc_setonop({
+	cc_setonop {
 		setting_show_dropdown(2, struct5, component7, calc(int2 - 1), enum15, int18, 20, cc_getx, cc_gety, component8, component9, component10, component11, component12, component13, comsubid26, boolean24)
-	})
+	}
 	cc_create(component7, ^iftype_rectangle, int2)
 	cc_setsize(int18, 20, ^setsize_abs, ^setsize_abs)
 	cc_setposition(10, calc(int0 + (int23 / 2 - 10)), ^setpos_abs_right, ^setpos_abs_top)
@@ -126,12 +126,12 @@ fun settings_create_drop_down(int0: Int, int1: Int, int2: Int, int3: Int, trans4
 		~settings_dropdown_choose_transmit(2, struct5, calc(int2 - 1), calc(int2 - 6), int2, component7, enum15, int27, component8, component9, component10, component11, component13)
 	}
 	if (int25 = 1 & ~on_mobile = false) {
-		cc_setonmouseover({
+		cc_setonmouseover {
 			cc_settrans(component7, int2, 220, null)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			cc_settrans(component7, int2, 255, null)
-		})
+		}
 	}
 	int2 = calc(int2 + 1)
 	if (boolean21 = false & int20 = 0 & int19 > 0) {

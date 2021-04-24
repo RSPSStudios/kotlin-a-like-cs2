@@ -35,12 +35,12 @@ fun script3560(enum0: Enum) {
 						if (string_length(VARCSTRING[359]) <= 0 | string_indexof_string(lowercase(string0), lowercase(VARCSTRING[359]), 0) ! -1) {
 							cc_create(interface_162:53, ^iftype_rectangle, int3)
 							cc_setopbase("<col=ff9040>${string0}</col>")
-							cc_setonop({
+							cc_setonop {
 								poh_costumes_searchresult(namedobj6, enum0, ^key_return)
-							})
-							cc_setonkey({
+							}
+							cc_setonkey {
 								poh_costumes_searchresult(namedobj6, enum0, event_key)
-							})
+							}
 							int3 = calc(int3 + 1)
 							cc_create(interface_162:53, ^iftype_graphic, int3)
 							cc_setobject_nonum(obj12, 1)
@@ -58,12 +58,12 @@ fun script3560(enum0: Enum) {
 						if (string_length(VARCSTRING[359]) <= 0 | string_indexof_string(lowercase(string0), lowercase(VARCSTRING[359]), 0) ! -1) {
 							cc_create(interface_162:53, ^iftype_rectangle, int3)
 							cc_setopbase("<col=ff9040>${string0}</col>")
-							cc_setonop({
+							cc_setonop {
 								poh_costumes_searchresult(namedobj6, enum0, ^key_return)
-							})
-							cc_setonkey({
+							}
+							cc_setonkey {
 								poh_costumes_searchresult(namedobj6, enum0, event_key)
-							})
+							}
 							int3 = calc(int3 + 1)
 							cc_create(interface_162:53, ^iftype_graphic, int3)
 							cc_setobject_nonum(obj12, 1)
@@ -79,12 +79,12 @@ fun script3560(enum0: Enum) {
 				if (string_length(VARCSTRING[359]) <= 0 | string_indexof_string(lowercase(string0), lowercase(VARCSTRING[359]), 0) ! -1) {
 					cc_create(interface_162:53, ^iftype_rectangle, int3)
 					cc_setopbase("<col=ff9040>${string0}</col>")
-					cc_setonop({
+					cc_setonop {
 						poh_costumes_searchresult(namedobj6, enum0, ^key_return)
-					})
-					cc_setonkey({
+					}
+					cc_setonkey {
 						poh_costumes_searchresult(namedobj6, enum0, event_key)
-					})
+					}
 					int3 = calc(int3 + 1)
 					cc_create(interface_162:53, ^iftype_graphic, int3)
 					cc_setobject_nonum(namedobj9, 1)
@@ -107,12 +107,12 @@ fun script3560(enum0: Enum) {
 						cc_create(interface_162:53, ^iftype_rectangle, int3)
 						cc_setopbase("<col=ff9040>${string0}</col>")
 						int3 = calc(int3 + 1)
-						cc_setonop({
+						cc_setonop {
 							poh_costumes_searchresult(namedobj6, enum0, ^key_return)
-						})
-						cc_setonkey({
+						}
+						cc_setonkey {
 							poh_costumes_searchresult(namedobj6, enum0, event_key)
-						})
+						}
 						cc_create(interface_162:53, ^iftype_graphic, int3)
 						cc_setobject_nonum(obj12, 1)
 						int0[int5] = int3
@@ -129,12 +129,12 @@ fun script3560(enum0: Enum) {
 					if (string_length(VARCSTRING[359]) <= 0 | string_indexof_string(lowercase(string0), lowercase(VARCSTRING[359]), 0) ! -1) {
 						cc_create(interface_162:53, ^iftype_rectangle, int3)
 						cc_setopbase("<col=ff9040>${string0}</col>")
-						cc_setonop({
+						cc_setonop {
 							poh_costumes_searchresult(namedobj6, enum0, ^key_return)
-						})
-						cc_setonkey({
+						}
+						cc_setonkey {
 							poh_costumes_searchresult(namedobj6, enum0, event_key)
-						})
+						}
 						int3 = calc(int3 + 1)
 						cc_create(interface_162:53, ^iftype_graphic, int3)
 						cc_setobject_nonum(obj12, 1)
@@ -150,12 +150,12 @@ fun script3560(enum0: Enum) {
 			if (string_length(VARCSTRING[359]) <= 0 | string_indexof_string(lowercase(string0), lowercase(VARCSTRING[359]), 0) ! -1) {
 				cc_create(interface_162:53, ^iftype_rectangle, int3)
 				cc_setopbase("<col=ff9040>${string0}</col>")
-				cc_setonop({
+				cc_setonop {
 					poh_costumes_searchresult(namedobj6, enum0, ^key_return)
-				})
-				cc_setonkey({
+				}
+				cc_setonkey {
 					poh_costumes_searchresult(namedobj6, enum0, event_key)
-				})
+				}
 				int3 = calc(int3 + 1)
 				cc_create(interface_162:53, ^iftype_graphic, int3)
 				cc_setobject_nonum(namedobj6, 1)
@@ -209,15 +209,15 @@ fun script3560(enum0: Enum) {
 			cc_setcolour(^white)
 			cc_setfill(true)
 			cc_settrans(255)
-			cc_setonmouseover({
+			cc_setonmouseover {
 				cc_settrans(event_com, event_comsubid, 200, null)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				cc_settrans(event_com, event_comsubid, 255, null)
-			})
+			}
 			cc_setop(1, "Find")
 			if (int4 > 0) {
-				cc_setonkey(null)
+				cc_setonkeynull
 			}
 			.cc_setsize(width17, 32, ^setsize_abs, ^setsize_abs)
 			.cc_setposition(x23, height24, ^setpos_abs_left, ^setpos_abs_top)

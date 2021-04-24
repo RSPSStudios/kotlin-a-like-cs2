@@ -12,7 +12,7 @@ fun script4070(clock0: Int, int1: Int, boolean2: Boolean) {
 		if_settrans(interpolate(int5, 255, 0, int1, int3), interface_437:7)
 	}
 	if (int3 >= int1) {
-		if_setontimer(null, interface_437:5)
+		if_setontimernull
 		if (boolean2 = false) {
 			if_sethide(true, interface_437:5)
 		}

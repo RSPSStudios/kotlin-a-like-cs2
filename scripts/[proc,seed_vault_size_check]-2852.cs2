@@ -17,8 +17,8 @@ fun seed_vault_size_check(component0: Component, component1: Component, width2: 
 	~scrollbar_vertical_rebuild(component7, component6)
 	cc_deleteall(component8)
 	~stoneborder(component8, "Seed Vault", 0)
-	if_setontimer({
+	if_setontimer {
 		seed_vault_size_check(component0, component1, width9, height10, component4, component5, component6, component7, component8)
-	}, component0)
+	}
 	return 
 }

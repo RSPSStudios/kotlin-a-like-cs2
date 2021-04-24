@@ -104,12 +104,12 @@ fun script4043(component0: Component, component1: Component, drop2: Component) {
 				~script4045(int3, component1, component4, obj11, int10, component0)
 				~script4045(int8, drop2, component9, obj6, int5, component0)
 			}
-			if_setontimer({
+			if_setontimer {
 				script4044(int3, component1, component4, component0, 0)
-			}, component4)
-			if_setontimer({
+			}
+			if_setontimer {
 				script4044(int8, drop2, component9, component0, 0)
-			}, component9)
+			}
 			return 
 		}
 		return 

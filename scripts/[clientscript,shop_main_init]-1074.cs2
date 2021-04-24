@@ -22,15 +22,15 @@ fun shop_main_init(inv0: Inv, obj1: Obj, int2: Int, text0: String) {
 			cc_setop(5, "Buy 50")
 		}
 		cc_setop(10, "Examine")
-		cc_setonop({
+		cc_setonop {
 			cc_settrans_temporarily(event_com, event_comsubid, 125, 0)
-		})
+		}
 		size5 = calc(size5 + 1)
 	}
 	~scrollbar_vertical(interface_300:17, interface_300:16, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
 	~shop_main_update(interface_300:16, size4, inv0, obj1, int2)
-	if_setoninvtransmit({
+	if_setoninvtransmit(interface_300:16)  {
 		shop_main_update(event_com, size4, inv0, obj1, int2){inv0}
-	}, interface_300:16)
+	}
 	return 
 }

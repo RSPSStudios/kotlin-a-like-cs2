@@ -5,7 +5,7 @@ fun graphicbox_reset(clock0: Int, component1: Component, comsubid2: Int, text0: 
 		return 
 	}
 	if (cc_find(component1, comsubid2) = ^true) {
-		cc_setontimer(null)
+		cc_setontimernull
 		cc_settext(text0)
 	}
 	return 

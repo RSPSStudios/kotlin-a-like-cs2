@@ -85,8 +85,8 @@ fun poh_menagerie_drawpet(obj0: Obj, enum1: Enum, int2: Int, int3: Int): Int {
 	cc_setop(1, "Take")
 	cc_setop(10, "Examine")
 	cc_setopbase("<col=ff9040>${oc_name(obj0)}</col>")
-	cc_setonop({
+	cc_setonop {
 		pet_insurance_op(event_opindex, event_com, event_comsubid)
-	})
+	}
 	return y4
 }

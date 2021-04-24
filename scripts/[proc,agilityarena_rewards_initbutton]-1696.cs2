@@ -7,14 +7,14 @@ fun agilityarena_rewards_initbutton(component0: Component, string0: String, int1
 		if_setop(1, "Buy for ${~tostring_spacer(int1, ",")} tickets", component0)
 	}
 	~agilityarena_rewards_draw(component0, string0, int1, false, component2)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		agilityarena_rewards_draw(component0, string0, int1, false, component2){inv}
-	}, component0)
-	if_setonmouserepeat({
+	}
+	if_setonmouserepeat {
 		agilityarena_rewards_draw(component0, string0, int1, true, component2)
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		agilityarena_rewards_draw(component0, string0, int1, false, component2)
-	}, component0)
+	}
 	return 
 }

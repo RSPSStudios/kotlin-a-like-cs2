@@ -14,16 +14,16 @@ fun slayer_rewards_tab(component0: Component, component1: Component, op0: String
 	.cc_settext(op0)
 	if (component1 ! component8) {
 		cc_setgraphic("combatboxesmed,0")
-		cc_setonmouseover({
+		cc_setonmouseover {
 			cc_colour_swapper(event_com, .cc_getid, ^white)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			cc_colour_swapper(event_com, .cc_getid, 0xff981f)
-		})
+		}
 		cc_setop(1, op0)
-		cc_setonop({
+		cc_setonop {
 			slayer_rewards_tabs(component0, component4, component5, component6, component7, component1)
-		})
+		}
 	} else {
 		cc_setgraphic("combatboxesmed,1")
 	}

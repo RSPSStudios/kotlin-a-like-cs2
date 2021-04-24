@@ -3,8 +3,8 @@ fun interface_inv_init(component0: Component, inv1: Inv, int2: Int, int3: Int, i
 
 	val string5: String = ""
 	~interface_inv_update_big(component0, inv1, int2, int3, int4, component5, string0, string1, string2, string3, string4, string5, string5, string5, string5)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		interface_inv_update_big(component0, inv1, int2, int3, int4, component5, string0, string1, string2, string3, string4, string5, string5, string5, string5){inv1}
-	}, component0)
+	}
 	return 
 }

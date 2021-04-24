@@ -51,20 +51,20 @@ fun wilderness_lootingbag_draw(inv0: Inv) {
 			if (inv0 = inv) {
 				if (obj2 = looting_bag_11941 | obj2 = looting_bag_22586) {
 					cc_settrans(150)
-					cc_setonmouserepeat(null)
-					cc_setonmouseleave(null)
+					cc_setonmouserepeatnull
+					cc_setonmouseleavenull
 				} else {
 					cc_settrans(0)
-					cc_setonop({
+					cc_setonop {
 						cc_settrans_temporarily(event_com, event_comsubid, 150, 0)
-					})
+					}
 					if (int0[size5] <= -1) {
-						cc_setonmouserepeat({
+						cc_setonmouserepeat {
 							tooltip_mouserepeat(event_com, event_comsubid, interface_81:7, string0, 25, 512)
-						})
-						cc_setonmouseleave({
+						}
+						cc_setonmouseleave {
 							deltooltip(interface_81:7)
-						})
+						}
 					} else {
 						~trade_tooltip(int3, int0[size5], interface_81:7)
 					}

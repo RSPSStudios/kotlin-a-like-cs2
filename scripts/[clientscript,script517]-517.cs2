@@ -33,9 +33,9 @@ fun script517(component0: Component) {
 	cc_setsize(2, 2, ^setsize_minus, ^setsize_minus)
 	cc_setfill(false)
 	cc_setcolour(0x726451)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		script522(event_com){VARP[867], VARP[1052], VARP[1053]}
-	}, component0)
+	}
 	~script523(component0)
 	return 
 }

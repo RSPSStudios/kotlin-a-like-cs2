@@ -18,8 +18,8 @@ fun script1158(component0: Component) {
 		size1 = calc(size1 + 1)
 	}
 	~script1160(component0)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		script1159(component0){inv}
-	}, component0)
+	}
 	return 
 }

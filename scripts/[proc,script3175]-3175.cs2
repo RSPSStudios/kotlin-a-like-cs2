@@ -60,9 +60,9 @@ fun script3175(component0: Component, clock1: Int) {
 		}
 		if_setposition(x3, y4, setposh7, setposv8, component0)
 		if_setsize(width5, height6, ^setsize_abs, ^setsize_abs, component0)
-		if_setontimer({
+		if_setontimer {
 			script3174(component0, VARCINT[384])
-		}, component0)
+		}
 	}
 	return 
 }

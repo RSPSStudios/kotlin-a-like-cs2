@@ -2,7 +2,7 @@
 fun br_loadout_insert(component0: Component, comsubid1: Int, drop2: Component, dropsubid3: Int, count4: Int, component5: Component, comsubid6: Int, comsubid7: Int, drop8: Component, drop9: Component, component10: Component) {
 
 	if (cc_find(component0, comsubid1) = ^true) {
-		cc_setontimer(null)
+		cc_setontimernull
 	}
 	if (cc_find(component5, comsubid6) = ^true) {
 		cc_sethide(true)

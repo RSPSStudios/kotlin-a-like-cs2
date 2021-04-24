@@ -74,9 +74,9 @@ fun worldmap_window_drag_preview(comsubid0: Int, mousex1: Int, mousey2: Int, x3:
 		if_setsize(int10, int11, ^setsize_minus, ^setsize_minus, component7)
 		if_sethide(false, component7)
 		if_sethide(true, component8)
-		cc_setontimer({
+		cc_setontimer {
 			worldmap_window_drag_end(calc(clientclock + 3), int10, int11, int12, int13, component5, component6, component7, component8, int9)
-		})
+		}
 	}
 	return 
 }

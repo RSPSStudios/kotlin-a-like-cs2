@@ -19,15 +19,15 @@ fun snapshot_rules_write(int0: Int, text0: String, int1: Int, int2: Int, compone
 	}
 	cc_settrans(255)
 	cc_setop(1, "Send report")
-	cc_setonop({
+	cc_setonop {
 		snapshot_rules_send(int1)
-	})
-	cc_setonmouseover({
+	}
+	cc_setonmouseover {
 		snapshot_rules_hover(event_com, event_comsubid, ^red)
-	})
-	cc_setonmouseleave({
+	}
+	cc_setonmouseleave {
 		snapshot_rules_hover(event_com, event_comsubid, ^white)
-	})
+	}
 	.cc_create(component3, ^iftype_text, int4)
 	int4 = calc(int4 + 1)
 	.cc_setsize(15, int7, ^setsize_abs, ^setsize_abs)

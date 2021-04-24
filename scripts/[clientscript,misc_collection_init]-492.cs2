@@ -6,8 +6,8 @@ fun misc_collection_init(component0: Component, component1: Component, component
 	val int4: Int = calc(if_getwidth(component1) / 9 - 36)
 	val int5: Int = calc(int4 / 2)
 	~misc_collection_draw(size3, int4, int5, component1, component2)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		misc_collection_draw(size3, int4, int5, component1, component2){inv_390}
-	}, component0)
+	}
 	return 
 }

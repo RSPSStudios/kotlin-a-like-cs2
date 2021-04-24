@@ -9,37 +9,37 @@ fun script4088(int0: Int, component1: Component, component2: Component) {
 	val int8: Int = 0
 	if (VARBIT[9638] = 0) {
 		if_setop(1, "Search", component3)
-		if_setonop({
+		if_setonop {
 			script4090(component1, component2)
-		}, component3)
-		if_setonmouseover({
+		}
+		if_setonmouseover {
 			script4092(component4)
-		}, component4)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			script4093(component4)
-		}, component4)
+		}
 		if_settext("*", component4)
 		if_setcolour(0xff981f, component4)
 		if (int0 = 1) {
 			VARCSTRING[417] = ""
 		}
-		if_setonkey(null, component4)
+		if_setonkeynull
 	} else {
 		if (~on_mobile = false) {
 			if_setop(1, "", component3)
-			if_setonop(null, component3)
+			if_setonopnull
 		} else {
 			if_setop(1, "Show keyboard", component3)
-			if_setonop({
+			if_setonop {
 				settings_show_keyboard
-			}, component3)
+			}
 		}
-		if_setonmouseover(null, component4)
-		if_setonmouseleave(null, component4)
+		if_setonmouseovernull
+		if_setonmouseleavenull
 		if_settext(append(VARCSTRING[417], "<col=f4f4f4>*</col>"), component4)
-		if_setonkey({
+		if_setonkey {
 			script4094(event_key, event_keychar, component4, component7, component5, component6, component1, component2)
-		}, component4)
+		}
 		~script4101
 	}
 	~script4096(1)

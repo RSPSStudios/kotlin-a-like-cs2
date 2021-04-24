@@ -22,24 +22,24 @@ fun script154(inv0: Inv, slot1: Int, component2: Component, comsubid3: Int, int4
 				cc_setdragdeadtime(5)
 			}
 			if (int4 = 1) {
-				cc_setondragcomplete({
+				cc_setondragcomplete {
 					script155(inv0, event_comsubid, event_dropsubid, event_com, int4, component5, string0, string1, string2, string3, string4, string5, string6, string7, string8)
-				})
+				}
 			} else if (int4 = 2) {
-				cc_setondragcomplete({
+				cc_setondragcomplete {
 					script156(inv0, event_comsubid, event_dropsubid, event_com, int4, component5, string0, string1, string2, string3, string4, string5, string6, string7, string8)
-				})
+				}
 			}
 			if (int4 ! 0 & component5 ! null) {
-				cc_setondrag({
+				cc_setondrag {
 					interface_inv_drag_slot(slot1, component2, component5, event_mousey)
-				})
+				}
 			}
 			cc_setgraphicshadow(0x333333)
 			cc_setoutline(1)
-			cc_setonop({
+			cc_setonop {
 				cc_settrans_temporarily(event_com, event_comsubid, 100, 0)
-			})
+			}
 		} else {
 			cc_setobject(null, 0)
 			cc_setopbase("")
@@ -48,8 +48,8 @@ fun script154(inv0: Inv, slot1: Int, component2: Component, comsubid3: Int, int4
 				cc_setdragdeadzone(0)
 				cc_setdragdeadtime(0)
 			}
-			cc_setondragcomplete(null)
-			cc_setonop(null)
+			cc_setondragcompletenull
+			cc_setonopnull
 		}
 		cc_settrans(0)
 	}

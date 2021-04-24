@@ -13,11 +13,11 @@ fun motherlode_hud_init(component0: Component, component1: Component, component2
 	cc_settextshadow(true)
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	~motherlode_hud_update(component3)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		motherlode_hud_update(component3, comsubid4){VARP[1429], VARP[375]}
-	}, component0)
-	if_setonsubchange({
+	}
+	if_setonsubchange {
 		motherlode_hud_update(component3, comsubid4)
-	}, component0)
+	}
 	return 
 }

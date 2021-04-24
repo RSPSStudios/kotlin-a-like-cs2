@@ -7,10 +7,10 @@ fun 1v1arena_hud_toggle(boolean0: Boolean, component1: Component, component2: Co
 	val comsubid4: Int = 0
 	if (boolean0 = true) {
 		if_sethide(true, component2)
-		if_setonmouseover(null, component2)
-		if_setonmouseleave(null, component2)
+		if_setonmouseovernull
+		if_setonmouseleavenull
 		if_clearops(component2)
-		if_setonop(null, component2)
+		if_setonopnull
 		if_sethide(false, component1)
 		comsubid4 = ~options_button_off(component1, 0)
 		cc_create(component1, ^iftype_text, comsubid4)
@@ -21,22 +21,22 @@ fun 1v1arena_hud_toggle(boolean0: Boolean, component1: Component, component2: Co
 		cc_settextfont(p11_full)
 		cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 		cc_settext("Show")
-		if_setonmouseover({
+		if_setonmouseover {
 			cc_colour_swapper(event_com, cc_getid, ^white)
-		}, component1)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			cc_colour_swapper(event_com, cc_getid, 0xff981f)
-		}, component1)
+		}
 		if_setop(1, "Show", component1)
-		if_setonop({
+		if_setonop {
 			1v1arena_hud_toggle(false, component1, component2, component3)
-		}, component1)
+		}
 	} else {
 		if_sethide(true, component1)
-		if_setonmouseover(null, component1)
-		if_setonmouseleave(null, component1)
+		if_setonmouseovernull
+		if_setonmouseleavenull
 		if_clearops(component1)
-		if_setonop(null, component1)
+		if_setonopnull
 		if_sethide(false, component2)
 		comsubid4 = ~options_button_off(component2, 0)
 		cc_create(component2, ^iftype_text, comsubid4)
@@ -47,16 +47,16 @@ fun 1v1arena_hud_toggle(boolean0: Boolean, component1: Component, component2: Co
 		cc_settextfont(p11_full)
 		cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 		cc_settext("Hide")
-		if_setonmouseover({
+		if_setonmouseover {
 			cc_colour_swapper(event_com, cc_getid, ^white)
-		}, component2)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			cc_colour_swapper(event_com, cc_getid, 0xff981f)
-		}, component2)
+		}
 		if_setop(1, "Hide", component2)
-		if_setonop({
+		if_setonop {
 			1v1arena_hud_toggle(true, component1, component2, component3)
-		}, component2)
+		}
 	}
 	return 
 }

@@ -8,18 +8,18 @@ fun bankside_drawitem(obj0: Obj, num1: Int, index2: Int, component3: Component, 
 		cc_setobject(obj0, num1)
 		if ((obj0 = looting_bag_11941 | obj0 = looting_bag_22586) & int5 = 1) {
 			cc_setop(1, "View")
-			cc_setonop({
+			cc_setonop {
 				bankside_switchview(event_opindex, component6, component7, component8, 1)
-			})
+			}
 		} else if (obj0 = extradimensional_bag_25106 | obj0 = extradimensional_bag_25108) {
 			cc_setop(1, "View")
-			cc_setonop({
+			cc_setonop {
 				bankside_switchview(event_opindex, component6, component7, component8, 2)
-			})
+			}
 		} else {
-			cc_setonop({
+			cc_setonop {
 				cc_settrans_temporarily(event_com, event_comsubid, 100, 0)
-			})
+			}
 		}
 		cc_setop(2, "Deposit-${~script2579}")
 		if (VARBIT[6590] ! 0) {
@@ -35,15 +35,15 @@ fun bankside_drawitem(obj0: Obj, num1: Int, index2: Int, component3: Component, 
 		cc_setop(9, ~bankside_extraop(obj0, index2))
 		cc_setop(10, "Examine")
 		cc_setopbase("<col=ff9040>${oc_name(obj0)}</col>")
-		cc_setondragcomplete({
+		cc_setondragcomplete {
 			bankside_reorder(event_com, event_drop, event_comsubid, event_dropsubid, component4, component6, component7, component8)
-		})
+		}
 	} else {
 		cc_settrans(255)
 		cc_setobject(obj_6512, 1)
-		cc_setonop(null)
-		cc_setondragcomplete(null)
+		cc_setonopnull
+		cc_setondragcompletenull
 	}
-	cc_setontimer(null)
+	cc_setontimernull
 	return 
 }

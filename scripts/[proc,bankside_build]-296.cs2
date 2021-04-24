@@ -1,9 +1,9 @@
 // 296 proc
 fun bankside_build(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component) {
 
-	if_setontimer({
+	if_setontimer {
 		script3277(VARCINT[386], component0, component1, component2, component3, component4, component5)
-	}, component0)
+	}
 	cc_deleteall(component2)
 	val int6: Int = calc((42 - 36) * 3 - 2)
 	val int7: Int = calc((36 - 32) * 2)
@@ -20,7 +20,7 @@ fun bankside_build(component0: Component, component1: Component, component2: Com
 				cc_clearops
 				cc_setposition(calc(int6 + int9 % 4 * 42), calc(int7 + int9 / 4 * 36), ^setpos_abs_left, ^setpos_abs_top)
 				~bankside_worn_drawitem(inv_getobj(inv, int9), inv_getnum(inv, int9), int9)
-				cc_setontimer(null)
+				cc_setontimernull
 			}
 		}
 		return 

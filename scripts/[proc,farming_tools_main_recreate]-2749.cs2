@@ -30,12 +30,12 @@ fun farming_tools_main_recreate(component0: Component, obj1: Obj, text0: String,
 	cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
 	cc_setgraphicshadow(0x333333)
 	cc_setoutline(1)
-	if_setonop({
+	if_setonop {
 		cc_settrans_temporarily(event_com, cc_getid, 125, 0)
-	}, component0)
+	}
 	~farming_tools_main_update(component0, obj1, text0, int2, int5)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		farming_tools_main_update(component0, obj1, text0, int2, int5){VARP[615], VARP[2084], VARP[439], VARP[967], VARP[1785], VARP[1704]}
-	}, component0)
+	}
 	return 
 }

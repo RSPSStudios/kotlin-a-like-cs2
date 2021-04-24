@@ -8,12 +8,12 @@ fun bondif_redeem_rightcolumn(component0: Component, component1: Component) {
 	if (component4 ! null & VARBIT[10149] = 1) {
 		if_settext("The required Old School Bonds will be taken from your account.<br>Select <col=ffffff>Confirm</col> to continue.", component0)
 		comsubid2, int3 = ~v2_stone_button_fadable(component1, int3)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			bondif_redeem_hover(true, component1, comsubid2)
-		}, component1)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			bondif_redeem_hover(false, component1, comsubid2)
-		}, component1)
+		}
 		cc_create(component1, ^iftype_text, int3)
 		int3 = calc(int3 + 1)
 		cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)

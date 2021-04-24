@@ -2,15 +2,15 @@
 fun wiki_icon_init(component0: Component, component1: Component, component2: Component, boolean3: Boolean) {
 
 	if_setnoclickthrough(true, component1)
-	if_setontargetenter({
+	if_setontargetenter {
 		script3298(component1, component2, true)
-	}, component1)
-	if_setontargetleave({
+	}
+	if_setontargetleave {
 		script3298(component1, component2, false)
-	}, component1)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component0)  {
 		wiki_icon_update(component0, component1, component2, boolean3){VARP[1055], VARP[1795]}
-	}, component0)
+	}
 	~wiki_icon_update(component0, component1, component2, boolean3)
 	return 
 }

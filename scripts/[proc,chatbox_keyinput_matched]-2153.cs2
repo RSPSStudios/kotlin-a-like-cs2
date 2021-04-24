@@ -7,23 +7,23 @@ fun chatbox_keyinput_matched(component0: Component, int1: Int, component2: Compo
 			cc_settext("Please wait...")
 			cc_setcolour(colour4)
 		}
-		cc_setonkey({
+		cc_setonkey {
 			chatbox_keyinput_listener(event_key, event_keychar, event_com, event_comsubid, component2, key3, string0, string1, colour4, calc(clientclock + 20))
-		})
+		}
 	} else {
 		if (string_length(if_gettext(component0)) > 0) {
 			if_resume_pausebutton(component0)
 			if_settext("Please wait...", component0)
 			if_setcolour(colour4, component0)
 		}
-		if_setonkey({
+		if_setonkey {
 			chatbox_keyinput_listener(event_key, event_keychar, event_com, -1, component2, key3, string0, string1, colour4, calc(clientclock + 20))
-		}, component0)
+		}
 	}
 	if (component2 ! null) {
-		if_setonclick({
+		if_setonclick {
 			chatbox_keyinput_clicklistener(component0, int1, event_com, key3, string0, string1, colour4, calc(clientclock + 20))
-		}, component2)
+		}
 	}
 	return 
 }

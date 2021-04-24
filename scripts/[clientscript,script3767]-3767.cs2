@@ -3,12 +3,12 @@ fun script3767(component0: Component, component1: Component, component2: Compone
 
 	val clock10: Int = calc(VARCINT[110] + 50)
 	if (clientclock <= clock10) {
-		if_setontimer(null, component0)
+		if_setontimernull
 		~script3773(component1, component2, component3, component4, component5, component6, component7, component8, component9)
 	} else {
-		if_setontimer({
+		if_setontimer {
 			script3768(clock10, component0, component1, component2, component3, component4, component5, component6, component7, component8, component9)
-		}, component0)
+		}
 	}
 	return 
 }

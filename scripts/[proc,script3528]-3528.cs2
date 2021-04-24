@@ -35,16 +35,16 @@ fun script3528(int0: Int, y1: Int, int2: Int, int3: Int, component4: Component, 
 	if (oc_members(namedobj10) = ^true & map_members = ^false) {
 		cc_setcolour(0x9f9f9f)
 		mes0 = "You must be on a members' world to purchase that item."
-		.cc_setonop({
+		.cc_setonop {
 			script3530(mes0, component4, component5, component6, component7)
-		})
+		}
 		colour12, colour13 = 0x9f9f9f, 0x9f9f9f
 	} else if (VARP[261] < num14) {
 		cc_setcolour(0x9f9f9f)
 		mes0 = "You need ${~pest_rewards_costpoints(num14)} to claim that reward."
-		.cc_setonop({
+		.cc_setonop {
 			script3530(mes0, component4, component5, component6, component7)
-		})
+		}
 		colour12, colour13 = 0x9f9f9f, 0x9f9f9f
 	} else {
 		if (int9 = int0) {
@@ -52,9 +52,9 @@ fun script3528(int0: Int, y1: Int, int2: Int, int3: Int, component4: Component, 
 		} else {
 			cc_setcolour(0x00df00)
 		}
-		.cc_setonop({
+		.cc_setonop {
 			script3529(int0, component4, component5, component6, component7)
-		})
+		}
 	}
 	val string1: String = enum(int, string, enum_2646, int0)
 	if (parawidth(string1, 512, p12_full) > width11) {
@@ -77,16 +77,16 @@ fun script3528(int0: Int, y1: Int, int2: Int, int3: Int, component4: Component, 
 	}
 	if (int9 = int0) {
 		cc_setcolour(^white)
-		.cc_setonmouserepeat(null)
-		.cc_setonmouseleave(null)
+		.cc_setonmouserepeatnull
+		.cc_setonmouseleavenull
 	} else {
 		cc_setcolour(colour12)
-		.cc_setonmouserepeat({
+		.cc_setonmouserepeat {
 			cc_colour_swapper(event_com, cc_getid, colour13)
-		})
-		.cc_setonmouseleave({
+		}
+		.cc_setonmouseleave {
 			cc_colour_swapper(event_com, cc_getid, colour12)
-		})
+		}
 	}
 	return int8
 }

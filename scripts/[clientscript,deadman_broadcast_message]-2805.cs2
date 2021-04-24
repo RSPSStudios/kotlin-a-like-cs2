@@ -5,8 +5,8 @@ fun deadman_broadcast_message(string0: String) {
 	if_sethide(false, interface_90:22)
 	~deadman_broadcast_message_sizing(string0)
 	if_setsize(0, 60, ^setsize_abs, ^setsize_abs, interface_90:22)
-	if_setontimer({
+	if_setontimer {
 		deadman_broadcast_message_timer(clientclock)
-	}, interface_90:21)
+	}
 	return 
 }

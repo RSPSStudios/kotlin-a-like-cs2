@@ -5,9 +5,9 @@ fun setting_dropdown_synch(int0: Int, comsubid1: Int, component2: Component, enu
 	if (cc_find(component2, comsubid1) = ^true) {
 		if (int0 < 35) {
 			int0 = calc(int0 + 1)
-			cc_setontimer({
+			cc_setontimer {
 				setting_dropdown_synch(int0, comsubid1, component2, enum3, int4, int5)
-			})
+			}
 		} else {
 			if (int5 = 2) {
 				int6 = ~settings_get_dropdown(int4)
@@ -15,7 +15,7 @@ fun setting_dropdown_synch(int0: Int, comsubid1: Int, component2: Component, enu
 				int6 = ~settings_get_keybind(int4)
 			}
 			cc_settext(enum(int, string, enum3, int6))
-			cc_setontimer(null)
+			cc_setontimernull
 		}
 	}
 	return 

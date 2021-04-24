@@ -3,8 +3,8 @@ fun castlewars_waitingroom_init(component0: Component, component1: Component) {
 
 	~script2249(component1, setbit(0, 3))
 	~castlewars_waitingroom_update(component0)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		castlewars_waitingroom_update(component0){VARP[380]}
-	}, component0)
+	}
 	return 
 }

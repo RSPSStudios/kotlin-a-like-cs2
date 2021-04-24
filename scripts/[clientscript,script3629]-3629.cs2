@@ -9,8 +9,8 @@ fun script3629(component0: Component) {
 	cc_settextfont(quill_oblique_large)
 	cc_settextshadow(true)
 	cc_settext(tostring(VARBIT[3433]))
-	cc_setonvartransmit({
+	cc_setonvartransmit {
 		script3632(component0){VARP[986]}
-	})
+	}
 	return 
 }

@@ -15,12 +15,12 @@ fun br_loadout_init(component0: Component, component1: Component, component2: Co
 	cc_setgraphic("bankbuttons,6")
 	cc_create(component5, ^iftype_text, count7)
 	cc_setcolour(0xff981f)
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		cc_colour_swapper(event_com, count7, ^white)
-	}, component5)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		cc_colour_swapper(event_com, count7, 0xff981f)
-	}, component5)
+	}
 	count7 = calc(count7 + 1)
 	cc_setposition(0, 0, ^setpos_abs_right, ^setpos_abs_centre)
 	cc_setsize(38, 0, ^setsize_minus, ^setsize_minus)
@@ -90,27 +90,27 @@ fun br_loadout_init(component0: Component, component1: Component, component2: Co
 			.cc_setsize(0, 36, ^setsize_minus, ^setsize_abs)
 			.cc_setposition(0, height13, ^setpos_abs_centre, ^setpos_abs_top)
 			.cc_setfill(true)
-			cc_setonmouserepeat({
+			cc_setonmouserepeat {
 				script1015(event_com, .cc_getid, ^white, 225)
-			})
+			}
 			if (calc(int9 % 2) = 0) {
 				.cc_setcolour(^white)
 				.cc_settrans(255)
-				cc_setonmouseleave({
+				cc_setonmouseleave {
 					script1015(event_com, .cc_getid, ^white, 255)
-				})
-				cc_setonop({
+				}
+				cc_setonop {
 					br_loadout_menuop(event_opindex, event_com, event_comsubid, .cc_getid, ^white, 225, ^white, 255, component1, component2, component5, component6)
-				})
+				}
 			} else {
 				.cc_setcolour(^black)
 				.cc_settrans(225)
-				cc_setonmouseleave({
+				cc_setonmouseleave {
 					script1015(event_com, .cc_getid, ^black, 225)
-				})
-				cc_setonop({
+				}
+				cc_setonop {
 					br_loadout_menuop(event_opindex, event_com, event_comsubid, .cc_getid, ^white, 225, ^black, 225, component1, component2, component5, component6)
-				})
+				}
 			}
 			.cc_create(component3, ^iftype_graphic, count7)
 			count7 = calc(count7 + 1)
@@ -145,12 +145,12 @@ fun br_loadout_init(component0: Component, component1: Component, component2: Co
 				}
 			}
 			.cc_settext(string1)
-			cc_setondrag({
+			cc_setondrag {
 				br_loadout_menudragging(event_com, event_comsubid, namedobj15, string1, component1, comsubid11, comsubid12, int14, event_mousex, event_mousey)
-			})
-			cc_setondragcomplete({
+			}
+			cc_setondragcomplete {
 				br_loadout_insert(event_com, event_comsubid, event_drop, event_dropsubid, count0[int9], component1, comsubid11, comsubid12, component2, component5, component6)
-			})
+			}
 			height13 = calc(height13 + 36)
 		}
 		int9 = calc(int9 + 1)
@@ -163,9 +163,9 @@ fun br_loadout_init(component0: Component, component1: Component, component2: Co
 	if_setscrollpos(0, 0, component3)
 	~scrollbar_vertical(component4, component3, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
 	~br_loadout_drawloadout(component1, component2, component5, component6)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		br_loadout_drawloadout_request(component0, component1, component2, component5, component6){VARP[2382], VARP[2383], VARP[2384], VARP[2385], VARP[2386], VARP[2387], VARP[2388], VARP[2389], VARP[1373], VARP[1573], VARP[1704], VARP[1666], VARP[309]}
-	}, component0)
-	if_setontimer(null, component0)
+	}
+	if_setontimernull
 	return 
 }

@@ -31,9 +31,9 @@ fun ge_collect_initslot(component0: Component, int1: Int, component2: Component)
 	cc_setposition(10, calc(int6 + 2), ^setpos_abs_left, ^setpos_abs_top)
 	cc_setgraphicshadow(0x333333)
 	cc_setoutline(1)
-	cc_setonop({
+	cc_setonop {
 		cc_settrans_temporarily(event_com, event_comsubid, 100, 0)
-	})
+	}
 	cc_create(component0, ^iftype_graphic, int5)
 	val comsubid10: Int = int5
 	int5 = calc(int5 + 1)
@@ -41,9 +41,9 @@ fun ge_collect_initslot(component0: Component, int1: Int, component2: Component)
 	cc_setposition(calc(width3 - (36 + 10)), calc(int6 + 2), ^setpos_abs_left, ^setpos_abs_top)
 	cc_setgraphicshadow(0x333333)
 	cc_setoutline(1)
-	cc_setonop({
+	cc_setonop {
 		cc_settrans_temporarily(event_com, event_comsubid, 100, 0)
-	})
+	}
 	int5 = ~stonepanel(-1, component0, int5)
 	val int11: Int = calc(width3 - 60)
 	cc_create(component0, ^iftype_rectangle, int5)
@@ -110,14 +110,14 @@ fun ge_collect_initslot(component0: Component, int1: Int, component2: Component)
 	cc_settiling(false)
 	val inv15: Inv = enum(int, inv, enum_150, int1)
 	~ge_collect_drawslot(component0, int1, component2, int11, inv15, comsubid7, comsubid8, comsubid9, comsubid10, comsubid12, comsubid13, comsubid14)
-	if_setonstocktransmit({
+	if_setonstocktransmit {
 		ge_collect_drawslot(component0, int1, component2, int11, inv15, comsubid7, comsubid8, comsubid9, comsubid10, comsubid12, comsubid13, comsubid14)
-	}, component0)
-	if_setoninvtransmit({
+	}
+	if_setoninvtransmit(component0)  {
 		ge_collect_drawslot(component0, int1, component2, int11, inv15, comsubid7, comsubid8, comsubid9, comsubid10, comsubid12, comsubid13, comsubid14){inv15}
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		deltooltip(component2)
-	}, component0)
+	}
 	return 
 }

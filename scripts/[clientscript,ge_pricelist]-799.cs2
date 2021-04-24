@@ -16,26 +16,26 @@ fun ge_pricelist(inv0: Inv, string0: String) {
 	.cc_setsize(width1, 17, ^setsize_abs, ^setsize_abs)
 	.cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_top)
 	.cc_setcolour(0xff981f)
-	if_setonmouseover({
+	if_setonmouseover {
 		cc_colour_swapper(event_com, .cc_getid, ^white)
-	}, interface_237:4)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		cc_colour_swapper(event_com, .cc_getid, 0xff981f)
-	}, interface_237:4)
+	}
 	.cc_settextfont(p12_full)
 	.cc_settextshadow(true)
 	.cc_settextalign(^settextalign_right, ^settextalign_centre, 0)
 	.cc_settext(string1)
 	val size2: Int = inv_size(inv0)
-	if_setoninvtransmit({
+	if_setoninvtransmit(interface_237:0)  {
 		ge_pricelist_draw(inv0, size2, cc_getid){inv0}
-	}, interface_237:0)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(interface_237:0)  {
 		ge_pricelist_draw(inv0, size2, cc_getid){VARP[499]}
-	}, interface_237:0)
-	if_setonop({
+	}
+	if_setonop {
 		ge_pricelist_switchmode(event_opindex, inv0, size2, cc_getid)
-	}, interface_237:4)
+	}
 	~ge_pricelist_draw(inv0, size2, cc_getid)
 	return 
 }

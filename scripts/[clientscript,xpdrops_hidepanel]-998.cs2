@@ -29,6 +29,6 @@ fun xpdrops_hidepanel(component0: Component, component1: Component, component2: 
 			component6 = enum(int, component, enum_1163, int5)
 		}
 	}
-	if_setontimer(null, component0)
+	if_setontimernull
 	return 
 }

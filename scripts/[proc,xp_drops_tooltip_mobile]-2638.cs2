@@ -1,8 +1,8 @@
 // 2638 proc
 fun xp_drops_tooltip_mobile(string0: String, string1: String, component0: Component, component1: Component, component2: Component) {
 
-	if_setonclick({
+	if_setonclick {
 		xpdrops_tooltip_mobile(string0, string1, component0, event_com, component2)
-	}, component1)
+	}
 	return 
 }

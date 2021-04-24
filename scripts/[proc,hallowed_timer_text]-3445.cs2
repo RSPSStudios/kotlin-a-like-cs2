@@ -4,7 +4,7 @@ fun hallowed_timer_text(int0: Int) {
 	val component1: Component = interface_668:4
 	int0 = calc(int0 - clientclock)
 	if (VARBIT[10413] = 1) {
-		if_setontimer(null, interface_668:3)
+		if_setontimernull
 		if (string_indexof_string(if_gettext(component1), "(Paused)", 0) = -1) {
 			if_settext(append(if_gettext(component1), " (Paused)"), component1)
 			if_setcolour(0x69a3fb, component1)

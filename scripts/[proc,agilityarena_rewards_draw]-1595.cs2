@@ -19,7 +19,7 @@ fun agilityarena_rewards_draw(component0: Component, string0: String, int1: Int,
 		cc_setcolour(^red)
 		cc_settextshadow(true)
 		cc_settext(text1)
-		if_setonop(null, component0)
+		if_setonopnull
 	} else if (boolean2 = true) {
 		comsubid4 = ~v2_stone_button_in_filled(component0)
 		cc_create(component0, ^iftype_text, comsubid4)
@@ -31,13 +31,13 @@ fun agilityarena_rewards_draw(component0: Component, string0: String, int1: Int,
 		cc_settextshadow(true)
 		cc_settext(text1)
 		if (component3 ! null) {
-			if_setonop({
+			if_setonop {
 				agilityarena_rewards_hidelayer(false, component3)
-			}, component0)
+			}
 		} else {
-			if_setonop({
+			if_setonop {
 				opsound(event_opindex, 2)
-			}, component0)
+			}
 		}
 	} else {
 		comsubid4 = ~v2_stone_button_out_filled(component0)
@@ -50,13 +50,13 @@ fun agilityarena_rewards_draw(component0: Component, string0: String, int1: Int,
 		cc_settextshadow(true)
 		cc_settext(text1)
 		if (component3 ! null) {
-			if_setonop({
+			if_setonop {
 				agilityarena_rewards_hidelayer(false, component3)
-			}, component0)
+			}
 		} else {
-			if_setonop({
+			if_setonop {
 				opsound(event_opindex, 2)
-			}, component0)
+			}
 		}
 	}
 	return 

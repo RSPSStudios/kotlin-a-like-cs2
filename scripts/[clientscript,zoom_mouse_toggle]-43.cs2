@@ -14,12 +14,12 @@ fun zoom_mouse_toggle(component0: Component, component1: Component, int2: Int, c
 			if_setop(1, "Enable", component0)
 			if_sethide(false, component1)
 		}
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			tooltip_mouserepeat(component0, -1, component3, string0, 25, 190)
-		}, component0)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			deltooltip(component3)
-		}, component0)
+		}
 	} else if (int2 = 2) {
 		~camera_do_zoom(512, 512)
 	}

@@ -5,7 +5,7 @@ fun poll_resetlink(component0: Component, int1: Int, int2: Int, string0: String,
 		return 
 	}
 	if (cc_find(component0, int1) = ^true & .cc_find(component0, int2) = ^true) {
-		cc_setontimer(null)
+		cc_setontimernull
 		~poll_setuplink(component0, int1, int2, string0, string1)
 	}
 	return 

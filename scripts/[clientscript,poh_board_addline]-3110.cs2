@@ -195,41 +195,41 @@ fun poh_board_addline(comsubid0: Int, int1: Int, int2: Int, string0: String) {
 				if (int2 > 0 | compare(chat_playername, string1) = 0) {
 					cc_sethide(false)
 					.cc_sethide(true)
-					cc_setonop({
+					cc_setonop {
 						poh_board_set_last_name(string1, interface_52:19, comsubid0)
-					})
+					}
 					cc_setop(1, "Enter House")
-					cc_setonmouserepeat({
+					cc_setonmouserepeat {
 						cc_graphic_swapper(event_com, event_comsubid, graphic7, null)
-					})
-					cc_setonmouseleave({
+					}
+					cc_setonmouseleave {
 						cc_graphic_swapper(event_com, event_comsubid, graphic6, null)
-					})
-					.cc_setonclick(null)
-					cc_setonclick(null)
+					}
+					.cc_setonclicknull
+					cc_setonclicknull
 				} else {
 					cc_sethide(false)
 					.cc_sethide(true)
-					.cc_setonclick(null)
-					cc_setonclick({
+					.cc_setonclicknull
+					cc_setonclick {
 						script3127
-					})
+					}
 					cc_clearops
-					cc_setonop(null)
-					cc_setonmouserepeat(null)
-					cc_setonmouseleave(null)
+					cc_setonopnull
+					cc_setonmouserepeatnull
+					cc_setonmouseleavenull
 					cc_settrans(180)
 				}
 			} else {
 				cc_sethide(true)
 				.cc_sethide(false)
-				.cc_setonclick({
+				.cc_setonclick {
 					poh_board_explain_location(string2)
-				})
+				}
 				cc_clearops
-				cc_setonop(null)
-				cc_setonmouserepeat(null)
-				cc_setonmouseleave(null)
+				cc_setonopnull
+				cc_setonmouserepeatnull
+				cc_setonmouseleavenull
 			}
 		}
 		VARCINT[377] = calc(VARCINT[377] + 1)
@@ -312,7 +312,7 @@ fun poh_board_addline(comsubid0: Int, int1: Int, int2: Int, string0: String) {
 		if (cc_find(interface_52:19, comsubid0) = ^true) {
 			cc_setsize(0, 0, ^setsize_abs, ^setsize_abs)
 			cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_top)
-			cc_setonop(null)
+			cc_setonopnull
 			cc_clearops
 		}
 	}

@@ -71,31 +71,31 @@ fun ge_offers_index_drawslot(inv0: Inv, int1: Int, component2: Component, comsub
 				if (int37 = 1) {
 					cc_setop(1, "Create <col=ff9040>Buy</col> offer")
 					.cc_setop(1, "Create <col=ff9040>Sell</col> offer")
-					cc_setonop({
+					cc_setonop {
 						script805(event_opindex, int9, 0, component2, comsubid3, component4, component5, component6, component7, component27)
-					})
-					.cc_setonop({
+					}
+					.cc_setonop {
 						script805(event_opindex, int9, 1, component2, comsubid3, component4, component5, component6, component7, component27)
-					})
-					cc_setonmouseover({
+					}
+					cc_setonmouseover {
 						cc_graphic_swapper(component8, comsubid25, graphic33, null)
-					})
-					.cc_setonmouseover({
+					}
+					.cc_setonmouseover {
 						cc_graphic_swapper(component8, comsubid26, graphic35, null)
-					})
-					cc_setonmouseleave({
+					}
+					cc_setonmouseleave {
 						cc_graphic_swapper(component8, comsubid25, graphic32, component27)
-					})
-					.cc_setonmouseleave({
+					}
+					.cc_setonmouseleave {
 						cc_graphic_swapper(component8, comsubid26, graphic34, component27)
-					})
-					cc_setonmouserepeat({
+					}
+					cc_setonmouserepeat {
 						tooltip_mouserepeat(event_com, event_comsubid, component27, string1, 25, 512)
-					})
+					}
 					string1 = "Offer to SELL items."
-					.cc_setonmouserepeat({
+					.cc_setonmouserepeat {
 						tooltip_mouserepeat(event_com, event_comsubid, component27, string1, 25, 512)
-					})
+					}
 					if (cc_find(component8, comsubid25) = ^true & .cc_find(component8, comsubid26) = ^true) {
 						cc_sethide(false)
 						.cc_sethide(false)
@@ -105,14 +105,14 @@ fun ge_offers_index_drawslot(inv0: Inv, int1: Int, component2: Component, comsub
 				} else {
 					cc_clearops
 					.cc_clearops
-					cc_setonop(null)
-					.cc_setonop(null)
-					cc_setonmouseover(null)
-					.cc_setonmouseover(null)
-					cc_setonmouseleave(null)
-					.cc_setonmouseleave(null)
-					cc_setonmouserepeat(null)
-					.cc_setonmouserepeat(null)
+					cc_setonopnull
+					.cc_setonopnull
+					cc_setonmouseovernull
+					.cc_setonmouseovernull
+					cc_setonmouseleavenull
+					.cc_setonmouseleavenull
+					cc_setonmouserepeatnull
+					.cc_setonmouserepeatnull
 					if (cc_find(component8, comsubid25) = ^true & .cc_find(component8, comsubid26) = ^true) {
 						cc_sethide(false)
 						.cc_sethide(false)
@@ -158,12 +158,12 @@ fun ge_offers_index_drawslot(inv0: Inv, int1: Int, component2: Component, comsub
 	if (cc_find(component8, comsubid12) = ^true) {
 		cc_sethide(false)
 		cc_settrans(255)
-		cc_setonmouseover({
+		cc_setonmouseover {
 			cc_settrans(component8, comsubid12, 245, null)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			cc_settrans(component8, comsubid12, 255, component27)
-		})
+		}
 		cc_clearops
 		cc_setop(1, "View offer")
 		if (int36 = 1) {
@@ -181,9 +181,9 @@ fun ge_offers_index_drawslot(inv0: Inv, int1: Int, component2: Component, comsub
 			string1 = "Buying: ${oc_name(obj28)}<br>${~tostring_spacer(int30, string2)} / ${~tostring_spacer(int29, string2)}"
 			cc_setop(2, "Abort offer")
 		}
-		cc_setonmouserepeat({
+		cc_setonmouserepeat {
 			tooltip_mouserepeat(event_com, event_comsubid, component27, string1, 25, 512)
-		})
+		}
 	}
 	if (cc_find(component8, comsubid16) = ^true) {
 		cc_sethide(false)

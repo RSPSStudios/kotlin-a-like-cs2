@@ -25,11 +25,11 @@ fun poh_options_drawbutton(component0: Component) {
 	cc_settextshadow(true)
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	cc_settext(if_getop(1, component0))
-	if_setonmouseover({
+	if_setonmouseover {
 		cc_colour_swapper(event_com, cc_getid, ^white)
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		cc_colour_swapper(event_com, cc_getid, 0xff981f)
-	}, component0)
+	}
 	return 
 }

@@ -23,9 +23,9 @@ fun bankside_bag_draw(component0: Component, inv1: Inv) {
 			cc_setop(3, "Deposit-All")
 			cc_setop(4, "Deposit-X")
 			cc_setop(10, "Examine")
-			cc_setonop({
+			cc_setonop {
 				cc_settrans_temporarily(event_com, event_comsubid, 150, 0)
-			})
+			}
 			cc_setopbase("<col=ff9040>${oc_name(obj3)}</col>")
 		} else {
 			cc_sethide(true)

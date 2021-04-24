@@ -15,8 +15,8 @@ fun itemsets_side_init(component0: Component) {
 		size3 = calc(size3 + 1)
 	}
 	~itemsets_side_draw(component0)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		itemsets_side_draw(component0){inv}
-	}, component0)
+	}
 	return 
 }

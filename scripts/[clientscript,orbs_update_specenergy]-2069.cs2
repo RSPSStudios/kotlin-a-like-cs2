@@ -3,15 +3,15 @@ fun orbs_update_specenergy(component0: Component, component1: Component, compone
 
 	if (component0 ! null) {
 		if_setnoclickthrough(true, component4)
-		if_setonvartransmit({
+		if_setonvartransmit(component0)  {
 			orbs_update_specenergy(null, component1, component2, component3, component4, component5){VARP[301], VARP[300], VARP[284], VARP[1377], VARP[243]}
-		}, component0)
-		if_setoninvtransmit({
+		}
+		if_setoninvtransmit(component0)  {
 			orbs_update_specenergy(null, component1, component2, component3, component4, component5){worn}
-		}, component0)
-		if_setonsubchange({
+		}
+		if_setonsubchange {
 			orbs_update_specenergy(null, component1, component2, component3, component4, component5)
-		}, component0)
+		}
 	}
 	~orbs_spec_draw_button(component0, component1, component2, component3, component4, component5)
 	~orbs_update(component1, component2, calc(VARP[300] / 10), 100)

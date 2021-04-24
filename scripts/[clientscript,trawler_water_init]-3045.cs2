@@ -13,8 +13,8 @@ fun trawler_water_init(component0: Component) {
 	cc_setcolour(0x7f7fff)
 	.cc_setcolour(^black)
 	~trawler_water_update(component0)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		trawler_water_update(event_com, cc_getid, .cc_getid){VARP[391]}
-	}, component0)
+	}
 	return 
 }

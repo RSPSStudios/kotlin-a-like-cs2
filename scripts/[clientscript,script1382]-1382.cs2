@@ -119,9 +119,9 @@ fun script1382(int0: Int, coord1: Coord, coord2: Coord, int3: Int) {
 	~script1383(34, VARCINT[419], int0, int11, int12, int13)
 	val component23: Component = enum(int, component, enum_1424, -1)
 	if_setsize(int11, int11, ^setsize_abs, ^setsize_abs, component23)
-	if_setonvartransmit({
+	if_setonvartransmit(interface_422:41)  {
 		poh_viewer_preview_position(component23, int17, int18, int11, int12, int13){VARP[780]}
-	}, interface_422:41)
+	}
 	cc_deleteall(component23)
 	cc_create(component23, ^iftype_graphic, 0)
 	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)

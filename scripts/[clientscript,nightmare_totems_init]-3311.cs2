@@ -4,8 +4,8 @@ fun nightmare_totems_init(int0: Int, component1: Component, component2: Componen
 	~nightmare_totem_hud_fade_in(255, component2, component3, component17, component19, component20, component21, component23, component25, component26, component27, component5, component7, component8, component9, component11, component13, component14, component15)
 	~nightmare_totem_hud_pos(0, int0, component1, component2, component3, int4, component5, int6, component7, component8, component9, int10, component11, int12, component13, component14, component15, int16, component17, int18, component19, component20, component21, int22, component23, int24, component25, component26, component27)
 	~nightmare_totem_hud_update(component8, component9, 300, 0, component14, component15, 300, 0, component20, component21, 300, 0, component26, component27, 300, 0, 1)
-	if_setontimer({
+	if_setontimer {
 		nightmare_totem_hud_bar_fadeout(component27, component21, component15, component9, component26, component20, component14, component8, component1)
-	}, component1)
+	}
 	return 
 }

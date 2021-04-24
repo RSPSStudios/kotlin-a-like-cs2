@@ -3,6 +3,6 @@ fun script3375(component0: Component) {
 
 	sound_synth(synth_2266, 1, 0)
 	if_setop(1, "", component0)
-	if_setonop(null, component0)
+	if_setonopnull
 	return 
 }

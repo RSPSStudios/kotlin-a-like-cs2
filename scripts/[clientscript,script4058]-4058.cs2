@@ -7,22 +7,22 @@ fun script4058(component0: Component, comsubid1: Int, component2: Component, mou
 	if (calc(mousey3 - int7) < 15) {
 		if (clock4 <= clientclock) {
 			if (cc_find(component0, comsubid1) = ^true) {
-				cc_setondrag({
+				cc_setondrag {
 					script4058(event_com, event_comsubid, component2, event_mousey, calc(clientclock + 2))
-				})
+				}
 				return 
 			}
 		} else if (calc(clock4 - clientclock) < 5) {
 			if (cc_find(component0, comsubid1) = ^true) {
-				cc_setondrag({
+				cc_setondrag {
 					script4058(event_com, event_comsubid, component2, event_mousey, calc(clock4 + 2))
-				})
+				}
 				return 
 			}
 		} else if (cc_find(component0, comsubid1) = ^true) {
-			cc_setondrag({
+			cc_setondrag {
 				script4058(event_com, event_comsubid, component2, event_mousey, calc(clock4 + 1))
-			})
+			}
 		}
 		if (calc(mousey3 - int7) < 5) {
 			int5 = 8

@@ -5,17 +5,17 @@ fun nzone_lobby_overlay(int0: Int) {
 	if_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_top, interface_207:9)
 	if_setsize(1, 1, ^setsize_abs, ^setsize_abs, interface_207:9)
 	if_settextalign(^settextalign_right, ^settextalign_bottom, 0, interface_207:9)
-	if_setontimer({
+	if_setontimer {
 		nzone_lobby_hide(interface_207:0)
-	}, interface_207:9)
+	}
 	~nzone_lobby_partystatus(int0, interface_207:3)
 	~nzone_lobby_hint(int0, interface_207:5)
 	if (int0 = 1) {
-		if_setonvartransmit(null, interface_207:9)
+		if_setonvartransmitnull
 	} else {
-		if_setonvartransmit({
+		if_setonvartransmit(interface_207:9)  {
 			nzone_lobby_partystatus(interface_207:3, interface_207:5){VARP[1065], VARP[1058]}
-		}, interface_207:9)
+		}
 	}
 	cc_create(interface_207:8, ^iftype_rectangle, 0)
 	cc_setsize(46, 55, ^setsize_abs, ^setsize_abs)
@@ -23,12 +23,12 @@ fun nzone_lobby_overlay(int0: Int) {
 	cc_setcolour(0x7f460f)
 	cc_setfill(true)
 	cc_settrans(100)
-	cc_setonmouseover({
+	cc_setonmouseover {
 		cc_settrans(event_com, event_comsubid, 0, null)
-	})
-	cc_setonmouseleave({
+	}
+	cc_setonmouseleave {
 		cc_settrans(event_com, event_comsubid, 100, null)
-	})
+	}
 	cc_setop(1, "Examine")
 	cc_setopbase("<col=ff9040>Coffer")
 	.cc_create(interface_207:8, ^iftype_rectangle, 1)
@@ -55,9 +55,9 @@ fun nzone_lobby_overlay(int0: Int) {
 	.cc_setposition(8, 21, ^setpos_abs_right, ^setpos_abs_top)
 	.cc_setgraphicshadow(0x333333)
 	.cc_setoutline(1)
-	.cc_setonvartransmit({
+	.cc_setonvartransmit {
 		nzone_lobby_coffer(event_com, cc_getid, event_comsubid){VARP[1058], VARP[638]}
-	})
+	}
 	~nzone_lobby_coffer
 	return 
 }

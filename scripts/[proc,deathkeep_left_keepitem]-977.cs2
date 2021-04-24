@@ -25,8 +25,8 @@ fun deathkeep_left_keepitem(obj0: Obj, int1: Int, obj2: Obj, int3: Int, int4: In
 		}
 		cc_setoutline(1)
 	}
-	cc_setonop({
+	cc_setonop {
 		deathkeep_opitem(event_com, event_comsubid, mes0)
-	})
+	}
 	return calc(int6 + 1), int8, calc(int7 + 1)
 }

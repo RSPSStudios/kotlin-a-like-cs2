@@ -10,8 +10,8 @@ fun if_flash_component_timer(component0: Component, int1: Int, int2: Int) {
 		int2 = calc(1 - int2)
 	}
 	if_settrans(scale(int1, 25, 255), component0)
-	if_setontimer({
+	if_setontimer {
 		if_flash_component_timer(component0, int1, int2)
-	}, component0)
+	}
 	return 
 }

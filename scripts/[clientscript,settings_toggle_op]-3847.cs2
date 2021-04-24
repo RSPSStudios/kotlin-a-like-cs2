@@ -16,9 +16,9 @@ fun settings_toggle_op(struct0: Struct, int1: Int, component2: Component, comsub
 			cc_setgraphic("toggle_box,0")
 		}
 		if (boolean5 = false) {
-			cc_setontimer({
+			cc_setontimer {
 				settings_toggle_synch(0, event_com, event_comsubid, boolean4, int6, int1)
-			})
+			}
 		}
 	}
 	return 

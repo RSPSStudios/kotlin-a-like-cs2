@@ -14,7 +14,7 @@ fun script4051(int0: Int, component1: Component, component2: Component, componen
 	while (int12 < int0) {
 		if (cc_find(component1, int12) = ^true) {
 			cc_clearops
-			cc_setontimer(null)
+			cc_setontimernull
 			int10 = calc(int12 / 4 * (32 + int9))
 			cc_setposition(calc(int8 + int12 % 4 * (36 + int7)), int10, ^setpos_abs_left, ^setpos_abs_top)
 			obj11 = inv_getobj(inv_651, int12)

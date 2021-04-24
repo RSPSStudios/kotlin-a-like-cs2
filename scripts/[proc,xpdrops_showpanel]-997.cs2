@@ -12,11 +12,11 @@ fun xpdrops_showpanel(component0: Component, component1: Component, component2: 
 		if (clock4 > clientclock) {
 			int5 = calc(clock4 - clientclock)
 		}
-		if_setontimer({
+		if_setontimer {
 			xpdrops_hidepanel(component0, component1, component2, component3, calc(clientclock + int5 + int6))
-		}, component0)
+		}
 	} else {
-		if_setontimer(null, component0)
+		if_setontimernull
 	}
 	return 
 }

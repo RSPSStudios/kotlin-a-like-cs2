@@ -7,12 +7,12 @@ fun 1v1arena_hud_button(opindex0: Int, component1: Component, comsubid2: Int) {
 	sound_synth(synth_2266, 1, 0)
 	if (cc_find(component1, comsubid2) = ^true) {
 		cc_setcolour(^red)
-		if_setonmouserepeat(null, component1)
-		if_setonmouseleave(null, component1)
-		if_setonop(null, component1)
-		if_setontimer({
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
+		if_setonopnull
+		if_setontimer {
 			1v1arena_hud_resetbutton(component1, comsubid2, calc(clientclock + 20))
-		}, component1)
+		}
 	}
 	return 
 }

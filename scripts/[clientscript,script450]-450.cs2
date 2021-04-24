@@ -86,8 +86,8 @@ fun script450(flags0: Int, flags1: Int, flags2: Int, flags3: Int, flags4: Int, t
 	}
 	if_setscrollpos(0, 0, interface_78:3)
 	~scrollbar_vertical(interface_78:4, interface_78:3, "scrollbar_parchment_dragger_v2,3", "scrollbar_parchment_dragger_v2,0", "scrollbar_parchment_dragger_v2,1", "scrollbar_parchment_dragger_v2,2", "scrollbar_parchment_v2,0", "scrollbar_parchment_v2,1")
-	if_setoninvtransmit({
+	if_setoninvtransmit(interface_78:3)  {
 		script474(flags0, flags1, flags2, flags3, flags4){inv}
-	}, interface_78:3)
+	}
 	return 
 }

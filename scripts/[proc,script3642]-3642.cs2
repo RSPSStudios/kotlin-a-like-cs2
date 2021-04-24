@@ -5,16 +5,16 @@ fun script3642(boolean0: Boolean, boolean1: Boolean, component2: Component, int3
 	val comsubid10: Int = 0
 	if (boolean0 = true) {
 		comsubid10 = ~options_button_on(component2, 0)
-		if_setonmouserepeat(null, component2)
-		if_setonmouseleave(null, component2)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
 	} else {
 		comsubid10 = ~options_button_off(component2, 0)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			script3641(false, true, component2, int3, int4, component5, component6, component7, component8, component9)
-		}, component2)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			script3641(false, false, component2, int3, int4, component5, component6, component7, component8, component9)
-		}, component2)
+		}
 	}
 	if (int3 ! -1) {
 		cc_create(component2, ^iftype_text, comsubid10)

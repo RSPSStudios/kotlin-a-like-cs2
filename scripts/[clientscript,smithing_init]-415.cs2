@@ -2,14 +2,14 @@
 fun smithing_init(component0: Component) {
 
 	~smithing_setup
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		smithing_setup{VARP[210], VARP[281], VARP[197], VARP[314], VARP[1317], VARP[1318]}
-	}, component0)
-	if_setonstattransmit({
+	}
+	if_setonstattransmit(component0)  {
 		smithing_setup{smithing}
-	}, component0)
-	if_setoninvtransmit({
+	}
+	if_setoninvtransmit(component0)  {
 		smithing_setup{inv}
-	}, component0)
+	}
 	return 
 }

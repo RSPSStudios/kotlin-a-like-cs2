@@ -5,14 +5,14 @@ fun script2694(clock0: Int) {
 		return 
 	}
 	~script2692(false, false)
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		script2691(true, false)
-	}, interface_100:33)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		script2691(false, false)
-	}, interface_100:33)
-	if_setonop({
+	}
+	if_setonop {
 		script2693(event_opindex)
-	}, interface_100:33)
+	}
 	return 
 }

@@ -11,9 +11,9 @@ fun bankmain_dragtab_graphic(drop0: Component, comsubid1: Int, drop2: Component,
 	}
 	if (cc_find(drop0, comsubid1) = ^true) {
 		cc_settrans(200)
-		cc_setontimer({
+		cc_setontimer {
 			cc_settrans_temporarily_end(event_com, event_comsubid, trans5, calc(clientclock + 10))
-		})
+		}
 	}
 	return 
 }

@@ -24,11 +24,11 @@ fun script4049(component0: Component, component1: Component, component2: Compone
 		size10 = calc(size10 + 1)
 	}
 	~script4051(size9, component3, component4, component5, component6, component7, component8)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		script4050(size9, component3, component4, component5, component6, component7, component8){inv_651}
-	}, component0)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component0)  {
 		script4050(size9, component3, component4, component5, component6, component7, component8){VARP[675]}
-	}, component0)
+	}
 	return 
 }

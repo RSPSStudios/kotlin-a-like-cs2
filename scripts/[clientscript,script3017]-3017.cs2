@@ -2,9 +2,9 @@
 fun script3017(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component) {
 
 	sound_synth(synth_2266, 1, 0)
-	if_setonop({
+	if_setonop {
 		script3017(component0, component1, component2, component3, component4)
-	}, component4)
+	}
 	~adventurepath_change_page(component2, component1, component3, component0, 1)
 	return 
 }

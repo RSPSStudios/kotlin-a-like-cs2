@@ -2,12 +2,12 @@
 fun script2346(component0: Component, component1: Component, component2: Component) {
 
 	if_settext("Points Available: <col=ffffff>${tostring(VARBIT[6460])}</col>", component0)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		script2349(component0){VARP[1746]}
-	}, component0)
-	if_setoninvtransmit({
+	}
+	if_setoninvtransmit(component2)  {
 		script2347(component2){inv_612}
-	}, component2)
+	}
 	~script2348(component2)
 	cc_deleteall(component1)
 	val int3: Int = 14

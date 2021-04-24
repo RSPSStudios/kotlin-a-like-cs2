@@ -6,12 +6,12 @@ fun scrollbar_vertical(component0: Component, component1: Component, graphic2: G
 	cc_setsize(0, 32, ^setsize_minus, ^setsize_minus)
 	cc_setgraphic(graphic2)
 	cc_settiling(false)
-	cc_setonclick({
+	cc_setonclick {
 		scrollbar_vertical_jump(component0, component1, event_mousey)
-	})
-	cc_setonscrollwheel({
+	}
+	cc_setonscrollwheel {
 		scrollbar_vertical_wheel(component0, component1, event_mousey)
-	})
+	}
 	cc_setnoclickthrough(true)
 	.cc_create(component0, ^iftype_graphic, 1)
 	.cc_setposition(0, 16, ^setpos_abs_centre, ^setpos_abs_top)
@@ -32,12 +32,12 @@ fun scrollbar_vertical(component0: Component, component1: Component, graphic2: G
 	.cc_setgraphic(graphic4)
 	.cc_settiling(false)
 	.cc_setdraggable(component0, 0)
-	.cc_setondrag({
+	.cc_setondrag {
 		scrollbar_vertical_drag(component0, component1, event_mousey, false)
-	})
-	.cc_setondragcomplete({
+	}
+	.cc_setondragcomplete {
 		scrollbar_vertical_drag(component0, component1, event_mousey, true)
-	})
+	}
 	.cc_setdraggablebehavior(1)
 	cc_create(component0, ^iftype_graphic, 2)
 	cc_setposition(0, .cc_gety, ^setpos_abs_centre, ^setpos_abs_top)
@@ -54,21 +54,21 @@ fun scrollbar_vertical(component0: Component, component1: Component, graphic2: G
 	cc_setsize(0, 16, ^setsize_minus, ^setsize_abs)
 	cc_setgraphic(graphic6)
 	cc_settiling(false)
-	cc_setonhold({
+	cc_setonhold {
 		scrollbar_vertical_up(component0, component1)
-	})
+	}
 	cc_setnoclickthrough(true)
 	cc_create(component0, ^iftype_graphic, 5)
 	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_bottom)
 	cc_setsize(0, 16, ^setsize_minus, ^setsize_abs)
 	cc_setgraphic(graphic7)
 	cc_settiling(false)
-	cc_setonhold({
+	cc_setonhold {
 		scrollbar_vertical_down(component0, component1)
-	})
+	}
 	cc_setnoclickthrough(true)
-	if_setonscrollwheel({
+	if_setonscrollwheel {
 		scrollbar_vertical_wheel(component0, component1, event_mousey)
-	}, component1)
+	}
 	return 
 }

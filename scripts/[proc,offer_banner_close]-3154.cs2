@@ -7,15 +7,15 @@ fun offer_banner_close(component0: Component) {
 	cc_setgraphic("close_buttons,4")
 	val graphic1: Graphic = "close_buttons,5"
 	val graphic2: Graphic = "close_buttons,4"
-	cc_setonmouserepeat({
+	cc_setonmouserepeat {
 		cc_graphic_swapper(event_com, event_comsubid, graphic1, null)
-	})
-	cc_setonmouseleave({
+	}
+	cc_setonmouseleave {
 		cc_graphic_swapper(event_com, event_comsubid, graphic2, null)
-	})
+	}
 	cc_setop(1, "Close")
-	cc_setonop({
+	cc_setonop {
 		closebutton_click
-	})
+	}
 	return 
 }

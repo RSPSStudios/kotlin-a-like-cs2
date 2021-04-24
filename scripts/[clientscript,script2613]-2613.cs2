@@ -17,6 +17,6 @@ fun script2613(component0: Component, component1: Component, int2: Int) {
 		}
 	}
 	VARCINT[225] = null
-	if_setontimer(null, component0)
+	if_setontimernull
 	return 
 }

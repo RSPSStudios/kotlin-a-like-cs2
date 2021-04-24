@@ -1,8 +1,8 @@
 // 4069 clientscript
 fun script4069(int0: Int) {
 
-	if_setontimer({
+	if_setontimer {
 		script4070(clientclock, int0, false)
-	}, interface_437:5)
+	}
 	return 
 }

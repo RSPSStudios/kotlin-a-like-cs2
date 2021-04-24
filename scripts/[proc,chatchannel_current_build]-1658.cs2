@@ -174,36 +174,36 @@ fun chatchannel_current_build(component0: Component, component1: Component, comp
 		if_sethide(false, component2)
 		if_sethide(true, component9)
 		~v2_stone_button_in(component11)
-		if_setonmouserepeat(null, component11)
-		if_setonmouseleave(null, component11)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
 		~v2_stone_button_in(component13)
-		if_setonmouserepeat(null, component13)
-		if_setonmouseleave(null, component13)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
 		if_settext("<col=7f7f7f>---</col>", component12)
 		if_clearops(component12)
-		if_setonop(null, component12)
+		if_setonopnull
 	} else {
 		if_sethide(true, component2)
 		if_sethide(false, component9)
 		~v2_stone_button(component11)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			v2_stone_button_in(event_com)
-		}, component11)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			v2_stone_button(event_com)
-		}, component11)
+		}
 		~v2_stone_button(component13)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			v2_stone_button_in(event_com)
-		}, component13)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			v2_stone_button(event_com)
-		}, component13)
+		}
 		if_settext("Chat Setup", component12)
 		if_setop(1, "Chat Setup", component12)
-		if_setonop({
+		if_setonop {
 			opsound(event_opindex, 1)
-		}, component12)
+		}
 	}
 	val text0: String = ""
 	val world16: Int = -1
@@ -267,12 +267,12 @@ fun chatchannel_current_build(component0: Component, component1: Component, comp
 		}
 		cc_setopbase("<col=ff9040>${text0}</col>")
 		.cc_setopbase("<col=ff9040>${text0}</col>")
-		cc_setonop({
+		cc_setonop {
 			friendschat_op(event_opbase, event_opindex)
-		})
-		.cc_setonop({
+		}
+		.cc_setonop {
 			friendschat_op(event_opbase, event_opindex)
-		})
+		}
 		int24, height22 = calc(int24 + 1), calc(height22 + int23)
 	}
 	if (int15 >= 1) {
@@ -284,30 +284,30 @@ fun chatchannel_current_build(component0: Component, component1: Component, comp
 		if_settext("", component1)
 		if_settext("<col=7f7f7f>---</col>", component10)
 		if_clearops(component10)
-		if_setonop(null, component10)
+		if_setonopnull
 	} else if (int15 > 0) {
 		if_settext("<col=ffff64>${clan_getchatdisplayname}</col>", component0)
 		if_settext("<col=ffffff>${clan_getchatownername}</col>", component1)
 		if_settext("Leave Chat", component10)
 		if (VARBIT[5432] = 1 | VARBIT[4289] ! 0) {
 			if_setop(6, "Leave Chat", component10)
-			if_setonop({
+			if_setonop {
 				joinchat_onop(event_opindex, 6)
-			}, component10)
+			}
 		} else {
 			if_setop(1, "Leave Chat", component10)
-			if_setonop({
+			if_setonop {
 				joinchat_onop(event_opindex, 1)
-			}, component10)
+			}
 		}
 	} else {
 		if_settext("<col=808080>Not in chat</col>", component0)
 		if_settext("<col=808080>None</col>", component1)
 		if_settext("Join Chat", component10)
 		if_setop(1, "Join Chat", component10)
-		if_setonop({
+		if_setonop {
 			joinchat_onop(event_opindex, 1)
-		}, component10)
+		}
 	}
 	if (height22 > if_getheight(component8)) {
 		if_setscrollsize(0, height22, component8)

@@ -8,16 +8,16 @@ fun bankmain_drawitem(obj0: Obj, num1: Int, component2: Component, component3: C
 			cc_setop(7, "Clear")
 			cc_setop(8, "Clear-All")
 			cc_settrans(0)
-			cc_setondragcomplete({
+			cc_setondragcomplete {
 				bankmain_reorder(event_com, event_comsubid, event_drop, event_dropsubid, 0, component3, drop4, component5, component6)
-			})
+			}
 		} else if (oc_unplaceholder(obj0) ! obj0) {
 			cc_setobject(obj0, 0)
 			cc_setop(8, "Release")
 			cc_settrans(120)
-			cc_setondragcomplete({
+			cc_setondragcomplete {
 				bankmain_reorder(event_com, event_comsubid, event_drop, event_dropsubid, 120, component3, drop4, component5, component6)
-			})
+			}
 		} else {
 			cc_setobject(obj0, num1)
 			cc_setop(1, "Withdraw-${~script2579}")
@@ -36,21 +36,21 @@ fun bankmain_drawitem(obj0: Obj, num1: Int, component2: Component, component3: C
 				cc_setop(9, "Placeholder")
 			}
 			cc_settrans(0)
-			cc_setondragcomplete({
+			cc_setondragcomplete {
 				bankmain_reorder(event_com, event_comsubid, event_drop, event_dropsubid, 0, component3, drop4, component5, component6)
-			})
+			}
 		}
 		cc_setop(10, "Examine")
 		cc_setopbase("<col=ff9040>${oc_name(obj0)}</col>")
-		cc_setondrag({
+		cc_setondrag {
 			bankmain_dragscroll(event_com, event_comsubid, event_mousex, event_mousey, component3, 0)
-		})
+		}
 	} else {
 		cc_settrans(255)
 		cc_setobject(obj_6512, 1)
 		cc_clearops
-		cc_setondrag(null)
-		cc_setondragcomplete(null)
+		cc_setondragnull
+		cc_setondragcompletenull
 	}
 	return 
 }

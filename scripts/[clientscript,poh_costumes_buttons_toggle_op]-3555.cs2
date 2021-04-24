@@ -8,10 +8,10 @@ fun poh_costumes_buttons_toggle_op(opindex0: Int, component1: Component, graphic
 	VARBIT[10581] = calc(1 - VARBIT[10581])
 	val boolean3: Boolean = ~int_to_bool(VARBIT[10581])
 	~poh_costumes_buttons_draw(component1, graphic2, null, boolean3)
-	if_setontimer({
+	if_setontimer {
 		poh_costumes_buttons_toggle_reset(component1, graphic2, calc(clientclock + 30))
-	}, component1)
-	if_setonop(null, component1)
-	if_setonvartransmit(null, component1)
+	}
+	if_setonopnull
+	if_setonvartransmitnull
 	return 
 }

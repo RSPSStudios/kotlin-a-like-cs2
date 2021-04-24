@@ -42,16 +42,16 @@ fun adventurepath_side_info(component0: Component, component1: Component, compon
 	cc_setcolour(0xff981f)
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 17)
 	if_setop(1, "Show<col=ff9040> Paths", component0)
-	if_setonop({
+	if_setonop {
 		button_select_sound
-	}, component0)
+	}
 	if (~on_mobile = false) {
-		cc_setonmouserepeat({
+		cc_setonmouserepeat {
 			cc_colour_swapper(component0, cc_getid, 0xbebebe)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			cc_colour_swapper(component0, cc_getid, 0xff981f)
-		})
+		}
 	}
 	int8 = 0
 	cc_create(component2, ^iftype_text, int8)
@@ -67,16 +67,16 @@ fun adventurepath_side_info(component0: Component, component1: Component, compon
 	cc_setcolour(0xff981f)
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 15)
 	if_setop(1, "Show<col=ff9040> Task information", component2)
-	if_setonop({
+	if_setonop {
 		button_select_sound
-	}, component2)
+	}
 	if (~on_mobile = false) {
-		cc_setonmouserepeat({
+		cc_setonmouserepeat {
 			cc_colour_swapper(component2, cc_getid, 0xbebebe)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			cc_colour_swapper(component2, cc_getid, 0xff981f)
-		})
+		}
 	}
 	int8 = 0
 	cc_create(component3, ^iftype_text, int8)
@@ -92,16 +92,16 @@ fun adventurepath_side_info(component0: Component, component1: Component, compon
 	cc_setcolour(0xff981f)
 	cc_settextalign(^settextalign_left, ^settextalign_top, 15)
 	if_setop(1, "Show<col=ff9040> Task information", component3)
-	if_setonop({
+	if_setonop {
 		button_select_sound
-	}, component3)
+	}
 	if (~on_mobile = false) {
-		cc_setonmouserepeat({
+		cc_setonmouserepeat {
 			cc_colour_swapper(component3, cc_getid, 0xbebebe)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			cc_colour_swapper(component3, cc_getid, 0xff981f)
-		})
+		}
 	}
 	count11 = 0
 	int8 = 0
@@ -136,15 +136,15 @@ fun adventurepath_side_info(component0: Component, component1: Component, compon
 		cc_settextalign(^settextalign_centre, ^settextalign_centre, 17)
 		if_setop(1, "Show<col=ff9040> Hint", component6)
 		if_setop(2, "Remove<col=ff9040> Hint arrow", component6)
-		if_setonmouseover({
+		if_setonmouseover {
 			adventurepath_side_hint_mouseover(component6, int8)
-		}, component6)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			adventurepath_side_hint_mouseleave(component6, int8)
-		}, component6)
-		if_setonop({
+		}
+		if_setonop {
 			button_select_sound
-		}, component6)
+		}
 	} else {
 		int8 = ~v2_stone_button_in_filled(component6)
 		cc_create(component6, ^iftype_graphic, int8)
@@ -162,9 +162,9 @@ fun adventurepath_side_info(component0: Component, component1: Component, compon
 		cc_settextalign(^settextalign_centre, ^settextalign_centre, 17)
 		if_setop(1, "", component6)
 		if_setop(2, "", component6)
-		if_setonmouseover(null, component6)
-		if_setonmouseleave(null, component6)
-		if_setonop(null, component6)
+		if_setonmouseovernull
+		if_setonmouseleavenull
+		if_setonopnull
 		int8 = calc(int8 + 1)
 		cc_create(component6, ^iftype_graphic, int8)
 		cc_setposition(2, 2, ^setpos_abs_centre, ^setpos_abs_centre)
@@ -183,14 +183,14 @@ fun adventurepath_side_info(component0: Component, component1: Component, compon
 	cc_setcolour(0xff981f)
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 17)
 	if_setop(1, "Show<col=ff9040> Paths", component7)
-	if_setonmouseover({
+	if_setonmouseover {
 		script3335(component7, int8)
-	}, component7)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		script3336(component7, int8)
-	}, component7)
-	if_setonop({
+	}
+	if_setonop {
 		button_select_sound
-	}, component7)
+	}
 	return 
 }

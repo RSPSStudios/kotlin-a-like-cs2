@@ -4,9 +4,9 @@ fun br_tournament_op(opindex0: Int, string0: String, component1: Component, coms
 	if (cc_find(component1, comsubid2) = ^true) {
 		sound_synth(synth_2266, 1, 0)
 		cc_setcolour(0x8f8f8f)
-		cc_setontimer({
+		cc_setontimer {
 			br_tournament_submit(calc(clientclock + 30), string0, component1, comsubid2)
-		})
+		}
 	}
 	return 
 }

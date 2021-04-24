@@ -70,8 +70,8 @@ fun highlight_textbox(string0: String, colour0: Int, boolean1: Boolean, boolean2
 		if_setposition(0, 50, ^setpos_abs_centre, ^setpos_abs_bottom, interface_664:8)
 	}
 	if_sethide(false, interface_664:8)
-	if_setontimer({
+	if_setontimer {
 		highlight_textbox_resize(string0, colour0, boolean1, boolean2, component3, height5)
-	}, interface_664:8)
+	}
 	return 
 }

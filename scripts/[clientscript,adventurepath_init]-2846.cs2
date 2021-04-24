@@ -7,9 +7,9 @@ fun adventurepath_init(component0: Component, component1: Component, component2:
 	val int29: Int = 0
 	val int30: Int = 0
 	val height31: Int = ~adventurepath_init(component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25, component26)
-	if_setonvartransmit({
+	if_setonvartransmit(component2)  {
 		script2944(height31, component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25, component26){VARP[2360], VARP[2357]}
-	}, component2)
+	}
 	if (height31 > if_getheight(component2)) {
 		if_setscrollsize(0, height31, component2)
 	} else {

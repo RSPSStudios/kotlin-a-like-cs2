@@ -23,28 +23,28 @@ fun script1391(component0: Component, int1: Int, string0: String, int2: Int, int
 		} else {
 			cc_setcolour(^white)
 		}
-		if_setonmouserepeat(null, component0)
-		if_setonmouseleave(null, component0)
-		if_setonop(null, component0)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
+		if_setonopnull
 		if_clearops(component0)
 	} else {
 		if (int1 = int5) {
 			cc_setcolour(^yellow)
-			if_setonmouseleave({
+			if_setonmouseleave {
 				cc_colour_swapper(event_com, comsubid7, ^yellow)
-			}, component0)
+			}
 		} else {
 			cc_setcolour(0xff981f)
-			if_setonmouseleave({
+			if_setonmouseleave {
 				cc_colour_swapper(event_com, comsubid7, 0xff981f)
-			}, component0)
+			}
 		}
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			cc_colour_swapper(event_com, comsubid7, ^white)
-		}, component0)
-		if_setonop({
+		}
+		if_setonop {
 			poh_viewer_setlevel(true, int1, int3, int4)
-		}, component0)
+		}
 		if_setop(1, string0, component0)
 	}
 	return int6

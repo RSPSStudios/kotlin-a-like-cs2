@@ -24,9 +24,9 @@ fun settings_side_runmode_create(component0: Component, component1: Component) {
 	cc_settextshadow(true)
 	cc_setcolour(0xff981f)
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 14)
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		tooltip_mouserepeat(component0, -1, component1, string0, 25, 190)
-	}, component0)
+	}
 	VARCINT[2] = 0
 	return 
 }

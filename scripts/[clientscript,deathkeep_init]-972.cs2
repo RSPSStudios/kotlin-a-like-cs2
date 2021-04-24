@@ -36,12 +36,12 @@ fun deathkeep_init(int0: Int, int1: Int, int2: Int, int3: Int, int4: Int, obj5: 
 	}
 	val int15: Int = calc((int12 - (int13 * 36 + (int13 - 1) * int14)) / 2)
 	~deathkeep_left_redraw(int3, int13, int14, int15, int4, obj5, obj6, obj7, obj8)
-	if_setoninvtransmit({
+	if_setoninvtransmit(interface_4:0)  {
 		deathkeep_left_redraw(int3, int13, int14, int15, int4, obj5, obj6, obj7, obj8){inv, inv_584, inv_468}
-	}, interface_4:0)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(interface_4:0)  {
 		deathkeep_left_redraw(int3, int13, int14, int15, int4, obj5, obj6, obj7, obj8){VARP[499]}
-	}, interface_4:0)
+	}
 	cc_deleteall(interface_4:12)
 	int12 = calc(if_getwidth(interface_4:12) - 50)
 	int13 = enum_getoutputcount(enum_2902)

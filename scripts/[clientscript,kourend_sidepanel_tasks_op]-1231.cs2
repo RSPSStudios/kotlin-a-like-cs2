@@ -15,11 +15,11 @@ fun kourend_sidepanel_tasks_op(opindex0: Int, component1: Component, string0: St
 	cc_settextshadow(true)
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	cc_settext(string0)
-	if_setonmouserepeat(null, component1)
-	if_setonmouseleave(null, component1)
-	if_setonop(null, component1)
-	if_setontimer({
+	if_setonmouserepeatnull
+	if_setonmouseleavenull
+	if_setonopnull
+	if_setontimer {
 		kourend_sidepanel_tasks_reset(component1, string0, calc(clientclock + 20))
-	}, component1)
+	}
 	return 
 }

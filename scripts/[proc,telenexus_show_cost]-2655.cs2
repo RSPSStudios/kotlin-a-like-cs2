@@ -38,9 +38,9 @@ fun telenexus_show_cost(component0: Component, struct1: Struct, int2: Int, compo
 		cc_setposition(10, 30, ^setpos_abs_left, ^setpos_abs_top)
 		cc_setobject(oc_uncert(namedobj5), num6)
 		cc_setop(1, "Examine")
-		cc_setonop({
+		cc_setonop {
 			telenexus_examine_cost(namedobj5)
-		})
+		}
 		.cc_create(component0, ^iftype_graphic, int15)
 		int15 = calc(int15 + 1)
 		int16 = calc(int16 + 50)
@@ -60,9 +60,9 @@ fun telenexus_show_cost(component0: Component, struct1: Struct, int2: Int, compo
 		cc_setposition(50, 30, ^setpos_abs_left, ^setpos_abs_top)
 		cc_setobject(oc_uncert(namedobj7), num8)
 		cc_setop(1, "Examine")
-		cc_setonop({
+		cc_setonop {
 			telenexus_examine_cost(namedobj7)
-		})
+		}
 		.cc_create(component0, ^iftype_graphic, int15)
 		int15 = calc(int15 + 1)
 		int16 = calc(int16 + 50)
@@ -82,9 +82,9 @@ fun telenexus_show_cost(component0: Component, struct1: Struct, int2: Int, compo
 		cc_setposition(90, 30, ^setpos_abs_left, ^setpos_abs_top)
 		cc_setobject(oc_uncert(namedobj9), num10)
 		cc_setop(1, "Examine")
-		cc_setonop({
+		cc_setonop {
 			telenexus_examine_cost(namedobj9)
-		})
+		}
 		.cc_create(component0, ^iftype_graphic, int15)
 		int15 = calc(int15 + 1)
 		int16 = calc(int16 + 50)
@@ -104,9 +104,9 @@ fun telenexus_show_cost(component0: Component, struct1: Struct, int2: Int, compo
 		cc_setposition(130, 30, ^setpos_abs_left, ^setpos_abs_top)
 		cc_setobject(oc_uncert(namedobj11), num12)
 		cc_setop(1, "Examine")
-		cc_setonop({
+		cc_setonop {
 			telenexus_examine_cost(namedobj11)
-		})
+		}
 		.cc_create(component0, ^iftype_graphic, int15)
 		int15 = calc(int15 + 1)
 		int16 = calc(int16 + 50)

@@ -95,9 +95,9 @@ fun meslayer_enter() {
 				}
 				VARCSTRING[358], VARCINT[62] = VARCSTRING[359], 0
 				~chat_autotyper_updateop
-				if_setontimer({
+				if_setontimer {
 					chat_autotyper(event_com, true)
-				}, interface_162:13)
+				}
 			}
 			11 -> {
 			

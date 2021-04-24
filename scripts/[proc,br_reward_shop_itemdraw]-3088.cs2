@@ -42,9 +42,9 @@ fun br_reward_shop_itemdraw(int0: Int, y1: Int, int2: Int, int3: Int, component4
 	if (oc_members(namedobj10) = ^true & map_members = ^false) {
 		cc_setcolour(0x9f9f9f)
 		mes0 = "You must be on a members' world to purchase that item."
-		.cc_setonop({
+		.cc_setonop {
 			br_reward_shop_refuse(mes0, component4, component5, component6, component7)
-		})
+		}
 		colour13, colour14 = 0x9f9f9f, 0x9f9f9f
 	} else if (VARP[262] < int16) {
 		cc_setcolour(0x9f9f9f)
@@ -53,16 +53,16 @@ fun br_reward_shop_itemdraw(int0: Int, y1: Int, int2: Int, int3: Int, component4
 		} else {
 			mes0 = "You must achieve one win before you can have that item."
 		}
-		.cc_setonop({
+		.cc_setonop {
 			br_reward_shop_refuse(mes0, component4, component5, component6, component7)
-		})
+		}
 		colour13, colour14 = 0x9f9f9f, 0x9f9f9f
 	} else if (VARP[261] < num15) {
 		cc_setcolour(0x9f9f9f)
 		mes0 = "You need ${~pest_rewards_costpoints(num15)} to claim that reward."
-		.cc_setonop({
+		.cc_setonop {
 			br_reward_shop_refuse(mes0, component4, component5, component6, component7)
-		})
+		}
 		colour13, colour14 = 0x9f9f9f, 0x9f9f9f
 	} else {
 		if (int9 = int0) {
@@ -70,9 +70,9 @@ fun br_reward_shop_itemdraw(int0: Int, y1: Int, int2: Int, int3: Int, component4
 		} else {
 			cc_setcolour(0x00df00)
 		}
-		.cc_setonop({
+		.cc_setonop {
 			br_reward_shop_select(int0, component4, component5, component6, component7)
-		})
+		}
 	}
 	if (int0 = 66) {
 		int17 = VARBIT[9520]
@@ -89,18 +89,18 @@ fun br_reward_shop_itemdraw(int0: Int, y1: Int, int2: Int, int3: Int, component4
 		} else {
 			cc_setcolour(0x00df00)
 		}
-		.cc_setonop({
+		.cc_setonop {
 			br_reward_shop_select(int0, component4, component5, component6, component7)
-		})
+		}
 	} else if (int17 = 2) {
 		if (int9 = int0) {
 			cc_setcolour(^white)
 		} else {
 			cc_setcolour(0x00df00)
 		}
-		.cc_setonop({
+		.cc_setonop {
 			br_reward_shop_select(int0, component4, component5, component6, component7)
-		})
+		}
 	}
 	val string1: String = enum(int, string, enum_2634, int0)
 	if (parawidth(string1, 512, p12_full) > width12) {
@@ -134,16 +134,16 @@ fun br_reward_shop_itemdraw(int0: Int, y1: Int, int2: Int, int3: Int, component4
 	}
 	if (int9 = int0) {
 		cc_setcolour(^white)
-		.cc_setonmouserepeat(null)
-		.cc_setonmouseleave(null)
+		.cc_setonmouserepeatnull
+		.cc_setonmouseleavenull
 	} else {
 		cc_setcolour(colour13)
-		.cc_setonmouserepeat({
+		.cc_setonmouserepeat {
 			cc_colour_swapper(event_com, cc_getid, colour14)
-		})
-		.cc_setonmouseleave({
+		}
+		.cc_setonmouseleave {
 			cc_colour_swapper(event_com, cc_getid, colour13)
-		})
+		}
 	}
 	return int8
 }

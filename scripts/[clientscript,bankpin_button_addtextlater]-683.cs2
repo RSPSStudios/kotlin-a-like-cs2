@@ -6,7 +6,7 @@ fun bankpin_button_addtextlater(component0: Component, comsubid1: Int, int2: Int
 	}
 	if (cc_find(component0, comsubid1) = ^true) {
 		cc_settext(tostring(int2))
-		cc_setontimer(null)
+		cc_setontimernull
 	}
 	return 
 }

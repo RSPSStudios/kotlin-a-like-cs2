@@ -13,8 +13,8 @@ fun brew_tools_init(component0: Component, component1: Component, component2: Co
 	~brew_tools_setupbutton("Meat", component17, component18, colour24, 1)
 	~brew_tools_setupbutton("Knife", component19, component20, colour24, 0)
 	~brew_tools_supplies(component21, component22, component23)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		brew_tools_supplies(component21, component22, component23){worn, inv_448, inv_452}
-	}, component0)
+	}
 	return 
 }

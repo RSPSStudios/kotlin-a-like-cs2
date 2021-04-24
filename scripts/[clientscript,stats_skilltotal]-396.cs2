@@ -15,19 +15,19 @@ fun stats_skilltotal(component0: Component, component1: Component) {
 	}
 	if (~on_mobile = true) {
 		if_setop(1, "Toggle Total XP", component0)
-		if_setonop({
+		if_setonop {
 			stats_op(event_opindex, event_com, -1, component1, string0, string1, p12_full)
-		}, component0)
+		}
 		if (VARCINT[218] = component0 & VARCINT[217] = -1) {
 			~script2344(component0, -1, component1, string0, string1, p12_full)
 		}
 	} else {
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			script992(event_com, -1, component1, string0, string1, p12_full, calc(25 / 5))
-		}, component0)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			deltooltip(component1)
-		}, component0)
+		}
 		VARCINT[2] = 0
 	}
 	return 

@@ -7,8 +7,8 @@ fun volcanic_mine_hud_init(component0: Component, component1: Component, compone
 	~volcanic_mine_set_venttext
 	~volcanic_mine_set_chambertext
 	~volcanic_mine_set_otherinfo
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		volcanic_mine_updatehud{VARP[1653], VARP[1654], VARP[1655]}
-	}, component0)
+	}
 	return 
 }

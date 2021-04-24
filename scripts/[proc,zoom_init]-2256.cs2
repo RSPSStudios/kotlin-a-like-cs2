@@ -9,30 +9,30 @@ fun zoom_init(component0: Component, component1: Component, component2: Componen
 		if_sethide(false, component2)
 		if_setop(1, "Enable", component0)
 	}
-	if_setondrag({
+	if_setondrag {
 		zoom_slider_ondrag(component4, component3, event_mousex)
-	}, component4)
-	if_setondragcomplete({
+	}
+	if_setondragcomplete {
 		zoom_slider_dragcomplete(component4, component3, event_mousex)
-	}, component4)
+	}
 	val string0: String = "${~text_device("Click", "Tap")} here to enable zooming using ${~text_device("the mouse scroll wheel", "the pinch gesture")}."
 	if (VARBIT[6357] = 0) {
 		string0 = "${~text_device("Click", "Tap")} here to disable zooming using ${~text_device("the mouse scroll wheel", "the pinch gesture")}."
 	}
-	if_setonmouseover({
+	if_setonmouseover {
 		zoom_outline(1, component1)
-	}, component1)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		zoom_outline(0, component1)
-	}, component1)
-	if_setonmouserepeat({
+	}
+	if_setonmouserepeat {
 		tooltip_mouserepeat(component0, -1, component5, string0, 25, 190)
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		deltooltip(component5)
-	}, component0)
-	if_setontimer({
+	}
+	if_setontimer {
 		zoom_timer(VARCINT[73], VARCINT[74])
-	}, interface_116:60)
+	}
 	return 
 }

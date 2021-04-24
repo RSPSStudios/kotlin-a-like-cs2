@@ -16,8 +16,8 @@ fun gravestone_hud_init(component0: Component) {
 	cc_settextalign(^settextalign_centre, ^settextalign_bottom, 0)
 	cc_settextshadow(true)
 	~gravestone_hud_resynch(component0)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		gravestone_hud_resynch(event_com, cc_getid, .cc_getid){VARP[1697]}
-	}, component0)
+	}
 	return 
 }

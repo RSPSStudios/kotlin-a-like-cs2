@@ -224,9 +224,9 @@ fun xpdrops_stattransmit(boolean0: Boolean, component1: Component, component2: C
 					cc_sethide(true)
 					~xpdrops_setdropsize(component47, int41, fontmetrics39, fontmetrics40, string0)
 				}
-				if_setontimer({
+				if_setontimer {
 					xpdrops_dropletmove(component47, int44)
-				}, component47)
+				}
 				VARCINT[71] = int44
 				VARCINT[70] = calc((VARCINT[70] + 1) % int10)
 			} else {

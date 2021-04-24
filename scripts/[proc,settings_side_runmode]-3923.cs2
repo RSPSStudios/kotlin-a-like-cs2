@@ -1,18 +1,18 @@
 // 3923 proc
 fun settings_side_runmode(component0: Component, component1: Component) {
 
-	if_setonmouseleave({
+	if_setonmouseleave {
 		deltooltip(component1)
-	}, component0)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component0)  {
 		settings_side_runmode_resynch(component0, component1){VARP[173]}
-	}, component0)
-	if_setonmisctransmit({
+	}
+	if_setonmisctransmit {
 		settings_side_runmode_resynch(component0, component1)
-	}, component0)
-	if_setonop({
+	}
+	if_setonop {
 		settings_side_runmode_op(component0, component1)
-	}, component0)
+	}
 	~settings_side_runmode_create(component0, component1)
 	return 
 }

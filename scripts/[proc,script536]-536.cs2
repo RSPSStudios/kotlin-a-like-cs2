@@ -17,10 +17,10 @@ fun script536(int0: Int, component1: Component, component2: Component, component
 	int6 = ~script537(prayer, int7, 0, int8, 18, 19, 20, component1, component2, component3, int6, int0, component4, component5)
 	int7 = calc(int7 + 32)
 	~soul_wars_rewards_drawconfirm(int0, component1, component2, component3, enum_3537, 0, component4, component5)
-	if_setonvartransmit({
+	if_setonvartransmit(component1)  {
 		script532(-1, component1, component2, component3, component4, component5){VARP[2876]}
-	}, component1)
-	if_setonvartransmit(null, component4)
-	if_setonvartransmit(null, component5)
+	}
+	if_setonvartransmitnull
+	if_setonvartransmitnull
 	return 
 }

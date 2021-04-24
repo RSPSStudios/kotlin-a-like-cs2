@@ -9,11 +9,11 @@ fun script4037(component0: Component, component1: Component) {
 	}
 	if_sethide(false, component0)
 	~script4039(component0, component1)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		script4038(component0, component1){inv, worn}
-	}, component0)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component0)  {
 		script4038(component0, component1){VARP[1598], VARP[1599], VARP[834], VARP[835]}
-	}, component0)
+	}
 	return 
 }

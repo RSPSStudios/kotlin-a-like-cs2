@@ -7,8 +7,8 @@ fun script4082() {
 	~script4088(1, interface_621:74, interface_621:79)
 	if_sethide(true, interface_621:69)
 	if_setopkey(1, 80, 0, interface_621:68)
-	if_setonop({
+	if_setonop {
 		script4084(false)
-	}, interface_621:68)
+	}
 	return 
 }

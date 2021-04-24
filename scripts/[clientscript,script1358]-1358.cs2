@@ -15,8 +15,8 @@ fun script1358(component0: Component) {
 	VARCINT[429] = calc(400 - randominc(50))
 	VARCINT[431] = calc(300 - randominc(50))
 	VARCINT[433] = calc(200 - randominc(50))
-	if_setontimer({
+	if_setontimer {
 		script1359(0, component0)
-	}, component0)
+	}
 	return 
 }

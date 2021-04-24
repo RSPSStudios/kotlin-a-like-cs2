@@ -7,8 +7,8 @@ fun worldmap_overview_click(mousex0: Int, mousey1: Int, clock2: Int, component3:
 	val x12: Int = calc(int8 + scale(mousex0, int4, int6))
 	val z13: Int = calc(int11 - scale(mousey1, int5, int7))
 	worldmap_jumptodisplaycoord(movecoord(0_0_0_0_0, x12, 0, z13))
-	if_setonclickrepeat({
+	if_setonclickrepeat {
 		worldmap_overview_click(event_mousex, event_mousey, calc(clientclock + 10), event_com, int4, int5, int6, int7, int8, int9, int10, int11)
-	}, component3)
+	}
 	return 
 }

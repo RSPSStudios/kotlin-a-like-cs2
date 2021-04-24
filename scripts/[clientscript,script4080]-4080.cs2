@@ -16,18 +16,18 @@ fun script4080() {
 		if_setposition(10, 16, ^setpos_abs_right, ^setpos_abs_top, component3)
 		graphic0 = "close_buttons,0"
 		if_setgraphic(graphic0, component3)
-		if_setonmouseleave({
+		if_setonmouseleave {
 			graphic_swapper(event_com, graphic0)
-		}, component3)
+		}
 		graphic0 = "close_buttons,1"
-		if_setonmouseover({
+		if_setonmouseover {
 			graphic_swapper(event_com, graphic0)
-		}, component3)
+		}
 	}
 	if_setop(1, "Close", component3)
-	if_setonop({
+	if_setonop {
 		opsound(event_opindex, 2)
-	}, component3)
+	}
 	if_setopkey(2, 13, 0, component3)
 	if_setop(2, "", component3)
 	return 

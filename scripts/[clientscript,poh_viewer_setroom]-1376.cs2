@@ -240,14 +240,14 @@ fun poh_viewer_setroom(int0: Int, enum1: Enum, int2: Int, flags3: Int, flags4: I
 	cc_setposition(2, 2, ^setpos_abs_left, ^setpos_abs_top)
 	cc_setgraphic("tick")
 	~poh_viewer_room_indicator(int0)
-	if_setonvartransmit({
+	if_setonvartransmit(component5)  {
 		poh_viewer_room_indicator(event_com, cc_getid, int0){VARP[780]}
-	}, component5)
-	if_setonmouserepeat({
+	}
+	if_setonmouserepeat {
 		poh_viewer_room_hover(true, event_com, cc_getid, string0)
-	}, component5)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		poh_viewer_room_hover(false, event_com, cc_getid, string0)
-	}, component5)
+	}
 	return 
 }

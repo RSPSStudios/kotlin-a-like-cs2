@@ -4,9 +4,9 @@ fun br_loadout_hidewarning(component0: Component, comsubid1: Int, int2: Int) {
 	VARCINT[110] = calc(clientclock + 2)
 	if (.cc_find(component0, calc(comsubid1 + int2)) = ^true) {
 		.cc_setmodel(model_16238)
-		.cc_setontimer({
+		.cc_setontimer {
 			br_loadout_restorewarning(calc(clientclock + 2), event_com, event_comsubid)
-		})
+		}
 	}
 	return 
 }

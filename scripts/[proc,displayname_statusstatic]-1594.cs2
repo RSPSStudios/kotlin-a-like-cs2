@@ -1,7 +1,7 @@
 // 1594 proc
 fun displayname_statusstatic(component0: Component) {
 
-	if_setontimer(null, component0)
+	if_setontimernull
 	if_setcolour(^white, component0)
 	return 
 }

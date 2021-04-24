@@ -12,9 +12,9 @@ fun script2124(component0: Component, component1: Component, component2: Compone
 	.cc_settextshadow(true)
 	.cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	~script2131(component1)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		script2130(component1, cc_getid, .cc_getid){inv}
-	}, component0)
+	}
 	~script2125(component2, "Agility XP", component2, component3, component4)
 	~script2125(component3, "Thieving XP", component2, component3, component4)
 	~script2125(component4, "Both skills", component2, component3, component4)

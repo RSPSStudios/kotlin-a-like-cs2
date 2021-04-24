@@ -21,19 +21,19 @@ fun objbox_listener(boolean0: Boolean, key1: Int, char2: Char, key3: Int, string
 			string2 = "<col=ffffff>...</col>"
 		}
 		cc_settext(string2)
-		cc_setontimer({
+		cc_setontimer {
 			objbox_reset(clock8, component4, comsubid5, text1)
-		})
-		cc_setonop({
+		}
+		cc_setonop {
 			objbox_listener(true, null, null, key3, string0, event_com, comsubid5, comsubid6, text1, component7, clock8)
-		})
-		cc_setonkey({
+		}
+		cc_setonkey {
 			objbox_listener(false, event_key, event_keychar, key3, string0, event_com, comsubid5, comsubid6, text1, component7, clock8)
-		})
+		}
 		if (component7 ! null) {
-			if_setonclick({
+			if_setonclick {
 				objbox_listener(true, null, null, key3, string0, event_com, comsubid5, comsubid6, text1, component7, clock8)
-			}, component7)
+			}
 		}
 		.cc_resume_pausebutton
 	}

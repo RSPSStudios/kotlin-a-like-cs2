@@ -11,8 +11,8 @@ fun script3001(component0: Component, int1: Int, int2: Int) {
 		int3 = int1
 	}
 	~adventurepath_task_focus(component0, int3, int1, 0, int2)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		script3000(component0){VARP[2360], VARP[2358]}
-	}, component0)
+	}
 	return 
 }

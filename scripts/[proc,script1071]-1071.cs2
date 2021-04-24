@@ -9,9 +9,9 @@ fun script1071(string0: String, int0: Int, component1: Component): Int {
 	cc_settextshadow(true)
 	cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
 	cc_settext(string0)
-	cc_setonvartransmit({
+	cc_setonvartransmit {
 		script1072(event_com, int0){VARP[453]}
-	})
+	}
 	.cc_setgraphic("tick")
 	~script1073(int0)
 	return parawidth(string0, 512, p12_full)

@@ -6,16 +6,16 @@ fun 1v1arena_clear_resetbutton(component0: Component, comsubid1: Int, comsubid2:
 	}
 	if (cc_find(component0, comsubid2) = ^true) {
 		cc_setcolour(0xff981f)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			cc_colour_swapper(event_com, cc_getid, ^white)
-		}, component0)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			cc_colour_swapper(event_com, cc_getid, 0xff981f)
-		}, component0)
-		if_setonop({
+		}
+		if_setonop {
 			1v1arena_clear_opbutton(component0, comsubid1, cc_getid)
-		}, component0)
+		}
 	}
-	if_setontimer(null, component0)
+	if_setontimernull
 	return 
 }

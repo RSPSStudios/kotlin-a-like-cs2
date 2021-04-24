@@ -2,9 +2,9 @@
 fun ge_offers_setup_draw_disableconfirm(component0: Component, comsubid1: Int, component2: Component) {
 
 	~v2_stone_button_in_filled(component2)
-	if_setonmouserepeat(null, component2)
-	if_setonmouseleave(null, component2)
-	if_setonop(null, component2)
+	if_setonmouserepeatnull
+	if_setonmouseleavenull
+	if_setonopnull
 	if (cc_find(component0, comsubid1) = ^true) {
 		cc_settext("---")
 	}

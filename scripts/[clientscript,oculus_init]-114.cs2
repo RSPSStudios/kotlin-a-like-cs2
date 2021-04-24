@@ -3,9 +3,9 @@ fun oculus_init(component0: Component, component1: Component, component2: Compon
 
 	VARCINT[204] = ~max(3, ~min(15, VARCINT[204]))
 	_3129(VARCINT[204], 2)
-	if_setonscrollwheel({
+	if_setonscrollwheel {
 		camera_zoom(event_mousey)
-	}, component0)
+	}
 	if_setnoclickthrough(true, component0)
 	renderself(false)
 	~steelborder(component1, "Camera Controls", 1)
@@ -27,8 +27,8 @@ fun oculus_init(component0: Component, component1: Component, component2: Compon
 	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
 	cc_settextfont(p11_full)
 	cc_settext("")
-	cc_setonkey({
+	cc_setonkey {
 		oculus_controls(event_key, event_com, .cc_getid)
-	})
+	}
 	return 
 }

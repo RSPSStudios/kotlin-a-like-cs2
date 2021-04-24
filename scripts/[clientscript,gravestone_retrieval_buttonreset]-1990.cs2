@@ -11,15 +11,15 @@ fun gravestone_retrieval_buttonreset(clock0: Int, component1: Component, compone
 		if_sethide(true, component4)
 	}
 	if_setgraphic("miscgraphics,0", component1)
-	if_setontimer(null, component1)
-	if_setonmouserepeat({
+	if_setontimernull
+	if_setonmouserepeat {
 		gravestone_retrieval_buttonhover(true, component2, component3, component4)
-	}, component1)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		gravestone_retrieval_buttonhover(false, component2, component3, component4)
-	}, component1)
-	if_setonop({
+	}
+	if_setonop {
 		gravestone_retrieval_buttonop(event_opindex, component1, component2, component3, component4)
-	}, component1)
+	}
 	return 
 }

@@ -3,9 +3,9 @@ fun skillmain_button_wipe(component0: Component) {
 
 	cc_deleteall(component0)
 	if_clearops(component0)
-	if_setonmouserepeat(null, component0)
-	if_setonmouseleave(null, component0)
-	if_setonop(null, component0)
+	if_setonmouserepeatnull
+	if_setonmouseleavenull
+	if_setonopnull
 	if_sethide(true, component0)
 	return 
 }

@@ -134,8 +134,8 @@ fun script3062(component0: Component, drop1: Component, component2: Component, c
 	}
 	sound_synth(synth_938, 1, 0)
 	~script3060(1, component2, component3, component4, component5, component6, component7, component8, component9, component10)
-	if_setontimer({
+	if_setontimer {
 		script3059(calc(clientclock + 3), component2, component3, component4, component5, component6, component7, component8, component9, component10)
-	}, component2)
+	}
 	return 
 }

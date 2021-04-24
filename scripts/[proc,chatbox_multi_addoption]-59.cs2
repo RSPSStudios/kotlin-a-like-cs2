@@ -9,14 +9,14 @@ fun chatbox_multi_addoption(int0: Int, text0: String, y1: Int, height2: Int, set
 	cc_settextfont(q8_full)
 	cc_settextalign(^settextalign_centre, settextalignv3, 0)
 	cc_settext(text0)
-	cc_setonmouseover({
+	cc_setonmouseover {
 		cc_colour_swapper(event_com, event_comsubid, ^white)
-	})
-	cc_setonmouseleave({
+	}
+	cc_setonmouseleave {
 		cc_colour_swapper(event_com, event_comsubid, ^black)
-	})
-	cc_setonkey({
+	}
+	cc_setonkey {
 		chatbox_keyinput_listener(event_key, event_keychar, event_com, event_comsubid, null, null, tostring(int0), "", ^black, 0)
-	})
+	}
 	return 
 }

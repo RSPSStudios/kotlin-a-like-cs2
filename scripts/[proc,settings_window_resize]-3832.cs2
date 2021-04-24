@@ -18,8 +18,8 @@ fun settings_window_resize(component0: Component, component1: Component, compone
 		if_setscrollsize(0, 0, component3)
 	}
 	~scrollbar_vertical_rebuild(component2, component3)
-	if_setontimer({
+	if_setontimer {
 		settings_window_resize(component0, component1, component2, component3, int4, width7, height8)
-	}, component1)
+	}
 	return 
 }

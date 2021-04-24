@@ -6,9 +6,9 @@ fun script4055(opindex0: Int, component1: Component, comsubid2: Int, trans3: Int
 	}
 	if (cc_find(component1, comsubid2) = ^true) {
 		cc_settrans(trans3)
-		cc_setontimer({
+		cc_setontimer {
 			cc_settrans_temporarily_end(event_com, event_comsubid, trans4, calc(clientclock + 10))
-		})
+		}
 	}
 	return 
 }

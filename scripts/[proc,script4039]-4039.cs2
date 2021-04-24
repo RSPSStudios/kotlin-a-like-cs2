@@ -3,7 +3,7 @@ fun script4039(component0: Component, component1: Component) {
 
 	cc_deleteall(component0)
 	if_setop(1, "", component0)
-	if_setonop(null, component0)
+	if_setonopnull
 	if_sethide(true, component1)
 	if (inv_total(inv, bolt_pouch_9433) <= 0) {
 		return 
@@ -28,9 +28,9 @@ fun script4039(component0: Component, component1: Component) {
 		cc_setoutline(1)
 		cc_setobject(obj3, num2)
 		if_setop(1, "Wear <col=ff9040>${oc_name(obj3)}", component0)
-		if_setonop({
+		if_setonop {
 			cc_settrans_temporarily(component0, 1, 100, 0)
-		}, component0)
+		}
 	}
 	return 
 }

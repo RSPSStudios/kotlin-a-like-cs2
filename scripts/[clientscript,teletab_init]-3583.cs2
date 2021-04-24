@@ -2,14 +2,14 @@
 fun teletab_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component) {
 
 	~teletab_redraw(component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		teletab_redraw(component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14){VARP[1574], VARP[638], VARP[375], VARP[1139], VARP[1140], VARP[1141], VARP[439], VARP[318], VARP[635], VARP[1377], VARP[1339], VARP[1429], VARP[1632], VARP[1047]}
-	}, component0)
-	if_setoninvtransmit({
+	}
+	if_setoninvtransmit(component0)  {
 		teletab_redraw(component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14){inv, worn}
-	}, component0)
-	if_setonstattransmit({
+	}
+	if_setonstattransmit(component0)  {
 		teletab_redraw(component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14){magic}
-	}, component0)
+	}
 	return 
 }

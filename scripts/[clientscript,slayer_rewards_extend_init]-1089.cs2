@@ -2,12 +2,12 @@
 fun slayer_rewards_extend_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component) {
 
 	~slayer_rewards_unlock_draw(enum_273, component0, component1, component2, component3, component4, component5, component6)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		slayer_rewards_unlock_draw(enum_273, component0, component1, component2, component3, component4, component5, component6){VARP[1339]}
-	}, component0)
+	}
 	~slayer_rewards_etcetera_draw(component7, component2, component3, component4, component5, component6)
-	if_setonvartransmit({
+	if_setonvartransmit(component7)  {
 		slayer_rewards_etcetera_draw(component7, component2, component3, component4, component5, component6){VARP[1076], VARP[1344], VARP[695]}
-	}, component7)
+	}
 	return 
 }

@@ -22,8 +22,8 @@ fun deathkeep_left_protecteditem(obj0: Obj, int1: Int, int2: Int, int3: Int, int
 			mes0 = "${oc_name(obj0)}: You'll protect your most valuable item."
 		}
 	}
-	cc_setonop({
+	cc_setonop {
 		deathkeep_opitem(event_com, event_comsubid, mes0)
-	})
+	}
 	return calc(int5 + 1), int8, calc(int6 + 1)
 }

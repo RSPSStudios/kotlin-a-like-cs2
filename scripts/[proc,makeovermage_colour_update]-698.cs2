@@ -29,9 +29,9 @@ fun makeovermage_colour_update(component0: Component) {
 			cc_setfill(true)
 			cc_setcolour(enum(int, int, enum_998, int2))
 			cc_setop(1, "Select colour")
-			cc_setonop({
+			cc_setonop {
 				makeovermage_colour_op(event_opindex, int2, component0)
-			})
+			}
 			int5 = calc(int5 + int4)
 		} else {
 			cc_sethide(true)

@@ -1,7 +1,7 @@
 // 3186 clientscript
 fun league_border_pulse_stop(component0: Component) {
 
-	if_setontimer(null, component0)
+	if_setontimernull
 	if_settrans(255, component0)
 	return 
 }

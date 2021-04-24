@@ -1,13 +1,13 @@
 // 2497 clientscript
 fun account_init(component0: Component, component1: Component) {
 
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		account_update_display{VARP[1780], VARP[1781], VARP[1795], VARP[1737], VARP[375]}
-	}, component0)
+	}
 	~account_setup_tabs
-	if_setonvartransmit({
+	if_setonvartransmit(component1)  {
 		account_update_tabs{VARP[1666]}
-	}, component1)
+	}
 	~account_update_tabs(VARBIT[10060])
 	~account_update_display
 	~script2833

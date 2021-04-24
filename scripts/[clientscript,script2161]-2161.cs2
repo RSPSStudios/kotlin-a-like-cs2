@@ -6,10 +6,10 @@ fun script2161(keychar0: Char, component1: Component, string0: String) {
 	}
 	if (string_indexof_char(string0, keychar0) ! -1) {
 		~v2_stone_button_in(component1)
-		if_setonkey(null, component1)
-		if_setontimer({
+		if_setonkeynull
+		if_setontimer {
 			script2162(component1, string0, calc(clientclock + 40))
-		}, component1)
+		}
 		if_resume_pausebutton(component1)
 	}
 	return 

@@ -36,17 +36,17 @@ fun raids_storage_side_items(component0: Component, size1: Int) {
 					cc_setop(5, "Donate-X")
 					cc_setop(10, "Examine")
 					cc_settrans(0)
-					cc_setonop({
+					cc_setonop {
 						raids_storage_items_op(event_opindex, event_com, event_comsubid)
-					})
+					}
 				} else {
 					cc_setop(10, "Donate")
 					cc_settrans(150)
-					cc_setonop(null)
+					cc_setonopnull
 				}
 			} else {
 				cc_sethide(true)
-				cc_setonop(null)
+				cc_setonopnull
 			}
 		}
 		size6 = calc(size6 + 1)

@@ -12,9 +12,9 @@ fun script1198(component0: Component, component1: Component, component2: Compone
 		if_settext("Buy can: ${tostring(int25)}", component2)
 		if_setop(6, "Buy", component1)
 	}
-	if_setonop({
+	if_setonop {
 		opsound(event_opindex, 2)
-	}, component1)
+	}
 	if (VARBIT[4893] < int25) {
 		if_setcolour(^red, component2)
 	} else {
@@ -28,9 +28,9 @@ fun script1198(component0: Component, component1: Component, component2: Compone
 		if_setop(6, "Buy", component5)
 		if_settext("Buy seed box: ${tostring(int25)}", component6)
 	}
-	if_setonop({
+	if_setonop {
 		opsound(event_opindex, 2)
-	}, component5)
+	}
 	if (VARBIT[4893] < int25 | VARP[263] > 0) {
 		if_setcolour(^red, component6)
 	} else {
@@ -44,9 +44,9 @@ fun script1198(component0: Component, component1: Component, component2: Compone
 		if_setop(6, "Buy", component7)
 		if_settext("Buy herb sack: ${tostring(int25)}", component8)
 	}
-	if_setonop({
+	if_setonop {
 		opsound(event_opindex, 2)
-	}, component7)
+	}
 	if (VARBIT[4893] < int25 | VARP[265] > 0 | stat_base(herblore) < 58) {
 		if_setcolour(^red, component8)
 	} else {
@@ -74,9 +74,9 @@ fun script1198(component0: Component, component1: Component, component2: Compone
 		if_settext("Activated", component22)
 		if_setcolour(^white, component22)
 	}
-	if_setonop({
+	if_setonop {
 		opsound(event_opindex, 2)
-	}, component21)
+	}
 	if_setobject_nonum(weeds_6055, 1, component23)
 	if (VARP[264] = 1) {
 		if_setobject(farmers_strawhat_13647, 1, component11)
@@ -100,9 +100,9 @@ fun script1198(component0: Component, component1: Component, component2: Compone
 	int25 = 75
 	if_settext("Buy hat: ${tostring(int25)}", component10)
 	if_setop(6, "Buy", component9)
-	if_setonop({
+	if_setonop {
 		opsound(event_opindex, 2)
-	}, component9)
+	}
 	if (VARBIT[4893] < int25) {
 		if_setcolour(^red, component10)
 	} else {
@@ -111,9 +111,9 @@ fun script1198(component0: Component, component1: Component, component2: Compone
 	int25 = 150
 	if_settext("Buy jacket: ${tostring(int25)}", component13)
 	if_setop(6, "Buy", component12)
-	if_setonop({
+	if_setonop {
 		opsound(event_opindex, 2)
-	}, component12)
+	}
 	if (VARBIT[4893] < int25) {
 		if_setcolour(^red, component13)
 	} else {
@@ -122,9 +122,9 @@ fun script1198(component0: Component, component1: Component, component2: Compone
 	int25 = 125
 	if_settext("Buy legs: ${tostring(int25)}", component16)
 	if_setop(6, "Buy", component15)
-	if_setonop({
+	if_setonop {
 		opsound(event_opindex, 2)
-	}, component15)
+	}
 	if (VARBIT[4893] < int25) {
 		if_setcolour(^red, component16)
 	} else {
@@ -133,9 +133,9 @@ fun script1198(component0: Component, component1: Component, component2: Compone
 	int25 = 50
 	if_settext("Buy boots: ${tostring(int25)}", component19)
 	if_setop(6, "Buy", component18)
-	if_setonop({
+	if_setonop {
 		opsound(event_opindex, 2)
-	}, component18)
+	}
 	if (VARBIT[4893] < int25) {
 		if_setcolour(^red, component19)
 	} else {
@@ -166,9 +166,9 @@ fun script1198(component0: Component, component1: Component, component2: Compone
 			cc_setop(5, "Buy-50")
 			cc_setop(6, "Buy-X")
 			cc_setop(10, "Examine")
-			cc_setonop({
+			cc_setonop {
 				cc_settrans_temporarily(event_com, event_comsubid, 120, 0)
-			})
+			}
 			.cc_setsize(int26, 18, ^setsize_abs, ^setsize_abs)
 			.cc_setcolour(^white)
 			.cc_settextfont(p11_full)
@@ -206,9 +206,9 @@ fun script1198(component0: Component, component1: Component, component2: Compone
 			cc_setop(5, "Buy-50")
 			cc_setop(6, "Buy-X")
 			cc_setop(10, "Examine")
-			cc_setonop({
+			cc_setonop {
 				cc_settrans_temporarily(event_com, event_comsubid, 120, 0)
-			})
+			}
 			.cc_setsize(int26, 18, ^setsize_abs, ^setsize_abs)
 			.cc_setcolour(^white)
 			.cc_settextfont(p11_full)

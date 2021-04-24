@@ -14,8 +14,8 @@ fun script1196(component0: Component, component1: Component, component2: Compone
 	if_setopbase("<col=ff9040>${oc_name(herb_sack_13226)}</col>", component8)
 	if_setopbase("<col=ff9040>Auto-weed</col>", component22)
 	~script1198(component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		script1197(component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18, component19, component20, component21, component22, component23, component24, component25){VARP[261], VARP[262], VARP[263], VARP[1329], VARP[1105], VARP[1329]}
-	}, component0)
+	}
 	return 
 }

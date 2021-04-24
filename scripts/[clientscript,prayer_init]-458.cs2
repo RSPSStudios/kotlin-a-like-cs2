@@ -51,9 +51,9 @@ fun prayer_init(int0: Int, component1: Component, component2: Component, compone
 	.cc_settextshadow(true)
 	.cc_settextfont(p12_full)
 	~prayer_levelupdate
-	if_setonstattransmit({
+	if_setonstattransmit(component1)  {
 		prayer_levelupdate(event_com, .cc_getid){prayer}
-	}, component1)
+	}
 	val string0: String = "Enter"
 	val boolean15: Boolean = true
 	val string1: String = "Dismiss"
@@ -80,7 +80,7 @@ fun prayer_init(int0: Int, component1: Component, component2: Component, compone
 	} else {
 		if_setposition(0, 5, ^setpos_abs_centre, ^setpos_abs_bottom, component1)
 		if_sethide(true, component3)
-		if_setonop(null, component3)
+		if_setonopnull
 		if_clearops(component3)
 		if_sethide(true, component4)
 	}

@@ -13,9 +13,9 @@ fun script1392(component0: Component, string0: String): Int {
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	cc_settextshadow(true)
 	cc_settext(string0)
-	if_setonmouserepeat(null, component0)
-	if_setonmouseleave(null, component0)
-	if_setonop(null, component0)
+	if_setonmouserepeatnull
+	if_setonmouseleavenull
+	if_setonopnull
 	if_clearops(component0)
 	return int1
 }

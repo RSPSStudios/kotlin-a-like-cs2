@@ -12,8 +12,8 @@ fun trawler_activity_init(component0: Component) {
 	.cc_setfill(true)
 	.cc_setcolour(^black)
 	~trawler_activity_update(component0)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		trawler_activity_update(event_com, cc_getid, .cc_getid){VARP[391]}
-	}, component0)
+	}
 	return 
 }

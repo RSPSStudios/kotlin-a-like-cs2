@@ -10,9 +10,9 @@ fun death_coffer_init(int0: Int, component1: Component, component2: Component, c
 	cc_settextfont(p12_full)
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	~death_coffer_setcontents
-	cc_setonvartransmit({
+	cc_setonvartransmit {
 		death_coffer_setcontents(event_com, event_comsubid){VARP[261]}
-	})
+	}
 	cc_create(component1, ^iftype_text, 1)
 	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
 	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_bottom)
@@ -44,12 +44,12 @@ fun death_coffer_init(int0: Int, component1: Component, component2: Component, c
 	.cc_settextshadow(true)
 	.cc_settextfont(p11_full)
 	.cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
-	if_setonvartransmit({
+	if_setonvartransmit(component2)  {
 		script3482(event_com, cc_getid, .cc_getid, component3, component4, component5, component6, component7){VARP[262], VARP[263], VARP[264]}
-	}, component2)
-	if_setoninvtransmit({
+	}
+	if_setoninvtransmit(component2)  {
 		script3482(event_com, cc_getid, .cc_getid, component3, component4, component5, component6, component7){inv}
-	}, component2)
+	}
 	~script3483(component2, component3, component4, component5, component6, component7)
 	int8 = ~thinbox(component2, int8)
 	return 

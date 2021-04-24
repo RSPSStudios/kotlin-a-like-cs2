@@ -13,35 +13,35 @@ fun pest_rewards_statbuttondraw(stat0: Stat, y1: Int, int2: Int, int3: Int, int4
 	val string0: String = ""
 	if (stat_base(stat0) < 25) {
 		string0 = "The Void Knights will not offer training in skills for which you have a level under ${tostring(25)}."
-		cc_setonop({
+		cc_setonop {
 			pest_rewards_refuse(string0, component5, component6, component7, component8)
-		})
+		}
 	} else if (VARP[261] < int11) {
 		string0 = "You need ${~pest_rewards_costpoints(int11)} to claim that reward."
-		cc_setonop({
+		cc_setonop {
 			pest_rewards_refuse(string0, component5, component6, component7, component8)
-		})
+		}
 	} else {
-		cc_setonop({
+		cc_setonop {
 			pest_rewards_select(int4, component5, component6, component7, component8)
-		})
+		}
 	}
 	if (int10 = int4) {
 		cc_setcolour(^white)
-		cc_setonmouserepeat(null)
-		cc_setonmouseleave(null)
+		cc_setonmouserepeatnull
+		cc_setonmouseleavenull
 	} else if (string_length(string0) > 0) {
 		cc_setcolour(0x9f9f9f)
-		cc_setonmouserepeat(null)
-		cc_setonmouseleave(null)
+		cc_setonmouserepeatnull
+		cc_setonmouseleavenull
 	} else {
 		cc_setcolour(0xff981f)
-		cc_setonmouserepeat({
+		cc_setonmouserepeat {
 			cc_colour_swapper(event_com, event_comsubid, 0xffb83f)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			cc_colour_swapper(event_com, event_comsubid, 0xff981f)
-		})
+		}
 	}
 	return calc(int9 + 1), calc(int2 + int3)
 }

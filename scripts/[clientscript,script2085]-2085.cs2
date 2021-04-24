@@ -18,9 +18,9 @@ fun script2085() {
 	.cc_create(component1, ^iftype_model, 1)
 	.cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
 	.cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
-	cc_setontimer({
+	cc_setontimer {
 		script2086(event_com, cc_getid, .cc_getid, clientclock)
-	})
+	}
 	~script2093(component1, 0)
 	return 
 }

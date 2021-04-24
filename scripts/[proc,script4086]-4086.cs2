@@ -29,9 +29,9 @@ fun script4086(component0: Component, int1: Int) {
 		if_setposition(38, 47, ^setpos_abs_right, ^setpos_abs_top, interface_621:80)
 		int3 = ~v2_stone_button_filled(interface_621:80)
 		if_setop(1, "Search", interface_621:80)
-		if_setonop({
+		if_setonop {
 			script4087
-		}, interface_621:80)
+		}
 		cc_create(interface_621:80, ^iftype_text, int3)
 		cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
 		cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)

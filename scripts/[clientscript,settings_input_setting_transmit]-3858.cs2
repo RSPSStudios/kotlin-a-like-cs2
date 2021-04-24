@@ -28,22 +28,22 @@ fun settings_input_setting_transmit(struct0: Struct, int1: Int, comsubid2: Int, 
 	}
 	if (cc_find(component5, comsubid3) = ^true) {
 		if (~on_mobile = false & int7 = 1) {
-			cc_setonmouseover({
+			cc_setonmouseover {
 				cc_settrans(component5, comsubid3, 220, null)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				cc_settrans(component5, comsubid3, 255, null)
-			})
+			}
 		} else {
-			cc_setonmouseover(null)
-			cc_setonmouseleave(null)
+			cc_setonmouseovernull
+			cc_setonmouseleavenull
 		}
 	}
 	if (VARBIT[9647] = 1 & VARBIT[9657] = int1 & cc_find(component5, comsubid6) = ^true) {
 		cc_setcolour(^white)
-		cc_setontimer({
+		cc_setontimer {
 			settings_input_timer(component5, comsubid6)
-		})
+		}
 	}
 	return 
 }

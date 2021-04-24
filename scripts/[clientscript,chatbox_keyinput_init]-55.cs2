@@ -1,13 +1,13 @@
 // 55 clientscript
 fun chatbox_keyinput_init(component0: Component, component1: Component, key2: Int, colour3: Int, string0: String, string1: String) {
 
-	if_setonkey({
+	if_setonkey {
 		chatbox_keyinput_listener(event_key, event_keychar, event_com, -1, component1, key2, string0, string1, colour3, 0)
-	}, component0)
+	}
 	if (component1 ! null & ~on_mobile = true) {
-		if_setonclick({
+		if_setonclick {
 			chatbox_keyinput_clicklistener(component0, -1, event_com, key2, string0, string1, colour3, 0)
-		}, component1)
+		}
 	}
 	return 
 }

@@ -11,8 +11,8 @@ fun fairyrings_confirm(int0: Int, component1: Component) {
 	if_sethide(true, interface_398:22)
 	if_sethide(true, interface_398:23)
 	if_sethide(true, interface_398:24)
-	if_setontimer({
+	if_setontimer {
 		fairyrings_confirm_expire(event_com, calc(clientclock + 45))
-	}, component1)
+	}
 	return 
 }

@@ -40,9 +40,9 @@ fun nzone_rewards_lists(component0: Component, component1: Component) {
 		cc_settextshadow(true)
 		cc_settextalign(^settextalign_centre, ^settextalign_top, 0)
 		~nzone_rewards_updatepotion(namedobj7)
-		cc_setonvartransmit({
+		cc_setonvartransmit {
 			nzone_rewards_updatepotion(event_com, event_comsubid, namedobj7){VARP[1066]}
-		})
+		}
 		int6 = calc(int6 + 1)
 		namedobj7 = enum(int, namedobj, enum_814, int6)
 	}

@@ -120,9 +120,9 @@ fun trade_confirm_redraw(size0: Int, width1: Int, x2: Int, component3: Component
 				.cc_setcolour(^red)
 				.cc_setfill(true)
 				.cc_settrans(255)
-				.cc_setontimer({
+				.cc_setontimer {
 					trade_slot_flasher(event_com, event_comsubid, int20)
-				})
+				}
 				int19 = calc(int19 + 1)
 				.cc_create(component5, ^iftype_rectangle, int19)
 				.cc_setsize(width14, 12, ^setsize_abs, ^setsize_abs)
@@ -130,9 +130,9 @@ fun trade_confirm_redraw(size0: Int, width1: Int, x2: Int, component3: Component
 				.cc_setcolour(0x990000)
 				.cc_setfill(false)
 				.cc_settrans(255)
-				.cc_setontimer({
+				.cc_setontimer {
 					trade_slot_flasher(event_com, event_comsubid, int20)
-				})
+				}
 				int19 = calc(int19 + 1)
 			}
 			int18 = calc(int18 + 1)
@@ -190,12 +190,12 @@ fun trade_confirm_redraw(size0: Int, width1: Int, x2: Int, component3: Component
 		.cc_setfill(false)
 		cc_settrans(255)
 		.cc_settrans(255)
-		cc_setontimer({
+		cc_setontimer {
 			trade_slot_flasher(event_com, event_comsubid, int22)
-		})
-		.cc_setontimer({
+		}
+		.cc_setontimer {
 			trade_slot_flasher(event_com, event_comsubid, int22)
-		})
+		}
 		int18 = calc(int18 + 1)
 	}
 	return 

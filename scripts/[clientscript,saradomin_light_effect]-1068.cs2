@@ -19,9 +19,9 @@ fun saradomin_light_effect() {
 	.cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
 	.cc_setcolour(^white)
 	.cc_setfill(true)
-	cc_setontimer({
+	cc_setontimer {
 		saradomin_light_effect_update(event_com, event_comsubid, .cc_getid, clientclock)
-	})
+	}
 	~saradomin_light_effect_update(component1, 0)
 	return 
 }

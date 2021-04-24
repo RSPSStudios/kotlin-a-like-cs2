@@ -2,24 +2,24 @@
 fun chatbox_init() {
 
 	~chatdefault_setonkey(1)
-	if_setonvartransmit({
+	if_setonvartransmit(interface_162:0)  {
 		script924{VARP[1054], VARP[1055], VARP[1021], VARP[499], VARP[1737]}
-	}, interface_162:0)
-	if_setonsubchange({
+	}
+	if_setonsubchange {
 		chat_onsubchange(event_com, getwindowmode, if_hassub(interface_162:562), if_hassub(interface_162:561), ~toplevel_getcomponents)
-	}, interface_162:0)
-	if_setonchattransmit({
+	}
+	if_setonchattransmit {
 		chat_onchattransmit
-	}, interface_162:0)
-	if_setonfriendtransmit({
+	}
+	if_setonfriendtransmit {
 		chat_onchattransmit
-	}, interface_162:0)
-	if_setonclantransmit({
+	}
+	if_setonclantransmit {
 		rebuildchatbox
-	}, interface_162:0)
-	if_setonmisctransmit({
+	}
+	if_setonmisctransmit {
 		script664(true)
-	}, interface_162:0)
+	}
 	VARCSTRING[335], VARCINT[42] = "", -1
 	when (VARCINT[41]): Int {
 		0, 1, 2, 3, 4, 5, 1337 -> {

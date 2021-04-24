@@ -6,7 +6,7 @@ fun script1259(clock0: Int, component1: Component, comsubid2: Int, text0: String
 	}
 	if (cc_find(component1, comsubid2) = ^true) {
 		cc_settext(text0)
-		cc_setontimer(null)
+		cc_setontimernull
 	}
 	return 
 }

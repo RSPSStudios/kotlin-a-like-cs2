@@ -34,12 +34,12 @@ fun thormac_setup(component0: Component, obj1: Obj) {
 	cc_setgraphic("tradebacking")
 	cc_settiling(true)
 	cc_settrans(255)
-	if_setonmouseover({
+	if_setonmouseover {
 		cc_settrans(event_com, cc_getid, 190, null)
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		cc_settrans(event_com, cc_getid, 255, null)
-	}, component0)
+	}
 	cc_create(component0, ^iftype_text, int4)
 	int4 = calc(int4 + 1)
 	cc_setsize(width2, 30, ^setsize_abs, ^setsize_abs)
@@ -49,8 +49,8 @@ fun thormac_setup(component0: Component, obj1: Obj) {
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	cc_settext(oc_name(obj1))
 	~thormac_highlight(component0, obj1)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		thormac_highlight(event_com, cc_getid, obj1){inv}
-	}, component0)
+	}
 	return 
 }

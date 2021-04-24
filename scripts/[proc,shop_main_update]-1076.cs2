@@ -39,7 +39,7 @@ fun shop_main_update(component0: Component, size1: Int, inv2: Inv, obj3: Obj, in
 				cc_setobject_nonum(obj_6512, 1)
 				cc_setopbase("")
 				cc_settrans(0)
-				cc_setontimer(null)
+				cc_setontimernull
 			}
 		}
 		size7 = calc(size7 + 1)

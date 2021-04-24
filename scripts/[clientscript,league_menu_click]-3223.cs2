@@ -20,9 +20,9 @@ fun league_menu_click(opindex0: Int, component1: Component, component2: Componen
 	} else {
 		if_sethide(false, component2)
 		if_sethide(false, component4)
-		if_setonclick({
+		if_setonclick {
 			league_menu_frame_click(component1, component2, component4)
-		}, component4)
+		}
 		if_setnoclickthrough(true, component2)
 		int5 = 1
 	}

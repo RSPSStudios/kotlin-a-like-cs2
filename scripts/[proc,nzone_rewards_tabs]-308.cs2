@@ -15,9 +15,9 @@ fun nzone_rewards_tabs(component0: Component, component1: Component, component2:
 	cc_setcolour(0xff981f)
 	cc_settextshadow(true)
 	~nzone_rewards_setpoints
-	cc_setonvartransmit({
+	cc_setonvartransmit {
 		nzone_rewards_setpoints(event_com, event_comsubid){VARP[1060]}
-	})
+	}
 	if_sethide(false, component4)
 	if (component4 ! component1) {
 		if_sethide(true, component1)

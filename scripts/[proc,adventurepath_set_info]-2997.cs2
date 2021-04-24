@@ -21,12 +21,12 @@ fun adventurepath_set_info(int0: Int, component1: Component, component2: Compone
 		cc_setfill(true)
 		cc_settrans(255)
 		cc_setcolour(^black)
-		cc_setonmouserepeat({
+		cc_setonmouserepeat {
 			cc_settrans(event_com, cc_getid, 200, null)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			cc_settrans(event_com, cc_getid, 255, null)
-		})
+		}
 		int23 = calc(1 + int23)
 	}
 	cc_create(component3, ^iftype_text, int23)
@@ -47,9 +47,9 @@ fun adventurepath_set_info(int0: Int, component1: Component, component2: Compone
 	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
 	cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_top)
 	cc_setop(1, "More info")
-	cc_setonop({
+	cc_setonop {
 		adventurepath_show_more_info(component15, component8, component9, component14)
-	})
+	}
 	val int24: Int = 0
 	val int25: Int = 0
 	val int26: Int = 0
@@ -65,22 +65,22 @@ fun adventurepath_set_info(int0: Int, component1: Component, component2: Compone
 		if_setop(1, "Show<col=ff9040> Hint", interface_642:22)
 		if_setop(2, "Remove<col=ff9040> Hint arrow", interface_642:22)
 		int23 = ~v2_stone_button_filled(interface_642:22)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			v2_stone_button_change_in(interface_642:22, 0)
-		}, interface_642:22)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			v2_stone_button_change_out(interface_642:22, 0)
-		}, interface_642:22)
-		if_setonop({
+		}
+		if_setonop {
 			button_select_sound
-		}, interface_642:22)
+		}
 	} else {
 		if_setop(1, "", interface_642:22)
 		if_setop(2, "", interface_642:22)
 		int23 = ~v2_stone_button_in_filled(interface_642:22)
-		if_setonmouserepeat(null, interface_642:22)
-		if_setonmouseleave(null, interface_642:22)
-		if_setonop(null, interface_642:22)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
+		if_setonopnull
 	}
 	cc_create(interface_642:22, ^iftype_graphic, int23)
 	cc_setsize(22, 22, ^setsize_abs, ^setsize_abs)
@@ -218,17 +218,17 @@ fun adventurepath_set_info(int0: Int, component1: Component, component2: Compone
 		cc_settextfont(p12_full)
 		cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
 		cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_top)
-		cc_setonop({
+		cc_setonop {
 			adventurepath_open_url(url2)
-		})
+		}
 		cc_setop(1, "Open link")
 		if (~on_mobile = false) {
-			cc_setonmouserepeat({
+			cc_setonmouserepeat {
 				cc_colour_swapper(event_com, cc_getid, 0xbebebe)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				cc_colour_swapper(event_com, cc_getid, 0xf4f4f4)
-			})
+			}
 		}
 	}
 	val int43: Int = struct_param(struct5, param_807)
@@ -240,18 +240,18 @@ fun adventurepath_set_info(int0: Int, component1: Component, component2: Compone
 		cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
 		cc_setgraphic("clickcross,5")
 		cc_setop(1, "Set<col=ff9040> Focus")
-		cc_setonop({
+		cc_setonop {
 			button_select_sound
-		})
+		}
 		cc_create(component22, ^iftype_rectangle, calc(1 + int23))
 		cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
 		cc_settrans(255)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			adventurepath_do_nothing
-		}, component22)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			adventurepath_do_nothing
-		}, component22)
+		}
 	} else if (int44 = int0) {
 		int23 = ~v2_stone_button_filled(component22)
 		cc_create(component22, ^iftype_graphic, int23)
@@ -261,15 +261,15 @@ fun adventurepath_set_info(int0: Int, component1: Component, component2: Compone
 		cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
 		cc_settrans(255)
 		cc_setop(1, "Remove<col=ff9040> Focus")
-		cc_setonop({
+		cc_setonop {
 			script3001(component22, int0, int43)
-		})
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			script2998(component22, int44, int0, int43)
-		}, component22)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			script2999(component22, int44, int0, int43)
-		}, component22)
+		}
 	} else if (~adventurepath_return_task_status(int0) = ^true) {
 		int23 = ~v2_stone_button_in_filled(component22)
 		cc_create(component22, ^iftype_graphic, int23)
@@ -279,12 +279,12 @@ fun adventurepath_set_info(int0: Int, component1: Component, component2: Compone
 		cc_create(component22, ^iftype_rectangle, calc(1 + int23))
 		cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
 		cc_settrans(255)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			adventurepath_do_nothing
-		}, component22)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			adventurepath_do_nothing
-		}, component22)
+		}
 	} else {
 		int23 = ~v2_stone_button_filled(component22)
 		cc_create(component22, ^iftype_graphic, int23)
@@ -294,18 +294,18 @@ fun adventurepath_set_info(int0: Int, component1: Component, component2: Compone
 		cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
 		cc_settrans(255)
 		cc_setop(1, "Set<col=ff9040> Focus")
-		cc_setonop({
+		cc_setonop {
 			script3001(component22, int0, int43)
-		})
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			script2998(component22, int44, int0, int43)
-		}, component22)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			script2999(component22, int44, int0, int43)
-		}, component22)
+		}
 	}
-	if_setonvartransmit({
+	if_setonvartransmit(component22)  {
 		script3000(component22){VARP[2360], VARP[2358]}
-	}, component22)
+	}
 	return 
 }

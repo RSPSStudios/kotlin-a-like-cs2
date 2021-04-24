@@ -34,25 +34,25 @@ fun pest_rewards_itemdraw(namedobj0: Namedobj, y1: Int, int2: Int, int3: Int, in
 		cc_setcolour(^red)
 		cc_settext(enum(int, string, enum_2285, int4))
 		mes0 = "You need level 42 in Attack, Strength, Defence, Ranged, Magic and Hitpoints, and level 22 Prayer, to purchase that item."
-		.cc_setonop({
+		.cc_setonop {
 			pest_rewards_refuse(mes0, component5, component6, component7, component8)
-		})
+		}
 		colour12, colour13 = 0x9f9f9f, 0x9f9f9f
 	} else if (stat15 ! null & stat(stat15) < 25) {
 		cc_setcolour(^red)
 		cc_settext("${enum(int, string, enum_2285, int4)} - requires level ${tostring(25)}")
 		mes0 = "You need level ${tostring(25)} ${enum(stat, string, enum_680, stat15)} to purchase that item."
-		.cc_setonop({
+		.cc_setonop {
 			pest_rewards_refuse(mes0, component5, component6, component7, component8)
-		})
+		}
 		colour12, colour13 = 0x9f9f9f, 0x9f9f9f
 	} else if (VARP[261] < int14) {
 		cc_setcolour(^red)
 		cc_settext("${enum(int, string, enum_2285, int4)} - ${~pest_rewards_costpoints(int14)}")
 		mes0 = "You need ${~pest_rewards_costpoints(int14)} to claim that reward."
-		.cc_setonop({
+		.cc_setonop {
 			pest_rewards_refuse(mes0, component5, component6, component7, component8)
-		})
+		}
 		colour12, colour13 = 0x9f9f9f, 0x9f9f9f
 	} else {
 		if (int10 = int4) {
@@ -61,9 +61,9 @@ fun pest_rewards_itemdraw(namedobj0: Namedobj, y1: Int, int2: Int, int3: Int, in
 			cc_setcolour(0x00df00)
 		}
 		cc_settext(enum(int, string, enum_2285, int4))
-		.cc_setonop({
+		.cc_setonop {
 			pest_rewards_select(int4, component5, component6, component7, component8)
-		})
+		}
 	}
 	cc_create(component6, ^iftype_text, int9)
 	int9 = calc(int9 + 1)
@@ -75,16 +75,16 @@ fun pest_rewards_itemdraw(namedobj0: Namedobj, y1: Int, int2: Int, int3: Int, in
 	cc_settext(~pest_rewards_costpts(int14))
 	if (int10 = int4) {
 		cc_setcolour(^white)
-		.cc_setonmouserepeat(null)
-		.cc_setonmouseleave(null)
+		.cc_setonmouserepeatnull
+		.cc_setonmouseleavenull
 	} else {
 		cc_setcolour(colour12)
-		.cc_setonmouserepeat({
+		.cc_setonmouserepeat {
 			cc_colour_swapper(event_com, cc_getid, colour13)
-		})
-		.cc_setonmouseleave({
+		}
+		.cc_setonmouseleave {
 			cc_colour_swapper(event_com, cc_getid, colour12)
-		})
+		}
 	}
 	return int9
 }

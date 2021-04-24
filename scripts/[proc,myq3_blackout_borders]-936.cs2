@@ -40,8 +40,8 @@ fun myq3_blackout_borders(component0: Component, width1: Int, height2: Int, comp
 			.cc_setsize(int7, 0, ^setsize_abs, ^setsize_minus)
 		}
 	}
-	if_setontimer({
+	if_setontimer {
 		myq3_blackout_borders(component0, width1, height2, component3)
-	}, component0)
+	}
 	return 
 }

@@ -4,15 +4,15 @@ fun bankmain_search_setbutton(component0: Component, component1: Component, comp
 	if (~bankmain_searching = 1) {
 		if_setgraphic("miscgraphics,9", component7)
 		if (VARCINT[5] = 11) {
-			if_setontimer({
+			if_setontimer {
 				bankmain_search_refresh(component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16)
-			}, component7)
+			}
 		} else {
-			if_setontimer(null, component7)
+			if_setontimernull
 		}
 	} else {
 		if_setgraphic("miscgraphics,0", component7)
-		if_setontimer(null, component7)
+		if_setontimernull
 	}
 	return 
 }

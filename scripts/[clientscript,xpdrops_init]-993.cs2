@@ -22,16 +22,16 @@ fun xpdrops_init(component0: Component, component1: Component, component2: Compo
 	}
 	~xpdrops_redraw(component0, component3, component5, component6, component8, component9)
 	~xpdrops_setbar(component3, component4, component5, component6, component7, component8, component9)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		xpdrops_vartransmit(component0, component3, component4, component5, component6, component7, component8, component9){VARP[1227], VARP[1228], VARP[1229], VARP[1230], VARP[1231], VARP[1232], VARP[1233], VARP[1234], VARP[1235], VARP[1236], VARP[1237], VARP[1238], VARP[1239], VARP[1240], VARP[1241], VARP[1242], VARP[1243], VARP[1244], VARP[1245], VARP[1246], VARP[1247], VARP[1248], VARP[1249], VARP[1250], VARP[1251], VARP[1252], VARP[1253], VARP[1254], VARP[1255], VARP[1256], VARP[1257], VARP[1258], VARP[1259], VARP[1260], VARP[1261], VARP[1262], VARP[1263], VARP[1264], VARP[1265], VARP[1266], VARP[1267], VARP[1268], VARP[1269], VARP[1270], VARP[1271], VARP[1272], VARP[1273], VARP[1274], VARP[1275]}
-	}, component0)
+	}
 	~script1003(component0, component2, component3, component4, component5, component6, component7, component8, component9, int10)
-	if_setonvartransmit({
+	if_setonvartransmit(component3)  {
 		xpdrops_setposition(component3){VARP[1227]}
-	}, component3)
-	if_setonsubchange({
+	}
+	if_setonsubchange {
 		xpdrops_setposition(component3)
-	}, component3)
+	}
 	~xpdrops_showpanel(component0, component3, component8, component9)
 	return 
 }

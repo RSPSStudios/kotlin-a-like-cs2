@@ -47,8 +47,8 @@ fun collection_draw_tab(component0: Component, struct1: Struct, int2: Int) {
 		if (cc_find(component0, 3) = ^true) {
 			cc_setcolour(0xffa82f)
 		}
-		if_setonmouseover(null, component0)
-		if_setonmouseleave(null, component0)
+		if_setonmouseovernull
+		if_setonmouseleavenull
 	} else {
 		if (cc_find(component0, 0) = ^true) {
 			cc_setgraphic("tabs_tall,2")
@@ -62,12 +62,12 @@ fun collection_draw_tab(component0: Component, struct1: Struct, int2: Int) {
 		if (cc_find(component0, 3) = ^true) {
 			cc_setcolour(0xff981f)
 		}
-		if_setonmouseover({
+		if_setonmouseover {
 			collection_hover_tab(component0, true)
-		}, component0)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			collection_hover_tab(component0, false)
-		}, component0)
+		}
 	}
 	return 
 }

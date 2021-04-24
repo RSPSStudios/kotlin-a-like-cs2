@@ -30,9 +30,9 @@ fun ironman_modebutton_init(component0: Component, int1: Int, op0: String, strin
 	cc_setsize(17, 17, ^setsize_abs, ^setsize_abs)
 	cc_setposition(5, 0, ^setpos_abs_left, ^setpos_abs_centre)
 	~ironman_modebutton_redraw(component0, int7, int8, int1, component2, component3, component4, component5)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		ironman_modebutton_redraw(component0, int7, int8, int1, component2, component3, component4, component5){VARP[499], VARP[281]}
-	}, component0)
+	}
 	if_setop(1, op0, component0)
 	return 
 }

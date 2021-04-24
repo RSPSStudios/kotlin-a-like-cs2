@@ -2,9 +2,9 @@
 fun script1975(component0: Component, enum1: Enum) {
 
 	if (~script1979 = 1) {
-		if_setontimer({
+		if_setontimer {
 			script1976(component0, enum1)
-		}, component0)
+		}
 	}
 	return 
 }

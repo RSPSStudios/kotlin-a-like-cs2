@@ -8,12 +8,12 @@ fun poll_buttonop(component0: Component, component1: Component, string0: String,
 		.cc_setcolour(^white)
 		.cc_settext("Loading...")
 		cc_clearops
-		cc_setonmouseover(null)
-		cc_setonmouseleave(null)
-		cc_setonop(null)
+		cc_setonmouseovernull
+		cc_setonmouseleavenull
+		cc_setonopnull
 	}
-	if_setontimer({
+	if_setontimer {
 		poll_resetbutton(component0, component1, string0, calc(clientclock + 30))
-	}, component0)
+	}
 	return 
 }

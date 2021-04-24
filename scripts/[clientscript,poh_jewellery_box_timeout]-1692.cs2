@@ -5,14 +5,14 @@ fun poh_jewellery_box_timeout(comsubid0: Int, layer1: Component, comsubid2: Int,
 		return 
 	}
 	if (cc_find(layer1, comsubid2) = ^true & .cc_find(poh_jewellery_box:0, comsubid0) = ^true) {
-		.cc_setontimer(null)
+		.cc_setontimernull
 		cc_settext(string0)
-		cc_setonop({
+		cc_setonop {
 			poh_jewellery_box_op(event_opindex, comsubid0, layer1, comsubid2, string0, string1, string2)
-		})
-		.cc_setonkey({
+		}
+		.cc_setonkey {
 			poh_jewellery_box_keypress(event_keychar, comsubid0, layer1, comsubid2, string0, string1, string2)
-		})
+		}
 	}
 	return 
 }

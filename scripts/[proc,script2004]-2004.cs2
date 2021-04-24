@@ -3,28 +3,28 @@ fun script2004(enum0: Enum, component1: Component, component2: Component, compon
 
 	cc_deleteall(component5)
 	val int8: Int = 0
-	if_setonvartransmit({
+	if_setonvartransmit(component5)  {
 		script1965(enum0, component1, component2, component3, component4, component5, string0, false, int7){VARP[675], VARP[2894]}
-	}, component5)
+	}
 	if (~script376(enum0) = int7) {
 		int8 = ~options_button_on(component5, int8)
-		if_setonmouserepeat(null, component5)
-		if_setonmouseleave(null, component5)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
 		if_clearops(component5)
-		if_setonop(null, component5)
+		if_setonopnull
 	} else {
 		int8 = ~options_button_off(component5, int8)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			script1965(enum0, component1, component2, component3, component4, component5, string0, true, int7)
-		}, component5)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			script1965(enum0, component1, component2, component3, component4, component5, string0, false, int7)
-		}, component5)
+		}
 		if_setopbase("<col=ff9040>${string0}</col>", component5)
 		if_setop(1, "Default Quantity:", component5)
-		if_setonop({
+		if_setonop {
 			script2005(enum0, component1, component2, component3, component4, event_opindex, int7)
-		}, component5)
+		}
 	}
 	cc_create(component5, ^iftype_text, int8)
 	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)

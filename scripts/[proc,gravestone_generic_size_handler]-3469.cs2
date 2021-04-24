@@ -21,8 +21,8 @@ fun gravestone_generic_size_handler(component0: Component, component1: Component
 		}
 	}
 	~gravestone_generic_window_set(component0, component1, component2, int3, int4, int5, component6, int7, component8, int9, component10, component11, component12, component13)
-	if_setontimer({
+	if_setontimer {
 		gravestone_generic_size_handler(component0, component1, component2, int3, int4, int5, component6, int7, component8, int9, component10, component11, component12, component13, width16, int17)
-	}, component0)
+	}
 	return 
 }

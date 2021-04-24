@@ -1,12 +1,12 @@
 // 3087 proc
 fun br_reward_shop_draw(int0: Int, component1: Component, component2: Component, component3: Component, component4: Component): Int {
 
-	if_setonvartransmit({
+	if_setonvartransmit(component1)  {
 		br_reward_shop_draw(int0, component1, component2, component3, component4){VARP[261], VARP[262], VARP[1141]}
-	}, component1)
-	if_setoninvtransmit({
+	}
+	if_setoninvtransmit(component1)  {
 		br_reward_shop_draw(int0, component1, component2, component3, component4){inv_422}
-	}, component1)
+	}
 	cc_deleteall(component2)
 	val int5: Int = 0
 	val int6: Int = 3
@@ -141,15 +141,15 @@ fun br_reward_shop_draw(int0: Int, component1: Component, component2: Component,
 		cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
 		cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
 		cc_setop(1, "Confirm")
-		cc_setonmouserepeat({
+		cc_setonmouserepeat {
 			pest_rewards_confirmdraw(true, text0, component4)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			pest_rewards_confirmdraw(false, text0, component4)
-		})
-		cc_setonop({
+		}
+		cc_setonop {
 			br_reward_shop_confirmop(event_opindex, component1, component2, component3, component4)
-		})
+		}
 	} else {
 		int5 = ~v2_stone_button_in_filled(component4)
 		cc_create(component4, ^iftype_text, int5)

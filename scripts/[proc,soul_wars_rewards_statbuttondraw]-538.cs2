@@ -16,39 +16,39 @@ fun soul_wars_rewards_statbuttondraw(stat0: Stat, y1: Int, x2: Int, width3: Int,
 	val string1: String = ""
 	if (stat_base(stat0) < 30) {
 		string1 = "You need to be at least level ${tostring(30)} in a skill to buy experience in it."
-		cc_setonop({
+		cc_setonop {
 			soul_wars_rewards_refuse(string1, component5, component6, component7, 0, event_opindex, component10, component11)
-		})
+		}
 	} else if (VARP[2876] < int12) {
 		cc_setcolour(0x9f9f9f)
-		cc_setonmouserepeat(null)
-		cc_setonmouseleave(null)
+		cc_setonmouserepeatnull
+		cc_setonmouseleavenull
 		string1 = "You need ${~tostring_spacer(int12, string0)} ${~script853(int12)} to claim that reward."
-		cc_setonop({
+		cc_setonop {
 			soul_wars_rewards_refuse(string1, component5, component6, component7, 0, event_opindex, component10, component11)
-		})
+		}
 	} else {
-		cc_setonop({
+		cc_setonop {
 			soul_wars_rewards_select(int4, component5, component6, component7, 0, event_opindex, component10, component11)
-		})
+		}
 	}
 	if (int9 = int4) {
 		cc_setcolour(^white)
-		cc_setonmouserepeat(null)
-		cc_setonmouseleave(null)
+		cc_setonmouserepeatnull
+		cc_setonmouseleavenull
 	} else if (string_length(string1) > 0) {
 		cc_setcolour(0x9f9f9f)
-		cc_setonmouserepeat(null)
-		cc_setonmouseleave(null)
+		cc_setonmouserepeatnull
+		cc_setonmouseleavenull
 	} else {
 		cc_setcolour(0xff981f)
 		if (~on_mobile = false) {
-			cc_setonmouserepeat({
+			cc_setonmouserepeat {
 				cc_colour_swapper(event_com, event_comsubid, 0xfffc00)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				cc_colour_swapper(event_com, event_comsubid, 0xff981f)
-			})
+			}
 		}
 	}
 	return calc(int8 + 1)

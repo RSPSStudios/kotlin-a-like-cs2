@@ -1,9 +1,9 @@
 // 1993 clientscript
 fun fossilquest_voyage(component0: Component, int1: Int, component2: Component, component3: Component, component4: Component, int5: Int, component6: Component, int7: Int) {
 
-	if_setontimer({
+	if_setontimer {
 		script1995(component0, int1, int5)
-	}, component0)
+	}
 	if (int5 = 0) {
 		if_sethide(false, component2)
 		if_sethide(true, component3)

@@ -32,9 +32,9 @@ fun rebuildpmbox(mesuid0: Int) {
 		}
 		int7 = calc(int7 + ~script199(string0, int9, component10, interface_163:0, width8, int1, 13, int7, setposv2, int3, ^yellow, true))
 		if_clearops(component10)
-		if_setonop(null, component10)
-		if_setonmouserepeat(null, component10)
-		if_setonmouseleave(null, component10)
+		if_setonopnull
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
 		if_setsize(0, 0, ^setsize_abs, ^setsize_abs, component10)
 		int9 = calc(int9 + 1)
 		component10 = enum(int, component, enum_580, int9)
@@ -57,21 +57,21 @@ fun rebuildpmbox(mesuid0: Int) {
 				if (string_length(string3) > 0 & int15 ! -1) {
 					if_setop(6, "Open", component10)
 					if_setop(7, "Check", component10)
-					if_setonmouserepeat({
+					if_setonmouserepeat {
 						chat_recol(if_getlayer(component10), int9, ^white)
-					}, component10)
-					if_setonmouseleave({
+					}
+					if_setonmouseleave {
 						chat_recol(if_getlayer(component10), int9, ^yellow)
-					}, component10)
+					}
 				} else {
-					if_setonmouserepeat(null, component10)
-					if_setonmouseleave(null, component10)
+					if_setonmouserepeatnull
+					if_setonmouseleavenull
 				}
 				if_setop(9, "Clear history", component10)
 				if_setopbase("<col=ff9040>Notification</col>", component10)
-				if_setonop({
+				if_setonop {
 					chat_broadcast_op(event_opindex, string3, int15)
-				}, component10)
+				}
 				int9 = calc(int9 + 1)
 				component10 = enum(int, component, enum_580, int9)
 			}
@@ -97,9 +97,9 @@ fun rebuildpmbox(mesuid0: Int) {
 					int7 = calc(int7 + ~script199(string0, int9, component10, interface_163:0, width8, int1, 13, int7, setposv2, int3, ^cyan, true))
 					if (chattype17 = ^chattype_loginlogoutnotification & VARBIT[1627] = 0) {
 						VARCINT[65] = calc(int13 + 500 + 1)
-						if_setontimer({
+						if_setontimer {
 							script664(false)
-						}, interface_162:0)
+						}
 					}
 				}
 				}
@@ -113,14 +113,14 @@ fun rebuildpmbox(mesuid0: Int) {
 					}
 					if_setop(10, "Report", component10)
 					if_setopbase("<col=ffffff>${string1}</col>", component10)
-					if_setonop({
+					if_setonop {
 						private_op(event_opindex, event_opbase)
-					}, component10)
+					}
 				} else {
-					if_setonop(null, component10)
+					if_setonopnull
 				}
-				if_setonmouserepeat(null, component10)
-				if_setonmouseleave(null, component10)
+				if_setonmouserepeatnull
+				if_setonmouseleavenull
 				int9 = calc(int9 + 1)
 				component10 = enum(int, component, enum_580, int9)
 			}
@@ -129,9 +129,9 @@ fun rebuildpmbox(mesuid0: Int) {
 	}
 	while (component10 ! null) {
 		if_clearops(component10)
-		if_setonop(null, component10)
-		if_setonmouserepeat(null, component10)
-		if_setonmouseleave(null, component10)
+		if_setonopnull
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
 		if_setsize(0, 0, ^setsize_abs, ^setsize_abs, component10)
 		if (cc_find(interface_163:0, calc(int9 * 2)) = ^true) {
 			cc_settext("")

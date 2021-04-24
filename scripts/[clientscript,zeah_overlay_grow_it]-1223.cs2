@@ -8,14 +8,14 @@ fun zeah_overlay_grow_it(component0: Component, component1: Component, component
 		if_sethide(false, component2)
 		if_setnoclickthrough(true, component2)
 		if (boolean3 = true) {
-			if_setontimer({
+			if_setontimer {
 				zeah_overlay_shrink(component0, component1, component2, calc(clientclock + 150), true)
-			}, component0)
-			if_setonclick({
+			}
+			if_setonclick {
 				zeah_overlay_shrink(component0, component1, component2, 0, true)
-			}, component1)
+			}
 		} else {
-			if_setontimer(null, component0)
+			if_setontimernull
 		}
 	}
 	return 

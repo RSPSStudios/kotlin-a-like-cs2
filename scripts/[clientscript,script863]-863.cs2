@@ -7,12 +7,12 @@ fun script863(component0: Component, clock1: Int) {
 	cc_deleteall(component0)
 	~options_button_off(component0, 0)
 	if_setcolour(0xa6a692, interface_127:13)
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		text_colour_swapper(interface_127:13, ^white)
-	}, interface_127:12)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		text_colour_swapper(interface_127:13, 0xa6a692)
-	}, interface_127:12)
-	if_setontimer(null, component0)
+	}
+	if_setontimernull
 	return 
 }

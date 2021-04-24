@@ -16,78 +16,78 @@ fun script3272(int0: Int) {
 	if_setgraphic(graphic1, interface_33:35)
 	if_setgraphic(graphic1, interface_33:38)
 	if (~on_mobile = false) {
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			settrans(interface_33:5, 127)
-		}, interface_33:4)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(interface_33:5, 0)
-		}, interface_33:4)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			settrans(interface_33:8, 127)
-		}, interface_33:7)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(interface_33:8, 0)
-		}, interface_33:7)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			settrans(interface_33:11, 127)
-		}, interface_33:10)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(interface_33:11, 0)
-		}, interface_33:10)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			settrans(interface_33:14, 127)
-		}, interface_33:13)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(interface_33:14, 0)
-		}, interface_33:13)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			settrans(interface_33:17, 127)
-		}, interface_33:16)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(interface_33:17, 0)
-		}, interface_33:16)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			settrans(interface_33:20, 127)
-		}, interface_33:19)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(interface_33:20, 0)
-		}, interface_33:19)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			settrans(interface_33:23, 127)
-		}, interface_33:22)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(interface_33:23, 0)
-		}, interface_33:22)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			settrans(interface_33:26, 127)
-		}, interface_33:25)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(interface_33:26, 0)
-		}, interface_33:25)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			settrans(interface_33:29, 127)
-		}, interface_33:28)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(interface_33:29, 0)
-		}, interface_33:28)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			settrans(interface_33:32, 127)
-		}, interface_33:31)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(interface_33:32, 0)
-		}, interface_33:31)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			settrans(interface_33:35, 127)
-		}, interface_33:34)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(interface_33:35, 0)
-		}, interface_33:34)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			settrans(interface_33:38, 127)
-		}, interface_33:37)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(interface_33:38, 0)
-		}, interface_33:37)
+		}
 	}
 	when (int0): Int {
 		1 -> {

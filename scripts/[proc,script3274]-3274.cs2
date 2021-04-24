@@ -8,30 +8,30 @@ fun script3274(int0: Int) {
 	if_setgraphic(graphic1, interface_33:50)
 	if_setgraphic(graphic1, interface_33:53)
 	if (~on_mobile = false) {
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			settrans(interface_33:44, 127)
-		}, interface_33:43)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(interface_33:44, 0)
-		}, interface_33:43)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			settrans(interface_33:47, 127)
-		}, interface_33:46)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(interface_33:47, 0)
-		}, interface_33:46)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			settrans(interface_33:50, 127)
-		}, interface_33:49)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(interface_33:50, 0)
-		}, interface_33:49)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			settrans(interface_33:53, 127)
-		}, interface_33:52)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(interface_33:53, 0)
-		}, interface_33:52)
+		}
 	}
 	when (int0): Int {
 		0 -> {

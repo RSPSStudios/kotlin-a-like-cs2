@@ -8,7 +8,7 @@ fun league_points_progress_bar_expand(component0: Component, width1: Int) {
 	val int3: Int = 0
 	if (cc_find(component0, 2) = ^true) {
 		if (cc_getwidth >= width2 | cc_getwidth >= width1) {
-			if_setontimer(null, component0)
+			if_setontimernull
 			return 
 		}
 		cc_setsize(calc(cc_getwidth + 1), cc_getheight, ^setsize_abs, ^setsize_abs)

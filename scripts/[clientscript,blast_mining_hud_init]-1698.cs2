@@ -9,8 +9,8 @@ fun blast_mining_hud_init(component0: Component, component1: Component, componen
 	if_setobject_nonum(adamantite_ore_449, 0, component6)
 	if_setobject_nonum(runite_ore_451, 0, component7)
 	~blast_mining_hud_update(component8, component9, component10, component11, component12)
-	if_setonvartransmit({
+	if_setonvartransmit(component2)  {
 		blast_mining_hud_update(component8, component9, component10, component11, component12){VARP[694], VARP[203]}
-	}, component2)
+	}
 	return 
 }

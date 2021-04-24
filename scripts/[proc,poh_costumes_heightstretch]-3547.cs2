@@ -15,8 +15,8 @@ fun poh_costumes_heightstretch(component0: Component, component1: Component, com
 	}
 	~scrollbar_vertical_rebuild(component3, component2)
 	~scrollbar_resize(component3, component2, VARCINT[58])
-	if_setontimer({
+	if_setontimer {
 		poh_costumes_heightstretch(component0, component1, component2, component3, height4, int5, height7)
-	}, component0)
+	}
 	return 
 }

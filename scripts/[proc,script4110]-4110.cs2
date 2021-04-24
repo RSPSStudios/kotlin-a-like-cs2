@@ -11,20 +11,20 @@ fun script4110(struct0: Struct, int1: Int, component2: Component, component3: Co
 	}
 	if (int1 = 1) {
 		~v2_stone_button_out_filled(component3)
-		if_setonmouserepeat(null, component3)
-		if_setonmouseleave(null, component3)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
 	} else {
 		~v2_stone_button(component3)
 		if (~on_mobile = true) {
-			if_setonmouserepeat(null, component3)
-			if_setonmouseleave(null, component3)
+			if_setonmouserepeatnull
+			if_setonmouseleavenull
 		} else {
-			if_setonmouserepeat({
+			if_setonmouserepeat {
 				v2_stone_button_in(event_com)
-			}, component3)
-			if_setonmouseleave({
+			}
+			if_setonmouseleave {
 				v2_stone_button(event_com)
-			}, component3)
+			}
 		}
 	}
 	cc_deleteall(component2)

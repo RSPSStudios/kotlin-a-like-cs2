@@ -44,12 +44,12 @@ fun slayer_rewards_unlock_draw(enum0: Enum, component1: Component, component2: C
 		.cc_setcolour(^white)
 		.cc_setfill(true)
 		.cc_settrans(245)
-		.cc_setonmouseover({
+		.cc_setonmouseover {
 			cc_settrans(event_com, .cc_getid, 230, null)
-		})
-		.cc_setonmouseleave({
+		}
+		.cc_setonmouseleave {
 			cc_settrans(event_com, .cc_getid, 245, null)
-		})
+		}
 		.cc_setopbase("<col=ff9040>${text1}")
 		cc_create(component1, ^iftype_rectangle, int12)
 		int12 = calc(int12 + 1)
@@ -76,9 +76,9 @@ fun slayer_rewards_unlock_draw(enum0: Enum, component1: Component, component2: C
 		cc_settiling(true)
 		cc_setposition(calc(int14 + 5 + 36), calc(height13 + 14), ^setpos_abs_left, ^setpos_abs_top)
 		~script413(int20, string2, component3, component4, component5, component6, component7)
-		.cc_setonvartransmit({
+		.cc_setonvartransmit {
 			script412(event_com, .cc_getid, cc_getid, int20, string2, component3, component4, component5, component6, component7){VARP[1076], VARP[1344], VARP[695]}
-		})
+		}
 		cc_create(component1, ^iftype_text, int12)
 		int12 = calc(int12 + 1)
 		cc_setposition(calc(int14 + 21 + 36), calc(height13 + 6), ^setpos_abs_left, ^setpos_abs_top)

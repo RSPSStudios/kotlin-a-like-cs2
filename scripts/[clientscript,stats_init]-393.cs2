@@ -37,16 +37,16 @@ fun stats_init(component0: Component, component1: Component, int2: Int, int3: In
 		if_setop(1, "Toggle <col=ff981f>${string0}</col> XP", component0)
 	} else {
 		if_setop(1, "", component0)
-		if_setonmouseleave({
+		if_setonmouseleave {
 			deltooltip(component1)
-		}, component0)
+		}
 	}
-	if_setonstattransmit({
+	if_setonstattransmit(component0)  {
 		stats_setlevels(stat4, component0, string0, cc_getid, .cc_getid, component1){stat4, attack, strength, defence, ranged, magic}
-	}, component0)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component0)  {
 		stats_setlevels(stat4, component0, string0, cc_getid, .cc_getid, component1){VARP[427], VARP[1588], VARP[1437], VARP[1438], VARP[1439], VARP[1436], VARP[1435], VARP[1440], VARP[1453], VARP[1447], VARP[1452], VARP[1443], VARP[1449], VARP[1441], VARP[1442], VARP[1444], VARP[1450], VARP[1457], VARP[1445], VARP[1446], VARP[1454], VARP[1455], VARP[1456], VARP[1451], VARP[1448]}
-	}, component0)
+	}
 	~stats_setlevels(stat4, component0, string0, component1)
 	if (boolean5 = false | map_members = ^true | VARCINT[103] = 1) {
 		return 

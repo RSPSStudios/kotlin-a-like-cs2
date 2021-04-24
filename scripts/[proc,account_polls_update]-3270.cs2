@@ -14,21 +14,21 @@ fun account_polls_update() {
 		}
 		if_setop(1, op1, component1)
 		if_sethide(true, component3)
-		if_setonmouseover({
+		if_setonmouseover {
 			text_colour_swapper(component2, 0xc0c0c0)
-		}, component2)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			text_colour_swapper(component2, 0xf7f0df)
-		}, component2)
+		}
 	} else {
 		if_setop(1, "", component1)
 		if_sethide(false, component3)
-		if_setonmouseover({
+		if_setonmouseover {
 			text_colour_swapper(component2, 0xf7f0df)
-		}, component2)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			text_colour_swapper(component2, 0xf7f0df)
-		}, component2)
+		}
 	}
 	if_settext(text0, component0)
 	if_settext(op1, component2)

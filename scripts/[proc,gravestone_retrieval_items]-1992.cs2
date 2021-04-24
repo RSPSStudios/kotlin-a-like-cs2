@@ -12,10 +12,10 @@ fun gravestone_retrieval_items(component0: Component, component1: Component) {
 				cc_setobject(obj2, inv_getnum(inv_525, int4))
 				cc_setopbase("<col=ff9040>${oc_name(obj2)}</col>")
 				cc_settrans(0)
-				cc_setonop({
+				cc_setonop {
 					cc_settrans_temporarily(event_com, event_comsubid, 100, 0)
-				})
-				cc_setontimer(null)
+				}
+				cc_setontimernull
 				height3 = calc(cc_gety + cc_getheight)
 			} else {
 				cc_sethide(true)

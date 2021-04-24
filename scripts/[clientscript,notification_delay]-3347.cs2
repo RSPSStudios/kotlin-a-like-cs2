@@ -8,14 +8,14 @@ fun notification_delay(int0: Int) {
 		VARCINT[392] = calc(int0 / 30)
 	}
 	if (int0 < 210) {
-		if_setontimer({
+		if_setontimer {
 			notification_delay(int0)
-		}, interface_660:2)
+		}
 	} else {
 		VARCINT[391] = 4
-		if_setontimer({
+		if_setontimer {
 			notification_end(4, 178, 100)
-		}, interface_660:2)
+		}
 	}
 	return 
 }

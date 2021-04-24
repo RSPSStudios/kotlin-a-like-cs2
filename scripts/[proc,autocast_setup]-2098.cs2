@@ -7,12 +7,12 @@ fun autocast_setup(component0: Component, component1: Component) {
 	cc_setposition(5, 0, ^setpos_abs_right, ^setpos_abs_bottom)
 	cc_settextalign(^settextalign_right, ^settextalign_centre, 0)
 	cc_setcolour(0x8f8f8f)
-	cc_setonmouseover({
+	cc_setonmouseover {
 		cc_colour_swapper(event_com, event_comsubid, 0xcfcfcf)
-	})
-	cc_setonmouseleave({
+	}
+	cc_setonmouseleave {
 		cc_colour_swapper(event_com, event_comsubid, 0x8f8f8f)
-	})
+	}
 	cc_settextfont(p12_full)
 	cc_settextshadow(true)
 	cc_settext("Cancel")
@@ -28,22 +28,22 @@ fun autocast_setup(component0: Component, component1: Component) {
 			cc_setposition(x3, y4, ^setpos_abs_centre, ^setpos_abs_centre)
 			cc_setsize(24, 24, ^setsize_abs, ^setsize_abs)
 			cc_setop(1, oc_param(obj5, spell_name))
-			cc_setoninvtransmit({
+			cc_setoninvtransmit {
 				autocast_spellhighlight(event_com, int2, obj5){inv, worn}
-			})
-			cc_setonstattransmit({
+			}
+			cc_setonstattransmit {
 				autocast_spellhighlight(event_com, int2, obj5){magic}
-			})
-			cc_setonvartransmit({
+			}
+			cc_setonvartransmit {
 				autocast_spellhighlight(event_com, int2, obj5){VARP[638], VARP[375], VARP[1139], VARP[1140], VARP[1377], VARP[1105]}
-			})
+			}
 			~autocast_spellhighlight(obj5)
-			cc_setonmouseover({
+			cc_setonmouseover {
 				autocast_tooltip(component1, obj5)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				autocast_tooltip(component1, null)
-			})
+			}
 		} else {
 			cc_sethide(true)
 		}

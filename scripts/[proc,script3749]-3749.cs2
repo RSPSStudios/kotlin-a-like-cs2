@@ -19,15 +19,15 @@ fun script3749(component0: Component, boolean1: Boolean) {
 		if_setop(1, "Select", component0)
 	}
 	if (~on_mobile = false & VARBIT[11697] ! 1) {
-		if_setonmouseleave({
+		if_setonmouseleave {
 			script3756(component0, 0, "", boolean1)
-		}, component0)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			script3756(component0, 1, "", boolean1)
-		}, component0)
+		}
 	} else {
-		if_setonmouseleave(null, component0)
-		if_setonmouserepeat(null, component0)
+		if_setonmouseleavenull
+		if_setonmouserepeatnull
 	}
 	return 
 }

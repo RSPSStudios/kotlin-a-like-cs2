@@ -24,9 +24,9 @@ fun raids_partydetails_addline(int0: Int, string0: String) {
 	~raids_partydetails_entry_init(VARCINT[178], VARCINT[178], -1, false)
 	val string5: String = removetags(string1)
 	cc_setopbase("<col=ff9040>${string5}</col>")
-	cc_setonop({
+	cc_setonop {
 		raids_partydetails_entry_op(event_opindex, VARCINT[178], string5, string0)
-	})
+	}
 	val width2: Int = if_getwidth(interface_507:7)
 	cc_create(interface_507:11, ^iftype_text, calc(VARCINT[178] * 8 + 1))
 	cc_setsize(width2, 14, ^setsize_abs, ^setsize_abs)

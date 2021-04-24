@@ -2,9 +2,9 @@
 fun script429(obj0: Obj, obj1: Obj, obj2: Obj, component3: Component, boolean4: Boolean) {
 
 	if (boolean4 = true) {
-		if_setoninvtransmit({
+		if_setoninvtransmit(component3)  {
 			script429(obj0, obj1, obj2, event_com, false){inv}
-		}, component3)
+		}
 	}
 	if (obj0 = enchanted_gem_4155 & inv_total(inv, eternal_gem_21270) > 0) {
 		obj0, obj1 = eternal_gem_21270, slayer_ring_eternal_21268

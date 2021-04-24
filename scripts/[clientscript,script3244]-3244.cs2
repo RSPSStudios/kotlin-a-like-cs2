@@ -8,11 +8,11 @@ fun script3244(component0: Component, component1: Component, component2: Compone
 	~script3245(component2, component3, component4)
 	~script3248(component1)
 	~script3252(component3)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		script3251(component3){VARP[1018]}
-	}, component0)
-	if_setoninvtransmit({
+	}
+	if_setoninvtransmit(component0)  {
 		script3247(component1){inv}
-	}, component0)
+	}
 	return 
 }

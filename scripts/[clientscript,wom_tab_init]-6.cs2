@@ -26,21 +26,21 @@ fun wom_tab_init(component0: Component, component1: Component, component2: Compo
 			if_sethide(true, component4)
 		} else {
 			int7 = ~max(40, calc(40 + parawidth(string0, 400, p11_full)))
-			if_setonmouseover({
+			if_setonmouseover {
 				text_colour_swapper(component5, ^white)
-			}, component4)
-			if_setonmouseleave({
+			}
+			if_setonmouseleave {
 				text_colour_swapper(component5, 0xff981f)
-			}, component4)
-			if_setonop({
+			}
+			if_setonop {
 				wom_tab_highlight_onclick(count3, component1, component2)
-			}, component4)
-			if_setonvartransmit({
+			}
+			if_setonvartransmit(component0)  {
 				wom_tab_highlight(component1, component2){VARP[279]}
-			}, component0)
-			if_setoninvtransmit({
+			}
+			if_setoninvtransmit(component1)  {
 				wom_item_update(component1, component2){inv, worn, bank}
-			}, component1)
+			}
 			if_sethide(false, component4)
 			if_setsize(int7, 0, ^setsize_abs, ^setsize_minus, component4)
 			if_settext(string0, component5)

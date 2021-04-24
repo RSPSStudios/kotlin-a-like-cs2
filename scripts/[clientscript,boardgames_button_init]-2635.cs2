@@ -22,12 +22,12 @@ fun boardgames_button_init(component0: Component, colour1: Int, colour2: Int, te
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	cc_setcolour(colour1)
 	if (~on_mobile = false) {
-		if_setonmouseleave({
+		if_setonmouseleave {
 			cc_colour_swapper(component0, 9, colour1)
-		}, component0)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			cc_colour_swapper(component0, 9, colour2)
-		}, component0)
+		}
 	}
 	return 
 }

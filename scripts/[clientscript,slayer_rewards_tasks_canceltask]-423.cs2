@@ -29,12 +29,12 @@ fun slayer_rewards_tasks_canceltask(string0: String, boolean0: Boolean, componen
 	cc_setfill(true)
 	cc_settrans(255)
 	cc_setop(1, "Confirm")
-	cc_setonop({
+	cc_setonop {
 		slayer_rewards_confirm_back(true, event_opindex, component1, component2, component3, component4, component5)
-	})
+	}
 	if_setop(1, "Back", component5)
-	if_setonop({
+	if_setonop {
 		slayer_rewards_confirm_back(false, event_opindex, component1, component2, component3, component4, component5)
-	}, component5)
+	}
 	return 
 }

@@ -5,12 +5,12 @@ fun meslayer_skillmulti(text0: String) {
 	if_settext(text0, interface_162:44)
 	~script222("")
 	val string1: String = ""
-	if_setonkey({
+	if_setonkey {
 		meslayer_onkey(event_key, event_keychar, string1)
-	}, interface_162:45)
-	if_setondialogabort({
+	}
+	if_setondialogabort {
 		meslayer_ondialogabort
-	}, interface_162:45)
+	}
 	if (~on_mobile = true) {
 		~keyboard_show(1, 10)
 	}

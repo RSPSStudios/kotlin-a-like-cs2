@@ -13,65 +13,65 @@ fun ds2_fossil_map_init(component0: Component, component1: Component) {
 				cc_setmodel(model_35079)
 				cc_setmodelangle(0, 0, 512, 0, 0, 625)
 				cc_setop(10, "Check")
-				cc_setonop({
+				cc_setonop {
 					ds2_fossil_map_stuck(event_opindex, 1024)
-				})
+				}
 			}
 			17 -> {
 			
 				cc_setmodel(model_35075)
 				cc_setmodelangle(0, 0, 512, 0, 0, 625)
 				cc_setop(10, "Check")
-				cc_setonop({
+				cc_setonop {
 					ds2_fossil_map_stuck(event_opindex, 1024)
-				})
+				}
 			}
 			18 -> {
 			
 				cc_setmodel(model_35067)
 				cc_setmodelangle(0, 0, 512, 0, 0, 625)
 				cc_setop(10, "Check")
-				cc_setonop({
+				cc_setonop {
 					ds2_fossil_map_stuck(event_opindex, 1024)
-				})
+				}
 			}
 			20 -> {
 			
 				cc_setmodel(model_35082)
 				cc_setmodelangle(0, 0, 512, 0, 0, 625)
 				cc_setop(10, "Check")
-				cc_setonop({
+				cc_setonop {
 					ds2_fossil_map_stuck(event_opindex, 1024)
-				})
+				}
 			}
 			30 -> {
 			
 				cc_setmodel(model_35079)
 				cc_setmodelangle(0, 0, 512, 0, 0, 625)
 				cc_setop(10, "Check")
-				cc_setonop({
+				cc_setonop {
 					ds2_fossil_map_stuck(event_opindex, 1024)
-				})
+				}
 			}
 		else -> {
 		
 			cc_setop(1, "Rotate-right")
 			cc_setop(2, "Rotate-left")
-			cc_setonop({
+			cc_setonop {
 				ds2_fossil_map_rotate(event_opindex, event_com, event_comsubid)
-			})
+			}
 			cc_setdragdeadzone(5)
 			cc_setdragdeadtime(5)
-			cc_setondragcomplete({
+			cc_setondragcomplete {
 				ds2_fossil_map_swap(event_com, event_comsubid, event_drop, event_dropsubid)
-			})
+			}
 		}
 		}
 		int2 = calc(int2 + 1)
 	}
 	~ds2_fossil_map_redraw(component1)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		ds2_fossil_map_redraw(component1){VARP[831], VARP[832], VARP[833], VARP[858], VARP[859], VARP[860], VARP[861]}
-	}, component0)
+	}
 	return 
 }

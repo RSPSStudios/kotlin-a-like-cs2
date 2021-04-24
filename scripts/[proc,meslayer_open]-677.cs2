@@ -13,38 +13,38 @@ fun meslayer_open(int0: Int) {
 				if_sethide(false, interface_162:41)
 				if_setposition(0, if_gety(interface_162:44), ^setpos_abs_centre, ^setpos_abs_top, interface_162:41)
 				if_setsize(20, if_gety(interface_162:44), ^setsize_minus, ^setsize_minus, interface_162:41)
-				if_setonclick({
+				if_setonclick {
 					meslayer_keyboard_show
-				}, interface_162:41)
+				}
 			}
 			14, 17 -> {
 			
 				if_sethide(false, interface_162:41)
 				if_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_top, interface_162:41)
 				if_setsize(20, 20, ^setsize_minus, ^setsize_abs, interface_162:41)
-				if_setonclick({
+				if_setonclick {
 					meslayer_keyboard_show
-				}, interface_162:41)
+				}
 			}
 			1 -> {
 			
 				if_sethide(true, interface_162:41)
-				if_setonclick(null, interface_162:41)
+				if_setonclicknull
 			}
 		else -> {
 		
 			if_sethide(false, interface_162:41)
 			if_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre, interface_162:41)
 			if_setsize(20, 20, ^setsize_minus, ^setsize_minus, interface_162:41)
-			if_setonclick({
+			if_setonclick {
 				meslayer_keyboard_show
-			}, interface_162:41)
+			}
 		}
 		}
 		~script2526
 	} else {
 		if_sethide(true, interface_162:41)
-		if_setonclick(null, interface_162:41)
+		if_setonclicknull
 	}
 	VARCINT[384] = clientclock
 	if_sethide(true, interface_162:56)

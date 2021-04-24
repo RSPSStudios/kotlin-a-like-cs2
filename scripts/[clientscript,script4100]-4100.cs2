@@ -23,9 +23,9 @@ fun script4100(obj0: Obj, int1: Int, int2: Int, struct3: Struct) {
 					cc_setcolour(0xff981f)
 				}
 			} else if (obj0 = cc_getinvobject) {
-				cc_setonop({
+				cc_setonop {
 					collection_item_click(obj0, int1)
-				})
+				}
 				if (int1 > 1) {
 					cc_setobject(obj0, int1)
 				}

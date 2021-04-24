@@ -14,9 +14,9 @@ fun meslayer_mode6(username0: String) {
 	if_settext("Enter message to send to ${VARCSTRING[360]}", interface_162:44)
 	~script222("")
 	val string1: String = ""
-	if_setonkey({
+	if_setonkey {
 		meslayer_onkey(event_key, event_keychar, string1)
-	}, interface_162:45)
+	}
 	if (~on_mobile = true) {
 		~keyboard_show(0, 80)
 	}

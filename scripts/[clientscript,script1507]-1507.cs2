@@ -15,11 +15,11 @@ fun script1507(component0: Component) {
 	.cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	.cc_settext(tostring(~min(100, ~max(0, mobile_batterylevel))))
 	sound_synth(synth_2266, 1, 0)
-	if_setontimer({
+	if_setontimer {
 		script1973(event_com, calc(clientclock + 150))
-	}, component0)
-	if_setonclick({
+	}
+	if_setonclick {
 		script1973(event_com, -1)
-	}, component0)
+	}
 	return 
 }

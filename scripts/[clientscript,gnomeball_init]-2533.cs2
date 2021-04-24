@@ -4,8 +4,8 @@ fun gnomeball_init(component0: Component, component1: Component, component2: Com
 	~script2249(component0, setbit(0, 2))
 	~script1486(component1, ^setpos_abs_right, 1, 0)
 	~gnomeball_score(component2)
-	if_setonvartransmit({
+	if_setonvartransmit(component2)  {
 		gnomeball_score(component2){VARP[143]}
-	}, component2)
+	}
 	return 
 }

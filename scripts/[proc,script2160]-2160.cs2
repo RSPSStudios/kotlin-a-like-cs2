@@ -2,15 +2,15 @@
 fun script2160(component0: Component, string0: String) {
 
 	~v2_stone_button(component0)
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		v2_stone_button_in(component0)
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		v2_stone_button(component0)
-	}, component0)
-	if_setonkey({
+	}
+	if_setonkey {
 		script2161(event_keychar, component0, string0)
-	}, component0)
-	if_setontimer(null, component0)
+	}
+	if_setontimernull
 	return 
 }

@@ -59,16 +59,16 @@ fun adventurepath_side_create_toggle(int0: Int, int1: Int, component2: Component
 	cc_settrans(255)
 	cc_setop(1, "Toggle setting")
 	if (~on_mobile = false) {
-		cc_setonmouseover({
+		cc_setonmouseover {
 			v2_stone_button_in_filled_free(component2, calc(int0 - 10), 0xff981f)
-		})
+		}
 	} else {
-		cc_setonmouseover({
+		cc_setonmouseover {
 			v2_stone_button_in_filled_free(component2, calc(int0 - 10), ^white)
-		})
+		}
 	}
-	cc_setonmouseleave({
+	cc_setonmouseleave {
 		v2_stone_button_filled_free(component2, calc(int0 - 10), 0xff981f)
-	})
+	}
 	return calc(int0 + 2), calc(int1 + 1)
 }

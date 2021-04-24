@@ -14,9 +14,9 @@ fun ge_offers_index_inittop(component0: Component) {
 	cc_settiling(false)
 	cc_setop(1, "Collect to inventory")
 	cc_setop(2, "Collect to bank")
-	cc_setonop({
+	cc_setonop {
 		opsound(event_opindex, 6)
-	})
+	}
 	cc_create(component0, ^iftype_text, int3)
 	val comsubid6: Int = int3
 	int3 = calc(int3 + 1)
@@ -37,8 +37,8 @@ fun ge_offers_index_inittop(component0: Component) {
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	cc_settext("Select an offer slot to set up or view an offer.")
 	~ge_offers_index_drawtop(width1, height2, component0, comsubid5, comsubid6, comsubid7)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		ge_offers_index_drawtop(width1, height2, component0, comsubid5, comsubid6, comsubid7){inv_518, inv_519, inv_520, inv_521, inv_522, inv_523, inv_539, inv_540}
-	}, component0)
+	}
 	return 
 }

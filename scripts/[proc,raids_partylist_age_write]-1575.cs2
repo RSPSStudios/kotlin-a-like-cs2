@@ -1,9 +1,9 @@
 // 1575 proc
 fun raids_partylist_age_write(int0: Int, int1: Int, int2: Int) {
 
-	cc_setontimer({
+	cc_setontimer {
 		raids_partylist_age_update(event_com, event_comsubid, int1, int2)
-	})
+	}
 	val int3: Int = calc(int0 / 60)
 	int0 = calc(int0 % 60)
 	if (int0 < 10) {

@@ -12,9 +12,9 @@ fun cc_fade(component0: Component, int1: Int, int2: Int, trans3: Int, int4: Int)
 	val int5: Int = int1
 	while (int5 <= int2) {
 		if (cc_find(component0, int5) = ^true) {
-			cc_setontimer({
+			cc_setontimer {
 				cc_fade_timer(event_com, event_comsubid, trans3, int4)
-			})
+			}
 		}
 		int5 = calc(int5 + 1)
 	}

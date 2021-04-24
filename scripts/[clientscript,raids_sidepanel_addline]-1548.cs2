@@ -15,9 +15,9 @@ fun raids_sidepanel_addline(int0: Int, string0: String) {
 	if (cc_find(interface_500:10, calc(int0 * 7)) = ^true) {
 		cc_setopbase("<col=ff9040>${string2}</col>")
 		~raids_sidepanel_entry_init(int0, false)
-		cc_setonop({
+		cc_setonop {
 			raids_sidepanel_entry_op(string2)
-		})
+		}
 	}
 	val int1: Int = 0
 	val width2: Int = 0
@@ -26,12 +26,12 @@ fun raids_sidepanel_addline(int0: Int, string0: String) {
 	if (cc_find(interface_500:10, calc(int0 * 7 + 1)) = ^true) {
 		int1, width2 = string_length(string1), cc_getwidth
 		if (int1 > 0 & parawidth(string1, 512, p11_full) > width2) {
-			cc_setonmouserepeat({
+			cc_setonmouserepeat {
 				tooltip_mouserepeat(event_com, event_comsubid, interface_500:15, string2, 25, 190)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				deltooltip(interface_500:15)
-			})
+			}
 			while (int1 > 1 & int3 = 0) {
 				int1 = calc(int1 - 1)
 				string4 = append(substring(string1, 0, int1), "...")
@@ -40,8 +40,8 @@ fun raids_sidepanel_addline(int0: Int, string0: String) {
 				}
 			}
 		} else {
-			cc_setonmouserepeat(null)
-			cc_setonmouseleave(null)
+			cc_setonmouserepeatnull
+			cc_setonmouseleavenull
 		}
 		cc_settext(string1)
 	}

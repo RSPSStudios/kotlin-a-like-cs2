@@ -24,11 +24,11 @@ fun toplevel_chatbox_background() {
 	val int1: Int = 0
 	if (clientclock < VARCINT[223] & ~toplevel_getcomponents ! enum_1129) {
 		int1 = 1
-		if_setontimer({
+		if_setontimer {
 			toplevel_chatbox_resetbackground_soon(VARCINT[223])
-		}, interface_162:38)
+		}
 	} else {
-		if_setontimer(null, interface_162:38)
+		if_setontimernull
 	}
 	if (~toplevel_chatbox_maketransparent = 0) {
 		if_setnoclickthrough(true, interface_162:38)

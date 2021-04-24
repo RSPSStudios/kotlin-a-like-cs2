@@ -6,7 +6,7 @@ fun screen_glow_fadeout(clock0: Int, clock1: Int, int2: Int, int3: Int, colour4:
 			return 
 		}
 		if (clientclock >= clock1) {
-			cc_setontimer(null)
+			cc_setontimernull
 			if (boolean6 = true) {
 				cc_delete
 			}

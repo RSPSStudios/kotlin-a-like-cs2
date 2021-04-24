@@ -22,18 +22,18 @@ fun script2814(component0: Component, component1: Component, component2: Compone
 		cc_settextshadow(true)
 		cc_settext(enum(int, string, enum_2305, int10))
 		cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
-		cc_setonmouseover({
+		cc_setonmouseover {
 			cc_colour_swapper(component0, count11, ^white)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			cc_colour_swapper(component0, count11, 0xff981f)
-		})
-		cc_setonop({
+		}
+		cc_setonop {
 			seed_vault_catop(component2, int10, component3, component4)
-		})
-		cc_setonvartransmit({
+		}
+		cc_setonvartransmit {
 			seed_vault_catvar(component2, component3, component4){VARP[2194]}
-		})
+		}
 		cc_setop(1, "Select")
 		.cc_create(component1, ^iftype_rectangle, count11)
 		.cc_setsize(0, calc(20 + int12), ^setsize_minus, ^setsize_abs)

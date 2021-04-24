@@ -59,14 +59,14 @@ fun deadmanloot_onload() {
 	}
 	~deadmanloot_inv_switch
 	~deadmanloot_itemnote_update
-	if_setonvartransmit({
+	if_setonvartransmit(interface_234:25)  {
 		deadmanloot_itemnote_transmit{VARP[1299]}
-	}, interface_234:25)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(interface_234:15)  {
 		deadmanloot_tab_transmit{VARP[1299]}
-	}, interface_234:15)
-	if_setoninvtransmit({
+	}
+	if_setoninvtransmit(interface_234:15)  {
 		deadmanloot_inv_transmit{inv_558, inv_559, inv_560, inv_561, inv_562}
-	}, interface_234:15)
+	}
 	return 
 }

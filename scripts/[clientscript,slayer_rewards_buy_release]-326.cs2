@@ -6,7 +6,7 @@ fun slayer_rewards_buy_release(component0: Component, comsubid1: Int, clock2: In
 	}
 	if (cc_find(component0, comsubid1) = ^true) {
 		cc_settrans(0)
-		cc_setontimer(null)
+		cc_setontimernull
 	}
 	return 
 }

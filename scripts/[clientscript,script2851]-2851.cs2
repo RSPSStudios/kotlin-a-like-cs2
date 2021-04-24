@@ -9,15 +9,15 @@ fun script2851(int0: Int, component1: Component, component2: Component) {
 	val graphic3: Graphic = "close_buttons,7"
 	val graphic4: Graphic = "close_buttons,6"
 	cc_setop(1, "Close")
-	cc_setonmouserepeat({
+	cc_setonmouserepeat {
 		cc_graphic_swapper(event_com, event_comsubid, graphic3, null)
-	})
-	cc_setonmouseleave({
+	}
+	cc_setonmouseleave {
 		cc_graphic_swapper(event_com, event_comsubid, graphic4, null)
-	})
-	cc_setonop({
+	}
+	cc_setonop {
 		closebutton_click
-	})
+	}
 	cc_deleteall(component1)
 	val size5: Int = 0
 	val size6: Int = inv_size(inv)
@@ -32,8 +32,8 @@ fun script2851(int0: Int, component1: Component, component2: Component) {
 		size5 = calc(size5 + 1)
 	}
 	~script2854(component1)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component1)  {
 		script2853(component1){inv}
-	}, component1)
+	}
 	return 
 }

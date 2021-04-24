@@ -12,8 +12,8 @@ fun clanwars_setup_corner_init(component0: Component, component1: Component) {
 	cc_settextshadow(true)
 	cc_setcolour(0xff981f)
 	~clanwars_setup_corner_update(component0, cc_getid, component1, -1)
-	if_setonop({
+	if_setonop {
 		clanwars_setup_corner_op(event_opindex, component0, cc_getid, component1)
-	}, component1)
+	}
 	return 
 }

@@ -2,9 +2,9 @@
 fun br_loadout_menudragging(component0: Component, comsubid1: Int, obj2: Obj, text0: String, component3: Component, comsubid4: Int, comsubid5: Int, int6: Int, mousex7: Int, mousey8: Int) {
 
 	if (cc_find(component0, comsubid1) = ^true) {
-		cc_setontimer({
+		cc_setontimer {
 			script1296(calc(clientclock + 1), component0, comsubid1, component3, comsubid4, comsubid5)
-		})
+		}
 		if (.cc_find(component3, comsubid4) = ^true) {
 			if (oc_stackable(obj2) = true) {
 				.cc_setobject(obj2, 5000)

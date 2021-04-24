@@ -1,6 +1,6 @@
 // 1504 clientscript
 fun script1504() {
 
-	if_setontimer(null, interface_229:1)
+	if_setontimernull
 	return 
 }

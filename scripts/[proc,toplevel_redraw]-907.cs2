@@ -2,13 +2,13 @@
 fun toplevel_redraw(component0: Component, enum1: Enum) {
 
 	if (VARBIT[4611] = 1) {
-		if_setonkey({
+		if_setonkey {
 			toplevel_keypress(event_key, enum1, false)
-		}, component0)
+		}
 	} else {
-		if_setonkey({
+		if_setonkey {
 			toplevel_keypress(event_key, enum1, true)
-		}, component0)
+		}
 	}
 	~toplevel_resize(component0, enum1)
 	val component2: Component = enum(component, component, enum1, interface_161:20)
@@ -30,9 +30,9 @@ fun toplevel_redraw(component0: Component, enum1: Enum) {
 	if (VARCINT[73] > 0 & VARCINT[74] > 0 & (int5 ! VARCINT[73] | int4 ! VARCINT[74])) {
 		~camera_do_zoom(VARCINT[73], VARCINT[74])
 	}
-	if_setonscrollwheel({
+	if_setonscrollwheel {
 		camera_zoom(event_mousey)
-	}, component3)
+	}
 	_2309(1, component3)
 	val int6: Int = calc(VARBIT[3756] - 1)
 	val component7: Component = enum(int, component, enum_1139, int6)
@@ -41,14 +41,14 @@ fun toplevel_redraw(component0: Component, enum1: Enum) {
 		component7 = enum(component, component, enum1, component7)
 		component8 = enum(component, component, enum1, component8)
 		if (component7 ! null & component8 ! null) {
-			if_setontimer({
+			if_setontimer {
 				toplevel_timer(component7, component8)
-			}, component0)
+			}
 		} else {
-			if_setontimer(null, component0)
+			if_setontimernull
 		}
 	} else {
-		if_setontimer(null, component0)
+		if_setontimernull
 	}
 	~toplevel_sidebuttons_enable(enum1)
 	val component9: Component = enum(int, component, enum_1138, 2)

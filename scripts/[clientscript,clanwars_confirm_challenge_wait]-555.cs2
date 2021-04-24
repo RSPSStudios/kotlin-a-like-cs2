@@ -4,7 +4,7 @@ fun clanwars_confirm_challenge_wait(component0: Component, component1: Component
 	if (clientclock < clock2) {
 		return 
 	}
-	if_setontimer(null, component0)
+	if_setontimernull
 	if_sethide(false, component1)
 	~clanwars_confirm_challenge_redraw(component1)
 	return 

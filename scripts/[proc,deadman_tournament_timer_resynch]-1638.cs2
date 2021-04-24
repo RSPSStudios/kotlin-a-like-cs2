@@ -5,8 +5,8 @@ fun deadman_tournament_timer_resynch(component0: Component, int1: Int) {
 		return 
 	}
 	int1 = calc(clientclock + int1 * 30)
-	if_setontimer({
+	if_setontimer {
 		deadman_tournament_timer_update(component0, int1)
-	}, component0)
+	}
 	return 
 }

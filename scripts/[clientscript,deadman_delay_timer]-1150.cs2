@@ -4,7 +4,7 @@ fun deadman_delay_timer(component0: Component, string0: String, clock1: Int, int
 	val int4: Int = calc(int2 - (clientclock - clock1))
 	val int5: Int = calc((49 + int4) / 50)
 	if (int4 <= 0) {
-		if_setontimer(null, component0)
+		if_setontimernull
 		if (int3 ! -1) {
 			logout
 		}

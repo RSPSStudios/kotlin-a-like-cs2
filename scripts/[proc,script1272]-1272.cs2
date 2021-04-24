@@ -40,20 +40,20 @@ fun script1272(component0: Component, int1: Int) {
 	cc_settext(string0)
 	if (int3 > 0) {
 		cc_setcolour(0xff981f)
-		if_setonmouseover({
+		if_setonmouseover {
 			cc_colour_swapper(event_com, int5, ^white)
-		}, component0)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			cc_colour_swapper(event_com, int5, 0xff981f)
-		}, component0)
-		if_setonop({
+		}
+		if_setonop {
 			script1273(event_opindex, component0)
-		}, component0)
+		}
 	} else {
 		cc_setcolour(0x8f8f8f)
-		if_setonmouseover(null, component0)
-		if_setonmouseleave(null, component0)
-		if_setonop(null, component0)
+		if_setonmouseovernull
+		if_setonmouseleavenull
+		if_setonopnull
 	}
 	if_setsize(calc(width6 + 40), if_getheight(component0), ^setsize_abs, ^setsize_abs, component0)
 	return 

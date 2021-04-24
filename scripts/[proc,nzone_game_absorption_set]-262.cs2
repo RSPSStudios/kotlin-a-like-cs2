@@ -1,9 +1,9 @@
 // 262 proc
 fun nzone_game_absorption_set(component0: Component, int1: Int) {
 
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		nzone_game_absorption_transmit(event_com, int1){VARP[1067]}
-	}, component0)
+	}
 	if (int1 <= 0) {
 		if (cc_find(component0, 0) = ^true) {
 			cc_sethide(true)

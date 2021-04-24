@@ -7,15 +7,15 @@ fun seed_vault_init(component0: Component, component1: Component, component2: Co
 	}
 	~scrollbar_vertical(component5, component4, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
 	~seed_vault_build(component0, component1, component2, component3, component4, component5, component6)
-	if_setonop({
+	if_setonop {
 		seed_vault_search_toggle(component0, component1, component2, component3, component4, component5, component6, component7)
-	}, component7)
-	if_setoninvtransmit({
+	}
+	if_setoninvtransmit(component4)  {
 		seed_vault_build(component0, component1, component2, component3, component4, component5, component6){inv_626}
-	}, component4)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component4)  {
 		seed_vault_build(component0, component1, component2, component3, component4, component5, component6){VARP[2195], VARP[2196], VARP[2197]}
-	}, component4)
+	}
 	VARCINT[376] = int8
 	return 
 }

@@ -22,8 +22,8 @@ fun deathkeep_left_coinsitem(obj0: Obj, num1: Int, int2: Int, int3: Int, int4: I
 	} else {
 		mes0 = "${oc_name(obj0)}: This item will be sent to your gravestone as coins (${~tostring_spacer(int2, ",")})."
 	}
-	cc_setonop({
+	cc_setonop {
 		deathkeep_opitem(event_com, event_comsubid, mes0)
-	})
+	}
 	return calc(int6 + 1), int7
 }

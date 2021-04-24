@@ -58,9 +58,9 @@ fun script2372(component0: Component, int1: Int, clock2: Int) {
 			if_setposition(int9, y8, ^setpos_abs_left, ^setpos_abs_top, component0)
 			if_setsize(calc(int9 + int10), y8, ^setsize_minus, ^setsize_minus, component0)
 		}
-		if_setontimer({
+		if_setontimer {
 			script2250(component0, int1, VARCINT[222])
-		}, component0)
+		}
 	}
 	return 
 }

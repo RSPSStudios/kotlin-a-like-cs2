@@ -3,10 +3,10 @@ fun settings_zoom_slider_ondrag(component0: Component, comsubid1: Int, int2: Int
 
 	~settings_zoom_slider_specific_pos(component0, comsubid1, int2, mousex3, y4, int5)
 	if (cc_find(component0, comsubid1) = ^true) {
-		cc_setontimer(null)
+		cc_setontimernull
 	}
-	if_setontimer({
+	if_setontimer {
 		script3901(0)
-	}, interface_134:3)
+	}
 	return 
 }

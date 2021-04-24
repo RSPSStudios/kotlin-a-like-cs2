@@ -16,12 +16,12 @@ fun cws_init_button(component0: Component, op0: String) {
 	.cc_settextshadow(true)
 	.cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	.cc_settext(op0)
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		cc_graphic_swapper(event_com, cc_getid, graphic2, null)
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		cc_graphic_swapper(event_com, cc_getid, graphic1, null)
-	}, component0)
+	}
 	if_setop(1, op0, component0)
 	return 
 }

@@ -3,13 +3,13 @@ fun script1746(component0: Component, component1: Component, component2: Compone
 
 	cc_setgraphic("tradebacking_light")
 	.cc_setgraphic("tradebacking_light")
-	cc_setontimer(null)
-	.cc_setontimer(null)
-	cc_setondrag({
+	cc_setontimernull
+	.cc_setontimernull
+	cc_setondrag {
 		worldmap_window_drag_preview(event_comsubid, event_mousex, event_mousey, cc_getx, cc_gety, component0, component1, component2, component3, int4)
-	})
-	.cc_setondrag({
+	}
+	.cc_setondrag {
 		worldmap_window_drag_preview(event_comsubid, event_mousex, event_mousey, .cc_getx, .cc_gety, component0, component1, component2, component3, int4)
-	})
+	}
 	return 
 }

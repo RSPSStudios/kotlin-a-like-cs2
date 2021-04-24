@@ -4,9 +4,9 @@ fun script886(component0: Component, component1: Component, int2: Int, component
 	sound_synth(synth_2266, 1, 0)
 	~league_setup_display_hoverdisable(component1, colour5)
 	if_sethide(false, component3)
-	if_setonclick({
+	if_setonclick {
 		script1108(1, -1, component1, int2, component3, colour5)
-	}, component3)
+	}
 	val int6: Int = if_getx(component1)
 	val int7: Int = if_gety(component1)
 	val layer8: Component = if_getlayer(component1)
@@ -53,16 +53,16 @@ fun script886(component0: Component, component1: Component, int2: Int, component
 		cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 		cc_setop(1, "Select")
 		if (~on_mobile = false) {
-			cc_setonmouserepeat({
+			cc_setonmouserepeat {
 				league_setup_display_dropdown_hover(true, event_com, event_comsubid, .cc_getid, colour5)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				league_setup_display_dropdown_hover(false, event_com, event_comsubid, .cc_getid, colour5)
-			})
+			}
 		}
-		cc_setonop({
+		cc_setonop {
 			script1108(event_opindex, count14, component1, int2, component3, colour5)
-		})
+		}
 		cc_settext(struct_param(enum(int, struct, enum_2670, count14), param_858))
 		count14, int13 = calc(count14 + 1), calc(int13 + 1)
 	}

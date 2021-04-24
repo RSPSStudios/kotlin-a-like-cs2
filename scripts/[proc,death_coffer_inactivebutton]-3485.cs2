@@ -6,8 +6,8 @@ fun death_coffer_inactivebutton(component0: Component, text0: String, int1: Int,
 	} else {
 		~death_coffer_drawbutton(false, false, component0, text0, component2)
 	}
-	if_setonmouserepeat(null, component0)
-	if_setonmouseleave(null, component0)
-	if_setonop(null, component0)
+	if_setonmouserepeatnull
+	if_setonmouseleavenull
+	if_setonopnull
 	return 
 }

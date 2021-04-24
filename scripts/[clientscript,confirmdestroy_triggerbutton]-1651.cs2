@@ -10,14 +10,14 @@ fun confirmdestroy_triggerbutton(int0: Int, char1: Char, component2: Component, 
 			cc_setcolour(^white)
 			cc_settext("...")
 		}
-		if_setonmouserepeat(null, component2)
-		if_setonmouseleave(null, component2)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
 		if_clearops(component2)
-		if_setonop(null, component2)
-		if_setonkey(null, component2)
-		if_setontimer({
+		if_setonopnull
+		if_setonkeynull
+		if_setontimer {
 			confirmdestroy_resetbutton(component2, string0, int3, string1, calc(clientclock + 40))
-		}, component2)
+		}
 		if (cc_find(confirm_destroy:0, int3) = ^true) {
 			cc_resume_pausebutton
 		}

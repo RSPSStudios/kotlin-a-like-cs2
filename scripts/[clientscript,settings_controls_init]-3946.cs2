@@ -4,9 +4,9 @@ fun settings_controls_init(component0: Component, layer1: Component, component2:
 	~script3947(component2, component6, "Player 'Attack' options:", component0, layer1, component2, component3, component4, component5, component6, component7, component8, component9)
 	~script3947(component3, component7, "NPC 'Attack' options:", component0, layer1, component2, component3, component4, component5, component6, component7, component8, component9)
 	~script3954(component2, component3)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		script3953(component2, component3){VARP[1107], VARP[1306]}
-	}, component0)
+	}
 	if_sethide(true, component4)
 	return 
 }

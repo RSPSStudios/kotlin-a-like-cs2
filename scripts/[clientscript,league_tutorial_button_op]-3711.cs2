@@ -16,11 +16,11 @@ fun league_tutorial_button_op(opindex0: Int, component1: Component, string0: Str
 	cc_settextshadow(true)
 	cc_settextfont(p12_full)
 	cc_settext(string0)
-	if_setonmouserepeat(null, component1)
-	if_setonmouseleave(null, component1)
-	if_setonop(null, component1)
-	if_setontimer({
+	if_setonmouserepeatnull
+	if_setonmouseleavenull
+	if_setonopnull
+	if_setontimer {
 		league_tutorial_button_reset(component1, string0, calc(clientclock + 40))
-	}, component1)
+	}
 	return 
 }

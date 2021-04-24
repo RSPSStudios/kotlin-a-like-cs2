@@ -64,11 +64,11 @@ fun trade_main_init(component0: Component, component1: Component, component2: Co
 	}
 	val int8: Int = calc((36 - 10) / 2)
 	~trade_main_drawitems(size5, int8, component1, component2, component3, component4)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		trade_main_drawitems(size5, int8, component1, component2, component3, component4){inv_90}
-	}, component0)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component0)  {
 		trade_main_drawitems(size5, int8, component1, component2, component3, component4){VARP[1042]}
-	}, component0)
+	}
 	return 
 }

@@ -6,9 +6,9 @@ fun settings_slider_synch(int0: Int, struct1: Struct, int2: Int, int3: Int, int4
 	if (cc_find(component11, comsubid12) = ^true) {
 		int0 = calc(int0 + 1)
 		if (int0 < 35) {
-			cc_setontimer({
+			cc_setontimer {
 				settings_slider_synch(int0, struct1, int2, int3, int4, int5, component6, comsubid7, y8, int9, int10, component11, comsubid12, comsubid13, string0)
-			})
+			}
 		} else {
 			if (.cc_find(component6, comsubid7) = ^true) {
 				int14 = ~settings_get_slider(int2)
@@ -26,7 +26,7 @@ fun settings_slider_synch(int0: Int, struct1: Struct, int2: Int, int3: Int, int4
 				}
 				.cc_settext(append(string0, string1))
 			}
-			cc_setontimer(null)
+			cc_setontimernull
 		}
 	}
 	return 

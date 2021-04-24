@@ -13,8 +13,8 @@ fun script4107() {
 	}
 	~script4110(struct_2884, int0, interface_685:12, interface_685:13)
 	~script4109(5)
-	if_setonvartransmit({
+	if_setonvartransmit(interface_685:12)  {
 		script4108(5){VARP[2954]}
-	}, interface_685:12)
+	}
 	return 
 }

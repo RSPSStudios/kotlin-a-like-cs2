@@ -30,9 +30,9 @@ fun worldmap_overlay(component0: Component, component1: Component, int2: Int, in
 	if (int10 = int2 & int11 = int3 & int8 = int4 & int9 = int5 & VARCINT[188] = coord6) {
 		return 
 	}
-	if_setontimer({
+	if_setontimer {
 		worldmap_overlay(component0, component1, int10, int11, int8, int9, VARCINT[188])
-	}, component0)
+	}
 	val int15: Int = calc(int11 + int9 / 2)
 	val int16: Int = calc(int11 - int9 / 2)
 	val int17: Int = calc(int10 + int8 / 2)

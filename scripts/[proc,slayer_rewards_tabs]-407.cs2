@@ -16,9 +16,9 @@ fun slayer_rewards_tabs(component0: Component, component1: Component, component2
 	cc_setcolour(0xff981f)
 	cc_settextshadow(true)
 	~slayer_rewards_setpoints
-	cc_setonvartransmit({
+	cc_setonvartransmit {
 		slayer_rewards_setpoints(event_com, event_comsubid){VARP[661]}
-	})
+	}
 	if_sethide(false, component5)
 	if (component5 ! component1) {
 		if_sethide(true, component1)

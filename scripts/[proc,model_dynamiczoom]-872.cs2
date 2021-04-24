@@ -12,8 +12,8 @@ fun model_dynamiczoom(component0: Component, int1: Int, component2: Component, i
 	}
 	val int11: Int = calc(int3 - interpolate(0, invpow(int10 - 334, 2), 0, invpow(1500 - 334, 2), int3 - int4))
 	if_setmodelangle(int5, int6, int7, int8, int9, int11, component2)
-	if_setontimer({
+	if_setontimer {
 		model_dynamiczoom(component0, int10, component2, int3, int4, int5, int6, int7, int8, int9)
-	}, component0)
+	}
 	return 
 }

@@ -12,9 +12,9 @@ fun inferno_hud_pos(int0: Int, component1: Component, component2: Component, com
 	if_settextalign(^settextalign_left, ^settextalign_centre, 0, component4)
 	if_setposition(10, 0, ^setpos_abs_left, ^setpos_abs_centre, component4)
 	if_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_top, component2)
-	if_setontimer({
+	if_setontimer {
 		inferno_hud_pos(int8, component1, component2, component3, component4, component5, component6)
-	}, interface_596:0)
+	}
 	~inferno_hud_update(component5, component6)
 	return 
 }

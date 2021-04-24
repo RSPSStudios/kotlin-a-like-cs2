@@ -14,19 +14,19 @@ fun script4064(component0: Component, graphic1: Graphic, int2: Int) {
 	cc_settrans(0)
 	cc_setgraphic(graphic1)
 	if (int2 = 1) {
-		if_setonmouserepeat(null, component0)
-		if_setonmouseleave(null, component0)
-		if_setonop(null, component0)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
+		if_setonopnull
 	} else {
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			cc_settrans(event_com, comsubid3, 120, null)
-		}, component0)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			cc_settrans(event_com, comsubid3, 0, null)
-		}, component0)
-		if_setonop({
+		}
+		if_setonop {
 			script4065(event_opindex, component0, graphic1)
-		}, component0)
+		}
 	}
 	return 
 }

@@ -2,8 +2,8 @@
 fun 1v1arena_review_init(component0: Component, component1: Component) {
 
 	~1v1arena_review_draw(component1)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		1v1arena_review_draw(component1){inv_207}
-	}, component0)
+	}
 	return 
 }

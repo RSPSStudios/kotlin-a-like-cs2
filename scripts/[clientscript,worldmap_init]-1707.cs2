@@ -2,9 +2,9 @@
 fun worldmap_init(component0: Component, component1: Component, layer2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component, component16: Component, component17: Component, component18: Component, component19: Component, component20: Component, component21: Component, component22: Component, component23: Component, component24: Component) {
 
 	~script1490(component1)
-	if_setonscrollwheel({
+	if_setonscrollwheel {
 		worldmap_zoom_scroll(event_mousey, component18, component19)
-	}, component4)
+	}
 	_2309(1, component4)
 	~worldmap_overview_toggle(false, component6, component8)
 	cc_deleteall(component0)
@@ -15,12 +15,12 @@ fun worldmap_init(component0: Component, component1: Component, layer2: Componen
 			cc_sethide(false)
 			cc_settiling(true)
 			cc_settrans(255)
-			cc_setonmouserepeat({
+			cc_setonmouserepeat {
 				cc_settrans(event_com, event_comsubid, 75, null)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				cc_settrans(event_com, event_comsubid, 255, null)
-			})
+			}
 			cc_setdraggable(component0, -1)
 			cc_setdragdeadzone(1)
 			cc_setdragdeadtime(5)
@@ -309,15 +309,15 @@ fun worldmap_init(component0: Component, component1: Component, layer2: Componen
 		cc_settext(string0)
 		cc_setop(1, "Select")
 		cc_setopbase("<col=ff9040>${string0}</col>")
-		cc_setonmouseover({
+		cc_setonmouseover {
 			xpdrops_setup_display_dropdown_hover(true, event_com, event_comsubid, .cc_getid, 0xff981f)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			xpdrops_setup_display_dropdown_hover(false, event_com, event_comsubid, .cc_getid, 0xff981f)
-		})
-		cc_setonop({
+		}
+		cc_setonop {
 			worldmap_maplist_select(event_opindex, maparea45, component12, component13, component4, component6, component7, component18, component19)
-		})
+		}
 		int29 = ~max(int29, parawidth(string0, 512, fontmetrics43))
 		coord41 = ~worldmap_findcoordinmap(maparea45, VARCINT[188])
 		if (coord41 ! null) {
@@ -385,12 +385,12 @@ fun worldmap_init(component0: Component, component1: Component, layer2: Componen
 	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
 	cc_setgraphic("tradebacking")
 	cc_settiling(true)
-	cc_setonclick({
+	cc_setonclick {
 		worldmap_maplist_open(component12, component13, component16, coordx(coord46), coordz(coord46))
-	})
-	if_setonclick({
+	}
+	if_setonclick {
 		worldmap_maplist_close(component12, component13)
-	}, component14)
+	}
 	cc_create(component12, ^iftype_rectangle, int25)
 	int25 = calc(int25 + 1)
 	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)

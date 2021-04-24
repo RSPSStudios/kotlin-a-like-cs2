@@ -11,12 +11,12 @@ fun poh_jewellery_box_addbutton(component0: Component, int1: Int, string0: Strin
 	cc_setsize(80, int2, ^setsize_minus, ^setsize_abs)
 	cc_setposition(5, int5, ^setpos_abs_right, ^setpos_abs_centre)
 	cc_setcolour(0xff981f)
-	cc_setonmouserepeat({
+	cc_setonmouserepeat {
 		cc_colour_swapper(event_com, event_comsubid, ^white)
-	})
-	cc_setonmouseleave({
+	}
+	cc_setonmouseleave {
 		cc_colour_swapper(event_com, event_comsubid, 0xff981f)
-	})
+	}
 	cc_settextfont(p11_full)
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	cc_settextshadow(true)
@@ -26,19 +26,19 @@ fun poh_jewellery_box_addbutton(component0: Component, int1: Int, string0: Strin
 	if (int6 < 9) {
 		string1 = tostring(calc(int6 + 1))
 		string0 = "<col=ccccff>${string1}:</col> ${string0}"
-		.cc_setonkey({
+		.cc_setonkey {
 			poh_jewellery_box_keypress(event_keychar, event_comsubid, component0, int4, string0, string1, string2)
-		})
+		}
 	} else if (int6 < 35) {
 		string1, string2 = enum(int, string, enum_1401, calc(int6 - 8)), enum(int, string, enum_1402, calc(int6 - 8))
 		string0 = "<col=ccccff>${string1}:</col> ${string0}"
-		.cc_setonkey({
+		.cc_setonkey {
 			poh_jewellery_box_keypress(event_keychar, event_comsubid, component0, int4, string0, string1, string2)
-		})
+		}
 	}
 	cc_settext(string0)
-	cc_setonop({
+	cc_setonop {
 		poh_jewellery_box_op(event_opindex, int6, component0, int4, string0, string1, string2)
-	})
+	}
 	return calc(int4 + 1), calc(int5 + int2)
 }

@@ -14,9 +14,9 @@ fun script1151(component0: Component) {
 		cc_setdragdeadtime(5)
 		size2 = calc(size2 + 1)
 	}
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		script1154(component0){inv_563}
-	}, component0)
+	}
 	~script1155(component0)
 	return 
 }

@@ -3,9 +3,9 @@ fun cc_colour_temporarily(component0: Component, comsubid1: Int, colour2: Int, c
 
 	if (cc_find(component0, comsubid1) = ^true) {
 		cc_setcolour(colour2)
-		cc_setontimer({
+		cc_setontimer {
 			cc_colour_temporarily_end(event_com, event_comsubid, colour3, calc(clientclock + 10))
-		})
+		}
 	}
 	return 
 }

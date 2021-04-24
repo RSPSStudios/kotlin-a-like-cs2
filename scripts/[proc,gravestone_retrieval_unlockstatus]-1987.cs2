@@ -7,7 +7,7 @@ fun gravestone_retrieval_unlockstatus(component0: Component, comsubid1: Int, com
 	if_sethide(false, component4)
 	if_sethide(true, component5)
 	if_setgraphic("miscgraphics,0", component2)
-	if_setontimer(null, component2)
+	if_setontimernull
 	val string0: String = ""
 	val namedobj6: Namedobj = enum(int, namedobj, enum_1756, VARP[261])
 	val int7: Int = enum(int, int, enum_1757, VARP[261])
@@ -32,28 +32,28 @@ fun gravestone_retrieval_unlockstatus(component0: Component, comsubid1: Int, com
 		} else {
 			if_settext("Fee to unlock:<br><col=ffffff>${oc_name(namedobj6)}</col>", component5)
 		}
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			gravestone_retrieval_buttonhover(true, component3, component4, component5)
-		}, component2)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			gravestone_retrieval_buttonhover(false, component3, component4, component5)
-		}, component2)
-		if_setonop({
+		}
+		if_setonop {
 			gravestone_retrieval_buttonop(event_opindex, component2, component3, component4, component5)
-		}, component2)
+		}
 	} else {
 		if_setgraphic("bankbuttons,4", component3)
 		if_setop(1, "Take-All", component2)
 		if_settext("", component5)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			gravestone_retrieval_buttonhover(true, component3, null, null)
-		}, component2)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			gravestone_retrieval_buttonhover(false, component3, null, null)
-		}, component2)
-		if_setonop({
+		}
+		if_setonop {
 			gravestone_retrieval_buttonop(event_opindex, component2, component3, null, null)
-		}, component2)
+		}
 	}
 	return 
 }

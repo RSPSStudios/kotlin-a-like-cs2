@@ -3,7 +3,7 @@ fun raids_partydetails_closestats() {
 
 	if_sethide(true, interface_507:29)
 	cc_deleteall(interface_507:29)
-	if_setonclick(null, interface_507:29)
+	if_setonclicknull
 	~deltooltip_action(interface_507:36)
 	if_sethide(false, interface_507:28)
 	cc_deleteall(interface_507:28)
@@ -13,8 +13,8 @@ fun raids_partydetails_closestats() {
 	cc_setmodel(model_4612)
 	cc_setmodelangle(0, 190, 0, 0, 0, 2500)
 	cc_setmodelanim(seq_7385)
-	cc_setontimer({
+	cc_setontimer {
 		raids_partydetails_autorefresh(event_com, event_comsubid, calc(clientclock + 520))
-	})
+	}
 	return 
 }

@@ -68,9 +68,9 @@ fun collection_draw_log(struct0: Struct) {
 		cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)
 		cc_setop(1, "Check")
 		cc_setopbase("<col=ff9040>${oc_name(namedobj14)}</col>")
-		cc_setonop({
+		cc_setonop {
 			collection_item_click(namedobj14, int11)
-		})
+		}
 		if (int11 > 1) {
 			cc_setobject(namedobj14, int11)
 		} else {

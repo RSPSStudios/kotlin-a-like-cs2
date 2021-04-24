@@ -9,9 +9,9 @@ fun worldmap_loadmap(maparea0: Maparea, coord1: Coord, component2: Component, co
 	if (coord1 ! null) {
 		worldmap_jumptosourcecoord_instant(coord1)
 	}
-	if_setontimer({
+	if_setontimer {
 		script1713(maparea0, component2, cc_getid, component3, component4, component5, component6, component7, component8)
-	}, component2)
+	}
 	~worldmap_overlay_clear(component4, component6)
 	val int9: Int = 0
 	val int10: Int = 0
@@ -25,9 +25,9 @@ fun worldmap_loadmap(maparea0: Maparea, coord1: Coord, component2: Component, co
 		int11 = ~max(scale(int9, int10, int12), 50)
 	}
 	if_setsize(int11, int12, ^setsize_abs, ^setsize_abs, component5)
-	if_setonclickrepeat({
+	if_setonclickrepeat {
 		worldmap_overview_click(event_mousex, event_mousey, -1, event_com, int11, int12, int9, int10, worldmap_getconfigbounds(maparea0))
-	}, component6)
+	}
 	~worldmap_applyzoom(worldmap_getconfigzoom(maparea0), component7, component8)
 	return 
 }

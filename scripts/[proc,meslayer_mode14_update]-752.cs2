@@ -49,9 +49,9 @@ fun meslayer_mode14_update(boolean0: Boolean, enum1: Enum, boolean2: Boolean) {
 			}
 			cc_create(interface_162:53, ^iftype_rectangle, int7)
 			if (int7 = 0) {
-				cc_setonkey({
+				cc_setonkey {
 					meslayer_mode14_select(obj20, event_key)
-				})
+				}
 			}
 			int7 = calc(int7 + 1)
 			cc_setsize(int6, 32, ^setsize_abs, ^setsize_abs)
@@ -59,17 +59,17 @@ fun meslayer_mode14_update(boolean0: Boolean, enum1: Enum, boolean2: Boolean) {
 			cc_setcolour(^white)
 			cc_setfill(true)
 			cc_settrans(255)
-			cc_setonmouseover({
+			cc_setonmouseover {
 				cc_settrans(event_com, event_comsubid, 200, null)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				cc_settrans(event_com, event_comsubid, 255, null)
-			})
+			}
 			cc_setopbase("<col=ff9040>${oc_name(obj20)}</col>")
 			cc_setop(1, "Select")
-			cc_setonop({
+			cc_setonop {
 				meslayer_mode14_select(obj20, ^key_return)
-			})
+			}
 			cc_create(interface_162:53, ^iftype_text, int7)
 			int7 = calc(int7 + 1)
 			cc_setsize(width11, 32, ^setsize_abs, ^setsize_abs)

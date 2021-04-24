@@ -2,9 +2,9 @@
 fun light_puzzle_button_setup(component0: Component, component1: Component, text0: String) {
 
 	if_setop(1, "Press", component0)
-	if_setonop({
+	if_setonop {
 		light_puzzle_op_button(event_com)
-	}, component0)
+	}
 	if_setopbase("<col=ff981f>Button", component0)
 	cc_create(component1, ^iftype_text, 0)
 	cc_settext(text0)
@@ -13,11 +13,11 @@ fun light_puzzle_button_setup(component0: Component, component1: Component, text
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	cc_setposition(0, 0, ^setpos_4, ^setpos_4)
 	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
-	cc_setonmouseover({
+	cc_setonmouseover {
 		light_puzzle_text_mouseover(event_com, event_comsubid, ^white)
-	})
-	cc_setonmouseleave({
+	}
+	cc_setonmouseleave {
 		light_puzzle_text_mouseover(event_com, event_comsubid, 0xff981f)
-	})
+	}
 	return 
 }

@@ -16,11 +16,11 @@ fun magic_training_confirm(component0: Component, int1: Int) {
 	} else {
 		cc_settext("Confirm: <br><col=ffffff>${oc_name(enum(int, namedobj, enum_2753, int1))}</col> <br>x${tostring(VARP[2224])}")
 	}
-	cc_setonmouseleave({
+	cc_setonmouseleave {
 		v2_stone_button_change_out(component0, 0)
-	})
-	cc_setonmouserepeat({
+	}
+	cc_setonmouserepeat {
 		v2_stone_button_change_in(component0, 0)
-	})
+	}
 	return 
 }

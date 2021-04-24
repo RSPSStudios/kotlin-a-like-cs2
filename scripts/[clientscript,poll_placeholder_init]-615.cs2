@@ -2,9 +2,9 @@
 fun poll_placeholder_init(component0: Component) {
 
 	val clock1: Int = clientclock
-	if_setontimer({
+	if_setontimer {
 		poll_placeholder_pulse(component0, clock1)
-	}, component0)
+	}
 	~poll_placeholder_pulse(component0, clock1)
 	return 
 }

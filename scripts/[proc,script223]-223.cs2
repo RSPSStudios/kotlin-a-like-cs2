@@ -43,9 +43,9 @@ fun script223() {
 			if_settextalign(^settextalign_left, ^settextalign_bottom, 0, interface_162:58)
 		}
 		if_clearops(interface_162:58)
-		if_setonmouserepeat(null, interface_162:58)
-		if_setonmouseleave(null, interface_162:58)
-		if_setonop(null, interface_162:58)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
+		if_setonopnull
 	} else {
 		if (~league_world = 1) {
 			string2 = "<img=22> You must set a name before you can chat."
@@ -55,15 +55,15 @@ fun script223() {
 		if_settextalign(^settextalign_centre, ^settextalign_bottom, 0, interface_162:58)
 		if_setop(10, "Configure", interface_162:58)
 		if_setopbase("<col=ff9040>Display name</col>", interface_162:58)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			text_colour_swapper(event_com, colour1)
-		}, interface_162:58)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			text_colour_swapper(event_com, colour0)
-		}, interface_162:58)
-		if_setonop({
+		}
+		if_setonop {
 			opsound(event_opindex, 1024)
-		}, interface_162:58)
+		}
 	}
 	if_settext(string2, interface_162:58)
 	if_setsize(3, 16, ^setsize_minus, ^setsize_abs, interface_162:58)

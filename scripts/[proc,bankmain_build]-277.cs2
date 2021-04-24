@@ -21,9 +21,9 @@ fun bankmain_build(component0: Component, component1: Component, component2: Com
 	if_sethide(boolean17, component12)
 	if_sethide(boolean17, component13)
 	~script3369(component16)
-	if_setonvartransmit({
+	if_setonvartransmit(component16)  {
 		script3368(component16){VARP[1141]}
-	}, component16)
+	}
 	if_setposition(441, 0, ^setpos_abs_left, ^setpos_abs_top, component14)
 	if_setposition(444, 7, ^setpos_abs_left, ^setpos_abs_top, component15)
 	if (VARBIT[8352] = 1 & VARBIT[5364] = 0) {

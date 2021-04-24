@@ -13,12 +13,12 @@ fun menu_createentry(string0: String, component0: Component, component1: Compone
 	.cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
 	cc_settextfont(p12_full)
 	cc_setcolour(0x46320a)
-	cc_setonmouseover({
+	cc_setonmouseover {
 		cc_colour_swapper(event_com, event_comsubid, 0x76623a)
-	})
-	cc_setonmouseleave({
+	}
+	cc_setonmouseleave {
 		cc_colour_swapper(event_com, event_comsubid, 0x46320a)
-	})
+	}
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 14)
 	cc_settext(string0)
 	val string1: String = ""
@@ -32,9 +32,9 @@ fun menu_createentry(string0: String, component0: Component, component1: Compone
 			string2 = enum(int, string, enum_1402, calc(int3 - 9))
 		}
 		string0 = append("<col=735a28>${string1}</col>: ", string0)
-		.cc_setonkey({
+		.cc_setonkey {
 			chatbox_keyinput_listener(event_key, event_keychar, component0, cc_getid, null, null, string1, string2, 0x46320a, 0)
-		})
+		}
 	}
 	cc_settext(string0)
 	return int3, calc(height4 + int6)

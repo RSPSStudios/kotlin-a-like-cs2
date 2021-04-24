@@ -8,7 +8,7 @@ fun itemsets_side_draw(component0: Component) {
 		int3 = calc(int3 - 1)
 		if (cc_find(component0, int3) = ^true) {
 			cc_clearops
-			cc_setontimer(null)
+			cc_setontimernull
 			obj1 = inv_getobj(inv, int3)
 			if (obj1 ! null) {
 				cc_sethide(false)
@@ -16,17 +16,17 @@ fun itemsets_side_draw(component0: Component) {
 				if (enum(obj, enum, enum_1034, obj1) ! null | enum(obj, enum, enum_1034, oc_uncert(obj1)) ! null) {
 					if (map_members = ^false & oc_members(obj1) = ^true) {
 						cc_settrans(130)
-						cc_setonop(null)
+						cc_setonopnull
 					} else {
 						cc_settrans(0)
 						cc_setop(1, "Unpack")
-						cc_setonop({
+						cc_setonop {
 							cc_settrans_temporarily(event_com, event_comsubid, 100, 0)
-						})
+						}
 					}
 				} else {
 					cc_settrans(130)
-					cc_setonop(null)
+					cc_setonopnull
 				}
 				cc_setop(10, "Examine")
 				cc_setopbase("<col=ff9040>${oc_name(obj1)}</col>")

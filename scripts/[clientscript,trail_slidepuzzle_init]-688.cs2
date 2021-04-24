@@ -22,11 +22,11 @@ fun trail_slidepuzzle_init(component0: Component, component1: Component, compone
 		int7 = calc(int7 + 1)
 	}
 	~trail_slidepuzzle_synch(component0, int5, int6, int3, int4, component1, component2)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		trail_slidepuzzle_synch(false, component0, int5, int6, int3, int4, component1, component2){inv_140, inv_221, inv_222}
-	}, component0)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component0)  {
 		trail_slidepuzzle_synch(true, component0, int5, int6, int3, int4, component1, component2){VARP[261]}
-	}, component0)
+	}
 	return 
 }

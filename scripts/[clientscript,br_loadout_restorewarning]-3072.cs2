@@ -6,7 +6,7 @@ fun br_loadout_restorewarning(clock0: Int, component1: Component, comsubid2: Int
 	}
 	if (cc_find(component1, comsubid2) = ^true) {
 		cc_setmodel(bank_filler_7669)
-		cc_setontimer(null)
+		cc_setontimernull
 	}
 	return 
 }

@@ -39,8 +39,8 @@ fun script945(component0: Component, width1: Int, height2: Int, component3: Comp
 			.cc_setsize(int7, 0, ^setsize_abs, ^setsize_minus)
 		}
 	}
-	if_setontimer({
+	if_setontimer {
 		script944(component0, width1, height2, component3)
-	}, component0)
+	}
 	return 
 }

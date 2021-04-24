@@ -13,16 +13,16 @@ fun bugreport_keypress(key0: Int, keychar1: Char, component2: Component, compone
 		string0 = VARCSTRING[372]
 		if (string_length(VARCSTRING[372]) > 0) {
 			if_setop(1, "Submit", component7)
-			if_setonop({
+			if_setonop {
 				bugreport_submit
-			}, component7)
-			if_setonclick(null, component7)
+			}
+			if_setonclicknull
 		} else {
 			if_clearops(component7)
-			if_setonop(null, component7)
-			if_setonclick({
+			if_setonopnull
+			if_setonclick {
 				bugreport_submit
-			}, component7)
+			}
 		}
 	} else if (component2 = component6) {
 		VARCSTRING[373] = ~add_to_inputstring(VARCSTRING[373], 5, key0, keychar1)

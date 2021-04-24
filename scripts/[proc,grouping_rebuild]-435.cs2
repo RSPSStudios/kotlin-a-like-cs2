@@ -55,19 +55,19 @@ fun grouping_rebuild() {
 	if (VARCINT[64] = 0) {
 		if_settext("---", interface_76:25)
 		if_clearops(interface_76:23)
-		if_setonop(null, interface_76:23)
+		if_setonopnull
 	} else if (int2 ! VARCINT[64]) {
 		if_settext("Join", interface_76:25)
 		if_setop(1, "Join <col=ff8040>${text0}</col> channel", interface_76:23)
-		if_setonop({
+		if_setonop {
 			grouping_joinchannel(VARCINT[64])
-		}, interface_76:23)
+		}
 	} else {
 		if_settext("Leave", interface_76:25)
 		if_setop(1, "Leave <col=ff8040>${text0}</col> channel", interface_76:23)
-		if_setonop({
+		if_setonop {
 			grouping_joinchannel(0)
-		}, interface_76:23)
+		}
 	}
 	val int4: Int = 0
 	val int5: Int = 0
@@ -87,10 +87,10 @@ fun grouping_rebuild() {
 	if (if_gethide(interface_76:14) = true) {
 		if_setgraphic("scrollbar_v2,1", interface_76:20)
 		if_sethide(false, interface_76:5)
-		if_setonclick({
+		if_setonclick {
 			grouping_dropdown(true)
-		}, interface_76:5)
-		if_setonclick(null, interface_76:2)
+		}
+		if_setonclicknull
 		int5 = if_getwidth(interface_76:12)
 		if_sethide(false, interface_76:9)
 		if (int2 = 0 | VARCINT[64] ! int2) {
@@ -113,16 +113,16 @@ fun grouping_rebuild() {
 			cc_setsize(int5, int10, ^setsize_abs, ^setsize_abs)
 			cc_setposition(0, calc((if_getheight(interface_76:12) - int10) / 2), ^setpos_abs_left, ^setpos_abs_top)
 			cc_settext(string1)
-			cc_setonmouserepeat({
+			cc_setonmouserepeat {
 				cc_colour_swapper(event_com, event_comsubid, 0xffb82f)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				cc_colour_swapper(event_com, event_comsubid, 0xff981f)
-			})
+			}
 			cc_setop(1, "View Channel")
-			cc_setonop({
+			cc_setonop {
 				grouping_viewchannel(int2)
-			})
+			}
 			return 
 		}
 		rank7, rank8 = clan_getchatminkick, clan_getchatrank
@@ -163,9 +163,9 @@ fun grouping_rebuild() {
 			cc_setposition(0, int10, ^setpos_abs_left, ^setpos_abs_top)
 			cc_setfill(true)
 			cc_settrans(255)
-			cc_setonop({
+			cc_setonop {
 				friendschat_op(string3, event_opindex)
-			})
+			}
 			if (clan_isself(int9) = false) {
 				if (clan_isfriend(int9) = true) {
 					cc_setop(9, "Remove friend ${string3}")
@@ -202,10 +202,10 @@ fun grouping_rebuild() {
 	}
 	if_setgraphic("scrollbar_v2,0", interface_76:20)
 	if_sethide(true, interface_76:5)
-	if_setonclick(null, interface_76:5)
-	if_setonclick({
+	if_setonclicknull
+	if_setonclick {
 		grouping_dropdown(false)
-	}, interface_76:2)
+	}
 	if_sethide(true, interface_76:9)
 	int5 = calc(if_getwidth(interface_76:18) - 12)
 	int10 = 3
@@ -234,16 +234,16 @@ fun grouping_rebuild() {
 			.cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
 			.cc_settextshadow(true)
 			.cc_settext(enum(int, string, enum_848, int3))
-			.cc_setonmouseover({
+			.cc_setonmouseover {
 				grouping_mouseover(event_com, event_comsubid, cc_getid, true)
-			})
-			.cc_setonmouseleave({
+			}
+			.cc_setonmouseleave {
 				grouping_mouseover(event_com, event_comsubid, cc_getid, false)
-			})
+			}
 			.cc_setop(1, "Select")
-			.cc_setonop({
+			.cc_setonop {
 				grouping_viewchannel(int3)
-			})
+			}
 			int10 = calc(int10 + int11)
 		}
 		int3 = calc(int3 + 1)
@@ -259,16 +259,16 @@ fun grouping_rebuild() {
 		.cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
 		.cc_settextshadow(true)
 		.cc_settext("(none)")
-		.cc_setonmouseover({
+		.cc_setonmouseover {
 			grouping_mouseover(event_com, event_comsubid, cc_getid, true)
-		})
-		.cc_setonmouseleave({
+		}
+		.cc_setonmouseleave {
 			grouping_mouseover(event_com, event_comsubid, cc_getid, false)
-		})
+		}
 		.cc_setop(1, "Select")
-		.cc_setonop({
+		.cc_setonop {
 			grouping_viewchannel(0)
-		})
+		}
 		int10 = calc(int10 + int11)
 	}
 	if_setscrollsize(0, int10, interface_76:18)

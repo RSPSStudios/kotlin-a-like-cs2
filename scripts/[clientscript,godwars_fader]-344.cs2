@@ -17,6 +17,6 @@ fun godwars_fader(component0: Component, clock1: Int, int2: Int, int3: Int, int4
 		return 
 	}
 	if_settrans(255, component0)
-	if_setontimer(null, component0)
+	if_setontimernull
 	return 
 }

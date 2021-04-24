@@ -4,8 +4,8 @@ fun tol_pressure_valveinit(op0: String, component0: Component, int1: Int, bool2:
 	if_setop(1, op0, component0)
 	if_setopbase("<col=ff9040>Valve</col>", component0)
 	~tol_pressure_valvelistener(component0, int1, bool2)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		tol_pressure_valvelistener(component0, int1, bool2){VARP[978]}
-	}, component0)
+	}
 	return 
 }

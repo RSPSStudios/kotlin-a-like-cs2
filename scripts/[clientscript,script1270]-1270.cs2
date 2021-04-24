@@ -2,8 +2,8 @@
 fun script1270(component0: Component) {
 
 	~script1272(component0, 0)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		script1271(component0){bank}
-	}, component0)
+	}
 	return 
 }

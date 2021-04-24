@@ -70,23 +70,23 @@ fun league_relic_expanded_view(component0: Component, component1: Component, com
 	if (int16 = 2) {
 		cc_setcolour(0x53d93c)
 		if (~on_mobile = false) {
-			if_setonmouseleave({
+			if_setonmouseleave {
 				league_relic_button_hover(component7, false, op1, 0x53d93c)
-			}, component7)
-			if_setonmouserepeat({
+			}
+			if_setonmouserepeat {
 				league_relic_button_hover(component7, true, op1, 0xaaaaaa)
-			}, component7)
+			}
 		}
-		if_setonop({
+		if_setonop {
 			league_relic_confirm(component9, component7, false, op1, 0x53d93c)
-		}, component7)
+		}
 	} else {
 		cc_setcolour(0xaaaaaa)
-		if_setonmouseleave(null, component7)
-		if_setonmouserepeat(null, component7)
-		if_setonop({
+		if_setonmouseleavenull
+		if_setonmouserepeatnull
+		if_setonop {
 			league_relic_not_available(int16)
-		}, component7)
+		}
 	}
 	comsubid21 = ~v2_stone_button(component8)
 	cc_create(component8, ^iftype_text, comsubid21)
@@ -100,16 +100,16 @@ fun league_relic_expanded_view(component0: Component, component1: Component, com
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	if_setop(1, op1, component8)
 	if (~on_mobile = false) {
-		if_setonmouseleave({
+		if_setonmouseleave {
 			league_relic_button_hover(component8, false, op1, ^white)
-		}, component8)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			league_relic_button_hover(component8, true, op1, 0xaaaaaa)
-		}, component8)
+		}
 	}
-	if_setonop({
+	if_setonop {
 		league_relic_back(component0, component1, component2)
-	}, component8)
+	}
 	val comsubid26: Int = ~steelborder(component10, struct_param(struct17, param_879), 1)
 	if (cc_find(component10, comsubid26) = ^true) {
 		cc_setcolour(colour20)
@@ -128,16 +128,16 @@ fun league_relic_expanded_view(component0: Component, component1: Component, com
 	if_setop(1, op1, component12)
 	if_setopbase("<col=ff981f>Selection</col>", component12)
 	if (~on_mobile = false) {
-		if_setonmouseleave({
+		if_setonmouseleave {
 			league_relic_button_hover(component12, false, op1, ^white)
-		}, component12)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			league_relic_button_hover(component12, true, op1, 0xaaaaaa)
-		}, component12)
+		}
 	}
-	if_setonop({
+	if_setonop {
 		button_select_sound
-	}, component12)
+	}
 	comsubid21 = ~v2_stone_button(component13)
 	cc_create(component13, ^iftype_text, comsubid21)
 	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
@@ -150,15 +150,15 @@ fun league_relic_expanded_view(component0: Component, component1: Component, com
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	if_setop(1, op1, component13)
 	if (~on_mobile = false) {
-		if_setonmouseleave({
+		if_setonmouseleave {
 			league_relic_button_hover(component13, false, op1, ^white)
-		}, component13)
-		if_setonmouserepeat({
+		}
+		if_setonmouserepeat {
 			league_relic_button_hover(component13, true, op1, 0xaaaaaa)
-		}, component13)
+		}
 	}
-	if_setonop({
+	if_setonop {
 		league_relic_confirm_back(component9)
-	}, component13)
+	}
 	return 
 }

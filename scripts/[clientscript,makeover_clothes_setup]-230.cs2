@@ -53,9 +53,9 @@ fun makeover_clothes_setup(component0: Component, component1: Component, compone
 		}
 		cc_setgraphic("overlay_multiway")
 		~makeover_indicator(int7, 3)
-		cc_setonvartransmit({
+		cc_setonvartransmit {
 			makeover_indicator(event_com, event_comsubid, int7, 3){VARP[263]}
-		})
+		}
 		int7 = calc(int7 + 1)
 	}
 	return 

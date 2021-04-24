@@ -2,14 +2,14 @@
 fun glidermap_init(component0: Component, component1: Component, component2: Component, component3: Component) {
 
 	~glidermap_hideshow(component1, component2, component3)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		glidermap_hideshow(component1, component2, component3){VARP[153], VARP[416], VARP[1339]}
-	}, component0)
+	}
 	cc_deleteall(component0)
 	cc_create(component0, ^iftype_model, 0)
 	~glidermap_fly
-	cc_setonvartransmit({
+	cc_setonvartransmit {
 		glidermap_fly(event_com, event_comsubid){VARP[153]}
-	})
+	}
 	return 
 }

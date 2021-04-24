@@ -27,9 +27,9 @@ fun rune_pouch_init(component0: Component, component1: Component, component2: Co
 	cc_setdragdeadzone(5)
 	cc_setdragdeadtime(5)
 	~rune_pouch_drawpouch(component1)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		rune_pouch_drawpouch(component1){VARP[1139], VARP[1140]}
-	}, component0)
+	}
 	cc_deleteall(component2)
 	int3 = calc((if_getwidth(component2) - (10 + 7 * 36)) / 6 + 36)
 	val int4: Int = calc((if_getheight(component2) - (30 + 4 * 32)) / 3 + 32)
@@ -46,8 +46,8 @@ fun rune_pouch_init(component0: Component, component1: Component, component2: Co
 		size6 = calc(size6 + 1)
 	}
 	~rune_pouch_drawinventory(component2)
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		rune_pouch_drawinventory(component2){inv}
-	}, component0)
+	}
 	return 
 }

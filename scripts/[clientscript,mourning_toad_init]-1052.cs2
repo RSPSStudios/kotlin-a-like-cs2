@@ -2,11 +2,11 @@
 fun mourning_toad_init(component0: Component) {
 
 	~mourning_toad_settoad(component0)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		mourning_toad_settoad(component0){VARP[518]}
-	}, component0)
-	if_setontimer({
+	}
+	if_setontimer {
 		spinmodel(0, 25, 0, 21, 0, component0, -1)
-	}, component0)
+	}
 	return 
 }

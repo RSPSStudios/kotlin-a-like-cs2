@@ -22,51 +22,51 @@ fun zeah_favour_set_tab(component0: Component, component1: Component, component2
 	if (cc_find(component7, 0) = ^true) {
 		cc_setgraphic(graphic13)
 	}
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		zeah_favour_tab_mouserepeat(event_com, component2, 3)
-	}, component3)
-	if_setonmouserepeat({
+	}
+	if_setonmouserepeat {
 		zeah_favour_tab_mouserepeat(event_com, component2, 2)
-	}, component4)
-	if_setonmouserepeat({
+	}
+	if_setonmouserepeat {
 		zeah_favour_tab_mouserepeat(event_com, component2, 4)
-	}, component5)
-	if_setonmouserepeat({
+	}
+	if_setonmouserepeat {
 		zeah_favour_tab_mouserepeat(event_com, component2, 5)
-	}, component6)
-	if_setonmouserepeat({
+	}
+	if_setonmouserepeat {
 		zeah_favour_tab_mouserepeat(event_com, component2, 1)
-	}, component7)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		cc_graphic_swapper(event_com, 0, graphic13, component2)
-	}, component3)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		cc_graphic_swapper(event_com, 0, graphic13, component2)
-	}, component4)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		cc_graphic_swapper(event_com, 0, graphic13, component2)
-	}, component5)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		cc_graphic_swapper(event_com, 0, graphic13, component2)
-	}, component6)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		cc_graphic_swapper(event_com, 0, graphic13, component2)
-	}, component7)
-	if_setonop({
+	}
+	if_setonop {
 		zeah_favour_set_tab(3, component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12)
-	}, component3)
-	if_setonop({
+	}
+	if_setonop {
 		zeah_favour_set_tab(2, component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12)
-	}, component4)
-	if_setonop({
+	}
+	if_setonop {
 		zeah_favour_set_tab(4, component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12)
-	}, component5)
-	if_setonop({
+	}
+	if_setonop {
 		zeah_favour_set_tab(5, component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12)
-	}, component6)
-	if_setonop({
+	}
+	if_setonop {
 		zeah_favour_set_tab(1, component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12)
-	}, component7)
+	}
 	val component14: Component = null
 	val component15: Component = null
 	if (VARCINT[79] = 3) {
@@ -86,15 +86,15 @@ fun zeah_favour_set_tab(component0: Component, component1: Component, component2
 	if (cc_find(component14, 0) = ^true) {
 		cc_setgraphic("banktabs,2")
 	}
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		tooltip_mouserepeat(event_com, -1, component2, enum(int, string, enum_1264, VARCINT[79]), 25, 512)
-	}, component14)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		deltooltip(component2)
-	}, component14)
-	if_setonop({
+	}
+	if_setonop {
 		opsound(0, 0)
-	}, component14)
+	}
 	val height16: Int = if_getheight(component15)
 	if (height16 > if_getheight(component0)) {
 		if_setscrollsize(0, height16, component0)

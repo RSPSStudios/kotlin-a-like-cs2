@@ -2,8 +2,8 @@
 fun wint_timer_init(component0: Component) {
 
 	~wint_timer_resynch(component0)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		wint_timer_resynch(component0){VARP[1142]}
-	}, component0)
+	}
 	return 
 }

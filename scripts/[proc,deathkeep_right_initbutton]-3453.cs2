@@ -34,17 +34,17 @@ fun deathkeep_right_initbutton(int0: Int, width1: Int, int2: Int, int3: Int, int
 	val int9: Int = calc(5 + ~max(17, paraheight(string0, width1, p11_full) * 12 + 2) + 5)
 	if_setsize(20, int9, ^setsize_minus, ^setsize_abs, component8)
 	val comsubid10: Int = ~deathkeep_right_drawbutton(component8, int0, string0, boolean7, 0)
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		cc_colour_swapper(event_com, comsubid10, ^white)
-	}, component8)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		cc_colour_swapper(event_com, comsubid10, 0xff981f)
-	}, component8)
+	}
 	if_setop(1, "Toggle", component8)
 	.cc_create(interface_4:12, ^iftype_rectangle, int0)
 	.cc_sethide(true)
-	if_setonop({
+	if_setonop {
 		deathkeep_right_opbutton(event_com, int0, string0, boolean7)
-	}, component8)
+	}
 	return calc(int2 + int9)
 }

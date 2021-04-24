@@ -17,8 +17,8 @@ fun fossil_driftnet_store_init(component0: Component, component1: Component, com
 	cc_setop(10, "Examine")
 	cc_setopbase("<col=ff9040>${oc_name(drift_net_21652)}</col>")
 	~fossil_driftnet_store_update
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		fossil_driftnet_store_update(component2, cc_getid){VARP[1632]}
-	}, component0)
+	}
 	return 
 }

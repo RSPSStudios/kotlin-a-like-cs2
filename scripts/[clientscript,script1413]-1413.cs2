@@ -6,12 +6,12 @@ fun script1413(component0: Component, model1: Model, component2: Component, cloc
 	}
 	if_setmodel(model1, component0)
 	if_sethide(true, component2)
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		comp_sethide(false, component2)
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		comp_sethide(true, component2)
-	}, component0)
-	if_setontimer(null, component0)
+	}
+	if_setontimernull
 	return 
 }

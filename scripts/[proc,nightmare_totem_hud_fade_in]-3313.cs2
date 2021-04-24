@@ -21,11 +21,11 @@ fun nightmare_totem_hud_fade_in(int0: Int, component1: Component, component2: Co
 		if_sethide(false, component7)
 		if_sethide(false, component11)
 		if_sethide(false, component15)
-		if_setontimer(null, component1)
+		if_setontimernull
 		return 
 	}
-	if_setontimer({
+	if_setontimer {
 		nightmare_totem_hud_fade_in(int0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18)
-	}, component1)
+	}
 	return 
 }

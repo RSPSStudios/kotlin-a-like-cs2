@@ -4,7 +4,7 @@ fun script365(component0: Component, int1: Int) {
 	cc_deleteall(component0)
 	if (int1 ! 1 & int1 ! 2) {
 		~stonepanel(38, component0, 0)
-		if_setontimer(null, component0)
+		if_setontimernull
 		return 
 	}
 	if (calc(clientclock % 20) < 10) {
@@ -16,8 +16,8 @@ fun script365(component0: Component, int1: Int) {
 	} else {
 		~stonepanel(38, component0, 0)
 	}
-	if_setontimer({
+	if_setontimer {
 		script364(component0, int1)
-	}, component0)
+	}
 	return 
 }

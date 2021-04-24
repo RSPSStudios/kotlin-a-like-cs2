@@ -21,28 +21,28 @@ fun meslayer_mode1(string0: String) {
 		if_settextfont(q8_full, interface_162:44)
 		if_settextfont(q8_full, interface_162:45)
 		if_setcolour(^blue, interface_162:45)
-		if_setonmouseover({
+		if_setonmouseover {
 			text_colour_swapper(event_com, ^white)
-		}, interface_162:45)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			text_colour_swapper(event_com, ^blue)
-		}, interface_162:45)
+		}
 		if_settext("${~text_device("Click", "Tap")} here to continue", interface_162:45)
 		if_setposition(0, 96, ^setpos_abs_centre, ^setpos_abs_top, interface_162:45)
 		if_setsize(479, 17, ^setsize_abs, ^setsize_abs, interface_162:45)
 		if_settextalign(^settextalign_centre, ^settextalign_top, 0, interface_162:45)
 		if (~on_mobile = true) {
-			if_setonclick({
+			if_setonclick {
 				meslayer_close(1)
-			}, interface_162:40)
+			}
 		} else {
-			if_setonclick({
+			if_setonclick {
 				meslayer_close(1)
-			}, interface_162:45)
+			}
 		}
-		if_setonkey({
+		if_setonkey {
 			meslayer_key_close(1, event_key)
-		}, interface_162:45)
+		}
 		if_sethide(true, interface_162:42)
 	}
 	return 

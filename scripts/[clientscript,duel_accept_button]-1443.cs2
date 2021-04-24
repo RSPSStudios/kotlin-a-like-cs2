@@ -6,12 +6,12 @@ fun duel_accept_button(component0: Component, clock1: Int) {
 	}
 	if_settext("Accept", component0)
 	if_setcolour(~duel_colour_variation(0x33cc00), component0)
-	if_setonmouseover({
+	if_setonmouseover {
 		text_colour_swapper(event_com, ~duel_colour_variation(0x99ee00))
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		text_colour_swapper(event_com, ~duel_colour_variation(0x33cc00))
-	}, component0)
-	if_setontimer(null, component0)
+	}
+	if_setontimernull
 	return 
 }

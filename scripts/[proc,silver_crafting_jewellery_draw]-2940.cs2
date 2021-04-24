@@ -4,8 +4,8 @@ fun silver_crafting_jewellery_draw(component0: Component, obj1: Obj, lvl2: Int, 
 	cc_deleteall(component0)
 	if (inv_total(inv, obj3) <= 0) {
 		if_clearops(component0)
-		if_setonmouserepeat(null, component0)
-		if_setonmouseleave(null, component0)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
 		return 
 	}
 	val int6: Int = 0
@@ -50,12 +50,12 @@ fun silver_crafting_jewellery_draw(component0: Component, obj1: Obj, lvl2: Int, 
 		.cc_settext("")
 		cc_setcolour(0xff981f)
 		.cc_setcolour(0xff981f)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			silver_crafting_mouseeffect(^white, event_com, cc_getid, .cc_getid)
-		}, component0)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			silver_crafting_mouseeffect(0xff981f, event_com, cc_getid, .cc_getid)
-		}, component0)
+		}
 	} else {
 		if (map_members = ^false & oc_members(obj1) = ^true) {
 			.cc_settext("")
@@ -64,8 +64,8 @@ fun silver_crafting_jewellery_draw(component0: Component, obj1: Obj, lvl2: Int, 
 		}
 		cc_setcolour(^red)
 		.cc_setcolour(0x7f7f7f)
-		if_setonmouserepeat(null, component0)
-		if_setonmouseleave(null, component0)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
 	}
 	return 
 }

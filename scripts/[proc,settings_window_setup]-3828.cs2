@@ -16,18 +16,18 @@ fun settings_window_setup(component0: Component, component1: Component, componen
 		if_setposition(3, 6, ^setpos_abs_right, ^setpos_abs_top, component3)
 		graphic19 = "close_buttons,0"
 		if_setgraphic(graphic19, component3)
-		if_setonmouseleave({
+		if_setonmouseleave {
 			graphic_swapper(event_com, graphic19)
-		}, component3)
+		}
 		graphic19 = "close_buttons,1"
-		if_setonmouseover({
+		if_setonmouseover {
 			graphic_swapper(event_com, graphic19)
-		}, component3)
+		}
 	}
 	if_setop(1, "Close", component3)
-	if_setonop({
+	if_setonop {
 		opsound(event_opindex, 2)
-	}, component3)
+	}
 	if_setopkey(2, 13, 0, component3)
 	if_setop(2, "", component3)
 	cc_deleteall(component5)
@@ -46,12 +46,12 @@ fun settings_window_setup(component0: Component, component1: Component, componen
 	}
 	comsubid18 = ~v2_stone_button_filled(component5)
 	if (boolean21 = false) {
-		if_setonmouseover({
+		if_setonmouseover {
 			v2_stone_button_change_in(component5, 0)
-		}, component5)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			v2_stone_button_change_out(component5, 0)
-		}, component5)
+		}
 	}
 	cc_create(component5, ^iftype_text, comsubid18)
 	cc_setsize(10, 0, ^setsize_minus, ^setsize_minus)
@@ -65,17 +65,17 @@ fun settings_window_setup(component0: Component, component1: Component, componen
 	cc_settextshadow(true)
 	cc_setcolour(0xff981f)
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
-	if_setonop({
+	if_setonop {
 		script3829(component5, comsubid18, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component4)
-	}, component4)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component4)  {
 		script3830(VARBIT[9665], component5, comsubid18, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component4){VARP[2856]}
-	}, component4)
-	if_setontimer({
+	}
+	if_setontimer {
 		settings_window_resize(component0, component1, component9, component6, int20, 0, 0)
-	}, component1)
-	if_setontimer({
+	}
+	if_setontimer {
 		script3833(component0, component1, 0)
-	}, component0)
+	}
 	return 
 }

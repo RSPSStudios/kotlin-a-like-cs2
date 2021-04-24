@@ -10,11 +10,11 @@ fun script3310(component0: Component) {
 	cc_settextshadow(true)
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	cc_settext("<u=909090>Switch style</u>")
-	cc_setonmouserepeat({
+	cc_setonmouserepeat {
 		cc_colour_swapper(component0, 0, 0xb4b4b4)
-	})
-	cc_setonmouseleave({
+	}
+	cc_setonmouseleave {
 		cc_colour_swapper(component0, 0, 0x909090)
-	})
+	}
 	return 
 }

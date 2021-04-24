@@ -24,9 +24,9 @@ fun hidey_tabbuttons_draw(component0: Component, text0: String, component1: Comp
 		cc_settextfont(p12_full)
 		cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
 		cc_settext(text0)
-		if_setonmouseover(null, component0)
-		if_setonmouseleave(null, component0)
-		if_setonclick(null, component0)
+		if_setonmouseovernull
+		if_setonmouseleavenull
+		if_setonclicknull
 		return 
 	}
 	cc_create(component0, ^iftype_graphic, 0)
@@ -50,14 +50,14 @@ fun hidey_tabbuttons_draw(component0: Component, text0: String, component1: Comp
 	cc_settextfont(p12_full)
 	cc_settextalign(^settextalign_left, ^settextalign_centre, 0)
 	cc_settext(text0)
-	if_setonmouseover({
+	if_setonmouseover {
 		hidey_tabbuttons_hover(true, component0)
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		hidey_tabbuttons_hover(false, component0)
-	}, component0)
-	if_setonclick({
+	}
+	if_setonclick {
 		hidey_tabbuttons(component0, component2, component3, component4, component5, component6, component7)
-	}, component0)
+	}
 	return 
 }

@@ -12,14 +12,14 @@ fun script1161(obj0: Obj, num1: Int, component2: Component) {
 		cc_setop(5, "Deposit-All")
 		cc_setop(10, "Examine")
 		cc_setopbase("<col=ff9040>${oc_name(obj0)}</col>")
-		cc_setondragcomplete({
+		cc_setondragcomplete {
 			script1162(event_com, event_comsubid, event_dropsubid)
-		})
+		}
 	} else {
 		cc_settrans(255)
 		cc_setobject(obj_6512, 1)
 		cc_clearops
-		cc_setondragcomplete(null)
+		cc_setondragcompletenull
 	}
 	return 
 }

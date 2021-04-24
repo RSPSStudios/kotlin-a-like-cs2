@@ -20,9 +20,9 @@ fun script1524(int0: Int, int1: Int, int2: Int, text0: String) {
 	~raids_partydetails_setsort(-1)
 	~raids_partydetails_closestats
 	~script1537
-	if_setonvartransmit({
+	if_setonvartransmit(interface_507:11)  {
 		script1536{VARP[1430]}
-	}, interface_507:11)
+	}
 	~steelborder(interface_507:2, text0, 0)
 	val string1: String = ""
 	if (int0 = 2) {

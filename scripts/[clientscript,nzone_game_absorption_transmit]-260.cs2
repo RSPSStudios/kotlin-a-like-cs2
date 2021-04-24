@@ -1,8 +1,8 @@
 // 260 clientscript
 fun nzone_game_absorption_transmit(component0: Component, int1: Int) {
 
-	if_setontimer({
+	if_setontimer {
 		nzone_game_absorption_tickdown(component0, int1, VARBIT[3956], calc(clientclock + 8))
-	}, component0)
+	}
 	return 
 }

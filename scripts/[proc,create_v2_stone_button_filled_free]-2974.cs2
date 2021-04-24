@@ -40,17 +40,17 @@ fun create_v2_stone_button_filled_free(component0: Component, int1: Int, int2: I
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 20)
 	if (int9 = 0) {
 		if (~on_mobile = true) {
-			cc_setonmouseover({
+			cc_setonmouseover {
 				v2_stone_button_in_filled_free(component0, int1, colour6)
-			})
+			}
 		} else {
-			cc_setonmouseover({
+			cc_setonmouseover {
 				v2_stone_button_in_filled_free(component0, int1, colour7)
-			})
+			}
 		}
-		cc_setonmouseleave({
+		cc_setonmouseleave {
 			v2_stone_button_filled_free(component0, int1, colour6)
-		})
+		}
 	}
 	return calc(int1 + 10)
 }

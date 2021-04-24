@@ -10,13 +10,13 @@ fun script3934(component0: Component, component1: Component, component2: Compone
 	val string0: String = "Mute Sound Effects"
 	val string1: String = "Unmute Sound Effects"
 	~settings_create_icon(int8, 31, component2, component1, int4, graphic7, component0, string0, string1, component3)
-	if_setonvartransmit({
+	if_setonvartransmit(component2)  {
 		script3939(31, component2, component1, int4, graphic7, component0, string0, string1, component3){VARP[169]}
-	}, component2)
+	}
 	if_setnoclickthrough(true, component2)
-	if_setonclick({
+	if_setonclick {
 		opsound(0, 0)
-	}, component2)
+	}
 	while (int5 <= int4) {
 		cc_create(component1, ^iftype_rectangle, int5)
 		cc_setop(1, "Adjust Sound Effect Volume")
@@ -25,9 +25,9 @@ fun script3934(component0: Component, component1: Component, component2: Compone
 		cc_setfill(true)
 		cc_setcolour(^white)
 		cc_settrans(255)
-		cc_setonop({
+		cc_setonop {
 			script3940(31, int5, component2, component1, int4, graphic7, component0, string0, string1, component3)
-		})
+		}
 		int5 = calc(int5 + 1)
 	}
 	~script3941(int8, component2, component1, int4)

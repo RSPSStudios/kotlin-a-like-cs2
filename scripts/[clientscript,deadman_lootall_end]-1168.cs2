@@ -5,6 +5,6 @@ fun deadman_lootall_end(component0: Component, graphic1: Graphic, clock2: Int) {
 		return 
 	}
 	if_setgraphic(graphic1, component0)
-	if_setontimer(null, component0)
+	if_setontimernull
 	return 
 }

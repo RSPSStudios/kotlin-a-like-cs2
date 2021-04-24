@@ -21,17 +21,17 @@ fun script3397(y0: Int) {
 	cc_setsize(16, 16, ^setsize_abs, ^setsize_abs)
 	cc_setposition(0, 0, ^setpos_abs_right, ^setpos_abs_centre)
 	cc_setgraphic(graphic1)
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		script3398
-	}, interface_162:55)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		script3399
-	}, interface_162:55)
-	if_setonop({
+	}
+	if_setonop {
 		script3400
-	}, interface_162:55)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(interface_162:55)  {
 		script3401(VARBIT[10295]){VARP[1795]}
-	}, interface_162:55)
+	}
 	return 
 }

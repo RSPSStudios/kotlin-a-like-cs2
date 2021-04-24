@@ -9,12 +9,12 @@ fun script3656(component0: Component, graphic1: Graphic, graphic2: Graphic, x3: 
 	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
 	cc_setposition(0, 0, ^setpos_abs_centre, ^setpos_abs_centre)
 	if (~on_mobile = false) {
-		cc_setonmouserepeat({
+		cc_setonmouserepeat {
 			script3440(event_com, event_comsubid, graphic2, null)
-		})
-		cc_setonmouseleave({
+		}
+		cc_setonmouseleave {
 			script3440(event_com, event_comsubid, graphic1, null)
-		})
+		}
 	}
 	if_setop(1, op0, component0)
 	return 

@@ -64,8 +64,8 @@ fun script2323(int0: Int, int1: Int, int2: Int) {
 	}
 	}
 	if_setsize(0, 0, ^setsize_minus, ^setsize_minus, interface_50:13)
-	if_setontimer({
+	if_setontimer {
 		tob_partydetails_autorefresh(event_com, interface_50:13, interface_50:8, string0, clientclock)
-	}, interface_50:0)
+	}
 	return 
 }

@@ -47,11 +47,11 @@ fun script4053(obj0: Obj, num1: Int, comsubid2: Int) {
 	}
 	cc_setop(10, "Examine")
 	cc_setopbase("<col=ff9040>${oc_name(obj0)}</col>")
-	cc_setonop({
+	cc_setonop {
 		script4055(event_opindex, event_com, event_comsubid, trans4, trans3)
-	})
-	cc_setondragcomplete({
+	}
+	cc_setondragcomplete {
 		script4057(event_com, event_comsubid, event_drop, event_dropsubid, comsubid2)
-	})
+	}
 	return 
 }

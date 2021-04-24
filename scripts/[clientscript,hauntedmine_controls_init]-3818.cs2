@@ -2,8 +2,8 @@
 fun hauntedmine_controls_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component, component6: Component, component7: Component, component8: Component, component9: Component, component10: Component, component11: Component, component12: Component, component13: Component, component14: Component, component15: Component, component16: Component, component17: Component, component18: Component) {
 
 	~hauntedmine_controls_update(component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		hauntedmine_controls_update(component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component15, component16, component17, component18){VARP[383]}
-	}, component0)
+	}
 	return 
 }

@@ -10,9 +10,9 @@ fun kourend_sidepanel_hudtoggle(component0: Component, component1: Component) {
 		cc_setgraphic("options_radio_buttons,1")
 		if_setop(1, "Enable", component0)
 	}
-	.cc_setonmouserepeat({
+	.cc_setonmouserepeat {
 		tooltip_mouserepeat(event_com, event_comsubid, component1, string0, 25, 190)
-	})
+	}
 	VARCINT[2] = 0
 	return 
 }

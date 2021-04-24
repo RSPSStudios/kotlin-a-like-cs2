@@ -5,8 +5,8 @@ fun tob_hud_setportal() {
 	cc_setmodel(model_35737)
 	cc_setmodelangle(0, 130, 0, 0, 0, 4000)
 	cc_setmodelanim(seq_7301)
-	cc_setontimer({
+	cc_setontimer {
 		tob_hud_playportal(event_comsubid, clientclock)
-	})
+	}
 	return 
 }

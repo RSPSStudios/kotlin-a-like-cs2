@@ -4,87 +4,87 @@ fun settings_toggle_choose_transmit(component0: Component, int1: Int, boolean2: 
 	when (int3): Int {
 		13, 54, 9, 11, 2, 46 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				settings_toggle_transmit(component0, int1, boolean2, int3, trans5, struct4){VARP[1055], VARP[2855]}
-			})
+			}
 		}
 		33 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				settings_toggle_transmit(component0, int1, boolean2, int3, trans5, struct4){VARP[19]}
-			})
+			}
 		}
 		38, 59 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				settings_toggle_transmit(component0, int1, boolean2, int3, trans5, struct4){VARP[427]}
-			})
+			}
 		}
 		40 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				settings_toggle_transmit(component0, int1, boolean2, int3, trans5, struct4){VARP[1053], VARP[427]}
-			})
+			}
 		}
 		42 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				settings_toggle_transmit(component0, int1, boolean2, int3, trans5, struct4){VARP[284]}
-			})
+			}
 		}
 		57 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				settings_toggle_transmit(component0, int1, boolean2, int3, trans5, struct4){VARP[1224]}
-			})
+			}
 		}
 		36 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				settings_toggle_transmit(component0, int1, boolean2, int3, trans5, struct4){VARP[287], VARP[1055]}
-			})
+			}
 		}
 		48 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				settings_toggle_transmit(component0, int1, boolean2, int3, trans5, struct4){VARP[170]}
-			})
+			}
 		}
 		51 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				settings_toggle_transmit(component0, int1, boolean2, int3, trans5, struct4){VARP[1055]}
-			})
+			}
 		}
 		65 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				settings_toggle_transmit(component0, int1, boolean2, int3, trans5, struct4){VARP[1348]}
-			})
+			}
 		}
 		60, 64, 63, 62, 61 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				settings_toggle_transmit(component0, int1, boolean2, int3, trans5, struct4){VARP[1429]}
-			})
+			}
 		}
 		67, 68, 69, 70, 71, 72, 73 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				settings_toggle_transmit(component0, int1, boolean2, int3, trans5, struct4){VARP[2768]}
-			})
+			}
 		}
 		84 -> {
 		
-			cc_setonvartransmit({
+			cc_setonvartransmit {
 				settings_toggle_transmit(component0, int1, boolean2, int3, trans5, struct4){VARP[1795]}
-			})
+			}
 		}
 	else -> {
 	
-		cc_setonvartransmit({
+		cc_setonvartransmit {
 			settings_toggle_transmit(component0, int1, boolean2, int3, trans5, struct4){VARP[2855]}
-		})
+		}
 	}
 	}
 	return 

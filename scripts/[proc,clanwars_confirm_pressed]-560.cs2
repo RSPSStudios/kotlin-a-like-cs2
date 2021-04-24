@@ -9,7 +9,7 @@ fun clanwars_confirm_pressed(component0: Component, text0: String) {
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 0)
 	cc_settextshadow(true)
 	cc_settext(text0)
-	if_setonmouserepeat(null, component0)
-	if_setonmouseleave(null, component0)
+	if_setonmouserepeatnull
+	if_setonmouseleavenull
 	return 
 }

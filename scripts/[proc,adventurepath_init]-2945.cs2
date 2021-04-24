@@ -32,11 +32,11 @@ fun adventurepath_init(component0: Component, component1: Component, component2:
 		int33 = calc(int33 - 1)
 	}
 	int30 = calc(int30 / 2 * (int33 + 1))
-	if_setonvartransmit({
+	if_setonvartransmit(component16)  {
 		adventurepath_set_info_transmit(component7, component8, component9, component10, component11, component12, component3, component0, component4, component13, component14, component18, component17, component19, component20, component21, component22, component23, component24, component25, component26){VARP[2358], VARP[2357]}
-	}, component16)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component15)  {
 		adventurepath_task_init_transmit(component0, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, component12, component13, component14, component18, component17, component19, component20, component21, component22, component23, component24, component25, component26){VARP[2358], VARP[2357]}
-	}, component15)
+	}
 	return int30
 }

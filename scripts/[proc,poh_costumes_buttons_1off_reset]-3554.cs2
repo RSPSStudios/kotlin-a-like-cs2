@@ -2,9 +2,9 @@
 fun poh_costumes_buttons_1off_reset(component0: Component, graphic1: Graphic, obj2: Obj) {
 
 	~poh_costumes_buttons_draw(component0, graphic1, obj2, false)
-	if_setontimer(null, component0)
-	if_setonop({
+	if_setontimernull
+	if_setonop {
 		poh_costumes_buttons_1off_op(event_opindex, component0, graphic1, obj2)
-	}, component0)
+	}
 	return 
 }

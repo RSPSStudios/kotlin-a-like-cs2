@@ -2,15 +2,15 @@
 fun death_office_resetquantity(string0: String, component0: Component) {
 
 	~death_office_drawquantity(string0, component0, false, false)
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		death_office_drawquantity(string0, component0, true, false)
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		death_office_drawquantity(string0, component0, false, false)
-	}, component0)
-	if_setonop({
+	}
+	if_setonop {
 		death_office_opquantity(event_opindex, string0, component0)
-	}, component0)
-	if_setontimer(null, component0)
+	}
+	if_setontimernull
 	return 
 }

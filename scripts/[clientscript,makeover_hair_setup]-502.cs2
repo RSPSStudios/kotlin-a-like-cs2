@@ -41,9 +41,9 @@ fun makeover_hair_setup(component0: Component, component1: Component, component2
 		}
 		cc_setgraphic("overlay_multiway")
 		~makeover_indicator(int3, 3)
-		cc_setonvartransmit({
+		cc_setonvartransmit {
 			makeover_indicator(event_com, event_comsubid, int3, 3){VARP[263]}
-		})
+		}
 		int3 = calc(int3 + 1)
 	}
 	return 

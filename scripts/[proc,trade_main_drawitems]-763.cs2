@@ -76,8 +76,8 @@ fun trade_main_drawitems(size0: Int, int1: Int, component2: Component, component
 			} else {
 				cc_sethide(true)
 				cc_clearops
-				cc_setonmouserepeat(null)
-				cc_setonmouseleave(null)
+				cc_setonmouserepeatnull
+				cc_setonmouseleavenull
 			}
 			index12, int11 = calc(size15 % 4), calc(size15 / 4)
 			int13 = int0[index12]
@@ -134,8 +134,8 @@ fun trade_main_drawitems(size0: Int, int1: Int, component2: Component, component
 			} else {
 				cc_sethide(true)
 				cc_clearops
-				cc_setonmouserepeat(null)
-				cc_setonmouseleave(null)
+				cc_setonmouserepeatnull
+				cc_setonmouseleavenull
 			}
 			index12, int11 = calc(size15 % 4), calc(size15 / 4)
 			int13 = int0[index12]

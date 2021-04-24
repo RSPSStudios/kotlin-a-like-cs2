@@ -22,13 +22,13 @@ fun script3706(inv0: Inv) {
 			if (inv0 = inv) {
 				if (obj2 = extradimensional_bag_25106 | obj2 = extradimensional_bag_25108) {
 					cc_settrans(150)
-					cc_setonmouserepeat(null)
-					cc_setonmouseleave(null)
+					cc_setonmouserepeatnull
+					cc_setonmouseleavenull
 				} else {
 					cc_settrans(0)
-					cc_setonop({
+					cc_setonop {
 						cc_settrans_temporarily(event_com, event_comsubid, 150, 0)
-					})
+					}
 				}
 				cc_setop(1, "Store-1")
 				cc_setop(2, "Store-5")
@@ -37,9 +37,9 @@ fun script3706(inv0: Inv) {
 				cc_setop(9, "Examine")
 			} else {
 				cc_settrans(0)
-				cc_setonop({
+				cc_setonop {
 					cc_settrans_temporarily(event_com, event_comsubid, 150, 0)
-				})
+				}
 				cc_setop(5, "Withdraw-1")
 				cc_setop(6, "Withdraw-5")
 				cc_setop(7, "Withdraw-All")

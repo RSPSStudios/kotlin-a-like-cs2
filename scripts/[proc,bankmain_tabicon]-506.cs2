@@ -13,9 +13,9 @@ fun bankmain_tabicon(component0: Component, component1: Component, component2: C
 			cc_settrans(20)
 			cc_setop(1, "View all items")
 			cc_setop(7, "Remove placeholders")
-			cc_setonop({
+			cc_setonop {
 				bankmain_switchtab(component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, event_opindex, int12, component20, component21, component22, component23, component24)
-			})
+			}
 			~bankmain_tabicon_highlight(int12)
 		} else if (int13 > 0) {
 			if (VARBIT[4170] = 1) {
@@ -28,9 +28,9 @@ fun bankmain_tabicon(component0: Component, component1: Component, component2: C
 				cc_settextshadow(true)
 				cc_setcolour(0xe4d8a2)
 				cc_settext(text0)
-				cc_setondragcomplete({
+				cc_setondragcomplete {
 					bankmain_dragtab_text(event_com, event_comsubid, event_drop, event_dropsubid, flags19)
-				})
+				}
 				~script507(component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, int12, component20, component21, component22, component23, component24)
 				~bankmain_tabicon_highlight(int12)
 			} else if (VARBIT[4170] = 2) {
@@ -43,9 +43,9 @@ fun bankmain_tabicon(component0: Component, component1: Component, component2: C
 				cc_settextshadow(true)
 				cc_setcolour(0xe4d8a2)
 				cc_settext(text0)
-				cc_setondragcomplete({
+				cc_setondragcomplete {
 					bankmain_dragtab_text(event_com, event_comsubid, event_drop, event_dropsubid, flags19)
-				})
+				}
 				~script507(component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, int12, component20, component21, component22, component23, component24)
 				~bankmain_tabicon_highlight(int12)
 			} else {
@@ -59,21 +59,21 @@ fun bankmain_tabicon(component0: Component, component1: Component, component2: C
 					cc_setobject_nonum(obj25, inv_getnum(bank, int14))
 					if (oc_unplaceholder(obj25) ! obj25) {
 						cc_settrans(120)
-						cc_setondragcomplete({
+						cc_setondragcomplete {
 							bankmain_dragtab_graphic(event_com, event_comsubid, event_drop, event_dropsubid, flags19, 120)
-						})
+						}
 					} else {
 						cc_settrans(0)
-						cc_setondragcomplete({
+						cc_setondragcomplete {
 							bankmain_dragtab_graphic(event_com, event_comsubid, event_drop, event_dropsubid, flags19, 0)
-						})
+						}
 					}
 				} else {
 					cc_setobject_nonum(obj_6512, 1)
 					cc_settrans(0)
-					cc_setondragcomplete({
+					cc_setondragcomplete {
 						bankmain_dragtab_graphic(event_com, event_comsubid, event_drop, event_dropsubid, flags19, 0)
-					})
+					}
 				}
 				~script507(component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, component10, component11, int12, component20, component21, component22, component23, component24)
 				~bankmain_tabicon_highlight(int12)
@@ -85,9 +85,9 @@ fun bankmain_tabicon(component0: Component, component1: Component, component2: C
 			cc_setgraphic("banktab_icons,1")
 			cc_settrans(20)
 			cc_setop(1, "New tab")
-			cc_setonop({
+			cc_setonop {
 				opsound(event_opindex, 1)
-			})
+			}
 			cc_setdragdeadzone(512)
 			cc_setdragdeadtime(^max_32bit_int)
 			.cc_setgraphic("banktabs,3")

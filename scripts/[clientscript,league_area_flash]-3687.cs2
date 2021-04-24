@@ -15,8 +15,8 @@ fun league_area_flash(component0: Component, component1: Component, boolean2: Bo
 	} else {
 		int3 = calc(int3 - 1)
 	}
-	if_setontimer({
+	if_setontimer {
 		league_area_flash(component0, component1, boolean2, int3)
-	}, component0)
+	}
 	return 
 }

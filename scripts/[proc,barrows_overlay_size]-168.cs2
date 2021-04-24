@@ -74,8 +74,8 @@ fun barrows_overlay_size(component0: Component, component1: Component, component
 	if_sethide(true, component5)
 	if_sethide(true, component6)
 	if_sethide(true, component7)
-	if_setontimer({
+	if_setontimer {
 		barrows_overlay_size(component0, component1, component2, component3, component4, component5, component6, component7, component8, component9, int21)
-	}, component0)
+	}
 	return 
 }

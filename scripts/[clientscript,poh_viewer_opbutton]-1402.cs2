@@ -13,17 +13,17 @@ fun poh_viewer_opbutton(opindex0: Int, component1: Component, component2: Compon
 		VARBIT[5331] = calc((VARBIT[5331] + 1) % 4)
 		if (cc_find(component1, 0) = ^true) {
 			cc_setgraphic("miscgraphics3,1")
-			cc_setontimer({
+			cc_setontimer {
 				poh_viewer_rotate_timeout(event_com, event_comsubid, calc(clientclock + 10))
-			})
+			}
 		}
 	} else if (component1 = component12) {
 		VARBIT[5331] = calc((VARBIT[5331] + 3) % 4)
 		if (cc_find(component1, 0) = ^true) {
 			cc_setgraphic("miscgraphics3,1")
-			cc_setontimer({
+			cc_setontimer {
 				poh_viewer_rotate_timeout(event_com, event_comsubid, calc(clientclock + 10))
-			})
+			}
 		}
 	} else if (component1 = component13) {
 		VARBIT[5333] = 0

@@ -45,12 +45,12 @@ fun script2273(drop0: Component, component1: Component, component2: Component, c
 			cc_setcolour(0xff981f)
 			cc_setdragdeadtime(4)
 			cc_setdragdeadzone(5)
-			cc_setondragcomplete({
+			cc_setondragcomplete {
 				script2361(drop0, component1, component2, component3, component4, component5, component6, struct11, event_drop, event_dropsubid, int8)
-			})
-			cc_setondrag({
+			}
+			cc_setondrag {
 				telenexus_dragscroll(component1, event_com, event_comsubid, event_mousex, event_mousey, component2, 0, calc(18 + int9))
-			})
+			}
 			int14 = calc(int14 + 1)
 			.cc_create(component4, ^iftype_graphic, int13)
 			if (cc_gethide = false) {

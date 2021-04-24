@@ -39,18 +39,18 @@ fun script2271(component0: Component, component1: Component, component2: Compone
 			cc_settext("    ${struct_param(struct18, param_660)}")
 			cc_setopbase("Show cost")
 			cc_setop(1, struct_param(struct18, param_660))
-			cc_setonop({
+			cc_setonop {
 				telenexus_show_cost(component7, struct18, cc_gety, component5, count15)
-			})
+			}
 			int21, string0 = ~script2664(struct18)
-			cc_setondrag({
+			cc_setondrag {
 				telenexus_hide_cost(component7, component5, 0)
-			})
+			}
 			if (int21 = 1) {
 				int19 = calc(int19 + 1)
-				cc_setondragcomplete({
+				cc_setondragcomplete {
 					script2360(component0, component1, component2, component3, component4, component5, component6, component7, struct18, event_drop, int22, component8, component9, component10, component11, component12, component13)
-				})
+				}
 				cc_setcolour(0xff981f)
 				cc_setdragdeadtime(5)
 				cc_setdragdeadzone(5)

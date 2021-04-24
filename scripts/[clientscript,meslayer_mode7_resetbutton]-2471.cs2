@@ -5,8 +5,8 @@ fun meslayer_mode7_resetbutton(component0: Component, string0: String, string1: 
 		return 
 	}
 	~meslayer_button_draw(component0, string0, 0)
-	if_setonclick({
+	if_setonclick {
 		meslayer_mode7_button(event_com, string0, string1)
-	}, component0)
+	}
 	return 
 }

@@ -41,12 +41,12 @@ fun wom_item_display(component0: Component, component1: Component, int2: Int, in
 				cc_setopbase("<col=ff9040>${oc_name(namedobj11)}</col>")
 				cc_setdragdeadzone(5)
 				cc_setdragdeadtime(5)
-				cc_setonop({
+				cc_setonop {
 					wom_item_hide(event_comsubid, component0, event_opindex, component1)
-				})
-				cc_setondragcomplete({
+				}
+				cc_setondragcomplete {
 					wom_item_move(event_comsubid, event_com, event_drop)
-				})
+				}
 				int5 = calc(int5 + 3 * int12)
 				if (int5 >= calc(if_getwidth(component0) - int12)) {
 					int6 = calc(int6 + 3 * int13)

@@ -5,12 +5,12 @@ fun xpreward_confirm(int0: Int, component1: Component, component2: Component) {
 	if (cc_find(component2, 0) = ^true) {
 		cc_setcolour(^white)
 	}
-	if_setonmouserepeat(null, component2)
-	if_setonmouseleave(null, component2)
-	if_setonop(null, component2)
-	if_setontimer({
+	if_setonmouserepeatnull
+	if_setonmouseleavenull
+	if_setonopnull
+	if_setontimer {
 		xpreward_update(calc(clientclock + 20), int0, component1, component2)
-	}, component1)
+	}
 	if (cc_find(component1, calc(int0 - 1)) = ^true) {
 		cc_resume_pausebutton
 	}

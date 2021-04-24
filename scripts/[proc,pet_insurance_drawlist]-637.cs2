@@ -22,9 +22,9 @@ fun pet_insurance_drawlist(component0: Component, int1: Int, component2: Compone
 			cc_setoutline(1)
 			if (component0 = interface_148:14) {
 				cc_setop(1, "Reclaim")
-				cc_setonop({
+				cc_setonop {
 					pet_insurance_op(event_opindex, event_com, event_comsubid)
-				})
+				}
 			}
 			cc_setop(10, "Examine")
 			cc_setopbase("<col=ff9040>${oc_name(namedobj9)}</col>")

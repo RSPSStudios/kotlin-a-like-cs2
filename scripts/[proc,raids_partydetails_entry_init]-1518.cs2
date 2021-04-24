@@ -2,11 +2,11 @@
 fun raids_partydetails_entry_init(int0: Int, int1: Int, int2: Int, boolean3: Boolean) {
 
 	~raids_partydetails_entry_setup(int0, int1, int2, boolean3)
-	cc_setonclantransmit({
+	cc_setonclantransmit {
 		raids_partydetails_entry_setup(event_com, event_comsubid, int0, int1, int2, boolean3)
-	})
-	cc_setonvartransmit({
+	}
+	cc_setonvartransmit {
 		raids_partydetails_entry_setup(event_com, event_comsubid, int0, int1, int2, boolean3){VARP[1430]}
-	})
+	}
 	return 
 }

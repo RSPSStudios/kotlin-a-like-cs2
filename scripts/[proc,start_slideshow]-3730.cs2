@@ -12,14 +12,14 @@ fun start_slideshow(component0: Component, enum1: Enum, int2: Int, int3: Int, in
 	cc_create(component0, ^iftype_graphic, 2)
 	cc_setsize(0, 0, ^setsize_minus, ^setsize_minus)
 	cc_settrans(255)
-	if_setontimer({
+	if_setontimer {
 		slideshow_timer(component0, enum1, int2, int3, clientclock)
-	}, component0)
+	}
 	if (int4 = 1) {
 		if_setop(1, "View Next Image", component0)
-		if_setonop({
+		if_setonop {
 			slideshow_skip(component0, enum1, int2, int3)
-		}, component0)
+		}
 	}
 	return 
 }

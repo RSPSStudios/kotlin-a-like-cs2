@@ -6,11 +6,11 @@ fun script2693(opindex0: Int) {
 	}
 	sound_synth(synth_2266, 1, 0)
 	~script2692(true, true)
-	if_setonmouserepeat(null, interface_100:33)
-	if_setonmouseleave(null, interface_100:33)
-	if_setonop(null, interface_100:33)
-	if_setontimer({
+	if_setonmouserepeatnull
+	if_setonmouseleavenull
+	if_setonopnull
+	if_setontimer {
 		script2694(calc(clientclock + 40))
-	}, interface_100:33)
+	}
 	return 
 }

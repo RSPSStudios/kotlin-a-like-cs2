@@ -15,8 +15,8 @@ fun script1489(component0: Component, component1: Component, component2: Compone
 	if_setsize(500, height9, ^setsize_abs, ^setsize_abs, component1)
 	~scrollbar_vertical_rebuild(component3, component2)
 	~scrollbar_resize(component3, component2, VARCINT[63])
-	if_setontimer({
+	if_setontimer {
 		script1488(component0, component1, component2, component3, width6, height7)
-	}, component0)
+	}
 	return 
 }

@@ -2,8 +2,8 @@
 fun logout_layout_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component) {
 
 	~logout_layout_update(component1, component2, component3, component4, component5)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		logout_layout_update(component1, component2, component3, component4, component5){VARP[1706]}
-	}, component0)
+	}
 	return 
 }

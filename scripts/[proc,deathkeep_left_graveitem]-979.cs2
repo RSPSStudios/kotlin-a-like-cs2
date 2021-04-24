@@ -45,9 +45,9 @@ fun deathkeep_left_graveitem(obj0: Obj, num1: Int, obj2: Obj, int3: Int, int4: I
 		}
 		cc_setoutline(1)
 	}
-	cc_setonop({
+	cc_setonop {
 		deathkeep_opitem(event_com, event_comsubid, mes0)
-	})
+	}
 	if (calc(^max_32bit_int / num1) < int3) {
 		return calc(int8 + 1), int9, int4
 	}

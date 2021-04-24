@@ -14,15 +14,15 @@ fun ge_offers_init(component0: Component, component1: Component, component2: Com
 	~script816(component9)
 	~ge_offers_setup_init(component10, component11, component12)
 	~ge_offers_switchpanel(component1, comsubid14, component3, component4, component6, component10, component13)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		ge_offers_switchpanel(component1, comsubid14, component3, component4, component6, component10, component13){VARP[375]}
-	}, component0)
-	if_setonstocktransmit({
+	}
+	if_setonstocktransmit {
 		ge_offers_switchpanel(component1, comsubid14, component3, component4, component6, component10, component13)
-	}, component0)
-	if_setonop({
+	}
+	if_setonop {
 		script805(event_opindex, -1, -1, component1, comsubid14, component3, component4, component6, component10, component13)
-	}, component3)
+	}
 	~ge_offers_bigbutton(component2, "History", 0)
 	return 
 }

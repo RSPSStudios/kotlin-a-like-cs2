@@ -14,8 +14,8 @@ fun league_border_pulse(component0: Component, boolean1: Boolean, int2: Int) {
 	} else {
 		int2 = calc(int2 - 1)
 	}
-	if_setontimer({
+	if_setontimer {
 		league_border_pulse(component0, boolean1, int2)
-	}, component0)
+	}
 	return 
 }

@@ -9,12 +9,12 @@ fun script3294(int0: Int) {
 		if_setgraphic(graphic1, interface_33:57)
 	}
 	if (~on_mobile = false) {
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			settrans(interface_33:57, 127)
-		}, interface_33:55)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(interface_33:57, 0)
-		}, interface_33:55)
+		}
 	}
 	return 
 }

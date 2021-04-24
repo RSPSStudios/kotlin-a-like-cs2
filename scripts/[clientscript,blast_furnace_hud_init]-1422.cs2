@@ -22,11 +22,11 @@ fun blast_furnace_hud_init(component0: Component, component1: Component, compone
 	.cc_setgraphicshadow(0x333333)
 	.cc_setoutline(1)
 	~blast_furnace_hud_update(component3)
-	if_setonsubchange({
+	if_setonsubchange {
 		blast_furnace_hud_update(component3, .cc_getid)
-	}, component0)
-	if_setonvartransmit({
+	}
+	if_setonvartransmit(component0)  {
 		blast_furnace_hud_update(component3, .cc_getid){VARP[795]}
-	}, component0)
+	}
 	return 
 }

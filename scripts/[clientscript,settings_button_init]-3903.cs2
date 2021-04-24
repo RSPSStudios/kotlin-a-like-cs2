@@ -11,15 +11,15 @@ fun settings_button_init(component0: Component, component1: Component) {
 	cc_setcolour(0xff981f)
 	cc_settextalign(^settextalign_centre, ^settextalign_centre, 14)
 	if (~on_mobile = false) {
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			settings_button_repeat(component0, component1)
-		}, component0)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settings_button_leave(component0, component1)
-		}, component0)
+		}
 	}
-	if_setonop({
+	if_setonop {
 		settings_side_op_sound
-	}, component0)
+	}
 	return 
 }

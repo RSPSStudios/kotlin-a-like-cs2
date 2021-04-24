@@ -17,8 +17,8 @@ fun script939(component0: Component, width1: Int, height2: Int, component3: Comp
 	} else {
 		if_setsize(0, 0, ^setsize_minus, ^setsize_minus, component3)
 	}
-	if_setontimer({
+	if_setontimer {
 		script938(component0, width4, height5, component3)
-	}, component0)
+	}
 	return 
 }

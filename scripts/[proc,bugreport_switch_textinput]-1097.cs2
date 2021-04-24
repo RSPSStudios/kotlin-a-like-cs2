@@ -21,12 +21,12 @@ fun bugreport_switch_textinput(component0: Component, component1: Component, com
 		cc_setsize(0, height8, ^setsize_minus, ^setsize_abs)
 		.cc_setsize(0, height8, ^setsize_minus, ^setsize_abs)
 		cc_settrans(255)
-		if_setonmouseover({
+		if_setonmouseover {
 			cc_settrans(component2, cc_getid, 100, null)
-		}, component2)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			cc_settrans(component2, cc_getid, 255, null)
-		}, component2)
+		}
 		.cc_settext(string1)
 	}
 	if (height8 > height9) {
@@ -35,9 +35,9 @@ fun bugreport_switch_textinput(component0: Component, component1: Component, com
 		if_setscrollsize(0, 0, component2)
 	}
 	~scrollbar_resize(component3, component2, if_getscrolly(component2))
-	if_setonclick({
+	if_setonclick {
 		bugreport_switch_textinput(component2, component3, component0, component1, component4, component5, component6, component7)
-	}, component2)
+	}
 	string0 = append(string0, "<col=ffffff>*</col>")
 	height8 = calc(paraheight(string0, if_getwidth(component0), p12_full) * 12 + 5)
 	height9 = if_getheight(component0)
@@ -48,8 +48,8 @@ fun bugreport_switch_textinput(component0: Component, component1: Component, com
 		cc_setsize(0, height8, ^setsize_minus, ^setsize_abs)
 		.cc_setsize(0, height8, ^setsize_minus, ^setsize_abs)
 		cc_settrans(0)
-		if_setonmouseover(null, component0)
-		if_setonmouseleave(null, component0)
+		if_setonmouseovernull
+		if_setonmouseleavenull
 		.cc_settext(string0)
 	}
 	if (height8 > height9) {
@@ -58,9 +58,9 @@ fun bugreport_switch_textinput(component0: Component, component1: Component, com
 		if_setscrollsize(0, 0, component0)
 	}
 	~scrollbar_resize(component1, component0, height8)
-	if_setonclick(null, component0)
-	if_setonkey({
+	if_setonclicknull
+	if_setonkey {
 		bugreport_keypress(event_key, event_keychar, component0, component1, component4, component5, component6, component7)
-	}, component4)
+	}
 	return 
 }

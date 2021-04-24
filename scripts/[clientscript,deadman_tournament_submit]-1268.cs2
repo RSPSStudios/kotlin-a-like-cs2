@@ -7,7 +7,7 @@ fun deadman_tournament_submit(clock0: Int, string0: String, component1: Componen
 	resume_namedialog(string0)
 	if (cc_find(component1, comsubid2) = ^true) {
 		cc_setcolour(^white)
-		cc_setontimer(null)
+		cc_setontimernull
 	}
 	return 
 }

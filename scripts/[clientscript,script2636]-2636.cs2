@@ -1,9 +1,9 @@
 // 2636 clientscript
 fun script2636(component0: Component) {
 
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		script2683{VARP[355], VARP[356]}
-	}, component0)
+	}
 	~script2724
 	return 
 }

@@ -2,20 +2,20 @@
 fun anma_reward_init(component0: Component, component1: Component) {
 
 	~v2_stone_button_out_filled(component1)
-	if_setonmouseover({
+	if_setonmouseover {
 		v2_stone_button_in_filled(component1)
-	}, component0)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		v2_stone_button_out_filled(component1)
-	}, component0)
-	if_setonhold({
+	}
+	if_setonhold {
 		v2_stone_button_in_filled(component1)
-	}, component0)
-	if_setonrelease({
+	}
+	if_setonrelease {
 		v2_stone_button_out_filled(component1)
-	}, component0)
-	if_setonop({
+	}
+	if_setonop {
 		opsound(event_opindex, 14)
-	}, component0)
+	}
 	return 
 }

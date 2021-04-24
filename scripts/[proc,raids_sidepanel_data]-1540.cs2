@@ -28,25 +28,25 @@ fun raids_sidepanel_data(component0: Component, component1: Component) {
 		if_setsize(calc(parawidth(string0, 190, p12_full) + 20), if_getheight(component1), ^setsize_abs, ^setsize_abs, component1)
 		if_sethide(false, component1)
 		~raids_sidepanel_drawbutton(false, string0, component1)
-		if_setonmouserepeat({
+		if_setonmouserepeat {
 			raids_sidepanel_drawbutton(true, string0, component1)
-		}, component1)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			raids_sidepanel_drawbutton(false, string0, component1)
-		}, component1)
-		if_setonop({
+		}
+		if_setonop {
 			raids_sidepanel_opbutton(event_opindex, string0, component1)
-		}, component1)
-		if_setontimer(null, component1)
+		}
+		if_setontimernull
 		if_setop(1, string0, component1)
 	} else {
 		if_sethide(true, component1)
 		cc_deleteall(component1)
 		if_clearops(component1)
-		if_setonmouserepeat(null, component1)
-		if_setonmouseleave(null, component1)
-		if_setonop(null, component1)
-		if_setontimer(null, component1)
+		if_setonmouserepeatnull
+		if_setonmouseleavenull
+		if_setonopnull
+		if_setontimernull
 	}
 	return 
 }

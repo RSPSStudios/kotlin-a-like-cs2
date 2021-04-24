@@ -15,19 +15,19 @@ fun script3431(component0: Component) {
 		cc_setgraphic("graphic_2540")
 		cc_settrans(0)
 		cc_setop(1, "Toggle")
-		cc_setonop({
+		cc_setonop {
 			script3432(int1, event_com)
-		})
-		cc_setonvartransmit({
+		}
+		cc_setonvartransmit {
 			script3434(int1, event_com){VARP[2715], VARP[2716]}
-		})
+		}
 		if (~on_mobile = false) {
-			cc_setonmouserepeat({
+			cc_setonmouserepeat {
 				script3433(int1, event_com, true)
-			})
-			cc_setonmouseleave({
+			}
+			cc_setonmouseleave {
 				script3433(int1, event_com, false)
-			})
+			}
 		}
 		int4 = ~script3439(int1)
 		if (int4 = 0) {

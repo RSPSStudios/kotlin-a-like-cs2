@@ -49,8 +49,8 @@ fun highlight_screen(component0: Component, int1: Int, int2: Int, int3: Int, int
 	} else {
 		if_sethide(false, interface_664:7)
 	}
-	if_setontimer({
+	if_setontimer {
 		highlight_resize(component0, int1, int2, int3, int4, setposh5, setposv6, int7, height10, boolean9)
-	}, component0)
+	}
 	return 
 }

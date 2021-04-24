@@ -4,8 +4,8 @@ fun ge_pricechecker_init(component0: Component) {
 	cc_deleteall(interface_464:3)
 	~scrollbar_vertical(interface_464:3, interface_464:2, "scrollbar_dragger_v2,3", "scrollbar_dragger_v2,0", "scrollbar_dragger_v2,1", "scrollbar_dragger_v2,2", "scrollbar_v2,0", "scrollbar_v2,1")
 	~ge_pricechecker_redraw
-	if_setoninvtransmit({
+	if_setoninvtransmit(component0)  {
 		ge_pricechecker_redraw{inv_90}
-	}, component0)
+	}
 	return 
 }

@@ -5,11 +5,11 @@ fun script1486(component0: Component, setposh1: Int, int2: Int, int3: Int) {
 		return 
 	}
 	~script2510(component0, setposh1, int2, int3)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		script2509(component0, setposh1, int2, int3){VARP[1055], VARP[1227]}
-	}, component0)
-	if_setonsubchange({
+	}
+	if_setonsubchange {
 		script2509(component0, setposh1, int2, int3)
-	}, component0)
+	}
 	return 
 }

@@ -15,22 +15,22 @@ fun bank_depositbox_update(component0: Component, component1: Component, compone
 	val graphic6: Graphic = "miscgraphics,0"
 	val graphic7: Graphic = "miscgraphics,9"
 	if (inv_total(inv, looting_bag_11941) > 0 | inv_total(inv, looting_bag_22586) > 0) {
-		if_setonmouseover({
+		if_setonmouseover {
 			settrans(component2, 75)
-		}, component1)
-		if_setonmouseleave({
+		}
+		if_setonmouseleave {
 			settrans(component2, 0)
-		}, component1)
-		if_setonop({
+		}
+		if_setonop {
 			bankmain_depositall(event_com, graphic7, graphic6, event_opindex)
-		}, component1)
+		}
 	} else {
-		if_setonmouseover(null, component1)
-		if_setonmouseleave(null, component1)
-		if_setonop(null, component1)
+		if_setonmouseovernull
+		if_setonmouseleavenull
+		if_setonopnull
 		if_setgraphic(graphic6, component1)
 		if_settrans(75, component2)
-		if_setontimer(null, component1)
+		if_setontimernull
 	}
 	return 
 }

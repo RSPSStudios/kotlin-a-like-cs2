@@ -12,9 +12,9 @@ fun bankmain_reorder(drop0: Component, comsubid1: Int, drop2: Component, dropsub
 	if (drop2 ! drop0 | dropsubid3 < 0 | dropsubid3 >= 816 | ~bank_tabforslot(comsubid1) ! int9) {
 		if (cc_find(drop0, comsubid1) = ^true) {
 			cc_settrans(200)
-			cc_setontimer({
+			cc_setontimer {
 				cc_settrans_temporarily_end(event_com, event_comsubid, trans4, calc(clientclock + 10))
-			})
+			}
 		}
 		return 
 	}
@@ -35,9 +35,9 @@ fun bankmain_reorder(drop0: Component, comsubid1: Int, drop2: Component, dropsub
 	if (obj11 = null | ~bankmain_searching = 1) {
 		if (cc_find(drop0, comsubid1) = ^true) {
 			cc_settrans(200)
-			cc_setontimer({
+			cc_setontimer {
 				cc_settrans_temporarily_end(event_com, event_comsubid, trans4, calc(clientclock + 10))
-			})
+			}
 		}
 		return 
 	}

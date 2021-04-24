@@ -22,9 +22,9 @@ fun settings_slider_op(struct0: Struct, int1: Int, int2: Int, int3: Int, int4: I
 		cc_settext(append(string0, string1))
 	}
 	if (boolean13 = false & cc_find(component10, comsubid11) = ^true) {
-		cc_setontimer({
+		cc_setontimer {
 			settings_slider_synch(0, struct0, int1, int2, int3, int4, component5, comsubid6, y7, int8, int9, component10, comsubid11, comsubid12, string0)
-		})
+		}
 	}
 	return 
 }

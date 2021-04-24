@@ -2,8 +2,8 @@
 fun raids_sidepanel_entry_init(int0: Int, boolean1: Boolean) {
 
 	~raids_sidepanel_entry_setup(int0, boolean1)
-	cc_setonclantransmit({
+	cc_setonclantransmit {
 		raids_sidepanel_entry_setup(event_com, event_comsubid, int0, boolean1)
-	})
+	}
 	return 
 }

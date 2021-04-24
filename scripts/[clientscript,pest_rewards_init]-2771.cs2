@@ -2,9 +2,9 @@
 fun pest_rewards_init(component0: Component, component1: Component, component2: Component, component3: Component, component4: Component, component5: Component) {
 
 	~pest_rewards_showpoints(component1)
-	if_setonvartransmit({
+	if_setonvartransmit(component1)  {
 		pest_rewards_showpoints(component1){VARP[261]}
-	}, component1)
+	}
 	val height6: Int = ~pest_rewards_draw(-1, component0, component2, component4, component5)
 	if_setscrollpos(0, 0, component2)
 	if (height6 >= if_getheight(component2)) {

@@ -3,8 +3,8 @@ fun tutorial_displayname_init(component0: Component, component1: Component, comp
 
 	~chatdefault_stopinput
 	~tutorial_displayname_buttons(component1, component2)
-	if_setonvartransmit({
+	if_setonvartransmit(component0)  {
 		tutorial_displayname_buttons(component1, component2){VARP[1042]}
-	}, component0)
+	}
 	return 
 }

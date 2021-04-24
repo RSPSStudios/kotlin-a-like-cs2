@@ -15,12 +15,12 @@ fun script2675(component0: Component, component1: Component, component2: Compone
 		cc_setcolour(^black)
 		cc_settrans(225)
 	}
-	cc_setonmouseover({
+	cc_setonmouseover {
 		cc_colour_swapper(component1, event_comsubid, ^white)
-	})
-	cc_setonmouseleave({
+	}
+	cc_setonmouseleave {
 		cc_colour_swapper(component1, event_comsubid, 0xff981f)
-	})
+	}
 	cc_create(component2, ^iftype_graphic, int4)
 	cc_setsize(int3, int3, ^setsize_abs, ^setsize_abs)
 	cc_setposition(5, y6, ^setpos_abs_left, ^setpos_abs_top)
@@ -50,9 +50,9 @@ fun script2675(component0: Component, component1: Component, component2: Compone
 		}
 		string0 = append("<col=ffffff>${string1}</col> :  ", string0)
 		if (struct7 ! null) {
-			.cc_setonkey({
+			.cc_setonkey {
 				telenexus_keyinput_listener(event_key, event_keychar, component0, cc_getid, null, string1, string2, 16777215, 0)
-			})
+			}
 		}
 	}
 	cc_settext(string0)

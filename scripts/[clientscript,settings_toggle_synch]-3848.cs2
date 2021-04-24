@@ -5,9 +5,9 @@ fun settings_toggle_synch(int0: Int, component1: Component, comsubid2: Int, bool
 	if (cc_find(component1, comsubid2) = ^true) {
 		int0 = calc(int0 + 1)
 		if (int0 < 35) {
-			cc_setontimer({
+			cc_setontimer {
 				settings_toggle_synch(int0, component1, comsubid2, boolean3, int4, int5)
-			})
+			}
 		} else {
 			int6 = ~settings_get_toggle(int5)
 			if (boolean3 = true) {
@@ -18,7 +18,7 @@ fun settings_toggle_synch(int0: Int, component1: Component, comsubid2: Int, bool
 			} else {
 				cc_setgraphic("toggle_box,0")
 			}
-			cc_setontimer(null)
+			cc_setontimernull
 		}
 	}
 	return 

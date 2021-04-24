@@ -8,9 +8,9 @@ fun script1258(opindex0: Int, comsubid1: Int, component2: Component, comsubid3: 
 	if (cc_find(component2, comsubid1) = ^true) {
 		if (.cc_find(component2, comsubid3) = ^true) {
 			.cc_settext("---")
-			.cc_setontimer({
+			.cc_setontimer {
 				script1259(calc(clientclock + 60), component2, comsubid3, text0)
-			})
+			}
 		}
 		cc_resume_pausebutton
 	}

@@ -11,11 +11,11 @@ fun zoom_mouse_transmit(component0: Component, component1: Component, component2
 		if_sethide(false, component0)
 		if_setop(1, "Enable", component1)
 	}
-	if_setonmouserepeat({
+	if_setonmouserepeat {
 		tooltip_mouserepeat(component1, -1, component2, string0, 25, 190)
-	}, component1)
-	if_setonmouseleave({
+	}
+	if_setonmouseleave {
 		deltooltip(component2)
-	}, component1)
+	}
 	return 
 }

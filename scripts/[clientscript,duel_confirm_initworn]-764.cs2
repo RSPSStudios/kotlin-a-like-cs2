@@ -3,9 +3,9 @@ fun duel_confirm_initworn() {
 
 	val int0: Int = 0
 	val slot1: Int = 0
-	if_setonvartransmit({
+	if_setonvartransmit(interface_476:39)  {
 		duel_confirm_worn{VARP[286]}
-	}, interface_476:39)
+	}
 	while (int0 < 11) {
 		cc_create(interface_476:11, ^iftype_graphic, int0)
 		cc_setsize(36, 32, ^setsize_abs, ^setsize_abs)

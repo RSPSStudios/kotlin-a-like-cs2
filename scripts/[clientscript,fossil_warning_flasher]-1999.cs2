@@ -4,7 +4,7 @@ fun fossil_warning_flasher(component0: Component, component1: Component, clock2:
 	VARCINT[198] = 1
 	if (VARBIT[5811] >= 100 | VARBIT[5811] = 0) {
 		if_settrans(255, component0)
-		if_setontimer(null, component1)
+		if_setontimernull
 		VARCINT[198] = 0
 		return 
 	}
@@ -21,8 +21,8 @@ fun fossil_warning_flasher(component0: Component, component1: Component, clock2:
 		int4 = calc(0 - int4)
 	}
 	int3 = ~minmax(int7, int6, calc(int3 + int4))
-	if_setontimer({
+	if_setontimer {
 		fossil_warning_flasher(component0, component1, clock2, int3)
-	}, component1)
+	}
 	return 
 }

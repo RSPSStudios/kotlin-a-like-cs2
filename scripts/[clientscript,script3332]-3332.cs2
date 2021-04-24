@@ -27,13 +27,13 @@ fun script3332(component0: Component, coord1: Coord, mapelement2: Mapelement, in
 			if (mapelement2 ! null) {
 				worldmap_flashelement(mapelement2)
 			}
-			if_setontimer(null, component0)
+			if_setontimernull
 			if_sethide(true, component0)
 			return 
 		}
 	}
-	if_setontimer({
+	if_setontimer {
 		script3332(component0, coord1, mapelement2, calc(int3 + 1))
-	}, component0)
+	}
 	return 
 }
